@@ -1,0 +1,4994 @@
+[
+  {
+    "id": 1,
+    "name": "bulbasaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 49,
+      "defense": 49,
+      "special-attack": 65,
+      "special-defense": 65,
+      "speed": 45
+    },
+    "height_dm": 7,
+    "weight_hg": 69,
+    "base_experience": 64,
+    "abilities": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "flavor_text": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "이상해씨",
+    "name_ja": "フシギダネ",
+    "flavor_text_ko": "태어났을 때부터 등에 이상한 씨앗이 심어져 있으며 몸과 함께 자란다고 한다.",
+    "evolution_line": "bulbasaur"
+  },
+  {
+    "id": 2,
+    "name": "ivysaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 62,
+      "defense": 63,
+      "special-attack": 80,
+      "special-defense": 80,
+      "speed": 60
+    },
+    "height_dm": 10,
+    "weight_hg": 130,
+    "base_experience": 142,
+    "abilities": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "flavor_text": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+    "evolves_from": "bulbasaur",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "이상해풀",
+    "name_ja": "フシギソウ",
+    "flavor_text_ko": "꽃봉오리가 등에 붙어 있으며 양분을 흡수해가면 커다란 꽃이 핀다고 한다.",
+    "evolution_line": "bulbasaur"
+  },
+  {
+    "id": 3,
+    "name": "venusaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 83,
+      "special-attack": 100,
+      "special-defense": 100,
+      "speed": 80
+    },
+    "height_dm": 20,
+    "weight_hg": 1000,
+    "base_experience": 236,
+    "abilities": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "flavor_text": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+    "evolves_from": "ivysaur",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "이상해꽃",
+    "name_ja": "フシギバナ",
+    "flavor_text_ko": "큰 꽃잎을 펼쳐 햇빛을 받고 있으면 몸에 힘이 넘쳐흐른다.",
+    "evolution_line": "ivysaur"
+  },
+  {
+    "id": 4,
+    "name": "charmander",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 39,
+      "attack": 52,
+      "defense": 43,
+      "special-attack": 60,
+      "special-defense": 50,
+      "speed": 65
+    },
+    "height_dm": 6,
+    "weight_hg": 85,
+    "base_experience": 62,
+    "abilities": [
+      "blaze",
+      "solar-power"
+    ],
+    "flavor_text": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "파이리",
+    "name_ja": "ヒトカゲ",
+    "flavor_text_ko": "꼬리의 불꽃은 파이리의 생명력의 상징이다. 건강할 때 왕성하게 불타오른다.",
+    "evolution_line": "charmander"
+  },
+  {
+    "id": 5,
+    "name": "charmeleon",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 58,
+      "attack": 64,
+      "defense": 58,
+      "special-attack": 80,
+      "special-defense": 65,
+      "speed": 80
+    },
+    "height_dm": 11,
+    "weight_hg": 190,
+    "base_experience": 142,
+    "abilities": [
+      "blaze",
+      "solar-power"
+    ],
+    "flavor_text": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+    "evolves_from": "charmander",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "리자드",
+    "name_ja": "リザード",
+    "flavor_text_ko": "꼬리를 휘둘러 상대를 쓰러트리고 날카로운 발톱으로 갈기갈기 찢어버린다.",
+    "evolution_line": "charmander"
+  },
+  {
+    "id": 6,
+    "name": "charizard",
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "stats": {
+      "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "special-attack": 109,
+      "special-defense": 85,
+      "speed": 100
+    },
+    "height_dm": 17,
+    "weight_hg": 905,
+    "base_experience": 240,
+    "abilities": [
+      "blaze",
+      "solar-power"
+    ],
+    "flavor_text": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+    "evolves_from": "charmeleon",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "리자몽",
+    "name_ja": "リザードン",
+    "flavor_text_ko": "입에서 작렬하는 불꽃을 토해낼 때 꼬리의 끝이 더욱 붉고 격렬하게 타오른다.",
+    "evolution_line": "charmeleon"
+  },
+  {
+    "id": 7,
+    "name": "squirtle",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 44,
+      "attack": 48,
+      "defense": 65,
+      "special-attack": 50,
+      "special-defense": 64,
+      "speed": 43
+    },
+    "height_dm": 5,
+    "weight_hg": 90,
+    "base_experience": 63,
+    "abilities": [
+      "torrent",
+      "rain-dish"
+    ],
+    "flavor_text": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "꼬부기",
+    "name_ja": "ゼニガメ",
+    "flavor_text_ko": "등껍질에 숨어 몸을 보호한다. 상대의 빈틈을 놓치지 않고 물을 뿜어내어 반격한다.",
+    "evolution_line": "squirtle"
+  },
+  {
+    "id": 8,
+    "name": "wartortle",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 59,
+      "attack": 63,
+      "defense": 80,
+      "special-attack": 65,
+      "special-defense": 80,
+      "speed": 58
+    },
+    "height_dm": 10,
+    "weight_hg": 225,
+    "base_experience": 142,
+    "abilities": [
+      "torrent",
+      "rain-dish"
+    ],
+    "flavor_text": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
+    "evolves_from": "squirtle",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "어니부기",
+    "name_ja": "カメール",
+    "flavor_text_ko": "딱 하고 머리를 맞을 때 등껍질로 숨어서 피한다. 하지만 꼬리가 살짝 삐져나와 있다.",
+    "evolution_line": "squirtle"
+  },
+  {
+    "id": 9,
+    "name": "blastoise",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 79,
+      "attack": 83,
+      "defense": 100,
+      "special-attack": 85,
+      "special-defense": 105,
+      "speed": 78
+    },
+    "height_dm": 16,
+    "weight_hg": 855,
+    "base_experience": 239,
+    "abilities": [
+      "torrent",
+      "rain-dish"
+    ],
+    "flavor_text": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
+    "evolves_from": "wartortle",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "거북왕",
+    "name_ja": "カメックス",
+    "flavor_text_ko": "무거운 몸으로 상대를 덮쳐서 기절시킨다. 위기에 처하면 등껍질에 숨는다.",
+    "evolution_line": "wartortle"
+  },
+  {
+    "id": 10,
+    "name": "caterpie",
+    "types": [
+      "bug"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 35,
+      "special-attack": 20,
+      "special-defense": 20,
+      "speed": 45
+    },
+    "height_dm": 3,
+    "weight_hg": 29,
+    "base_experience": 39,
+    "abilities": [
+      "shield-dust",
+      "run-away"
+    ],
+    "flavor_text": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "캐터피",
+    "name_ja": "キャタピー",
+    "flavor_text_ko": "머리의 더듬이로부터 강렬한 냄새를 내어 적을 물리치고 몸을 보호한다.",
+    "evolution_line": "caterpie"
+  },
+  {
+    "id": 11,
+    "name": "metapod",
+    "types": [
+      "bug"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 20,
+      "defense": 55,
+      "special-attack": 25,
+      "special-defense": 25,
+      "speed": 30
+    },
+    "height_dm": 7,
+    "weight_hg": 99,
+    "base_experience": 72,
+    "abilities": [
+      "shed-skin"
+    ],
+    "flavor_text": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
+    "evolves_from": "caterpie",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "단데기",
+    "name_ja": "トランセル",
+    "flavor_text_ko": "강철같이 단단한 껍질로 부드러운 몸을 보호하고 있다. 진화할 때까지 가만히 참고 있다.",
+    "evolution_line": "caterpie"
+  },
+  {
+    "id": 12,
+    "name": "butterfree",
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 50,
+      "special-attack": 90,
+      "special-defense": 80,
+      "speed": 70
+    },
+    "height_dm": 11,
+    "weight_hg": 320,
+    "base_experience": 178,
+    "abilities": [
+      "compound-eyes",
+      "tinted-lens"
+    ],
+    "flavor_text": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+    "evolves_from": "metapod",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "버터플",
+    "name_ja": "バタフリー",
+    "flavor_text_ko": "꽃의 꿀을 매우 좋아한다. 약간의 꽃가루만으로 꽃밭이 있는 장소를 찾아낼 수 있다.",
+    "evolution_line": "metapod"
+  },
+  {
+    "id": 13,
+    "name": "weedle",
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "special-attack": 20,
+      "special-defense": 20,
+      "speed": 50
+    },
+    "height_dm": 3,
+    "weight_hg": 32,
+    "base_experience": 39,
+    "abilities": [
+      "shield-dust",
+      "run-away"
+    ],
+    "flavor_text": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "뿔충이",
+    "name_ja": "ビードル",
+    "flavor_text_ko": "숲이나 풀밭에 많이 서식한다. 머리끝에 5cm 정도의 작고 날카로운 독침을 지니고 있다.",
+    "evolution_line": "weedle"
+  },
+  {
+    "id": 14,
+    "name": "kakuna",
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 25,
+      "defense": 50,
+      "special-attack": 25,
+      "special-defense": 25,
+      "speed": 35
+    },
+    "height_dm": 6,
+    "weight_hg": 100,
+    "base_experience": 72,
+    "abilities": [
+      "shed-skin"
+    ],
+    "flavor_text": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
+    "evolves_from": "weedle",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "딱충이",
+    "name_ja": "コクーン",
+    "flavor_text_ko": "스스로는 거의 움직일 수 없지만 위험할 때는 단단해져서 몸을 보호하고 있는 것 같다.",
+    "evolution_line": "weedle"
+  },
+  {
+    "id": 15,
+    "name": "beedrill",
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 40,
+      "special-attack": 45,
+      "special-defense": 80,
+      "speed": 75
+    },
+    "height_dm": 10,
+    "weight_hg": 295,
+    "base_experience": 178,
+    "abilities": [
+      "swarm",
+      "sniper"
+    ],
+    "flavor_text": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
+    "evolves_from": "kakuna",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "독침붕",
+    "name_ja": "スピアー",
+    "flavor_text_ko": "양손과 엉덩이에 있는 3개의 독침으로 상대를 찌르고 찌르고 또 찌르며 공격한다.",
+    "evolution_line": "kakuna"
+  },
+  {
+    "id": 16,
+    "name": "pidgey",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 40,
+      "special-attack": 35,
+      "special-defense": 35,
+      "speed": 56
+    },
+    "height_dm": 3,
+    "weight_hg": 18,
+    "base_experience": 50,
+    "abilities": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "flavor_text": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "구구",
+    "name_ja": "ポッポ",
+    "flavor_text_ko": "숲이나 수풀에 많이 분포해 있다. 땅에서도 격렬한 날갯짓으로 모래를 뿌리기도 한다.",
+    "evolution_line": "pidgey"
+  },
+  {
+    "id": 17,
+    "name": "pidgeotto",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 63,
+      "attack": 60,
+      "defense": 55,
+      "special-attack": 50,
+      "special-defense": 50,
+      "speed": 71
+    },
+    "height_dm": 11,
+    "weight_hg": 300,
+    "base_experience": 122,
+    "abilities": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "flavor_text": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
+    "evolves_from": "pidgey",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "피죤",
+    "name_ja": "ピジョン",
+    "flavor_text_ko": "발톱이 발달해 있다. 먹이인 아라리를 잡아 100km 떨어져 있는 둥지까지 나른다.",
+    "evolution_line": "pidgey"
+  },
+  {
+    "id": 18,
+    "name": "pidgeot",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 83,
+      "attack": 80,
+      "defense": 75,
+      "special-attack": 70,
+      "special-defense": 70,
+      "speed": 101
+    },
+    "height_dm": 15,
+    "weight_hg": 395,
+    "base_experience": 216,
+    "abilities": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "flavor_text": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
+    "evolves_from": "pidgeotto",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "피죤투",
+    "name_ja": "ピジョット",
+    "flavor_text_ko": "먹이를 찾을 때 수면을 아슬아슬하게 미끄러지듯 날아 잉어킹 등을 움켜잡는다.",
+    "evolution_line": "pidgeotto"
+  },
+  {
+    "id": 19,
+    "name": "rattata",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "special-attack": 25,
+      "special-defense": 35,
+      "speed": 72
+    },
+    "height_dm": 3,
+    "weight_hg": 35,
+    "base_experience": 51,
+    "abilities": [
+      "run-away",
+      "guts",
+      "hustle"
+    ],
+    "flavor_text": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "꼬렛",
+    "name_ja": "コラッタ",
+    "flavor_text_ko": "먹을 것이 있는 곳이라면 어디서든 서식한다. 온종일 먹이를 찾아다닌다.",
+    "evolution_line": "rattata"
+  },
+  {
+    "id": 20,
+    "name": "raticate",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 81,
+      "defense": 60,
+      "special-attack": 50,
+      "special-defense": 70,
+      "speed": 97
+    },
+    "height_dm": 7,
+    "weight_hg": 185,
+    "base_experience": 145,
+    "abilities": [
+      "run-away",
+      "guts",
+      "hustle"
+    ],
+    "flavor_text": "It uses its whis­ kers to maintain its balance. It apparently slows down if they are cut off.",
+    "evolves_from": "rattata",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 127,
+    "name_ko": "레트라",
+    "name_ja": "ラッタ",
+    "flavor_text_ko": "계속 자라는 앞니를 갈아내려고 딱딱한 것을 갉는 습성이 있다. 벽돌로 된 벽도 갉아서 부순다.",
+    "evolution_line": "rattata"
+  },
+  {
+    "id": 21,
+    "name": "spearow",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 60,
+      "defense": 30,
+      "special-attack": 31,
+      "special-defense": 31,
+      "speed": 70
+    },
+    "height_dm": 3,
+    "weight_hg": 20,
+    "base_experience": 52,
+    "abilities": [
+      "keen-eye",
+      "sniper"
+    ],
+    "flavor_text": "It flaps its small wings busily to fly. Using its beak, it searches in grass for prey.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "깨비참",
+    "name_ja": "オニスズメ",
+    "flavor_text_ko": "자신의 영역을 지키기 위해 작은 날개를 쳐서 바쁘게 주위를 날아 맴돈다.",
+    "evolution_line": "spearow"
+  },
+  {
+    "id": 22,
+    "name": "fearow",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 65,
+      "special-attack": 61,
+      "special-defense": 61,
+      "speed": 100
+    },
+    "height_dm": 12,
+    "weight_hg": 380,
+    "base_experience": 155,
+    "abilities": [
+      "keen-eye",
+      "sniper"
+    ],
+    "flavor_text": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
+    "evolves_from": "spearow",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 90,
+    "name_ko": "깨비드릴조",
+    "name_ja": "オニドリル",
+    "flavor_text_ko": "커다란 날개로 넓은 하늘을 계속 날 수 있다. 한 번도 내려앉지 않아도 괜찮다.",
+    "evolution_line": "spearow"
+  },
+  {
+    "id": 23,
+    "name": "ekans",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 60,
+      "defense": 44,
+      "special-attack": 40,
+      "special-defense": 54,
+      "speed": 55
+    },
+    "height_dm": 20,
+    "weight_hg": 69,
+    "base_experience": 58,
+    "abilities": [
+      "intimidate",
+      "shed-skin",
+      "unnerve"
+    ],
+    "flavor_text": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "아보",
+    "name_ja": "アーボ",
+    "flavor_text_ko": "성장할수록 점점 길어진다. 밤에는 나뭇가지에 몸을 돌돌 말고 쉰다.",
+    "evolution_line": "ekans"
+  },
+  {
+    "id": 24,
+    "name": "arbok",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 69,
+      "special-attack": 65,
+      "special-defense": 79,
+      "speed": 80
+    },
+    "height_dm": 35,
+    "weight_hg": 650,
+    "base_experience": 157,
+    "abilities": [
+      "intimidate",
+      "shed-skin",
+      "unnerve"
+    ],
+    "flavor_text": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
+    "evolves_from": "ekans",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 90,
+    "name_ko": "아보크",
+    "name_ja": "アーボック",
+    "flavor_text_ko": "배의 무늬가 무서운 얼굴로 보인다. 약한 적은 그 무늬만 보고도 도망치고 만다.",
+    "evolution_line": "ekans"
+  },
+  {
+    "id": 25,
+    "name": "pikachu",
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 55,
+      "defense": 40,
+      "special-attack": 50,
+      "special-defense": 50,
+      "speed": 90
+    },
+    "height_dm": 4,
+    "weight_hg": 60,
+    "base_experience": 112,
+    "abilities": [
+      "static",
+      "lightning-rod"
+    ],
+    "flavor_text": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
+    "evolves_from": "pichu",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "피카츄",
+    "name_ja": "ピカチュウ",
+    "flavor_text_ko": "꼬리를 세우고 주변의 상황을 살피다 보면 가끔 꼬리에 번개가 친다.",
+    "evolution_line": "pichu"
+  },
+  {
+    "id": 26,
+    "name": "raichu",
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "special-attack": 90,
+      "special-defense": 80,
+      "speed": 110
+    },
+    "height_dm": 8,
+    "weight_hg": 300,
+    "base_experience": 218,
+    "abilities": [
+      "static",
+      "lightning-rod"
+    ],
+    "flavor_text": "Its long tail serves as a ground to protect itself from its own high-voltage power.",
+    "evolves_from": "pikachu",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "라이츄",
+    "name_ja": "ライチュウ",
+    "flavor_text_ko": "전기가 모이면 근육이 자극되어 여느 때보다 공격적이 된다.",
+    "evolution_line": "pikachu"
+  },
+  {
+    "id": 27,
+    "name": "sandshrew",
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 85,
+      "special-attack": 20,
+      "special-defense": 30,
+      "speed": 40
+    },
+    "height_dm": 6,
+    "weight_hg": 120,
+    "base_experience": 60,
+    "abilities": [
+      "sand-veil",
+      "sand-rush"
+    ],
+    "flavor_text": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "모래두지",
+    "name_ja": "サンド",
+    "flavor_text_ko": "지면에 구멍을 파고 산다. 자신에게 위험이 닥쳐오면 둥글게 말아서 몸을 보호한다.",
+    "evolution_line": "sandshrew"
+  },
+  {
+    "id": 28,
+    "name": "sandslash",
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 110,
+      "special-attack": 45,
+      "special-defense": 55,
+      "speed": 65
+    },
+    "height_dm": 10,
+    "weight_hg": 295,
+    "base_experience": 158,
+    "abilities": [
+      "sand-veil",
+      "sand-rush"
+    ],
+    "flavor_text": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
+    "evolves_from": "sandshrew",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 90,
+    "name_ko": "고지",
+    "name_ja": "サンドパン",
+    "flavor_text_ko": "굉장한 기세로 지면을 파면 가시와 발톱이 부러져 버리지만 다음 날에는 바로 돋아나 있다.",
+    "evolution_line": "sandshrew"
+  },
+  {
+    "id": 29,
+    "name": "nidoran-f",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 47,
+      "defense": 52,
+      "special-attack": 40,
+      "special-defense": 40,
+      "speed": 41
+    },
+    "height_dm": 4,
+    "weight_hg": 70,
+    "base_experience": 55,
+    "abilities": [
+      "poison-point",
+      "rivalry",
+      "hustle"
+    ],
+    "flavor_text": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 235,
+    "name_ko": "니드런♀",
+    "name_ja": "ニドラン♀",
+    "flavor_text_ko": "몸은 작지만 독침을 지니고 있기 때문에 주의가 필요하다. 암컷의 뿔이 더 작다.",
+    "evolution_line": "nidoran-f"
+  },
+  {
+    "id": 30,
+    "name": "nidorina",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 62,
+      "defense": 67,
+      "special-attack": 55,
+      "special-defense": 55,
+      "speed": 56
+    },
+    "height_dm": 8,
+    "weight_hg": 200,
+    "base_experience": 128,
+    "abilities": [
+      "poison-point",
+      "rivalry",
+      "hustle"
+    ],
+    "flavor_text": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
+    "evolves_from": "nidoran-f",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "니드리나",
+    "name_ja": "ニドリーナ",
+    "flavor_text_ko": "암컷으로 성격은 온화하다. 입에서 내보내는 초음파는 상대를 혼란시키는 힘이 있다.",
+    "evolution_line": "nidoran-f"
+  },
+  {
+    "id": 31,
+    "name": "nidoqueen",
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 92,
+      "defense": 87,
+      "special-attack": 75,
+      "special-defense": 85,
+      "speed": 76
+    },
+    "height_dm": 13,
+    "weight_hg": 600,
+    "base_experience": 227,
+    "abilities": [
+      "poison-point",
+      "rivalry",
+      "sheer-force"
+    ],
+    "flavor_text": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
+    "evolves_from": "nidorina",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "니드퀸",
+    "name_ja": "ニドクイン",
+    "flavor_text_ko": "비늘로 뒤덮인 튼튼한 몸으로 둥지의 입구를 막아 상대로부터 새끼들을 지킨다.",
+    "evolution_line": "nidorina"
+  },
+  {
+    "id": 32,
+    "name": "nidoran-m",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 46,
+      "attack": 57,
+      "defense": 40,
+      "special-attack": 40,
+      "special-defense": 40,
+      "speed": 50
+    },
+    "height_dm": 5,
+    "weight_hg": 90,
+    "base_experience": 55,
+    "abilities": [
+      "poison-point",
+      "rivalry",
+      "hustle"
+    ],
+    "flavor_text": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 235,
+    "name_ko": "니드런♂",
+    "name_ja": "ニドラン♂",
+    "flavor_text_ko": "풀밭 위로 귀만 내어 주위의 낌새를 살핀다. 맹독의 뿔로 몸을 보호한다.",
+    "evolution_line": "nidoran-m"
+  },
+  {
+    "id": 33,
+    "name": "nidorino",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 61,
+      "attack": 72,
+      "defense": 57,
+      "special-attack": 55,
+      "special-defense": 55,
+      "speed": 65
+    },
+    "height_dm": 9,
+    "weight_hg": 195,
+    "base_experience": 128,
+    "abilities": [
+      "poison-point",
+      "rivalry",
+      "hustle"
+    ],
+    "flavor_text": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
+    "evolves_from": "nidoran-m",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "니드리노",
+    "name_ja": "ニドリーノ",
+    "flavor_text_ko": "신경질적이고 호전적이다. 체내의 아드레날린이 증가하면 독소의 농도도 높아진다.",
+    "evolution_line": "nidoran-m"
+  },
+  {
+    "id": 34,
+    "name": "nidoking",
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "stats": {
+      "hp": 81,
+      "attack": 102,
+      "defense": 77,
+      "special-attack": 85,
+      "special-defense": 75,
+      "speed": 85
+    },
+    "height_dm": 14,
+    "weight_hg": 620,
+    "base_experience": 227,
+    "abilities": [
+      "poison-point",
+      "rivalry",
+      "sheer-force"
+    ],
+    "flavor_text": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
+    "evolves_from": "nidorino",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "니드킹",
+    "name_ja": "ニドキング",
+    "flavor_text_ko": "돌처럼 딱딱한 피부와 길게 뻗은 뿔이 특징이다. 뿔에는 독이 있으니 주의해야 한다.",
+    "evolution_line": "nidorino"
+  },
+  {
+    "id": 35,
+    "name": "clefairy",
+    "types": [
+      "fairy"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 45,
+      "defense": 48,
+      "special-attack": 60,
+      "special-defense": 65,
+      "speed": 35
+    },
+    "height_dm": 6,
+    "weight_hg": 75,
+    "base_experience": 113,
+    "abilities": [
+      "cute-charm",
+      "magic-guard",
+      "friend-guard"
+    ],
+    "flavor_text": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
+    "evolves_from": "cleffa",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 150,
+    "name_ko": "삐삐",
+    "name_ja": "ピッピ",
+    "flavor_text_ko": "보름달 밤에 삐삐가 모여 춤을 추는 모습을 보면 행복해진다고 전해진다.",
+    "evolution_line": "cleffa"
+  },
+  {
+    "id": 36,
+    "name": "clefable",
+    "types": [
+      "fairy"
+    ],
+    "stats": {
+      "hp": 95,
+      "attack": 70,
+      "defense": 73,
+      "special-attack": 95,
+      "special-defense": 90,
+      "speed": 60
+    },
+    "height_dm": 13,
+    "weight_hg": 400,
+    "base_experience": 217,
+    "abilities": [
+      "cute-charm",
+      "magic-guard",
+      "unaware"
+    ],
+    "flavor_text": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
+    "evolves_from": "clefairy",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 25,
+    "name_ko": "픽시",
+    "name_ja": "ピクシー",
+    "flavor_text_ko": "1km 전방에 떨어진 바늘 소리도 분간할 수 있는 우수한 귀를 가지고 있다. 조용한 산속에 살고 있다.",
+    "evolution_line": "clefairy"
+  },
+  {
+    "id": 37,
+    "name": "vulpix",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 38,
+      "attack": 41,
+      "defense": 40,
+      "special-attack": 50,
+      "special-defense": 65,
+      "speed": 65
+    },
+    "height_dm": 6,
+    "weight_hg": 99,
+    "base_experience": 60,
+    "abilities": [
+      "flash-fire",
+      "drought"
+    ],
+    "flavor_text": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "식스테일",
+    "name_ja": "ロコン",
+    "flavor_text_ko": "태어났을 때는 꼬리가 새하얗고 하나밖에 없다. 성장하면 끝이 갈라지며 꼬리 수가 늘어난다.",
+    "evolution_line": "vulpix"
+  },
+  {
+    "id": 38,
+    "name": "ninetales",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 73,
+      "attack": 76,
+      "defense": 75,
+      "special-attack": 81,
+      "special-defense": 100,
+      "speed": 100
+    },
+    "height_dm": 11,
+    "weight_hg": 199,
+    "base_experience": 177,
+    "abilities": [
+      "flash-fire",
+      "drought"
+    ],
+    "flavor_text": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
+    "evolves_from": "vulpix",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "나인테일",
+    "name_ja": "キュウコン",
+    "flavor_text_ko": "황금빛으로 빛나는 털과 9개의 긴 꼬리를 지녔다. 1000년을 산다고 한다.",
+    "evolution_line": "vulpix"
+  },
+  {
+    "id": 39,
+    "name": "jigglypuff",
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "stats": {
+      "hp": 115,
+      "attack": 45,
+      "defense": 20,
+      "special-attack": 45,
+      "special-defense": 25,
+      "speed": 20
+    },
+    "height_dm": 5,
+    "weight_hg": 55,
+    "base_experience": 95,
+    "abilities": [
+      "cute-charm",
+      "competitive",
+      "friend-guard"
+    ],
+    "flavor_text": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
+    "evolves_from": "igglybuff",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 170,
+    "name_ko": "푸린",
+    "name_ja": "プリン",
+    "flavor_text_ko": "동그랗고 커다란 눈동자로 유인하고 기분 좋은 노래를 불러 상대방을 잠들게 한다.",
+    "evolution_line": "igglybuff"
+  },
+  {
+    "id": 40,
+    "name": "wigglytuff",
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "stats": {
+      "hp": 140,
+      "attack": 70,
+      "defense": 45,
+      "special-attack": 85,
+      "special-defense": 50,
+      "speed": 45
+    },
+    "height_dm": 10,
+    "weight_hg": 120,
+    "base_experience": 196,
+    "abilities": [
+      "cute-charm",
+      "competitive",
+      "frisk"
+    ],
+    "flavor_text": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
+    "evolves_from": "jigglypuff",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 50,
+    "name_ko": "푸크린",
+    "name_ja": "プクリン",
+    "flavor_text_ko": "2마리가 바싹 붙어 있으면 서로의 털이 너무 기분 좋아서 떨어지지 않게 되어버린다.",
+    "evolution_line": "jigglypuff"
+  },
+  {
+    "id": 41,
+    "name": "zubat",
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "special-attack": 30,
+      "special-defense": 40,
+      "speed": 55
+    },
+    "height_dm": 8,
+    "weight_hg": 75,
+    "base_experience": 49,
+    "abilities": [
+      "inner-focus",
+      "infiltrator"
+    ],
+    "flavor_text": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "주뱃",
+    "name_ja": "ズバット",
+    "flavor_text_ko": "입에서 내는 초음파로 두 눈이 없어도 주위의 장애물을 탐색할 수 있다.",
+    "evolution_line": "zubat"
+  },
+  {
+    "id": 42,
+    "name": "golbat",
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "stats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 70,
+      "special-attack": 65,
+      "special-defense": 75,
+      "speed": 90
+    },
+    "height_dm": 16,
+    "weight_hg": 550,
+    "base_experience": 159,
+    "abilities": [
+      "inner-focus",
+      "infiltrator"
+    ],
+    "flavor_text": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
+    "evolves_from": "zubat",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 90,
+    "name_ko": "골뱃",
+    "name_ja": "ゴルバット",
+    "flavor_text_ko": "물리면 끝이다. 죽을 정도로 피를 빨아들이기 때문에 무거워져서 날 수 없게 될 때도 있다.",
+    "evolution_line": "zubat"
+  },
+  {
+    "id": 43,
+    "name": "oddish",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 55,
+      "special-attack": 75,
+      "special-defense": 65,
+      "speed": 30
+    },
+    "height_dm": 5,
+    "weight_hg": 54,
+    "base_experience": 64,
+    "abilities": [
+      "chlorophyll",
+      "run-away"
+    ],
+    "flavor_text": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "뚜벅쵸",
+    "name_ja": "ナゾノクサ",
+    "flavor_text_ko": "낮에는 태양을 피하려고 차가운 땅속에 들어가 있다. 달빛을 쬐어 성장한다.",
+    "evolution_line": "oddish"
+  },
+  {
+    "id": 44,
+    "name": "gloom",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 70,
+      "special-attack": 85,
+      "special-defense": 75,
+      "speed": 40
+    },
+    "height_dm": 8,
+    "weight_hg": 86,
+    "base_experience": 138,
+    "abilities": [
+      "chlorophyll",
+      "stench"
+    ],
+    "flavor_text": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
+    "evolves_from": "oddish",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "냄새꼬",
+    "name_ja": "クサイハナ",
+    "flavor_text_ko": "강렬한 악취가 난다! 그럼에도 불구하고 1000명에 한 명 정도 이 냄새를 즐겨 맡는 사람이 있다.",
+    "evolution_line": "oddish"
+  },
+  {
+    "id": 45,
+    "name": "vileplume",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 85,
+      "special-attack": 110,
+      "special-defense": 90,
+      "speed": 50
+    },
+    "height_dm": 12,
+    "weight_hg": 186,
+    "base_experience": 221,
+    "abilities": [
+      "chlorophyll",
+      "effect-spore"
+    ],
+    "flavor_text": "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
+    "evolves_from": "gloom",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "라플레시아",
+    "name_ja": "ラフレシア",
+    "flavor_text_ko": "꽃잎이 클수록 많은 꽃가루를 만들어 내지만 머리가 무거워서 지쳐버린다고 한다.",
+    "evolution_line": "gloom"
+  },
+  {
+    "id": 46,
+    "name": "paras",
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 70,
+      "defense": 55,
+      "special-attack": 45,
+      "special-defense": 55,
+      "speed": 25
+    },
+    "height_dm": 3,
+    "weight_hg": 54,
+    "base_experience": 57,
+    "abilities": [
+      "effect-spore",
+      "dry-skin",
+      "damp"
+    ],
+    "flavor_text": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "파라스",
+    "name_ja": "パラス",
+    "flavor_text_ko": "벌레의 등에 돋아나 있는 것은 동충하초라는 버섯이다. 성장하면 버섯도 커진다.",
+    "evolution_line": "paras"
+  },
+  {
+    "id": 47,
+    "name": "parasect",
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 80,
+      "special-attack": 60,
+      "special-defense": 80,
+      "speed": 30
+    },
+    "height_dm": 10,
+    "weight_hg": 295,
+    "base_experience": 142,
+    "abilities": [
+      "effect-spore",
+      "dry-skin",
+      "damp"
+    ],
+    "flavor_text": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
+    "evolves_from": "paras",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "파라섹트",
+    "name_ja": "パラセクト",
+    "flavor_text_ko": "몸보다 큰 버섯이 파라섹트를 조종하고 있다. 독 포자를 여기저기 뿌린다.",
+    "evolution_line": "paras"
+  },
+  {
+    "id": 48,
+    "name": "venonat",
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 55,
+      "defense": 50,
+      "special-attack": 40,
+      "special-defense": 55,
+      "speed": 45
+    },
+    "height_dm": 10,
+    "weight_hg": 300,
+    "base_experience": 61,
+    "abilities": [
+      "compound-eyes",
+      "tinted-lens",
+      "run-away"
+    ],
+    "flavor_text": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "콘팡",
+    "name_ja": "コンパン",
+    "flavor_text_ko": "작은 눈이 많이 모여 큰 눈을 이루고 있다. 밤이 되면 불빛을 향해 모여든다.",
+    "evolution_line": "venonat"
+  },
+  {
+    "id": 49,
+    "name": "venomoth",
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 65,
+      "defense": 60,
+      "special-attack": 90,
+      "special-defense": 75,
+      "speed": 90
+    },
+    "height_dm": 15,
+    "weight_hg": 125,
+    "base_experience": 158,
+    "abilities": [
+      "shield-dust",
+      "tinted-lens",
+      "wonder-skin"
+    ],
+    "flavor_text": "The dustlike scales covering its wings are color-coded to indicate the kinds of poison it has.",
+    "evolves_from": "venonat",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "도나리",
+    "name_ja": "モルフォン",
+    "flavor_text_ko": "흩뿌려진 날개 가루에 닿으면 몸의 감각이 이상해져서 똑바로 서 있을 수 없게 된다.",
+    "evolution_line": "venonat"
+  },
+  {
+    "id": 50,
+    "name": "diglett",
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 10,
+      "attack": 55,
+      "defense": 25,
+      "special-attack": 35,
+      "special-defense": 45,
+      "speed": 95
+    },
+    "height_dm": 2,
+    "weight_hg": 8,
+    "base_experience": 53,
+    "abilities": [
+      "sand-veil",
+      "arena-trap",
+      "sand-force"
+    ],
+    "flavor_text": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "디그다",
+    "name_ja": "ディグダ",
+    "flavor_text_ko": "피부가 매우 얇아서 빛을 쪼이게 되면 혈액이 데워져 약해진다.",
+    "evolution_line": "diglett"
+  },
+  {
+    "id": 51,
+    "name": "dugtrio",
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 100,
+      "defense": 50,
+      "special-attack": 50,
+      "special-defense": 70,
+      "speed": 120
+    },
+    "height_dm": 7,
+    "weight_hg": 333,
+    "base_experience": 149,
+    "abilities": [
+      "sand-veil",
+      "arena-trap",
+      "sand-force"
+    ],
+    "flavor_text": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
+    "evolves_from": "diglett",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 50,
+    "name_ko": "닥트리오",
+    "name_ja": "ダグトリオ",
+    "flavor_text_ko": "땅속을 파고들어 가 상대가 방심하고 있을 때 다른 곳에서 공격한다.",
+    "evolution_line": "diglett"
+  },
+  {
+    "id": 52,
+    "name": "meowth",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "special-attack": 40,
+      "special-defense": 40,
+      "speed": 90
+    },
+    "height_dm": 4,
+    "weight_hg": 42,
+    "base_experience": 58,
+    "abilities": [
+      "pickup",
+      "technician",
+      "unnerve"
+    ],
+    "flavor_text": "It washes its face regularly to keep the coin on its forehead spotless. It doesn’t get along with Galarian Meowth.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "나옹",
+    "name_ja": "ニャース",
+    "flavor_text_ko": "한밤중에 움직이는 습성이 있다. 반짝반짝 빛나는 것을 발견하면 그에 못지않게 눈동자가 반짝인다.",
+    "evolution_line": "meowth"
+  },
+  {
+    "id": 53,
+    "name": "persian",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 70,
+      "defense": 60,
+      "special-attack": 65,
+      "special-defense": 65,
+      "speed": 115
+    },
+    "height_dm": 10,
+    "weight_hg": 320,
+    "base_experience": 154,
+    "abilities": [
+      "limber",
+      "technician",
+      "unnerve"
+    ],
+    "flavor_text": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
+    "evolves_from": "meowth",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 90,
+    "name_ko": "페르시온",
+    "name_ja": "ペルシアン",
+    "flavor_text_ko": "털의 결이 아름다워 애완용으로 기르려는 사람이 많지만, 곧잘 할퀴려 들기 때문에 쉽지 않다.",
+    "evolution_line": "meowth"
+  },
+  {
+    "id": 54,
+    "name": "psyduck",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 52,
+      "defense": 48,
+      "special-attack": 65,
+      "special-defense": 50,
+      "speed": 55
+    },
+    "height_dm": 8,
+    "weight_hg": 196,
+    "base_experience": 64,
+    "abilities": [
+      "damp",
+      "cloud-nine",
+      "swift-swim"
+    ],
+    "flavor_text": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "고라파덕",
+    "name_ja": "コダック",
+    "flavor_text_ko": "항상 두통에 시달리고 있다. 이 두통이 심해지면 이상한 힘을 쓰기 시작한다.",
+    "evolution_line": "psyduck"
+  },
+  {
+    "id": 55,
+    "name": "golduck",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 78,
+      "special-attack": 95,
+      "special-defense": 80,
+      "speed": 85
+    },
+    "height_dm": 17,
+    "weight_hg": 766,
+    "base_experience": 175,
+    "abilities": [
+      "damp",
+      "cloud-nine",
+      "swift-swim"
+    ],
+    "flavor_text": "Often seen swim­ ming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
+    "evolves_from": "psyduck",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "골덕",
+    "name_ja": "ゴルダック",
+    "flavor_text_ko": "해 질 무렵 강가에 모습을 나타낸다. 이마가 이상하게 빛날 때 신통력을 발휘한다고 전해진다.",
+    "evolution_line": "psyduck"
+  },
+  {
+    "id": 56,
+    "name": "mankey",
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 35,
+      "special-attack": 35,
+      "special-defense": 45,
+      "speed": 70
+    },
+    "height_dm": 5,
+    "weight_hg": 280,
+    "base_experience": 61,
+    "abilities": [
+      "vital-spirit",
+      "anger-point",
+      "defiant"
+    ],
+    "flavor_text": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "망키",
+    "name_ja": "マンキー",
+    "flavor_text_ko": "이유 없이 화내고 날뛰기 시작하면 동료도 구별하지 못하기 때문에 가까이 가는 것은 매우 위험하다.",
+    "evolution_line": "mankey"
+  },
+  {
+    "id": 57,
+    "name": "primeape",
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 105,
+      "defense": 60,
+      "special-attack": 60,
+      "special-defense": 70,
+      "speed": 95
+    },
+    "height_dm": 10,
+    "weight_hg": 320,
+    "base_experience": 159,
+    "abilities": [
+      "vital-spirit",
+      "anger-point",
+      "defiant"
+    ],
+    "flavor_text": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
+    "evolves_from": "mankey",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "성원숭",
+    "name_ja": "オコリザル",
+    "flavor_text_ko": "주위에 아무도 없을 때만은 화를 내지 않고 있다. 그러나 그 모습을 보기가 어렵다.",
+    "evolution_line": "mankey"
+  },
+  {
+    "id": 58,
+    "name": "growlithe",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 70,
+      "defense": 45,
+      "special-attack": 70,
+      "special-defense": 50,
+      "speed": 60
+    },
+    "height_dm": 7,
+    "weight_hg": 190,
+    "base_experience": 70,
+    "abilities": [
+      "intimidate",
+      "flash-fire",
+      "justified"
+    ],
+    "flavor_text": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "가디",
+    "name_ja": "ガーディ",
+    "flavor_text_ko": "사람을 잘 따르는 충실한 성격이다. 적에게는 짖거나 물며 쫓아내려고 한다.",
+    "evolution_line": "growlithe"
+  },
+  {
+    "id": 59,
+    "name": "arcanine",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 110,
+      "defense": 80,
+      "special-attack": 100,
+      "special-defense": 80,
+      "speed": 95
+    },
+    "height_dm": 19,
+    "weight_hg": 1550,
+    "base_experience": 194,
+    "abilities": [
+      "intimidate",
+      "flash-fire",
+      "justified"
+    ],
+    "flavor_text": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
+    "evolves_from": "growlithe",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "윈디",
+    "name_ja": "ウインディ",
+    "flavor_text_ko": "옛날부터 많은 사람의 마음을 사로잡은 아름다운 포켓몬이다. 날듯이 경쾌하게 달린다.",
+    "evolution_line": "growlithe"
+  },
+  {
+    "id": 60,
+    "name": "poliwag",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 50,
+      "defense": 40,
+      "special-attack": 40,
+      "special-defense": 40,
+      "speed": 90
+    },
+    "height_dm": 6,
+    "weight_hg": 124,
+    "base_experience": 60,
+    "abilities": [
+      "water-absorb",
+      "damp",
+      "swift-swim"
+    ],
+    "flavor_text": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "발챙이",
+    "name_ja": "ニョロモ",
+    "flavor_text_ko": "매끄럽고 검은 피부는 얇고 축축하다. 내장 일부가 비쳐서 소용돌이 모양으로 보인다.",
+    "evolution_line": "poliwag"
+  },
+  {
+    "id": 61,
+    "name": "poliwhirl",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 65,
+      "special-attack": 50,
+      "special-defense": 50,
+      "speed": 90
+    },
+    "height_dm": 10,
+    "weight_hg": 200,
+    "base_experience": 135,
+    "abilities": [
+      "water-absorb",
+      "damp",
+      "swift-swim"
+    ],
+    "flavor_text": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
+    "evolves_from": "poliwag",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "슈륙챙이",
+    "name_ja": "ニョロゾ",
+    "flavor_text_ko": "육지에서도 수중에서도 살 수 있다. 지상에서는 항상 땀을 흘려서 피부를 미끌미끌하게 하고 있다.",
+    "evolution_line": "poliwag"
+  },
+  {
+    "id": 62,
+    "name": "poliwrath",
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 95,
+      "defense": 95,
+      "special-attack": 70,
+      "special-defense": 90,
+      "speed": 70
+    },
+    "height_dm": 13,
+    "weight_hg": 540,
+    "base_experience": 230,
+    "abilities": [
+      "water-absorb",
+      "damp",
+      "swift-swim"
+    ],
+    "flavor_text": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
+    "evolves_from": "poliwhirl",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "강챙이",
+    "name_ja": "ニョロボン",
+    "flavor_text_ko": "강인한 근육을 가지고 있다. 태평양을 쉬지 않고 계속 헤엄칠 수 있다.",
+    "evolution_line": "poliwhirl"
+  },
+  {
+    "id": 63,
+    "name": "abra",
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 15,
+      "special-attack": 105,
+      "special-defense": 55,
+      "speed": 90
+    },
+    "height_dm": 9,
+    "weight_hg": 195,
+    "base_experience": 62,
+    "abilities": [
+      "synchronize",
+      "inner-focus",
+      "magic-guard"
+    ],
+    "flavor_text": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 200,
+    "name_ko": "캐이시",
+    "name_ja": "ケーシィ",
+    "flavor_text_ko": "하루에 18시간은 자고 있다. 자는 동안에도 다양한 초능력을 사용한다.",
+    "evolution_line": "abra"
+  },
+  {
+    "id": 64,
+    "name": "kadabra",
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "special-attack": 120,
+      "special-defense": 70,
+      "speed": 105
+    },
+    "height_dm": 13,
+    "weight_hg": 565,
+    "base_experience": 140,
+    "abilities": [
+      "synchronize",
+      "inner-focus",
+      "magic-guard"
+    ],
+    "flavor_text": "It emits special alpha waves from its body that induce headaches just by being close by.",
+    "evolves_from": "abra",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 100,
+    "name_ko": "윤겔라",
+    "name_ja": "ユンゲラー",
+    "flavor_text_ko": "초능력을 발휘하면 강한 알파파를 내어 정밀 기계를 고장 내 버린다.",
+    "evolution_line": "abra"
+  },
+  {
+    "id": 65,
+    "name": "alakazam",
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 50,
+      "defense": 45,
+      "special-attack": 135,
+      "special-defense": 95,
+      "speed": 120
+    },
+    "height_dm": 15,
+    "weight_hg": 480,
+    "base_experience": 225,
+    "abilities": [
+      "synchronize",
+      "inner-focus",
+      "magic-guard"
+    ],
+    "flavor_text": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000.",
+    "evolves_from": "kadabra",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 50,
+    "name_ko": "후딘",
+    "name_ja": "フーディン",
+    "flavor_text_ko": "뇌세포는 항상 분열해서 죽을 때까지 늘어나기 때문에 모든 것을 기억해 놓을 수 있다.",
+    "evolution_line": "kadabra"
+  },
+  {
+    "id": 66,
+    "name": "machop",
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 50,
+      "special-attack": 35,
+      "special-defense": 35,
+      "speed": 35
+    },
+    "height_dm": 8,
+    "weight_hg": 195,
+    "base_experience": 61,
+    "abilities": [
+      "guts",
+      "no-guard",
+      "steadfast"
+    ],
+    "flavor_text": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 180,
+    "name_ko": "알통몬",
+    "name_ja": "ワンリキー",
+    "flavor_text_ko": "데구리를 수없이 들었다 놨다 하며 전신의 근육을 단련한다. 모든 격투기를 사용한다.",
+    "evolution_line": "machop"
+  },
+  {
+    "id": 67,
+    "name": "machoke",
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 100,
+      "defense": 70,
+      "special-attack": 50,
+      "special-defense": 60,
+      "speed": 45
+    },
+    "height_dm": 15,
+    "weight_hg": 705,
+    "base_experience": 142,
+    "abilities": [
+      "guts",
+      "no-guard",
+      "steadfast"
+    ],
+    "flavor_text": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.",
+    "evolves_from": "machop",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 90,
+    "name_ko": "근육몬",
+    "name_ja": "ゴーリキー",
+    "flavor_text_ko": "엄청나게 강한 육체를 지녔기 때문에 파워 세이브 벨트를 차서 힘을 제어하고 있다.",
+    "evolution_line": "machop"
+  },
+  {
+    "id": 68,
+    "name": "machamp",
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 130,
+      "defense": 80,
+      "special-attack": 65,
+      "special-defense": 85,
+      "speed": 55
+    },
+    "height_dm": 16,
+    "weight_hg": 1300,
+    "base_experience": 227,
+    "abilities": [
+      "guts",
+      "no-guard",
+      "steadfast"
+    ],
+    "flavor_text": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
+    "evolves_from": "machoke",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "괴력몬",
+    "name_ja": "カイリキー",
+    "flavor_text_ko": "발달한 4개의 팔은 2초 동안 1000번의 펀치를 날릴 수 있다.",
+    "evolution_line": "machoke"
+  },
+  {
+    "id": 69,
+    "name": "bellsprout",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 35,
+      "special-attack": 70,
+      "special-defense": 30,
+      "speed": 40
+    },
+    "height_dm": 7,
+    "weight_hg": 40,
+    "base_experience": 60,
+    "abilities": [
+      "chlorophyll",
+      "gluttony"
+    ],
+    "flavor_text": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "모다피",
+    "name_ja": "マダツボミ",
+    "flavor_text_ko": "홀쭉한 체격이지만 먹이를 잡을 때의 움직임은 눈에 보이지 않을 정도로 빠르다.",
+    "evolution_line": "bellsprout"
+  },
+  {
+    "id": 70,
+    "name": "weepinbell",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 50,
+      "special-attack": 85,
+      "special-defense": 45,
+      "speed": 55
+    },
+    "height_dm": 10,
+    "weight_hg": 64,
+    "base_experience": 137,
+    "abilities": [
+      "chlorophyll",
+      "gluttony"
+    ],
+    "flavor_text": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
+    "evolves_from": "bellsprout",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "우츠동",
+    "name_ja": "ウツドン",
+    "flavor_text_ko": "잎사귀 부분은 칼날이 되어 상대를 베어버린다. 입에서는 무엇이든 녹이는 액체를 뿜어낸다.",
+    "evolution_line": "bellsprout"
+  },
+  {
+    "id": 71,
+    "name": "victreebel",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "special-attack": 100,
+      "special-defense": 70,
+      "speed": 70
+    },
+    "height_dm": 17,
+    "weight_hg": 155,
+    "base_experience": 221,
+    "abilities": [
+      "chlorophyll",
+      "gluttony"
+    ],
+    "flavor_text": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
+    "evolves_from": "weepinbell",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "우츠보트",
+    "name_ja": "ウツボット",
+    "flavor_text_ko": "정글의 안쪽에 우츠보트만 있는 지대가 있어서 한 번 가면 두 번 다시 돌아올 수 없다.",
+    "evolution_line": "weepinbell"
+  },
+  {
+    "id": 72,
+    "name": "tentacool",
+    "types": [
+      "water",
+      "poison"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 40,
+      "defense": 35,
+      "special-attack": 50,
+      "special-defense": 100,
+      "speed": 70
+    },
+    "height_dm": 9,
+    "weight_hg": 455,
+    "base_experience": 67,
+    "abilities": [
+      "clear-body",
+      "liquid-ooze",
+      "rain-dish"
+    ],
+    "flavor_text": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "왕눈해",
+    "name_ja": "メノクラゲ",
+    "flavor_text_ko": "몸 대부분이 수분이다. 수정 같은 눈에서 이상한 빔을 발사한다.",
+    "evolution_line": "tentacool"
+  },
+  {
+    "id": 73,
+    "name": "tentacruel",
+    "types": [
+      "water",
+      "poison"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 70,
+      "defense": 65,
+      "special-attack": 80,
+      "special-defense": 120,
+      "speed": 100
+    },
+    "height_dm": 16,
+    "weight_hg": 550,
+    "base_experience": 180,
+    "abilities": [
+      "clear-body",
+      "liquid-ooze",
+      "rain-dish"
+    ],
+    "flavor_text": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
+    "evolves_from": "tentacool",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "독파리",
+    "name_ja": "ドククラゲ",
+    "flavor_text_ko": "촉수는 평소에는 짧고 먹이를 찌를 때 길게 늘어나 휘감는다.",
+    "evolution_line": "tentacool"
+  },
+  {
+    "id": 74,
+    "name": "geodude",
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "special-attack": 30,
+      "special-defense": 30,
+      "speed": 20
+    },
+    "height_dm": 4,
+    "weight_hg": 200,
+    "base_experience": 60,
+    "abilities": [
+      "rock-head",
+      "sturdy",
+      "sand-veil"
+    ],
+    "flavor_text": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "꼬마돌",
+    "name_ja": "イシツブテ",
+    "flavor_text_ko": "초원이나 산에 서식한다. 돌멩이와 닮은 탓에 알아채지 못하고 밟거나 발이 걸려 넘어지기도 한다.",
+    "evolution_line": "geodude"
+  },
+  {
+    "id": 75,
+    "name": "graveler",
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 95,
+      "defense": 115,
+      "special-attack": 45,
+      "special-defense": 45,
+      "speed": 35
+    },
+    "height_dm": 10,
+    "weight_hg": 1050,
+    "base_experience": 137,
+    "abilities": [
+      "rock-head",
+      "sturdy",
+      "sand-veil"
+    ],
+    "flavor_text": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
+    "evolves_from": "geodude",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "데구리",
+    "name_ja": "ゴローン",
+    "flavor_text_ko": "산에서 굴러 떨어질 때 몸의 여기저기가 부서져도 신경 쓰지 않는 호쾌한 성격이다.",
+    "evolution_line": "geodude"
+  },
+  {
+    "id": 76,
+    "name": "golem",
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 120,
+      "defense": 130,
+      "special-attack": 55,
+      "special-defense": 65,
+      "speed": 45
+    },
+    "height_dm": 14,
+    "weight_hg": 3000,
+    "base_experience": 223,
+    "abilities": [
+      "rock-head",
+      "sturdy",
+      "sand-veil"
+    ],
+    "flavor_text": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.",
+    "evolves_from": "graveler",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "딱구리",
+    "name_ja": "ゴローニャ",
+    "flavor_text_ko": "산 정상에서 산기슭까지 이어지는 움푹 패인 홈은 딱구리가 굴러 다니는 길이므로 주의가 필요하다.",
+    "evolution_line": "graveler"
+  },
+  {
+    "id": 77,
+    "name": "ponyta",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 85,
+      "defense": 55,
+      "special-attack": 65,
+      "special-defense": 65,
+      "speed": 90
+    },
+    "height_dm": 10,
+    "weight_hg": 300,
+    "base_experience": 82,
+    "abilities": [
+      "run-away",
+      "flash-fire",
+      "flame-body"
+    ],
+    "flavor_text": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "포니타",
+    "name_ja": "ポニータ",
+    "flavor_text_ko": "막 태어나서는 겨우 일어설 수 있을 정도이지만 많이 달리면 하반신이 단련되어 달리는 속도가 빨라진다.",
+    "evolution_line": "ponyta"
+  },
+  {
+    "id": 78,
+    "name": "rapidash",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 100,
+      "defense": 70,
+      "special-attack": 80,
+      "special-defense": 80,
+      "speed": 105
+    },
+    "height_dm": 17,
+    "weight_hg": 950,
+    "base_experience": 175,
+    "abilities": [
+      "run-away",
+      "flash-fire",
+      "flame-body"
+    ],
+    "flavor_text": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
+    "evolves_from": "ponyta",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "날쌩마",
+    "name_ja": "ギャロップ",
+    "flavor_text_ko": "빠르게 움직이는 물체를 보면 경주를 하고 싶어져서 맹렬한 스피드로 쫓아가기 시작한다.",
+    "evolution_line": "ponyta"
+  },
+  {
+    "id": 79,
+    "name": "slowpoke",
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 65,
+      "defense": 65,
+      "special-attack": 40,
+      "special-defense": 40,
+      "speed": 15
+    },
+    "height_dm": 12,
+    "weight_hg": 360,
+    "base_experience": 63,
+    "abilities": [
+      "oblivious",
+      "own-tempo",
+      "regenerator"
+    ],
+    "flavor_text": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "야돈",
+    "name_ja": "ヤドン",
+    "flavor_text_ko": "항상 멍하니 있으므로 무슨 생각을 하고 있는지 알 수 없다. 꼬리로 먹이를 낚는 것이 특기다.",
+    "evolution_line": "slowpoke"
+  },
+  {
+    "id": 80,
+    "name": "slowbro",
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 95,
+      "attack": 75,
+      "defense": 110,
+      "special-attack": 100,
+      "special-defense": 80,
+      "speed": 30
+    },
+    "height_dm": 16,
+    "weight_hg": 785,
+    "base_experience": 172,
+    "abilities": [
+      "oblivious",
+      "own-tempo",
+      "regenerator"
+    ],
+    "flavor_text": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
+    "evolves_from": "slowpoke",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "야도란",
+    "name_ja": "ヤドラン",
+    "flavor_text_ko": "붙어 있는 셀러는 꼬리에서 배어 나오는 맛을 좋아해서 계속 떨어지지 않는다.",
+    "evolution_line": "slowpoke"
+  },
+  {
+    "id": 81,
+    "name": "magnemite",
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "stats": {
+      "hp": 25,
+      "attack": 35,
+      "defense": 70,
+      "special-attack": 95,
+      "special-defense": 55,
+      "speed": 45
+    },
+    "height_dm": 3,
+    "weight_hg": 60,
+    "base_experience": 65,
+    "abilities": [
+      "magnet-pull",
+      "sturdy",
+      "analytic"
+    ],
+    "flavor_text": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "코일",
+    "name_ja": "コイル",
+    "flavor_text_ko": "좌우의 유닛에서 중력을 차단하는 힘을 발휘하기에 공중에 뜰 수 있다.",
+    "evolution_line": "magnemite"
+  },
+  {
+    "id": 82,
+    "name": "magneton",
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 60,
+      "defense": 95,
+      "special-attack": 120,
+      "special-defense": 70,
+      "speed": 70
+    },
+    "height_dm": 10,
+    "weight_hg": 600,
+    "base_experience": 163,
+    "abilities": [
+      "magnet-pull",
+      "sturdy",
+      "analytic"
+    ],
+    "flavor_text": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up.",
+    "evolves_from": "magnemite",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "레어코일",
+    "name_ja": "レアコイル",
+    "flavor_text_ko": "다수의 코일이 연결되어 강력한 자기장과 높은 전압을 방사한다.",
+    "evolution_line": "magnemite"
+  },
+  {
+    "id": 83,
+    "name": "farfetchd",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 52,
+      "attack": 90,
+      "defense": 55,
+      "special-attack": 58,
+      "special-defense": 62,
+      "speed": 60
+    },
+    "height_dm": 8,
+    "weight_hg": 150,
+    "base_experience": 132,
+    "abilities": [
+      "keen-eye",
+      "inner-focus",
+      "defiant"
+    ],
+    "flavor_text": "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "파오리",
+    "name_ja": "カモネギ",
+    "flavor_text_ko": "가지고 있는 파 줄기는 소중한 무기이기도 하며 칼을 휘두르듯 다양한 것을 자를 수 있다.",
+    "evolution_line": "farfetchd"
+  },
+  {
+    "id": 84,
+    "name": "doduo",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 85,
+      "defense": 45,
+      "special-attack": 35,
+      "special-defense": 35,
+      "speed": 75
+    },
+    "height_dm": 14,
+    "weight_hg": 392,
+    "base_experience": 62,
+    "abilities": [
+      "run-away",
+      "early-bird",
+      "tangled-feet"
+    ],
+    "flavor_text": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "두두",
+    "name_ja": "ドードー",
+    "flavor_text_ko": "돌연변이로 발견된 두 개의 머리를 지닌 포켓몬이다. 시속 100km로 달린다.",
+    "evolution_line": "doduo"
+  },
+  {
+    "id": 85,
+    "name": "dodrio",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 110,
+      "defense": 70,
+      "special-attack": 60,
+      "special-defense": 60,
+      "speed": 110
+    },
+    "height_dm": 18,
+    "weight_hg": 852,
+    "base_experience": 165,
+    "abilities": [
+      "run-away",
+      "early-bird",
+      "tangled-feet"
+    ],
+    "flavor_text": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
+    "evolves_from": "doduo",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "두트리오",
+    "name_ja": "ドードリオ",
+    "flavor_text_ko": "3개의 머리가 보고 있는 앞에서 조금이라도 빈틈을 보이면 부리로 격렬하게 쪼아댄다.",
+    "evolution_line": "doduo"
+  },
+  {
+    "id": 86,
+    "name": "seel",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 45,
+      "defense": 55,
+      "special-attack": 45,
+      "special-defense": 70,
+      "speed": 45
+    },
+    "height_dm": 11,
+    "weight_hg": 900,
+    "base_experience": 65,
+    "abilities": [
+      "thick-fat",
+      "hydration",
+      "ice-body"
+    ],
+    "flavor_text": "The protruding horn on its head is very hard. It is used for bashing through thick ice.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "쥬쥬",
+    "name_ja": "パウワウ",
+    "flavor_text_ko": "빙산에 사는 포켓몬이다. 머리의 뾰족하게 돌출된 부분으로 얼음을 깨고 바다를 헤엄친다.",
+    "evolution_line": "seel"
+  },
+  {
+    "id": 87,
+    "name": "dewgong",
+    "types": [
+      "water",
+      "ice"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 70,
+      "defense": 80,
+      "special-attack": 70,
+      "special-defense": 95,
+      "speed": 70
+    },
+    "height_dm": 17,
+    "weight_hg": 1200,
+    "base_experience": 166,
+    "abilities": [
+      "thick-fat",
+      "hydration",
+      "ice-body"
+    ],
+    "flavor_text": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
+    "evolves_from": "seel",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "쥬레곤",
+    "name_ja": "ジュゴン",
+    "flavor_text_ko": "전신이 새하얀 털로 뒤덮여 있다. 추위에 강해서 오히려 추울수록 힘이 넘쳐 난다.",
+    "evolution_line": "seel"
+  },
+  {
+    "id": 88,
+    "name": "grimer",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 80,
+      "defense": 50,
+      "special-attack": 40,
+      "special-defense": 50,
+      "speed": 25
+    },
+    "height_dm": 9,
+    "weight_hg": 300,
+    "base_experience": 65,
+    "abilities": [
+      "stench",
+      "sticky-hold",
+      "poison-touch"
+    ],
+    "flavor_text": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "질퍽이",
+    "name_ja": "ベトベター",
+    "flavor_text_ko": "달로부터의 X선을 쬔 오물이 질퍽이로 변화했다. 더러운 것을 좋아한다.",
+    "evolution_line": "grimer"
+  },
+  {
+    "id": 89,
+    "name": "muk",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 105,
+      "attack": 105,
+      "defense": 75,
+      "special-attack": 65,
+      "special-defense": 100,
+      "speed": 50
+    },
+    "height_dm": 12,
+    "weight_hg": 300,
+    "base_experience": 175,
+    "abilities": [
+      "stench",
+      "sticky-hold",
+      "poison-touch"
+    ],
+    "flavor_text": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
+    "evolves_from": "grimer",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "질뻐기",
+    "name_ja": "ベトベトン",
+    "flavor_text_ko": "진흙이 쌓여 악취가 나는 장소를 좋아해서 모여들기 때문에 주변은 더욱 악취가 난다.",
+    "evolution_line": "grimer"
+  },
+  {
+    "id": 90,
+    "name": "shellder",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 65,
+      "defense": 100,
+      "special-attack": 45,
+      "special-defense": 25,
+      "speed": 40
+    },
+    "height_dm": 3,
+    "weight_hg": 40,
+    "base_experience": 61,
+    "abilities": [
+      "shell-armor",
+      "skill-link",
+      "overcoat"
+    ],
+    "flavor_text": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "셀러",
+    "name_ja": "シェルダー",
+    "flavor_text_ko": "단단한 껍데기는 어떤 공격도 튕겨낸다. 껍데기를 벌리고 있을 때 안쪽을 공격당하는 것에는 약하다.",
+    "evolution_line": "shellder"
+  },
+  {
+    "id": 91,
+    "name": "cloyster",
+    "types": [
+      "water",
+      "ice"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 95,
+      "defense": 180,
+      "special-attack": 85,
+      "special-defense": 45,
+      "speed": 70
+    },
+    "height_dm": 15,
+    "weight_hg": 1325,
+    "base_experience": 184,
+    "abilities": [
+      "shell-armor",
+      "skill-link",
+      "overcoat"
+    ],
+    "flavor_text": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
+    "evolves_from": "shellder",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "파르셀",
+    "name_ja": "パルシェン",
+    "flavor_text_ko": "조수의 흐름이 격한 바다에 서식하고 있는 파르셀의 껍질의 가시는 크고 날카롭다.",
+    "evolution_line": "shellder"
+  },
+  {
+    "id": 92,
+    "name": "gastly",
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 35,
+      "defense": 30,
+      "special-attack": 100,
+      "special-defense": 35,
+      "speed": 80
+    },
+    "height_dm": 13,
+    "weight_hg": 1,
+    "base_experience": 62,
+    "abilities": [
+      "levitate"
+    ],
+    "flavor_text": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "고오스",
+    "name_ja": "ゴース",
+    "flavor_text_ko": "가스로 만들어진 몸은 어떠한 크기의 상대라도 둘러싸서 숨을 못 쉬게 한다.",
+    "evolution_line": "gastly"
+  },
+  {
+    "id": 93,
+    "name": "haunter",
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 45,
+      "special-attack": 115,
+      "special-defense": 55,
+      "speed": 95
+    },
+    "height_dm": 16,
+    "weight_hg": 1,
+    "base_experience": 142,
+    "abilities": [
+      "levitate"
+    ],
+    "flavor_text": "Because of its ability to slip through block walls, it is said to be from an­ other dimension.",
+    "evolves_from": "gastly",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 90,
+    "name_ko": "고우스트",
+    "name_ja": "ゴースト",
+    "flavor_text_ko": "어둠 속에서 아무도 없는데도 누군가가 보고 있다는 느낌이 들면 그곳에 고우스트가 있는 것이다.",
+    "evolution_line": "gastly"
+  },
+  {
+    "id": 94,
+    "name": "gengar",
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "special-attack": 130,
+      "special-defense": 75,
+      "speed": 110
+    },
+    "height_dm": 15,
+    "weight_hg": 405,
+    "base_experience": 225,
+    "abilities": [
+      "cursed-body"
+    ],
+    "flavor_text": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
+    "evolves_from": "haunter",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "팬텀",
+    "name_ja": "ゲンガー",
+    "flavor_text_ko": "그림자에 모습을 숨긴다. 팬텀이 숨어 있는 방은 온도가 5도 내려간다고 전해진다.",
+    "evolution_line": "haunter"
+  },
+  {
+    "id": 95,
+    "name": "onix",
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 45,
+      "defense": 160,
+      "special-attack": 30,
+      "special-defense": 45,
+      "speed": 70
+    },
+    "height_dm": 88,
+    "weight_hg": 2100,
+    "base_experience": 77,
+    "abilities": [
+      "rock-head",
+      "sturdy",
+      "weak-armor"
+    ],
+    "flavor_text": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "롱스톤",
+    "name_ja": "イワーク",
+    "flavor_text_ko": "땅속을 엄청난 기세로 뚫고 나아가며 먹이를 찾는다. 지나간 곳은 디그다의 보금자리가 된다.",
+    "evolution_line": "onix"
+  },
+  {
+    "id": 96,
+    "name": "drowzee",
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 48,
+      "defense": 45,
+      "special-attack": 43,
+      "special-defense": 90,
+      "speed": 42
+    },
+    "height_dm": 10,
+    "weight_hg": 324,
+    "base_experience": 66,
+    "abilities": [
+      "insomnia",
+      "forewarn",
+      "inner-focus"
+    ],
+    "flavor_text": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "슬리프",
+    "name_ja": "スリープ",
+    "flavor_text_ko": "잠들게 한 뒤 꿈을 먹지만 나쁜 꿈만 먹고 있으면 배탈이 날 때도 있는 것 같다.",
+    "evolution_line": "drowzee"
+  },
+  {
+    "id": 97,
+    "name": "hypno",
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 85,
+      "attack": 73,
+      "defense": 70,
+      "special-attack": 73,
+      "special-defense": 115,
+      "speed": 67
+    },
+    "height_dm": 16,
+    "weight_hg": 756,
+    "base_experience": 169,
+    "abilities": [
+      "insomnia",
+      "forewarn",
+      "inner-focus"
+    ],
+    "flavor_text": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
+    "evolves_from": "drowzee",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "슬리퍼",
+    "name_ja": "スリーパー",
+    "flavor_text_ko": "추 같은 것을 들고 다닌다. 어린아이에게 최면술을 걸어 어딘가로 데려가 버린 사건이 있었다.",
+    "evolution_line": "drowzee"
+  },
+  {
+    "id": 98,
+    "name": "krabby",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 105,
+      "defense": 90,
+      "special-attack": 25,
+      "special-defense": 25,
+      "speed": 50
+    },
+    "height_dm": 4,
+    "weight_hg": 65,
+    "base_experience": 65,
+    "abilities": [
+      "hyper-cutter",
+      "shell-armor",
+      "sheer-force"
+    ],
+    "flavor_text": "Its pincers are not only powerful weapons, they are used for balance when walking sideways.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 225,
+    "name_ko": "크랩",
+    "name_ja": "クラブ",
+    "flavor_text_ko": "위험이 닥치면 입에서 뿜어내는 거품으로 전신을 감싸서 몸을 크게 보이려고 한다.",
+    "evolution_line": "krabby"
+  },
+  {
+    "id": 99,
+    "name": "kingler",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 130,
+      "defense": 115,
+      "special-attack": 50,
+      "special-defense": 50,
+      "speed": 75
+    },
+    "height_dm": 13,
+    "weight_hg": 600,
+    "base_experience": 166,
+    "abilities": [
+      "hyper-cutter",
+      "shell-armor",
+      "sheer-force"
+    ],
+    "flavor_text": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
+    "evolves_from": "krabby",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "킹크랩",
+    "name_ja": "キングラー",
+    "flavor_text_ko": "단단한 집게는 1만 마력의 파워를 지녔지만 너무 커서 움직임이 둔하다.",
+    "evolution_line": "krabby"
+  },
+  {
+    "id": 100,
+    "name": "voltorb",
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 30,
+      "defense": 50,
+      "special-attack": 55,
+      "special-defense": 55,
+      "speed": 100
+    },
+    "height_dm": 5,
+    "weight_hg": 104,
+    "base_experience": 66,
+    "abilities": [
+      "soundproof",
+      "static",
+      "aftermath"
+    ],
+    "flavor_text": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "찌리리공",
+    "name_ja": "ビリリダマ",
+    "flavor_text_ko": "몬스터볼이 팔리기 시작했을 때와 같은 시기에 발견되었다. 뭔가 관계가 있다고 전해진다.",
+    "evolution_line": "voltorb"
+  },
+  {
+    "id": 101,
+    "name": "electrode",
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 50,
+      "defense": 70,
+      "special-attack": 80,
+      "special-defense": 80,
+      "speed": 150
+    },
+    "height_dm": 12,
+    "weight_hg": 666,
+    "base_experience": 172,
+    "abilities": [
+      "soundproof",
+      "static",
+      "aftermath"
+    ],
+    "flavor_text": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
+    "evolves_from": "voltorb",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "붐볼",
+    "name_ja": "マルマイン",
+    "flavor_text_ko": "작은 자극에도 반응해서 폭발한다. 폭탄볼이라 불리며 두려움의 대상이 되고 있다.",
+    "evolution_line": "voltorb"
+  },
+  {
+    "id": 102,
+    "name": "exeggcute",
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 40,
+      "defense": 80,
+      "special-attack": 60,
+      "special-defense": 45,
+      "speed": 40
+    },
+    "height_dm": 4,
+    "weight_hg": 25,
+    "base_experience": 65,
+    "abilities": [
+      "chlorophyll",
+      "harvest"
+    ],
+    "flavor_text": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 90,
+    "name_ko": "아라리",
+    "name_ja": "タマタマ",
+    "flavor_text_ko": "텔레파시로 대화를 하기 때문에 아라리를 갈라놓으려 해도 바로 모여들어 6마리가 된다.",
+    "evolution_line": "exeggcute"
+  },
+  {
+    "id": 103,
+    "name": "exeggutor",
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 95,
+      "attack": 95,
+      "defense": 85,
+      "special-attack": 125,
+      "special-defense": 75,
+      "speed": 55
+    },
+    "height_dm": 20,
+    "weight_hg": 1200,
+    "base_experience": 186,
+    "abilities": [
+      "chlorophyll",
+      "harvest"
+    ],
+    "flavor_text": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
+    "evolves_from": "exeggcute",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "나시",
+    "name_ja": "ナッシー",
+    "flavor_text_ko": "3개의 머리는 생각하는 것이 각각 다르지만 사이가 좋아서 싸우지 않는 것 같다.",
+    "evolution_line": "exeggcute"
+  },
+  {
+    "id": 104,
+    "name": "cubone",
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 95,
+      "special-attack": 40,
+      "special-defense": 50,
+      "speed": 35
+    },
+    "height_dm": 4,
+    "weight_hg": 65,
+    "base_experience": 64,
+    "abilities": [
+      "rock-head",
+      "lightning-rod",
+      "battle-armor"
+    ],
+    "flavor_text": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "탕구리",
+    "name_ja": "カラカラ",
+    "flavor_text_ko": "죽은 어미의 해골을 머리에 쓰고 있다. 외로울 때는 큰 소리로 운다고 한다.",
+    "evolution_line": "cubone"
+  },
+  {
+    "id": 105,
+    "name": "marowak",
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 80,
+      "defense": 110,
+      "special-attack": 50,
+      "special-defense": 80,
+      "speed": 45
+    },
+    "height_dm": 10,
+    "weight_hg": 450,
+    "base_experience": 149,
+    "abilities": [
+      "rock-head",
+      "lightning-rod",
+      "battle-armor"
+    ],
+    "flavor_text": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
+    "evolves_from": "cubone",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "텅구리",
+    "name_ja": "ガラガラ",
+    "flavor_text_ko": "몸집도 작으며 원래는 약했다. 뼈를 쓰기 시작하면서 성격이 흉포해졌다.",
+    "evolution_line": "cubone"
+  },
+  {
+    "id": 106,
+    "name": "hitmonlee",
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 120,
+      "defense": 53,
+      "special-attack": 35,
+      "special-defense": 110,
+      "speed": 87
+    },
+    "height_dm": 15,
+    "weight_hg": 498,
+    "base_experience": 159,
+    "abilities": [
+      "limber",
+      "reckless",
+      "unburden"
+    ],
+    "flavor_text": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.",
+    "evolves_from": "tyrogue",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "시라소몬",
+    "name_ja": "サワムラー",
+    "flavor_text_ko": "다리를 자유자재로 늘였다 줄였다 한다. 멀리 떨어져 있을 때도 상대를 차올릴 수 있다.",
+    "evolution_line": "tyrogue"
+  },
+  {
+    "id": 107,
+    "name": "hitmonchan",
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 105,
+      "defense": 79,
+      "special-attack": 35,
+      "special-defense": 110,
+      "speed": 76
+    },
+    "height_dm": 14,
+    "weight_hg": 502,
+    "base_experience": 159,
+    "abilities": [
+      "keen-eye",
+      "iron-fist",
+      "inner-focus"
+    ],
+    "flavor_text": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
+    "evolves_from": "tyrogue",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "홍수몬",
+    "name_ja": "エビワラー",
+    "flavor_text_ko": "팔을 비틀며 날리는 펀치는 콘크리트도 부스러뜨린다. 3분 싸우면 잠시 쉰다.",
+    "evolution_line": "tyrogue"
+  },
+  {
+    "id": 108,
+    "name": "lickitung",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 55,
+      "defense": 75,
+      "special-attack": 60,
+      "special-defense": 75,
+      "speed": 30
+    },
+    "height_dm": 12,
+    "weight_hg": 655,
+    "base_experience": 77,
+    "abilities": [
+      "own-tempo",
+      "oblivious",
+      "cloud-nine"
+    ],
+    "flavor_text": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "내루미",
+    "name_ja": "ベロリンガ",
+    "flavor_text_ko": "긴 혀는 끈적끈적한 침으로 덮여 있다. 어떤 것이든 달라붙어서 매우 편리하다.",
+    "evolution_line": "lickitung"
+  },
+  {
+    "id": 109,
+    "name": "koffing",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 65,
+      "defense": 95,
+      "special-attack": 60,
+      "special-defense": 45,
+      "speed": 35
+    },
+    "height_dm": 6,
+    "weight_hg": 10,
+    "base_experience": 68,
+    "abilities": [
+      "levitate",
+      "neutralizing-gas",
+      "stench"
+    ],
+    "flavor_text": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 190,
+    "name_ko": "또가스",
+    "name_ja": "ドガース",
+    "flavor_text_ko": "얇고 풍선 같은 몸에 맹독 가스가 차있다. 가까이 오면 역겨운 냄새가 난다.",
+    "evolution_line": "koffing"
+  },
+  {
+    "id": 110,
+    "name": "weezing",
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 120,
+      "special-attack": 85,
+      "special-defense": 70,
+      "speed": 60
+    },
+    "height_dm": 12,
+    "weight_hg": 95,
+    "base_experience": 172,
+    "abilities": [
+      "levitate",
+      "neutralizing-gas",
+      "stench"
+    ],
+    "flavor_text": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years.",
+    "evolves_from": "koffing",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "또도가스",
+    "name_ja": "マタドガス",
+    "flavor_text_ko": "한쪽이 부풀어 오르면 다른 한쪽은 오그라드는 쌍둥이 또가스. 항상 체내의 독가스를 섞고 있다.",
+    "evolution_line": "koffing"
+  },
+  {
+    "id": 111,
+    "name": "rhyhorn",
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 85,
+      "defense": 95,
+      "special-attack": 30,
+      "special-defense": 30,
+      "speed": 25
+    },
+    "height_dm": 10,
+    "weight_hg": 1150,
+    "base_experience": 69,
+    "abilities": [
+      "lightning-rod",
+      "rock-head",
+      "reckless"
+    ],
+    "flavor_text": "A POKéMON with a one-track mind. Once it charges,  it won't stop running until it falls asleep.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 120,
+    "name_ko": "뿔카노",
+    "name_ja": "サイホーン",
+    "flavor_text_ko": "머리는 나쁘지만 힘이 세서 고층 빌딩도 몸통박치기로 산산조각 낸다.",
+    "evolution_line": "rhyhorn"
+  },
+  {
+    "id": 112,
+    "name": "rhydon",
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "stats": {
+      "hp": 105,
+      "attack": 130,
+      "defense": 120,
+      "special-attack": 45,
+      "special-defense": 45,
+      "speed": 40
+    },
+    "height_dm": 19,
+    "weight_hg": 1200,
+    "base_experience": 170,
+    "abilities": [
+      "lightning-rod",
+      "rock-head",
+      "reckless"
+    ],
+    "flavor_text": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
+    "evolves_from": "rhyhorn",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "코뿌리",
+    "name_ja": "サイドン",
+    "flavor_text_ko": "전신을 갑옷 같은 피부로 보호하고 있다. 2000도의 마그마 속에서도 살 수 있다.",
+    "evolution_line": "rhyhorn"
+  },
+  {
+    "id": 113,
+    "name": "chansey",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 250,
+      "attack": 5,
+      "defense": 5,
+      "special-attack": 35,
+      "special-defense": 105,
+      "speed": 50
+    },
+    "height_dm": 11,
+    "weight_hg": 346,
+    "base_experience": 395,
+    "abilities": [
+      "natural-cure",
+      "serene-grace",
+      "healer"
+    ],
+    "flavor_text": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it.",
+    "evolves_from": "happiny",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 30,
+    "name_ko": "럭키",
+    "name_ja": "ラッキー",
+    "flavor_text_ko": "행복을 가져다준다고 전해진다. 상처 입은 사람에게 알을 나눠주는 상냥한 포켓몬이다.",
+    "evolution_line": "happiny"
+  },
+  {
+    "id": 114,
+    "name": "tangela",
+    "types": [
+      "grass"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 55,
+      "defense": 115,
+      "special-attack": 100,
+      "special-defense": 40,
+      "speed": 60
+    },
+    "height_dm": 10,
+    "weight_hg": 350,
+    "base_experience": 87,
+    "abilities": [
+      "chlorophyll",
+      "leaf-guard",
+      "regenerator"
+    ],
+    "flavor_text": "The whole body is swathed with wide vines that are similar to sea­ weed. Its vines shake as it walks.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "덩쿠리",
+    "name_ja": "モンジャラ",
+    "flavor_text_ko": "수많은 움직이는 덩굴에 둘러싸여 정체불명이다. 파란 덩굴은 평생 자란다.",
+    "evolution_line": "tangela"
+  },
+  {
+    "id": 115,
+    "name": "kangaskhan",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 105,
+      "attack": 95,
+      "defense": 80,
+      "special-attack": 40,
+      "special-defense": 80,
+      "speed": 90
+    },
+    "height_dm": 22,
+    "weight_hg": 800,
+    "base_experience": 172,
+    "abilities": [
+      "early-bird",
+      "scrappy",
+      "inner-focus"
+    ],
+    "flavor_text": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "캥카",
+    "name_ja": "ガルーラ",
+    "flavor_text_ko": "배의 주머니에서 새끼를 키운다. 안전할 때만 새끼를 주머니에서 꺼내어 놀게 한다.",
+    "evolution_line": "kangaskhan"
+  },
+  {
+    "id": 116,
+    "name": "horsea",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 40,
+      "defense": 70,
+      "special-attack": 70,
+      "special-defense": 25,
+      "speed": 60
+    },
+    "height_dm": 4,
+    "weight_hg": 80,
+    "base_experience": 59,
+    "abilities": [
+      "swift-swim",
+      "sniper",
+      "damp"
+    ],
+    "flavor_text": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 225,
+    "name_ko": "쏘드라",
+    "name_ja": "タッツー",
+    "flavor_text_ko": "수면에서 힘차게 먹물을 발사해서 날고 있는 벌레를 맞춰서 떨어뜨릴 때가 있다고 한다.",
+    "evolution_line": "horsea"
+  },
+  {
+    "id": 117,
+    "name": "seadra",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 65,
+      "defense": 95,
+      "special-attack": 95,
+      "special-defense": 45,
+      "speed": 85
+    },
+    "height_dm": 12,
+    "weight_hg": 250,
+    "base_experience": 154,
+    "abilities": [
+      "poison-point",
+      "sniper",
+      "damp"
+    ],
+    "flavor_text": "Capable of swim­ ming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
+    "evolves_from": "horsea",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 75,
+    "name_ko": "시드라",
+    "name_ja": "シードラ",
+    "flavor_text_ko": "섣불리 만지려고 하면 몸 전체에서 돋아나는 가시에 찔려 기절할 수도 있다.",
+    "evolution_line": "horsea"
+  },
+  {
+    "id": 118,
+    "name": "goldeen",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 67,
+      "defense": 60,
+      "special-attack": 35,
+      "special-defense": 50,
+      "speed": 63
+    },
+    "height_dm": 6,
+    "weight_hg": 150,
+    "base_experience": 64,
+    "abilities": [
+      "swift-swim",
+      "water-veil",
+      "lightning-rod"
+    ],
+    "flavor_text": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 225,
+    "name_ko": "콘치",
+    "name_ja": "トサキント",
+    "flavor_text_ko": "5노트의 스피드로 헤엄친다. 몸에 위험을 느끼면 날카로운 뿔로 반격한다.",
+    "evolution_line": "goldeen"
+  },
+  {
+    "id": 119,
+    "name": "seaking",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 92,
+      "defense": 65,
+      "special-attack": 65,
+      "special-defense": 80,
+      "speed": 68
+    },
+    "height_dm": 13,
+    "weight_hg": 390,
+    "base_experience": 158,
+    "abilities": [
+      "swift-swim",
+      "water-veil",
+      "lightning-rod"
+    ],
+    "flavor_text": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.",
+    "evolves_from": "goldeen",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "왕콘치",
+    "name_ja": "アズマオウ",
+    "flavor_text_ko": "가을이 오면 산란을 위해 힘차게 강물을 거슬러 올라가며 헤엄치는 모습을 볼 수 있다.",
+    "evolution_line": "goldeen"
+  },
+  {
+    "id": 120,
+    "name": "staryu",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 45,
+      "defense": 55,
+      "special-attack": 70,
+      "special-defense": 55,
+      "speed": 85
+    },
+    "height_dm": 8,
+    "weight_hg": 345,
+    "base_experience": 68,
+    "abilities": [
+      "illuminate",
+      "natural-cure",
+      "analytic"
+    ],
+    "flavor_text": "If its body is torn, it can grow back if the red core remains. The core flashes at midnight.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 225,
+    "name_ko": "별가사리",
+    "name_ja": "ヒトデマン",
+    "flavor_text_ko": "몸의 중심에서 빛나는 핵이 있는 한 몸이 찢겨나가도 재생할 수 있다.",
+    "evolution_line": "staryu"
+  },
+  {
+    "id": 121,
+    "name": "starmie",
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 75,
+      "defense": 85,
+      "special-attack": 100,
+      "special-defense": 85,
+      "speed": 115
+    },
+    "height_dm": 11,
+    "weight_hg": 800,
+    "base_experience": 182,
+    "abilities": [
+      "illuminate",
+      "natural-cure",
+      "analytic"
+    ],
+    "flavor_text": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
+    "evolves_from": "staryu",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 60,
+    "name_ko": "아쿠스타",
+    "name_ja": "スターミー",
+    "flavor_text_ko": "코어라고 불리는 중심 부분은 일곱 빛깔로 빛난다. 이것을 보석으로 삼는 사람도 있다고 한다.",
+    "evolution_line": "staryu"
+  },
+  {
+    "id": 122,
+    "name": "mr-mime",
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 65,
+      "special-attack": 100,
+      "special-defense": 120,
+      "speed": 90
+    },
+    "height_dm": 13,
+    "weight_hg": 545,
+    "base_experience": 161,
+    "abilities": [
+      "soundproof",
+      "filter",
+      "technician"
+    ],
+    "flavor_text": "If interrupted while it is miming, it will slap around the offender with its broad hands.",
+    "evolves_from": "mime-jr",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "마임맨",
+    "name_ja": "バリヤード",
+    "flavor_text_ko": "손가락 끝에서 내는 파동이 공기를 굳혀서 벽을 만든다. 격렬한 공격도 튕겨 낸다.",
+    "evolution_line": "mime-jr"
+  },
+  {
+    "id": 123,
+    "name": "scyther",
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 110,
+      "defense": 80,
+      "special-attack": 55,
+      "special-defense": 80,
+      "speed": 105
+    },
+    "height_dm": 15,
+    "weight_hg": 560,
+    "base_experience": 100,
+    "abilities": [
+      "swarm",
+      "technician",
+      "steadfast"
+    ],
+    "flavor_text": "With ninja-like agility and speed, it can create the illusion that there is more than one.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "스라크",
+    "name_ja": "ストライク",
+    "flavor_text_ko": "풀숲에서 갑자기 튀어나와 예리한 낫으로 베어 가르는 모습은 마치 닌자 같다.",
+    "evolution_line": "scyther"
+  },
+  {
+    "id": 124,
+    "name": "jynx",
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 50,
+      "defense": 35,
+      "special-attack": 115,
+      "special-defense": 95,
+      "speed": 95
+    },
+    "height_dm": 14,
+    "weight_hg": 406,
+    "base_experience": 159,
+    "abilities": [
+      "oblivious",
+      "forewarn",
+      "dry-skin"
+    ],
+    "flavor_text": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.",
+    "evolves_from": "smoochum",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "루주라",
+    "name_ja": "ルージュラ",
+    "flavor_text_ko": "허리를 흔드는 듯이 걷고 있다. 방심하면 엉겁결에 따라서 춤춰버린다고 한다.",
+    "evolution_line": "smoochum"
+  },
+  {
+    "id": 125,
+    "name": "electabuzz",
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 83,
+      "defense": 57,
+      "special-attack": 95,
+      "special-defense": 85,
+      "speed": 105
+    },
+    "height_dm": 11,
+    "weight_hg": 300,
+    "base_experience": 172,
+    "abilities": [
+      "static",
+      "vital-spirit"
+    ],
+    "flavor_text": "Normally found near power plants, they can wander away and cause major blackouts in cities.",
+    "evolves_from": "elekid",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "에레브",
+    "name_ja": "エレブー",
+    "flavor_text_ko": "몸의 표면에는 전기가 흐르고 있다. 주변이 어두우면 전신이 푸르스름하게 빛난다.",
+    "evolution_line": "elekid"
+  },
+  {
+    "id": 126,
+    "name": "magmar",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 95,
+      "defense": 57,
+      "special-attack": 100,
+      "special-defense": 85,
+      "speed": 93
+    },
+    "height_dm": 13,
+    "weight_hg": 445,
+    "base_experience": 173,
+    "abilities": [
+      "flame-body",
+      "vital-spirit"
+    ],
+    "flavor_text": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
+    "evolves_from": "magby",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "마그마",
+    "name_ja": "ブーバー",
+    "flavor_text_ko": "화산의 분화구 근처에서 발견되었다. 입에서 불꽃을 뿜어낸다. 체온은 1200도나 된다.",
+    "evolution_line": "magby"
+  },
+  {
+    "id": 127,
+    "name": "pinsir",
+    "types": [
+      "bug"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 125,
+      "defense": 100,
+      "special-attack": 55,
+      "special-defense": 70,
+      "speed": 85
+    },
+    "height_dm": 15,
+    "weight_hg": 550,
+    "base_experience": 175,
+    "abilities": [
+      "hyper-cutter",
+      "mold-breaker",
+      "moxie"
+    ],
+    "flavor_text": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "쁘사이저",
+    "name_ja": "カイロス",
+    "flavor_text_ko": "2개의 뿔 사이에 먹이를 끼우고 조각날 때까지 놓지 않는다. 조각나지 않으면 저편으로 세게 내던진다.",
+    "evolution_line": "pinsir"
+  },
+  {
+    "id": 128,
+    "name": "tauros",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 95,
+      "special-attack": 40,
+      "special-defense": 70,
+      "speed": 110
+    },
+    "height_dm": 14,
+    "weight_hg": 884,
+    "base_experience": 172,
+    "abilities": [
+      "intimidate",
+      "anger-point",
+      "sheer-force"
+    ],
+    "flavor_text": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "켄타로스",
+    "name_ja": "ケンタロス",
+    "flavor_text_ko": "3개의 꼬리로 자신을 때려서 투지가 끓어오르면 전속력으로 돌진해온다.",
+    "evolution_line": "tauros"
+  },
+  {
+    "id": 129,
+    "name": "magikarp",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 20,
+      "attack": 10,
+      "defense": 55,
+      "special-attack": 15,
+      "special-defense": 20,
+      "speed": 80
+    },
+    "height_dm": 9,
+    "weight_hg": 100,
+    "base_experience": 40,
+    "abilities": [
+      "swift-swim",
+      "rattled"
+    ],
+    "flavor_text": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 255,
+    "name_ko": "잉어킹",
+    "name_ja": "コイキング",
+    "flavor_text_ko": "힘도 스피드도 거의 없다. 세상에서 가장 약하고 한심한 포켓몬이다.",
+    "evolution_line": "magikarp"
+  },
+  {
+    "id": 130,
+    "name": "gyarados",
+    "types": [
+      "water",
+      "flying"
+    ],
+    "stats": {
+      "hp": 95,
+      "attack": 125,
+      "defense": 79,
+      "special-attack": 60,
+      "special-defense": 100,
+      "speed": 81
+    },
+    "height_dm": 65,
+    "weight_hg": 2350,
+    "base_experience": 189,
+    "abilities": [
+      "intimidate",
+      "moxie"
+    ],
+    "flavor_text": "Once it begins to rampage, a GYARADOS will burn everything down, even in a harsh storm.",
+    "evolves_from": "magikarp",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "갸라도스",
+    "name_ja": "ギャラドス",
+    "flavor_text_ko": "분쟁이 일어난 마을을 다 태워버렸다는 기록이 고문서에 남아 있다.",
+    "evolution_line": "magikarp"
+  },
+  {
+    "id": 131,
+    "name": "lapras",
+    "types": [
+      "water",
+      "ice"
+    ],
+    "stats": {
+      "hp": 130,
+      "attack": 85,
+      "defense": 80,
+      "special-attack": 85,
+      "special-defense": 95,
+      "speed": 60
+    },
+    "height_dm": 25,
+    "weight_hg": 2200,
+    "base_experience": 187,
+    "abilities": [
+      "water-absorb",
+      "shell-armor",
+      "hydration"
+    ],
+    "flavor_text": "A POKéMON that has been over­ hunted almost to extinction. It can ferry people across the water.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "라프라스",
+    "name_ja": "ラプラス",
+    "flavor_text_ko": "부드러운 마음의 소유자다. 좀처럼 다투지 않아 많이 잡혔기 때문에 수가 줄었다.",
+    "evolution_line": "lapras"
+  },
+  {
+    "id": 132,
+    "name": "ditto",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 48,
+      "attack": 48,
+      "defense": 48,
+      "special-attack": 48,
+      "special-defense": 48,
+      "speed": 48
+    },
+    "height_dm": 3,
+    "weight_hg": 40,
+    "base_experience": 101,
+    "abilities": [
+      "limber",
+      "imposter"
+    ],
+    "flavor_text": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 35,
+    "name_ko": "메타몽",
+    "name_ja": "メタモン",
+    "flavor_text_ko": "전신의 세포를 재구성해서 본 것의 모양과 똑 닮게 변신하는 능력을 가지고 있다.",
+    "evolution_line": "ditto"
+  },
+  {
+    "id": 133,
+    "name": "eevee",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 55,
+      "defense": 50,
+      "special-attack": 45,
+      "special-defense": 65,
+      "speed": 55
+    },
+    "height_dm": 3,
+    "weight_hg": 65,
+    "base_experience": 65,
+    "abilities": [
+      "run-away",
+      "adaptability",
+      "anticipation"
+    ],
+    "flavor_text": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "이브이",
+    "name_ja": "イーブイ",
+    "flavor_text_ko": "진화할 때 모습과 능력이 바뀜으로써 혹독한 환경에 적응하는 희귀한 포켓몬이다.",
+    "evolution_line": "eevee"
+  },
+  {
+    "id": 134,
+    "name": "vaporeon",
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 130,
+      "attack": 65,
+      "defense": 60,
+      "special-attack": 110,
+      "special-defense": 95,
+      "speed": 65
+    },
+    "height_dm": 10,
+    "weight_hg": 290,
+    "base_experience": 184,
+    "abilities": [
+      "water-absorb",
+      "hydration"
+    ],
+    "flavor_text": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
+    "evolves_from": "eevee",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "샤미드",
+    "name_ja": "シャワーズ",
+    "flavor_text_ko": "아름다운 물가를 좋아한다. 세포가 물의 분자구조와 닮아서 물에 녹는 것도 가능하다.",
+    "evolution_line": "eevee"
+  },
+  {
+    "id": 135,
+    "name": "jolteon",
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 60,
+      "special-attack": 110,
+      "special-defense": 95,
+      "speed": 130
+    },
+    "height_dm": 8,
+    "weight_hg": 245,
+    "base_experience": 184,
+    "abilities": [
+      "volt-absorb",
+      "quick-feet"
+    ],
+    "flavor_text": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts.",
+    "evolves_from": "eevee",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "쥬피썬더",
+    "name_ja": "サンダース",
+    "flavor_text_ko": "체내에 전기가 모이면 전신의 털이 모두 날카롭게 곤두서기 시작한다.",
+    "evolution_line": "eevee"
+  },
+  {
+    "id": 136,
+    "name": "flareon",
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 130,
+      "defense": 60,
+      "special-attack": 95,
+      "special-defense": 110,
+      "speed": 65
+    },
+    "height_dm": 9,
+    "weight_hg": 250,
+    "base_experience": 184,
+    "abilities": [
+      "flash-fire",
+      "guts"
+    ],
+    "flavor_text": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
+    "evolves_from": "eevee",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "부스터",
+    "name_ja": "ブースター",
+    "flavor_text_ko": "체내에 불꽃 주머니를 가지고 있다. 싸움이 시작되기 직전에는 체온이 900도까지 올라간다.",
+    "evolution_line": "eevee"
+  },
+  {
+    "id": 137,
+    "name": "porygon",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 60,
+      "defense": 70,
+      "special-attack": 85,
+      "special-defense": 75,
+      "speed": 40
+    },
+    "height_dm": 8,
+    "weight_hg": 365,
+    "base_experience": 79,
+    "abilities": [
+      "trace",
+      "download",
+      "analytic"
+    ],
+    "flavor_text": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "폴리곤",
+    "name_ja": "ポリゴン",
+    "flavor_text_ko": "연구 끝에 태어난 인공 포켓몬이다. 기본적인 동작만 프로그램되어 있다.",
+    "evolution_line": "porygon"
+  },
+  {
+    "id": 138,
+    "name": "omanyte",
+    "types": [
+      "rock",
+      "water"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 40,
+      "defense": 100,
+      "special-attack": 90,
+      "special-defense": 55,
+      "speed": 35
+    },
+    "height_dm": 4,
+    "weight_hg": 75,
+    "base_experience": 71,
+    "abilities": [
+      "swift-swim",
+      "shell-armor",
+      "weak-armor"
+    ],
+    "flavor_text": "Although long extinct, in rare cases, it can be genetically resurrected from fossils.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "암나이트",
+    "name_ja": "オムナイト",
+    "flavor_text_ko": "먼 옛날 바다에서 살고 있던 고대 포켓몬. 10개의 다리를 구불거리며 헤엄친다.",
+    "evolution_line": "omanyte"
+  },
+  {
+    "id": 139,
+    "name": "omastar",
+    "types": [
+      "rock",
+      "water"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 60,
+      "defense": 125,
+      "special-attack": 115,
+      "special-defense": 70,
+      "speed": 55
+    },
+    "height_dm": 10,
+    "weight_hg": 350,
+    "base_experience": 173,
+    "abilities": [
+      "swift-swim",
+      "shell-armor",
+      "weak-armor"
+    ],
+    "flavor_text": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
+    "evolves_from": "omanyte",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "암스타",
+    "name_ja": "オムスター",
+    "flavor_text_ko": "촉수가 팔다리처럼 발달해 있다. 달라붙자마자 문다.",
+    "evolution_line": "omanyte"
+  },
+  {
+    "id": 140,
+    "name": "kabuto",
+    "types": [
+      "rock",
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 80,
+      "defense": 90,
+      "special-attack": 55,
+      "special-defense": 45,
+      "speed": 55
+    },
+    "height_dm": 5,
+    "weight_hg": 115,
+    "base_experience": 71,
+    "abilities": [
+      "swift-swim",
+      "battle-armor",
+      "weak-armor"
+    ],
+    "flavor_text": "A POKéMON that was resurrected from a fossil found in what was once the ocean floor eons ago.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "투구",
+    "name_ja": "カブト",
+    "flavor_text_ko": "3억 년 전에 모래 해변에서 살고 있었던 것으로 추측된다. 단단한 껍질이 몸을 보호한다.",
+    "evolution_line": "kabuto"
+  },
+  {
+    "id": 141,
+    "name": "kabutops",
+    "types": [
+      "rock",
+      "water"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 115,
+      "defense": 105,
+      "special-attack": 65,
+      "special-defense": 70,
+      "speed": 80
+    },
+    "height_dm": 13,
+    "weight_hg": 405,
+    "base_experience": 173,
+    "abilities": [
+      "swift-swim",
+      "battle-armor",
+      "weak-armor"
+    ],
+    "flavor_text": "Its sleek shape is perfect for swim­ ming. It slashes prey with its claws and drains the body fluids.",
+    "evolves_from": "kabuto",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "투구푸스",
+    "name_ja": "カブトプス",
+    "flavor_text_ko": "수중을 이동할 때 손발을 작게 접고 등껍질을 구부려 빠르게 헤엄친다.",
+    "evolution_line": "kabuto"
+  },
+  {
+    "id": 142,
+    "name": "aerodactyl",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "special-attack": 60,
+      "special-defense": 75,
+      "speed": 130
+    },
+    "height_dm": 18,
+    "weight_hg": 590,
+    "base_experience": 180,
+    "abilities": [
+      "rock-head",
+      "pressure",
+      "unnerve"
+    ],
+    "flavor_text": "A Pokémon that roamed the skies in the dinosaur era. Its teeth are like saw blades.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "프테라",
+    "name_ja": "プテラ",
+    "flavor_text_ko": "호박에 남아 있던 공룡의 유전자에서 부활시켰다. 높은 소리로 울며 난다.",
+    "evolution_line": "aerodactyl"
+  },
+  {
+    "id": 143,
+    "name": "snorlax",
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 160,
+      "attack": 110,
+      "defense": 65,
+      "special-attack": 65,
+      "special-defense": 110,
+      "speed": 30
+    },
+    "height_dm": 21,
+    "weight_hg": 4600,
+    "base_experience": 189,
+    "abilities": [
+      "immunity",
+      "thick-fat",
+      "gluttony"
+    ],
+    "flavor_text": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
+    "evolves_from": "munchlax",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 25,
+    "name_ko": "잠만보",
+    "name_ja": "カビゴン",
+    "flavor_text_ko": "하루에 먹을 것을 400kg 먹지 않으면 성에 차지 않는다. 다 먹으면 잠이 들어 버린다.",
+    "evolution_line": "munchlax"
+  },
+  {
+    "id": 144,
+    "name": "articuno",
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 85,
+      "defense": 100,
+      "special-attack": 95,
+      "special-defense": 125,
+      "speed": 85
+    },
+    "height_dm": 17,
+    "weight_hg": 554,
+    "base_experience": 261,
+    "abilities": [
+      "pressure",
+      "snow-cloak"
+    ],
+    "flavor_text": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": true,
+    "is_mythical": false,
+    "capture_rate": 3,
+    "name_ko": "프리져",
+    "name_ja": "フリーザー",
+    "flavor_text_ko": "전설의 새포켓몬이다. 공기 중의 수분을 얼려 눈보라를 만들어 낼 수 있다.",
+    "evolution_line": "articuno"
+  },
+  {
+    "id": 145,
+    "name": "zapdos",
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 90,
+      "defense": 85,
+      "special-attack": 125,
+      "special-defense": 90,
+      "speed": 100
+    },
+    "height_dm": 16,
+    "weight_hg": 526,
+    "base_experience": 261,
+    "abilities": [
+      "pressure",
+      "static"
+    ],
+    "flavor_text": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": true,
+    "is_mythical": false,
+    "capture_rate": 3,
+    "name_ko": "썬더",
+    "name_ja": "サンダー",
+    "flavor_text_ko": "구름 위에서 거대한 번개를 내리치며 나타난다. 전설의 새포켓몬이다.",
+    "evolution_line": "zapdos"
+  },
+  {
+    "id": 146,
+    "name": "moltres",
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 100,
+      "defense": 90,
+      "special-attack": 125,
+      "special-defense": 85,
+      "speed": 90
+    },
+    "height_dm": 20,
+    "weight_hg": 600,
+    "base_experience": 261,
+    "abilities": [
+      "pressure",
+      "flame-body"
+    ],
+    "flavor_text": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": true,
+    "is_mythical": false,
+    "capture_rate": 3,
+    "name_ko": "파이어",
+    "name_ja": "ファイヤー",
+    "flavor_text_ko": "오래전부터 불새의 전설로 알려져 있다. 날갯짓할 때마다 날개가 눈부시게 불타올라서 아름답다.",
+    "evolution_line": "moltres"
+  },
+  {
+    "id": 147,
+    "name": "dratini",
+    "types": [
+      "dragon"
+    ],
+    "stats": {
+      "hp": 41,
+      "attack": 64,
+      "defense": 45,
+      "special-attack": 50,
+      "special-defense": 50,
+      "speed": 50
+    },
+    "height_dm": 18,
+    "weight_hg": 33,
+    "base_experience": 60,
+    "abilities": [
+      "shed-skin",
+      "marvel-scale"
+    ],
+    "flavor_text": "Long considered a mythical POKéMON until recently when a small colony was found living underwater.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "미뇽",
+    "name_ja": "ミニリュウ",
+    "flavor_text_ko": "목격자가 적기 때문에 환상의 포켓몬이라고 불리고 있다. 탈피한 껍질이 발견되고 있다.",
+    "evolution_line": "dratini"
+  },
+  {
+    "id": 148,
+    "name": "dragonair",
+    "types": [
+      "dragon"
+    ],
+    "stats": {
+      "hp": 61,
+      "attack": 84,
+      "defense": 65,
+      "special-attack": 70,
+      "special-defense": 70,
+      "speed": 70
+    },
+    "height_dm": 40,
+    "weight_hg": 165,
+    "base_experience": 147,
+    "abilities": [
+      "shed-skin",
+      "marvel-scale"
+    ],
+    "flavor_text": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
+    "evolves_from": "dratini",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "신뇽",
+    "name_ja": "ハクリュー",
+    "flavor_text_ko": "수정 같은 구슬에는 날씨를 자유롭게 조종하는 능력이 담겨 있는 듯하다.",
+    "evolution_line": "dratini"
+  },
+  {
+    "id": 149,
+    "name": "dragonite",
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "stats": {
+      "hp": 91,
+      "attack": 134,
+      "defense": 95,
+      "special-attack": 100,
+      "special-defense": 100,
+      "speed": 80
+    },
+    "height_dm": 22,
+    "weight_hg": 2100,
+    "base_experience": 270,
+    "abilities": [
+      "inner-focus",
+      "multiscale"
+    ],
+    "flavor_text": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
+    "evolves_from": "dragonair",
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": false,
+    "capture_rate": 45,
+    "name_ko": "망나뇽",
+    "name_ja": "カイリュー",
+    "flavor_text_ko": "커다란 몸집으로 하늘을 난다. 지구를 약 16시간 만에 일주한다.",
+    "evolution_line": "dragonair"
+  },
+  {
+    "id": 150,
+    "name": "mewtwo",
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 106,
+      "attack": 110,
+      "defense": 90,
+      "special-attack": 154,
+      "special-defense": 90,
+      "speed": 130
+    },
+    "height_dm": 20,
+    "weight_hg": 1220,
+    "base_experience": 306,
+    "abilities": [
+      "pressure",
+      "unnerve"
+    ],
+    "flavor_text": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": true,
+    "is_mythical": false,
+    "capture_rate": 3,
+    "name_ko": "뮤츠",
+    "name_ja": "ミュウツー",
+    "flavor_text_ko": "한 과학자가 몇 년에 걸쳐 무서운 유전자의 연구를 계속한 결과 탄생했다.",
+    "evolution_line": "mewtwo"
+  },
+  {
+    "id": 151,
+    "name": "mew",
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "special-attack": 100,
+      "special-defense": 100,
+      "speed": 100
+    },
+    "height_dm": 4,
+    "weight_hg": 40,
+    "base_experience": 270,
+    "abilities": [
+      "synchronize"
+    ],
+    "flavor_text": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
+    "evolves_from": null,
+    "generation": "generation-i",
+    "is_legendary": false,
+    "is_mythical": true,
+    "capture_rate": 45,
+    "name_ko": "뮤",
+    "name_ja": "ミュウ",
+    "flavor_text_ko": "모든 기술을 사용하기 때문에 포켓몬의 조상이라고 생각하는 학자가 많다.",
+    "evolution_line": "mew"
+  }
+]

@@ -1,0 +1,55 @@
+---
+title: "Houndstone / 묘두기"
+type: concept
+language: ko
+created: 2026-06-05
+modified: 2026-06-05
+tags: ["pokemon", "gen9", "type-ghost", "type-none", "evo-line-houndstone"]
+aliases: ["묘두기", "houndstone"]
+summary: "#972 묘두기 (고스트 / none) — GO 최대 CP: 2,514"
+evolution_line: "houndstone"
+---
+
+# Houndstone / 묘두기
+
+## 기본 정보
+
+| 항목 | 값 |
+|------|-----|
+| 도감 번호 | #972 |
+| 영문 이름 | Houndstone |
+| 타입 | 고스트 / none |
+| 세대 | 9세대 |
+
+## 포켓몬 GO 스탯
+
+| 항목 | 수치 |
+|------|------|
+| 공격 (GO) | 186 |
+| 방어 (GO) | 195 |
+| 체력 (GO) | 176 |
+| 최대 CP (Lv.40) | 2,514 |
+| 최대 CP (Lv.50) | 2,842 |
+| 타입 | 고스트 |
+| 버디 거리 | 3km |
+| PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|425위]] |
+
+### 기술 풀 (GO)
+- **빠른 기술:** [[move-lick|핥기]], [[move-bite|물기]]
+- **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-dig|구멍파기]], [[move-psychic-fangs|사이코팽]], [[move-play-rough|치근거리기]]
+
+### 진화 체인
+- **진화 전:** [[pokemon-greavard|망망이]]
+## 진화 정보
+
+| 항목 | 포켓몬 | 조건 |
+|------|--------|------|
+| 진화 전 | 없음 (1단계 진화) | — |
+| 진화 후 | 없음 | — |
+
+## Related Concepts / 관련 개념
+- [[type-chart]] — 타입 상성표
+- [[pokedex-gen9]] — 9세대 포켓몬 목록
+
+## References
+- Source: PokeMiners GAME_MASTER + PokéAPI

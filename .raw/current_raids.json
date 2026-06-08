@@ -1,0 +1,138 @@
+{
+  "1": [
+    {
+      "en_name": "Galarian Meowth",
+      "ko_name": "가라르 나옹",
+      "slug": "galarian-meowth",
+      "dex": 52,
+      "types_ko": "강철",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Chimecho",
+      "ko_name": "치렁",
+      "slug": "chimecho",
+      "dex": 358,
+      "types_ko": "에스퍼",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Galarian Stunfisk",
+      "ko_name": "가라르 메더",
+      "slug": "galarian-stunfisk",
+      "dex": 618,
+      "types_ko": "땅 / 강철",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Hatenna",
+      "ko_name": "몸지브림",
+      "slug": "hatenna",
+      "dex": 856,
+      "types_ko": "에스퍼",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Shadow Horsea",
+      "ko_name": "다크 쏘드라",
+      "slug": "shadow-horsea",
+      "dex": 116,
+      "types_ko": "물",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Shadow Porygon",
+      "ko_name": "다크 폴리곤",
+      "slug": "shadow-porygon",
+      "dex": 137,
+      "types_ko": "노말",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Shadow Beldum",
+      "ko_name": "다크 메탕",
+      "slug": "shadow-beldum",
+      "dex": 374,
+      "types_ko": "강철 / 에스퍼",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Shadow Golett",
+      "ko_name": "다크 골비람",
+      "slug": "shadow-golett",
+      "dex": 622,
+      "types_ko": "땅 / 고스트",
+      "is_shiny": true
+    }
+  ],
+  "3": [
+    {
+      "en_name": "Galarian Weezing",
+      "ko_name": "가라르 또도가스",
+      "slug": "galarian-weezing",
+      "dex": 110,
+      "types_ko": "독 / 페어리",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Togetic",
+      "ko_name": "토게틱",
+      "slug": "togetic",
+      "dex": 176,
+      "types_ko": "페어리 / 비행",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Shadow Alolan Marowak",
+      "ko_name": "다크 알로라 텅구리",
+      "slug": "shadow-alolan-marowak",
+      "dex": 105,
+      "types_ko": "불꽃 / 고스트",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Shadow Hitmonlee",
+      "ko_name": "다크 시라소몬",
+      "slug": "shadow-hitmonlee",
+      "dex": 106,
+      "types_ko": "격투",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Shadow Gligar",
+      "ko_name": "다크 글라이거",
+      "slug": "shadow-gligar",
+      "dex": 207,
+      "types_ko": "땅 / 비행",
+      "is_shiny": true
+    }
+  ],
+  "5": [
+    {
+      "en_name": "Reshiram",
+      "ko_name": "레시라무",
+      "slug": "reshiram",
+      "dex": 643,
+      "types_ko": "드래곤 / 불꽃",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Shadow Dialga",
+      "ko_name": "다크 디아루가",
+      "slug": "shadow-dialga",
+      "dex": 483,
+      "types_ko": "강철 / 드래곤",
+      "is_shiny": true
+    }
+  ],
+  "mega": [
+    {
+      "en_name": "Mega Audino",
+      "ko_name": "메가 다부니",
+      "slug": "mega-audino",
+      "dex": 531,
+      "types_ko": "노말 / 페어리",
+      "is_shiny": false
+    }
+  ]
+}

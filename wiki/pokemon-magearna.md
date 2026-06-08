@@ -1,0 +1,51 @@
+---
+title: "Magearna / 마기아나"
+type: concept
+language: ko
+created: 2026-06-05
+modified: 2026-06-05
+tags: ["pokemon", "gen7", "type-steel", "type-fairy", "evo-line-magearna"]
+aliases: ["마기아나", "magearna"]
+summary: "#801 마기아나 (강철 / 페어리) — GO 최대 CP: 3,615"
+evolution_line: "magearna"
+---
+
+# Magearna / 마기아나
+
+## 기본 정보
+
+| 항목 | 값 |
+|------|-----|
+| 도감 번호 | #801 |
+| 영문 이름 | Magearna |
+| 타입 | 강철 / 페어리 |
+| 세대 | 7세대 |
+
+## 포켓몬 GO 스탯
+
+| 항목 | 수치 |
+|------|------|
+| 공격 (GO) | 246 |
+| 방어 (GO) | 225 |
+| 체력 (GO) | 190 |
+| 최대 CP (Lv.40) | 3,615 |
+| 최대 CP (Lv.50) | 4,087 |
+| 타입 | 강철 / 페어리 |
+| 버디 거리 | 20km |
+
+### 기술 풀 (GO)
+- **빠른 기술:** [[move-struggle|발버둥]]
+- **스페셜 기술:** [[move-struggle|발버둥]]
+## 진화 정보
+
+| 항목 | 포켓몬 | 조건 |
+|------|--------|------|
+| 진화 전 | 없음 (1단계 진화) | — |
+| 진화 후 | 없음 | — |
+
+## Related Concepts / 관련 개념
+- [[type-chart]] — 타입 상성표
+- [[pokedex-gen7]] — 7세대 포켓몬 목록
+
+## References
+- Source: PokeMiners GAME_MASTER + PokéAPI

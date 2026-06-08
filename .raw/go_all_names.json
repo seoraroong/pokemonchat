@@ -1,0 +1,6134 @@
+{
+  "1": {
+    "dex": 1,
+    "en_name": "Bulbasaur",
+    "ko_name": "이상해씨",
+    "gen": 1
+  },
+  "2": {
+    "dex": 2,
+    "en_name": "Ivysaur",
+    "ko_name": "이상해풀",
+    "gen": 1
+  },
+  "3": {
+    "dex": 3,
+    "en_name": "Venusaur",
+    "ko_name": "이상해꽃",
+    "gen": 1
+  },
+  "4": {
+    "dex": 4,
+    "en_name": "Charmander",
+    "ko_name": "파이리",
+    "gen": 1
+  },
+  "5": {
+    "dex": 5,
+    "en_name": "Charmeleon",
+    "ko_name": "리자드",
+    "gen": 1
+  },
+  "6": {
+    "dex": 6,
+    "en_name": "Charizard",
+    "ko_name": "리자몽",
+    "gen": 1
+  },
+  "7": {
+    "dex": 7,
+    "en_name": "Squirtle",
+    "ko_name": "꼬부기",
+    "gen": 1
+  },
+  "8": {
+    "dex": 8,
+    "en_name": "Wartortle",
+    "ko_name": "어니부기",
+    "gen": 1
+  },
+  "9": {
+    "dex": 9,
+    "en_name": "Blastoise",
+    "ko_name": "거북왕",
+    "gen": 1
+  },
+  "10": {
+    "dex": 10,
+    "en_name": "Caterpie",
+    "ko_name": "캐터피",
+    "gen": 1
+  },
+  "11": {
+    "dex": 11,
+    "en_name": "Metapod",
+    "ko_name": "단데기",
+    "gen": 1
+  },
+  "12": {
+    "dex": 12,
+    "en_name": "Butterfree",
+    "ko_name": "버터플",
+    "gen": 1
+  },
+  "13": {
+    "dex": 13,
+    "en_name": "Weedle",
+    "ko_name": "뿔충이",
+    "gen": 1
+  },
+  "14": {
+    "dex": 14,
+    "en_name": "Kakuna",
+    "ko_name": "딱충이",
+    "gen": 1
+  },
+  "15": {
+    "dex": 15,
+    "en_name": "Beedrill",
+    "ko_name": "독침붕",
+    "gen": 1
+  },
+  "16": {
+    "dex": 16,
+    "en_name": "Pidgey",
+    "ko_name": "구구",
+    "gen": 1
+  },
+  "17": {
+    "dex": 17,
+    "en_name": "Pidgeotto",
+    "ko_name": "피죤",
+    "gen": 1
+  },
+  "18": {
+    "dex": 18,
+    "en_name": "Pidgeot",
+    "ko_name": "피죤투",
+    "gen": 1
+  },
+  "19": {
+    "dex": 19,
+    "en_name": "Rattata",
+    "ko_name": "꼬렛",
+    "gen": 1
+  },
+  "20": {
+    "dex": 20,
+    "en_name": "Raticate",
+    "ko_name": "레트라",
+    "gen": 1
+  },
+  "21": {
+    "dex": 21,
+    "en_name": "Spearow",
+    "ko_name": "깨비참",
+    "gen": 1
+  },
+  "22": {
+    "dex": 22,
+    "en_name": "Fearow",
+    "ko_name": "깨비드릴조",
+    "gen": 1
+  },
+  "23": {
+    "dex": 23,
+    "en_name": "Ekans",
+    "ko_name": "아보",
+    "gen": 1
+  },
+  "24": {
+    "dex": 24,
+    "en_name": "Arbok",
+    "ko_name": "아보크",
+    "gen": 1
+  },
+  "25": {
+    "dex": 25,
+    "en_name": "Pikachu",
+    "ko_name": "피카츄",
+    "gen": 1
+  },
+  "26": {
+    "dex": 26,
+    "en_name": "Raichu",
+    "ko_name": "라이츄",
+    "gen": 1
+  },
+  "27": {
+    "dex": 27,
+    "en_name": "Sandshrew",
+    "ko_name": "모래두지",
+    "gen": 1
+  },
+  "28": {
+    "dex": 28,
+    "en_name": "Sandslash",
+    "ko_name": "고지",
+    "gen": 1
+  },
+  "29": {
+    "dex": 29,
+    "en_name": "Nidoran♀",
+    "ko_name": "니드런♀",
+    "gen": 1
+  },
+  "30": {
+    "dex": 30,
+    "en_name": "Nidorina",
+    "ko_name": "니드리나",
+    "gen": 1
+  },
+  "31": {
+    "dex": 31,
+    "en_name": "Nidoqueen",
+    "ko_name": "니드퀸",
+    "gen": 1
+  },
+  "32": {
+    "dex": 32,
+    "en_name": "Nidoran♂",
+    "ko_name": "니드런♂",
+    "gen": 1
+  },
+  "33": {
+    "dex": 33,
+    "en_name": "Nidorino",
+    "ko_name": "니드리노",
+    "gen": 1
+  },
+  "34": {
+    "dex": 34,
+    "en_name": "Nidoking",
+    "ko_name": "니드킹",
+    "gen": 1
+  },
+  "35": {
+    "dex": 35,
+    "en_name": "Clefairy",
+    "ko_name": "삐삐",
+    "gen": 1
+  },
+  "36": {
+    "dex": 36,
+    "en_name": "Clefable",
+    "ko_name": "픽시",
+    "gen": 1
+  },
+  "37": {
+    "dex": 37,
+    "en_name": "Vulpix",
+    "ko_name": "식스테일",
+    "gen": 1
+  },
+  "38": {
+    "dex": 38,
+    "en_name": "Ninetales",
+    "ko_name": "나인테일",
+    "gen": 1
+  },
+  "39": {
+    "dex": 39,
+    "en_name": "Jigglypuff",
+    "ko_name": "푸린",
+    "gen": 1
+  },
+  "40": {
+    "dex": 40,
+    "en_name": "Wigglytuff",
+    "ko_name": "푸크린",
+    "gen": 1
+  },
+  "41": {
+    "dex": 41,
+    "en_name": "Zubat",
+    "ko_name": "주뱃",
+    "gen": 1
+  },
+  "42": {
+    "dex": 42,
+    "en_name": "Golbat",
+    "ko_name": "골뱃",
+    "gen": 1
+  },
+  "43": {
+    "dex": 43,
+    "en_name": "Oddish",
+    "ko_name": "뚜벅쵸",
+    "gen": 1
+  },
+  "44": {
+    "dex": 44,
+    "en_name": "Gloom",
+    "ko_name": "냄새꼬",
+    "gen": 1
+  },
+  "45": {
+    "dex": 45,
+    "en_name": "Vileplume",
+    "ko_name": "라플레시아",
+    "gen": 1
+  },
+  "46": {
+    "dex": 46,
+    "en_name": "Paras",
+    "ko_name": "파라스",
+    "gen": 1
+  },
+  "47": {
+    "dex": 47,
+    "en_name": "Parasect",
+    "ko_name": "파라섹트",
+    "gen": 1
+  },
+  "48": {
+    "dex": 48,
+    "en_name": "Venonat",
+    "ko_name": "콘팡",
+    "gen": 1
+  },
+  "49": {
+    "dex": 49,
+    "en_name": "Venomoth",
+    "ko_name": "도나리",
+    "gen": 1
+  },
+  "50": {
+    "dex": 50,
+    "en_name": "Diglett",
+    "ko_name": "디그다",
+    "gen": 1
+  },
+  "51": {
+    "dex": 51,
+    "en_name": "Dugtrio",
+    "ko_name": "닥트리오",
+    "gen": 1
+  },
+  "52": {
+    "dex": 52,
+    "en_name": "Meowth",
+    "ko_name": "나옹",
+    "gen": 1
+  },
+  "53": {
+    "dex": 53,
+    "en_name": "Persian",
+    "ko_name": "페르시온",
+    "gen": 1
+  },
+  "54": {
+    "dex": 54,
+    "en_name": "Psyduck",
+    "ko_name": "고라파덕",
+    "gen": 1
+  },
+  "55": {
+    "dex": 55,
+    "en_name": "Golduck",
+    "ko_name": "골덕",
+    "gen": 1
+  },
+  "56": {
+    "dex": 56,
+    "en_name": "Mankey",
+    "ko_name": "망키",
+    "gen": 1
+  },
+  "57": {
+    "dex": 57,
+    "en_name": "Primeape",
+    "ko_name": "성원숭",
+    "gen": 1
+  },
+  "58": {
+    "dex": 58,
+    "en_name": "Growlithe",
+    "ko_name": "가디",
+    "gen": 1
+  },
+  "59": {
+    "dex": 59,
+    "en_name": "Arcanine",
+    "ko_name": "윈디",
+    "gen": 1
+  },
+  "60": {
+    "dex": 60,
+    "en_name": "Poliwag",
+    "ko_name": "발챙이",
+    "gen": 1
+  },
+  "61": {
+    "dex": 61,
+    "en_name": "Poliwhirl",
+    "ko_name": "슈륙챙이",
+    "gen": 1
+  },
+  "62": {
+    "dex": 62,
+    "en_name": "Poliwrath",
+    "ko_name": "강챙이",
+    "gen": 1
+  },
+  "63": {
+    "dex": 63,
+    "en_name": "Abra",
+    "ko_name": "캐이시",
+    "gen": 1
+  },
+  "64": {
+    "dex": 64,
+    "en_name": "Kadabra",
+    "ko_name": "윤겔라",
+    "gen": 1
+  },
+  "65": {
+    "dex": 65,
+    "en_name": "Alakazam",
+    "ko_name": "후딘",
+    "gen": 1
+  },
+  "66": {
+    "dex": 66,
+    "en_name": "Machop",
+    "ko_name": "알통몬",
+    "gen": 1
+  },
+  "67": {
+    "dex": 67,
+    "en_name": "Machoke",
+    "ko_name": "근육몬",
+    "gen": 1
+  },
+  "68": {
+    "dex": 68,
+    "en_name": "Machamp",
+    "ko_name": "괴력몬",
+    "gen": 1
+  },
+  "69": {
+    "dex": 69,
+    "en_name": "Bellsprout",
+    "ko_name": "모다피",
+    "gen": 1
+  },
+  "70": {
+    "dex": 70,
+    "en_name": "Weepinbell",
+    "ko_name": "우츠동",
+    "gen": 1
+  },
+  "71": {
+    "dex": 71,
+    "en_name": "Victreebel",
+    "ko_name": "우츠보트",
+    "gen": 1
+  },
+  "72": {
+    "dex": 72,
+    "en_name": "Tentacool",
+    "ko_name": "왕눈해",
+    "gen": 1
+  },
+  "73": {
+    "dex": 73,
+    "en_name": "Tentacruel",
+    "ko_name": "독파리",
+    "gen": 1
+  },
+  "74": {
+    "dex": 74,
+    "en_name": "Geodude",
+    "ko_name": "꼬마돌",
+    "gen": 1
+  },
+  "75": {
+    "dex": 75,
+    "en_name": "Graveler",
+    "ko_name": "데구리",
+    "gen": 1
+  },
+  "76": {
+    "dex": 76,
+    "en_name": "Golem",
+    "ko_name": "딱구리",
+    "gen": 1
+  },
+  "77": {
+    "dex": 77,
+    "en_name": "Ponyta",
+    "ko_name": "포니타",
+    "gen": 1
+  },
+  "78": {
+    "dex": 78,
+    "en_name": "Rapidash",
+    "ko_name": "날쌩마",
+    "gen": 1
+  },
+  "79": {
+    "dex": 79,
+    "en_name": "Slowpoke",
+    "ko_name": "야돈",
+    "gen": 1
+  },
+  "80": {
+    "dex": 80,
+    "en_name": "Slowbro",
+    "ko_name": "야도란",
+    "gen": 1
+  },
+  "81": {
+    "dex": 81,
+    "en_name": "Magnemite",
+    "ko_name": "코일",
+    "gen": 1
+  },
+  "82": {
+    "dex": 82,
+    "en_name": "Magneton",
+    "ko_name": "레어코일",
+    "gen": 1
+  },
+  "83": {
+    "dex": 83,
+    "en_name": "Farfetch’d",
+    "ko_name": "파오리",
+    "gen": 1
+  },
+  "84": {
+    "dex": 84,
+    "en_name": "Doduo",
+    "ko_name": "두두",
+    "gen": 1
+  },
+  "85": {
+    "dex": 85,
+    "en_name": "Dodrio",
+    "ko_name": "두트리오",
+    "gen": 1
+  },
+  "86": {
+    "dex": 86,
+    "en_name": "Seel",
+    "ko_name": "쥬쥬",
+    "gen": 1
+  },
+  "87": {
+    "dex": 87,
+    "en_name": "Dewgong",
+    "ko_name": "쥬레곤",
+    "gen": 1
+  },
+  "88": {
+    "dex": 88,
+    "en_name": "Grimer",
+    "ko_name": "질퍽이",
+    "gen": 1
+  },
+  "89": {
+    "dex": 89,
+    "en_name": "Muk",
+    "ko_name": "질뻐기",
+    "gen": 1
+  },
+  "90": {
+    "dex": 90,
+    "en_name": "Shellder",
+    "ko_name": "셀러",
+    "gen": 1
+  },
+  "91": {
+    "dex": 91,
+    "en_name": "Cloyster",
+    "ko_name": "파르셀",
+    "gen": 1
+  },
+  "92": {
+    "dex": 92,
+    "en_name": "Gastly",
+    "ko_name": "고오스",
+    "gen": 1
+  },
+  "93": {
+    "dex": 93,
+    "en_name": "Haunter",
+    "ko_name": "고우스트",
+    "gen": 1
+  },
+  "94": {
+    "dex": 94,
+    "en_name": "Gengar",
+    "ko_name": "팬텀",
+    "gen": 1
+  },
+  "95": {
+    "dex": 95,
+    "en_name": "Onix",
+    "ko_name": "롱스톤",
+    "gen": 1
+  },
+  "96": {
+    "dex": 96,
+    "en_name": "Drowzee",
+    "ko_name": "슬리프",
+    "gen": 1
+  },
+  "97": {
+    "dex": 97,
+    "en_name": "Hypno",
+    "ko_name": "슬리퍼",
+    "gen": 1
+  },
+  "98": {
+    "dex": 98,
+    "en_name": "Krabby",
+    "ko_name": "크랩",
+    "gen": 1
+  },
+  "99": {
+    "dex": 99,
+    "en_name": "Kingler",
+    "ko_name": "킹크랩",
+    "gen": 1
+  },
+  "100": {
+    "dex": 100,
+    "en_name": "Voltorb",
+    "ko_name": "찌리리공",
+    "gen": 1
+  },
+  "101": {
+    "dex": 101,
+    "en_name": "Electrode",
+    "ko_name": "붐볼",
+    "gen": 1
+  },
+  "102": {
+    "dex": 102,
+    "en_name": "Exeggcute",
+    "ko_name": "아라리",
+    "gen": 1
+  },
+  "103": {
+    "dex": 103,
+    "en_name": "Exeggutor",
+    "ko_name": "나시",
+    "gen": 1
+  },
+  "104": {
+    "dex": 104,
+    "en_name": "Cubone",
+    "ko_name": "탕구리",
+    "gen": 1
+  },
+  "105": {
+    "dex": 105,
+    "en_name": "Marowak",
+    "ko_name": "텅구리",
+    "gen": 1
+  },
+  "106": {
+    "dex": 106,
+    "en_name": "Hitmonlee",
+    "ko_name": "시라소몬",
+    "gen": 1
+  },
+  "107": {
+    "dex": 107,
+    "en_name": "Hitmonchan",
+    "ko_name": "홍수몬",
+    "gen": 1
+  },
+  "108": {
+    "dex": 108,
+    "en_name": "Lickitung",
+    "ko_name": "내루미",
+    "gen": 1
+  },
+  "109": {
+    "dex": 109,
+    "en_name": "Koffing",
+    "ko_name": "또가스",
+    "gen": 1
+  },
+  "110": {
+    "dex": 110,
+    "en_name": "Weezing",
+    "ko_name": "또도가스",
+    "gen": 1
+  },
+  "111": {
+    "dex": 111,
+    "en_name": "Rhyhorn",
+    "ko_name": "뿔카노",
+    "gen": 1
+  },
+  "112": {
+    "dex": 112,
+    "en_name": "Rhydon",
+    "ko_name": "코뿌리",
+    "gen": 1
+  },
+  "113": {
+    "dex": 113,
+    "en_name": "Chansey",
+    "ko_name": "럭키",
+    "gen": 1
+  },
+  "114": {
+    "dex": 114,
+    "en_name": "Tangela",
+    "ko_name": "덩쿠리",
+    "gen": 1
+  },
+  "115": {
+    "dex": 115,
+    "en_name": "Kangaskhan",
+    "ko_name": "캥카",
+    "gen": 1
+  },
+  "116": {
+    "dex": 116,
+    "en_name": "Horsea",
+    "ko_name": "쏘드라",
+    "gen": 1
+  },
+  "117": {
+    "dex": 117,
+    "en_name": "Seadra",
+    "ko_name": "시드라",
+    "gen": 1
+  },
+  "118": {
+    "dex": 118,
+    "en_name": "Goldeen",
+    "ko_name": "콘치",
+    "gen": 1
+  },
+  "119": {
+    "dex": 119,
+    "en_name": "Seaking",
+    "ko_name": "왕콘치",
+    "gen": 1
+  },
+  "120": {
+    "dex": 120,
+    "en_name": "Staryu",
+    "ko_name": "별가사리",
+    "gen": 1
+  },
+  "121": {
+    "dex": 121,
+    "en_name": "Starmie",
+    "ko_name": "아쿠스타",
+    "gen": 1
+  },
+  "122": {
+    "dex": 122,
+    "en_name": "Mr. Mime",
+    "ko_name": "마임맨",
+    "gen": 1
+  },
+  "123": {
+    "dex": 123,
+    "en_name": "Scyther",
+    "ko_name": "스라크",
+    "gen": 1
+  },
+  "124": {
+    "dex": 124,
+    "en_name": "Jynx",
+    "ko_name": "루주라",
+    "gen": 1
+  },
+  "125": {
+    "dex": 125,
+    "en_name": "Electabuzz",
+    "ko_name": "에레브",
+    "gen": 1
+  },
+  "126": {
+    "dex": 126,
+    "en_name": "Magmar",
+    "ko_name": "마그마",
+    "gen": 1
+  },
+  "127": {
+    "dex": 127,
+    "en_name": "Pinsir",
+    "ko_name": "쁘사이저",
+    "gen": 1
+  },
+  "128": {
+    "dex": 128,
+    "en_name": "Tauros",
+    "ko_name": "켄타로스",
+    "gen": 1
+  },
+  "129": {
+    "dex": 129,
+    "en_name": "Magikarp",
+    "ko_name": "잉어킹",
+    "gen": 1
+  },
+  "130": {
+    "dex": 130,
+    "en_name": "Gyarados",
+    "ko_name": "갸라도스",
+    "gen": 1
+  },
+  "131": {
+    "dex": 131,
+    "en_name": "Lapras",
+    "ko_name": "라프라스",
+    "gen": 1
+  },
+  "132": {
+    "dex": 132,
+    "en_name": "Ditto",
+    "ko_name": "메타몽",
+    "gen": 1
+  },
+  "133": {
+    "dex": 133,
+    "en_name": "Eevee",
+    "ko_name": "이브이",
+    "gen": 1
+  },
+  "134": {
+    "dex": 134,
+    "en_name": "Vaporeon",
+    "ko_name": "샤미드",
+    "gen": 1
+  },
+  "135": {
+    "dex": 135,
+    "en_name": "Jolteon",
+    "ko_name": "쥬피썬더",
+    "gen": 1
+  },
+  "136": {
+    "dex": 136,
+    "en_name": "Flareon",
+    "ko_name": "부스터",
+    "gen": 1
+  },
+  "137": {
+    "dex": 137,
+    "en_name": "Porygon",
+    "ko_name": "폴리곤",
+    "gen": 1
+  },
+  "138": {
+    "dex": 138,
+    "en_name": "Omanyte",
+    "ko_name": "암나이트",
+    "gen": 1
+  },
+  "139": {
+    "dex": 139,
+    "en_name": "Omastar",
+    "ko_name": "암스타",
+    "gen": 1
+  },
+  "140": {
+    "dex": 140,
+    "en_name": "Kabuto",
+    "ko_name": "투구",
+    "gen": 1
+  },
+  "141": {
+    "dex": 141,
+    "en_name": "Kabutops",
+    "ko_name": "투구푸스",
+    "gen": 1
+  },
+  "142": {
+    "dex": 142,
+    "en_name": "Aerodactyl",
+    "ko_name": "프테라",
+    "gen": 1
+  },
+  "143": {
+    "dex": 143,
+    "en_name": "Snorlax",
+    "ko_name": "잠만보",
+    "gen": 1
+  },
+  "144": {
+    "dex": 144,
+    "en_name": "Articuno",
+    "ko_name": "프리져",
+    "gen": 1
+  },
+  "145": {
+    "dex": 145,
+    "en_name": "Zapdos",
+    "ko_name": "썬더",
+    "gen": 1
+  },
+  "146": {
+    "dex": 146,
+    "en_name": "Moltres",
+    "ko_name": "파이어",
+    "gen": 1
+  },
+  "147": {
+    "dex": 147,
+    "en_name": "Dratini",
+    "ko_name": "미뇽",
+    "gen": 1
+  },
+  "148": {
+    "dex": 148,
+    "en_name": "Dragonair",
+    "ko_name": "신뇽",
+    "gen": 1
+  },
+  "149": {
+    "dex": 149,
+    "en_name": "Dragonite",
+    "ko_name": "망나뇽",
+    "gen": 1
+  },
+  "150": {
+    "dex": 150,
+    "en_name": "Mewtwo",
+    "ko_name": "뮤츠",
+    "gen": 1
+  },
+  "151": {
+    "dex": 151,
+    "en_name": "Mew",
+    "ko_name": "뮤",
+    "gen": 1
+  },
+  "152": {
+    "dex": 152,
+    "en_name": "Chikorita",
+    "ko_name": "치코리타",
+    "gen": 2
+  },
+  "153": {
+    "dex": 153,
+    "en_name": "Bayleef",
+    "ko_name": "베이리프",
+    "gen": 2
+  },
+  "154": {
+    "dex": 154,
+    "en_name": "Meganium",
+    "ko_name": "메가니움",
+    "gen": 2
+  },
+  "155": {
+    "dex": 155,
+    "en_name": "Cyndaquil",
+    "ko_name": "브케인",
+    "gen": 2
+  },
+  "156": {
+    "dex": 156,
+    "en_name": "Quilava",
+    "ko_name": "마그케인",
+    "gen": 2
+  },
+  "157": {
+    "dex": 157,
+    "en_name": "Typhlosion",
+    "ko_name": "블레이범",
+    "gen": 2
+  },
+  "158": {
+    "dex": 158,
+    "en_name": "Totodile",
+    "ko_name": "리아코",
+    "gen": 2
+  },
+  "159": {
+    "dex": 159,
+    "en_name": "Croconaw",
+    "ko_name": "엘리게이",
+    "gen": 2
+  },
+  "160": {
+    "dex": 160,
+    "en_name": "Feraligatr",
+    "ko_name": "장크로다일",
+    "gen": 2
+  },
+  "161": {
+    "dex": 161,
+    "en_name": "Sentret",
+    "ko_name": "꼬리선",
+    "gen": 2
+  },
+  "162": {
+    "dex": 162,
+    "en_name": "Furret",
+    "ko_name": "다꼬리",
+    "gen": 2
+  },
+  "163": {
+    "dex": 163,
+    "en_name": "Hoothoot",
+    "ko_name": "부우부",
+    "gen": 2
+  },
+  "164": {
+    "dex": 164,
+    "en_name": "Noctowl",
+    "ko_name": "야부엉",
+    "gen": 2
+  },
+  "165": {
+    "dex": 165,
+    "en_name": "Ledyba",
+    "ko_name": "레디바",
+    "gen": 2
+  },
+  "166": {
+    "dex": 166,
+    "en_name": "Ledian",
+    "ko_name": "레디안",
+    "gen": 2
+  },
+  "167": {
+    "dex": 167,
+    "en_name": "Spinarak",
+    "ko_name": "페이검",
+    "gen": 2
+  },
+  "168": {
+    "dex": 168,
+    "en_name": "Ariados",
+    "ko_name": "아리아도스",
+    "gen": 2
+  },
+  "169": {
+    "dex": 169,
+    "en_name": "Crobat",
+    "ko_name": "크로뱃",
+    "gen": 2
+  },
+  "170": {
+    "dex": 170,
+    "en_name": "Chinchou",
+    "ko_name": "초라기",
+    "gen": 2
+  },
+  "171": {
+    "dex": 171,
+    "en_name": "Lanturn",
+    "ko_name": "랜턴",
+    "gen": 2
+  },
+  "172": {
+    "dex": 172,
+    "en_name": "Pichu",
+    "ko_name": "피츄",
+    "gen": 2
+  },
+  "173": {
+    "dex": 173,
+    "en_name": "Cleffa",
+    "ko_name": "삐",
+    "gen": 2
+  },
+  "174": {
+    "dex": 174,
+    "en_name": "Igglybuff",
+    "ko_name": "푸푸린",
+    "gen": 2
+  },
+  "175": {
+    "dex": 175,
+    "en_name": "Togepi",
+    "ko_name": "토게피",
+    "gen": 2
+  },
+  "176": {
+    "dex": 176,
+    "en_name": "Togetic",
+    "ko_name": "토게틱",
+    "gen": 2
+  },
+  "177": {
+    "dex": 177,
+    "en_name": "Natu",
+    "ko_name": "네이티",
+    "gen": 2
+  },
+  "178": {
+    "dex": 178,
+    "en_name": "Xatu",
+    "ko_name": "네이티오",
+    "gen": 2
+  },
+  "179": {
+    "dex": 179,
+    "en_name": "Mareep",
+    "ko_name": "메리프",
+    "gen": 2
+  },
+  "180": {
+    "dex": 180,
+    "en_name": "Flaaffy",
+    "ko_name": "보송송",
+    "gen": 2
+  },
+  "181": {
+    "dex": 181,
+    "en_name": "Ampharos",
+    "ko_name": "전룡",
+    "gen": 2
+  },
+  "182": {
+    "dex": 182,
+    "en_name": "Bellossom",
+    "ko_name": "아르코",
+    "gen": 2
+  },
+  "183": {
+    "dex": 183,
+    "en_name": "Marill",
+    "ko_name": "마릴",
+    "gen": 2
+  },
+  "184": {
+    "dex": 184,
+    "en_name": "Azumarill",
+    "ko_name": "마릴리",
+    "gen": 2
+  },
+  "185": {
+    "dex": 185,
+    "en_name": "Sudowoodo",
+    "ko_name": "꼬지모",
+    "gen": 2
+  },
+  "186": {
+    "dex": 186,
+    "en_name": "Politoed",
+    "ko_name": "왕구리",
+    "gen": 2
+  },
+  "187": {
+    "dex": 187,
+    "en_name": "Hoppip",
+    "ko_name": "통통코",
+    "gen": 2
+  },
+  "188": {
+    "dex": 188,
+    "en_name": "Skiploom",
+    "ko_name": "두코",
+    "gen": 2
+  },
+  "189": {
+    "dex": 189,
+    "en_name": "Jumpluff",
+    "ko_name": "솜솜코",
+    "gen": 2
+  },
+  "190": {
+    "dex": 190,
+    "en_name": "Aipom",
+    "ko_name": "에이팜",
+    "gen": 2
+  },
+  "191": {
+    "dex": 191,
+    "en_name": "Sunkern",
+    "ko_name": "해너츠",
+    "gen": 2
+  },
+  "192": {
+    "dex": 192,
+    "en_name": "Sunflora",
+    "ko_name": "해루미",
+    "gen": 2
+  },
+  "193": {
+    "dex": 193,
+    "en_name": "Yanma",
+    "ko_name": "왕자리",
+    "gen": 2
+  },
+  "194": {
+    "dex": 194,
+    "en_name": "Wooper",
+    "ko_name": "우파",
+    "gen": 2
+  },
+  "195": {
+    "dex": 195,
+    "en_name": "Quagsire",
+    "ko_name": "누오",
+    "gen": 2
+  },
+  "196": {
+    "dex": 196,
+    "en_name": "Espeon",
+    "ko_name": "에브이",
+    "gen": 2
+  },
+  "197": {
+    "dex": 197,
+    "en_name": "Umbreon",
+    "ko_name": "블래키",
+    "gen": 2
+  },
+  "198": {
+    "dex": 198,
+    "en_name": "Murkrow",
+    "ko_name": "니로우",
+    "gen": 2
+  },
+  "199": {
+    "dex": 199,
+    "en_name": "Slowking",
+    "ko_name": "야도킹",
+    "gen": 2
+  },
+  "200": {
+    "dex": 200,
+    "en_name": "Misdreavus",
+    "ko_name": "무우마",
+    "gen": 2
+  },
+  "201": {
+    "dex": 201,
+    "en_name": "Unown",
+    "ko_name": "안농",
+    "gen": 2
+  },
+  "202": {
+    "dex": 202,
+    "en_name": "Wobbuffet",
+    "ko_name": "마자용",
+    "gen": 2
+  },
+  "203": {
+    "dex": 203,
+    "en_name": "Girafarig",
+    "ko_name": "키링키",
+    "gen": 2
+  },
+  "204": {
+    "dex": 204,
+    "en_name": "Pineco",
+    "ko_name": "피콘",
+    "gen": 2
+  },
+  "205": {
+    "dex": 205,
+    "en_name": "Forretress",
+    "ko_name": "쏘콘",
+    "gen": 2
+  },
+  "206": {
+    "dex": 206,
+    "en_name": "Dunsparce",
+    "ko_name": "노고치",
+    "gen": 2
+  },
+  "207": {
+    "dex": 207,
+    "en_name": "Gligar",
+    "ko_name": "글라이거",
+    "gen": 2
+  },
+  "208": {
+    "dex": 208,
+    "en_name": "Steelix",
+    "ko_name": "강철톤",
+    "gen": 2
+  },
+  "209": {
+    "dex": 209,
+    "en_name": "Snubbull",
+    "ko_name": "블루",
+    "gen": 2
+  },
+  "210": {
+    "dex": 210,
+    "en_name": "Granbull",
+    "ko_name": "그랑블루",
+    "gen": 2
+  },
+  "211": {
+    "dex": 211,
+    "en_name": "Qwilfish",
+    "ko_name": "침바루",
+    "gen": 2
+  },
+  "212": {
+    "dex": 212,
+    "en_name": "Scizor",
+    "ko_name": "핫삼",
+    "gen": 2
+  },
+  "213": {
+    "dex": 213,
+    "en_name": "Shuckle",
+    "ko_name": "단단지",
+    "gen": 2
+  },
+  "214": {
+    "dex": 214,
+    "en_name": "Heracross",
+    "ko_name": "헤라크로스",
+    "gen": 2
+  },
+  "215": {
+    "dex": 215,
+    "en_name": "Sneasel",
+    "ko_name": "포푸니",
+    "gen": 2
+  },
+  "216": {
+    "dex": 216,
+    "en_name": "Teddiursa",
+    "ko_name": "깜지곰",
+    "gen": 2
+  },
+  "217": {
+    "dex": 217,
+    "en_name": "Ursaring",
+    "ko_name": "링곰",
+    "gen": 2
+  },
+  "218": {
+    "dex": 218,
+    "en_name": "Slugma",
+    "ko_name": "마그마그",
+    "gen": 2
+  },
+  "219": {
+    "dex": 219,
+    "en_name": "Magcargo",
+    "ko_name": "마그카르고",
+    "gen": 2
+  },
+  "220": {
+    "dex": 220,
+    "en_name": "Swinub",
+    "ko_name": "꾸꾸리",
+    "gen": 2
+  },
+  "221": {
+    "dex": 221,
+    "en_name": "Piloswine",
+    "ko_name": "메꾸리",
+    "gen": 2
+  },
+  "222": {
+    "dex": 222,
+    "en_name": "Corsola",
+    "ko_name": "코산호",
+    "gen": 2
+  },
+  "223": {
+    "dex": 223,
+    "en_name": "Remoraid",
+    "ko_name": "총어",
+    "gen": 2
+  },
+  "224": {
+    "dex": 224,
+    "en_name": "Octillery",
+    "ko_name": "대포무노",
+    "gen": 2
+  },
+  "225": {
+    "dex": 225,
+    "en_name": "Delibird",
+    "ko_name": "딜리버드",
+    "gen": 2
+  },
+  "226": {
+    "dex": 226,
+    "en_name": "Mantine",
+    "ko_name": "만타인",
+    "gen": 2
+  },
+  "227": {
+    "dex": 227,
+    "en_name": "Skarmory",
+    "ko_name": "무장조",
+    "gen": 2
+  },
+  "228": {
+    "dex": 228,
+    "en_name": "Houndour",
+    "ko_name": "델빌",
+    "gen": 2
+  },
+  "229": {
+    "dex": 229,
+    "en_name": "Houndoom",
+    "ko_name": "헬가",
+    "gen": 2
+  },
+  "230": {
+    "dex": 230,
+    "en_name": "Kingdra",
+    "ko_name": "킹드라",
+    "gen": 2
+  },
+  "231": {
+    "dex": 231,
+    "en_name": "Phanpy",
+    "ko_name": "코코리",
+    "gen": 2
+  },
+  "232": {
+    "dex": 232,
+    "en_name": "Donphan",
+    "ko_name": "코리갑",
+    "gen": 2
+  },
+  "233": {
+    "dex": 233,
+    "en_name": "Porygon2",
+    "ko_name": "폴리곤2",
+    "gen": 2
+  },
+  "234": {
+    "dex": 234,
+    "en_name": "Stantler",
+    "ko_name": "노라키",
+    "gen": 2
+  },
+  "235": {
+    "dex": 235,
+    "en_name": "Smeargle",
+    "ko_name": "루브도",
+    "gen": 2
+  },
+  "236": {
+    "dex": 236,
+    "en_name": "Tyrogue",
+    "ko_name": "배루키",
+    "gen": 2
+  },
+  "237": {
+    "dex": 237,
+    "en_name": "Hitmontop",
+    "ko_name": "카포에라",
+    "gen": 2
+  },
+  "238": {
+    "dex": 238,
+    "en_name": "Smoochum",
+    "ko_name": "뽀뽀라",
+    "gen": 2
+  },
+  "239": {
+    "dex": 239,
+    "en_name": "Elekid",
+    "ko_name": "에레키드",
+    "gen": 2
+  },
+  "240": {
+    "dex": 240,
+    "en_name": "Magby",
+    "ko_name": "마그비",
+    "gen": 2
+  },
+  "241": {
+    "dex": 241,
+    "en_name": "Miltank",
+    "ko_name": "밀탱크",
+    "gen": 2
+  },
+  "242": {
+    "dex": 242,
+    "en_name": "Blissey",
+    "ko_name": "해피너스",
+    "gen": 2
+  },
+  "243": {
+    "dex": 243,
+    "en_name": "Raikou",
+    "ko_name": "라이코",
+    "gen": 2
+  },
+  "244": {
+    "dex": 244,
+    "en_name": "Entei",
+    "ko_name": "앤테이",
+    "gen": 2
+  },
+  "245": {
+    "dex": 245,
+    "en_name": "Suicune",
+    "ko_name": "스이쿤",
+    "gen": 2
+  },
+  "246": {
+    "dex": 246,
+    "en_name": "Larvitar",
+    "ko_name": "애버라스",
+    "gen": 2
+  },
+  "247": {
+    "dex": 247,
+    "en_name": "Pupitar",
+    "ko_name": "데기라스",
+    "gen": 2
+  },
+  "248": {
+    "dex": 248,
+    "en_name": "Tyranitar",
+    "ko_name": "마기라스",
+    "gen": 2
+  },
+  "249": {
+    "dex": 249,
+    "en_name": "Lugia",
+    "ko_name": "루기아",
+    "gen": 2
+  },
+  "250": {
+    "dex": 250,
+    "en_name": "Ho-Oh",
+    "ko_name": "칠색조",
+    "gen": 2
+  },
+  "251": {
+    "dex": 251,
+    "en_name": "Celebi",
+    "ko_name": "세레비",
+    "gen": 2
+  },
+  "252": {
+    "dex": 252,
+    "en_name": "Treecko",
+    "ko_name": "나무지기",
+    "gen": 3
+  },
+  "253": {
+    "dex": 253,
+    "en_name": "Grovyle",
+    "ko_name": "나무돌이",
+    "gen": 3
+  },
+  "254": {
+    "dex": 254,
+    "en_name": "Sceptile",
+    "ko_name": "나무킹",
+    "gen": 3
+  },
+  "255": {
+    "dex": 255,
+    "en_name": "Torchic",
+    "ko_name": "아차모",
+    "gen": 3
+  },
+  "256": {
+    "dex": 256,
+    "en_name": "Combusken",
+    "ko_name": "영치코",
+    "gen": 3
+  },
+  "257": {
+    "dex": 257,
+    "en_name": "Blaziken",
+    "ko_name": "번치코",
+    "gen": 3
+  },
+  "258": {
+    "dex": 258,
+    "en_name": "Mudkip",
+    "ko_name": "물짱이",
+    "gen": 3
+  },
+  "259": {
+    "dex": 259,
+    "en_name": "Marshtomp",
+    "ko_name": "늪짱이",
+    "gen": 3
+  },
+  "260": {
+    "dex": 260,
+    "en_name": "Swampert",
+    "ko_name": "대짱이",
+    "gen": 3
+  },
+  "261": {
+    "dex": 261,
+    "en_name": "Poochyena",
+    "ko_name": "포챠나",
+    "gen": 3
+  },
+  "262": {
+    "dex": 262,
+    "en_name": "Mightyena",
+    "ko_name": "그라에나",
+    "gen": 3
+  },
+  "263": {
+    "dex": 263,
+    "en_name": "Zigzagoon",
+    "ko_name": "지그제구리",
+    "gen": 3
+  },
+  "264": {
+    "dex": 264,
+    "en_name": "Linoone",
+    "ko_name": "직구리",
+    "gen": 3
+  },
+  "265": {
+    "dex": 265,
+    "en_name": "Wurmple",
+    "ko_name": "개무소",
+    "gen": 3
+  },
+  "266": {
+    "dex": 266,
+    "en_name": "Silcoon",
+    "ko_name": "실쿤",
+    "gen": 3
+  },
+  "267": {
+    "dex": 267,
+    "en_name": "Beautifly",
+    "ko_name": "뷰티플라이",
+    "gen": 3
+  },
+  "268": {
+    "dex": 268,
+    "en_name": "Cascoon",
+    "ko_name": "카스쿤",
+    "gen": 3
+  },
+  "269": {
+    "dex": 269,
+    "en_name": "Dustox",
+    "ko_name": "독케일",
+    "gen": 3
+  },
+  "270": {
+    "dex": 270,
+    "en_name": "Lotad",
+    "ko_name": "연꽃몬",
+    "gen": 3
+  },
+  "271": {
+    "dex": 271,
+    "en_name": "Lombre",
+    "ko_name": "로토스",
+    "gen": 3
+  },
+  "272": {
+    "dex": 272,
+    "en_name": "Ludicolo",
+    "ko_name": "로파파",
+    "gen": 3
+  },
+  "273": {
+    "dex": 273,
+    "en_name": "Seedot",
+    "ko_name": "도토링",
+    "gen": 3
+  },
+  "274": {
+    "dex": 274,
+    "en_name": "Nuzleaf",
+    "ko_name": "잎새코",
+    "gen": 3
+  },
+  "275": {
+    "dex": 275,
+    "en_name": "Shiftry",
+    "ko_name": "다탱구",
+    "gen": 3
+  },
+  "276": {
+    "dex": 276,
+    "en_name": "Taillow",
+    "ko_name": "테일로",
+    "gen": 3
+  },
+  "277": {
+    "dex": 277,
+    "en_name": "Swellow",
+    "ko_name": "스왈로",
+    "gen": 3
+  },
+  "278": {
+    "dex": 278,
+    "en_name": "Wingull",
+    "ko_name": "갈모매",
+    "gen": 3
+  },
+  "279": {
+    "dex": 279,
+    "en_name": "Pelipper",
+    "ko_name": "패리퍼",
+    "gen": 3
+  },
+  "280": {
+    "dex": 280,
+    "en_name": "Ralts",
+    "ko_name": "랄토스",
+    "gen": 3
+  },
+  "281": {
+    "dex": 281,
+    "en_name": "Kirlia",
+    "ko_name": "킬리아",
+    "gen": 3
+  },
+  "282": {
+    "dex": 282,
+    "en_name": "Gardevoir",
+    "ko_name": "가디안",
+    "gen": 3
+  },
+  "283": {
+    "dex": 283,
+    "en_name": "Surskit",
+    "ko_name": "비구술",
+    "gen": 3
+  },
+  "284": {
+    "dex": 284,
+    "en_name": "Masquerain",
+    "ko_name": "비나방",
+    "gen": 3
+  },
+  "285": {
+    "dex": 285,
+    "en_name": "Shroomish",
+    "ko_name": "버섯꼬",
+    "gen": 3
+  },
+  "286": {
+    "dex": 286,
+    "en_name": "Breloom",
+    "ko_name": "버섯모",
+    "gen": 3
+  },
+  "287": {
+    "dex": 287,
+    "en_name": "Slakoth",
+    "ko_name": "게을로",
+    "gen": 3
+  },
+  "288": {
+    "dex": 288,
+    "en_name": "Vigoroth",
+    "ko_name": "발바로",
+    "gen": 3
+  },
+  "289": {
+    "dex": 289,
+    "en_name": "Slaking",
+    "ko_name": "게을킹",
+    "gen": 3
+  },
+  "290": {
+    "dex": 290,
+    "en_name": "Nincada",
+    "ko_name": "토중몬",
+    "gen": 3
+  },
+  "291": {
+    "dex": 291,
+    "en_name": "Ninjask",
+    "ko_name": "아이스크",
+    "gen": 3
+  },
+  "292": {
+    "dex": 292,
+    "en_name": "Shedinja",
+    "ko_name": "껍질몬",
+    "gen": 3
+  },
+  "293": {
+    "dex": 293,
+    "en_name": "Whismur",
+    "ko_name": "소곤룡",
+    "gen": 3
+  },
+  "294": {
+    "dex": 294,
+    "en_name": "Loudred",
+    "ko_name": "노공룡",
+    "gen": 3
+  },
+  "295": {
+    "dex": 295,
+    "en_name": "Exploud",
+    "ko_name": "폭음룡",
+    "gen": 3
+  },
+  "296": {
+    "dex": 296,
+    "en_name": "Makuhita",
+    "ko_name": "마크탕",
+    "gen": 3
+  },
+  "297": {
+    "dex": 297,
+    "en_name": "Hariyama",
+    "ko_name": "하리뭉",
+    "gen": 3
+  },
+  "298": {
+    "dex": 298,
+    "en_name": "Azurill",
+    "ko_name": "루리리",
+    "gen": 3
+  },
+  "299": {
+    "dex": 299,
+    "en_name": "Nosepass",
+    "ko_name": "코코파스",
+    "gen": 3
+  },
+  "300": {
+    "dex": 300,
+    "en_name": "Skitty",
+    "ko_name": "에나비",
+    "gen": 3
+  },
+  "301": {
+    "dex": 301,
+    "en_name": "Delcatty",
+    "ko_name": "델케티",
+    "gen": 3
+  },
+  "302": {
+    "dex": 302,
+    "en_name": "Sableye",
+    "ko_name": "깜까미",
+    "gen": 3
+  },
+  "303": {
+    "dex": 303,
+    "en_name": "Mawile",
+    "ko_name": "입치트",
+    "gen": 3
+  },
+  "304": {
+    "dex": 304,
+    "en_name": "Aron",
+    "ko_name": "가보리",
+    "gen": 3
+  },
+  "305": {
+    "dex": 305,
+    "en_name": "Lairon",
+    "ko_name": "갱도라",
+    "gen": 3
+  },
+  "306": {
+    "dex": 306,
+    "en_name": "Aggron",
+    "ko_name": "보스로라",
+    "gen": 3
+  },
+  "307": {
+    "dex": 307,
+    "en_name": "Meditite",
+    "ko_name": "요가랑",
+    "gen": 3
+  },
+  "308": {
+    "dex": 308,
+    "en_name": "Medicham",
+    "ko_name": "요가램",
+    "gen": 3
+  },
+  "309": {
+    "dex": 309,
+    "en_name": "Electrike",
+    "ko_name": "썬더라이",
+    "gen": 3
+  },
+  "310": {
+    "dex": 310,
+    "en_name": "Manectric",
+    "ko_name": "썬더볼트",
+    "gen": 3
+  },
+  "311": {
+    "dex": 311,
+    "en_name": "Plusle",
+    "ko_name": "플러시",
+    "gen": 3
+  },
+  "312": {
+    "dex": 312,
+    "en_name": "Minun",
+    "ko_name": "마이농",
+    "gen": 3
+  },
+  "313": {
+    "dex": 313,
+    "en_name": "Volbeat",
+    "ko_name": "볼비트",
+    "gen": 3
+  },
+  "314": {
+    "dex": 314,
+    "en_name": "Illumise",
+    "ko_name": "네오비트",
+    "gen": 3
+  },
+  "315": {
+    "dex": 315,
+    "en_name": "Roselia",
+    "ko_name": "로젤리아",
+    "gen": 3
+  },
+  "316": {
+    "dex": 316,
+    "en_name": "Gulpin",
+    "ko_name": "꼴깍몬",
+    "gen": 3
+  },
+  "317": {
+    "dex": 317,
+    "en_name": "Swalot",
+    "ko_name": "꿀꺽몬",
+    "gen": 3
+  },
+  "318": {
+    "dex": 318,
+    "en_name": "Carvanha",
+    "ko_name": "샤프니아",
+    "gen": 3
+  },
+  "319": {
+    "dex": 319,
+    "en_name": "Sharpedo",
+    "ko_name": "샤크니아",
+    "gen": 3
+  },
+  "320": {
+    "dex": 320,
+    "en_name": "Wailmer",
+    "ko_name": "고래왕자",
+    "gen": 3
+  },
+  "321": {
+    "dex": 321,
+    "en_name": "Wailord",
+    "ko_name": "고래왕",
+    "gen": 3
+  },
+  "322": {
+    "dex": 322,
+    "en_name": "Numel",
+    "ko_name": "둔타",
+    "gen": 3
+  },
+  "323": {
+    "dex": 323,
+    "en_name": "Camerupt",
+    "ko_name": "폭타",
+    "gen": 3
+  },
+  "324": {
+    "dex": 324,
+    "en_name": "Torkoal",
+    "ko_name": "코터스",
+    "gen": 3
+  },
+  "325": {
+    "dex": 325,
+    "en_name": "Spoink",
+    "ko_name": "피그점프",
+    "gen": 3
+  },
+  "326": {
+    "dex": 326,
+    "en_name": "Grumpig",
+    "ko_name": "피그킹",
+    "gen": 3
+  },
+  "327": {
+    "dex": 327,
+    "en_name": "Spinda",
+    "ko_name": "얼루기",
+    "gen": 3
+  },
+  "328": {
+    "dex": 328,
+    "en_name": "Trapinch",
+    "ko_name": "톱치",
+    "gen": 3
+  },
+  "329": {
+    "dex": 329,
+    "en_name": "Vibrava",
+    "ko_name": "비브라바",
+    "gen": 3
+  },
+  "330": {
+    "dex": 330,
+    "en_name": "Flygon",
+    "ko_name": "플라이곤",
+    "gen": 3
+  },
+  "331": {
+    "dex": 331,
+    "en_name": "Cacnea",
+    "ko_name": "선인왕",
+    "gen": 3
+  },
+  "332": {
+    "dex": 332,
+    "en_name": "Cacturne",
+    "ko_name": "밤선인",
+    "gen": 3
+  },
+  "333": {
+    "dex": 333,
+    "en_name": "Swablu",
+    "ko_name": "파비코",
+    "gen": 3
+  },
+  "334": {
+    "dex": 334,
+    "en_name": "Altaria",
+    "ko_name": "파비코리",
+    "gen": 3
+  },
+  "335": {
+    "dex": 335,
+    "en_name": "Zangoose",
+    "ko_name": "쟝고",
+    "gen": 3
+  },
+  "336": {
+    "dex": 336,
+    "en_name": "Seviper",
+    "ko_name": "세비퍼",
+    "gen": 3
+  },
+  "337": {
+    "dex": 337,
+    "en_name": "Lunatone",
+    "ko_name": "루나톤",
+    "gen": 3
+  },
+  "338": {
+    "dex": 338,
+    "en_name": "Solrock",
+    "ko_name": "솔록",
+    "gen": 3
+  },
+  "339": {
+    "dex": 339,
+    "en_name": "Barboach",
+    "ko_name": "미꾸리",
+    "gen": 3
+  },
+  "340": {
+    "dex": 340,
+    "en_name": "Whiscash",
+    "ko_name": "메깅",
+    "gen": 3
+  },
+  "341": {
+    "dex": 341,
+    "en_name": "Corphish",
+    "ko_name": "가재군",
+    "gen": 3
+  },
+  "342": {
+    "dex": 342,
+    "en_name": "Crawdaunt",
+    "ko_name": "가재장군",
+    "gen": 3
+  },
+  "343": {
+    "dex": 343,
+    "en_name": "Baltoy",
+    "ko_name": "오뚝군",
+    "gen": 3
+  },
+  "344": {
+    "dex": 344,
+    "en_name": "Claydol",
+    "ko_name": "점토도리",
+    "gen": 3
+  },
+  "345": {
+    "dex": 345,
+    "en_name": "Lileep",
+    "ko_name": "릴링",
+    "gen": 3
+  },
+  "346": {
+    "dex": 346,
+    "en_name": "Cradily",
+    "ko_name": "릴리요",
+    "gen": 3
+  },
+  "347": {
+    "dex": 347,
+    "en_name": "Anorith",
+    "ko_name": "아노딥스",
+    "gen": 3
+  },
+  "348": {
+    "dex": 348,
+    "en_name": "Armaldo",
+    "ko_name": "아말도",
+    "gen": 3
+  },
+  "349": {
+    "dex": 349,
+    "en_name": "Feebas",
+    "ko_name": "빈티나",
+    "gen": 3
+  },
+  "350": {
+    "dex": 350,
+    "en_name": "Milotic",
+    "ko_name": "밀로틱",
+    "gen": 3
+  },
+  "351": {
+    "dex": 351,
+    "en_name": "Castform",
+    "ko_name": "캐스퐁",
+    "gen": 3
+  },
+  "352": {
+    "dex": 352,
+    "en_name": "Kecleon",
+    "ko_name": "켈리몬",
+    "gen": 3
+  },
+  "353": {
+    "dex": 353,
+    "en_name": "Shuppet",
+    "ko_name": "어둠대신",
+    "gen": 3
+  },
+  "354": {
+    "dex": 354,
+    "en_name": "Banette",
+    "ko_name": "다크펫",
+    "gen": 3
+  },
+  "355": {
+    "dex": 355,
+    "en_name": "Duskull",
+    "ko_name": "해골몽",
+    "gen": 3
+  },
+  "356": {
+    "dex": 356,
+    "en_name": "Dusclops",
+    "ko_name": "미라몽",
+    "gen": 3
+  },
+  "357": {
+    "dex": 357,
+    "en_name": "Tropius",
+    "ko_name": "트로피우스",
+    "gen": 3
+  },
+  "358": {
+    "dex": 358,
+    "en_name": "Chimecho",
+    "ko_name": "치렁",
+    "gen": 3
+  },
+  "359": {
+    "dex": 359,
+    "en_name": "Absol",
+    "ko_name": "앱솔",
+    "gen": 3
+  },
+  "360": {
+    "dex": 360,
+    "en_name": "Wynaut",
+    "ko_name": "마자",
+    "gen": 3
+  },
+  "361": {
+    "dex": 361,
+    "en_name": "Snorunt",
+    "ko_name": "눈꼬마",
+    "gen": 3
+  },
+  "362": {
+    "dex": 362,
+    "en_name": "Glalie",
+    "ko_name": "얼음귀신",
+    "gen": 3
+  },
+  "363": {
+    "dex": 363,
+    "en_name": "Spheal",
+    "ko_name": "대굴레오",
+    "gen": 3
+  },
+  "364": {
+    "dex": 364,
+    "en_name": "Sealeo",
+    "ko_name": "씨레오",
+    "gen": 3
+  },
+  "365": {
+    "dex": 365,
+    "en_name": "Walrein",
+    "ko_name": "씨카이저",
+    "gen": 3
+  },
+  "366": {
+    "dex": 366,
+    "en_name": "Clamperl",
+    "ko_name": "진주몽",
+    "gen": 3
+  },
+  "367": {
+    "dex": 367,
+    "en_name": "Huntail",
+    "ko_name": "헌테일",
+    "gen": 3
+  },
+  "368": {
+    "dex": 368,
+    "en_name": "Gorebyss",
+    "ko_name": "분홍장이",
+    "gen": 3
+  },
+  "369": {
+    "dex": 369,
+    "en_name": "Relicanth",
+    "ko_name": "시라칸",
+    "gen": 3
+  },
+  "370": {
+    "dex": 370,
+    "en_name": "Luvdisc",
+    "ko_name": "사랑동이",
+    "gen": 3
+  },
+  "371": {
+    "dex": 371,
+    "en_name": "Bagon",
+    "ko_name": "아공이",
+    "gen": 3
+  },
+  "372": {
+    "dex": 372,
+    "en_name": "Shelgon",
+    "ko_name": "쉘곤",
+    "gen": 3
+  },
+  "373": {
+    "dex": 373,
+    "en_name": "Salamence",
+    "ko_name": "보만다",
+    "gen": 3
+  },
+  "374": {
+    "dex": 374,
+    "en_name": "Beldum",
+    "ko_name": "메탕",
+    "gen": 3
+  },
+  "375": {
+    "dex": 375,
+    "en_name": "Metang",
+    "ko_name": "메탕구",
+    "gen": 3
+  },
+  "376": {
+    "dex": 376,
+    "en_name": "Metagross",
+    "ko_name": "메타그로스",
+    "gen": 3
+  },
+  "377": {
+    "dex": 377,
+    "en_name": "Regirock",
+    "ko_name": "레지락",
+    "gen": 3
+  },
+  "378": {
+    "dex": 378,
+    "en_name": "Regice",
+    "ko_name": "레지아이스",
+    "gen": 3
+  },
+  "379": {
+    "dex": 379,
+    "en_name": "Registeel",
+    "ko_name": "레지스틸",
+    "gen": 3
+  },
+  "380": {
+    "dex": 380,
+    "en_name": "Latias",
+    "ko_name": "라티아스",
+    "gen": 3
+  },
+  "381": {
+    "dex": 381,
+    "en_name": "Latios",
+    "ko_name": "라티오스",
+    "gen": 3
+  },
+  "382": {
+    "dex": 382,
+    "en_name": "Kyogre",
+    "ko_name": "가이오가",
+    "gen": 3
+  },
+  "383": {
+    "dex": 383,
+    "en_name": "Groudon",
+    "ko_name": "그란돈",
+    "gen": 3
+  },
+  "384": {
+    "dex": 384,
+    "en_name": "Rayquaza",
+    "ko_name": "레쿠쟈",
+    "gen": 3
+  },
+  "385": {
+    "dex": 385,
+    "en_name": "Jirachi",
+    "ko_name": "지라치",
+    "gen": 3
+  },
+  "386": {
+    "dex": 386,
+    "en_name": "Deoxys",
+    "ko_name": "테오키스",
+    "gen": 3
+  },
+  "387": {
+    "dex": 387,
+    "en_name": "Turtwig",
+    "ko_name": "모부기",
+    "gen": 4
+  },
+  "388": {
+    "dex": 388,
+    "en_name": "Grotle",
+    "ko_name": "수풀부기",
+    "gen": 4
+  },
+  "389": {
+    "dex": 389,
+    "en_name": "Torterra",
+    "ko_name": "토대부기",
+    "gen": 4
+  },
+  "390": {
+    "dex": 390,
+    "en_name": "Chimchar",
+    "ko_name": "불꽃숭이",
+    "gen": 4
+  },
+  "391": {
+    "dex": 391,
+    "en_name": "Monferno",
+    "ko_name": "파이숭이",
+    "gen": 4
+  },
+  "392": {
+    "dex": 392,
+    "en_name": "Infernape",
+    "ko_name": "초염몽",
+    "gen": 4
+  },
+  "393": {
+    "dex": 393,
+    "en_name": "Piplup",
+    "ko_name": "팽도리",
+    "gen": 4
+  },
+  "394": {
+    "dex": 394,
+    "en_name": "Prinplup",
+    "ko_name": "팽태자",
+    "gen": 4
+  },
+  "395": {
+    "dex": 395,
+    "en_name": "Empoleon",
+    "ko_name": "엠페르트",
+    "gen": 4
+  },
+  "396": {
+    "dex": 396,
+    "en_name": "Starly",
+    "ko_name": "찌르꼬",
+    "gen": 4
+  },
+  "397": {
+    "dex": 397,
+    "en_name": "Staravia",
+    "ko_name": "찌르버드",
+    "gen": 4
+  },
+  "398": {
+    "dex": 398,
+    "en_name": "Staraptor",
+    "ko_name": "찌르호크",
+    "gen": 4
+  },
+  "399": {
+    "dex": 399,
+    "en_name": "Bidoof",
+    "ko_name": "비버니",
+    "gen": 4
+  },
+  "400": {
+    "dex": 400,
+    "en_name": "Bibarel",
+    "ko_name": "비버통",
+    "gen": 4
+  },
+  "401": {
+    "dex": 401,
+    "en_name": "Kricketot",
+    "ko_name": "귀뚤뚜기",
+    "gen": 4
+  },
+  "402": {
+    "dex": 402,
+    "en_name": "Kricketune",
+    "ko_name": "귀뚤톡크",
+    "gen": 4
+  },
+  "403": {
+    "dex": 403,
+    "en_name": "Shinx",
+    "ko_name": "꼬링크",
+    "gen": 4
+  },
+  "404": {
+    "dex": 404,
+    "en_name": "Luxio",
+    "ko_name": "럭시오",
+    "gen": 4
+  },
+  "405": {
+    "dex": 405,
+    "en_name": "Luxray",
+    "ko_name": "렌트라",
+    "gen": 4
+  },
+  "406": {
+    "dex": 406,
+    "en_name": "Budew",
+    "ko_name": "꼬몽울",
+    "gen": 4
+  },
+  "407": {
+    "dex": 407,
+    "en_name": "Roserade",
+    "ko_name": "로즈레이드",
+    "gen": 4
+  },
+  "408": {
+    "dex": 408,
+    "en_name": "Cranidos",
+    "ko_name": "두개도스",
+    "gen": 4
+  },
+  "409": {
+    "dex": 409,
+    "en_name": "Rampardos",
+    "ko_name": "램펄드",
+    "gen": 4
+  },
+  "410": {
+    "dex": 410,
+    "en_name": "Shieldon",
+    "ko_name": "방패톱스",
+    "gen": 4
+  },
+  "411": {
+    "dex": 411,
+    "en_name": "Bastiodon",
+    "ko_name": "바리톱스",
+    "gen": 4
+  },
+  "412": {
+    "dex": 412,
+    "en_name": "Burmy",
+    "ko_name": "도롱충이",
+    "gen": 4
+  },
+  "413": {
+    "dex": 413,
+    "en_name": "Wormadam",
+    "ko_name": "도롱마담",
+    "gen": 4
+  },
+  "414": {
+    "dex": 414,
+    "en_name": "Mothim",
+    "ko_name": "나메일",
+    "gen": 4
+  },
+  "415": {
+    "dex": 415,
+    "en_name": "Combee",
+    "ko_name": "세꿀버리",
+    "gen": 4
+  },
+  "416": {
+    "dex": 416,
+    "en_name": "Vespiquen",
+    "ko_name": "비퀸",
+    "gen": 4
+  },
+  "417": {
+    "dex": 417,
+    "en_name": "Pachirisu",
+    "ko_name": "파치리스",
+    "gen": 4
+  },
+  "418": {
+    "dex": 418,
+    "en_name": "Buizel",
+    "ko_name": "브이젤",
+    "gen": 4
+  },
+  "419": {
+    "dex": 419,
+    "en_name": "Floatzel",
+    "ko_name": "플로젤",
+    "gen": 4
+  },
+  "420": {
+    "dex": 420,
+    "en_name": "Cherubi",
+    "ko_name": "체리버",
+    "gen": 4
+  },
+  "421": {
+    "dex": 421,
+    "en_name": "Cherrim",
+    "ko_name": "체리꼬",
+    "gen": 4
+  },
+  "422": {
+    "dex": 422,
+    "en_name": "Shellos",
+    "ko_name": "깝질무",
+    "gen": 4
+  },
+  "423": {
+    "dex": 423,
+    "en_name": "Gastrodon",
+    "ko_name": "트리토돈",
+    "gen": 4
+  },
+  "424": {
+    "dex": 424,
+    "en_name": "Ambipom",
+    "ko_name": "겟핸보숭",
+    "gen": 4
+  },
+  "425": {
+    "dex": 425,
+    "en_name": "Drifloon",
+    "ko_name": "흔들풍손",
+    "gen": 4
+  },
+  "426": {
+    "dex": 426,
+    "en_name": "Drifblim",
+    "ko_name": "둥실라이드",
+    "gen": 4
+  },
+  "427": {
+    "dex": 427,
+    "en_name": "Buneary",
+    "ko_name": "이어롤",
+    "gen": 4
+  },
+  "428": {
+    "dex": 428,
+    "en_name": "Lopunny",
+    "ko_name": "이어롭",
+    "gen": 4
+  },
+  "429": {
+    "dex": 429,
+    "en_name": "Mismagius",
+    "ko_name": "무우마직",
+    "gen": 4
+  },
+  "430": {
+    "dex": 430,
+    "en_name": "Honchkrow",
+    "ko_name": "돈크로우",
+    "gen": 4
+  },
+  "431": {
+    "dex": 431,
+    "en_name": "Glameow",
+    "ko_name": "나옹마",
+    "gen": 4
+  },
+  "432": {
+    "dex": 432,
+    "en_name": "Purugly",
+    "ko_name": "몬냥이",
+    "gen": 4
+  },
+  "433": {
+    "dex": 433,
+    "en_name": "Chingling",
+    "ko_name": "랑딸랑",
+    "gen": 4
+  },
+  "434": {
+    "dex": 434,
+    "en_name": "Stunky",
+    "ko_name": "스컹뿡",
+    "gen": 4
+  },
+  "435": {
+    "dex": 435,
+    "en_name": "Skuntank",
+    "ko_name": "스컹탱크",
+    "gen": 4
+  },
+  "436": {
+    "dex": 436,
+    "en_name": "Bronzor",
+    "ko_name": "동미러",
+    "gen": 4
+  },
+  "437": {
+    "dex": 437,
+    "en_name": "Bronzong",
+    "ko_name": "동탁군",
+    "gen": 4
+  },
+  "438": {
+    "dex": 438,
+    "en_name": "Bonsly",
+    "ko_name": "꼬지지",
+    "gen": 4
+  },
+  "439": {
+    "dex": 439,
+    "en_name": "Mime Jr.",
+    "ko_name": "흉내내",
+    "gen": 4
+  },
+  "440": {
+    "dex": 440,
+    "en_name": "Happiny",
+    "ko_name": "핑복",
+    "gen": 4
+  },
+  "441": {
+    "dex": 441,
+    "en_name": "Chatot",
+    "ko_name": "페라페",
+    "gen": 4
+  },
+  "442": {
+    "dex": 442,
+    "en_name": "Spiritomb",
+    "ko_name": "화강돌",
+    "gen": 4
+  },
+  "443": {
+    "dex": 443,
+    "en_name": "Gible",
+    "ko_name": "딥상어동",
+    "gen": 4
+  },
+  "444": {
+    "dex": 444,
+    "en_name": "Gabite",
+    "ko_name": "한바이트",
+    "gen": 4
+  },
+  "445": {
+    "dex": 445,
+    "en_name": "Garchomp",
+    "ko_name": "한카리아스",
+    "gen": 4
+  },
+  "446": {
+    "dex": 446,
+    "en_name": "Munchlax",
+    "ko_name": "먹고자",
+    "gen": 4
+  },
+  "447": {
+    "dex": 447,
+    "en_name": "Riolu",
+    "ko_name": "리오르",
+    "gen": 4
+  },
+  "448": {
+    "dex": 448,
+    "en_name": "Lucario",
+    "ko_name": "루카리오",
+    "gen": 4
+  },
+  "449": {
+    "dex": 449,
+    "en_name": "Hippopotas",
+    "ko_name": "히포포타스",
+    "gen": 4
+  },
+  "450": {
+    "dex": 450,
+    "en_name": "Hippowdon",
+    "ko_name": "하마돈",
+    "gen": 4
+  },
+  "451": {
+    "dex": 451,
+    "en_name": "Skorupi",
+    "ko_name": "스콜피",
+    "gen": 4
+  },
+  "452": {
+    "dex": 452,
+    "en_name": "Drapion",
+    "ko_name": "드래피온",
+    "gen": 4
+  },
+  "453": {
+    "dex": 453,
+    "en_name": "Croagunk",
+    "ko_name": "삐딱구리",
+    "gen": 4
+  },
+  "454": {
+    "dex": 454,
+    "en_name": "Toxicroak",
+    "ko_name": "독개굴",
+    "gen": 4
+  },
+  "455": {
+    "dex": 455,
+    "en_name": "Carnivine",
+    "ko_name": "무스틈니",
+    "gen": 4
+  },
+  "456": {
+    "dex": 456,
+    "en_name": "Finneon",
+    "ko_name": "형광어",
+    "gen": 4
+  },
+  "457": {
+    "dex": 457,
+    "en_name": "Lumineon",
+    "ko_name": "네오라이트",
+    "gen": 4
+  },
+  "458": {
+    "dex": 458,
+    "en_name": "Mantyke",
+    "ko_name": "타만타",
+    "gen": 4
+  },
+  "459": {
+    "dex": 459,
+    "en_name": "Snover",
+    "ko_name": "눈쓰개",
+    "gen": 4
+  },
+  "460": {
+    "dex": 460,
+    "en_name": "Abomasnow",
+    "ko_name": "눈설왕",
+    "gen": 4
+  },
+  "461": {
+    "dex": 461,
+    "en_name": "Weavile",
+    "ko_name": "포푸니라",
+    "gen": 4
+  },
+  "462": {
+    "dex": 462,
+    "en_name": "Magnezone",
+    "ko_name": "자포코일",
+    "gen": 4
+  },
+  "463": {
+    "dex": 463,
+    "en_name": "Lickilicky",
+    "ko_name": "내룸벨트",
+    "gen": 4
+  },
+  "464": {
+    "dex": 464,
+    "en_name": "Rhyperior",
+    "ko_name": "거대코뿌리",
+    "gen": 4
+  },
+  "465": {
+    "dex": 465,
+    "en_name": "Tangrowth",
+    "ko_name": "덩쿠림보",
+    "gen": 4
+  },
+  "466": {
+    "dex": 466,
+    "en_name": "Electivire",
+    "ko_name": "에레키블",
+    "gen": 4
+  },
+  "467": {
+    "dex": 467,
+    "en_name": "Magmortar",
+    "ko_name": "마그마번",
+    "gen": 4
+  },
+  "468": {
+    "dex": 468,
+    "en_name": "Togekiss",
+    "ko_name": "토게키스",
+    "gen": 4
+  },
+  "469": {
+    "dex": 469,
+    "en_name": "Yanmega",
+    "ko_name": "메가자리",
+    "gen": 4
+  },
+  "470": {
+    "dex": 470,
+    "en_name": "Leafeon",
+    "ko_name": "리피아",
+    "gen": 4
+  },
+  "471": {
+    "dex": 471,
+    "en_name": "Glaceon",
+    "ko_name": "글레이시아",
+    "gen": 4
+  },
+  "472": {
+    "dex": 472,
+    "en_name": "Gliscor",
+    "ko_name": "글라이온",
+    "gen": 4
+  },
+  "473": {
+    "dex": 473,
+    "en_name": "Mamoswine",
+    "ko_name": "맘모꾸리",
+    "gen": 4
+  },
+  "474": {
+    "dex": 474,
+    "en_name": "Porygon-Z",
+    "ko_name": "폴리곤Z",
+    "gen": 4
+  },
+  "475": {
+    "dex": 475,
+    "en_name": "Gallade",
+    "ko_name": "엘레이드",
+    "gen": 4
+  },
+  "476": {
+    "dex": 476,
+    "en_name": "Probopass",
+    "ko_name": "대코파스",
+    "gen": 4
+  },
+  "477": {
+    "dex": 477,
+    "en_name": "Dusknoir",
+    "ko_name": "야느와르몽",
+    "gen": 4
+  },
+  "478": {
+    "dex": 478,
+    "en_name": "Froslass",
+    "ko_name": "눈여아",
+    "gen": 4
+  },
+  "479": {
+    "dex": 479,
+    "en_name": "Rotom",
+    "ko_name": "로토무",
+    "gen": 4
+  },
+  "480": {
+    "dex": 480,
+    "en_name": "Uxie",
+    "ko_name": "유크시",
+    "gen": 4
+  },
+  "481": {
+    "dex": 481,
+    "en_name": "Mesprit",
+    "ko_name": "엠라이트",
+    "gen": 4
+  },
+  "482": {
+    "dex": 482,
+    "en_name": "Azelf",
+    "ko_name": "아그놈",
+    "gen": 4
+  },
+  "483": {
+    "dex": 483,
+    "en_name": "Dialga",
+    "ko_name": "디아루가",
+    "gen": 4
+  },
+  "484": {
+    "dex": 484,
+    "en_name": "Palkia",
+    "ko_name": "펄기아",
+    "gen": 4
+  },
+  "485": {
+    "dex": 485,
+    "en_name": "Heatran",
+    "ko_name": "히드런",
+    "gen": 4
+  },
+  "486": {
+    "dex": 486,
+    "en_name": "Regigigas",
+    "ko_name": "레지기가스",
+    "gen": 4
+  },
+  "487": {
+    "dex": 487,
+    "en_name": "Giratina",
+    "ko_name": "기라티나",
+    "gen": 4
+  },
+  "488": {
+    "dex": 488,
+    "en_name": "Cresselia",
+    "ko_name": "크레세리아",
+    "gen": 4
+  },
+  "489": {
+    "dex": 489,
+    "en_name": "Phione",
+    "ko_name": "피오네",
+    "gen": 4
+  },
+  "490": {
+    "dex": 490,
+    "en_name": "Manaphy",
+    "ko_name": "마나피",
+    "gen": 4
+  },
+  "491": {
+    "dex": 491,
+    "en_name": "Darkrai",
+    "ko_name": "다크라이",
+    "gen": 4
+  },
+  "492": {
+    "dex": 492,
+    "en_name": "Shaymin",
+    "ko_name": "쉐이미",
+    "gen": 4
+  },
+  "493": {
+    "dex": 493,
+    "en_name": "Arceus",
+    "ko_name": "아르세우스",
+    "gen": 4
+  },
+  "494": {
+    "dex": 494,
+    "en_name": "Victini",
+    "ko_name": "비크티니",
+    "gen": 5
+  },
+  "495": {
+    "dex": 495,
+    "en_name": "Snivy",
+    "ko_name": "주리비얀",
+    "gen": 5
+  },
+  "496": {
+    "dex": 496,
+    "en_name": "Servine",
+    "ko_name": "샤비",
+    "gen": 5
+  },
+  "497": {
+    "dex": 497,
+    "en_name": "Serperior",
+    "ko_name": "샤로다",
+    "gen": 5
+  },
+  "498": {
+    "dex": 498,
+    "en_name": "Tepig",
+    "ko_name": "뚜꾸리",
+    "gen": 5
+  },
+  "499": {
+    "dex": 499,
+    "en_name": "Pignite",
+    "ko_name": "차오꿀",
+    "gen": 5
+  },
+  "500": {
+    "dex": 500,
+    "en_name": "Emboar",
+    "ko_name": "염무왕",
+    "gen": 5
+  },
+  "501": {
+    "dex": 501,
+    "en_name": "Oshawott",
+    "ko_name": "수댕이",
+    "gen": 5
+  },
+  "502": {
+    "dex": 502,
+    "en_name": "Dewott",
+    "ko_name": "쌍검자비",
+    "gen": 5
+  },
+  "503": {
+    "dex": 503,
+    "en_name": "Samurott",
+    "ko_name": "대검귀",
+    "gen": 5
+  },
+  "504": {
+    "dex": 504,
+    "en_name": "Patrat",
+    "ko_name": "보르쥐",
+    "gen": 5
+  },
+  "505": {
+    "dex": 505,
+    "en_name": "Watchog",
+    "ko_name": "보르그",
+    "gen": 5
+  },
+  "506": {
+    "dex": 506,
+    "en_name": "Lillipup",
+    "ko_name": "요테리",
+    "gen": 5
+  },
+  "507": {
+    "dex": 507,
+    "en_name": "Herdier",
+    "ko_name": "하데리어",
+    "gen": 5
+  },
+  "508": {
+    "dex": 508,
+    "en_name": "Stoutland",
+    "ko_name": "바랜드",
+    "gen": 5
+  },
+  "509": {
+    "dex": 509,
+    "en_name": "Purrloin",
+    "ko_name": "쌔비냥",
+    "gen": 5
+  },
+  "510": {
+    "dex": 510,
+    "en_name": "Liepard",
+    "ko_name": "레파르다스",
+    "gen": 5
+  },
+  "511": {
+    "dex": 511,
+    "en_name": "Pansage",
+    "ko_name": "야나프",
+    "gen": 5
+  },
+  "512": {
+    "dex": 512,
+    "en_name": "Simisage",
+    "ko_name": "야나키",
+    "gen": 5
+  },
+  "513": {
+    "dex": 513,
+    "en_name": "Pansear",
+    "ko_name": "바오프",
+    "gen": 5
+  },
+  "514": {
+    "dex": 514,
+    "en_name": "Simisear",
+    "ko_name": "바오키",
+    "gen": 5
+  },
+  "515": {
+    "dex": 515,
+    "en_name": "Panpour",
+    "ko_name": "앗차프",
+    "gen": 5
+  },
+  "516": {
+    "dex": 516,
+    "en_name": "Simipour",
+    "ko_name": "앗차키",
+    "gen": 5
+  },
+  "517": {
+    "dex": 517,
+    "en_name": "Munna",
+    "ko_name": "몽나",
+    "gen": 5
+  },
+  "518": {
+    "dex": 518,
+    "en_name": "Musharna",
+    "ko_name": "몽얌나",
+    "gen": 5
+  },
+  "519": {
+    "dex": 519,
+    "en_name": "Pidove",
+    "ko_name": "콩둘기",
+    "gen": 5
+  },
+  "520": {
+    "dex": 520,
+    "en_name": "Tranquill",
+    "ko_name": "유토브",
+    "gen": 5
+  },
+  "521": {
+    "dex": 521,
+    "en_name": "Unfezant",
+    "ko_name": "켄호로우",
+    "gen": 5
+  },
+  "522": {
+    "dex": 522,
+    "en_name": "Blitzle",
+    "ko_name": "줄뮤마",
+    "gen": 5
+  },
+  "523": {
+    "dex": 523,
+    "en_name": "Zebstrika",
+    "ko_name": "제브라이카",
+    "gen": 5
+  },
+  "524": {
+    "dex": 524,
+    "en_name": "Roggenrola",
+    "ko_name": "단굴",
+    "gen": 5
+  },
+  "525": {
+    "dex": 525,
+    "en_name": "Boldore",
+    "ko_name": "암트르",
+    "gen": 5
+  },
+  "526": {
+    "dex": 526,
+    "en_name": "Gigalith",
+    "ko_name": "기가이어스",
+    "gen": 5
+  },
+  "527": {
+    "dex": 527,
+    "en_name": "Woobat",
+    "ko_name": "또르박쥐",
+    "gen": 5
+  },
+  "528": {
+    "dex": 528,
+    "en_name": "Swoobat",
+    "ko_name": "맘박쥐",
+    "gen": 5
+  },
+  "529": {
+    "dex": 529,
+    "en_name": "Drilbur",
+    "ko_name": "두더류",
+    "gen": 5
+  },
+  "530": {
+    "dex": 530,
+    "en_name": "Excadrill",
+    "ko_name": "몰드류",
+    "gen": 5
+  },
+  "531": {
+    "dex": 531,
+    "en_name": "Audino",
+    "ko_name": "다부니",
+    "gen": 5
+  },
+  "532": {
+    "dex": 532,
+    "en_name": "Timburr",
+    "ko_name": "으랏차",
+    "gen": 5
+  },
+  "533": {
+    "dex": 533,
+    "en_name": "Gurdurr",
+    "ko_name": "토쇠골",
+    "gen": 5
+  },
+  "534": {
+    "dex": 534,
+    "en_name": "Conkeldurr",
+    "ko_name": "노보청",
+    "gen": 5
+  },
+  "535": {
+    "dex": 535,
+    "en_name": "Tympole",
+    "ko_name": "동챙이",
+    "gen": 5
+  },
+  "536": {
+    "dex": 536,
+    "en_name": "Palpitoad",
+    "ko_name": "두까비",
+    "gen": 5
+  },
+  "537": {
+    "dex": 537,
+    "en_name": "Seismitoad",
+    "ko_name": "두빅굴",
+    "gen": 5
+  },
+  "538": {
+    "dex": 538,
+    "en_name": "Throh",
+    "ko_name": "던지미",
+    "gen": 5
+  },
+  "539": {
+    "dex": 539,
+    "en_name": "Sawk",
+    "ko_name": "타격귀",
+    "gen": 5
+  },
+  "540": {
+    "dex": 540,
+    "en_name": "Sewaddle",
+    "ko_name": "두르보",
+    "gen": 5
+  },
+  "541": {
+    "dex": 541,
+    "en_name": "Swadloon",
+    "ko_name": "두르쿤",
+    "gen": 5
+  },
+  "542": {
+    "dex": 542,
+    "en_name": "Leavanny",
+    "ko_name": "모아머",
+    "gen": 5
+  },
+  "543": {
+    "dex": 543,
+    "en_name": "Venipede",
+    "ko_name": "마디네",
+    "gen": 5
+  },
+  "544": {
+    "dex": 544,
+    "en_name": "Whirlipede",
+    "ko_name": "휠구",
+    "gen": 5
+  },
+  "545": {
+    "dex": 545,
+    "en_name": "Scolipede",
+    "ko_name": "펜드라",
+    "gen": 5
+  },
+  "546": {
+    "dex": 546,
+    "en_name": "Cottonee",
+    "ko_name": "소미안",
+    "gen": 5
+  },
+  "547": {
+    "dex": 547,
+    "en_name": "Whimsicott",
+    "ko_name": "엘풍",
+    "gen": 5
+  },
+  "548": {
+    "dex": 548,
+    "en_name": "Petilil",
+    "ko_name": "치릴리",
+    "gen": 5
+  },
+  "549": {
+    "dex": 549,
+    "en_name": "Lilligant",
+    "ko_name": "드레디어",
+    "gen": 5
+  },
+  "550": {
+    "dex": 550,
+    "en_name": "Basculin",
+    "ko_name": "배쓰나이",
+    "gen": 5
+  },
+  "551": {
+    "dex": 551,
+    "en_name": "Sandile",
+    "ko_name": "깜눈크",
+    "gen": 5
+  },
+  "552": {
+    "dex": 552,
+    "en_name": "Krokorok",
+    "ko_name": "악비르",
+    "gen": 5
+  },
+  "553": {
+    "dex": 553,
+    "en_name": "Krookodile",
+    "ko_name": "악비아르",
+    "gen": 5
+  },
+  "554": {
+    "dex": 554,
+    "en_name": "Darumaka",
+    "ko_name": "달막화",
+    "gen": 5
+  },
+  "555": {
+    "dex": 555,
+    "en_name": "Darmanitan",
+    "ko_name": "불비달마",
+    "gen": 5
+  },
+  "556": {
+    "dex": 556,
+    "en_name": "Maractus",
+    "ko_name": "마라카치",
+    "gen": 5
+  },
+  "557": {
+    "dex": 557,
+    "en_name": "Dwebble",
+    "ko_name": "돌살이",
+    "gen": 5
+  },
+  "558": {
+    "dex": 558,
+    "en_name": "Crustle",
+    "ko_name": "암팰리스",
+    "gen": 5
+  },
+  "559": {
+    "dex": 559,
+    "en_name": "Scraggy",
+    "ko_name": "곤율랭",
+    "gen": 5
+  },
+  "560": {
+    "dex": 560,
+    "en_name": "Scrafty",
+    "ko_name": "곤율거니",
+    "gen": 5
+  },
+  "561": {
+    "dex": 561,
+    "en_name": "Sigilyph",
+    "ko_name": "심보러",
+    "gen": 5
+  },
+  "562": {
+    "dex": 562,
+    "en_name": "Yamask",
+    "ko_name": "데스마스",
+    "gen": 5
+  },
+  "563": {
+    "dex": 563,
+    "en_name": "Cofagrigus",
+    "ko_name": "데스니칸",
+    "gen": 5
+  },
+  "564": {
+    "dex": 564,
+    "en_name": "Tirtouga",
+    "ko_name": "프로토가",
+    "gen": 5
+  },
+  "565": {
+    "dex": 565,
+    "en_name": "Carracosta",
+    "ko_name": "늑골라",
+    "gen": 5
+  },
+  "566": {
+    "dex": 566,
+    "en_name": "Archen",
+    "ko_name": "아켄",
+    "gen": 5
+  },
+  "567": {
+    "dex": 567,
+    "en_name": "Archeops",
+    "ko_name": "아케오스",
+    "gen": 5
+  },
+  "568": {
+    "dex": 568,
+    "en_name": "Trubbish",
+    "ko_name": "깨봉이",
+    "gen": 5
+  },
+  "569": {
+    "dex": 569,
+    "en_name": "Garbodor",
+    "ko_name": "더스트나",
+    "gen": 5
+  },
+  "570": {
+    "dex": 570,
+    "en_name": "Zorua",
+    "ko_name": "조로아",
+    "gen": 5
+  },
+  "571": {
+    "dex": 571,
+    "en_name": "Zoroark",
+    "ko_name": "조로아크",
+    "gen": 5
+  },
+  "572": {
+    "dex": 572,
+    "en_name": "Minccino",
+    "ko_name": "치라미",
+    "gen": 5
+  },
+  "573": {
+    "dex": 573,
+    "en_name": "Cinccino",
+    "ko_name": "치라치노",
+    "gen": 5
+  },
+  "574": {
+    "dex": 574,
+    "en_name": "Gothita",
+    "ko_name": "고디탱",
+    "gen": 5
+  },
+  "575": {
+    "dex": 575,
+    "en_name": "Gothorita",
+    "ko_name": "고디보미",
+    "gen": 5
+  },
+  "576": {
+    "dex": 576,
+    "en_name": "Gothitelle",
+    "ko_name": "고디모아젤",
+    "gen": 5
+  },
+  "577": {
+    "dex": 577,
+    "en_name": "Solosis",
+    "ko_name": "유니란",
+    "gen": 5
+  },
+  "578": {
+    "dex": 578,
+    "en_name": "Duosion",
+    "ko_name": "듀란",
+    "gen": 5
+  },
+  "579": {
+    "dex": 579,
+    "en_name": "Reuniclus",
+    "ko_name": "란쿨루스",
+    "gen": 5
+  },
+  "580": {
+    "dex": 580,
+    "en_name": "Ducklett",
+    "ko_name": "꼬지보리",
+    "gen": 5
+  },
+  "581": {
+    "dex": 581,
+    "en_name": "Swanna",
+    "ko_name": "스완나",
+    "gen": 5
+  },
+  "582": {
+    "dex": 582,
+    "en_name": "Vanillite",
+    "ko_name": "바닐프티",
+    "gen": 5
+  },
+  "583": {
+    "dex": 583,
+    "en_name": "Vanillish",
+    "ko_name": "바닐리치",
+    "gen": 5
+  },
+  "584": {
+    "dex": 584,
+    "en_name": "Vanilluxe",
+    "ko_name": "배바닐라",
+    "gen": 5
+  },
+  "585": {
+    "dex": 585,
+    "en_name": "Deerling",
+    "ko_name": "사철록",
+    "gen": 5
+  },
+  "586": {
+    "dex": 586,
+    "en_name": "Sawsbuck",
+    "ko_name": "바라철록",
+    "gen": 5
+  },
+  "587": {
+    "dex": 587,
+    "en_name": "Emolga",
+    "ko_name": "에몽가",
+    "gen": 5
+  },
+  "588": {
+    "dex": 588,
+    "en_name": "Karrablast",
+    "ko_name": "딱정곤",
+    "gen": 5
+  },
+  "589": {
+    "dex": 589,
+    "en_name": "Escavalier",
+    "ko_name": "슈바르고",
+    "gen": 5
+  },
+  "590": {
+    "dex": 590,
+    "en_name": "Foongus",
+    "ko_name": "깜놀버슬",
+    "gen": 5
+  },
+  "591": {
+    "dex": 591,
+    "en_name": "Amoonguss",
+    "ko_name": "뽀록나",
+    "gen": 5
+  },
+  "592": {
+    "dex": 592,
+    "en_name": "Frillish",
+    "ko_name": "탱그릴",
+    "gen": 5
+  },
+  "593": {
+    "dex": 593,
+    "en_name": "Jellicent",
+    "ko_name": "탱탱겔",
+    "gen": 5
+  },
+  "594": {
+    "dex": 594,
+    "en_name": "Alomomola",
+    "ko_name": "맘복치",
+    "gen": 5
+  },
+  "595": {
+    "dex": 595,
+    "en_name": "Joltik",
+    "ko_name": "파쪼옥",
+    "gen": 5
+  },
+  "596": {
+    "dex": 596,
+    "en_name": "Galvantula",
+    "ko_name": "전툴라",
+    "gen": 5
+  },
+  "597": {
+    "dex": 597,
+    "en_name": "Ferroseed",
+    "ko_name": "철시드",
+    "gen": 5
+  },
+  "598": {
+    "dex": 598,
+    "en_name": "Ferrothorn",
+    "ko_name": "너트령",
+    "gen": 5
+  },
+  "599": {
+    "dex": 599,
+    "en_name": "Klink",
+    "ko_name": "기어르",
+    "gen": 5
+  },
+  "600": {
+    "dex": 600,
+    "en_name": "Klang",
+    "ko_name": "기기어르",
+    "gen": 5
+  },
+  "601": {
+    "dex": 601,
+    "en_name": "Klinklang",
+    "ko_name": "기기기어르",
+    "gen": 5
+  },
+  "602": {
+    "dex": 602,
+    "en_name": "Tynamo",
+    "ko_name": "저리어",
+    "gen": 5
+  },
+  "603": {
+    "dex": 603,
+    "en_name": "Eelektrik",
+    "ko_name": "저리릴",
+    "gen": 5
+  },
+  "604": {
+    "dex": 604,
+    "en_name": "Eelektross",
+    "ko_name": "저리더프",
+    "gen": 5
+  },
+  "605": {
+    "dex": 605,
+    "en_name": "Elgyem",
+    "ko_name": "리그레",
+    "gen": 5
+  },
+  "606": {
+    "dex": 606,
+    "en_name": "Beheeyem",
+    "ko_name": "벰크",
+    "gen": 5
+  },
+  "607": {
+    "dex": 607,
+    "en_name": "Litwick",
+    "ko_name": "불켜미",
+    "gen": 5
+  },
+  "608": {
+    "dex": 608,
+    "en_name": "Lampent",
+    "ko_name": "램프라",
+    "gen": 5
+  },
+  "609": {
+    "dex": 609,
+    "en_name": "Chandelure",
+    "ko_name": "샹델라",
+    "gen": 5
+  },
+  "610": {
+    "dex": 610,
+    "en_name": "Axew",
+    "ko_name": "터검니",
+    "gen": 5
+  },
+  "611": {
+    "dex": 611,
+    "en_name": "Fraxure",
+    "ko_name": "액슨도",
+    "gen": 5
+  },
+  "612": {
+    "dex": 612,
+    "en_name": "Haxorus",
+    "ko_name": "액스라이즈",
+    "gen": 5
+  },
+  "613": {
+    "dex": 613,
+    "en_name": "Cubchoo",
+    "ko_name": "코고미",
+    "gen": 5
+  },
+  "614": {
+    "dex": 614,
+    "en_name": "Beartic",
+    "ko_name": "툰베어",
+    "gen": 5
+  },
+  "615": {
+    "dex": 615,
+    "en_name": "Cryogonal",
+    "ko_name": "프리지오",
+    "gen": 5
+  },
+  "616": {
+    "dex": 616,
+    "en_name": "Shelmet",
+    "ko_name": "쪼마리",
+    "gen": 5
+  },
+  "617": {
+    "dex": 617,
+    "en_name": "Accelgor",
+    "ko_name": "어지리더",
+    "gen": 5
+  },
+  "618": {
+    "dex": 618,
+    "en_name": "Stunfisk",
+    "ko_name": "메더",
+    "gen": 5
+  },
+  "619": {
+    "dex": 619,
+    "en_name": "Mienfoo",
+    "ko_name": "비조푸",
+    "gen": 5
+  },
+  "620": {
+    "dex": 620,
+    "en_name": "Mienshao",
+    "ko_name": "비조도",
+    "gen": 5
+  },
+  "621": {
+    "dex": 621,
+    "en_name": "Druddigon",
+    "ko_name": "크리만",
+    "gen": 5
+  },
+  "622": {
+    "dex": 622,
+    "en_name": "Golett",
+    "ko_name": "골비람",
+    "gen": 5
+  },
+  "623": {
+    "dex": 623,
+    "en_name": "Golurk",
+    "ko_name": "골루그",
+    "gen": 5
+  },
+  "624": {
+    "dex": 624,
+    "en_name": "Pawniard",
+    "ko_name": "자망칼",
+    "gen": 5
+  },
+  "625": {
+    "dex": 625,
+    "en_name": "Bisharp",
+    "ko_name": "절각참",
+    "gen": 5
+  },
+  "626": {
+    "dex": 626,
+    "en_name": "Bouffalant",
+    "ko_name": "버프론",
+    "gen": 5
+  },
+  "627": {
+    "dex": 627,
+    "en_name": "Rufflet",
+    "ko_name": "수리둥보",
+    "gen": 5
+  },
+  "628": {
+    "dex": 628,
+    "en_name": "Braviary",
+    "ko_name": "워글",
+    "gen": 5
+  },
+  "629": {
+    "dex": 629,
+    "en_name": "Vullaby",
+    "ko_name": "벌차이",
+    "gen": 5
+  },
+  "630": {
+    "dex": 630,
+    "en_name": "Mandibuzz",
+    "ko_name": "버랜지나",
+    "gen": 5
+  },
+  "631": {
+    "dex": 631,
+    "en_name": "Heatmor",
+    "ko_name": "앤티골",
+    "gen": 5
+  },
+  "632": {
+    "dex": 632,
+    "en_name": "Durant",
+    "ko_name": "아이앤트",
+    "gen": 5
+  },
+  "633": {
+    "dex": 633,
+    "en_name": "Deino",
+    "ko_name": "모노두",
+    "gen": 5
+  },
+  "634": {
+    "dex": 634,
+    "en_name": "Zweilous",
+    "ko_name": "디헤드",
+    "gen": 5
+  },
+  "635": {
+    "dex": 635,
+    "en_name": "Hydreigon",
+    "ko_name": "삼삼드래",
+    "gen": 5
+  },
+  "636": {
+    "dex": 636,
+    "en_name": "Larvesta",
+    "ko_name": "활화르바",
+    "gen": 5
+  },
+  "637": {
+    "dex": 637,
+    "en_name": "Volcarona",
+    "ko_name": "불카모스",
+    "gen": 5
+  },
+  "638": {
+    "dex": 638,
+    "en_name": "Cobalion",
+    "ko_name": "코바르온",
+    "gen": 5
+  },
+  "639": {
+    "dex": 639,
+    "en_name": "Terrakion",
+    "ko_name": "테라키온",
+    "gen": 5
+  },
+  "640": {
+    "dex": 640,
+    "en_name": "Virizion",
+    "ko_name": "비리디온",
+    "gen": 5
+  },
+  "641": {
+    "dex": 641,
+    "en_name": "Tornadus",
+    "ko_name": "토네로스",
+    "gen": 5
+  },
+  "642": {
+    "dex": 642,
+    "en_name": "Thundurus",
+    "ko_name": "볼트로스",
+    "gen": 5
+  },
+  "643": {
+    "dex": 643,
+    "en_name": "Reshiram",
+    "ko_name": "레시라무",
+    "gen": 5
+  },
+  "644": {
+    "dex": 644,
+    "en_name": "Zekrom",
+    "ko_name": "제크로무",
+    "gen": 5
+  },
+  "645": {
+    "dex": 645,
+    "en_name": "Landorus",
+    "ko_name": "랜드로스",
+    "gen": 5
+  },
+  "646": {
+    "dex": 646,
+    "en_name": "Kyurem",
+    "ko_name": "큐레무",
+    "gen": 5
+  },
+  "649": {
+    "dex": 649,
+    "en_name": "Genesect",
+    "ko_name": "게노세크트",
+    "gen": 5
+  },
+  "650": {
+    "dex": 650,
+    "en_name": "Chespin",
+    "ko_name": "도치마론",
+    "gen": 6
+  },
+  "651": {
+    "dex": 651,
+    "en_name": "Quilladin",
+    "ko_name": "도치보구",
+    "gen": 6
+  },
+  "652": {
+    "dex": 652,
+    "en_name": "Chesnaught",
+    "ko_name": "브리가론",
+    "gen": 6
+  },
+  "653": {
+    "dex": 653,
+    "en_name": "Fennekin",
+    "ko_name": "푸호꼬",
+    "gen": 6
+  },
+  "654": {
+    "dex": 654,
+    "en_name": "Braixen",
+    "ko_name": "테르나",
+    "gen": 6
+  },
+  "655": {
+    "dex": 655,
+    "en_name": "Delphox",
+    "ko_name": "마폭시",
+    "gen": 6
+  },
+  "656": {
+    "dex": 656,
+    "en_name": "Froakie",
+    "ko_name": "개구마르",
+    "gen": 6
+  },
+  "657": {
+    "dex": 657,
+    "en_name": "Frogadier",
+    "ko_name": "개굴반장",
+    "gen": 6
+  },
+  "658": {
+    "dex": 658,
+    "en_name": "Greninja",
+    "ko_name": "개굴닌자",
+    "gen": 6
+  },
+  "659": {
+    "dex": 659,
+    "en_name": "Bunnelby",
+    "ko_name": "파르빗",
+    "gen": 6
+  },
+  "660": {
+    "dex": 660,
+    "en_name": "Diggersby",
+    "ko_name": "파르토",
+    "gen": 6
+  },
+  "661": {
+    "dex": 661,
+    "en_name": "Fletchling",
+    "ko_name": "화살꼬빈",
+    "gen": 6
+  },
+  "662": {
+    "dex": 662,
+    "en_name": "Fletchinder",
+    "ko_name": "불화살빈",
+    "gen": 6
+  },
+  "663": {
+    "dex": 663,
+    "en_name": "Talonflame",
+    "ko_name": "파이어로",
+    "gen": 6
+  },
+  "664": {
+    "dex": 664,
+    "en_name": "Scatterbug",
+    "ko_name": "분이벌레",
+    "gen": 6
+  },
+  "665": {
+    "dex": 665,
+    "en_name": "Spewpa",
+    "ko_name": "분떠도리",
+    "gen": 6
+  },
+  "666": {
+    "dex": 666,
+    "en_name": "Vivillon",
+    "ko_name": "비비용",
+    "gen": 6
+  },
+  "667": {
+    "dex": 667,
+    "en_name": "Litleo",
+    "ko_name": "레오꼬",
+    "gen": 6
+  },
+  "668": {
+    "dex": 668,
+    "en_name": "Pyroar",
+    "ko_name": "화염레오",
+    "gen": 6
+  },
+  "669": {
+    "dex": 669,
+    "en_name": "Flabébé",
+    "ko_name": "플라베베",
+    "gen": 6
+  },
+  "670": {
+    "dex": 670,
+    "en_name": "Floette",
+    "ko_name": "플라엣테",
+    "gen": 6
+  },
+  "671": {
+    "dex": 671,
+    "en_name": "Florges",
+    "ko_name": "플라제스",
+    "gen": 6
+  },
+  "672": {
+    "dex": 672,
+    "en_name": "Skiddo",
+    "ko_name": "메이클",
+    "gen": 6
+  },
+  "673": {
+    "dex": 673,
+    "en_name": "Gogoat",
+    "ko_name": "고고트",
+    "gen": 6
+  },
+  "674": {
+    "dex": 674,
+    "en_name": "Pancham",
+    "ko_name": "판짱",
+    "gen": 6
+  },
+  "675": {
+    "dex": 675,
+    "en_name": "Pangoro",
+    "ko_name": "부란다",
+    "gen": 6
+  },
+  "676": {
+    "dex": 676,
+    "en_name": "Furfrou",
+    "ko_name": "트리미앙",
+    "gen": 6
+  },
+  "677": {
+    "dex": 677,
+    "en_name": "Espurr",
+    "ko_name": "냐스퍼",
+    "gen": 6
+  },
+  "678": {
+    "dex": 678,
+    "en_name": "Meowstic",
+    "ko_name": "냐오닉스",
+    "gen": 6
+  },
+  "679": {
+    "dex": 679,
+    "en_name": "Honedge",
+    "ko_name": "단칼빙",
+    "gen": 6
+  },
+  "680": {
+    "dex": 680,
+    "en_name": "Doublade",
+    "ko_name": "쌍검킬",
+    "gen": 6
+  },
+  "681": {
+    "dex": 681,
+    "en_name": "Aegislash",
+    "ko_name": "킬가르도",
+    "gen": 6
+  },
+  "682": {
+    "dex": 682,
+    "en_name": "Spritzee",
+    "ko_name": "슈쁘",
+    "gen": 6
+  },
+  "683": {
+    "dex": 683,
+    "en_name": "Aromatisse",
+    "ko_name": "프레프티르",
+    "gen": 6
+  },
+  "684": {
+    "dex": 684,
+    "en_name": "Swirlix",
+    "ko_name": "나룸퍼프",
+    "gen": 6
+  },
+  "685": {
+    "dex": 685,
+    "en_name": "Slurpuff",
+    "ko_name": "나루림",
+    "gen": 6
+  },
+  "686": {
+    "dex": 686,
+    "en_name": "Inkay",
+    "ko_name": "오케이징",
+    "gen": 6
+  },
+  "687": {
+    "dex": 687,
+    "en_name": "Malamar",
+    "ko_name": "칼라마네로",
+    "gen": 6
+  },
+  "688": {
+    "dex": 688,
+    "en_name": "Binacle",
+    "ko_name": "거북손손",
+    "gen": 6
+  },
+  "689": {
+    "dex": 689,
+    "en_name": "Barbaracle",
+    "ko_name": "거북손데스",
+    "gen": 6
+  },
+  "690": {
+    "dex": 690,
+    "en_name": "Skrelp",
+    "ko_name": "수레기",
+    "gen": 6
+  },
+  "691": {
+    "dex": 691,
+    "en_name": "Dragalge",
+    "ko_name": "드래캄",
+    "gen": 6
+  },
+  "692": {
+    "dex": 692,
+    "en_name": "Clauncher",
+    "ko_name": "완철포",
+    "gen": 6
+  },
+  "693": {
+    "dex": 693,
+    "en_name": "Clawitzer",
+    "ko_name": "블로스터",
+    "gen": 6
+  },
+  "694": {
+    "dex": 694,
+    "en_name": "Helioptile",
+    "ko_name": "목도리키텔",
+    "gen": 6
+  },
+  "695": {
+    "dex": 695,
+    "en_name": "Heliolisk",
+    "ko_name": "일레도리자드",
+    "gen": 6
+  },
+  "696": {
+    "dex": 696,
+    "en_name": "Tyrunt",
+    "ko_name": "티고라스",
+    "gen": 6
+  },
+  "697": {
+    "dex": 697,
+    "en_name": "Tyrantrum",
+    "ko_name": "견고라스",
+    "gen": 6
+  },
+  "698": {
+    "dex": 698,
+    "en_name": "Amaura",
+    "ko_name": "아마루스",
+    "gen": 6
+  },
+  "699": {
+    "dex": 699,
+    "en_name": "Aurorus",
+    "ko_name": "아마루르가",
+    "gen": 6
+  },
+  "700": {
+    "dex": 700,
+    "en_name": "Sylveon",
+    "ko_name": "님피아",
+    "gen": 6
+  },
+  "701": {
+    "dex": 701,
+    "en_name": "Hawlucha",
+    "ko_name": "루차불",
+    "gen": 6
+  },
+  "702": {
+    "dex": 702,
+    "en_name": "Dedenne",
+    "ko_name": "데덴네",
+    "gen": 6
+  },
+  "703": {
+    "dex": 703,
+    "en_name": "Carbink",
+    "ko_name": "멜리시",
+    "gen": 6
+  },
+  "704": {
+    "dex": 704,
+    "en_name": "Goomy",
+    "ko_name": "미끄메라",
+    "gen": 6
+  },
+  "705": {
+    "dex": 705,
+    "en_name": "Sliggoo",
+    "ko_name": "미끄네일",
+    "gen": 6
+  },
+  "706": {
+    "dex": 706,
+    "en_name": "Goodra",
+    "ko_name": "미끄래곤",
+    "gen": 6
+  },
+  "707": {
+    "dex": 707,
+    "en_name": "Klefki",
+    "ko_name": "클레피",
+    "gen": 6
+  },
+  "708": {
+    "dex": 708,
+    "en_name": "Phantump",
+    "ko_name": "나목령",
+    "gen": 6
+  },
+  "709": {
+    "dex": 709,
+    "en_name": "Trevenant",
+    "ko_name": "대로트",
+    "gen": 6
+  },
+  "710": {
+    "dex": 710,
+    "en_name": "Pumpkaboo",
+    "ko_name": "호바귀",
+    "gen": 6
+  },
+  "711": {
+    "dex": 711,
+    "en_name": "Gourgeist",
+    "ko_name": "펌킨인",
+    "gen": 6
+  },
+  "712": {
+    "dex": 712,
+    "en_name": "Bergmite",
+    "ko_name": "꽁어름",
+    "gen": 6
+  },
+  "713": {
+    "dex": 713,
+    "en_name": "Avalugg",
+    "ko_name": "크레베이스",
+    "gen": 6
+  },
+  "714": {
+    "dex": 714,
+    "en_name": "Noibat",
+    "ko_name": "음뱃",
+    "gen": 6
+  },
+  "715": {
+    "dex": 715,
+    "en_name": "Noivern",
+    "ko_name": "음번",
+    "gen": 6
+  },
+  "716": {
+    "dex": 716,
+    "en_name": "Xerneas",
+    "ko_name": "제르네아스",
+    "gen": 6
+  },
+  "717": {
+    "dex": 717,
+    "en_name": "Yveltal",
+    "ko_name": "이벨타르",
+    "gen": 6
+  },
+  "718": {
+    "dex": 718,
+    "en_name": "Zygarde",
+    "ko_name": "지가르데",
+    "gen": 6
+  },
+  "719": {
+    "dex": 719,
+    "en_name": "Diancie",
+    "ko_name": "디안시",
+    "gen": 6
+  },
+  "720": {
+    "dex": 720,
+    "en_name": "Hoopa",
+    "ko_name": "후파",
+    "gen": 6
+  },
+  "721": {
+    "dex": 721,
+    "en_name": "Volcanion",
+    "ko_name": "볼케니온",
+    "gen": 6
+  },
+  "722": {
+    "dex": 722,
+    "en_name": "Rowlet",
+    "ko_name": "나몰빼미",
+    "gen": 7
+  },
+  "723": {
+    "dex": 723,
+    "en_name": "Dartrix",
+    "ko_name": "빼미스로우",
+    "gen": 7
+  },
+  "724": {
+    "dex": 724,
+    "en_name": "Decidueye",
+    "ko_name": "모크나이퍼",
+    "gen": 7
+  },
+  "725": {
+    "dex": 725,
+    "en_name": "Litten",
+    "ko_name": "냐오불",
+    "gen": 7
+  },
+  "726": {
+    "dex": 726,
+    "en_name": "Torracat",
+    "ko_name": "냐오히트",
+    "gen": 7
+  },
+  "727": {
+    "dex": 727,
+    "en_name": "Incineroar",
+    "ko_name": "어흥염",
+    "gen": 7
+  },
+  "728": {
+    "dex": 728,
+    "en_name": "Popplio",
+    "ko_name": "누리공",
+    "gen": 7
+  },
+  "729": {
+    "dex": 729,
+    "en_name": "Brionne",
+    "ko_name": "키요공",
+    "gen": 7
+  },
+  "730": {
+    "dex": 730,
+    "en_name": "Primarina",
+    "ko_name": "누리레느",
+    "gen": 7
+  },
+  "731": {
+    "dex": 731,
+    "en_name": "Pikipek",
+    "ko_name": "콕코구리",
+    "gen": 7
+  },
+  "732": {
+    "dex": 732,
+    "en_name": "Trumbeak",
+    "ko_name": "크라파",
+    "gen": 7
+  },
+  "733": {
+    "dex": 733,
+    "en_name": "Toucannon",
+    "ko_name": "왕큰부리",
+    "gen": 7
+  },
+  "734": {
+    "dex": 734,
+    "en_name": "Yungoos",
+    "ko_name": "영구스",
+    "gen": 7
+  },
+  "735": {
+    "dex": 735,
+    "en_name": "Gumshoos",
+    "ko_name": "형사구스",
+    "gen": 7
+  },
+  "736": {
+    "dex": 736,
+    "en_name": "Grubbin",
+    "ko_name": "턱지충이",
+    "gen": 7
+  },
+  "737": {
+    "dex": 737,
+    "en_name": "Charjabug",
+    "ko_name": "전지충이",
+    "gen": 7
+  },
+  "738": {
+    "dex": 738,
+    "en_name": "Vikavolt",
+    "ko_name": "투구뿌논",
+    "gen": 7
+  },
+  "739": {
+    "dex": 739,
+    "en_name": "Crabrawler",
+    "ko_name": "오기지게",
+    "gen": 7
+  },
+  "740": {
+    "dex": 740,
+    "en_name": "Crabominable",
+    "ko_name": "모단단게",
+    "gen": 7
+  },
+  "741": {
+    "dex": 741,
+    "en_name": "Oricorio",
+    "ko_name": "춤추새",
+    "gen": 7
+  },
+  "742": {
+    "dex": 742,
+    "en_name": "Cutiefly",
+    "ko_name": "에블리",
+    "gen": 7
+  },
+  "743": {
+    "dex": 743,
+    "en_name": "Ribombee",
+    "ko_name": "에리본",
+    "gen": 7
+  },
+  "744": {
+    "dex": 744,
+    "en_name": "Rockruff",
+    "ko_name": "암멍이",
+    "gen": 7
+  },
+  "746": {
+    "dex": 746,
+    "en_name": "Wishiwashi",
+    "ko_name": "약어리",
+    "gen": 7
+  },
+  "747": {
+    "dex": 747,
+    "en_name": "Mareanie",
+    "ko_name": "시마사리",
+    "gen": 7
+  },
+  "748": {
+    "dex": 748,
+    "en_name": "Toxapex",
+    "ko_name": "더시마사리",
+    "gen": 7
+  },
+  "749": {
+    "dex": 749,
+    "en_name": "Mudbray",
+    "ko_name": "머드나기",
+    "gen": 7
+  },
+  "750": {
+    "dex": 750,
+    "en_name": "Mudsdale",
+    "ko_name": "만마드",
+    "gen": 7
+  },
+  "751": {
+    "dex": 751,
+    "en_name": "Dewpider",
+    "ko_name": "물거미",
+    "gen": 7
+  },
+  "752": {
+    "dex": 752,
+    "en_name": "Araquanid",
+    "ko_name": "깨비물거미",
+    "gen": 7
+  },
+  "753": {
+    "dex": 753,
+    "en_name": "Fomantis",
+    "ko_name": "짜랑랑",
+    "gen": 7
+  },
+  "754": {
+    "dex": 754,
+    "en_name": "Lurantis",
+    "ko_name": "라란티스",
+    "gen": 7
+  },
+  "755": {
+    "dex": 755,
+    "en_name": "Morelull",
+    "ko_name": "자마슈",
+    "gen": 7
+  },
+  "756": {
+    "dex": 756,
+    "en_name": "Shiinotic",
+    "ko_name": "마셰이드",
+    "gen": 7
+  },
+  "757": {
+    "dex": 757,
+    "en_name": "Salandit",
+    "ko_name": "야도뇽",
+    "gen": 7
+  },
+  "758": {
+    "dex": 758,
+    "en_name": "Salazzle",
+    "ko_name": "염뉴트",
+    "gen": 7
+  },
+  "759": {
+    "dex": 759,
+    "en_name": "Stufful",
+    "ko_name": "포곰곰",
+    "gen": 7
+  },
+  "760": {
+    "dex": 760,
+    "en_name": "Bewear",
+    "ko_name": "이븐곰",
+    "gen": 7
+  },
+  "761": {
+    "dex": 761,
+    "en_name": "Bounsweet",
+    "ko_name": "달콤아",
+    "gen": 7
+  },
+  "762": {
+    "dex": 762,
+    "en_name": "Steenee",
+    "ko_name": "달무리나",
+    "gen": 7
+  },
+  "763": {
+    "dex": 763,
+    "en_name": "Tsareena",
+    "ko_name": "달코퀸",
+    "gen": 7
+  },
+  "764": {
+    "dex": 764,
+    "en_name": "Comfey",
+    "ko_name": "큐아링",
+    "gen": 7
+  },
+  "765": {
+    "dex": 765,
+    "en_name": "Oranguru",
+    "ko_name": "하랑우탄",
+    "gen": 7
+  },
+  "766": {
+    "dex": 766,
+    "en_name": "Passimian",
+    "ko_name": "내던숭이",
+    "gen": 7
+  },
+  "767": {
+    "dex": 767,
+    "en_name": "Wimpod",
+    "ko_name": "꼬시레",
+    "gen": 7
+  },
+  "768": {
+    "dex": 768,
+    "en_name": "Golisopod",
+    "ko_name": "갑주무사",
+    "gen": 7
+  },
+  "769": {
+    "dex": 769,
+    "en_name": "Sandygast",
+    "ko_name": "모래꿍",
+    "gen": 7
+  },
+  "770": {
+    "dex": 770,
+    "en_name": "Palossand",
+    "ko_name": "모래성이당",
+    "gen": 7
+  },
+  "771": {
+    "dex": 771,
+    "en_name": "Pyukumuku",
+    "ko_name": "해무기",
+    "gen": 7
+  },
+  "772": {
+    "dex": 772,
+    "en_name": "Type: Null",
+    "ko_name": "타입:널",
+    "gen": 7
+  },
+  "773": {
+    "dex": 773,
+    "en_name": "Silvally",
+    "ko_name": "실버디",
+    "gen": 7
+  },
+  "774": {
+    "dex": 774,
+    "en_name": "Minior",
+    "ko_name": "메테노",
+    "gen": 7
+  },
+  "775": {
+    "dex": 775,
+    "en_name": "Komala",
+    "ko_name": "자말라",
+    "gen": 7
+  },
+  "776": {
+    "dex": 776,
+    "en_name": "Turtonator",
+    "ko_name": "폭거북스",
+    "gen": 7
+  },
+  "777": {
+    "dex": 777,
+    "en_name": "Togedemaru",
+    "ko_name": "토게데마루",
+    "gen": 7
+  },
+  "778": {
+    "dex": 778,
+    "en_name": "Mimikyu",
+    "ko_name": "따라큐",
+    "gen": 7
+  },
+  "779": {
+    "dex": 779,
+    "en_name": "Bruxish",
+    "ko_name": "치갈기",
+    "gen": 7
+  },
+  "780": {
+    "dex": 780,
+    "en_name": "Drampa",
+    "ko_name": "할비롱",
+    "gen": 7
+  },
+  "781": {
+    "dex": 781,
+    "en_name": "Dhelmise",
+    "ko_name": "타타륜",
+    "gen": 7
+  },
+  "782": {
+    "dex": 782,
+    "en_name": "Jangmo-o",
+    "ko_name": "짜랑꼬",
+    "gen": 7
+  },
+  "783": {
+    "dex": 783,
+    "en_name": "Hakamo-o",
+    "ko_name": "짜랑고우",
+    "gen": 7
+  },
+  "784": {
+    "dex": 784,
+    "en_name": "Kommo-o",
+    "ko_name": "짜랑고우거",
+    "gen": 7
+  },
+  "785": {
+    "dex": 785,
+    "en_name": "Tapu Koko",
+    "ko_name": "카푸꼬꼬꼭",
+    "gen": 7
+  },
+  "786": {
+    "dex": 786,
+    "en_name": "Tapu Lele",
+    "ko_name": "카푸나비나",
+    "gen": 7
+  },
+  "787": {
+    "dex": 787,
+    "en_name": "Tapu Bulu",
+    "ko_name": "카푸브루루",
+    "gen": 7
+  },
+  "788": {
+    "dex": 788,
+    "en_name": "Tapu Fini",
+    "ko_name": "카푸느지느",
+    "gen": 7
+  },
+  "789": {
+    "dex": 789,
+    "en_name": "Cosmog",
+    "ko_name": "코스모그",
+    "gen": 7
+  },
+  "790": {
+    "dex": 790,
+    "en_name": "Cosmoem",
+    "ko_name": "코스모움",
+    "gen": 7
+  },
+  "791": {
+    "dex": 791,
+    "en_name": "Solgaleo",
+    "ko_name": "솔가레오",
+    "gen": 7
+  },
+  "792": {
+    "dex": 792,
+    "en_name": "Lunala",
+    "ko_name": "루나아라",
+    "gen": 7
+  },
+  "793": {
+    "dex": 793,
+    "en_name": "Nihilego",
+    "ko_name": "텅비드",
+    "gen": 7
+  },
+  "794": {
+    "dex": 794,
+    "en_name": "Buzzwole",
+    "ko_name": "매시붕",
+    "gen": 7
+  },
+  "795": {
+    "dex": 795,
+    "en_name": "Pheromosa",
+    "ko_name": "페로코체",
+    "gen": 7
+  },
+  "796": {
+    "dex": 796,
+    "en_name": "Xurkitree",
+    "ko_name": "전수목",
+    "gen": 7
+  },
+  "797": {
+    "dex": 797,
+    "en_name": "Celesteela",
+    "ko_name": "철화구야",
+    "gen": 7
+  },
+  "798": {
+    "dex": 798,
+    "en_name": "Kartana",
+    "ko_name": "종이신도",
+    "gen": 7
+  },
+  "799": {
+    "dex": 799,
+    "en_name": "Guzzlord",
+    "ko_name": "악식킹",
+    "gen": 7
+  },
+  "800": {
+    "dex": 800,
+    "en_name": "Necrozma",
+    "ko_name": "네크로즈마",
+    "gen": 7
+  },
+  "801": {
+    "dex": 801,
+    "en_name": "Magearna",
+    "ko_name": "마기아나",
+    "gen": 7
+  },
+  "802": {
+    "dex": 802,
+    "en_name": "Marshadow",
+    "ko_name": "마샤도",
+    "gen": 7
+  },
+  "803": {
+    "dex": 803,
+    "en_name": "Poipole",
+    "ko_name": "베베놈",
+    "gen": 7
+  },
+  "804": {
+    "dex": 804,
+    "en_name": "Naganadel",
+    "ko_name": "아고용",
+    "gen": 7
+  },
+  "805": {
+    "dex": 805,
+    "en_name": "Stakataka",
+    "ko_name": "차곡차곡",
+    "gen": 7
+  },
+  "806": {
+    "dex": 806,
+    "en_name": "Blacephalon",
+    "ko_name": "두파팡",
+    "gen": 7
+  },
+  "807": {
+    "dex": 807,
+    "en_name": "Zeraora",
+    "ko_name": "제라오라",
+    "gen": 7
+  },
+  "808": {
+    "dex": 808,
+    "en_name": "Meltan",
+    "ko_name": "멜탄",
+    "gen": 7
+  },
+  "809": {
+    "dex": 809,
+    "en_name": "Melmetal",
+    "ko_name": "멜메탈",
+    "gen": 7
+  },
+  "810": {
+    "dex": 810,
+    "en_name": "Grookey",
+    "ko_name": "흥나숭",
+    "gen": 8
+  },
+  "811": {
+    "dex": 811,
+    "en_name": "Thwackey",
+    "ko_name": "채키몽",
+    "gen": 8
+  },
+  "812": {
+    "dex": 812,
+    "en_name": "Rillaboom",
+    "ko_name": "고릴타",
+    "gen": 8
+  },
+  "813": {
+    "dex": 813,
+    "en_name": "Scorbunny",
+    "ko_name": "염버니",
+    "gen": 8
+  },
+  "814": {
+    "dex": 814,
+    "en_name": "Raboot",
+    "ko_name": "래비풋",
+    "gen": 8
+  },
+  "815": {
+    "dex": 815,
+    "en_name": "Cinderace",
+    "ko_name": "에이스번",
+    "gen": 8
+  },
+  "816": {
+    "dex": 816,
+    "en_name": "Sobble",
+    "ko_name": "울머기",
+    "gen": 8
+  },
+  "817": {
+    "dex": 817,
+    "en_name": "Drizzile",
+    "ko_name": "누겔레온",
+    "gen": 8
+  },
+  "818": {
+    "dex": 818,
+    "en_name": "Inteleon",
+    "ko_name": "인텔리레온",
+    "gen": 8
+  },
+  "819": {
+    "dex": 819,
+    "en_name": "Skwovet",
+    "ko_name": "탐리스",
+    "gen": 8
+  },
+  "820": {
+    "dex": 820,
+    "en_name": "Greedent",
+    "ko_name": "요씽리스",
+    "gen": 8
+  },
+  "821": {
+    "dex": 821,
+    "en_name": "Rookidee",
+    "ko_name": "파라꼬",
+    "gen": 8
+  },
+  "822": {
+    "dex": 822,
+    "en_name": "Corvisquire",
+    "ko_name": "파크로우",
+    "gen": 8
+  },
+  "823": {
+    "dex": 823,
+    "en_name": "Corviknight",
+    "ko_name": "아머까오",
+    "gen": 8
+  },
+  "824": {
+    "dex": 824,
+    "en_name": "Blipbug",
+    "ko_name": "두루지벌레",
+    "gen": 8
+  },
+  "825": {
+    "dex": 825,
+    "en_name": "Dottler",
+    "ko_name": "레돔벌레",
+    "gen": 8
+  },
+  "826": {
+    "dex": 826,
+    "en_name": "Orbeetle",
+    "ko_name": "이올브",
+    "gen": 8
+  },
+  "827": {
+    "dex": 827,
+    "en_name": "Nickit",
+    "ko_name": "훔처우",
+    "gen": 8
+  },
+  "828": {
+    "dex": 828,
+    "en_name": "Thievul",
+    "ko_name": "폭슬라이",
+    "gen": 8
+  },
+  "829": {
+    "dex": 829,
+    "en_name": "Gossifleur",
+    "ko_name": "꼬모카",
+    "gen": 8
+  },
+  "830": {
+    "dex": 830,
+    "en_name": "Eldegoss",
+    "ko_name": "백솜모카",
+    "gen": 8
+  },
+  "831": {
+    "dex": 831,
+    "en_name": "Wooloo",
+    "ko_name": "우르",
+    "gen": 8
+  },
+  "832": {
+    "dex": 832,
+    "en_name": "Dubwool",
+    "ko_name": "배우르",
+    "gen": 8
+  },
+  "833": {
+    "dex": 833,
+    "en_name": "Chewtle",
+    "ko_name": "깨물부기",
+    "gen": 8
+  },
+  "834": {
+    "dex": 834,
+    "en_name": "Drednaw",
+    "ko_name": "갈가부기",
+    "gen": 8
+  },
+  "835": {
+    "dex": 835,
+    "en_name": "Yamper",
+    "ko_name": "멍파치",
+    "gen": 8
+  },
+  "836": {
+    "dex": 836,
+    "en_name": "Boltund",
+    "ko_name": "펄스멍",
+    "gen": 8
+  },
+  "837": {
+    "dex": 837,
+    "en_name": "Rolycoly",
+    "ko_name": "탄동",
+    "gen": 8
+  },
+  "838": {
+    "dex": 838,
+    "en_name": "Carkol",
+    "ko_name": "탄차곤",
+    "gen": 8
+  },
+  "839": {
+    "dex": 839,
+    "en_name": "Coalossal",
+    "ko_name": "석탄산",
+    "gen": 8
+  },
+  "840": {
+    "dex": 840,
+    "en_name": "Applin",
+    "ko_name": "과사삭벌레",
+    "gen": 8
+  },
+  "841": {
+    "dex": 841,
+    "en_name": "Flapple",
+    "ko_name": "애프룡",
+    "gen": 8
+  },
+  "842": {
+    "dex": 842,
+    "en_name": "Appletun",
+    "ko_name": "단지래플",
+    "gen": 8
+  },
+  "843": {
+    "dex": 843,
+    "en_name": "Silicobra",
+    "ko_name": "모래뱀",
+    "gen": 8
+  },
+  "844": {
+    "dex": 844,
+    "en_name": "Sandaconda",
+    "ko_name": "사다이사",
+    "gen": 8
+  },
+  "845": {
+    "dex": 845,
+    "en_name": "Cramorant",
+    "ko_name": "윽우지",
+    "gen": 8
+  },
+  "846": {
+    "dex": 846,
+    "en_name": "Arrokuda",
+    "ko_name": "찌로꼬치",
+    "gen": 8
+  },
+  "847": {
+    "dex": 847,
+    "en_name": "Barraskewda",
+    "ko_name": "꼬치조",
+    "gen": 8
+  },
+  "848": {
+    "dex": 848,
+    "en_name": "Toxel",
+    "ko_name": "일레즌",
+    "gen": 8
+  },
+  "849": {
+    "dex": 849,
+    "en_name": "Toxtricity",
+    "ko_name": "스트린더",
+    "gen": 8
+  },
+  "850": {
+    "dex": 850,
+    "en_name": "Sizzlipede",
+    "ko_name": "태우지네",
+    "gen": 8
+  },
+  "851": {
+    "dex": 851,
+    "en_name": "Centiskorch",
+    "ko_name": "다태우지네",
+    "gen": 8
+  },
+  "852": {
+    "dex": 852,
+    "en_name": "Clobbopus",
+    "ko_name": "때때무노",
+    "gen": 8
+  },
+  "853": {
+    "dex": 853,
+    "en_name": "Grapploct",
+    "ko_name": "케오퍼스",
+    "gen": 8
+  },
+  "854": {
+    "dex": 854,
+    "en_name": "Sinistea",
+    "ko_name": "데인차",
+    "gen": 8
+  },
+  "855": {
+    "dex": 855,
+    "en_name": "Polteageist",
+    "ko_name": "포트데스",
+    "gen": 8
+  },
+  "856": {
+    "dex": 856,
+    "en_name": "Hatenna",
+    "ko_name": "몸지브림",
+    "gen": 8
+  },
+  "857": {
+    "dex": 857,
+    "en_name": "Hattrem",
+    "ko_name": "손지브림",
+    "gen": 8
+  },
+  "858": {
+    "dex": 858,
+    "en_name": "Hatterene",
+    "ko_name": "브리무음",
+    "gen": 8
+  },
+  "859": {
+    "dex": 859,
+    "en_name": "Impidimp",
+    "ko_name": "메롱꿍",
+    "gen": 8
+  },
+  "860": {
+    "dex": 860,
+    "en_name": "Morgrem",
+    "ko_name": "쏘겨모",
+    "gen": 8
+  },
+  "861": {
+    "dex": 861,
+    "en_name": "Grimmsnarl",
+    "ko_name": "오롱털",
+    "gen": 8
+  },
+  "862": {
+    "dex": 862,
+    "en_name": "Obstagoon",
+    "ko_name": "가로막구리",
+    "gen": 8
+  },
+  "863": {
+    "dex": 863,
+    "en_name": "Perrserker",
+    "ko_name": "나이킹",
+    "gen": 8
+  },
+  "864": {
+    "dex": 864,
+    "en_name": "Cursola",
+    "ko_name": "산호르곤",
+    "gen": 8
+  },
+  "865": {
+    "dex": 865,
+    "en_name": "Sirfetch’d",
+    "ko_name": "창파나이트",
+    "gen": 8
+  },
+  "866": {
+    "dex": 866,
+    "en_name": "Mr. Rime",
+    "ko_name": "마임꽁꽁",
+    "gen": 8
+  },
+  "867": {
+    "dex": 867,
+    "en_name": "Runerigus",
+    "ko_name": "데스판",
+    "gen": 8
+  },
+  "868": {
+    "dex": 868,
+    "en_name": "Milcery",
+    "ko_name": "마빌크",
+    "gen": 8
+  },
+  "869": {
+    "dex": 869,
+    "en_name": "Alcremie",
+    "ko_name": "마휘핑",
+    "gen": 8
+  },
+  "870": {
+    "dex": 870,
+    "en_name": "Falinks",
+    "ko_name": "대여르",
+    "gen": 8
+  },
+  "871": {
+    "dex": 871,
+    "en_name": "Pincurchin",
+    "ko_name": "찌르성게",
+    "gen": 8
+  },
+  "872": {
+    "dex": 872,
+    "en_name": "Snom",
+    "ko_name": "누니머기",
+    "gen": 8
+  },
+  "873": {
+    "dex": 873,
+    "en_name": "Frosmoth",
+    "ko_name": "모스노우",
+    "gen": 8
+  },
+  "874": {
+    "dex": 874,
+    "en_name": "Stonjourner",
+    "ko_name": "돌헨진",
+    "gen": 8
+  },
+  "875": {
+    "dex": 875,
+    "en_name": "Eiscue",
+    "ko_name": "빙큐보",
+    "gen": 8
+  },
+  "876": {
+    "dex": 876,
+    "en_name": "Indeedee",
+    "ko_name": "에써르",
+    "gen": 8
+  },
+  "877": {
+    "dex": 877,
+    "en_name": "Morpeko",
+    "ko_name": "모르페코",
+    "gen": 8
+  },
+  "878": {
+    "dex": 878,
+    "en_name": "Cufant",
+    "ko_name": "끼리동",
+    "gen": 8
+  },
+  "879": {
+    "dex": 879,
+    "en_name": "Copperajah",
+    "ko_name": "대왕끼리동",
+    "gen": 8
+  },
+  "880": {
+    "dex": 880,
+    "en_name": "Dracozolt",
+    "ko_name": "파치래곤",
+    "gen": 8
+  },
+  "881": {
+    "dex": 881,
+    "en_name": "Arctozolt",
+    "ko_name": "파치르돈",
+    "gen": 8
+  },
+  "882": {
+    "dex": 882,
+    "en_name": "Dracovish",
+    "ko_name": "어래곤",
+    "gen": 8
+  },
+  "883": {
+    "dex": 883,
+    "en_name": "Arctovish",
+    "ko_name": "어치르돈",
+    "gen": 8
+  },
+  "884": {
+    "dex": 884,
+    "en_name": "Duraludon",
+    "ko_name": "두랄루돈",
+    "gen": 8
+  },
+  "885": {
+    "dex": 885,
+    "en_name": "Dreepy",
+    "ko_name": "드라꼰",
+    "gen": 8
+  },
+  "886": {
+    "dex": 886,
+    "en_name": "Drakloak",
+    "ko_name": "드래런치",
+    "gen": 8
+  },
+  "887": {
+    "dex": 887,
+    "en_name": "Dragapult",
+    "ko_name": "드래펄트",
+    "gen": 8
+  },
+  "888": {
+    "dex": 888,
+    "en_name": "Zacian",
+    "ko_name": "자시안",
+    "gen": 8
+  },
+  "889": {
+    "dex": 889,
+    "en_name": "Zamazenta",
+    "ko_name": "자마젠타",
+    "gen": 8
+  },
+  "890": {
+    "dex": 890,
+    "en_name": "Eternatus",
+    "ko_name": "무한다이노",
+    "gen": 8
+  },
+  "891": {
+    "dex": 891,
+    "en_name": "Kubfu",
+    "ko_name": "치고마",
+    "gen": 8
+  },
+  "892": {
+    "dex": 892,
+    "en_name": "Urshifu",
+    "ko_name": "우라오스",
+    "gen": 8
+  },
+  "893": {
+    "dex": 893,
+    "en_name": "Zarude",
+    "ko_name": "자루도",
+    "gen": 8
+  },
+  "894": {
+    "dex": 894,
+    "en_name": "Regieleki",
+    "ko_name": "레지에레키",
+    "gen": 8
+  },
+  "895": {
+    "dex": 895,
+    "en_name": "Regidrago",
+    "ko_name": "레지드래고",
+    "gen": 8
+  },
+  "896": {
+    "dex": 896,
+    "en_name": "Glastrier",
+    "ko_name": "블리자포스",
+    "gen": 8
+  },
+  "897": {
+    "dex": 897,
+    "en_name": "Spectrier",
+    "ko_name": "레이스포스",
+    "gen": 8
+  },
+  "898": {
+    "dex": 898,
+    "en_name": "Calyrex",
+    "ko_name": "버드렉스",
+    "gen": 8
+  },
+  "899": {
+    "dex": 899,
+    "en_name": "Wyrdeer",
+    "ko_name": "신비록",
+    "gen": 8
+  },
+  "900": {
+    "dex": 900,
+    "en_name": "Kleavor",
+    "ko_name": "사마자르",
+    "gen": 8
+  },
+  "901": {
+    "dex": 901,
+    "en_name": "Ursaluna",
+    "ko_name": "다투곰",
+    "gen": 8
+  },
+  "902": {
+    "dex": 902,
+    "en_name": "Basculegion",
+    "ko_name": "대쓰여너",
+    "gen": 8
+  },
+  "903": {
+    "dex": 903,
+    "en_name": "Sneasler",
+    "ko_name": "포푸니크",
+    "gen": 8
+  },
+  "904": {
+    "dex": 904,
+    "en_name": "Overqwil",
+    "ko_name": "장침바루",
+    "gen": 8
+  },
+  "905": {
+    "dex": 905,
+    "en_name": "Enamorus",
+    "ko_name": "러브로스",
+    "gen": 8
+  },
+  "906": {
+    "dex": 906,
+    "en_name": "Sprigatito",
+    "ko_name": "나오하",
+    "gen": 9
+  },
+  "907": {
+    "dex": 907,
+    "en_name": "Floragato",
+    "ko_name": "나로테",
+    "gen": 9
+  },
+  "908": {
+    "dex": 908,
+    "en_name": "Meowscarada",
+    "ko_name": "마스카나",
+    "gen": 9
+  },
+  "909": {
+    "dex": 909,
+    "en_name": "Fuecoco",
+    "ko_name": "뜨아거",
+    "gen": 9
+  },
+  "910": {
+    "dex": 910,
+    "en_name": "Crocalor",
+    "ko_name": "악뜨거",
+    "gen": 9
+  },
+  "911": {
+    "dex": 911,
+    "en_name": "Skeledirge",
+    "ko_name": "라우드본",
+    "gen": 9
+  },
+  "912": {
+    "dex": 912,
+    "en_name": "Quaxly",
+    "ko_name": "꾸왁스",
+    "gen": 9
+  },
+  "913": {
+    "dex": 913,
+    "en_name": "Quaxwell",
+    "ko_name": "아꾸왁",
+    "gen": 9
+  },
+  "914": {
+    "dex": 914,
+    "en_name": "Quaquaval",
+    "ko_name": "웨이니발",
+    "gen": 9
+  },
+  "915": {
+    "dex": 915,
+    "en_name": "Lechonk",
+    "ko_name": "맛보돈",
+    "gen": 9
+  },
+  "916": {
+    "dex": 916,
+    "en_name": "Oinkologne",
+    "ko_name": "퍼퓨돈",
+    "gen": 9
+  },
+  "917": {
+    "dex": 917,
+    "en_name": "Tarountula",
+    "ko_name": "타랜툴라",
+    "gen": 9
+  },
+  "918": {
+    "dex": 918,
+    "en_name": "Spidops",
+    "ko_name": "트래피더",
+    "gen": 9
+  },
+  "919": {
+    "dex": 919,
+    "en_name": "Nymble",
+    "ko_name": "콩알뚜기",
+    "gen": 9
+  },
+  "920": {
+    "dex": 920,
+    "en_name": "Lokix",
+    "ko_name": "엑스레그",
+    "gen": 9
+  },
+  "921": {
+    "dex": 921,
+    "en_name": "Pawmi",
+    "ko_name": "빠모",
+    "gen": 9
+  },
+  "922": {
+    "dex": 922,
+    "en_name": "Pawmo",
+    "ko_name": "빠모트",
+    "gen": 9
+  },
+  "923": {
+    "dex": 923,
+    "en_name": "Pawmot",
+    "ko_name": "빠르모트",
+    "gen": 9
+  },
+  "924": {
+    "dex": 924,
+    "en_name": "Tandemaus",
+    "ko_name": "두리쥐",
+    "gen": 9
+  },
+  "925": {
+    "dex": 925,
+    "en_name": "Maushold",
+    "ko_name": "파밀리쥐",
+    "gen": 9
+  },
+  "926": {
+    "dex": 926,
+    "en_name": "Fidough",
+    "ko_name": "쫀도기",
+    "gen": 9
+  },
+  "927": {
+    "dex": 927,
+    "en_name": "Dachsbun",
+    "ko_name": "바우첼",
+    "gen": 9
+  },
+  "928": {
+    "dex": 928,
+    "en_name": "Smoliv",
+    "ko_name": "미니브",
+    "gen": 9
+  },
+  "929": {
+    "dex": 929,
+    "en_name": "Dolliv",
+    "ko_name": "올리뇨",
+    "gen": 9
+  },
+  "930": {
+    "dex": 930,
+    "en_name": "Arboliva",
+    "ko_name": "올리르바",
+    "gen": 9
+  },
+  "931": {
+    "dex": 931,
+    "en_name": "Squawkabilly",
+    "ko_name": "시비꼬",
+    "gen": 9
+  },
+  "932": {
+    "dex": 932,
+    "en_name": "Nacli",
+    "ko_name": "베베솔트",
+    "gen": 9
+  },
+  "933": {
+    "dex": 933,
+    "en_name": "Naclstack",
+    "ko_name": "스태솔트",
+    "gen": 9
+  },
+  "934": {
+    "dex": 934,
+    "en_name": "Garganacl",
+    "ko_name": "콜로솔트",
+    "gen": 9
+  },
+  "935": {
+    "dex": 935,
+    "en_name": "Charcadet",
+    "ko_name": "카르본",
+    "gen": 9
+  },
+  "936": {
+    "dex": 936,
+    "en_name": "Armarouge",
+    "ko_name": "카디나르마",
+    "gen": 9
+  },
+  "937": {
+    "dex": 937,
+    "en_name": "Ceruledge",
+    "ko_name": "파라블레이즈",
+    "gen": 9
+  },
+  "938": {
+    "dex": 938,
+    "en_name": "Tadbulb",
+    "ko_name": "빈나두",
+    "gen": 9
+  },
+  "939": {
+    "dex": 939,
+    "en_name": "Bellibolt",
+    "ko_name": "찌리배리",
+    "gen": 9
+  },
+  "940": {
+    "dex": 940,
+    "en_name": "Wattrel",
+    "ko_name": "찌리비",
+    "gen": 9
+  },
+  "941": {
+    "dex": 941,
+    "en_name": "Kilowattrel",
+    "ko_name": "찌리비크",
+    "gen": 9
+  },
+  "942": {
+    "dex": 942,
+    "en_name": "Maschiff",
+    "ko_name": "오라티프",
+    "gen": 9
+  },
+  "943": {
+    "dex": 943,
+    "en_name": "Mabosstiff",
+    "ko_name": "마피티프",
+    "gen": 9
+  },
+  "944": {
+    "dex": 944,
+    "en_name": "Shroodle",
+    "ko_name": "땃쭈르",
+    "gen": 9
+  },
+  "945": {
+    "dex": 945,
+    "en_name": "Grafaiai",
+    "ko_name": "태깅구르",
+    "gen": 9
+  },
+  "946": {
+    "dex": 946,
+    "en_name": "Bramblin",
+    "ko_name": "그푸리",
+    "gen": 9
+  },
+  "947": {
+    "dex": 947,
+    "en_name": "Brambleghast",
+    "ko_name": "공푸리",
+    "gen": 9
+  },
+  "948": {
+    "dex": 948,
+    "en_name": "Toedscool",
+    "ko_name": "들눈해",
+    "gen": 9
+  },
+  "949": {
+    "dex": 949,
+    "en_name": "Toedscruel",
+    "ko_name": "육파리",
+    "gen": 9
+  },
+  "950": {
+    "dex": 950,
+    "en_name": "Klawf",
+    "ko_name": "절벼게",
+    "gen": 9
+  },
+  "951": {
+    "dex": 951,
+    "en_name": "Capsakid",
+    "ko_name": "캡싸이",
+    "gen": 9
+  },
+  "952": {
+    "dex": 952,
+    "en_name": "Scovillain",
+    "ko_name": "스코빌런",
+    "gen": 9
+  },
+  "953": {
+    "dex": 953,
+    "en_name": "Rellor",
+    "ko_name": "구르데",
+    "gen": 9
+  },
+  "954": {
+    "dex": 954,
+    "en_name": "Rabsca",
+    "ko_name": "베라카스",
+    "gen": 9
+  },
+  "955": {
+    "dex": 955,
+    "en_name": "Flittle",
+    "ko_name": "하느라기",
+    "gen": 9
+  },
+  "956": {
+    "dex": 956,
+    "en_name": "Espathra",
+    "ko_name": "클레스퍼트라",
+    "gen": 9
+  },
+  "957": {
+    "dex": 957,
+    "en_name": "Tinkatink",
+    "ko_name": "어리짱",
+    "gen": 9
+  },
+  "958": {
+    "dex": 958,
+    "en_name": "Tinkatuff",
+    "ko_name": "벼리짱",
+    "gen": 9
+  },
+  "959": {
+    "dex": 959,
+    "en_name": "Tinkaton",
+    "ko_name": "두드리짱",
+    "gen": 9
+  },
+  "960": {
+    "dex": 960,
+    "en_name": "Wiglett",
+    "ko_name": "바다그다",
+    "gen": 9
+  },
+  "961": {
+    "dex": 961,
+    "en_name": "Wugtrio",
+    "ko_name": "바닥트리오",
+    "gen": 9
+  },
+  "962": {
+    "dex": 962,
+    "en_name": "Bombirdier",
+    "ko_name": "떨구새",
+    "gen": 9
+  },
+  "963": {
+    "dex": 963,
+    "en_name": "Finizen",
+    "ko_name": "맨돌핀",
+    "gen": 9
+  },
+  "964": {
+    "dex": 964,
+    "en_name": "Palafin",
+    "ko_name": "돌핀맨",
+    "gen": 9
+  },
+  "965": {
+    "dex": 965,
+    "en_name": "Varoom",
+    "ko_name": "부르롱",
+    "gen": 9
+  },
+  "966": {
+    "dex": 966,
+    "en_name": "Revavroom",
+    "ko_name": "부르르룸",
+    "gen": 9
+  },
+  "967": {
+    "dex": 967,
+    "en_name": "Cyclizar",
+    "ko_name": "모토마",
+    "gen": 9
+  },
+  "968": {
+    "dex": 968,
+    "en_name": "Orthworm",
+    "ko_name": "꿈트렁",
+    "gen": 9
+  },
+  "969": {
+    "dex": 969,
+    "en_name": "Glimmet",
+    "ko_name": "초롱순",
+    "gen": 9
+  },
+  "970": {
+    "dex": 970,
+    "en_name": "Glimmora",
+    "ko_name": "킬라플로르",
+    "gen": 9
+  },
+  "971": {
+    "dex": 971,
+    "en_name": "Greavard",
+    "ko_name": "망망이",
+    "gen": 9
+  },
+  "972": {
+    "dex": 972,
+    "en_name": "Houndstone",
+    "ko_name": "묘두기",
+    "gen": 9
+  },
+  "973": {
+    "dex": 973,
+    "en_name": "Flamigo",
+    "ko_name": "꼬이밍고",
+    "gen": 9
+  },
+  "974": {
+    "dex": 974,
+    "en_name": "Cetoddle",
+    "ko_name": "터벅고래",
+    "gen": 9
+  },
+  "975": {
+    "dex": 975,
+    "en_name": "Cetitan",
+    "ko_name": "우락고래",
+    "gen": 9
+  },
+  "976": {
+    "dex": 976,
+    "en_name": "Veluza",
+    "ko_name": "가비루사",
+    "gen": 9
+  },
+  "977": {
+    "dex": 977,
+    "en_name": "Dondozo",
+    "ko_name": "어써러셔",
+    "gen": 9
+  },
+  "978": {
+    "dex": 978,
+    "en_name": "Tatsugiri",
+    "ko_name": "싸리용",
+    "gen": 9
+  },
+  "979": {
+    "dex": 979,
+    "en_name": "Annihilape",
+    "ko_name": "저승갓숭",
+    "gen": 9
+  },
+  "980": {
+    "dex": 980,
+    "en_name": "Clodsire",
+    "ko_name": "토오",
+    "gen": 9
+  },
+  "981": {
+    "dex": 981,
+    "en_name": "Farigiraf",
+    "ko_name": "키키링",
+    "gen": 9
+  },
+  "982": {
+    "dex": 982,
+    "en_name": "Dudunsparce",
+    "ko_name": "노고고치",
+    "gen": 9
+  },
+  "983": {
+    "dex": 983,
+    "en_name": "Kingambit",
+    "ko_name": "대도각참",
+    "gen": 9
+  },
+  "984": {
+    "dex": 984,
+    "en_name": "Great Tusk",
+    "ko_name": "위대한엄니",
+    "gen": 9
+  },
+  "985": {
+    "dex": 985,
+    "en_name": "Scream Tail",
+    "ko_name": "우렁찬꼬리",
+    "gen": 9
+  },
+  "986": {
+    "dex": 986,
+    "en_name": "Brute Bonnet",
+    "ko_name": "사나운버섯",
+    "gen": 9
+  },
+  "987": {
+    "dex": 987,
+    "en_name": "Flutter Mane",
+    "ko_name": "날개치는머리",
+    "gen": 9
+  },
+  "988": {
+    "dex": 988,
+    "en_name": "Slither Wing",
+    "ko_name": "땅을기는날개",
+    "gen": 9
+  },
+  "989": {
+    "dex": 989,
+    "en_name": "Sandy Shocks",
+    "ko_name": "모래털가죽",
+    "gen": 9
+  },
+  "990": {
+    "dex": 990,
+    "en_name": "Iron Treads",
+    "ko_name": "무쇠바퀴",
+    "gen": 9
+  },
+  "991": {
+    "dex": 991,
+    "en_name": "Iron Bundle",
+    "ko_name": "무쇠보따리",
+    "gen": 9
+  },
+  "992": {
+    "dex": 992,
+    "en_name": "Iron Hands",
+    "ko_name": "무쇠손",
+    "gen": 9
+  },
+  "993": {
+    "dex": 993,
+    "en_name": "Iron Jugulis",
+    "ko_name": "무쇠머리",
+    "gen": 9
+  },
+  "994": {
+    "dex": 994,
+    "en_name": "Iron Moth",
+    "ko_name": "무쇠독나방",
+    "gen": 9
+  },
+  "995": {
+    "dex": 995,
+    "en_name": "Iron Thorns",
+    "ko_name": "무쇠가시",
+    "gen": 9
+  },
+  "996": {
+    "dex": 996,
+    "en_name": "Frigibax",
+    "ko_name": "드니차",
+    "gen": 9
+  },
+  "997": {
+    "dex": 997,
+    "en_name": "Arctibax",
+    "ko_name": "드니꽁",
+    "gen": 9
+  },
+  "998": {
+    "dex": 998,
+    "en_name": "Baxcalibur",
+    "ko_name": "드닐레이브",
+    "gen": 9
+  },
+  "999": {
+    "dex": 999,
+    "en_name": "Gimmighoul",
+    "ko_name": "모으령",
+    "gen": 9
+  },
+  "1000": {
+    "dex": 1000,
+    "en_name": "Gholdengo",
+    "ko_name": "타부자고",
+    "gen": 9
+  },
+  "1001": {
+    "dex": 1001,
+    "en_name": "Wo-Chien",
+    "ko_name": "총지엔",
+    "gen": 9
+  },
+  "1002": {
+    "dex": 1002,
+    "en_name": "Chien-Pao",
+    "ko_name": "파오젠",
+    "gen": 9
+  },
+  "1003": {
+    "dex": 1003,
+    "en_name": "Ting-Lu",
+    "ko_name": "딩루",
+    "gen": 9
+  },
+  "1004": {
+    "dex": 1004,
+    "en_name": "Chi-Yu",
+    "ko_name": "위유이",
+    "gen": 9
+  },
+  "1005": {
+    "dex": 1005,
+    "en_name": "Roaring Moon",
+    "ko_name": "고동치는달",
+    "gen": 9
+  },
+  "1006": {
+    "dex": 1006,
+    "en_name": "Iron Valiant",
+    "ko_name": "무쇠무인",
+    "gen": 9
+  },
+  "1007": {
+    "dex": 1007,
+    "en_name": "Koraidon",
+    "ko_name": "코라이돈",
+    "gen": 9
+  },
+  "1008": {
+    "dex": 1008,
+    "en_name": "Miraidon",
+    "ko_name": "미라이돈",
+    "gen": 9
+  },
+  "1009": {
+    "dex": 1009,
+    "en_name": "Walking Wake",
+    "ko_name": "굽이치는물결",
+    "gen": 9
+  },
+  "1010": {
+    "dex": 1010,
+    "en_name": "Iron Leaves",
+    "ko_name": "무쇠잎새",
+    "gen": 9
+  },
+  "1011": {
+    "dex": 1011,
+    "en_name": "Dipplin",
+    "ko_name": "과미르",
+    "gen": 9
+  },
+  "1012": {
+    "dex": 1012,
+    "en_name": "Poltchageist",
+    "ko_name": "차데스",
+    "gen": 9
+  },
+  "1013": {
+    "dex": 1013,
+    "en_name": "Sinistcha",
+    "ko_name": "그우린차",
+    "gen": 9
+  },
+  "1014": {
+    "dex": 1014,
+    "en_name": "Okidogi",
+    "ko_name": "조타구",
+    "gen": 9
+  },
+  "1015": {
+    "dex": 1015,
+    "en_name": "Munkidori",
+    "ko_name": "이야후",
+    "gen": 9
+  },
+  "1016": {
+    "dex": 1016,
+    "en_name": "Fezandipiti",
+    "ko_name": "기로치",
+    "gen": 9
+  },
+  "1017": {
+    "dex": 1017,
+    "en_name": "Ogerpon",
+    "ko_name": "오거폰",
+    "gen": 9
+  },
+  "1018": {
+    "dex": 1018,
+    "en_name": "Archaludon",
+    "ko_name": "브리두라스",
+    "gen": 9
+  },
+  "1019": {
+    "dex": 1019,
+    "en_name": "Hydrapple",
+    "ko_name": "과미드라",
+    "gen": 9
+  },
+  "1020": {
+    "dex": 1020,
+    "en_name": "Gouging Fire",
+    "ko_name": "꿰뚫는화염",
+    "gen": 9
+  },
+  "1021": {
+    "dex": 1021,
+    "en_name": "Raging Bolt",
+    "ko_name": "날뛰는우레",
+    "gen": 9
+  },
+  "1022": {
+    "dex": 1022,
+    "en_name": "Iron Boulder",
+    "ko_name": "무쇠암석",
+    "gen": 9
+  },
+  "1023": {
+    "dex": 1023,
+    "en_name": "Iron Crown",
+    "ko_name": "무쇠감투",
+    "gen": 9
+  },
+  "1024": {
+    "dex": 1024,
+    "en_name": "Terapagos",
+    "ko_name": "테라파고스",
+    "gen": 9
+  },
+  "1025": {
+    "dex": 1025,
+    "en_name": "Pecharunt",
+    "ko_name": "복숭악동",
+    "gen": 9
+  }
+}

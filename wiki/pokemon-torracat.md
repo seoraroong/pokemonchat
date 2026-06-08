@@ -1,0 +1,55 @@
+---
+title: "Torracat / 냐오히트"
+type: concept
+language: ko
+created: 2026-06-05
+modified: 2026-06-05
+tags: ["pokemon", "gen7", "type-fire", "type-none", "evo-line-torracat"]
+aliases: ["냐오히트", "torracat"]
+summary: "#726 냐오히트 (불꽃 / none) — GO 최대 CP: 1,710"
+evolution_line: "torracat"
+---
+
+# Torracat / 냐오히트
+
+## 기본 정보
+
+| 항목 | 값 |
+|------|-----|
+| 도감 번호 | #726 |
+| 영문 이름 | Torracat |
+| 타입 | 불꽃 / none |
+| 세대 | 7세대 |
+
+## 포켓몬 GO 스탯
+
+| 항목 | 수치 |
+|------|------|
+| 공격 (GO) | 174 |
+| 방어 (GO) | 103 |
+| 체력 (GO) | 163 |
+| 최대 CP (Lv.40) | 1,710 |
+| 최대 CP (Lv.50) | 1,934 |
+| 타입 | 불꽃 |
+| 버디 거리 | 3km |
+
+### 기술 풀 (GO)
+- **빠른 기술:** [[move-bite|물기]], [[move-ember|불꽃세례]]
+- **스페셜 기술:** [[move-flamethrower|화염방사]], [[move-flame-charge|니트로차지]], [[move-crunch|깨물어부수기]]
+
+### 진화 체인
+- **진화 전:** [[pokemon-litten|냐오불]]
+- **진화 후:** [[pokemon-incineroar|어흥염]]
+## 진화 정보
+
+| 항목 | 포켓몬 | 조건 |
+|------|--------|------|
+| 진화 전 | 없음 (1단계 진화) | — |
+| 진화 후 | 없음 | — |
+
+## Related Concepts / 관련 개념
+- [[type-chart]] — 타입 상성표
+- [[pokedex-gen7]] — 7세대 포켓몬 목록
+
+## References
+- Source: PokeMiners GAME_MASTER + PokéAPI

@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포켓몬 GO 챗봇</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+      background: #060d1a;
+      background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(185,28,28,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(37,99,235,0.06) 0%, transparent 50%);
+      height: 100dvh; display: flex; align-items: center; justify-content: center;
+    }
+    #app {
+      position: relative; width: 100%; max-width: 420px;
+      height: 100dvh; max-height: 860px;
+      background: #0f172a; color: #e2e8f0;
+      display: flex; flex-direction: column; overflow: hidden;
+    }
+    @media (min-height: 900px) and (min-width: 500px) {
+      #app { border-radius: 24px; box-shadow: 0 32px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.05); }
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #b91c1c, #dc2626);
+      padding: 14px 20px; display: flex; align-items: center; gap: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4); flex-shrink: 0;
+    }
+    .pokeball { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(to bottom, #fff 50%, #dc2626 50%); border: 3px solid #fff; position: relative; flex-shrink: 0; }
+    .pokeball::before { content: ''; position: absolute; left: 0; right: 0; top: calc(50% - 1.5px); height: 3px; background: #fff; }
+    .pokeball::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 10px; height: 10px; border-radius: 50%; background: #fff; border: 2px solid #333; }
+    .header-text h1 { font-size: 1.15rem; font-weight: 700; color: #fff; }
+    .header-text p  { font-size: 0.72rem; color: rgba(255,255,255,0.75); margin-top: 1px; }
+
+    /* ── Views ── */
+    .view { flex: 1; overflow: hidden; display: flex; flex-direction: column; min-height: 0; }
+
+    /* ── Chat ── */
+    #chat { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; scroll-behavior: smooth; }
+    #chat::-webkit-scrollbar { width: 4px; }
+    #chat::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+    #welcome { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 28px 16px 16px; flex: 1; }
+    #welcome h2 { font-size: 1.2rem; color: #f8fafc; margin-bottom: 6px; }
+    #welcome p  { font-size: 0.82rem; color: #64748b; margin-bottom: 18px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; justify-content: center; }
+    .chip { background: #1e293b; border: 1px solid #334155; border-radius: 20px; padding: 6px 13px; font-size: 0.8rem; color: #94a3b8; cursor: pointer; transition: background 0.15s, color 0.15s; user-select: none; }
+    .chip:hover { background: #334155; color: #e2e8f0; }
+    .msg { max-width: 78%; padding: 11px 15px; border-radius: 18px; line-height: 1.55; font-size: 0.92rem; word-break: break-word; animation: pop 0.15s ease; }
+    @keyframes pop { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+    .msg.user { background: #2563eb; color: #fff; align-self: flex-end; border-bottom-right-radius: 4px; }
+    .msg.bot  { background: #1e293b; border: 1px solid #334155; align-self: flex-start; border-bottom-left-radius: 4px; }
+    .msg.error { background: #7f1d1d; border-color: #b91c1c; }
+    .dots { display: flex; gap: 4px; padding: 4px 2px; }
+    .dots span { width: 7px; height: 7px; background: #64748b; border-radius: 50%; animation: bounce 1.2s infinite ease-in-out; }
+    .dots span:nth-child(2) { animation-delay: 0.2s; }
+    .dots span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes bounce { 0%,80%,100%{transform:scale(0.5);opacity:0.5;} 40%{transform:scale(1);opacity:1;} }
+    .msg strong { color: #fbbf24; }
+    .msg code { background: rgba(0,0,0,0.35); border-radius: 4px; padding: 1px 5px; font-size: 0.87em; font-family: monospace; }
+    .msg ul, .msg ol { padding-left: 1.3em; margin: 4px 0; }
+    .msg table { border-collapse: collapse; margin: 6px 0; font-size: 0.85em; width: 100%; }
+    .msg th, .msg td { border: 1px solid #334155; padding: 4px 8px; text-align: left; }
+    .msg th { background: #0f172a; color: #94a3b8; }
+    .msg h2 { font-size: 0.95rem; font-weight: 700; color: #e2e8f0; margin: 10px 0 4px; }
+    .msg h3 { font-size: 0.88rem; font-weight: 600; color: #94a3b8; margin: 8px 0 3px; }
+    .msg h2:first-child, .msg h3:first-child { margin-top: 2px; }
+    .pokemon-sprite { display: block; width: 96px; height: 96px; object-fit: contain; margin: 0 auto 10px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); animation: pop 0.25s ease; }
+    #input-bar { padding: 10px 16px; background: #0f172a; border-top: 1px solid #1e293b; display: flex; gap: 8px; flex-shrink: 0; }
+    #msg-input { flex: 1; background: #1e293b; border: 1px solid #334155; border-radius: 24px; padding: 11px 18px; color: #e2e8f0; font-size: 0.95rem; outline: none; transition: border-color 0.2s; }
+    #msg-input:focus { border-color: #3b82f6; }
+    #msg-input::placeholder { color: #475569; }
+    #send-btn { background: #b91c1c; color: #fff; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 1.15rem; cursor: pointer; flex-shrink: 0; transition: background 0.15s, transform 0.1s; display: flex; align-items: center; justify-content: center; }
+    #send-btn:hover:not(:disabled) { background: #dc2626; }
+    #send-btn:active:not(:disabled) { transform: scale(0.93); }
+    #send-btn:disabled { background: #334155; cursor: not-allowed; }
+
+    /* ── 공통 타입 배지 ── */
+    .type-badge { font-size: 0.62rem; font-weight: 600; padding: 2px 6px; border-radius: 8px; color: #fff; line-height: 1.4; }
+
+    /* ── 도감 ── */
+    #view-dex { background: #0f172a; }
+    #dex-top { flex-shrink: 0; padding: 10px 12px 0; }
+    #dex-search-wrap { position: relative; margin-bottom: 8px; }
+    #dex-search-wrap::before { content:'🔍'; position:absolute; left:12px; top:50%; transform:translateY(-50%); font-size:0.85rem; pointer-events:none; }
+    #dex-search { width: 100%; background: #1e293b; border: 1px solid #334155; border-radius: 20px; padding: 9px 14px 9px 36px; color: #e2e8f0; font-size: 0.88rem; outline: none; transition: border-color 0.2s; }
+    #dex-search:focus { border-color: #3b82f6; }
+    #dex-search::placeholder { color: #475569; }
+    #gen-tabs { display: flex; gap: 4px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; }
+    #gen-tabs::-webkit-scrollbar { display: none; }
+    .gen-tab { flex-shrink: 0; background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 5px 12px; color: #64748b; font-size: 0.78rem; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+    .gen-tab:hover { border-color: #475569; color: #94a3b8; }
+    .gen-tab.active { background: #1d3461; border-color: #3b82f6; color: #60a5fa; font-weight: 600; }
+    #dex-count { font-size: 0.75rem; color: #475569; padding: 0 4px 6px; text-align: right; }
+    #dex-grid { flex: 1; overflow-y: auto; padding: 4px 10px 10px; display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; align-content: start; }
+    #dex-grid::-webkit-scrollbar { width: 4px; }
+    #dex-grid::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+    .dex-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 8px 6px 7px; cursor: pointer; text-align: center; transition: transform 0.12s, background 0.12s, border-color 0.12s; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+    .dex-card:hover { background: #243450; border-color: #3b82f6; transform: translateY(-2px); }
+    .dex-card:active { transform: scale(0.96); }
+    .dex-num { font-size: 0.67rem; color: #475569; font-weight: 500; align-self: flex-start; }
+    .dex-sprite { width: 62px; height: 62px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4)); }
+    .dex-sprite.loading { opacity: 0.2; }
+    .dex-name { font-size: 0.76rem; font-weight: 600; color: #e2e8f0; line-height: 1.2; }
+    .dex-types { display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; }
+    #dex-empty { grid-column: 1/-1; text-align: center; padding: 40px 0; color: #475569; font-size: 0.9rem; }
+
+    /* ── 레이드/이벤트 ── */
+    #view-raid { flex: 1; overflow-y: auto; min-height: 0; background: #0f172a; }
+    #view-raid::-webkit-scrollbar { width: 4px; }
+    #view-raid::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+    .raid-section { padding: 12px 14px 0; }
+    .section-title { font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; padding: 0 2px 10px; }
+    .event-card { background: #1a2744; border: 1px solid #2d3f55; border-radius: 12px; padding: 11px 13px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px; }
+    .event-active-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; flex-shrink: 0; margin-top: 4px; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    .event-info { flex: 1; min-width: 0; }
+    .event-name { font-size: 0.84rem; font-weight: 600; color: #e2e8f0; line-height: 1.35; }
+    .event-time { font-size: 0.72rem; color: #64748b; margin-top: 3px; }
+    .event-type-badge { flex-shrink: 0; font-size: 0.63rem; font-weight: 700; padding: 3px 8px; border-radius: 10px; color: #fff; margin-top: 1px; }
+    .tier-section { margin-bottom: 14px; }
+    .tier-label { font-size: 0.72rem; font-weight: 600; color: #94a3b8; margin-bottom: 8px; padding: 0 2px; }
+    .raid-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 7px; }
+    .raid-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 10px; padding: 7px 5px 7px; text-align: center; cursor: pointer; transition: transform 0.12s, background 0.12s; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+    .raid-card:hover { background: #243450; border-color: #3b82f6; transform: translateY(-2px); }
+    .raid-sprite { width: 58px; height: 58px; object-fit: contain; }
+    .raid-name { font-size: 0.72rem; font-weight: 600; color: #e2e8f0; line-height: 1.2; }
+    .raid-shiny { font-size: 0.6rem; color: #f59e0b; }
+    .raid-types { display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; }
+    .raid-types .type-badge { font-size: 0.56rem; padding: 1px 5px; }
+    .raid-empty { color: #475569; font-size: 0.82rem; text-align: center; padding: 14px 0; }
+
+    /* ── 알 탭 ── */
+    #view-egg { background: #0f172a; }
+    #egg-top { flex-shrink: 0; padding: 10px 12px 0; }
+    #egg-km-tabs { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; }
+    #egg-km-tabs::-webkit-scrollbar { display: none; }
+    .km-tab { flex-shrink: 0; background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 5px 12px; color: #64748b; font-size: 0.78rem; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+    .km-tab:hover { border-color: #475569; color: #94a3b8; }
+    .km-tab.active { background: #1d3461; border-color: #3b82f6; color: #60a5fa; font-weight: 600; }
+    #egg-count { font-size: 0.75rem; color: #475569; padding: 0 4px 6px; text-align: right; }
+    #egg-grid { flex: 1; overflow-y: auto; padding: 4px 10px 10px; display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; align-content: start; }
+    #egg-grid::-webkit-scrollbar { width: 4px; }
+    #egg-grid::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+    .egg-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 8px 6px 7px; cursor: pointer; text-align: center; transition: transform 0.12s, background 0.12s; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+    .egg-card:hover { background: #243450; border-color: #3b82f6; transform: translateY(-2px); }
+    .egg-sprite { width: 58px; height: 58px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4)); }
+    .egg-name { font-size: 0.74rem; font-weight: 600; color: #e2e8f0; line-height: 1.2; }
+    .egg-rarity { font-size: 0.6rem; color: #f59e0b; }
+    .egg-badges { display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; margin-top: 1px; }
+    .egg-badge { font-size: 0.58rem; padding: 1px 5px; border-radius: 8px; font-weight: 600; }
+    .egg-badge.shiny { background: #78350f; color: #fde68a; }
+    .egg-badge.as    { background: #1e3a5f; color: #93c5fd; }
+
+    /* ── PvP 탭 ── */
+    #view-pvp { background: #0f172a; }
+    #pvp-top { flex-shrink: 0; padding: 10px 14px 8px; display: flex; gap: 6px; }
+    .pvp-tab { flex: 1; background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 8px 4px 6px; text-align: center; color: #64748b; font-size: 0.78rem; cursor: pointer; transition: all 0.15s; line-height: 1.3; }
+    .pvp-tab:hover { border-color: #475569; color: #94a3b8; }
+    .pvp-tab.active { background: #1d3461; border-color: #3b82f6; color: #60a5fa; font-weight: 600; }
+    .pvp-cp { font-size: 0.6rem; color: inherit; opacity: 0.7; display: block; }
+    #pvp-list { flex: 1; overflow-y: auto; padding: 0 12px 10px; }
+    #pvp-list::-webkit-scrollbar { width: 4px; }
+    #pvp-list::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+    .pvp-row { display: flex; align-items: center; gap: 8px; padding: 6px 8px; background: #1e293b; border: 1px solid #2d3f55; border-radius: 10px; margin-bottom: 5px; cursor: pointer; transition: background 0.12s; }
+    .pvp-row:hover { background: #243450; border-color: #3b82f6; }
+    .pvp-rank { font-size: 0.7rem; color: #64748b; font-weight: 700; width: 22px; text-align: center; flex-shrink: 0; }
+    .pvp-rank.top3 { color: #f59e0b; }
+    .pvp-sprite { width: 42px; height: 42px; object-fit: contain; flex-shrink: 0; }
+    .pvp-info { flex: 1; min-width: 0; }
+    .pvp-name-line { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+    .pvp-name { font-size: 0.82rem; font-weight: 600; color: #e2e8f0; }
+    .pvp-type-badges .type-badge { font-size: 0.55rem; padding: 1px 4px; }
+    .pvp-moves { font-size: 0.67rem; color: #64748b; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .pvp-score { font-size: 0.82rem; font-weight: 700; color: #60a5fa; flex-shrink: 0; }
+
+    /* ── Tab bar ── */
+    #tab-bar { display: flex; flex-shrink: 0; background: #0a1121; border-top: 1px solid #1e293b; }
+    .tab-btn { flex: 1; background: none; border: none; color: #475569; cursor: pointer; display: flex; flex-direction: column; align-items: center; padding: 5px 0 8px; gap: 1px; transition: color 0.15s; font-family: inherit; }
+    .tab-btn:hover { color: #64748b; }
+    .tab-btn.active { color: #3b82f6; }
+    .tab-icon  { font-size: 1.05rem; line-height: 1; }
+    .tab-label { font-size: 0.58rem; font-weight: 500; }
+
+    /* ── 지역 한정 지도 탭 ── */
+    #view-map { position: relative; }
+    #leaflet-map { flex: 1; min-height: 0; background: #060d1a; }
+    .leaflet-container { background: #060d1a !important; }
+    .map-region-label { background: rgba(0,0,0,0.62); color: #e2e8f0; font-size: 0.65rem; font-weight: 700; padding: 3px 7px; border-radius: 8px; white-space: nowrap; border: 1px solid rgba(255,255,255,0.1); transform: translate(-50%,-50%); cursor: pointer; }
+    #map-special-btn { position: absolute; bottom: 16px; right: 14px; z-index: 999; background: #7c3aed; color: #ede9fe; border: none; border-radius: 20px; padding: 8px 14px; font-size: 0.78rem; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.5); font-family: inherit; }
+    #map-special-btn:hover { background: #8b5cf6; }
+    #region-sheet { position: absolute; bottom: 0; left: 0; right: 0; background: #111827; border-radius: 20px 20px 0 0; border-top: 1px solid #2d3f55; z-index: 1000; max-height: 68%; overflow-y: auto; transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.34,1.1,0.64,1); }
+    #region-sheet::-webkit-scrollbar { width: 3px; }
+    #region-sheet::-webkit-scrollbar-thumb { background: #334155; }
+    #region-sheet.open { transform: translateY(0); }
+    .region-sheet-drag { width: 36px; height: 4px; background: #334155; border-radius: 2px; margin: 10px auto 0; }
+    .region-sheet-header { display: flex; align-items: flex-start; justify-content: space-between; padding: 10px 16px 8px; }
+    .region-sheet-title { font-size: 1.05rem; font-weight: 700; color: #f8fafc; }
+    .region-sheet-sub   { font-size: 0.72rem; color: #64748b; margin-top: 2px; }
+    .region-sheet-close { background: none; border: none; color: #475569; font-size: 1.1rem; cursor: pointer; padding: 4px; line-height: 1; }
+    .region-sheet-close:hover { color: #e2e8f0; }
+    #region-pm-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; padding: 2px 12px 18px; }
+    .region-pm-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 8px 6px 7px; cursor: pointer; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 3px; transition: transform 0.12s, background 0.12s; }
+    .region-pm-card:hover { background: #243450; border-color: #3b82f6; transform: translateY(-2px); }
+    .region-pm-sprite { width: 60px; height: 60px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4)); }
+    .region-pm-name  { font-size: 0.74rem; font-weight: 600; color: #e2e8f0; line-height: 1.2; }
+    .region-pm-note  { font-size: 0.6rem; color: #64748b; line-height: 1.3; }
+    #map-backdrop { position: absolute; inset: 0; z-index: 998; display: none; }
+    #map-backdrop.open { display: block; }
+
+    /* ── 카드 스캔 탭 ── */
+    #view-card { background: #0f172a; }
+    #card-inner { flex: 1; overflow-y: auto; padding: 16px 14px 20px; display: flex; flex-direction: column; gap: 14px; }
+    #card-inner::-webkit-scrollbar { width: 4px; }
+    #card-inner::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+    .card-upload-area { border: 2px dashed #334155; border-radius: 16px; padding: 32px 16px; text-align: center; cursor: pointer; transition: border-color 0.2s, background 0.2s; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .card-upload-area:hover { border-color: #3b82f6; background: rgba(59,130,246,0.04); }
+    .card-upload-area.drag-over { border-color: #3b82f6; background: rgba(59,130,246,0.08); }
+    .card-upload-icon { font-size: 2.8rem; line-height: 1; }
+    .card-upload-title { font-size: 0.92rem; font-weight: 600; color: #e2e8f0; }
+    .card-upload-sub { font-size: 0.75rem; color: #475569; }
+    .card-btn-row { display: flex; gap: 8px; }
+    .card-btn { flex: 1; padding: 10px 8px; border-radius: 12px; font-size: 0.82rem; font-weight: 600; cursor: pointer; border: none; font-family: inherit; transition: background 0.15s; }
+    .card-btn.primary { background: #b91c1c; color: #fff; }
+    .card-btn.primary:hover { background: #dc2626; }
+    .card-btn.secondary { background: #1e293b; color: #94a3b8; border: 1px solid #334155; }
+    .card-btn.secondary:hover { background: #243450; color: #e2e8f0; }
+    .card-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+    .card-preview-wrap { position: relative; }
+    .card-preview-img { width: 100%; max-height: 260px; object-fit: contain; border-radius: 12px; border: 1px solid #2d3f55; background: #0d1526; display: block; }
+    .card-preview-clear { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.65); border: none; color: #e2e8f0; font-size: 1rem; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+    .card-analyzing { display: flex; align-items: center; gap: 10px; padding: 14px 16px; background: #1e293b; border-radius: 12px; border: 1px solid #334155; }
+    .card-analyzing-text { font-size: 0.85rem; color: #94a3b8; }
+    .card-result { background: #111827; border: 1px solid #2d3f55; border-radius: 16px; overflow: hidden; }
+    .card-result-header { padding: 14px 16px 0; display: flex; align-items: flex-start; gap: 10px; }
+    .card-result-thumb { width: 58px; height: 80px; object-fit: cover; border-radius: 6px; border: 1px solid #2d3f55; flex-shrink: 0; }
+    .card-result-meta { flex: 1; min-width: 0; }
+    .card-result-name { font-size: 1.15rem; font-weight: 700; color: #f8fafc; line-height: 1.2; }
+    .card-result-en   { font-size: 0.75rem; color: #64748b; margin-bottom: 6px; }
+    .card-result-badges { display: flex; flex-wrap: wrap; gap: 4px; }
+    .card-badge { font-size: 0.62rem; font-weight: 700; padding: 2px 7px; border-radius: 8px; }
+    .badge-rarity  { background: #7c3aed; color: #ede9fe; }
+    .badge-type    { color: #fff; }
+    .badge-variant { background: #1e3a5f; color: #93c5fd; }
+    .badge-hp      { background: #14532d; color: #86efac; }
+    .card-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid #1e293b; margin-top: 12px; }
+    .card-detail-item { padding: 10px 16px; border-bottom: 1px solid #1e293b; }
+    .card-detail-item:nth-child(odd) { border-right: 1px solid #1e293b; }
+    .card-detail-label { font-size: 0.62rem; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; }
+    .card-detail-val   { font-size: 0.82rem; font-weight: 600; color: #cbd5e1; }
+    .card-description  { padding: 10px 16px 14px; font-size: 0.78rem; color: #64748b; line-height: 1.5; grid-column: 1/-1; border-top: 1px solid #1e293b; }
+    .card-link-row { display: flex; gap: 8px; padding: 0 14px 14px; margin-top: 2px; }
+    .card-link-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 8px; border-radius: 11px; font-size: 0.8rem; font-weight: 600; text-decoration: none; transition: background 0.15s; border: none; cursor: pointer; font-family: inherit; }
+    .card-link-btn.kream  { background: #1e3a5f; color: #93c5fd; }
+    .card-link-btn.kream:hover  { background: #1d4ed8; color: #fff; }
+    .card-link-btn.google { background: #1e293b; color: #94a3b8; border: 1px solid #334155; }
+    .card-link-btn.google:hover { background: #243450; color: #e2e8f0; }
+    .card-error { background: #7f1d1d; border: 1px solid #b91c1c; border-radius: 12px; padding: 14px 16px; font-size: 0.85rem; color: #fca5a5; text-align: center; }
+
+    /* ── 팝업 오버레이 ── */
+    #popup-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: 50; opacity: 0; transition: opacity 0.25s; pointer-events: none; }
+    #popup-overlay.open { opacity: 1; pointer-events: auto; }
+
+    /* ── 포켓몬 상세 팝업 ── */
+    #pokemon-popup { position: absolute; bottom: 0; left: 0; right: 0; background: #111827; border-radius: 20px 20px 0 0; border-top: 1px solid #2d3f55; z-index: 51; max-height: 80%; overflow-y: auto; transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.34,1.1,0.64,1); }
+    #pokemon-popup.open { transform: translateY(0); }
+    #pokemon-popup::-webkit-scrollbar { width: 3px; }
+    #pokemon-popup::-webkit-scrollbar-thumb { background: #334155; }
+    .popup-drag { width: 36px; height: 4px; background: #334155; border-radius: 2px; margin: 10px auto 0; }
+    .popup-close-row { display: flex; justify-content: flex-end; padding: 2px 14px 0; }
+    .popup-close { background: none; border: none; color: #475569; font-size: 1.2rem; cursor: pointer; padding: 6px 8px; line-height: 1; }
+    .popup-close:hover { color: #e2e8f0; }
+    .popup-body { padding: 0 16px 20px; }
+    .popup-sprite { display: block; width: 110px; height: 110px; object-fit: contain; margin: 0 auto 8px; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.5)); }
+    .popup-num { text-align: center; font-size: 0.7rem; color: #475569; }
+    .popup-ko  { text-align: center; font-size: 1.3rem; font-weight: 700; color: #f8fafc; margin-top: 1px; }
+    .popup-en  { text-align: center; font-size: 0.8rem; color: #64748b; margin-bottom: 10px; }
+    .popup-types { display: flex; gap: 6px; justify-content: center; margin-bottom: 14px; }
+    .popup-types .type-badge { font-size: 0.76rem; padding: 3px 12px; border-radius: 10px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; margin-bottom: 14px; }
+    .stat-item { background: #1e293b; border: 1px solid #2d3f55; border-radius: 10px; padding: 8px 4px; text-align: center; }
+    .stat-label { font-size: 0.6rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-val   { font-size: 1rem; font-weight: 700; color: #e2e8f0; margin-top: 2px; }
+    .move-section { margin-bottom: 12px; }
+    .move-section-title { font-size: 0.7rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; font-weight: 600; }
+    .move-list  { display: flex; flex-wrap: wrap; gap: 5px; }
+    .move-chip  { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 4px 10px; font-size: 0.76rem; color: #94a3b8; }
+    .move-chip.elite { border-color: #d97706; color: #fbbf24; }
+    .popup-chat-btn { display: block; width: 100%; padding: 12px; background: #b91c1c; border: none; border-radius: 14px; color: #fff; font-size: 0.92rem; font-weight: 600; cursor: pointer; transition: background 0.15s; margin-top: 6px; font-family: inherit; }
+    .popup-chat-btn:hover { background: #dc2626; }
+    .popup-secondary-btn { display: block; width: 100%; padding: 10px 12px; background: #1e293b; border: 1px solid #334155; border-radius: 12px; color: #94a3b8; font-size: 0.85rem; cursor: pointer; transition: all 0.15s; margin-bottom: 8px; font-family: inherit; text-align: left; }
+    .popup-secondary-btn:hover { background: #243450; border-color: #3b82f6; color: #e2e8f0; }
+
+    /* ── 카운터 섹션 (팝업 내부) ── */
+    .counter-weakness { font-size: 0.72rem; color: #94a3b8; margin-bottom: 8px; line-height: 1.5; }
+    .counter-row { display: flex; align-items: center; gap: 7px; padding: 5px 7px; background: #1e293b; border: 1px solid #2d3f55; border-radius: 8px; margin-bottom: 4px; cursor: pointer; transition: background 0.12s; }
+    .counter-row:hover { background: #243450; border-color: #3b82f6; }
+    .counter-rank { font-size: 0.64rem; color: #64748b; font-weight: 700; width: 18px; text-align: center; flex-shrink: 0; }
+    .counter-rank.top3 { color: #f59e0b; }
+    .counter-sprite { width: 36px; height: 36px; object-fit: contain; flex-shrink: 0; }
+    .counter-info { flex: 1; min-width: 0; }
+    .counter-name { font-size: 0.76rem; font-weight: 600; color: #e2e8f0; }
+    .counter-move { font-size: 0.67rem; color: #64748b; }
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <header>
+    <div class="pokeball"></div>
+    <div class="header-text">
+      <h1>포켓몬 GO 챗봇</h1>
+      <p>전국도감 · 레이드 · PvP · 이벤트 · 로켓단</p>
+    </div>
+  </header>
+
+  <!-- ── 채팅 뷰 ── -->
+  <div id="view-chat" class="view">
+    <div id="chat">
+      <div id="welcome">
+        <h2>뭐든지 물어보세요!</h2>
+        <p>포켓몬 스탯 · 레이드 카운터 · PvP 랭킹 · 이벤트 · 로켓단 · 알 부화</p>
+        <div class="chips">
+          <div class="chip" onclick="ask('지금 레이드 보스 뭐야?')">지금 레이드 보스 뭐야?</div>
+          <div class="chip" onclick="ask('커뮤니티 데이 포켓몬 뭐야?')">커뮤니티 데이 포켓몬?</div>
+          <div class="chip" onclick="ask('슈퍼리그 최강 포켓몬 알려줘')">슈퍼리그 최강은?</div>
+          <div class="chip" onclick="ask('뮤츠 레이드 카운터 알려줘')">뮤츠 레이드 카운터</div>
+          <div class="chip" onclick="ask('불꽃 그런트 어떻게 이겨?')">불꽃 그런트 공략</div>
+          <div class="chip" onclick="ask('10km 알에서 뭐 나와?')">10km 알 부화 목록</div>
+          <div class="chip" onclick="ask('맑음 날씨에 강해지는 타입은?')">날씨 부스트 타입</div>
+          <div class="chip" onclick="ask('이번 주 이벤트 뭐야?')">이번 주 이벤트</div>
+        </div>
+      </div>
+    </div>
+    <div id="input-bar">
+      <input id="msg-input" type="text" placeholder="포켓몬 GO 질문을 입력하세요..." autocomplete="off">
+      <button id="send-btn" onclick="sendMessage()">↑</button>
+    </div>
+  </div>
+
+  <!-- ── 도감 뷰 ── -->
+  <div id="view-dex" class="view" style="display:none">
+    <div id="dex-top">
+      <div id="dex-search-wrap"><input id="dex-search" type="text" placeholder="포켓몬 이름으로 검색..."></div>
+      <div id="gen-tabs">
+        <button class="gen-tab active" data-gen="0">전체</button>
+        <button class="gen-tab" data-gen="1">1세대</button>
+        <button class="gen-tab" data-gen="2">2세대</button>
+        <button class="gen-tab" data-gen="3">3세대</button>
+        <button class="gen-tab" data-gen="4">4세대</button>
+        <button class="gen-tab" data-gen="5">5세대</button>
+        <button class="gen-tab" data-gen="6">6세대</button>
+        <button class="gen-tab" data-gen="7">7세대</button>
+        <button class="gen-tab" data-gen="8">8세대</button>
+        <button class="gen-tab" data-gen="9">9세대</button>
+      </div>
+      <div id="dex-count"></div>
+    </div>
+    <div id="dex-grid"></div>
+  </div>
+
+  <!-- ── 레이드/이벤트 뷰 ── -->
+  <div id="view-raid" style="display:none">
+    <div class="raid-section">
+      <div id="data-status-bar" style="display:flex;align-items:center;justify-content:space-between;padding:2px 2px 10px;gap:8px">
+        <span id="data-status-text" style="font-size:0.68rem;color:#475569">데이터 상태 확인 중...</span>
+        <button id="refresh-btn" onclick="triggerRefresh()" style="background:#1e293b;border:1px solid #334155;border-radius:8px;color:#94a3b8;font-size:0.68rem;padding:4px 10px;cursor:pointer;font-family:inherit;white-space:nowrap">🔄 갱신</button>
+      </div>
+      <div class="section-title">🗓️ 이벤트</div>
+      <div id="events-container"><p class="raid-empty">불러오는 중...</p></div>
+    </div>
+    <div class="raid-section" style="margin-top:6px">
+      <div class="section-title">⚔️ 현재 레이드 보스</div>
+      <div id="raids-container"><p class="raid-empty">불러오는 중...</p></div>
+    </div>
+    <div style="height:20px"></div>
+  </div>
+
+  <!-- ── 알 뷰 ── -->
+  <div id="view-egg" class="view" style="display:none">
+    <div id="egg-top">
+      <div id="egg-km-tabs">
+        <button class="km-tab active" data-km="2km">2km</button>
+        <button class="km-tab" data-km="5km">5km</button>
+        <button class="km-tab" data-km="7km">7km</button>
+        <button class="km-tab" data-km="10km">10km</button>
+        <button class="km-tab" data-km="12km">12km</button>
+        <button class="km-tab" data-km="1km">1km</button>
+      </div>
+      <div id="egg-count"></div>
+    </div>
+    <div id="egg-grid"><div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div></div>
+  </div>
+
+  <!-- ── PvP 뷰 ── -->
+  <div id="view-pvp" class="view" style="display:none">
+    <div id="pvp-top">
+      <button class="pvp-tab active" data-league="gl">슈퍼리그<span class="pvp-cp">CP 1,500</span></button>
+      <button class="pvp-tab" data-league="ul">하이퍼리그<span class="pvp-cp">CP 2,500</span></button>
+      <button class="pvp-tab" data-league="ml">마스터리그<span class="pvp-cp">무제한</span></button>
+    </div>
+    <div id="pvp-list"><div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div></div>
+  </div>
+
+  <!-- ── 지역 한정 지도 뷰 ── -->
+  <div id="view-map" class="view" style="display:none">
+    <div id="leaflet-map"></div>
+    <button id="map-special-btn" onclick="openRegionSheet(REGIONS.find(r=>r.id==='special'))">🌏 특수 지역</button>
+    <div id="map-backdrop" onclick="closeRegionSheet()"></div>
+    <div id="region-sheet">
+      <div class="region-sheet-drag"></div>
+      <div class="region-sheet-header">
+        <div>
+          <div class="region-sheet-title" id="region-sheet-title">지역</div>
+          <div class="region-sheet-sub"   id="region-sheet-sub"></div>
+        </div>
+        <button class="region-sheet-close" onclick="closeRegionSheet()">✕</button>
+      </div>
+      <div id="region-pm-grid"></div>
+    </div>
+  </div>
+
+  <!-- ── 카드 스캔 뷰 ── -->
+  <div id="view-card" class="view" style="display:none">
+    <div id="card-inner">
+      <div id="card-upload-area" class="card-upload-area" onclick="document.getElementById('card-file-input').click()">
+        <div class="card-upload-icon">🃏</div>
+        <div class="card-upload-title">포켓몬 카드 사진 분석</div>
+        <div class="card-upload-sub">클릭하거나 사진을 끌어다 놓으세요</div>
+      </div>
+      <div class="card-btn-row">
+        <button class="card-btn secondary" onclick="document.getElementById('card-file-input').click()">📁 갤러리에서 선택</button>
+        <button class="card-btn secondary" onclick="document.getElementById('card-camera-input').click()">📷 카메라로 찍기</button>
+      </div>
+      <input id="card-file-input"   type="file" accept="image/*" style="display:none" onchange="handleCardFile(this.files[0])">
+      <input id="card-camera-input" type="file" accept="image/*" capture="environment" style="display:none" onchange="handleCardFile(this.files[0])">
+      <div id="card-output"></div>
+    </div>
+  </div>
+
+  <!-- ── 탭 바 ── -->
+  <nav id="tab-bar">
+    <button class="tab-btn active" data-tab="chat"><span class="tab-icon">💬</span><span class="tab-label">채팅</span></button>
+    <button class="tab-btn" data-tab="dex"><span class="tab-icon">📖</span><span class="tab-label">도감</span></button>
+    <button class="tab-btn" data-tab="raid"><span class="tab-icon">🗓️</span><span class="tab-label">레이드</span></button>
+    <button class="tab-btn" data-tab="egg"><span class="tab-icon">🥚</span><span class="tab-label">알</span></button>
+    <button class="tab-btn" data-tab="pvp"><span class="tab-icon">🏆</span><span class="tab-label">PvP</span></button>
+    <button class="tab-btn" data-tab="card"><span class="tab-icon">🃏</span><span class="tab-label">카드</span></button>
+    <button class="tab-btn" data-tab="map"><span class="tab-icon">🗺️</span><span class="tab-label">지역</span></button>
+  </nav>
+
+  <!-- ── 팝업 ── -->
+  <div id="popup-overlay" onclick="closePokemonPopup()"></div>
+  <div id="pokemon-popup">
+    <div class="popup-drag"></div>
+    <div class="popup-close-row"><button class="popup-close" onclick="closePokemonPopup()">✕</button></div>
+    <div class="popup-body" id="popup-body"></div>
+  </div>
+
+</div>
+
+<script>
+// ── 공통 유틸 ─────────────────────────────────────────────────────
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+const TYPE_KO = { normal:'노말',fire:'불꽃',water:'물',electric:'전기',grass:'풀',ice:'얼음',fighting:'격투',poison:'독',ground:'땅',flying:'비행',psychic:'에스퍼',bug:'벌레',rock:'바위',ghost:'고스트',dragon:'드래곤',dark:'악',steel:'강철',fairy:'페어리' };
+const TYPE_BG = { normal:'#71727a',fire:'#e8621a',water:'#2980ef',electric:'#f2c100',grass:'#38b14a',ice:'#3dcef3',fighting:'#ce4265',poison:'#ab5aca',ground:'#d97a28',flying:'#81b9f0',psychic:'#f85888',bug:'#91c12f',rock:'#c7b78b',ghost:'#5269ad',dragon:'#0b6dc3',dark:'#595761',steel:'#5a8fa3',fairy:'#ef70ef' };
+const TYPE_EN_FROM_KO = {};
+for (const [en,ko] of Object.entries(TYPE_KO)) TYPE_EN_FROM_KO[ko] = en;
+
+function typeBadgeHtml(t1, t2) {
+  const b1 = t1 ? `<span class="type-badge" style="background:${TYPE_BG[t1]||'#71727a'}">${TYPE_KO[t1]||t1}</span>` : '';
+  const b2 = t2 ? `<span class="type-badge" style="background:${TYPE_BG[t2]||'#71727a'}">${TYPE_KO[t2]||t2}</span>` : '';
+  return b1 + b2;
+}
+
+function toSlug(en) {
+  return en.toLowerCase().replace(/'/g,'').replace(/\./g,'').replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'');
+}
+
+function fmtRemain(endIso) {
+  const diff = new Date(endIso) - Date.now();
+  if (diff <= 0) return '종료됨';
+  const h = Math.floor(diff/3600000), d = Math.floor(h/24);
+  return d >= 2 ? `${d}일 후 종료` : h >= 1 ? `${h}시간 후 종료` : `${Math.floor(diff/60000)}분 후 종료`;
+}
+function fmtUntil(startIso) {
+  const diff = new Date(startIso) - Date.now();
+  if (diff <= 0) return '진행 중';
+  const h = Math.floor(diff/3600000), d = Math.floor(h/24);
+  return d >= 1 ? `${d}일 후 시작` : h >= 1 ? `${h}시간 후 시작` : `${Math.floor(diff/60000)}분 후 시작`;
+}
+
+// ── 채팅 ──────────────────────────────────────────────────────────
+const chat = document.getElementById('chat'), input = document.getElementById('msg-input'), sendBtn = document.getElementById('send-btn');
+let history = [], streaming = false;
+input.addEventListener('keydown', e => { if (e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();} });
+function ask(text) { input.value = text; sendMessage(); }
+function removeWelcome() { const w = document.getElementById('welcome'); if (w) w.remove(); }
+function addMsg(role, html, isStreaming=false) {
+  const el = document.createElement('div'); el.className = `msg ${role}`;
+  el.innerHTML = isStreaming ? '<div class="dots"><span></span><span></span><span></span></div>' : html;
+  chat.appendChild(el); chat.scrollTop = chat.scrollHeight; return el;
+}
+function inline(s) { return esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>'); }
+function buildTable(rows) {
+  const parsed = rows.map(r=>r.trim().replace(/^\||\|$/g,'').split('|').map(c=>c.trim()));
+  const data = parsed.filter(r=>!r.every(c=>/^[-: ]+$/.test(c)));
+  if (!data.length) return '';
+  const [head,...body] = data;
+  return `<table><thead><tr>${head.map(c=>`<th>${inline(c)}</th>`).join('')}</tr></thead><tbody>${body.map(r=>'<tr>'+r.map(c=>`<td>${inline(c)}</td>`).join('')+'</tr>').join('')}</tbody></table>`;
+}
+function renderMd(raw) {
+  const lines = raw.split('\n'), out = []; let i = 0;
+  while (i < lines.length) {
+    const line = lines[i], t = line.trim();
+    const hm = t.match(/^(#{1,3})\s+(.+)/);
+    if (hm) { out.push(`<h${hm[1].length}>${inline(hm[2])}</h${hm[1].length}>`); i++; continue; }
+    if (t.startsWith('|')) { const tbl=[]; while(i<lines.length&&lines[i].trim().startsWith('|')){tbl.push(lines[i]);i++;} out.push(buildTable(tbl)); continue; }
+    if (/^[-*]\s/.test(t)) { const items=[]; while(i<lines.length&&/^[-*]\s/.test(lines[i].trim())){items.push(lines[i].trim().replace(/^[-*]\s+/,''));i++;} out.push('<ul>'+items.map(it=>`<li>${inline(it)}</li>`).join('')+'</ul>'); continue; }
+    if (t==='') { if (out.length&&out[out.length-1]!=='<br>') out.push('<br>'); i++; continue; }
+    out.push(inline(line)+'<br>'); i++;
+  }
+  while (out.length&&out[out.length-1]==='<br>') out.pop();
+  return out.join('');
+}
+async function sendMessage() {
+  const text = input.value.trim(); if (!text || streaming) return;
+  removeWelcome(); streaming = true; sendBtn.disabled = true; input.value = '';
+  addMsg('user', renderMd(text));
+  const botEl = addMsg('bot','',true);
+  let full='', firstChunk=true, spriteHtml='';
+  try {
+    const res = await fetch('/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:text,history})});
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const reader=res.body.getReader(), decoder=new TextDecoder(); let buffer='';
+    while (true) {
+      const {done,value}=await reader.read(); if(done) break;
+      buffer += decoder.decode(value,{stream:true});
+      const lines=buffer.split('\n'); buffer=lines.pop()??'';
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue;
+        const raw=line.slice(6); if(raw==='[DONE]') continue;
+        try {
+          const p=JSON.parse(raw);
+          if (p.error){botEl.className='msg bot error';botEl.textContent=p.error;full='';break;}
+          if (p.type==='meta'&&p.pokemon_id){const id=p.pokemon_id;spriteHtml=`<img class="pokemon-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png" alt="pokemon-${id}">`;if(!firstChunk)botEl.innerHTML=spriteHtml+renderMd(full);}
+          if (p.text){if(firstChunk){botEl.innerHTML=spriteHtml;firstChunk=false;}full+=p.text;botEl.innerHTML=spriteHtml+renderMd(full);chat.scrollTop=chat.scrollHeight;}
+        } catch(_){}
+      }
+    }
+    if (full){history.push({role:'user',content:text});history.push({role:'assistant',content:full});if(history.length>20)history=history.slice(-20);}
+  } catch(err) { botEl.className='msg bot error'; botEl.textContent='네트워크 오류가 발생했어요.'; console.error(err); }
+  finally { streaming=false; sendBtn.disabled=false; input.focus(); }
+}
+
+// ── 도감 ──────────────────────────────────────────────────────────
+let dexData=[], dexLoaded=false, currentGen=0, spriteObserver, searchTimer;
+
+async function loadDex() {
+  const grid=document.getElementById('dex-grid'); grid.innerHTML='<div id="dex-empty">불러오는 중...</div>';
+  try {
+    dexData=await (await fetch('/api/pokedex')).json(); dexLoaded=true;
+    const counts={}; for(const p of dexData) counts[p.gen]=(counts[p.gen]||0)+1;
+    document.querySelectorAll('.gen-tab').forEach(btn=>{const g=+btn.dataset.gen;if(g===0)btn.textContent=`전체 (${dexData.length})`;else if(counts[g])btn.textContent=`${g}세대 (${counts[g]})`;});
+    renderDex();
+  } catch { grid.innerHTML='<div id="dex-empty">데이터를 불러오지 못했어요.</div>'; }
+}
+function renderDex() {
+  const search=document.getElementById('dex-search').value.trim().toLowerCase();
+  const filtered=dexData.filter(p=>{if(currentGen>0&&p.gen!==currentGen)return false;if(search)return p.ko.includes(search)||p.en.toLowerCase().includes(search)||String(p.dex).includes(search);return true;});
+  const grid=document.getElementById('dex-grid'), count=document.getElementById('dex-count');
+  count.textContent=`${filtered.length.toLocaleString()}마리`;
+  if(!filtered.length){grid.innerHTML='<div id="dex-empty">검색 결과가 없어요.</div>';return;}
+  grid.innerHTML=filtered.map(p=>{
+    const num=String(p.dex).padStart(4,'0'), t1bg=TYPE_BG[p.t1]||'#71727a', t2bg=p.t2?TYPE_BG[p.t2]||'#71727a':null;
+    const t2badge=p.t2?`<span class="type-badge" style="background:${t2bg}">${TYPE_KO[p.t2]||p.t2}</span>`:'';
+    return `<div class="dex-card" onclick="openPokemonPopup(${p.dex})"><div class="dex-num">#${num}</div>
+      <img class="dex-sprite loading" data-src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.dex}.png" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="${esc(p.ko)}" onload="this.classList.remove('loading')">
+      <div class="dex-name">${esc(p.ko)}</div>
+      <div class="dex-types"><span class="type-badge" style="background:${t1bg}">${TYPE_KO[p.t1]||p.t1}</span>${t2badge}</div></div>`;
+  }).join('');
+  if(spriteObserver)spriteObserver.disconnect();
+  spriteObserver=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const img=e.target;if(img.dataset.src){img.src=img.dataset.src;delete img.dataset.src;spriteObserver.unobserve(img);}}});},{root:grid,rootMargin:'120px'});
+  document.querySelectorAll('.dex-sprite[data-src]').forEach(img=>spriteObserver.observe(img));
+}
+document.querySelectorAll('.gen-tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.gen-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentGen=+btn.dataset.gen;renderDex();}));
+document.getElementById('dex-search').addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(renderDex,180);});
+
+// ── 레이드/이벤트 ─────────────────────────────────────────────────
+let raidEventLoaded=false;
+const EVENT_TYPE_CONFIG={'event':{bg:'#1e40af',text:'이벤트'},'community-day':{bg:'#15803d',text:'커뮤니티 데이'},'raid-battles':{bg:'#7c3aed',text:'레이드 배틀'},'raid-hour':{bg:'#6d28d9',text:'레이드 아워'},'raid-day':{bg:'#5b21b6',text:'레이드 데이'},'go-battle-league':{bg:'#b45309',text:'GO 배틀리그'},'pokemon-go-fest':{bg:'#be185d',text:'GO 페스트'},'max-mondays':{bg:'#0e7490',text:'맥스 먼데이'},'season':{bg:'#374151',text:'시즌'},'twitch-drops':{bg:'#7c2d12',text:'트위치 드롭'},'go-pass':{bg:'#1e3a5f',text:'GO 패스'}};
+function eventTypeCfg(type){return EVENT_TYPE_CONFIG[type]||{bg:'#374151',text:type||'이벤트'};}
+
+async function loadEvents() {
+  const container=document.getElementById('events-container');
+  try {
+    const data=await(await fetch('/api/events')).json(); let html='';
+    if(data.active&&data.active.length){html+='<div style="font-size:0.72rem;color:#22c55e;font-weight:600;margin-bottom:8px;padding-left:2px">● 진행 중</div>';for(const e of data.active){const cfg=eventTypeCfg(e.type);html+=`<div class="event-card"><div class="event-active-dot"></div><div class="event-info"><div class="event-name">${esc(e.name)}</div><div class="event-time">${fmtRemain(e.end)}</div></div><span class="event-type-badge" style="background:${cfg.bg}">${cfg.text}</span></div>`;}}
+    if(data.upcoming&&data.upcoming.length){html+=`<div style="font-size:0.72rem;color:#64748b;font-weight:600;margin:${data.active&&data.active.length?'12px':'0'}px 0 8px 2px">◎ 7일 내 예정</div>`;for(const e of data.upcoming){const cfg=eventTypeCfg(e.type);html+=`<div class="event-card"><div class="event-info"><div class="event-name">${esc(e.name)}</div><div class="event-time">${fmtUntil(e.start)}</div></div><span class="event-type-badge" style="background:${cfg.bg}">${cfg.text}</span></div>`;}}
+    container.innerHTML=html||'<p class="raid-empty">현재 이벤트 정보가 없어요.</p>';
+  } catch { container.innerHTML='<p class="raid-empty">이벤트 정보를 불러올 수 없어요.</p>'; }
+}
+const TIER_LABEL={mega:'메가 레이드',mega_legendary:'메가 레전더리','5':'5성 레이드','3':'3성 레이드','1':'1성 레이드',elite:'엘리트 레이드'};
+const TIER_ORDER=['mega','mega_legendary','5','elite','3','1'];
+
+async function loadRaids() {
+  const container=document.getElementById('raids-container');
+  try {
+    const data=await(await fetch('/api/raids')).json();
+    const tiers=TIER_ORDER.filter(t=>data[t]&&data[t].length);
+    if(!tiers.length){container.innerHTML='<p class="raid-empty">현재 레이드 데이터가 없어요.</p>';return;}
+    let html='';
+    for(const tier of tiers){const bosses=data[tier],label=TIER_LABEL[tier]||`${tier}성 레이드`;html+=`<div class="tier-section"><div class="tier-label">${label} (${bosses.length})</div><div class="raid-grid">`;
+      for(const boss of bosses){
+        const spriteUrl=boss.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${boss.dex}.png`:`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Ccircle cx='29' cy='29' r='27' fill='%231e293b'/%3E%3C/svg%3E`;
+        const typeKos=boss.types_ko?boss.types_ko.split(' / '):[];
+        const typeHtml=typeKos.map(t=>{const en=TYPE_EN_FROM_KO[t]||'';return`<span class="type-badge" style="background:${TYPE_BG[en]||'#71727a'}">${t}</span>`;}).join('');
+        const safeSlug=(boss.slug||'').replace(/'/g,"\\'");
+        const clickAttr=boss.dex?`onclick="openPokemonPopup(${boss.dex},'${safeSlug}')"`:'' ;
+        html+=`<div class="raid-card" ${clickAttr}><img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.style.opacity='0.2'"><div class="raid-name">${esc(boss.ko_name)}</div>${boss.is_shiny?'<div class="raid-shiny">✦ 색변</div>':''}<div class="raid-types">${typeHtml}</div></div>`;
+      }
+      html+=`</div></div>`;}
+    container.innerHTML=html;
+  } catch { container.innerHTML='<p class="raid-empty">레이드 데이터를 불러올 수 없어요.</p>'; }
+}
+async function loadDataStatus() {
+  try {
+    const s = await (await fetch('/api/status')).json();
+    const raids = s.raids, eggs = s.eggs;
+    const mtime = raids?.file_mtime;
+    const statusEl = document.getElementById('data-status-text');
+    const btn = document.getElementById('refresh-btn');
+    if (!statusEl) return;
+    if (raids?.running || eggs?.running) {
+      statusEl.textContent = '⏳ 갱신 중...';
+      statusEl.style.color = '#f59e0b';
+      if(btn) btn.disabled = true;
+      setTimeout(loadDataStatus, 5000);
+    } else if (mtime) {
+      const d = new Date(mtime), now = Date.now();
+      const diffH = Math.round((now - d.getTime()) / 3600000);
+      const label = diffH < 1 ? '방금 전' : diffH < 24 ? `${diffH}시간 전` : `${Math.floor(diffH/24)}일 전`;
+      statusEl.textContent = `마지막 갱신: ${label}`;
+      statusEl.style.color = diffH > 24 ? '#ef4444' : '#22c55e';
+      if(btn) btn.disabled = false;
+    } else {
+      statusEl.textContent = raids?.last_err ? '⚠️ 갱신 오류' : '데이터 없음';
+      statusEl.style.color = '#ef4444';
+      if(btn) btn.disabled = false;
+    }
+  } catch { /* 무시 */ }
+}
+
+async function triggerRefresh() {
+  const btn = document.getElementById('refresh-btn');
+  const statusEl = document.getElementById('data-status-text');
+  if(btn) { btn.disabled = true; btn.textContent = '⏳'; }
+  if(statusEl) { statusEl.textContent = '갱신 요청 중...'; statusEl.style.color = '#f59e0b'; }
+  try {
+    await fetch('/api/admin/refresh', { method: 'POST' });
+    if(statusEl) statusEl.textContent = '⏳ 갱신 중... (수 분 소요)';
+    // 10초 후 상태 재확인
+    setTimeout(async () => {
+      await loadDataStatus();
+      await loadRaidEvents();
+    }, 12000);
+  } catch {
+    if(statusEl) { statusEl.textContent = '요청 실패'; statusEl.style.color='#ef4444'; }
+    if(btn) { btn.disabled = false; btn.textContent = '🔄 갱신'; }
+  }
+}
+
+async function loadRaidEvents(){
+  await Promise.all([loadEvents(), loadRaids()]);
+  raidEventLoaded = true;
+  loadDataStatus();
+}
+
+// ── 알 ────────────────────────────────────────────────────────────
+let eggData=null, currentKm='2km', eggLoaded=false;
+
+async function loadEggs() {
+  try {
+    eggData=await(await fetch('/api/eggs')).json();
+    eggLoaded=true;
+    const kmOrder=['2km','5km','7km','10km','12km','1km'];
+    document.querySelectorAll('.km-tab').forEach(btn=>{
+      const km=btn.dataset.km;
+      const cnt=(eggData[km]||[]).length;
+      btn.textContent=cnt?`${km} (${cnt})`:km;
+      if(!cnt)btn.style.opacity='0.4';
+    });
+    renderEggs();
+  } catch { document.getElementById('egg-grid').innerHTML='<div style="text-align:center;padding:32px;color:#475569">데이터를 불러올 수 없어요.</div>'; }
+}
+function renderEggs() {
+  const grid=document.getElementById('egg-grid'), cnt=document.getElementById('egg-count');
+  const eggs=(eggData&&eggData[currentKm])||[];
+  cnt.textContent=`${eggs.length}마리`;
+  if(!eggs.length){grid.innerHTML='<div style="text-align:center;padding:32px;color:#475569">해당 거리 알 데이터가 없어요.</div>';return;}
+  grid.innerHTML=eggs.map(p=>{
+    const spriteUrl=p.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.dex}.png`:`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Ccircle cx='29' cy='29' r='27' fill='%231e293b'/%3E%3C/svg%3E`;
+    const typeHtml=typeBadgeHtml(p.t1,p.t2);
+    const badges=(p.shiny?'<span class="egg-badge shiny">✦색변</span>':'')+(p.as_only?'<span class="egg-badge as">AS전용</span>':'');
+    const onclick=p.dex?`onclick="openPokemonPopup(${p.dex})"`:'' ;
+    return `<div class="egg-card" ${onclick}><img class="egg-sprite" src="${spriteUrl}" alt="${esc(p.ko)}" onerror="this.style.opacity='0.2'"><div class="egg-name">${esc(p.ko)}</div><div class="dex-types">${typeHtml}</div>${p.rarity?`<div class="egg-rarity">${esc(p.rarity)}</div>`:''}<div class="egg-badges">${badges}</div></div>`;
+  }).join('');
+}
+document.querySelectorAll('.km-tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.km-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentKm=btn.dataset.km;if(eggLoaded)renderEggs();}));
+
+// ── PvP ───────────────────────────────────────────────────────────
+let pvpData={}, currentLeague='gl', pvpLoaded={};
+
+async function loadPvP(league) {
+  if(pvpData[league]){renderPvP();return;}
+  const listEl=document.getElementById('pvp-list');
+  listEl.innerHTML='<div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div>';
+  try {
+    pvpData[league]=await(await fetch(`/api/pvp/${league}`)).json();
+    renderPvP();
+  } catch { listEl.innerHTML='<div style="text-align:center;padding:32px;color:#475569">데이터를 불러올 수 없어요.</div>'; }
+}
+function renderPvP() {
+  const data=pvpData[currentLeague]||{entries:[]};
+  const listEl=document.getElementById('pvp-list');
+  if(!data.entries||!data.entries.length){listEl.innerHTML='<div style="text-align:center;padding:32px;color:#475569">데이터가 없어요.</div>';return;}
+  listEl.innerHTML=data.entries.map(e=>{
+    const spriteUrl=e.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${e.dex}.png`:`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`;
+    const rankClass=e.rank<=3?' top3':'';
+    const typeKos=(e.types_ko||'').split(' / ').filter(Boolean);
+    const typeBadges=typeKos.map(t=>{const en=TYPE_EN_FROM_KO[t]||'';return`<span class="type-badge" style="background:${TYPE_BG[en]||'#71727a'}">${t}</span>`;}).join('');
+    const onclick=e.dex?`onclick="openPokemonPopup(${e.dex})"`:'' ;
+    return `<div class="pvp-row" ${onclick}>
+      <span class="pvp-rank${rankClass}">#${e.rank}</span>
+      <img class="pvp-sprite" src="${spriteUrl}" alt="${esc(e.ko)}" onerror="this.style.opacity='0.2'">
+      <div class="pvp-info">
+        <div class="pvp-name-line"><span class="pvp-name">${esc(e.ko)}</span><span class="pvp-type-badges">${typeBadges}</span></div>
+        <div class="pvp-moves">${esc(e.fast)} / ${esc(e.charged)}</div>
+      </div>
+      <span class="pvp-score">${e.score}</span>
+    </div>`;
+  }).join('');
+}
+document.querySelectorAll('.pvp-tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.pvp-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentLeague=btn.dataset.league;loadPvP(currentLeague);}));
+
+// ── 포켓몬 팝업 ───────────────────────────────────────────────────
+async function openPokemonPopup(dex, bossSlug=null) {
+  if(!dex) return;
+  const popup=document.getElementById('pokemon-popup'), overlay=document.getElementById('popup-overlay'), body=document.getElementById('popup-body');
+  body.innerHTML='<div style="text-align:center;padding:36px 0;color:#64748b">불러오는 중...</div>';
+  popup.classList.add('open'); overlay.classList.add('open');
+
+  try {
+    const p=await(await fetch(`/api/pokemon/${dex}`)).json();
+    if(!p.ko) throw new Error('no data');
+
+    const num=String(p.dex).padStart(4,'0');
+    const t1bg=TYPE_BG[p.t1]||'#71727a', t1ko=TYPE_KO[p.t1]||p.t1;
+    const t2badge=p.t2?`<span class="type-badge" style="background:${TYPE_BG[p.t2]||'#71727a'}">${TYPE_KO[p.t2]||p.t2}</span>`:'';
+    const eliteFastIds=(p.elite_fast||[]).map(m=>m.id);
+    const eliteChargedIds=(p.elite_charged||[]).map(m=>m.id);
+    const fastHtml=(p.fast_moves||[]).map(m=>{const e=eliteFastIds.includes(m.id);return`<span class="move-chip${e?' elite':''}">${esc(m.ko)}${e?' ✦':''}</span>`;}).join('');
+    const chargedHtml=(p.charged_moves||[]).map(m=>{const e=eliteChargedIds.includes(m.id);return`<span class="move-chip${e?' elite':''}">${esc(m.ko)}${e?' ✦':''}</span>`;}).join('');
+    const cp40=p.cp40?p.cp40.toLocaleString():'—';
+    const artUrl=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${dex}.png`;
+    const fbUrl=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${dex}.png`;
+    const koSafe=p.ko.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+    const counterSlug=bossSlug||toSlug(p.en);
+
+    body.innerHTML=`
+      <img class="popup-sprite" src="${artUrl}" alt="${esc(p.ko)}" onerror="this.src='${fbUrl}'">
+      <div class="popup-num">#${num}</div><div class="popup-ko">${esc(p.ko)}</div><div class="popup-en">${esc(p.en)}</div>
+      <div class="popup-types"><span class="type-badge" style="background:${t1bg}">${t1ko}</span>${t2badge}</div>
+      <div class="stat-grid">
+        <div class="stat-item"><div class="stat-label">공격</div><div class="stat-val">${p.atk||'—'}</div></div>
+        <div class="stat-item"><div class="stat-label">방어</div><div class="stat-val">${p.def||'—'}</div></div>
+        <div class="stat-item"><div class="stat-label">체력</div><div class="stat-val">${p.sta||'—'}</div></div>
+        <div class="stat-item"><div class="stat-label">Max CP</div><div class="stat-val">${cp40}</div></div>
+      </div>
+      ${fastHtml?`<div class="move-section"><div class="move-section-title">빠른 기술</div><div class="move-list">${fastHtml}</div></div>`:''}
+      ${chargedHtml?`<div class="move-section"><div class="move-section-title">스페셜 기술</div><div class="move-list">${chargedHtml}</div></div>`:''}
+      <div class="move-section" id="counter-section">
+        <div class="move-section-title">⚔️ 레이드 카운터</div>
+        <div id="popup-counter-container">${bossSlug?'<div style="text-align:center;padding:10px;color:#64748b;font-size:0.8rem">불러오는 중...</div>':`<button class="popup-secondary-btn" onclick="expandCounters('${counterSlug}')">▶ 카운터 보기</button>`}</div>
+      </div>
+      <button class="popup-chat-btn" onclick="popupToChat('${koSafe}')">💬 채팅에서 더 알아보기</button>
+    `;
+    if(bossSlug) loadCountersIntoPopup(bossSlug);
+  } catch {
+    body.innerHTML='<div style="text-align:center;padding:36px 0;color:#475569">데이터를 불러올 수 없어요.</div>';
+  }
+}
+
+async function loadCountersIntoPopup(slug) {
+  const container=document.getElementById('popup-counter-container');
+  if(!container) return;
+  try {
+    const data=await(await fetch(`/api/raid-counters/${slug}`)).json();
+    if(!data.counters||!data.counters.length){container.innerHTML='<div style="text-align:center;padding:10px;color:#475569;font-size:0.8rem">카운터 데이터가 없어요.</div>';return;}
+    let html='';
+    if(data.weakness) html+=`<div class="counter-weakness">약점: ${esc(data.weakness)}</div>`;
+    for(const c of data.counters.slice(0,12)){
+      const spr=c.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${c.dex}.png`:'';
+      const rc=+c.rank<=3?' top3':'';
+      html+=`<div class="counter-row"${c.dex?` onclick="openPokemonPopup(${c.dex})"`:''}>
+        <span class="counter-rank${rc}">#${c.rank}</span>
+        ${spr?`<img class="counter-sprite" src="${spr}" alt="${esc(c.ko)}" onerror="this.style.opacity='0.2'">`:'<div class="counter-sprite"></div>'}
+        <div class="counter-info"><div class="counter-name">${esc(c.ko)}</div><div class="counter-move">${esc(c.move)}</div></div>
+      </div>`;
+    }
+    container.innerHTML=html;
+  } catch { container.innerHTML='<div style="text-align:center;padding:10px;color:#475569;font-size:0.8rem">불러오기 실패</div>'; }
+}
+
+function expandCounters(slug) {
+  const c=document.getElementById('popup-counter-container');
+  if(c){c.innerHTML='<div style="text-align:center;padding:10px;color:#64748b;font-size:0.8rem">불러오는 중...</div>';loadCountersIntoPopup(slug);}
+}
+
+function closePokemonPopup() {
+  document.getElementById('pokemon-popup').classList.remove('open');
+  document.getElementById('popup-overlay').classList.remove('open');
+}
+function popupToChat(ko){closePokemonPopup();switchTab('chat');setTimeout(()=>ask(`${ko} 스탯이랑 기술 알려줘`),80);}
+
+// ── 탭 전환 ───────────────────────────────────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn=>btn.addEventListener('click',()=>switchTab(btn.dataset.tab)));
+
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
+  const views={chat:'#view-chat',dex:'#view-dex',raid:'#view-raid',egg:'#view-egg',pvp:'#view-pvp',card:'#view-card',map:'#view-map'};
+  for(const [t,sel] of Object.entries(views)){
+    const el=document.querySelector(sel);
+    if(!el) continue;
+    if(t===tab) el.style.display=(t==='raid')?'block':'flex';
+    else el.style.display='none';
+  }
+  if(tab==='chat') input.focus();
+  if(tab==='dex'  && !dexLoaded)       loadDex();
+  if(tab==='raid' && !raidEventLoaded) loadRaidEvents();
+  if(tab==='egg'  && !eggLoaded)       loadEggs();
+  if(tab==='pvp'  && !pvpData[currentLeague]) loadPvP(currentLeague);
+  if(tab==='map')  initMap();
+}
+
+// ── 지역 한정 포켓몬 지도 ─────────────────────────────────────────
+const REGIONS = [
+  { id:'east-asia',      name:'동아시아',    sub:'한국 · 일본 · 중국 · 홍콩 · 대만',
+    color:'#ef4444', bounds:[[20,98],[55,152]],
+    pokemon:[
+      {dex:83,  ko:'파오리',    note:'관동 버전'},
+    ]
+  },
+  { id:'south-asia',     name:'아시아-태평양', sub:'인도 · 동남아 · 파키스탄 · 스리랑카',
+    color:'#f97316', bounds:[[-10,60],[25,100]],
+    pokemon:[
+      {dex:324, ko:'코터스',    note:'인도 아대륙'},
+      {dex:511, ko:'야나프',    note:'아시아-태평양 광역'},
+    ]
+  },
+  { id:'europe',         name:'유럽',        sub:'서유럽 · 중유럽 · 북유럽 · 영국',
+    color:'#3b82f6', bounds:[[35,-26],[72,45]],
+    pokemon:[
+      {dex:122, ko:'마임맨',    note:''},
+      {dex:439, ko:'흉내내기',  note:'2km 알 부화'},
+      {dex:313, ko:'볼비트',    note:''},
+      {dex:513, ko:'바오프',    note:''},
+      {dex:707, ko:'클레피',    note:'프랑스 주변'},
+      {dex:874, ko:'스톤저너',  note:'영국·아일랜드'},
+    ]
+  },
+  { id:'africa',         name:'아프리카·중동', sub:'아프리카 · 지중해 · 중동',
+    color:'#eab308', bounds:[[-35,-20],[37,60]],
+    pokemon:[
+      {dex:357, ko:'트로피우스', note:'아프리카·지중해'},
+      {dex:513, ko:'바오프',     note:'중동·아프리카'},
+      {dex:561, ko:'시지프스',   note:'그리스·이집트'},
+      {dex:314, ko:'뽀롱나비',   note:'아프리카'},
+    ]
+  },
+  { id:'north-america',  name:'북미',        sub:'미국 · 캐나다 · 알래스카',
+    color:'#22c55e', bounds:[[15,-170],[72,-52]],
+    pokemon:[
+      {dex:128, ko:'켄타로스',  note:'관동 버전'},
+      {dex:314, ko:'뽀롱나비', note:'아메리카'},
+      {dex:417, ko:'파치리스', note:'캐나다 북부·알래스카'},
+      {dex:455, ko:'무스틈니', note:'미국 남동부'},
+      {dex:515, ko:'코아프',   note:'아메리카'},
+      {dex:626, ko:'버프론',   note:'뉴욕 일대'},
+    ]
+  },
+  { id:'south-america',  name:'중남미',      sub:'남미 · 중미 · 멕시코',
+    color:'#a855f7', bounds:[[-56,-82],[15,-34]],
+    pokemon:[
+      {dex:214, ko:'헤라크로스', note:''},
+      {dex:515, ko:'코아프',     note:'아메리카'},
+      {dex:556, ko:'마라카치',   note:''},
+      {dex:701, ko:'루차불',     note:'멕시코'},
+    ]
+  },
+  { id:'oceania',        name:'오세아니아',  sub:'호주 · 뉴질랜드 · 태평양 제도',
+    color:'#06b6d4', bounds:[[-47,112],[-10,180]],
+    pokemon:[
+      {dex:115, ko:'캥카',  note:''},
+      {dex:369, ko:'릴리요', note:'뉴질랜드·태평양 제도'},
+    ]
+  },
+  { id:'special',        name:'특수 지역',   sub:'하와이 · 북극 · 열대 전역 · 남반구',
+    color:'#8b5cf6', bounds:null,
+    pokemon:[
+      {dex:222, ko:'코산호',     note:'열대 (남북위 26° 이내)'},
+      {dex:441, ko:'페라페',     note:'남반구 전역'},
+      {dex:764, ko:'코모리',     note:'하와이 한정'},
+      {dex:875, ko:'아이스바렐', note:'북극 인근 (아이슬란드 등)'},
+    ]
+  },
+];
+
+let leafletMap = null, mapInited = false;
+
+function initMap() {
+  if(mapInited) { leafletMap && setTimeout(()=>leafletMap.invalidateSize(), 50); return; }
+  // Leaflet CSS
+  if(!document.getElementById('leaflet-css')) {
+    const lnk=document.createElement('link'); lnk.id='leaflet-css';
+    lnk.rel='stylesheet'; lnk.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    document.head.appendChild(lnk);
+  }
+  // Leaflet JS
+  if(!window.L) {
+    const scr=document.createElement('script'); scr.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    scr.onload=setupMap; document.head.appendChild(scr);
+  } else { setupMap(); }
+}
+
+function setupMap() {
+  if(mapInited) return; mapInited=true;
+  leafletMap = L.map('leaflet-map', {
+    center:[20,15], zoom:1, minZoom:1, maxZoom:5,
+    zoomControl:false, attributionControl:false,
+  });
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+    subdomains:'abcd', maxZoom:19,
+  }).addTo(leafletMap);
+
+  for(const region of REGIONS) {
+    if(!region.bounds) continue;
+    const rect = L.rectangle(region.bounds, {
+      color: region.color, weight: 1.5, opacity: 0.9,
+      fillColor: region.color, fillOpacity: 0.28,
+    }).addTo(leafletMap);
+    rect.on('click', (e)=>{
+      L.DomEvent.stopPropagation(e);
+      openRegionSheet(region);
+    });
+
+    const center = L.latLngBounds(region.bounds).getCenter();
+    const labelMarker = L.marker(center, {
+      icon: L.divIcon({
+        html: `<div class="map-region-label">${region.name}</div>`,
+        className:'', iconAnchor:[0,0],
+      }),
+      interactive: true,
+    }).addTo(leafletMap);
+    labelMarker.on('click', (e)=>{
+      L.DomEvent.stopPropagation(e);
+      openRegionSheet(region);
+    });
+  }
+
+  setTimeout(()=>leafletMap.invalidateSize(), 100);
+}
+
+function openRegionSheet(region) {
+  if(!region) return;
+  document.getElementById('region-sheet-title').textContent = region.name;
+  document.getElementById('region-sheet-sub').textContent   = region.sub;
+  const grid = document.getElementById('region-pm-grid');
+  grid.innerHTML = region.pokemon.map(p=>{
+    const spr = p.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${p.dex}.png` : '';
+    const fb  = p.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.dex}.png` : '';
+    return `<div class="region-pm-card" onclick="closeRegionSheet();openPokemonPopup(${p.dex||0})">
+      <img class="region-pm-sprite" src="${spr}" alt="${esc(p.ko)}" onerror="this.src='${fb}'">
+      <div class="region-pm-name">${esc(p.ko)}</div>
+      ${p.note?`<div class="region-pm-note">${esc(p.note)}</div>`:''}
+    </div>`;
+  }).join('');
+  document.getElementById('region-sheet').classList.add('open');
+  document.getElementById('map-backdrop').classList.add('open');
+}
+
+function closeRegionSheet() {
+  document.getElementById('region-sheet').classList.remove('open');
+  document.getElementById('map-backdrop').classList.remove('open');
+}
+
+// ── 카드 스캔 ──────────────────────────────────────────────────────
+const uploadArea = document.getElementById('card-upload-area');
+uploadArea.addEventListener('dragover', e=>{e.preventDefault();uploadArea.classList.add('drag-over');});
+uploadArea.addEventListener('dragleave', ()=>uploadArea.classList.remove('drag-over'));
+uploadArea.addEventListener('drop', e=>{e.preventDefault();uploadArea.classList.remove('drag-over');if(e.dataTransfer.files[0])handleCardFile(e.dataTransfer.files[0]);});
+
+function handleCardFile(file) {
+  if(!file) return;
+  const out = document.getElementById('card-output');
+  const url = URL.createObjectURL(file);
+  out.innerHTML = `
+    <div class="card-preview-wrap">
+      <img class="card-preview-img" src="${url}" alt="카드 미리보기">
+      <button class="card-preview-clear" onclick="clearCardScan()">✕</button>
+    </div>
+    <div class="card-analyzing">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <div class="card-analyzing-text">Claude가 카드를 분석하는 중...</div>
+    </div>`;
+  document.getElementById('card-inner').scrollTop = 0;
+  scanCard(file, url);
+}
+
+function clearCardScan() {
+  document.getElementById('card-output').innerHTML='';
+  document.getElementById('card-file-input').value='';
+  document.getElementById('card-camera-input').value='';
+}
+
+async function scanCard(file, previewUrl) {
+  const out = document.getElementById('card-output');
+  const fd  = new FormData(); fd.append('file', file);
+  try {
+    const res  = await fetch('/api/card-scan', {method:'POST', body: fd});
+    const card = await res.json();
+    if(card.error) {
+      out.innerHTML = `<div class="card-error">${esc(card.error)}</div>`;
+      return;
+    }
+    const rarity  = card.rarity  ? `<span class="card-badge badge-rarity">${esc(card.rarity)}</span>` : '';
+    const variant = card.variant && card.variant !== '일반' ? `<span class="card-badge badge-variant">${esc(card.variant)}</span>` : '';
+    const hp      = card.hp      ? `<span class="card-badge badge-hp">HP ${card.hp}</span>` : '';
+    const ptype   = card.pokemon_type ? `<span class="card-badge badge-type" style="background:${TYPE_BG[card.pokemon_type]||TYPE_BG[TYPE_EN_FROM_KO[card.pokemon_type]]||'#71727a'}">${esc(card.pokemon_type)}</span>` : '';
+    const details = [
+      ['세트', card.set_name], ['카드 번호', card.card_number],
+      ['규정 마크', card.regulation_mark], ['일러스트레이터', card.illustrator],
+    ].filter(([,v])=>v);
+    const detailHtml = details.map(([l,v])=>`<div class="card-detail-item"><div class="card-detail-label">${l}</div><div class="card-detail-val">${esc(String(v))}</div></div>`).join('');
+    out.innerHTML = `
+      <div class="card-result">
+        <div class="card-result-header">
+          <img class="card-result-thumb" src="${previewUrl}" alt="카드">
+          <div class="card-result-meta">
+            <div class="card-result-name">${esc(card.name_ko||card.name_en||'')}</div>
+            <div class="card-result-en">${esc(card.name_en||'')}</div>
+            <div class="card-result-badges">${rarity}${variant}${ptype}${hp}</div>
+          </div>
+        </div>
+        <div class="card-detail-grid">
+          ${detailHtml}
+          ${card.description?`<div class="card-description">${esc(card.description)}</div>`:''}
+        </div>
+        <div class="card-link-row">
+          <a class="card-link-btn kream" href="${esc(card.kream_url)}" target="_blank" rel="noopener">🛒 KREAM 시세</a>
+          <a class="card-link-btn google" href="${esc(card.google_url)}" target="_blank" rel="noopener">🔍 구글 시세</a>
+        </div>
+      </div>
+      <div style="text-align:center">
+        <button class="card-btn secondary" style="max-width:200px;margin:0 auto" onclick="clearCardScan()">↩ 다른 카드 분석</button>
+      </div>`;
+  } catch {
+    out.innerHTML = `<div class="card-error">네트워크 오류가 발생했어요.</div>`;
+  }
+}
+</script>
+</body>
+</html>
