@@ -115,6 +115,16 @@
     .raid-section { padding: 12px 14px 0; }
     .section-title { font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; padding: 0 2px 10px; }
     .event-card { background: #1a2744; border: 1px solid #2d3f55; border-radius: 12px; padding: 11px 13px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px; }
+    .event-card.clickable { cursor: pointer; transition: background 0.15s, border-color 0.15s; }
+    .event-card.clickable:hover { background: #1e3060; border-color: #3b82f6; }
+    .event-spawn-hint { font-size: 0.65rem; color: #60a5fa; margin-top: 4px; }
+    #event-spawn-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.5); z-index: 999; display: none; }
+    #event-spawn-backdrop.open { display: block; }
+    #event-spawn-sheet { position: absolute; bottom: 0; left: 0; right: 0; background: #111827; border-radius: 20px 20px 0 0; border-top: 1px solid #2d3f55; z-index: 1000; max-height: 68%; overflow-y: auto; transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.34,1.1,0.64,1); }
+    #event-spawn-sheet::-webkit-scrollbar { width: 3px; }
+    #event-spawn-sheet::-webkit-scrollbar-thumb { background: #334155; }
+    #event-spawn-sheet.open { transform: translateY(0); }
+    #event-spawn-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; padding: 2px 12px 18px; }
     .event-active-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; flex-shrink: 0; margin-top: 4px; animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
     .event-info { flex: 1; min-width: 0; }
@@ -377,6 +387,18 @@
       <div id="raids-container"><p class="raid-empty">불러오는 중...</p></div>
     </div>
     <div style="height:20px"></div>
+    <div id="event-spawn-backdrop" onclick="closeEventSpawnSheet()"></div>
+    <div id="event-spawn-sheet">
+      <div class="region-sheet-drag"></div>
+      <div class="region-sheet-header">
+        <div>
+          <div class="region-sheet-title" id="event-spawn-title">출현 포켓몬</div>
+          <div class="region-sheet-sub" id="event-spawn-sub"></div>
+        </div>
+        <button class="region-sheet-close" onclick="closeEventSpawnSheet()">✕</button>
+      </div>
+      <div id="event-spawn-grid"></div>
+    </div>
   </div>
 
   <!-- ── 알 뷰 ── -->
@@ -599,10 +621,48 @@ async function loadEvents() {
   const container=document.getElementById('events-container');
   try {
     const data=await(await fetch('/api/events')).json(); let html='';
-    if(data.active&&data.active.length){html+='<div style="font-size:0.72rem;color:#22c55e;font-weight:600;margin-bottom:8px;padding-left:2px">● 진행 중</div>';for(const e of data.active){const cfg=eventTypeCfg(e.type);html+=`<div class="event-card"><div class="event-active-dot"></div><div class="event-info"><div class="event-name">${esc(e.name)}</div><div class="event-time">${fmtRemain(e.end)}</div></div><span class="event-type-badge" style="background:${cfg.bg}">${cfg.text}</span></div>`;}}
-    if(data.upcoming&&data.upcoming.length){html+=`<div style="font-size:0.72rem;color:#64748b;font-weight:600;margin:${data.active&&data.active.length?'12px':'0'}px 0 8px 2px">◎ 7일 내 예정</div>`;for(const e of data.upcoming){const cfg=eventTypeCfg(e.type);html+=`<div class="event-card"><div class="event-info"><div class="event-name">${esc(e.name)}</div><div class="event-time">${fmtUntil(e.start)}</div></div><span class="event-type-badge" style="background:${cfg.bg}">${cfg.text}</span></div>`;}}
+    const renderCard=(e,isActive)=>{
+      const cfg=eventTypeCfg(e.type);
+      const clickable=e.has_spawns&&e.link?'clickable':'';
+      const onclick=e.has_spawns&&e.link?`onclick="openEventSpawnSheet('${e.link.replace(/'/g,"\\'")}','${esc(e.name).replace(/'/g,"\\'")}')"`:'';
+      const dot=isActive?'<div class="event-active-dot"></div>':'';
+      const time=isActive?fmtRemain(e.end):fmtUntil(e.start);
+      const hint=e.has_spawns?'<div class="event-spawn-hint">👆 출현 포켓몬 보기</div>':'';
+      return `<div class="event-card ${clickable}" ${onclick}>${dot}<div class="event-info"><div class="event-name">${esc(e.name)}</div><div class="event-time">${time}</div>${hint}</div><span class="event-type-badge" style="background:${cfg.bg}">${cfg.text}</span></div>`;
+    };
+    if(data.active&&data.active.length){html+='<div style="font-size:0.72rem;color:#22c55e;font-weight:600;margin-bottom:8px;padding-left:2px">● 진행 중</div>';for(const e of data.active)html+=renderCard(e,true);}
+    if(data.upcoming&&data.upcoming.length){html+=`<div style="font-size:0.72rem;color:#64748b;font-weight:600;margin:${data.active&&data.active.length?'12px':'0'}px 0 8px 2px">◎ 7일 내 예정</div>`;for(const e of data.upcoming)html+=renderCard(e,false);}
     container.innerHTML=html||'<p class="raid-empty">현재 이벤트 정보가 없어요.</p>';
   } catch { container.innerHTML='<p class="raid-empty">이벤트 정보를 불러올 수 없어요.</p>'; }
+}
+
+async function openEventSpawnSheet(url, name) {
+  const sheet=document.getElementById('event-spawn-sheet');
+  const backdrop=document.getElementById('event-spawn-backdrop');
+  const grid=document.getElementById('event-spawn-grid');
+  const title=document.getElementById('event-spawn-title');
+  const sub=document.getElementById('event-spawn-sub');
+  title.textContent=name;
+  sub.textContent='출현 포켓몬 불러오는 중...';
+  grid.innerHTML='';
+  sheet.classList.add('open'); backdrop.classList.add('open');
+  try {
+    const data=await(await fetch(`/api/event-spawns?url=${encodeURIComponent(url)}`)).json();
+    if(!data.spawns||!data.spawns.length){sub.textContent='포켓몬 정보를 찾을 수 없어요.';return;}
+    sub.textContent=`${data.spawns.length}종 출현`;
+    grid.innerHTML=data.spawns.map(p=>{
+      const sprite=p.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.dex}.png`:'';
+      return `<div class="region-pm-card" onclick="closeEventSpawnSheet();openPokemonPopup(${p.dex||0})">
+        ${sprite?`<img class="region-pm-sprite" src="${sprite}" alt="${esc(p.ko)}" onerror="this.style.opacity='0.2'">`:''}
+        <div class="region-pm-name">${esc(p.ko)}</div>
+      </div>`;
+    }).join('');
+  } catch { sub.textContent='불러오기 실패'; }
+}
+
+function closeEventSpawnSheet() {
+  document.getElementById('event-spawn-sheet').classList.remove('open');
+  document.getElementById('event-spawn-backdrop').classList.remove('open');
 }
 const TIER_LABEL={mega:'메가 레이드',mega_legendary:'메가 레전더리','5':'5성 레이드','3':'3성 레이드','1':'1성 레이드',elite:'엘리트 레이드'};
 const TIER_ORDER=['mega','mega_legendary','5','elite','3','1'];

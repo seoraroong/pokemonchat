@@ -718,9 +718,18 @@ async def get_events_api():
             continue
         if (end - now).total_seconds() < 0:
             continue
-        ds   = (start - now).total_seconds()
-        item = {"name": e["name"], "type": e.get("eventType", ""),
-                "link": e.get("link", ""), "start": e["start"], "end": e["end"]}
+        ds  = (start - now).total_seconds()
+        ed  = e.get("extraData", {})
+        has_spawns = bool(
+            ed.get("generic", {}).get("hasSpawns") or
+            ed.get("communityday", {}).get("spawns") or
+            ed.get("raidbattles", {})
+        )
+        item = {
+            "name": e["name"], "type": e.get("eventType", ""),
+            "link": e.get("link", ""), "start": e["start"], "end": e["end"],
+            "has_spawns": has_spawns,
+        }
         if ds <= 0:
             active.append(item)
         elif ds <= 7 * 86400:
@@ -728,6 +737,61 @@ async def get_events_api():
     active.sort(key=lambda x: x["end"])
     upcoming.sort(key=lambda x: x["start"])
     return {"active": active, "upcoming": upcoming}
+
+
+_html_cache: dict[str, tuple[float, str]] = {}
+HTML_CACHE_TTL = 3600
+
+async def _fetch_html(url: str) -> str:
+    import time
+    cached = _html_cache.get(url)
+    if cached and time.time() - cached[0] < HTML_CACHE_TTL:
+        return cached[1]
+    try:
+        async with httpx.AsyncClient(
+            timeout=15, follow_redirects=True,
+            headers={"User-Agent": "Mozilla/5.0"},
+        ) as c:
+            r = await c.get(url)
+            html = r.text
+    except Exception:
+        return ""
+    _html_cache[url] = (time.time(), html)
+    return html
+
+
+@app.get("/api/event-spawns")
+async def event_spawns(url: str):
+    events = await get_events()
+    full_event = next((e for e in events if e.get("link") == url), None)
+
+    spawns: list[dict] = []
+    seen: set[int] = set()
+
+    # 커뮤니티 데이 — extraData에 스폰 목록 직접 포함
+    if full_event:
+        cd = full_event.get("extraData", {}).get("communityday", {})
+        for sp in cd.get("spawns", []):
+            m = re.search(r"pm(\d+)", sp.get("image", ""))
+            if m:
+                dex = int(m.group(1))
+                if dex not in seen:
+                    seen.add(dex)
+                    ko = (_names_raw or {}).get(str(dex), {}).get("ko_name", sp.get("name", f"#{dex}"))
+                    spawns.append({"dex": dex, "ko": ko})
+
+    # 그 외 이벤트 — HTML에서 pm{dex}.icon.png 패턴 파싱
+    if not spawns:
+        html = await _fetch_html(url)
+        dex_strs = list(dict.fromkeys(re.findall(r"pm(\d+)\.(?:s\.)?icon\.png", html)))
+        for dex_str in dex_strs:
+            dex = int(dex_str)
+            if dex not in seen:
+                seen.add(dex)
+                ko = (_names_raw or {}).get(str(dex), {}).get("ko_name", f"#{dex}")
+                spawns.append({"dex": dex, "ko": ko})
+
+    return {"spawns": spawns}
 
 
 @app.get("/api/raids")
