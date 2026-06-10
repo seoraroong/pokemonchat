@@ -1118,6 +1118,13 @@ async def service_worker():
     return Response(content=content, media_type="application/javascript")
 
 
+@app.get("/manifest.json")
+async def manifest():
+    from fastapi.responses import Response
+    content = (Path("static") / "manifest.json").read_text(encoding="utf-8")
+    return Response(content=content, media_type="application/manifest+json")
+
+
 @app.post("/chat")
 async def chat(req: ChatRequest):
     return StreamingResponse(
