@@ -1,6 +1,6 @@
 # Wiki Index
 <!-- AUTO-GENERATED — DO NOT EDIT BY HAND -->
-**Last generated:** 2026-06-10T08:38:02Z
+**Last generated:** 2026-06-10T08:46:20Z
 **Total pages:** 1992
 
 ## Page Type Summary / 페이지 유형
