@@ -647,13 +647,14 @@ async def get_pokedex():
 
 # ── Pokémon detail / Events / Raids APIs ────────────────────────────
 
-_names_raw: dict | None = None
-_gm_raw:    dict | None = None
-_pve_moves: dict | None = None
+_names_raw:   dict | None = None
+_gm_raw:      dict | None = None
+_pve_moves:   dict | None = None
+_move_en2ko:  dict | None = None   # en_name → ko_name (go_moves.json 기반)
 
 
 def _ensure_raw() -> bool:
-    global _names_raw, _gm_raw, _pve_moves
+    global _names_raw, _gm_raw, _pve_moves, _move_en2ko
     if _names_raw is not None:
         return True
     p1 = Path(".raw/go_all_names.json")
@@ -664,6 +665,12 @@ def _ensure_raw() -> bool:
     _gm_raw    = json.loads(p2.read_text(encoding="utf-8"))
     p3 = Path(".raw/pve_moves.json")
     _pve_moves = json.loads(p3.read_text(encoding="utf-8")) if p3.exists() else {}
+    p4 = Path(".raw/go_moves.json")
+    if p4.exists():
+        go_moves = json.loads(p4.read_text(encoding="utf-8"))
+        _move_en2ko = {v["en_name"]: v["ko_name"] for v in go_moves.values() if v.get("en_name") and v.get("ko_name")}
+    else:
+        _move_en2ko = {}
     return True
 
 
@@ -678,9 +685,12 @@ async def get_pokemon_detail(dex: int):
         return {}
 
     def move_info(mid: str) -> dict:
-        m  = (_pve_moves or {}).get(mid, {})
-        ko = m.get("ko_name") or mid.replace("_FAST", "").replace("_", " ").title().strip()
-        return {"id": mid, "ko": ko, "type": m.get("type", "")}
+        # game_master_pokemon의 기술 키는 영어 표시명 (예: "Confusion", "Psycho Cut")
+        ko  = (_move_en2ko or {}).get(mid, "")
+        typ = ""
+        if not ko:
+            ko = mid  # 최후 fallback
+        return {"id": mid, "ko": ko, "type": typ}
 
     t2 = gmd.get("type2", "") or ""
     if t2 == "none":
