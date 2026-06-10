@@ -1,7 +1,7 @@
 {
   "2e27dd7b35c198fa1ceb16b2596ea6655f59bc74eb1f5006d1880e369ee71fe5": {
     "name": "type_effectiveness.json",
-    "date": "2026-06-08T00:12:36Z",
+    "date": "2026-06-10T08:10:29Z",
     "language": "en",
     "pages_created": [
       "type-chart",
@@ -28,7 +28,7 @@
   },
   "bb8096ad5a0b2c74200879a8a90f450de39cf76898c0fd158d85011302b5f3d5": {
     "name": "gen1_pokemon.json",
-    "date": "2026-06-08T00:12:36Z",
+    "date": "2026-06-10T08:10:29Z",
     "language": "ko",
     "pages_created": [
       "pokedex-gen1",

@@ -1,19 +1,19 @@
 # Wiki Index
 <!-- AUTO-GENERATED — DO NOT EDIT BY HAND -->
-**Last generated:** 2026-06-08T00:12:36Z
-**Total pages:** 1991
+**Last generated:** 2026-06-10T08:10:29Z
+**Total pages:** 1992
 
 ## Page Type Summary / 페이지 유형
 | Type | Count |
 |------|-------|
 | article | 1 |
-| concept | 1990 |
+| concept | 1991 |
 
 ## All Pages / 전체 페이지
 | Slug | Title | Type | Lang | Summary | Modified |
 |------|-------|------|------|---------|----------|
 | 2026-06-05-pokeapi-gen1-import | PokéAPI Gen 1 데이터 임포트 | article | ko | PokéAPI에서 1세대 포켓몬 151마리 스탯 및 18개 타입 상성 데이터를 가져와 위키에 구축한 기록 | 2026-06-05 |
-| current-raids | Current Raids / 현재 레이드 보스 | concept | ko | 현재 포켓몬 GO 레이드 보스 목록 — 2026-06-05 기준, 총 16마리 | 2026-06-05 |
+| current-raids | Current Raids / 현재 레이드 보스 | concept | ko | 현재 포켓몬 GO 레이드 보스 목록 — 2026-06-05 기준, 총 17마리 | 2026-06-05 |
 | eggs-10km | Eggs 10 km / 10km 알 | concept | ko | 10km 알 부화 가능 포켓몬 목록 — 2026-06-08 기준, 12종 | 2026-06-08 |
 | eggs-12km | Eggs 12 km / 12km 알 (어드벤처 싱크) | concept | ko | 12km 알 (어드벤처 싱크) 부화 가능 포켓몬 목록 — 2026-06-08 기준, 6종 | 2026-06-08 |
 | eggs-1km | Eggs 1 km / 1km 알 | concept | ko | 1km 알 부화 가능 포켓몬 목록 — 2026-06-08 기준, 27종 | 2026-06-08 |
@@ -2003,6 +2003,7 @@
 | type-rock | Rock 타입 / 바위 타입 | concept | ko | 포켓몬 바위 타입의 공격/방어 상성 관계 | 2026-06-05 |
 | type-steel | Steel 타입 / 강철 타입 | concept | ko | 포켓몬 강철 타입의 공격/방어 상성 관계 | 2026-06-05 |
 | type-water | Water 타입 / 물 타입 | concept | ko | 포켓몬 물 타입의 공격/방어 상성 관계 | 2026-06-05 |
+| weather-boost | Weather Boost / 날씨 부스트 | concept | ko | 날씨별 강화 타입 표 — 포켓몬 GO 날씨 부스트 (CP 상승 + 스타더스트 보너스) | 2026-06-08 |
 
 ## By Tag / 태그별
 ### pokemon (1023 pages)
@@ -2018,8 +2019,8 @@
 - [[pokemon-alcremie]] — #869 마휘핑 (페어리 / none) — GO 최대 CP: 2,682
 - ... 외 1013개
 
-### raid (587 pages)
-- [[current-raids]] — 현재 포켓몬 GO 레이드 보스 목록 — 2026-06-05 기준, 총 16마리
+### raid (588 pages)
+- [[current-raids]] — 현재 포켓몬 GO 레이드 보스 목록 — 2026-06-05 기준, 총 17마리
 - [[raid-counters-abomasnow]] — 눈설왕 (풀 / 얼음) 레이드 카운터 상위 15위 — PvE DPS 기반
 - [[raid-counters-absol]] — 앱솔 (악) 레이드 카운터 상위 15위 — PvE DPS 기반
 - [[raid-counters-accelgor]] — 어지리더 (벌레) 레이드 카운터 상위 15위 — PvE DPS 기반
@@ -2029,7 +2030,7 @@
 - [[raid-counters-alakazam]] — 후딘 (에스퍼) 레이드 카운터 상위 15위 — PvE DPS 기반
 - [[raid-counters-alcremie]] — 마휘핑 (페어리) 레이드 카운터 상위 15위 — PvE DPS 기반
 - [[raid-counters-alomomola]] — 맘복치 (물) 레이드 카운터 상위 15위 — PvE DPS 기반
-- ... 외 577개
+- ... 외 578개
 
 ### counter (586 pages)
 - [[raid-counters-abomasnow]] — 눈설왕 (풀 / 얼음) 레이드 카운터 상위 15위 — PvE DPS 기반

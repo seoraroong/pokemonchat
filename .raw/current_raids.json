@@ -1,35 +1,35 @@
 {
   "1": [
     {
-      "en_name": "Galarian Meowth",
-      "ko_name": "가라르 나옹",
-      "slug": "galarian-meowth",
-      "dex": 52,
-      "types_ko": "강철",
+      "en_name": "Rockruff",
+      "ko_name": "암멍이",
+      "slug": "rockruff",
+      "dex": 744,
+      "types_ko": "바위",
       "is_shiny": true
     },
     {
-      "en_name": "Chimecho",
-      "ko_name": "치렁",
-      "slug": "chimecho",
-      "dex": 358,
-      "types_ko": "에스퍼",
+      "en_name": "Scraggy",
+      "ko_name": "곤율랭",
+      "slug": "scraggy",
+      "dex": 559,
+      "types_ko": "악 / 격투",
       "is_shiny": true
     },
     {
-      "en_name": "Galarian Stunfisk",
-      "ko_name": "가라르 메더",
-      "slug": "galarian-stunfisk",
-      "dex": 618,
-      "types_ko": "땅 / 강철",
+      "en_name": "Honedge",
+      "ko_name": "단칼빙",
+      "slug": "honedge",
+      "dex": 679,
+      "types_ko": "강철 / 고스트",
       "is_shiny": true
     },
     {
-      "en_name": "Hatenna",
-      "ko_name": "몸지브림",
-      "slug": "hatenna",
-      "dex": 856,
-      "types_ko": "에스퍼",
+      "en_name": "Hisuian Growlithe",
+      "ko_name": "히스이 가디",
+      "slug": "hisuian-growlithe",
+      "dex": 58,
+      "types_ko": "불꽃 / 바위",
       "is_shiny": true
     },
     {
@@ -67,19 +67,27 @@
   ],
   "3": [
     {
-      "en_name": "Galarian Weezing",
-      "ko_name": "가라르 또도가스",
-      "slug": "galarian-weezing",
-      "dex": 110,
-      "types_ko": "독 / 페어리",
+      "en_name": "Machamp",
+      "ko_name": "괴력몬",
+      "slug": "machamp",
+      "dex": 68,
+      "types_ko": "격투",
       "is_shiny": true
     },
     {
-      "en_name": "Togetic",
-      "ko_name": "토게틱",
-      "slug": "togetic",
-      "dex": 176,
-      "types_ko": "페어리 / 비행",
+      "en_name": "Scizor",
+      "ko_name": "핫삼",
+      "slug": "scizor",
+      "dex": 212,
+      "types_ko": "벌레 / 강철",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Magcargo",
+      "ko_name": "마그카르고",
+      "slug": "magcargo",
+      "dex": 219,
+      "types_ko": "불꽃 / 바위",
       "is_shiny": true
     },
     {

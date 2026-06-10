@@ -6,7 +6,7 @@ created: 2026-06-05
 modified: 2026-06-05
 tags: ["raid", "current", "boss", "event"]
 aliases: ["현재 레이드", "레이드 보스", "레이드 보스 목록", "raid boss", "current raids"]
-summary: "현재 포켓몬 GO 레이드 보스 목록 — 2026-06-05 기준, 총 16마리"
+summary: "현재 포켓몬 GO 레이드 보스 목록 — 2026-06-05 기준, 총 17마리"
 ---
 
 # 현재 레이드 보스
@@ -32,8 +32,9 @@ summary: "현재 포켓몬 GO 레이드 보스 목록 — 2026-06-05 기준, 총
 
 | 포켓몬 | 타입 | 색변 |
 |--------|------|------|
-| [[pokemon-galarian-weezing|가라르 또도가스]] | 독 / 페어리 | O |
-| [[pokemon-togetic|토게틱]] | 페어리 / 비행 | O |
+| [[pokemon-machamp|괴력몬]] | 격투 | O |
+| [[pokemon-scizor|핫삼]] | 벌레 / 강철 | O |
+| [[pokemon-magcargo|마그카르고]] | 불꽃 / 바위 | O |
 | [[pokemon-shadow-alolan-marowak|다크 알로라 텅구리]] | 불꽃 / 고스트 | O |
 | [[pokemon-shadow-hitmonlee|다크 시라소몬]] | 격투 | O |
 | [[pokemon-shadow-gligar|다크 글라이거]] | 땅 / 비행 | O |
@@ -42,10 +43,10 @@ summary: "현재 포켓몬 GO 레이드 보스 목록 — 2026-06-05 기준, 총
 
 | 포켓몬 | 타입 | 색변 |
 |--------|------|------|
-| [[pokemon-galarian-meowth|가라르 나옹]] | 강철 | O |
-| [[pokemon-chimecho|치렁]] | 에스퍼 | O |
-| [[pokemon-galarian-stunfisk|가라르 메더]] | 땅 / 강철 | O |
-| [[pokemon-hatenna|몸지브림]] | 에스퍼 | O |
+| [[pokemon-rockruff|암멍이]] | 바위 | O |
+| [[pokemon-scraggy|곤율랭]] | 악 / 격투 | O |
+| [[pokemon-honedge|단칼빙]] | 강철 / 고스트 | O |
+| [[pokemon-hisuian-growlithe|히스이 가디]] | 불꽃 / 바위 | O |
 | [[pokemon-shadow-horsea|다크 쏘드라]] | 물 | O |
 | [[pokemon-shadow-porygon|다크 폴리곤]] | 노말 | O |
 | [[pokemon-shadow-beldum|다크 메탕]] | 강철 / 에스퍼 | O |
