@@ -120,11 +120,19 @@
     .event-spawn-hint { font-size: 0.65rem; color: #60a5fa; margin-top: 4px; }
     #event-spawn-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.5); z-index: 999; display: none; }
     #event-spawn-backdrop.open { display: block; }
-    #event-spawn-sheet { position: absolute; bottom: 0; left: 0; right: 0; background: #111827; border-radius: 20px 20px 0 0; border-top: 1px solid #2d3f55; z-index: 1000; max-height: 68%; overflow-y: auto; transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.34,1.1,0.64,1); }
+    #event-spawn-sheet { position: absolute; bottom: 0; left: 0; right: 0; background: #111827; border-radius: 20px 20px 0 0; border-top: 1px solid #2d3f55; z-index: 1000; max-height: 75%; display: flex; flex-direction: column; transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.34,1.1,0.64,1); }
     #event-spawn-sheet::-webkit-scrollbar { width: 3px; }
-    #event-spawn-sheet::-webkit-scrollbar-thumb { background: #334155; }
     #event-spawn-sheet.open { transform: translateY(0); }
-    #event-spawn-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; padding: 2px 12px 18px; }
+    #event-detail-tabs { display: flex; gap: 6px; padding: 0 14px 10px; flex-shrink: 0; }
+    .event-detail-tab { flex: 1; padding: 7px 4px; border-radius: 10px; border: 1px solid #2d3f55; background: #1e293b; color: #64748b; font-size: 0.75rem; font-weight: 600; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .event-detail-tab.active { background: #1d4ed8; border-color: #3b82f6; color: #fff; }
+    #event-detail-body { overflow-y: auto; flex: 1; padding: 0 12px 18px; }
+    #event-detail-body::-webkit-scrollbar { width: 3px; }
+    #event-detail-body::-webkit-scrollbar-thumb { background: #334155; }
+    .event-pm-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-top: 6px; }
+    .event-research-item { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; }
+    .event-research-task { font-size: 0.78rem; color: #94a3b8; margin-bottom: 8px; }
+    .event-research-rewards { display: flex; gap: 8px; flex-wrap: wrap; }
     .event-active-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; flex-shrink: 0; margin-top: 4px; animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
     .event-info { flex: 1; min-width: 0; }
@@ -392,12 +400,17 @@
       <div class="region-sheet-drag"></div>
       <div class="region-sheet-header">
         <div>
-          <div class="region-sheet-title" id="event-spawn-title">출현 포켓몬</div>
+          <div class="region-sheet-title" id="event-spawn-title">이벤트 정보</div>
           <div class="region-sheet-sub" id="event-spawn-sub"></div>
         </div>
         <button class="region-sheet-close" onclick="closeEventSpawnSheet()">✕</button>
       </div>
-      <div id="event-spawn-grid"></div>
+      <div id="event-detail-tabs">
+        <button class="event-detail-tab active" onclick="switchEventTab('wild',this)">🌿 야생</button>
+        <button class="event-detail-tab" onclick="switchEventTab('raids',this)">⚔️ 레이드</button>
+        <button class="event-detail-tab" onclick="switchEventTab('research',this)">📋 리서치</button>
+      </div>
+      <div id="event-detail-body"></div>
     </div>
   </div>
 
@@ -636,28 +649,73 @@ async function loadEvents() {
   } catch { container.innerHTML='<p class="raid-empty">이벤트 정보를 불러올 수 없어요.</p>'; }
 }
 
+let _eventDetailData = null;
+
+function pmCard(p, closeOnClick=true) {
+  const sprite = p.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.dex}.png` : '';
+  const shiny = p.shiny ? '<div style="font-size:0.6rem;color:#f59e0b;margin-top:1px">✦ 색변</div>' : '';
+  const onclick = closeOnClick && p.dex ? `onclick="closeEventSpawnSheet();openPokemonPopup(${p.dex})"` : (p.dex ? `onclick="openPokemonPopup(${p.dex})"` : '');
+  return `<div class="region-pm-card" ${onclick}>${sprite?`<img class="region-pm-sprite" src="${sprite}" onerror="this.style.opacity='0.2'">`:''}<div class="region-pm-name">${esc(p.ko)}</div>${shiny}</div>`;
+}
+
+const TIER_LABEL_DETAIL = {'1':'1성','3':'3성','5':'5성','mega':'메가','elite':'엘리트'};
+const TIER_ORDER_DETAIL = ['mega','5','elite','3','1'];
+
+function renderEventTab(tab) {
+  const body = document.getElementById('event-detail-body');
+  const d = _eventDetailData;
+  if (!d) { body.innerHTML = '<p class="raid-empty">데이터 없음</p>'; return; }
+
+  if (tab === 'wild') {
+    if (!d.wild||!d.wild.length) { body.innerHTML='<p class="raid-empty">야생 출현 정보 없음</p>'; return; }
+    body.innerHTML = `<div class="event-pm-grid">${d.wild.map(p=>pmCard(p)).join('')}</div>`;
+  } else if (tab === 'raids') {
+    if (!d.raids||!Object.keys(d.raids).length) { body.innerHTML='<p class="raid-empty">레이드 정보 없음</p>'; return; }
+    let html = '';
+    for (const tier of TIER_ORDER_DETAIL) {
+      const list = d.raids[tier];
+      if (!list||!list.length) continue;
+      html += `<div style="font-size:0.72rem;font-weight:700;color:#94a3b8;margin:10px 0 6px">${TIER_LABEL_DETAIL[tier]} 레이드</div>`;
+      html += `<div class="event-pm-grid">${list.map(p=>pmCard(p)).join('')}</div>`;
+    }
+    body.innerHTML = html;
+  } else if (tab === 'research') {
+    if (!d.research||!d.research.length) { body.innerHTML='<p class="raid-empty">리서치 정보 없음</p>'; return; }
+    body.innerHTML = d.research.map(t=>
+      `<div class="event-research-item">
+        <div class="event-research-task">📋 ${esc(t.task)}</div>
+        <div class="event-research-rewards">${t.rewards.map(p=>pmCard(p,false)).join('')}</div>
+      </div>`
+    ).join('');
+  }
+}
+
+function switchEventTab(tab, btn) {
+  document.querySelectorAll('.event-detail-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderEventTab(tab);
+}
+
 async function openEventSpawnSheet(url, name) {
-  const sheet=document.getElementById('event-spawn-sheet');
-  const backdrop=document.getElementById('event-spawn-backdrop');
-  const grid=document.getElementById('event-spawn-grid');
-  const title=document.getElementById('event-spawn-title');
-  const sub=document.getElementById('event-spawn-sub');
-  title.textContent=name;
-  sub.textContent='출현 포켓몬 불러오는 중...';
-  grid.innerHTML='';
+  const sheet = document.getElementById('event-spawn-sheet');
+  const backdrop = document.getElementById('event-spawn-backdrop');
+  const title = document.getElementById('event-spawn-title');
+  const sub = document.getElementById('event-spawn-sub');
+  const body = document.getElementById('event-detail-body');
+  _eventDetailData = null;
+  title.textContent = name;
+  sub.textContent = '불러오는 중...';
+  body.innerHTML = '';
+  // 탭 초기화
+  document.querySelectorAll('.event-detail-tab').forEach((b,i)=>b.classList.toggle('active',i===0));
   sheet.classList.add('open'); backdrop.classList.add('open');
   try {
-    const data=await(await fetch(`/api/event-spawns?url=${encodeURIComponent(url)}`)).json();
-    if(!data.spawns||!data.spawns.length){sub.textContent='포켓몬 정보를 찾을 수 없어요.';return;}
-    sub.textContent=`${data.spawns.length}종 출현`;
-    grid.innerHTML=data.spawns.map(p=>{
-      const sprite=p.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.dex}.png`:'';
-      return `<div class="region-pm-card" onclick="closeEventSpawnSheet();openPokemonPopup(${p.dex||0})">
-        ${sprite?`<img class="region-pm-sprite" src="${sprite}" alt="${esc(p.ko)}" onerror="this.style.opacity='0.2'">`:''}
-        <div class="region-pm-name">${esc(p.ko)}</div>
-      </div>`;
-    }).join('');
-  } catch { sub.textContent='불러오기 실패'; }
+    const data = await (await fetch(`/api/event-detail?url=${encodeURIComponent(url)}`)).json();
+    _eventDetailData = data;
+    const total = (data.wild||[]).length + Object.values(data.raids||{}).flat().length + (data.research||[]).length;
+    sub.textContent = total ? `야생 ${(data.wild||[]).length} · 레이드 ${Object.values(data.raids||{}).flat().length} · 리서치 ${(data.research||[]).length}` : '정보 없음';
+    renderEventTab('wild');
+  } catch { sub.textContent = '불러오기 실패'; body.innerHTML = '<p class="raid-empty">오류가 발생했어요.</p>'; }
 }
 
 function closeEventSpawnSheet() {

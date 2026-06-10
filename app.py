@@ -770,37 +770,94 @@ async def _fetch_html(url: str) -> str:
     return html
 
 
+_IMG_PAT = re.compile(r"pokemon_icon_(\d+)_\d+\.png|pm(\d+)\.[^.\"]+\.icon\.png")
+_PREFIX_MAP = [
+    ("Hisuian ", "히스이 "), ("Galarian ", "가라르 "), ("Alolan ", "알로라 "),
+    ("Shadow ", "다크 "), ("Mega ", "메가 "), ("Paldean ", "팔데아 "),
+]
+_TIER_IDS   = ["one-star-raids", "three-star-raids", "five-star-raids", "mega-raids", "elite-raids"]
+_TIER_KEYS  = {"one-star-raids": "1", "three-star-raids": "3", "five-star-raids": "5",
+               "mega-raids": "mega", "elite-raids": "elite"}
+
+def _resolve_en(en: str, dex_fallback: int) -> tuple[int, str]:
+    _ensure_raw()
+    en2info = {v["en_name"].lower(): (int(k), v["ko_name"]) for k, v in (_names_raw or {}).items()}
+    info = en2info.get(en.lower())
+    if info:
+        return info
+    prefix_ko, base = "", en
+    for p_en, p_ko in _PREFIX_MAP:
+        if en.startswith(p_en):
+            prefix_ko, base = p_ko, en[len(p_en):]
+            break
+    info = en2info.get(base.lower())
+    dex = info[0] if info else dex_fallback
+    ko  = prefix_ko + (info[1] if info else base)
+    return dex, ko
+
+def _parse_pkmn(html_chunk: str) -> list[dict]:
+    items: list[dict] = []
+    seen: set[int] = set()
+    for m in _IMG_PAT.finditer(html_chunk):
+        dex_img = int(m.group(1) or m.group(2))
+        after   = html_chunk[m.end(): m.end() + 300]
+        name_m  = re.search(r'(?:pkmn-name|reward-label)[^>]*>(?:<[^>]+>)*([^<]+)<', after)
+        en      = name_m.group(1).strip() if name_m else ""
+        shiny   = "shiny-icon" in html_chunk[m.start() - 30: m.end() + 300]
+        dex, ko = _resolve_en(en, dex_img)
+        if dex not in seen:
+            seen.add(dex)
+            items.append({"dex": dex, "ko": ko, "en": en, "shiny": shiny})
+    return items
+
+def _get_section(html: str, start_id: str, stop_ids: list[str]) -> str:
+    start = html.find(f'id="{start_id}"')
+    if start < 0:
+        return ""
+    end = len(html)
+    for sid in stop_ids:
+        i = html.find(f'id="{sid}"', start + 1)
+        if 0 < i < end:
+            end = i
+    return html[start:end]
+
+def _parse_event_html(html: str) -> dict:
+    wild = _parse_pkmn(_get_section(html, "wild-encounters", ["raids", "research", "go-pass", "sales"]))
+
+    raids: dict[str, list] = {}
+    for i, tid in enumerate(_TIER_IDS):
+        stops = _TIER_IDS[i + 1:] + ["research", "go-pass", "sales"]
+        chunk = _get_section(html, tid, stops)
+        pokes = _parse_pkmn(chunk)
+        if pokes:
+            raids[_TIER_KEYS[tid]] = pokes
+
+    research_html = _get_section(html, "field-research-task-encounters", ["go-pass", "sales", "graphic"])
+    tasks = []
+    for li in re.findall(r"<li>(.*?)</li>", research_html, re.DOTALL):
+        task_m = re.search(r'class="task">([^<]+)<', li)
+        if not task_m:
+            continue
+        task    = re.sub(r"&nbsp;", " ", task_m.group(1)).strip()
+        rewards = _parse_pkmn(li)
+        if rewards:
+            tasks.append({"task": task, "rewards": rewards})
+
+    return {"wild": wild, "raids": raids, "research": tasks}
+
+
+@app.get("/api/event-detail")
+async def event_detail(url: str):
+    html = await _fetch_html(url)
+    if not html:
+        return {"wild": [], "raids": {}, "research": []}
+    return _parse_event_html(html)
+
+
 @app.get("/api/event-spawns")
 async def event_spawns(url: str):
-    events = await get_events()
-    full_event = next((e for e in events if e.get("link") == url), None)
-
-    spawns: list[dict] = []
-    seen: set[int] = set()
-
-    # 커뮤니티 데이 — extraData에 스폰 목록 직접 포함
-    if full_event:
-        cd = full_event.get("extraData", {}).get("communityday", {})
-        for sp in cd.get("spawns", []):
-            m = re.search(r"pm(\d+)", sp.get("image", ""))
-            if m:
-                dex = int(m.group(1))
-                if dex not in seen:
-                    seen.add(dex)
-                    ko = (_names_raw or {}).get(str(dex), {}).get("ko_name", sp.get("name", f"#{dex}"))
-                    spawns.append({"dex": dex, "ko": ko})
-
-    # 그 외 이벤트 — HTML에서 pm{dex}.icon.png 패턴 파싱
-    if not spawns:
-        html = await _fetch_html(url)
-        dex_strs = list(dict.fromkeys(re.findall(r"pm(\d+)\.(?:s\.)?icon\.png", html)))
-        for dex_str in dex_strs:
-            dex = int(dex_str)
-            if dex not in seen:
-                seen.add(dex)
-                ko = (_names_raw or {}).get(str(dex), {}).get("ko_name", f"#{dex}")
-                spawns.append({"dex": dex, "ko": ko})
-
+    result = await event_detail(url)
+    spawns = result.get("wild", [])
     return {"spawns": spawns}
 
 
