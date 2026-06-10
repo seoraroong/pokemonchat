@@ -735,11 +735,26 @@ const TIER_ORDER=['mega','mega_legendary','5','elite','3','1'];
 async function loadRaids() {
   const container=document.getElementById('raids-container');
   try {
-    const data=await(await fetch('/api/raids')).json();
+    const [data, evData] = await Promise.all([
+      fetch('/api/raids').then(r=>r.json()),
+      fetch('/api/events').then(r=>r.json()),
+    ]);
     const tiers=TIER_ORDER.filter(t=>data[t]&&data[t].length);
     if(!tiers.length){container.innerHTML='<p class="raid-empty">현재 레이드 데이터가 없어요.</p>';return;}
+
+    // 현재 진행 중 이벤트 중 시즌/GO패스 제외한 첫 번째 종료일
+    const skipTypes = new Set(['season','go-pass','go-battle-league']);
+    const activeEvent = (evData.active||[]).find(e=>!skipTypes.has(e.type));
+    const endLabel = activeEvent ? (() => {
+      const d = new Date(activeEvent.end);
+      return `~${d.getMonth()+1}/${d.getDate()} ${d.getHours()}시`;
+    })() : '';
+
     let html='';
-    for(const tier of tiers){const bosses=data[tier],label=TIER_LABEL[tier]||`${tier}성 레이드`;html+=`<div class="tier-section"><div class="tier-label">${label} (${bosses.length})</div><div class="raid-grid">`;
+    for(const tier of tiers){
+      const bosses=data[tier], label=TIER_LABEL[tier]||`${tier}성 레이드`;
+      const period = endLabel ? `<span style="font-size:0.65rem;font-weight:400;color:#64748b;margin-left:6px">${endLabel}</span>` : '';
+      html+=`<div class="tier-section"><div class="tier-label">${label} (${bosses.length})${period}</div><div class="raid-grid">`;
       for(const boss of bosses){
         const spriteUrl=boss.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${boss.dex}.png`:`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Ccircle cx='29' cy='29' r='27' fill='%231e293b'/%3E%3C/svg%3E`;
         const typeKos=boss.types_ko?boss.types_ko.split(' / '):[];
