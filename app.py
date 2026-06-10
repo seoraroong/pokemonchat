@@ -1111,6 +1111,13 @@ async def index():
     return (Path("static") / "index.html").read_text(encoding="utf-8")
 
 
+@app.get("/sw.js")
+async def service_worker():
+    from fastapi.responses import Response
+    content = (Path("static") / "sw.js").read_text(encoding="utf-8")
+    return Response(content=content, media_type="application/javascript")
+
+
 @app.post("/chat")
 async def chat(req: ChatRequest):
     return StreamingResponse(
