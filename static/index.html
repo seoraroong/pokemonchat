@@ -1592,6 +1592,7 @@ async function scanCard(file, previewUrl) {
 let _cmNick = null, _cmWs = null, _cmRoomId = null, _cmLobbyTimer = null, _cmServerEpoch = null;
 let _typingUsers = {}, _typingDebounce = null;
 let _cmQuizActive = false, _cmCurQuizEl = null;
+let _cmReconnectTimer = null, _cmReconnectCount = 0;
 
 function _cmFmtAge(ts) {
   const diff = Math.floor(Date.now()/1000 - ts);
@@ -1774,14 +1775,20 @@ function cmJoinRoom(roomId, roomName) {
       }
     } catch(_){}
   };
+  ws.onopen = () => {
+    _cmReconnectCount = 0;
+    clearTimeout(_cmReconnectTimer);
+  };
   ws.onclose = (ev) => {
     if (_cmRoomId !== roomId) return;
-    let reason;
-    if (ev.code === 4003)      reason = '🔒 정원이 초과된 방입니다.';
-    else if (ev.code === 4004) reason = '방이 더 이상 존재하지 않습니다.';
-    else                       reason = '⚠️ 서버가 재시작됐습니다. 채팅방이 종료됐어요.';
-    _cmRenderNotice(reason);
     document.getElementById('cm-send').disabled = true;
+    if (ev.code === 4003) {
+      _cmRenderNotice('🔒 정원이 초과된 방입니다.');
+    } else if (ev.code === 4004) {
+      _cmRenderNotice('방이 더 이상 존재하지 않습니다.');
+    } else {
+      _cmReconnect(roomId, roomName);
+    }
   };
   ws.onerror = () => ws.close();
   document.getElementById('cm-input').focus();
@@ -1836,7 +1843,25 @@ function _cmRenderNotice(text) {
   box.scrollTop = box.scrollHeight;
 }
 
+function _cmReconnect(roomId, roomName) {
+  if (!_cmNick || !_cmRoomId) return;
+  if (_cmReconnectCount >= 5) {
+    _cmRenderNotice('재연결에 실패했습니다. 방 목록으로 돌아갑니다.');
+    setTimeout(cmLeaveRoom, 2500);
+    return;
+  }
+  _cmReconnectCount++;
+  const delay = Math.min(2000 * _cmReconnectCount, 10000); // 2s 4s 6s 8s 10s
+  _cmRenderNotice(`⏳ 연결이 끊겼습니다. 재연결 중... (${_cmReconnectCount}/5)`);
+  clearTimeout(_cmReconnectTimer);
+  _cmReconnectTimer = setTimeout(() => {
+    if (!_cmNick || !_cmRoomId) return;
+    cmJoinRoom(roomId, roomName);
+  }, delay);
+}
+
 function cmLeaveRoom() {
+  clearTimeout(_cmReconnectTimer); _cmReconnectCount = 0;
   if (_cmWs) { _cmWs.close(); _cmWs = null; }
   _cmRoomId = null;
   _typingUsers = {}; _cmUpdateTypingBar();
@@ -1862,6 +1887,7 @@ function cmSend() {
 }
 
 function _cmReset() {
+  clearTimeout(_cmReconnectTimer); _cmReconnectCount = 0;
   if (_cmWs) { _cmWs.close(); _cmWs = null; }
   clearInterval(_cmLobbyTimer);
   _cmNick = null; _cmRoomId = null; _cmServerEpoch = null;
