@@ -800,15 +800,18 @@ _RAID_PREFIXES = [
 def _normalize_raid_tier(raw: str) -> str:
     return _TIER_NORM.get(raw.lower().strip(), raw)
 
+def _strip_form(en: str) -> str:
+    """'Indeedee (Male)' → 'Indeedee', 'Basculin (White Striped)' → 'Basculin'"""
+    return re.sub(r"\s*\([^)]+\)", "", en).strip()
+
 def _raid_ko(en: str) -> tuple[int | None, str]:
-    _ensure_raw()
-    en2info = {v["en_name"].lower(): (int(k), v["ko_name"]) for k, v in (_names_raw or {}).items()}
+    en2info = _get_en2info()
     prefix_ko, base = "", en
     for en_pfx, ko_pfx in _RAID_PREFIXES:
         if en.lower().startswith(en_pfx):
             prefix_ko, base = ko_pfx, en[len(en_pfx):]
             break
-    info = en2info.get(base.lower())
+    info = en2info.get(base.lower()) or en2info.get(_strip_form(base).lower())
     dex = info[0] if info else None
     ko  = prefix_ko + (info[1] if info else base)
     return dex, ko
@@ -876,9 +879,9 @@ def _resolve_en(en: str, dex_fallback: int) -> tuple[int, str]:
         if en.startswith(p_en):
             prefix_ko, base = p_ko, en[len(p_en):]
             break
-    info = en2info.get(base.lower())
+    info = en2info.get(base.lower()) or en2info.get(_strip_form(base).lower())
     dex = info[0] if info else dex_fallback
-    ko  = prefix_ko + (info[1] if info else base)
+    ko  = prefix_ko + (info[1] if info else _strip_form(base))
     return dex, ko
 
 def _parse_pkmn(html_chunk: str) -> list[dict]:
@@ -1087,10 +1090,12 @@ def _build_eggs_from_raw(eggs_raw: list) -> dict:
     result: dict[str, list] = {}
     for egg in eggs_raw:
         km   = egg.get("eggType", "").replace(" ", "")
-        info = en_to_info.get(egg["name"].lower(), {})
+        en   = egg["name"]
+        # 괄호 폼 표기 fallback: 'Indeedee (Male)' → 'Indeedee'
+        info = en_to_info.get(en.lower()) or en_to_info.get(_strip_form(en).lower()) or {}
         result.setdefault(km, []).append({
-            "en":         egg["name"],
-            "ko":         info.get("ko", egg["name"]),
+            "en":         en,
+            "ko":         info.get("ko", en),
             "dex":        info.get("dex"),
             "t1":         info.get("t1", ""),
             "t2":         info.get("t2", ""),
