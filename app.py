@@ -14,7 +14,7 @@ from typing import AsyncGenerator
 import httpx
 from dotenv import load_dotenv
 import anthropic
-from fastapi import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile, File, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse, StreamingResponse, JSONResponse
 from pydantic import BaseModel
 
@@ -1197,6 +1197,123 @@ async def get_pvp_api(league: str):
             "charged":  strip_wiki(e.get("charged_ko", "")),
         })
     return {"entries": entries, "name": league_d["name"], "cp": league_d["cp"]}
+
+
+# ── Community Chat Rooms ──────────────────────────────────────────────
+import uuid as _uuid
+
+_ROOM_MAX_USERS = 10
+_ROOM_MAX_MSGS  = 50
+
+
+class _Room:
+    def __init__(self, room_id: str, name: str) -> None:
+        self.id   = room_id
+        self.name = name
+        self.conns: list[tuple[WebSocket, str]] = []
+        self.msgs:  list[dict] = []
+
+    @property
+    def count(self) -> int:
+        return len(self.conns)
+
+    def remove(self, ws: WebSocket) -> None:
+        self.conns = [(w, n) for w, n in self.conns if w is not ws]
+
+    async def broadcast(self, msg: dict, exclude: WebSocket | None = None) -> None:
+        data = json.dumps(msg, ensure_ascii=False)
+        dead: list[WebSocket] = []
+        for ws, _ in list(self.conns):
+            if ws is exclude:
+                continue
+            try:
+                await ws.send_text(data)
+            except Exception:
+                dead.append(ws)
+        for ws in dead:
+            self.remove(ws)
+
+
+_rooms: dict[str, _Room] = {}
+
+
+@app.get("/api/rooms")
+async def list_rooms():
+    return [
+        {"id": r.id, "name": r.name, "count": r.count, "max": _ROOM_MAX_USERS}
+        for r in list(_rooms.values())
+    ]
+
+
+class _CreateRoomReq(BaseModel):
+    name: str
+
+
+@app.post("/api/rooms")
+async def create_room(req: _CreateRoomReq):
+    name = req.name.strip()[:30]
+    if not name:
+        return JSONResponse({"error": "방 이름을 입력하세요."}, status_code=400)
+    room_id = _uuid.uuid4().hex[:8]
+    _rooms[room_id] = _Room(room_id, name)
+    return {"id": room_id, "name": name}
+
+
+@app.websocket("/ws/room/{room_id}")
+async def room_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> None:
+    room = _rooms.get(room_id)
+    if not room:
+        await ws.close(code=4004); return
+    if room.count >= _ROOM_MAX_USERS:
+        await ws.close(code=4003); return
+
+    nick = nick.strip()[:15] or "트레이너"
+    await ws.accept()
+    room.conns.append((ws, nick))
+
+    await ws.send_text(json.dumps({
+        "type": "init",
+        "messages": room.msgs[-30:],
+        "count": room.count,
+        "room_name": room.name,
+    }, ensure_ascii=False))
+    await room.broadcast(
+        {"type": "notice", "text": f"{nick}님이 입장했습니다.", "count": room.count},
+        exclude=ws,
+    )
+
+    try:
+        while True:
+            raw = await ws.receive_text()
+            try:
+                msg = json.loads(raw)
+            except json.JSONDecodeError:
+                continue
+            if msg.get("type") != "message":
+                continue
+            text = (msg.get("text") or "").strip()
+            if not text or len(text) > 300:
+                continue
+            record: dict = {
+                "type": "message",
+                "nick": nick,
+                "text": text,
+                "ts": datetime.now(timezone.utc).strftime("%H:%M"),
+            }
+            room.msgs.append(record)
+            if len(room.msgs) > _ROOM_MAX_MSGS:
+                room.msgs.pop(0)
+            await room.broadcast(record)
+    except (WebSocketDisconnect, Exception):
+        pass
+    finally:
+        room.remove(ws)
+        if room.count == 0:
+            _rooms.pop(room_id, None)
+        else:
+            await room.broadcast(
+                {"type": "notice", "text": f"{nick}님이 퇴장했습니다.", "count": room.count},
+            )
 
 
 # ── Routes ──────────────────────────────────────────────────────────

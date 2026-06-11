@@ -324,6 +324,67 @@
     .popup-secondary-btn { display: block; width: 100%; padding: 10px 12px; background: #1e293b; border: 1px solid #334155; border-radius: 12px; color: #94a3b8; font-size: 0.85rem; cursor: pointer; transition: all 0.15s; margin-bottom: 8px; font-family: inherit; text-align: left; }
     .popup-secondary-btn:hover { background: #243450; border-color: #3b82f6; color: #e2e8f0; }
 
+    /* ── 커뮤니티 채팅 ── */
+    #view-community { background:#0f172a; }
+    .cm-screen { flex:1; display:flex; flex-direction:column; min-height:0; overflow:hidden; }
+    /* 닉네임 입력 */
+    #cm-nick-screen { align-items:center; justify-content:center; padding:32px 28px; gap:14px; }
+    .cm-nick-logo { width:52px;height:52px;border-radius:50%;background:linear-gradient(to bottom,#fff 50%,#dc2626 50%);border:3px solid #fff;flex-shrink:0;position:relative; }
+    .cm-nick-logo::before{content:'';position:absolute;left:0;right:0;top:calc(50% - 1.5px);height:3px;background:#fff;}
+    .cm-nick-logo::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;background:#fff;border:2px solid #333;}
+    .cm-nick-title { font-size:1.1rem;font-weight:700;color:#f8fafc; }
+    .cm-nick-sub { font-size:0.78rem;color:#64748b;text-align:center;line-height:1.6; }
+    #cm-nick-input { width:100%;background:#1e293b;border:1px solid #334155;border-radius:14px;padding:12px 16px;color:#e2e8f0;font-size:1rem;outline:none;text-align:center;font-family:inherit;transition:border-color 0.2s; }
+    #cm-nick-input:focus { border-color:#3b82f6; }
+    .cm-enter-btn { width:100%;padding:13px;background:#1d4ed8;color:#fff;border:none;border-radius:14px;font-size:0.95rem;font-weight:600;cursor:pointer;font-family:inherit;transition:background 0.15s; }
+    .cm-enter-btn:hover { background:#2563eb; }
+    /* 로비 */
+    #cm-lobby-screen { display:none; }
+    #cm-lobby-header { flex-shrink:0;padding:9px 14px 8px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1e293b; }
+    #cm-lobby-nick { font-size:0.78rem;color:#94a3b8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:140px; }
+    #cm-create-btn { background:#1d4ed8;color:#fff;border:none;border-radius:10px;padding:6px 13px;font-size:0.78rem;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap;flex-shrink:0; }
+    #cm-create-btn:hover { background:#2563eb; }
+    #cm-lobby-refresh { background:none;border:none;color:#475569;font-size:0.85rem;cursor:pointer;padding:4px;line-height:1; }
+    #cm-lobby-refresh:hover { color:#94a3b8; }
+    #cm-room-list { flex:1;overflow-y:auto;padding:10px 12px;display:flex;flex-direction:column;gap:7px; }
+    #cm-room-list::-webkit-scrollbar { width:4px; }
+    #cm-room-list::-webkit-scrollbar-thumb { background:#334155;border-radius:2px; }
+    .cm-room-item { background:#1e293b;border:1px solid #2d3f55;border-radius:12px;padding:11px 14px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;transition:background 0.12s,border-color 0.12s; }
+    .cm-room-item:hover:not(.full) { background:#243450;border-color:#3b82f6; }
+    .cm-room-item.full { opacity:0.5;cursor:not-allowed; }
+    .cm-room-name { font-size:0.88rem;font-weight:600;color:#e2e8f0; }
+    .cm-room-meta { font-size:0.7rem;color:#64748b;margin-top:2px; }
+    .cm-room-badge { font-size:0.78rem;font-weight:700;padding:4px 9px;border-radius:10px;background:#0f172a;color:#64748b;white-space:nowrap;flex-shrink:0; }
+    .cm-room-badge.active { color:#22c55e; }
+    .cm-room-badge.full   { color:#ef4444; }
+    .cm-empty-rooms { text-align:center;padding:52px 16px;color:#475569;font-size:0.88rem;line-height:1.8; }
+    /* 채팅방 */
+    #cm-room-screen { display:none; }
+    #cm-room-header { flex-shrink:0;padding:9px 12px;display:flex;align-items:center;gap:9px;border-bottom:1px solid #1e293b; }
+    #cm-back-btn { background:#1e293b;border:none;color:#94a3b8;font-size:1rem;width:32px;height:32px;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0; }
+    #cm-back-btn:hover { background:#334155; }
+    #cm-room-title { flex:1;font-size:0.9rem;font-weight:700;color:#f8fafc;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+    #cm-room-count-badge { font-size:0.7rem;font-weight:700;color:#22c55e;flex-shrink:0;white-space:nowrap; }
+    #cm-msgs { flex:1;overflow-y:auto;padding:10px 12px;display:flex;flex-direction:column;gap:5px; }
+    #cm-msgs::-webkit-scrollbar { width:4px; }
+    #cm-msgs::-webkit-scrollbar-thumb { background:#334155;border-radius:2px; }
+    .cm-msg { display:flex;flex-direction:column;max-width:80%;animation:pop 0.12s ease; }
+    .cm-msg.mine  { align-self:flex-end;align-items:flex-end; }
+    .cm-msg.other { align-self:flex-start;align-items:flex-start; }
+    .cm-nick  { font-size:0.64rem;color:#64748b;margin-bottom:2px;padding:0 2px; }
+    .cm-bubble { padding:8px 12px;border-radius:14px;font-size:0.88rem;line-height:1.45;word-break:break-word; }
+    .cm-msg.mine  .cm-bubble { background:#2563eb;color:#fff;border-bottom-right-radius:4px; }
+    .cm-msg.other .cm-bubble { background:#1e293b;border:1px solid #334155;border-bottom-left-radius:4px; }
+    .cm-time { font-size:0.6rem;color:#475569;margin-top:2px;padding:0 2px; }
+    .cm-notice { text-align:center;font-size:0.68rem;color:#475569;padding:4px 0;letter-spacing:0.3px; }
+    #cm-input-bar { padding:10px 12px;background:#0f172a;border-top:1px solid #1e293b;display:flex;gap:7px;flex-shrink:0; }
+    #cm-input { flex:1;background:#1e293b;border:1px solid #334155;border-radius:24px;padding:10px 16px;color:#e2e8f0;font-size:0.92rem;outline:none;transition:border-color 0.2s;font-family:inherit; }
+    #cm-input:focus { border-color:#3b82f6; }
+    #cm-input::placeholder { color:#475569; }
+    #cm-send { background:#1d4ed8;color:#fff;border:none;border-radius:50%;width:42px;height:42px;font-size:1.1rem;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:background 0.15s; }
+    #cm-send:hover:not(:disabled) { background:#2563eb; }
+    #cm-send:disabled { background:#334155;cursor:not-allowed; }
+
     /* ── 카운터 섹션 (팝업 내부) ── */
     .counter-weakness { font-size: 0.72rem; color: #94a3b8; margin-bottom: 8px; line-height: 1.5; }
     .counter-row { display: flex; align-items: center; gap: 7px; padding: 5px 7px; background: #1e293b; border: 1px solid #2d3f55; border-radius: 8px; margin-bottom: 4px; cursor: pointer; transition: background 0.12s; }
@@ -489,6 +550,46 @@
     </div>
   </div>
 
+  <!-- ── 커뮤니티 채팅 뷰 ── -->
+  <div id="view-community" class="view" style="display:none">
+
+    <!-- 닉네임 입력 화면 -->
+    <div id="cm-nick-screen" class="cm-screen">
+      <div class="cm-nick-logo"></div>
+      <div class="cm-nick-title">채팅 커뮤니티</div>
+      <div class="cm-nick-sub">일회성 닉네임으로 참여합니다<br>탭을 나가면 닉네임이 초기화돼요</div>
+      <input id="cm-nick-input" type="text" placeholder="닉네임 입력 (최대 15자)" maxlength="15" autocomplete="off">
+      <button class="cm-enter-btn" onclick="cmEnterLobby()">입장하기</button>
+    </div>
+
+    <!-- 로비 (방 목록) -->
+    <div id="cm-lobby-screen" class="cm-screen" style="display:none">
+      <div id="cm-lobby-header">
+        <span id="cm-lobby-nick"></span>
+        <div style="display:flex;gap:6px;align-items:center">
+          <button id="cm-lobby-refresh" onclick="cmLoadRooms()" title="새로고침">🔄</button>
+          <button id="cm-create-btn" onclick="cmShowCreateRoom()">+ 방 만들기</button>
+        </div>
+      </div>
+      <div id="cm-room-list"><div class="cm-empty-rooms">불러오는 중...</div></div>
+    </div>
+
+    <!-- 채팅방 -->
+    <div id="cm-room-screen" class="cm-screen" style="display:none">
+      <div id="cm-room-header">
+        <button id="cm-back-btn" onclick="cmLeaveRoom()">←</button>
+        <span id="cm-room-title"></span>
+        <span id="cm-room-count-badge">0/10명</span>
+      </div>
+      <div id="cm-msgs"></div>
+      <div id="cm-input-bar">
+        <input id="cm-input" type="text" placeholder="메시지 입력..." autocomplete="off" maxlength="300">
+        <button id="cm-send" onclick="cmSend()">↑</button>
+      </div>
+    </div>
+
+  </div>
+
   <!-- ── 탭 바 ── -->
   <nav id="tab-bar">
     <button class="tab-btn active" data-tab="chat"><span class="tab-icon">💬</span><span class="tab-label">채팅</span></button>
@@ -498,6 +599,7 @@
     <button class="tab-btn" data-tab="pvp"><span class="tab-icon">🏆</span><span class="tab-label">PvP</span></button>
     <button class="tab-btn" data-tab="card"><span class="tab-icon">🃏</span><span class="tab-label">카드</span></button>
     <button class="tab-btn" data-tab="map"><span class="tab-icon">🗺️</span><span class="tab-label">지역</span></button>
+    <button class="tab-btn" data-tab="community"><span class="tab-icon">👥</span><span class="tab-label">소통</span></button>
   </nav>
 
   <!-- ── 팝업 ── -->
@@ -1007,11 +1109,14 @@ function closePokemonPopup() {
 function popupToChat(ko){closePokemonPopup();switchTab('chat');setTimeout(()=>ask(`${ko} 스탯이랑 기술 알려줘`),80);}
 
 // ── 탭 전환 ───────────────────────────────────────────────────────
+let _currentTab = 'chat';
 document.querySelectorAll('.tab-btn').forEach(btn=>btn.addEventListener('click',()=>switchTab(btn.dataset.tab)));
 
 function switchTab(tab) {
+  if (_currentTab === 'community' && tab !== 'community') _cmReset();
+  _currentTab = tab;
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
-  const views={chat:'#view-chat',dex:'#view-dex',raid:'#view-raid',egg:'#view-egg',pvp:'#view-pvp',card:'#view-card',map:'#view-map'};
+  const views={chat:'#view-chat',dex:'#view-dex',raid:'#view-raid',egg:'#view-egg',pvp:'#view-pvp',card:'#view-card',map:'#view-map',community:'#view-community'};
   for(const [t,sel] of Object.entries(views)){
     const el=document.querySelector(sel);
     if(!el) continue;
@@ -1024,7 +1129,7 @@ function switchTab(tab) {
   if(tab==='raid' && !raidEventLoaded) loadRaidEvents();
   if(tab==='egg'  && !eggLoaded)       loadEggs();
   if(tab==='pvp'  && !pvpData[currentLeague]) loadPvP(currentLeague);
-  if(tab==='map')  initMap();
+  if(tab==='map') initMap();
 }
 
 // ── 지역 한정 포켓몬 지도 ─────────────────────────────────────────
@@ -1252,6 +1357,155 @@ async function scanCard(file, previewUrl) {
     out.innerHTML = `<div class="card-error">네트워크 오류가 발생했어요.</div>`;
   }
 }
+
+// ── 커뮤니티 채팅 ─────────────────────────────────────────────────
+let _cmNick = null, _cmWs = null, _cmRoomId = null, _cmLobbyTimer = null;
+
+function cmEnterLobby() {
+  const input = document.getElementById('cm-nick-input');
+  const nick = (input.value||'').trim().slice(0,15);
+  if (!nick) { input.focus(); return; }
+  _cmNick = nick;
+  document.getElementById('cm-nick-screen').style.display = 'none';
+  document.getElementById('cm-lobby-screen').style.display = 'flex';
+  document.getElementById('cm-lobby-nick').textContent = `👤 ${nick}`;
+  cmLoadRooms();
+  _cmLobbyTimer = setInterval(cmLoadRooms, 8000);
+}
+
+async function cmLoadRooms() {
+  const list = document.getElementById('cm-room-list');
+  if (!list) return;
+  try {
+    const rooms = await (await fetch('/api/rooms')).json();
+    if (!rooms.length) {
+      list.innerHTML = '<div class="cm-empty-rooms">채팅방이 없어요!<br>첫 번째 방을 만들어보세요 👆</div>';
+      return;
+    }
+    list.innerHTML = rooms.map(r => {
+      const full = r.count >= r.max;
+      const badgeCls = full ? 'full' : r.count > 0 ? 'active' : '';
+      const onclick = full ? '' : `onclick="cmJoinRoom('${r.id}','${esc(r.name).replace(/'/g,"\\'")}')"`;
+      return `<div class="cm-room-item${full?' full':''}" ${onclick}>
+        <div><div class="cm-room-name">${esc(r.name)}</div>
+        <div class="cm-room-meta">${full?'🔒 정원 초과':'입장 가능'}</div></div>
+        <div class="cm-room-badge ${badgeCls}">${r.count}/${r.max}</div>
+      </div>`;
+    }).join('');
+  } catch { list.innerHTML = '<div class="cm-empty-rooms">불러오기 실패</div>'; }
+}
+
+async function cmShowCreateRoom() {
+  const name = prompt('채팅방 이름을 입력하세요 (최대 30자):');
+  if (!name || !name.trim()) return;
+  try {
+    const r = await (await fetch('/api/rooms', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({name: name.trim().slice(0,30)}),
+    })).json();
+    if (r.error) { alert(r.error); return; }
+    cmJoinRoom(r.id, r.name);
+  } catch { alert('방 만들기에 실패했어요.'); }
+}
+
+function cmJoinRoom(roomId, roomName) {
+  if (!_cmNick) return;
+  clearInterval(_cmLobbyTimer);
+  document.getElementById('cm-lobby-screen').style.display = 'none';
+  document.getElementById('cm-room-screen').style.display = 'flex';
+  document.getElementById('cm-room-title').textContent = roomName;
+  document.getElementById('cm-msgs').innerHTML = '';
+  document.getElementById('cm-send').disabled = false;
+  _cmRoomId = roomId;
+
+  const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+  const ws = new WebSocket(`${proto}//${location.host}/ws/room/${roomId}?nick=${encodeURIComponent(_cmNick)}`);
+  _cmWs = ws;
+
+  ws.onmessage = (e) => {
+    try {
+      const msg = JSON.parse(e.data);
+      if (msg.type === 'init') {
+        for (const m of (msg.messages||[])) _cmRenderMsg(m);
+        _cmUpdateCount(msg.count);
+        document.getElementById('cm-msgs').scrollTop = 9999;
+      } else if (msg.type === 'message') {
+        _cmRenderMsg(msg);
+      } else if (msg.type === 'notice') {
+        _cmRenderNotice(msg.text);
+        if (msg.count !== undefined) _cmUpdateCount(msg.count);
+      }
+    } catch(_){}
+  };
+  ws.onclose = (ev) => {
+    if (_cmRoomId !== roomId) return;
+    const reason = ev.code===4003?'정원이 초과된 방입니다.':ev.code===4004?'방이 존재하지 않습니다.':'연결이 끊어졌습니다.';
+    _cmRenderNotice(reason);
+    document.getElementById('cm-send').disabled = true;
+  };
+  ws.onerror = () => ws.close();
+  document.getElementById('cm-input').focus();
+}
+
+function _cmUpdateCount(count) {
+  const el = document.getElementById('cm-room-count-badge');
+  if (el) el.textContent = `${count}/10명`;
+}
+
+function _cmRenderMsg(msg) {
+  const box = document.getElementById('cm-msgs');
+  if (!box) return;
+  const atBottom = box.scrollTop + box.clientHeight >= box.scrollHeight - 30;
+  const isMe = msg.nick === _cmNick;
+  const el = document.createElement('div');
+  el.className = 'cm-msg ' + (isMe ? 'mine' : 'other');
+  el.innerHTML = (!isMe ? `<div class="cm-nick">${esc(msg.nick)}</div>` : '') +
+    `<div class="cm-bubble">${esc(msg.text)}</div><div class="cm-time">${esc(msg.ts||'')}</div>`;
+  box.appendChild(el);
+  if (atBottom) box.scrollTop = box.scrollHeight;
+}
+
+function _cmRenderNotice(text) {
+  const box = document.getElementById('cm-msgs');
+  if (!box) return;
+  const el = document.createElement('div'); el.className='cm-notice';
+  el.textContent = text; box.appendChild(el);
+  box.scrollTop = box.scrollHeight;
+}
+
+function cmLeaveRoom() {
+  if (_cmWs) { _cmWs.close(); _cmWs = null; }
+  _cmRoomId = null;
+  document.getElementById('cm-room-screen').style.display = 'none';
+  document.getElementById('cm-lobby-screen').style.display = 'flex';
+  cmLoadRooms();
+  _cmLobbyTimer = setInterval(cmLoadRooms, 8000);
+}
+
+function cmSend() {
+  const input = document.getElementById('cm-input');
+  const text = (input.value||'').trim();
+  if (!text || !_cmWs || _cmWs.readyState !== 1) return;
+  _cmWs.send(JSON.stringify({type:'message', text}));
+  input.value = '';
+}
+
+function _cmReset() {
+  if (_cmWs) { _cmWs.close(); _cmWs = null; }
+  clearInterval(_cmLobbyTimer);
+  _cmNick = null; _cmRoomId = null;
+  document.getElementById('cm-nick-input').value = '';
+  document.getElementById('cm-nick-screen').style.display = 'flex';
+  document.getElementById('cm-lobby-screen').style.display = 'none';
+  document.getElementById('cm-room-screen').style.display = 'none';
+}
+
+document.getElementById('cm-input').addEventListener('keydown', e => {
+  if (e.key==='Enter'&&!e.shiftKey){e.preventDefault();cmSend();}
+});
+document.getElementById('cm-nick-input').addEventListener('keydown', e => {
+  if (e.key==='Enter') cmEnterLobby();
+});
 </script>
 <script>
   if ('serviceWorker' in navigator) {
