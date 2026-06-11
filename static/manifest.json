@@ -1,4 +1,5 @@
 {
+  "id": "/",
   "name": "PokeMORE",
   "short_name": "PokeMORE",
   "description": "포켓몬 GO 정보 챗봇",
@@ -18,7 +19,28 @@
       "src": "/static/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/static/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "PokeMORE 데스크톱"
+    },
+    {
+      "src": "/static/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "label": "PokeMORE 모바일"
     }
   ]
 }
