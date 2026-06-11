@@ -715,6 +715,58 @@ async def get_pokemon_detail(dex: int):
     }
 
 
+# ── Evolution chain API ──────────────────────────────────────────────
+_evo_cache: dict[int, dict] = {}
+
+
+def _flatten_evo_chain(node: dict) -> list[list[int]]:
+    """진화 트리를 단계별 dex 목록 [[stage0], [stage1], ...]으로 변환."""
+    result: list[list[int]] = []
+
+    def _walk(n: dict, depth: int) -> None:
+        dex = int(n["species"]["url"].rstrip("/").split("/")[-1])
+        while len(result) <= depth:
+            result.append([])
+        if dex not in result[depth]:
+            result[depth].append(dex)
+        for child in n.get("evolves_to", []):
+            _walk(child, depth + 1)
+
+    _walk(node, 0)
+    return [s for s in result if s]
+
+
+@app.get("/api/evolutions/{dex}")
+async def get_evolutions(dex: int):
+    if dex in _evo_cache:
+        return _evo_cache[dex]
+    _ensure_raw()
+    try:
+        async with httpx.AsyncClient(timeout=10) as c:
+            spec_r = await c.get(f"https://pokeapi.co/api/v2/pokemon-species/{dex}/")
+            spec_r.raise_for_status()
+            evo_url = spec_r.json()["evolution_chain"]["url"]
+            evo_r = await c.get(evo_url)
+            evo_r.raise_for_status()
+            stages_raw = _flatten_evo_chain(evo_r.json()["chain"])
+    except Exception:
+        return {"chain": []}
+
+    chain = []
+    for stage in stages_raw:
+        s = []
+        for d in stage:
+            nd = (_names_raw or {}).get(str(d))
+            if nd:
+                s.append({"dex": d, "ko": nd["ko_name"], "en": nd["en_name"]})
+        if s:
+            chain.append(s)
+
+    result = {"chain": chain}
+    _evo_cache[dex] = result
+    return result
+
+
 @app.get("/api/events")
 async def get_events_api():
     events = await get_events()
