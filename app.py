@@ -1201,17 +1201,20 @@ async def get_pvp_api(league: str):
 
 # ── Community Chat Rooms ──────────────────────────────────────────────
 import uuid as _uuid
+import time as _time
 
 _ROOM_MAX_USERS = 10
 _ROOM_MAX_MSGS  = 50
+_SERVER_EPOCH   = _time.time()   # 서버 재시작 감지용 — 프로세스 기동 시각
 
 
 class _Room:
     def __init__(self, room_id: str, name: str) -> None:
-        self.id   = room_id
-        self.name = name
-        self.conns: list[tuple[WebSocket, str]] = []
-        self.msgs:  list[dict] = []
+        self.id         = room_id
+        self.name       = name
+        self.conns:     list[tuple[WebSocket, str]] = []
+        self.msgs:      list[dict] = []
+        self.created_at: float = _time.time()
 
     @property
     def count(self) -> int:
@@ -1239,10 +1242,14 @@ _rooms: dict[str, _Room] = {}
 
 @app.get("/api/rooms")
 async def list_rooms():
-    return [
-        {"id": r.id, "name": r.name, "count": r.count, "max": _ROOM_MAX_USERS}
-        for r in list(_rooms.values())
-    ]
+    return {
+        "epoch": _SERVER_EPOCH,
+        "rooms": [
+            {"id": r.id, "name": r.name, "count": r.count,
+             "max": _ROOM_MAX_USERS, "created_at": r.created_at}
+            for r in list(_rooms.values())
+        ],
+    }
 
 
 class _CreateRoomReq(BaseModel):

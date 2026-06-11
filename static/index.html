@@ -1359,7 +1359,26 @@ async function scanCard(file, previewUrl) {
 }
 
 // ── 커뮤니티 채팅 ─────────────────────────────────────────────────
-let _cmNick = null, _cmWs = null, _cmRoomId = null, _cmLobbyTimer = null;
+let _cmNick = null, _cmWs = null, _cmRoomId = null, _cmLobbyTimer = null, _cmServerEpoch = null;
+
+function _cmFmtAge(ts) {
+  const diff = Math.floor(Date.now()/1000 - ts);
+  if (diff < 60)   return '방금 개설';
+  if (diff < 3600) return `${Math.floor(diff/60)}분 전 개설`;
+  return `${Math.floor(diff/3600)}시간 전 개설`;
+}
+
+function _cmShowRestartNotice() {
+  if (document.getElementById('cm-restart-banner')) return;
+  const list = document.getElementById('cm-room-list');
+  if (!list) return;
+  const banner = document.createElement('div');
+  banner.id = 'cm-restart-banner';
+  banner.style.cssText = 'background:#78350f;border:1px solid #d97706;border-radius:10px;padding:9px 12px;font-size:0.75rem;color:#fde68a;margin-bottom:4px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-shrink:0';
+  banner.innerHTML = '<span>⚠️ 서버가 재시작되어 채팅방 목록이 초기화됐습니다.</span>' +
+    '<button onclick="this.parentElement.remove()" style="background:none;border:none;color:#fde68a;cursor:pointer;font-size:1rem;line-height:1;padding:0">✕</button>';
+  list.parentElement.insertBefore(banner, list);
+}
 
 function cmEnterLobby() {
   const input = document.getElementById('cm-nick-input');
@@ -1377,7 +1396,10 @@ async function cmLoadRooms() {
   const list = document.getElementById('cm-room-list');
   if (!list) return;
   try {
-    const rooms = await (await fetch('/api/rooms')).json();
+    const data = await (await fetch('/api/rooms')).json();
+    const rooms = data.rooms || [];
+    if (_cmServerEpoch !== null && data.epoch !== _cmServerEpoch) _cmShowRestartNotice();
+    _cmServerEpoch = data.epoch;
     if (!rooms.length) {
       list.innerHTML = '<div class="cm-empty-rooms">채팅방이 없어요!<br>첫 번째 방을 만들어보세요 👆</div>';
       return;
@@ -1386,9 +1408,10 @@ async function cmLoadRooms() {
       const full = r.count >= r.max;
       const badgeCls = full ? 'full' : r.count > 0 ? 'active' : '';
       const onclick = full ? '' : `onclick="cmJoinRoom('${r.id}','${esc(r.name).replace(/'/g,"\\'")}')"`;
+      const meta = full ? '🔒 정원 초과' : (r.created_at ? _cmFmtAge(r.created_at) : '입장 가능');
       return `<div class="cm-room-item${full?' full':''}" ${onclick}>
         <div><div class="cm-room-name">${esc(r.name)}</div>
-        <div class="cm-room-meta">${full?'🔒 정원 초과':'입장 가능'}</div></div>
+        <div class="cm-room-meta">${meta}</div></div>
         <div class="cm-room-badge ${badgeCls}">${r.count}/${r.max}</div>
       </div>`;
     }).join('');
@@ -1439,7 +1462,10 @@ function cmJoinRoom(roomId, roomName) {
   };
   ws.onclose = (ev) => {
     if (_cmRoomId !== roomId) return;
-    const reason = ev.code===4003?'정원이 초과된 방입니다.':ev.code===4004?'방이 존재하지 않습니다.':'연결이 끊어졌습니다.';
+    let reason;
+    if (ev.code === 4003)      reason = '🔒 정원이 초과된 방입니다.';
+    else if (ev.code === 4004) reason = '방이 더 이상 존재하지 않습니다.';
+    else                       reason = '⚠️ 서버가 재시작됐습니다. 채팅방이 종료됐어요.';
     _cmRenderNotice(reason);
     document.getElementById('cm-send').disabled = true;
   };
@@ -1493,7 +1519,7 @@ function cmSend() {
 function _cmReset() {
   if (_cmWs) { _cmWs.close(); _cmWs = null; }
   clearInterval(_cmLobbyTimer);
-  _cmNick = null; _cmRoomId = null;
+  _cmNick = null; _cmRoomId = null; _cmServerEpoch = null;
   document.getElementById('cm-nick-input').value = '';
   document.getElementById('cm-nick-screen').style.display = 'flex';
   document.getElementById('cm-lobby-screen').style.display = 'none';
