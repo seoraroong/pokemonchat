@@ -1073,32 +1073,22 @@ EGGS_LIVE_TTL = 3600  # 1시간 캐시 (알은 자주 안 바뀜)
 
 def _build_eggs_from_raw(eggs_raw: list) -> dict:
     _ensure_raw()
-    en_to_info: dict[str, dict] = {}
-    if _names_raw and _gm_raw:
-        for dex_str, nd in _names_raw.items():
-            gmd = _gm_raw.get(dex_str, {})
-            t2  = gmd.get("type2", "") or ""
-            if t2 == "none":
-                t2 = ""
-            en_to_info[nd["en_name"].lower()] = {
-                "ko":  nd["ko_name"],
-                "dex": int(dex_str),
-                "t1":  gmd.get("type1", ""),
-                "t2":  t2,
-            }
     rarity_label = {1: "흔함", 2: "보통", 3: "드묾", 4: "레어", 5: "초레어"}
     result: dict[str, list] = {}
     for egg in eggs_raw:
-        km   = egg.get("eggType", "").replace(" ", "")
-        en   = egg["name"]
-        # 괄호 폼 표기 fallback: 'Indeedee (Male)' → 'Indeedee'
-        info = en_to_info.get(en.lower()) or en_to_info.get(_strip_form(en).lower()) or {}
+        km      = egg.get("eggType", "").replace(" ", "")
+        en      = egg["name"]
+        dex, ko = _raid_ko(en)   # 접두사(Galarian 등) + 폼(Male 등) 처리 통합
+        gmd     = (_gm_raw or {}).get(str(dex), {}) if dex else {}
+        t2      = gmd.get("type2", "") or ""
+        if t2 == "none":
+            t2 = ""
         result.setdefault(km, []).append({
             "en":         en,
-            "ko":         info.get("ko", en),
-            "dex":        info.get("dex"),
-            "t1":         info.get("t1", ""),
-            "t2":         info.get("t2", ""),
+            "ko":         ko,
+            "dex":        dex,
+            "t1":         gmd.get("type1", ""),
+            "t2":         t2,
             "shiny":      egg.get("canBeShiny", False),
             "rarity":     rarity_label.get(egg.get("rarity", 1), ""),
             "rarity_num": egg.get("rarity", 1),
