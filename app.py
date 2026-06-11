@@ -647,14 +647,15 @@ async def get_pokedex():
 
 # ── Pokémon detail / Events / Raids APIs ────────────────────────────
 
-_names_raw:   dict | None = None
-_gm_raw:      dict | None = None
-_pve_moves:   dict | None = None
-_move_en2ko:  dict | None = None   # en_name → ko_name (go_moves.json 기반)
+_names_raw:    dict | None = None
+_gm_raw:       dict | None = None
+_pve_moves:    dict | None = None
+_move_en2ko:   dict | None = None   # en_name → ko_name
+_move_type_map: dict | None = None  # en_name → (type_en, type_ko)
 
 
 def _ensure_raw() -> bool:
-    global _names_raw, _gm_raw, _pve_moves, _move_en2ko
+    global _names_raw, _gm_raw, _pve_moves, _move_en2ko, _move_type_map
     if _names_raw is not None:
         return True
     p1 = Path(".raw/go_all_names.json")
@@ -669,8 +670,10 @@ def _ensure_raw() -> bool:
     if p4.exists():
         go_moves = json.loads(p4.read_text(encoding="utf-8"))
         _move_en2ko = {v["en_name"]: v["ko_name"] for v in go_moves.values() if v.get("en_name") and v.get("ko_name")}
+        _move_type_map = {v["en_name"]: (v.get("type", ""), v.get("type_ko", "")) for v in go_moves.values() if v.get("en_name")}
     else:
         _move_en2ko = {}
+        _move_type_map = {}
     return True
 
 
@@ -685,12 +688,9 @@ async def get_pokemon_detail(dex: int):
         return {}
 
     def move_info(mid: str) -> dict:
-        # game_master_pokemon의 기술 키는 영어 표시명 (예: "Confusion", "Psycho Cut")
-        ko  = (_move_en2ko or {}).get(mid, "")
-        typ = ""
-        if not ko:
-            ko = mid  # 최후 fallback
-        return {"id": mid, "ko": ko, "type": typ}
+        ko = (_move_en2ko or {}).get(mid, mid)
+        type_en, type_ko = (_move_type_map or {}).get(mid, ("", ""))
+        return {"id": mid, "ko": ko, "type": type_en, "type_ko": type_ko}
 
     t2 = gmd.get("type2", "") or ""
     if t2 == "none":
@@ -770,6 +770,82 @@ async def _fetch_html(url: str) -> str:
     return html
 
 
+# ── 레이드 라이브 fetch ───────────────────────────────────────────
+SCRAPED_DUCK_RAIDS_URL = "https://raw.githubusercontent.com/bigfoott/ScrapedDuck/data/raids.json"
+_raids_live_cache: dict = {}
+_raids_live_at: float = 0.0
+RAIDS_LIVE_TTL = 600  # 10분 캐시
+
+_TIER_NORM = {
+    "1-star raids": "1", "1-star": "1",
+    "3-star raids": "3", "3-star": "3",
+    "5-star raids": "5", "5-star": "5",
+    "mega raids": "mega", "mega": "mega",
+    "mega legendary raids": "mega_legendary",
+    "elite raids": "elite",
+}
+_RAID_TYPE_KO = {
+    "normal":"노말","fire":"불꽃","water":"물","electric":"전기",
+    "grass":"풀","ice":"얼음","fighting":"격투","poison":"독",
+    "ground":"땅","flying":"비행","psychic":"에스퍼","bug":"벌레",
+    "rock":"바위","ghost":"고스트","dragon":"드래곤","dark":"악",
+    "steel":"강철","fairy":"페어리",
+}
+_RAID_PREFIXES = [
+    ("mega ", "메가 "), ("shadow ", "다크 "), ("alolan ", "알로라 "),
+    ("galarian ", "가라르 "), ("hisuian ", "히스이 "), ("paldean ", "팔데아 "),
+]
+
+def _normalize_raid_tier(raw: str) -> str:
+    return _TIER_NORM.get(raw.lower().strip(), raw)
+
+def _raid_ko(en: str) -> tuple[int | None, str]:
+    _ensure_raw()
+    en2info = {v["en_name"].lower(): (int(k), v["ko_name"]) for k, v in (_names_raw or {}).items()}
+    prefix_ko, base = "", en
+    for en_pfx, ko_pfx in _RAID_PREFIXES:
+        if en.lower().startswith(en_pfx):
+            prefix_ko, base = ko_pfx, en[len(en_pfx):]
+            break
+    info = en2info.get(base.lower())
+    dex = info[0] if info else None
+    ko  = prefix_ko + (info[1] if info else base)
+    return dex, ko
+
+def _build_raids_from_scraped(raw_data: list) -> dict:
+    by_tier: dict[str, list] = {}
+    if isinstance(raw_data, list) and raw_data:
+        if "tier" in (raw_data[0] if raw_data else {}):
+            for boss in raw_data:
+                tier = _normalize_raid_tier(boss.get("tier", "?"))
+                by_tier.setdefault(tier, []).append(boss)
+        else:
+            for obj in raw_data:
+                tier = _normalize_raid_tier(str(obj.get("tier", obj.get("name", "?"))))
+                by_tier[tier] = obj.get("bosses", obj.get("pokemon", []))
+    elif isinstance(raw_data, dict):
+        for k, v in raw_data.items():
+            by_tier[_normalize_raid_tier(k)] = v if isinstance(v, list) else []
+
+    result: dict[str, list] = {}
+    for tier, bosses in by_tier.items():
+        lst = []
+        for boss in bosses:
+            en = boss.get("name", "") if isinstance(boss, dict) else str(boss)
+            if not en:
+                continue
+            dex, ko = _raid_ko(en)
+            types = [t.get("name","") if isinstance(t,dict) else t for t in (boss.get("types",[]) if isinstance(boss,dict) else [])]
+            types_ko = " / ".join(_RAID_TYPE_KO.get(t.lower(), t) for t in types if t)
+            slug = re.sub(r"[^a-z0-9-]","",en.lower().replace(" ","-").replace("'","").replace(".",""))
+            lst.append({"en_name":en,"ko_name":ko,"slug":slug,"dex":dex,"types_ko":types_ko,
+                        "is_shiny":bool(boss.get("shiny",boss.get("canBeShiny",False)) if isinstance(boss,dict) else False)})
+        if lst:
+            result[tier] = lst
+    return result
+
+
+# ── 이벤트 HTML 파싱 ──────────────────────────────────────────────
 _IMG_PAT = re.compile(r"pokemon_icon_(\d+)_\d+\.png|pm(\d+)\.[^.\"]+\.icon\.png")
 _PREFIX_MAP = [
     ("Hisuian ", "히스이 "), ("Galarian ", "가라르 "), ("Alolan ", "알로라 "),
@@ -821,24 +897,39 @@ def _get_section(html: str, start_id: str, stop_ids: list[str]) -> str:
             end = i
     return html[start:end]
 
+def _get_section_any(html: str, start_ids: list[str], stop_ids: list[str]) -> str:
+    for sid in start_ids:
+        s = _get_section(html, sid, stop_ids)
+        if s:
+            return s
+    return ""
+
 def _parse_event_html(html: str) -> dict:
-    wild = _parse_pkmn(_get_section(html, "wild-encounters", ["raids", "research", "go-pass", "sales"]))
+    _STOP_ALL = ["go-pass", "sales", "graphic", "footer"]
+    wild_ids = ["wild-encounters", "spawns", "wild-spawns", "featured-pokemon", "boosted-spawns"]
+    wild = _parse_pkmn(_get_section_any(html, wild_ids, ["raids", "one-star-raids", "research", "field-research"] + _STOP_ALL))
 
     raids: dict[str, list] = {}
     for i, tid in enumerate(_TIER_IDS):
-        stops = _TIER_IDS[i + 1:] + ["research", "go-pass", "sales"]
+        stops = _TIER_IDS[i + 1:] + ["research", "field-research"] + _STOP_ALL
         chunk = _get_section(html, tid, stops)
         pokes = _parse_pkmn(chunk)
         if pokes:
             raids[_TIER_KEYS[tid]] = pokes
 
-    research_html = _get_section(html, "field-research-task-encounters", ["go-pass", "sales", "graphic"])
+    research_ids = ["field-research-task-encounters", "field-research", "research-tasks", "timed-research"]
+    research_html = _get_section_any(html, research_ids, _STOP_ALL)
     tasks = []
     for li in re.findall(r"<li>(.*?)</li>", research_html, re.DOTALL):
-        task_m = re.search(r'class="task">([^<]+)<', li)
+        task_m = re.search(r'class="task"[^>]*>(.*?)</(?:span|div|p)', li, re.DOTALL)
+        if not task_m:
+            task_m = re.search(r'class="task">([^<]+)<', li)
         if not task_m:
             continue
-        task    = re.sub(r"&nbsp;", " ", task_m.group(1)).strip()
+        task = re.sub(r"<[^>]+>", "", task_m.group(1))
+        task = re.sub(r"&nbsp;", " ", task).strip()
+        if not task:
+            continue
         rewards = _parse_pkmn(li)
         if rewards:
             tasks.append({"task": task, "rewards": rewards})
@@ -863,6 +954,22 @@ async def event_spawns(url: str):
 
 @app.get("/api/raids")
 async def get_raids_api():
+    import time
+    global _raids_live_cache, _raids_live_at
+    if _raids_live_cache and time.time() - _raids_live_at < RAIDS_LIVE_TTL:
+        return _raids_live_cache
+    try:
+        async with httpx.AsyncClient(timeout=15) as c:
+            r = await c.get(SCRAPED_DUCK_RAIDS_URL)
+            r.raise_for_status()
+            processed = _build_raids_from_scraped(r.json())
+        if processed:
+            _raids_live_cache = processed
+            _raids_live_at = time.time()
+            return processed
+    except Exception as ex:
+        log.warning(f"[raids] live fetch 실패: {ex}")
+    # 파일 캐시 fallback
     p = Path(".raw/current_raids.json")
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
