@@ -653,10 +653,12 @@ _gm_raw:       dict | None = None
 _pve_moves:    dict | None = None
 _move_en2ko:   dict | None = None   # en_name → ko_name
 _move_type_map: dict | None = None  # en_name → (type_en, type_ko)
+_go_moves_en:  dict | None = None   # en_name → full move dict (for raid DPS)
+_evo_extras:   dict | None = None   # dex_str → GO-specific evolution conditions
 
 
 def _ensure_raw() -> bool:
-    global _names_raw, _gm_raw, _pve_moves, _move_en2ko, _move_type_map
+    global _names_raw, _gm_raw, _pve_moves, _move_en2ko, _move_type_map, _go_moves_en, _evo_extras
     if _names_raw is not None:
         return True
     p1 = Path(".raw/go_all_names.json")
@@ -670,11 +672,13 @@ def _ensure_raw() -> bool:
     p4 = Path(".raw/go_moves.json")
     if p4.exists():
         go_moves = json.loads(p4.read_text(encoding="utf-8"))
-        _move_en2ko = {v["en_name"]: v["ko_name"] for v in go_moves.values() if v.get("en_name") and v.get("ko_name")}
+        _move_en2ko   = {v["en_name"]: v["ko_name"] for v in go_moves.values() if v.get("en_name") and v.get("ko_name")}
         _move_type_map = {v["en_name"]: (v.get("type", ""), v.get("type_ko", "")) for v in go_moves.values() if v.get("en_name")}
+        _go_moves_en  = {v["en_name"]: v for v in go_moves.values() if v.get("en_name")}
     else:
-        _move_en2ko = {}
-        _move_type_map = {}
+        _move_en2ko = {}; _move_type_map = {}; _go_moves_en = {}
+    p5 = Path(".raw/go_evo_extras.json")
+    _evo_extras = json.loads(p5.read_text(encoding="utf-8")) if p5.exists() else {}
     return True
 
 
@@ -761,6 +765,14 @@ async def get_evolutions(dex: int):
                 s.append({"dex": d, "ko": nd["ko_name"], "en": nd["en_name"]})
         if s:
             chain.append(s)
+
+    # GO 전용 진화 조건 주입
+    if _evo_extras:
+        for stage in chain:
+            for entry in stage:
+                cond = _evo_extras.get(str(entry["dex"]))
+                if cond:
+                    entry["cond"] = cond
 
     result = {"chain": chain}
     _evo_cache[dex] = result
@@ -1249,6 +1261,62 @@ async def get_pvp_api(league: str):
             "charged":  strip_wiki(e.get("charged_ko", "")),
         })
     return {"entries": entries, "name": league_d["name"], "cp": league_d["cp"]}
+
+
+# ── Raid Rankings ─────────────────────────────────────────────────────
+_raid_rank_cache: dict | None = None
+
+@app.get("/api/raid_rankings")
+async def get_raid_rankings():
+    global _raid_rank_cache
+    if _raid_rank_cache is not None:
+        return _raid_rank_cache
+    if not _ensure_raw() or not _gm_raw or not _go_moves_en:
+        return {}
+
+    type_entries: dict[str, list] = {}
+
+    for dex_str, gm in _gm_raw.items():
+        atk = gm.get("atk", 0)
+        if not atk:
+            continue
+        nd = (_names_raw or {}).get(dex_str, {})
+        ko = nd.get("ko_name", "")
+        if not ko:
+            continue
+        dex = int(dex_str)
+        t1 = gm.get("type1", "")
+        t2 = gm.get("type2", "") or ""
+        if t2 == "none":
+            t2 = ""
+        types = {t for t in [t1, t2] if t}
+        fast_ids   = gm.get("fast_moves", [])
+        charged_ids = gm.get("charged_moves", [])
+
+        for ptype in types:
+            stab_fast    = [_go_moves_en[n] for n in fast_ids    if n in _go_moves_en and _go_moves_en[n].get("type") == ptype]
+            stab_charged = [_go_moves_en[n] for n in charged_ids if n in _go_moves_en and _go_moves_en[n].get("type") == ptype]
+            if not stab_fast or not stab_charged:
+                continue
+            bf = max(stab_fast,    key=lambda m: m.get("dps_pve", 0))
+            bc = max(stab_charged, key=lambda m: m.get("power", 0) / max(m.get("energy_cost", 1), 1))
+            score = round(atk * (bf.get("dps_pve", 0) + bf.get("eps_pve", 0) * bc.get("power", 0) / max(bc.get("energy_cost", 1), 1)))
+            type_entries.setdefault(ptype, []).append({
+                "dex": dex, "ko": ko,
+                "fast_ko": bf.get("ko_name") or bf.get("en_name", ""),
+                "charged_ko": bc.get("ko_name") or bc.get("en_name", ""),
+                "score": score,
+            })
+
+    result = {}
+    for ptype, entries in type_entries.items():
+        ranked = sorted(entries, key=lambda x: x["score"], reverse=True)[:20]
+        for i, e in enumerate(ranked, 1):
+            e["rank"] = i
+        result[ptype] = ranked
+
+    _raid_rank_cache = result
+    return result
 
 
 # ── Community Chat Rooms ──────────────────────────────────────────────

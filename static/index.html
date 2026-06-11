@@ -410,6 +410,16 @@
     .evo-pm img { width:46px; height:46px; object-fit:contain; }
     .evo-pm-name { font-size:0.62rem; color:#94a3b8; text-align:center; line-height:1.2; max-width:58px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .evo-pm.current .evo-pm-name { color:#60a5fa; font-weight:600; }
+    .evo-cond { font-size:0.55rem; color:#f59e0b; text-align:center; max-width:60px; overflow-wrap:break-word; line-height:1.3; margin-top:1px; }
+
+    /* ── 레이드 순위 ── */
+    #raid-type-filter { display:none; gap:5px; overflow-x:auto; padding:4px 12px 8px; scrollbar-width:none; flex-shrink:0; }
+    #raid-type-filter::-webkit-scrollbar { display:none; }
+    .raid-type-btn { flex-shrink:0; padding:4px 10px; border-radius:20px; font-size:0.73rem; font-weight:600; cursor:pointer; border:2px solid transparent; font-family:inherit; opacity:0.55; transition:opacity 0.15s; }
+    .raid-type-btn.active { opacity:1; border-color:rgba(255,255,255,0.4); }
+    .raid-row { display:flex; align-items:center; gap:8px; padding:6px 8px; background:#1e293b; border:1px solid #2d3f55; border-radius:10px; margin-bottom:5px; cursor:pointer; transition:background 0.12s; }
+    .raid-row:hover { background:#243450; border-color:#3b82f6; }
+    .raid-score-badge { font-size:0.68rem; color:#475569; margin-left:auto; flex-shrink:0; }
 
     /* ── 카운터 섹션 (팝업 내부) ── */
     .counter-weakness { font-size: 0.72rem; color: #94a3b8; margin-bottom: 8px; line-height: 1.5; }
@@ -536,7 +546,9 @@
       <button class="pvp-tab active" data-league="gl">슈퍼리그<span class="pvp-cp">CP 1,500</span></button>
       <button class="pvp-tab" data-league="ul">하이퍼리그<span class="pvp-cp">CP 2,500</span></button>
       <button class="pvp-tab" data-league="ml">마스터리그<span class="pvp-cp">무제한</span></button>
+      <button class="pvp-tab" data-league="raid">⚡ 레이드<span class="pvp-cp">타입별 순위</span></button>
     </div>
+    <div id="raid-type-filter"></div>
     <div id="pvp-list"><div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div></div>
   </div>
 
@@ -1066,8 +1078,16 @@ document.querySelectorAll('.km-tab').forEach(btn=>btn.addEventListener('click',(
 
 // ── PvP ───────────────────────────────────────────────────────────
 let pvpData={}, currentLeague='gl', pvpLoaded={};
+let _raidData=null, _raidType='fire';
 
 async function loadPvP(league) {
+  const filterEl = document.getElementById('raid-type-filter');
+  if (league === 'raid') {
+    filterEl.style.display = 'flex';
+    await loadRaidRankings();
+    return;
+  }
+  filterEl.style.display = 'none';
   if(pvpData[league]){renderPvP();return;}
   const listEl=document.getElementById('pvp-list');
   listEl.innerHTML='<div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div>';
@@ -1075,6 +1095,55 @@ async function loadPvP(league) {
     pvpData[league]=await(await fetch(`/api/pvp/${league}`)).json();
     renderPvP();
   } catch { listEl.innerHTML='<div style="text-align:center;padding:32px;color:#475569">데이터를 불러올 수 없어요.</div>'; }
+}
+
+async function loadRaidRankings() {
+  const listEl = document.getElementById('pvp-list');
+  const filterEl = document.getElementById('raid-type-filter');
+  if (!_raidData) {
+    listEl.innerHTML='<div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div>';
+    try {
+      _raidData = await (await fetch('/api/raid_rankings')).json();
+    } catch {
+      listEl.innerHTML='<div style="text-align:center;padding:32px;color:#475569">데이터를 불러올 수 없어요.</div>';
+      return;
+    }
+    // 타입 필터 버튼 생성 (첫 로드 시만)
+    const types = Object.keys(_raidData).sort((a,b)=>(TYPE_KO[a]||a).localeCompare(TYPE_KO[b]||b));
+    filterEl.innerHTML = types.map(t => {
+      const ko = TYPE_KO[t] || t;
+      const bg = TYPE_BG[t] || '#71727a';
+      return `<button class="raid-type-btn${t===_raidType?' active':''}" data-type="${t}" style="background:${bg};color:#fff" onclick="selectRaidType('${t}')">${ko}</button>`;
+    }).join('');
+  } else {
+    document.querySelectorAll('.raid-type-btn').forEach(b=>b.classList.toggle('active', b.dataset.type===_raidType));
+  }
+  renderRaidRankings();
+}
+function selectRaidType(type) {
+  _raidType = type;
+  document.querySelectorAll('.raid-type-btn').forEach(b=>b.classList.toggle('active', b.dataset.type===type));
+  renderRaidRankings();
+}
+function renderRaidRankings() {
+  const listEl = document.getElementById('pvp-list');
+  const entries = (_raidData||{})[_raidType]||[];
+  if (!entries.length) { listEl.innerHTML='<div style="text-align:center;padding:32px;color:#475569">데이터가 없어요.</div>'; return; }
+  const typeKo = TYPE_KO[_raidType] || _raidType;
+  listEl.innerHTML = `<div style="font-size:0.75rem;color:#64748b;padding:4px 0 8px;text-align:center">${typeKo}타입 최강 레이드 공격자 TOP ${entries.length}</div>` +
+    entries.map(e => {
+      const spr = e.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${e.dex}.png` : '';
+      const rc = e.rank<=3?' top3':'';
+      return `<div class="raid-row" ${e.dex?`onclick="openPokemonPopup(${e.dex})"`:''}>
+        <span class="pvp-rank${rc}">#${e.rank}</span>
+        <img class="pvp-sprite" src="${spr}" alt="${esc(e.ko)}" onerror="this.style.opacity='0.2'">
+        <div class="pvp-info">
+          <div class="pvp-name-line"><span class="pvp-name">${esc(e.ko)}</span></div>
+          <div class="raid-move-line pvp-moves">${esc(e.fast_ko)} / ${esc(e.charged_ko)}</div>
+        </div>
+        <span class="raid-score-badge">${e.score.toLocaleString()}</span>
+      </div>`;
+    }).join('');
 }
 function renderPvP() {
   const data=pvpData[currentLeague]||{entries:[]};
@@ -1189,9 +1258,10 @@ async function loadEvolutionChain(dex) {
       stage.forEach(pm => {
         const cur = pm.dex === dex;
         const spr = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pm.dex}.png`;
+        const condHtml = pm.cond?.hint ? `<div class="evo-cond">${esc(pm.cond.hint)}</div>` : '';
         html += `<div class="evo-pm${cur?' current':''}" ${cur?'':` onclick="openPokemonPopup(${pm.dex})"`}>
           <img src="${spr}" alt="${esc(pm.ko)}" onerror="this.style.opacity='0.15'">
-          <div class="evo-pm-name">${esc(pm.ko)}</div>
+          <div class="evo-pm-name">${esc(pm.ko)}</div>${condHtml}
         </div>`;
       });
       html += '</div>';
