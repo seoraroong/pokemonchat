@@ -1366,9 +1366,10 @@ class _QuizState:
         self.current_hints: list = []
         self.msg_count:   int = 0
         self.skipped:     bool = False
+        self.gens:        list = []  # 빈 리스트 = 전체
 
     @staticmethod
-    def build_pool() -> list:
+    def build_pool(gens: list | None = None) -> list:
         if not _gm_raw or not _names_raw:
             return []
         pool = []
@@ -1381,6 +1382,8 @@ class _QuizState:
             if t2 == "none":
                 t2 = ""
             gen = nd.get("gen") or 0
+            if gens and gen not in gens:
+                continue
             if ko and t1:
                 pool.append((int(dex_str), ko, en, t1, t2, gen))
         return pool
@@ -1389,7 +1392,7 @@ class _QuizState:
 async def _run_quiz(room) -> None:
     MAX_SCORE = 10
     _ensure_raw()
-    pool = _QuizState.build_pool()
+    pool = _QuizState.build_pool(room.quiz.gens or None)
     if not pool:
         room.quiz = None
         return
@@ -1541,8 +1544,12 @@ async def room_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> No
                 continue
             if msg.get("type") == "quiz_start":
                 if not room.quiz and _ensure_raw() and _gm_raw:
+                    raw_gens = msg.get("gens") or []
+                    gens = sorted({int(g) for g in raw_gens if str(g).isdigit()})
                     room.quiz = _QuizState()
-                    await room.broadcast({"type": "quiz_started", "nick": nick, "scores": {}})
+                    room.quiz.gens = gens
+                    gens_label = "전체" if not gens else " · ".join(f"{g}세대" for g in gens)
+                    await room.broadcast({"type": "quiz_started", "nick": nick, "scores": {}, "gens_label": gens_label})
                     asyncio.create_task(_run_quiz(room))
                 continue
             if msg.get("type") == "quiz_stop":
