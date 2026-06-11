@@ -48,6 +48,8 @@
     .pokeball::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 10px; height: 10px; border-radius: 50%; background: #fff; border: 2px solid #333; }
     .header-text h1 { font-size: 1.15rem; font-weight: 700; color: #fff; }
     .header-text p  { font-size: 0.72rem; color: rgba(255,255,255,0.75); margin-top: 1px; }
+    #header-clear-btn { margin-left:auto; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.2); border-radius:8px; color:#fff; font-size:0.78rem; padding:5px 10px; cursor:pointer; font-family:inherit; flex-shrink:0; touch-action:manipulation; transition:background 0.15s; }
+    #header-clear-btn:hover { background:rgba(255,255,255,0.22); }
 
     /* ── Views ── */
     .view { flex: 1; overflow: hidden; display: flex; flex-direction: column; min-height: 0; }
@@ -472,6 +474,7 @@
       <h1>PokeMORE</h1>
       <p>전국도감 · 레이드 · PvP · 이벤트 · 로켓단</p>
     </div>
+    <button id="header-clear-btn" onclick="clearChat()" style="display:none">🗑 초기화</button>
   </header>
 
   <!-- ── 채팅 뷰 ── -->
@@ -493,7 +496,6 @@
       </div>
     </div>
     <div id="input-bar">
-      <button id="clear-btn" onclick="clearChat()" title="대화 초기화">🗑</button>
       <input id="msg-input" type="text" placeholder="포켓몬 GO 질문을 입력하세요..." autocomplete="off">
       <button id="send-btn" onclick="sendMessage()">↑</button>
     </div>
@@ -765,7 +767,6 @@ function _loadHistory() {
   } catch(_) {}
 }
 function clearChat() {
-  if (!confirm('대화 기록을 모두 삭제할까요?')) return;
   history = []; localStorage.removeItem('pm-chat');
   chat.innerHTML = _welcomeHtml;
 }
@@ -1345,6 +1346,7 @@ function switchTab(tab) {
     else el.style.display='none';
   }
   try { localStorage.setItem('pm-tab', tab); } catch(_) {}
+  document.getElementById('header-clear-btn').style.display = tab === 'chat' ? '' : 'none';
   if(tab==='chat') input.focus();
   if(tab==='dex'  && !dexLoaded)       loadDex();
   if(tab==='raid' && !raidEventLoaded) loadRaidEvents();
