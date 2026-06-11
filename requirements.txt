@@ -2,6 +2,6 @@ anthropic
 fastapi
 uvicorn[standard]
 python-dotenv
-httpx
+httpx>=0.27.0
 requests
 python-multipart
