@@ -12,7 +12,8 @@
   <meta name="apple-mobile-web-app-title" content="PokeMORE">
   <link rel="apple-touch-icon" href="/icon-192.png">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html { height: 100%; overscroll-behavior: none; }
     body {
       font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
       background: #060d1a;
@@ -20,12 +21,17 @@
         radial-gradient(ellipse at 20% 50%, rgba(185,28,28,0.08) 0%, transparent 60%),
         radial-gradient(ellipse at 80% 20%, rgba(37,99,235,0.06) 0%, transparent 50%);
       height: 100dvh; display: flex; align-items: center; justify-content: center;
+      overscroll-behavior: none;
     }
     #app {
       position: relative; width: 100%; max-width: 420px;
       height: 100dvh; max-height: 860px;
       background: #0f172a; color: #e2e8f0;
       display: flex; flex-direction: column; overflow: hidden;
+    }
+    @media (max-width: 500px) {
+      body { display: block; }
+      #app { position: fixed; inset: 0; max-width: 100%; max-height: 100%; height: 100%; }
     }
     @media (min-height: 900px) and (min-width: 500px) {
       #app { border-radius: 24px; box-shadow: 0 32px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.05); }
@@ -77,10 +83,10 @@
     .msg h2:first-child, .msg h3:first-child { margin-top: 2px; }
     .pokemon-sprite { display: block; width: 96px; height: 96px; object-fit: contain; margin: 0 auto 10px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); animation: pop 0.25s ease; }
     #input-bar { padding: 10px 16px; background: #0f172a; border-top: 1px solid #1e293b; display: flex; gap: 8px; flex-shrink: 0; }
-    #msg-input { flex: 1; background: #1e293b; border: 1px solid #334155; border-radius: 24px; padding: 11px 18px; color: #e2e8f0; font-size: 0.95rem; outline: none; transition: border-color 0.2s; }
+    #msg-input { flex: 1; background: #1e293b; border: 1px solid #334155; border-radius: 24px; padding: 11px 18px; color: #e2e8f0; font-size: 1rem; outline: none; transition: border-color 0.2s; }
     #msg-input:focus { border-color: #3b82f6; }
     #msg-input::placeholder { color: #475569; }
-    #send-btn { background: #b91c1c; color: #fff; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 1.15rem; cursor: pointer; flex-shrink: 0; transition: background 0.15s, transform 0.1s; display: flex; align-items: center; justify-content: center; }
+    #send-btn { background: #b91c1c; color: #fff; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 1.15rem; cursor: pointer; flex-shrink: 0; transition: background 0.15s, transform 0.1s; display: flex; align-items: center; justify-content: center; touch-action: manipulation; }
     #send-btn:hover:not(:disabled) { background: #dc2626; }
     #send-btn:active:not(:disabled) { transform: scale(0.93); }
     #send-btn:disabled { background: #334155; cursor: not-allowed; }
@@ -205,8 +211,8 @@
     .pvp-score { font-size: 0.82rem; font-weight: 700; color: #60a5fa; flex-shrink: 0; }
 
     /* ── Tab bar ── */
-    #tab-bar { display: flex; flex-shrink: 0; background: #0a1121; border-top: 1px solid #1e293b; }
-    .tab-btn { flex: 1; background: none; border: none; color: #475569; cursor: pointer; display: flex; flex-direction: column; align-items: center; padding: 5px 0 8px; gap: 1px; transition: color 0.15s; font-family: inherit; }
+    #tab-bar { display: flex; flex-shrink: 0; background: #0a1121; border-top: 1px solid #1e293b; padding-bottom: env(safe-area-inset-bottom, 0px); }
+    .tab-btn { flex: 1; background: none; border: none; color: #475569; cursor: pointer; display: flex; flex-direction: column; align-items: center; padding: 5px 0 8px; gap: 1px; transition: color 0.15s; font-family: inherit; touch-action: manipulation; }
     .tab-btn:hover { color: #64748b; }
     .tab-btn.active { color: #3b82f6; }
     .tab-icon  { font-size: 1.05rem; line-height: 1; }
@@ -378,10 +384,10 @@
     .cm-time { font-size:0.6rem;color:#475569;margin-top:2px;padding:0 2px; }
     .cm-notice { text-align:center;font-size:0.68rem;color:#475569;padding:4px 0;letter-spacing:0.3px; }
     #cm-input-bar { padding:10px 12px;background:#0f172a;border-top:1px solid #1e293b;display:flex;gap:7px;flex-shrink:0; }
-    #cm-input { flex:1;background:#1e293b;border:1px solid #334155;border-radius:24px;padding:10px 16px;color:#e2e8f0;font-size:0.92rem;outline:none;transition:border-color 0.2s;font-family:inherit; }
+    #cm-input { flex:1;background:#1e293b;border:1px solid #334155;border-radius:24px;padding:10px 16px;color:#e2e8f0;font-size:1rem;outline:none;transition:border-color 0.2s;font-family:inherit; }
     #cm-input:focus { border-color:#3b82f6; }
     #cm-input::placeholder { color:#475569; }
-    #cm-send { background:#1d4ed8;color:#fff;border:none;border-radius:50%;width:42px;height:42px;font-size:1.1rem;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:background 0.15s; }
+    #cm-send { background:#1d4ed8;color:#fff;border:none;border-radius:50%;width:42px;height:42px;font-size:1.1rem;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:background 0.15s;touch-action:manipulation; }
     #cm-send:hover:not(:disabled) { background:#2563eb; }
     #cm-send:disabled { background:#334155;cursor:not-allowed; }
     /* ── 타이핑 인디케이터 ── */
