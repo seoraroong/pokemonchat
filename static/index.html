@@ -407,12 +407,15 @@
     #cm-quiz-bar.visible { display:flex; }
     .cm-quiz-score { font-size:0.7rem; background:#1e293b; border:1px solid #334155; border-radius:20px; padding:2px 9px; color:#94a3b8; }
     .cm-quiz-score.leader { border-color:#f59e0b; color:#f59e0b; font-weight:700; }
-    .cm-quiz-notice { text-align:center; font-size:0.73rem; padding:5px 10px; border-radius:10px; margin:3px 0; }
-    .cm-quiz-notice.question { background:#1e293b; border:1px solid #334155; color:#94a3b8; }
-    .cm-quiz-notice.hint     { background:#0d1a2d; border:1px solid #1e3a5f; color:#60a5fa; }
-    .cm-quiz-notice.correct  { background:#0d2218; border:1px solid #16a34a; color:#4ade80; font-weight:600; }
-    .cm-quiz-notice.skip     { background:#1c1010; border:1px solid #7f1d1d; color:#f87171; }
-    .cm-quiz-notice.end      { background:#1e1a0d; border:1px solid #854d0e; color:#fbbf24; font-weight:700; }
+    .cm-quiz-block { background:#1e293b; border:1px solid #334155; border-radius:14px; padding:12px; margin:4px 0; text-align:center; }
+    .cm-quiz-qnum { font-size:0.75rem; color:#64748b; margin-bottom:6px; }
+    .cm-quiz-silhouette { display:block; width:90px; height:90px; object-fit:contain; margin:0 auto 8px; filter:brightness(0) saturate(0); transition:filter 0.5s; }
+    .cm-quiz-silhouette.revealed { filter:none; }
+    .cm-quiz-hints-area { display:flex; flex-direction:column; gap:3px; margin-top:6px; }
+    .cm-quiz-hint-item { font-size:0.75rem; color:#60a5fa; background:#0d1a2d; border:1px solid #1e3a5f; border-radius:8px; padding:3px 8px; }
+    .cm-quiz-answer { font-size:0.82rem; border-radius:8px; padding:4px 8px; margin-top:4px; }
+    .cm-quiz-answer.correct { background:#0d2218; border:1px solid #16a34a; color:#4ade80; font-weight:600; }
+    .cm-quiz-end { text-align:center; font-size:0.82rem; background:#1e1a0d; border:1px solid #854d0e; color:#fbbf24; font-weight:700; border-radius:10px; padding:7px; margin:4px 0; }
 
     /* ── 진화 체인 ── */
     .evo-chain { display:flex; align-items:flex-start; gap:3px; overflow-x:auto; padding:4px 0 6px; scrollbar-width:none; }
@@ -1552,7 +1555,7 @@ async function scanCard(file, previewUrl) {
 // ── 커뮤니티 채팅 ─────────────────────────────────────────────────
 let _cmNick = null, _cmWs = null, _cmRoomId = null, _cmLobbyTimer = null, _cmServerEpoch = null;
 let _typingUsers = {}, _typingDebounce = null;
-let _cmQuizActive = false;
+let _cmQuizActive = false, _cmCurQuizEl = null;
 
 function _cmFmtAge(ts) {
   const diff = Math.floor(Date.now()/1000 - ts);
@@ -1658,28 +1661,72 @@ function cmJoinRoom(roomId, roomName) {
         } else { delete _typingUsers[msg.nick]; }
         _cmUpdateTypingBar();
       } else if (msg.type === 'quiz_started') {
-        _cmQuizActive = true;
+        _cmQuizActive = true; _cmCurQuizEl = null;
         _cmUpdateQuizBar({});
-        _cmRenderQuizNotice('question', `🎮 ${esc(msg.nick)}님이 포켓몬 퀴즈를 시작했습니다! 먼저 10점 도달 시 승리!`);
+        _cmAddNotice(`🎮 ${esc(msg.nick)}님이 포켓몬 퀴즈를 시작했습니다! 먼저 10점 도달 시 승리!`, 'end');
         document.getElementById('cm-quiz-btn')?.classList.add('active');
       } else if (msg.type === 'quiz_question') {
         _cmUpdateQuizBar(msg.scores || {});
-        _cmRenderQuizNotice('question', `❓ Q${msg.question_num}. 이 포켓몬은 누구일까요? 힌트를 기다리세요...`);
+        const spr = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${msg.dex}.png`;
+        const box = document.getElementById('cm-msgs');
+        if (box) {
+          const el = document.createElement('div');
+          el.className = 'cm-quiz-block';
+          el.innerHTML = `<div class="cm-quiz-qnum">❓ Q${msg.question_num}</div>`
+            + `<img class="cm-quiz-silhouette" src="${spr}">`
+            + `<div class="cm-quiz-hints-area"></div>`;
+          box.appendChild(el);
+          box.scrollTop = box.scrollHeight;
+          _cmCurQuizEl = el;
+        }
       } else if (msg.type === 'quiz_hint') {
-        _cmRenderQuizNotice('hint', `💡 힌트 ${msg.hint_num}: ${esc(msg.hint)}`);
+        if (_cmCurQuizEl) {
+          const area = _cmCurQuizEl.querySelector('.cm-quiz-hints-area');
+          if (area) {
+            const h = document.createElement('div');
+            h.className = 'cm-quiz-hint-item';
+            h.textContent = `💡 힌트 ${msg.hint_num}: ${msg.hint}`;
+            area.appendChild(h);
+          }
+          const box = document.getElementById('cm-msgs');
+          if (box) box.scrollTop = box.scrollHeight;
+        }
       } else if (msg.type === 'quiz_correct') {
         _cmUpdateQuizBar(msg.scores || {});
-        const spr = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${msg.dex}.png`;
-        _cmRenderQuizNotice('correct', `🎉 <strong>${esc(msg.nick)}</strong>님 정답! <img src="${spr}" style="width:24px;height:24px;vertical-align:middle;"> <strong>${esc(msg.answer)}</strong> (+1점)`);
+        if (_cmCurQuizEl) {
+          _cmCurQuizEl.querySelector('.cm-quiz-silhouette')?.classList.add('revealed');
+          const area = _cmCurQuizEl.querySelector('.cm-quiz-hints-area');
+          if (area) {
+            const ans = document.createElement('div');
+            ans.className = 'cm-quiz-answer correct';
+            ans.innerHTML = `🎉 <strong>${esc(msg.nick)}</strong>님 정답! <strong>${esc(msg.answer)}</strong> (+1점)`;
+            area.appendChild(ans);
+          }
+          const box = document.getElementById('cm-msgs');
+          if (box) box.scrollTop = box.scrollHeight;
+          _cmCurQuizEl = null;
+        }
       } else if (msg.type === 'quiz_skip') {
         _cmUpdateQuizBar(msg.scores || {});
-        const spr = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${msg.dex}.png`;
-        _cmRenderQuizNotice('skip', `⏱️ 시간 초과! 정답: <img src="${spr}" style="width:24px;height:24px;vertical-align:middle;"> <strong>${esc(msg.answer)}</strong>`);
+        if (_cmCurQuizEl) {
+          _cmCurQuizEl.querySelector('.cm-quiz-silhouette')?.classList.add('revealed');
+          const area = _cmCurQuizEl.querySelector('.cm-quiz-hints-area');
+          if (area) {
+            const ans = document.createElement('div');
+            ans.className = 'cm-quiz-answer';
+            ans.style.cssText = 'background:#1c1010;border:1px solid #7f1d1d;color:#f87171;';
+            ans.innerHTML = `😅 아무도 못 맞췄어요! 정답: <strong>${esc(msg.answer)}</strong>`;
+            area.appendChild(ans);
+          }
+          const box = document.getElementById('cm-msgs');
+          if (box) box.scrollTop = box.scrollHeight;
+          _cmCurQuizEl = null;
+        }
       } else if (msg.type === 'quiz_end') {
-        _cmQuizActive = false;
+        _cmQuizActive = false; _cmCurQuizEl = null;
         _cmUpdateQuizBar(msg.scores || {});
         const winText = msg.winner ? `🏆 우승자: <strong>${esc(msg.winner)}</strong>` : '무승부';
-        _cmRenderQuizNotice('end', `퀴즈 종료! ${winText}`);
+        _cmAddNotice(`퀴즈 종료! ${winText}`, 'end');
         document.getElementById('cm-quiz-btn')?.classList.remove('active');
         setTimeout(() => {
           const bar = document.getElementById('cm-quiz-bar');
@@ -1754,7 +1801,7 @@ function cmLeaveRoom() {
   if (_cmWs) { _cmWs.close(); _cmWs = null; }
   _cmRoomId = null;
   _typingUsers = {}; _cmUpdateTypingBar();
-  _cmQuizActive = false;
+  _cmQuizActive = false; _cmCurQuizEl = null;
   const qbar = document.getElementById('cm-quiz-bar');
   if (qbar) { qbar.classList.remove('visible'); qbar.innerHTML = ''; }
   document.getElementById('cm-quiz-btn')?.classList.remove('active');
@@ -1779,7 +1826,7 @@ function _cmReset() {
   clearInterval(_cmLobbyTimer);
   _cmNick = null; _cmRoomId = null; _cmServerEpoch = null;
   _typingUsers = {}; _cmUpdateTypingBar();
-  _cmQuizActive = false;
+  _cmQuizActive = false; _cmCurQuizEl = null;
   const bar = document.getElementById('cm-quiz-bar');
   if (bar) { bar.classList.remove('visible'); bar.innerHTML = ''; }
   document.getElementById('cm-quiz-btn')?.classList.remove('active');
@@ -1815,15 +1862,14 @@ function _cmUpdateQuizBar(scores) {
     ).join('');
 }
 
-function _cmRenderQuizNotice(type, html) {
+function _cmAddNotice(html, cls) {
   const box = document.getElementById('cm-msgs');
   if (!box) return;
-  const atBottom = box.scrollTop + box.clientHeight >= box.scrollHeight - 30;
   const el = document.createElement('div');
-  el.className = `cm-quiz-notice ${type}`;
+  el.className = `cm-quiz-end${cls === 'end' ? '' : ''}`;
   el.innerHTML = html;
   box.appendChild(el);
-  if (atBottom) box.scrollTop = box.scrollHeight;
+  box.scrollTop = box.scrollHeight;
 }
 
 function _cmSendTyping(isTyping) {
