@@ -1053,14 +1053,13 @@ async def get_raid_counters_api(slug: str):
 
 
 # ── Eggs API ─────────────────────────────────────────────────────────
-@app.get("/api/eggs")
-async def get_eggs_api():
-    eggs_path = Path(".raw/eggs.json")
-    if not eggs_path.exists():
-        return {}
-    eggs_raw = json.loads(eggs_path.read_text(encoding="utf-8"))
-    _ensure_raw()
+SCRAPED_DUCK_EGGS_URL = "https://raw.githubusercontent.com/bigfoott/ScrapedDuck/data/eggs.json"
+_eggs_live_cache: dict = {}
+_eggs_live_at: float = 0.0
+EGGS_LIVE_TTL = 3600  # 1시간 캐시 (알은 자주 안 바뀜)
 
+def _build_eggs_from_raw(eggs_raw: list) -> dict:
+    _ensure_raw()
     en_to_info: dict[str, dict] = {}
     if _names_raw and _gm_raw:
         for dex_str, nd in _names_raw.items():
@@ -1074,7 +1073,6 @@ async def get_eggs_api():
                 "t1":  gmd.get("type1", ""),
                 "t2":  t2,
             }
-
     rarity_label = {1: "흔함", 2: "보통", 3: "드묾", 4: "레어", 5: "초레어"}
     result: dict[str, list] = {}
     for egg in eggs_raw:
@@ -1094,6 +1092,29 @@ async def get_eggs_api():
     for km in result:
         result[km].sort(key=lambda x: (-x["rarity_num"], x["dex"] or 9999))
     return result
+
+@app.get("/api/eggs")
+async def get_eggs_api():
+    import time
+    global _eggs_live_cache, _eggs_live_at
+    if _eggs_live_cache and time.time() - _eggs_live_at < EGGS_LIVE_TTL:
+        return _eggs_live_cache
+    try:
+        async with httpx.AsyncClient(timeout=15) as c:
+            r = await c.get(SCRAPED_DUCK_EGGS_URL)
+            r.raise_for_status()
+            result = _build_eggs_from_raw(r.json())
+        if result:
+            _eggs_live_cache = result
+            _eggs_live_at = time.time()
+            return result
+    except Exception as ex:
+        log.warning(f"[eggs] live fetch 실패: {ex}")
+    # 파일 캐시 fallback
+    eggs_path = Path(".raw/eggs.json")
+    if eggs_path.exists():
+        return _build_eggs_from_raw(json.loads(eggs_path.read_text(encoding="utf-8")))
+    return {}
 
 
 # ── PvP Rankings API ─────────────────────────────────────────────────

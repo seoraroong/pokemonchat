@@ -544,6 +544,7 @@ function fmtUntil(startIso) {
 const chat = document.getElementById('chat'), input = document.getElementById('msg-input'), sendBtn = document.getElementById('send-btn');
 let history = [], streaming = false;
 
+const _welcomeHtml = document.getElementById('welcome')?.outerHTML || '';
 function _saveHistory() { try { localStorage.setItem('pm-chat', JSON.stringify(history)); } catch(_){} }
 function _loadHistory() {
   try {
@@ -560,8 +561,7 @@ function _loadHistory() {
 function clearChat() {
   if (!confirm('대화 기록을 모두 삭제할까요?')) return;
   history = []; localStorage.removeItem('pm-chat');
-  chat.innerHTML = '';
-  chat.insertAdjacentHTML('afterbegin', document.getElementById('welcome-tpl')?.innerHTML || '');
+  chat.innerHTML = _welcomeHtml;
 }
 
 input.addEventListener('keydown', e => { if (e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();} });
