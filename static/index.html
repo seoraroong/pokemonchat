@@ -384,6 +384,20 @@
     #cm-send { background:#1d4ed8;color:#fff;border:none;border-radius:50%;width:42px;height:42px;font-size:1.1rem;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:background 0.15s; }
     #cm-send:hover:not(:disabled) { background:#2563eb; }
     #cm-send:disabled { background:#334155;cursor:not-allowed; }
+    /* ── 타이핑 인디케이터 ── */
+    #cm-typing-bar { min-height:16px; padding:2px 14px; font-size:0.68rem; color:#64748b; flex-shrink:0; font-style:italic; }
+    /* ── 포켓몬 멘션 ── */
+    .pm-mention { display:inline-flex; align-items:center; gap:3px; background:#1e3a5f; border:1px solid #1d4ed8; border-radius:8px; padding:1px 6px 1px 2px; cursor:pointer; font-size:0.82em; color:#60a5fa; font-weight:600; vertical-align:middle; }
+    .pm-mention:hover { background:#1d4ed8; color:#fff; }
+    .pm-mention img { width:22px; height:22px; object-fit:contain; }
+    /* ── 퀴즈 ── */
+    .quiz-sprite { display:block; width:100px; height:100px; object-fit:contain; margin:8px auto; filter:brightness(0) saturate(0); transition:filter 0.4s; }
+    .quiz-sprite.revealed { filter:none; }
+    .quiz-hint-line { font-size:0.8rem; color:#94a3b8; margin:2px 0 0; }
+    .quiz-correct { color:#22c55e; font-weight:700; }
+    .quiz-wrong   { color:#ef4444; font-size:0.85rem; }
+    .quiz-btn { background:#1e293b; border:1px solid #334155; border-radius:10px; padding:4px 12px; color:#94a3b8; font-size:0.78rem; cursor:pointer; margin:6px 3px 0; font-family:inherit; }
+    .quiz-btn:hover { border-color:#3b82f6; color:#e2e8f0; }
 
     /* ── 진화 체인 ── */
     .evo-chain { display:flex; align-items:flex-start; gap:3px; overflow-x:auto; padding:4px 0 6px; scrollbar-width:none; }
@@ -594,6 +608,7 @@
         <span id="cm-room-count-badge">0/10명</span>
       </div>
       <div id="cm-msgs"></div>
+      <div id="cm-typing-bar"></div>
       <div id="cm-input-bar">
         <input id="cm-input" type="text" placeholder="메시지 입력..." autocomplete="off" maxlength="300">
         <button id="cm-send" onclick="cmSend()">↑</button>
@@ -726,10 +741,56 @@ function renderMd(raw) {
   while (out.length&&out[out.length-1]==='<br>') out.pop();
   return out.join('');
 }
+// ── 퀴즈 모드 ──────────────────────────────────────────────────────
+let _quiz = null, _quizMsgEl = null;
+async function _startQuiz() {
+  if (_quiz) return;
+  if (!dexData.length) { try { dexData = await (await fetch('/api/pokedex')).json(); dexLoaded = true; } catch { return; } }
+  const pool = dexData.filter(p => p.t1 && p.gen);
+  const p = pool[Math.floor(Math.random() * pool.length)];
+  _quiz = { dex:p.dex, ko:p.ko, en:p.en, t1:p.t1, t2:p.t2||'', gen:p.gen, hintIdx:0, done:false };
+  const artUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${p.dex}.png`;
+  _quizMsgEl = addMsg('bot', '');
+  _quizMsgEl.innerHTML = `<strong>🎮 포켓몬 퀴즈!</strong> 이 포켓몬은 누구일까요?<br><img class="quiz-sprite" src="${artUrl}" onerror="this.src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.dex}.png'"><div class="quiz-hints-area"></div><div class="quiz-hint-line" style="margin-top:6px;color:#64748b">💬 채팅창에 답을 입력하세요! (모르면 "포기" 입력)</div>`;
+  chat.scrollTop = chat.scrollHeight;
+}
+function _handleQuizInput(text) {
+  if (!_quiz || _quiz.done) return;
+  if (text.trim() === '포기') { _quiz.done = true; _revealQuiz(false); return; }
+  const ans = text.trim().toLowerCase();
+  if (ans === _quiz.ko.toLowerCase() || ans === _quiz.en.toLowerCase()) {
+    _quiz.done = true; _revealQuiz(true);
+  } else {
+    const hints = [
+      `타입: ${TYPE_KO[_quiz.t1]||_quiz.t1}${_quiz.t2?' / '+(TYPE_KO[_quiz.t2]||_quiz.t2):''}`,
+      `세대: ${_quiz.gen}세대`, `이름: ${_quiz.ko.length}글자`,
+    ];
+    if (_quiz.hintIdx < hints.length) {
+      const area = _quizMsgEl?.querySelector('.quiz-hints-area');
+      if (area) { const d=document.createElement('div'); d.className='quiz-hint-line'; d.textContent=`힌트 ${_quiz.hintIdx+1}: ${hints[_quiz.hintIdx]}`; area.appendChild(d); }
+      _quiz.hintIdx++;
+      addMsg('bot', `<span class="quiz-wrong">❌ 틀렸어요!</span> 힌트를 확인하세요.`);
+    } else { _quiz.done = true; _revealQuiz(false); }
+    chat.scrollTop = chat.scrollHeight;
+  }
+}
+function _revealQuiz(correct) {
+  const spr = _quizMsgEl?.querySelector('.quiz-sprite');
+  if (spr) spr.classList.add('revealed');
+  const msg = correct
+    ? `<span class="quiz-correct">🎉 정답!</span> <strong>${_quiz.ko}</strong> (${_quiz.en})<br><button class="quiz-btn" onclick="_startQuiz()">다음 문제 ▶</button>`
+    : `정답은 <strong>${_quiz.ko}</strong> (${_quiz.en})이었어요!<br><button class="quiz-btn" onclick="_startQuiz()">다시 도전 🔄</button>`;
+  addMsg('bot', msg);
+  _quiz = null; chat.scrollTop = chat.scrollHeight;
+}
+
 async function sendMessage() {
   const text = input.value.trim(); if (!text || streaming) return;
-  removeWelcome(); streaming = true; sendBtn.disabled = true; input.value = '';
+  removeWelcome(); input.value = '';
   addMsg('user', renderMd(text));
+  if (_quiz && !_quiz.done) { _handleQuizInput(text); input.focus(); return; }
+  if (!_quiz && /퀴즈|quiz/i.test(text)) { await _startQuiz(); input.focus(); return; }
+  streaming = true; sendBtn.disabled = true;
   const botEl = addMsg('bot','',true);
   let full='', firstChunk=true, spriteHtml='';
   try {
@@ -1403,6 +1464,7 @@ async function scanCard(file, previewUrl) {
 
 // ── 커뮤니티 채팅 ─────────────────────────────────────────────────
 let _cmNick = null, _cmWs = null, _cmRoomId = null, _cmLobbyTimer = null, _cmServerEpoch = null;
+let _typingUsers = {}, _typingDebounce = null;
 
 function _cmFmtAge(ts) {
   const diff = Math.floor(Date.now()/1000 - ts);
@@ -1431,6 +1493,7 @@ function cmEnterLobby() {
   document.getElementById('cm-nick-screen').style.display = 'none';
   document.getElementById('cm-lobby-screen').style.display = 'flex';
   document.getElementById('cm-lobby-nick').textContent = `👤 ${nick}`;
+  _loadMentionMap();
   cmLoadRooms();
   _cmLobbyTimer = setInterval(cmLoadRooms, 8000);
 }
@@ -1500,6 +1563,12 @@ function cmJoinRoom(roomId, roomName) {
       } else if (msg.type === 'notice') {
         _cmRenderNotice(msg.text);
         if (msg.count !== undefined) _cmUpdateCount(msg.count);
+      } else if (msg.type === 'typing') {
+        clearTimeout(_typingUsers[msg.nick]);
+        if (msg.is_typing) {
+          _typingUsers[msg.nick] = setTimeout(() => { delete _typingUsers[msg.nick]; _cmUpdateTypingBar(); }, 3000);
+        } else { delete _typingUsers[msg.nick]; }
+        _cmUpdateTypingBar();
       }
     } catch(_){}
   };
@@ -1521,6 +1590,29 @@ function _cmUpdateCount(count) {
   if (el) el.textContent = `${count}/10명`;
 }
 
+// ── 포켓몬 멘션 ──────────────────────────────────────────────────
+let _mentionMap = null;
+async function _loadMentionMap() {
+  if (_mentionMap) return;
+  const src = dexData.length ? dexData : await (await fetch('/api/pokedex')).json().catch(()=>[]);
+  _mentionMap = {};
+  for (const p of src) { _mentionMap[p.ko] = p.dex; _mentionMap[p.en.toLowerCase()] = p.dex; }
+}
+function _cmParseText(text) {
+  if (!_mentionMap) return esc(text);
+  return text.split(/(@[가-힣a-zA-Z0-9]+)/g).map(part => {
+    if (part.startsWith('@')) {
+      const name = part.slice(1);
+      const dex = _mentionMap[name] ?? _mentionMap[name.toLowerCase()];
+      if (dex) {
+        const spr = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${dex}.png`;
+        return `<span class="pm-mention" onclick="openPokemonPopup(${dex})"><img src="${spr}" onerror="this.style.display='none'">${esc(name)}</span>`;
+      }
+    }
+    return esc(part);
+  }).join('');
+}
+
 function _cmRenderMsg(msg) {
   const box = document.getElementById('cm-msgs');
   if (!box) return;
@@ -1529,7 +1621,7 @@ function _cmRenderMsg(msg) {
   const el = document.createElement('div');
   el.className = 'cm-msg ' + (isMe ? 'mine' : 'other');
   el.innerHTML = (!isMe ? `<div class="cm-nick">${esc(msg.nick)}</div>` : '') +
-    `<div class="cm-bubble">${esc(msg.text)}</div><div class="cm-time">${esc(msg.ts||'')}</div>`;
+    `<div class="cm-bubble">${_cmParseText(msg.text)}</div><div class="cm-time">${esc(msg.ts||'')}</div>`;
   box.appendChild(el);
   if (atBottom) box.scrollTop = box.scrollHeight;
 }
@@ -1545,6 +1637,7 @@ function _cmRenderNotice(text) {
 function cmLeaveRoom() {
   if (_cmWs) { _cmWs.close(); _cmWs = null; }
   _cmRoomId = null;
+  _typingUsers = {}; _cmUpdateTypingBar();
   document.getElementById('cm-room-screen').style.display = 'none';
   document.getElementById('cm-lobby-screen').style.display = 'flex';
   cmLoadRooms();
@@ -1555,6 +1648,8 @@ function cmSend() {
   const input = document.getElementById('cm-input');
   const text = (input.value||'').trim();
   if (!text || !_cmWs || _cmWs.readyState !== 1) return;
+  clearTimeout(_typingDebounce);
+  if (_cmWs.readyState === 1) _cmWs.send(JSON.stringify({type:'typing', is_typing:false}));
   _cmWs.send(JSON.stringify({type:'message', text}));
   input.value = '';
 }
@@ -1563,14 +1658,32 @@ function _cmReset() {
   if (_cmWs) { _cmWs.close(); _cmWs = null; }
   clearInterval(_cmLobbyTimer);
   _cmNick = null; _cmRoomId = null; _cmServerEpoch = null;
+  _typingUsers = {}; _cmUpdateTypingBar();
   document.getElementById('cm-nick-input').value = '';
   document.getElementById('cm-nick-screen').style.display = 'flex';
   document.getElementById('cm-lobby-screen').style.display = 'none';
   document.getElementById('cm-room-screen').style.display = 'none';
 }
 
+function _cmSendTyping(isTyping) {
+  if (_cmWs && _cmWs.readyState === 1) _cmWs.send(JSON.stringify({type:'typing', is_typing:isTyping}));
+}
+function _cmUpdateTypingBar() {
+  const bar = document.getElementById('cm-typing-bar');
+  if (!bar) return;
+  const nicks = Object.keys(_typingUsers);
+  if (!nicks.length) { bar.textContent = ''; return; }
+  bar.textContent = nicks.length === 1
+    ? `${nicks[0]}님이 입력 중...`
+    : `${nicks.slice(0,-1).join(', ')}, ${nicks[nicks.length-1]}님이 입력 중...`;
+}
 document.getElementById('cm-input').addEventListener('keydown', e => {
   if (e.key==='Enter'&&!e.shiftKey){e.preventDefault();cmSend();}
+});
+document.getElementById('cm-input').addEventListener('input', () => {
+  _cmSendTyping(true);
+  clearTimeout(_typingDebounce);
+  _typingDebounce = setTimeout(() => _cmSendTyping(false), 2000);
 });
 document.getElementById('cm-nick-input').addEventListener('keydown', e => {
   if (e.key==='Enter') cmEnterLobby();

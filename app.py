@@ -1348,6 +1348,12 @@ async def room_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> No
                 msg = json.loads(raw)
             except json.JSONDecodeError:
                 continue
+            if msg.get("type") == "typing":
+                await room.broadcast(
+                    {"type": "typing", "nick": nick, "is_typing": bool(msg.get("is_typing"))},
+                    exclude=ws,
+                )
+                continue
             if msg.get("type") != "message":
                 continue
             text = (msg.get("text") or "").strip()
