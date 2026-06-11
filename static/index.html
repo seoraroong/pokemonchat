@@ -686,11 +686,11 @@ async function loadEvents() {
     const data=await(await fetch('/api/events')).json(); let html='';
     const renderCard=(e,isActive)=>{
       const cfg=eventTypeCfg(e.type);
-      const clickable=e.has_spawns&&e.link?'clickable':'';
-      const onclick=e.has_spawns&&e.link?`onclick="openEventSpawnSheet('${e.link.replace(/'/g,"\\'")}','${esc(e.name).replace(/'/g,"\\'")}')"`:'';
+      const clickable=e.link?'clickable':'';
+      const onclick=e.link?`onclick="openEventSpawnSheet('${e.link.replace(/'/g,"\\'")}','${esc(e.name).replace(/'/g,"\\'")}')"`:'';
       const dot=isActive?'<div class="event-active-dot"></div>':'';
       const time=isActive?fmtRemain(e.end):fmtUntil(e.start);
-      const hint=e.has_spawns?'<div class="event-spawn-hint">👆 출현 포켓몬 보기</div>':'';
+      const hint=e.link?'<div class="event-spawn-hint">👆 포켓몬 정보 보기</div>':'';
       return `<div class="event-card ${clickable}" ${onclick}>${dot}<div class="event-info"><div class="event-name">${esc(e.name)}</div><div class="event-time">${time}</div>${hint}</div><span class="event-type-badge" style="background:${cfg.bg}">${cfg.text}</span></div>`;
     };
     if(data.active&&data.active.length){html+='<div style="font-size:0.72rem;color:#22c55e;font-weight:600;margin-bottom:8px;padding-left:2px">● 진행 중</div>';for(const e of data.active)html+=renderCard(e,true);}
