@@ -7,7 +7,7 @@ import asyncio
 import logging
 import urllib.parse
 from contextlib import asynccontextmanager
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import AsyncGenerator
 
@@ -1327,6 +1327,7 @@ import random as _random
 _ROOM_MAX_USERS = 10
 _ROOM_MAX_MSGS  = 50
 _SERVER_EPOCH   = _time.time()
+_KST            = timezone(timedelta(hours=9))
 
 # ── 퀴즈 헬퍼 ─────────────────────────────────────────────────────────
 _CHOSUNG_LIST = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ'
@@ -1577,7 +1578,7 @@ async def room_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> No
                     })
             record: dict = {
                 "type": "message", "nick": nick, "text": text,
-                "ts": datetime.now(timezone.utc).strftime("%H:%M"),
+                "ts": datetime.now(_KST).strftime("%H:%M"),
             }
             room.msgs.append(record)
             if len(room.msgs) > _ROOM_MAX_MSGS:
