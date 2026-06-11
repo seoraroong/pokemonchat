@@ -116,7 +116,8 @@ SYSTEM_PROMPT = """당신은 포켓몬 GO 전문 도우미 챗봇입니다.
 - 한국어로 간결하고 친절하게 답변하세요.
 - 제공된 위키 데이터를 우선적으로 활용하세요.
 - 포켓몬 스탯, 타입 상성, 진화 정보 등을 정확하게 안내하세요.
-- 레이드 카운터(raid-counters-*), 현재 레이드 보스(current-raids) 데이터가 위키에 있습니다.
+- 레이드 카운터(raid-counters-*) 데이터가 위키에 있습니다.
+- 현재 레이드 보스와 알 부화 정보는 ScrapedDuck에서 실시간으로 가져옵니다.
 - 알 부화(eggs-1km ~ eggs-12km, eggs-hub), 로켓단 그런트(rocket-grunt-*), 로켓단 간부(rocket-leaders) 데이터가 위키에 있습니다.
 - 이벤트 정보가 <event_context>로 제공된 경우 그 데이터를 기반으로 답변하세요.
 - 스탯 수치나 타입 정보는 표나 목록 형식으로 깔끔하게 정리해 주세요.
@@ -855,9 +856,18 @@ _TIER_IDS   = ["one-star-raids", "three-star-raids", "five-star-raids", "mega-ra
 _TIER_KEYS  = {"one-star-raids": "1", "three-star-raids": "3", "five-star-raids": "5",
                "mega-raids": "mega", "elite-raids": "elite"}
 
-def _resolve_en(en: str, dex_fallback: int) -> tuple[int, str]:
+_en2info_cache: dict | None = None
+
+def _get_en2info() -> dict:
+    global _en2info_cache
+    if _en2info_cache is not None:
+        return _en2info_cache
     _ensure_raw()
-    en2info = {v["en_name"].lower(): (int(k), v["ko_name"]) for k, v in (_names_raw or {}).items()}
+    _en2info_cache = {v["en_name"].lower(): (int(k), v["ko_name"]) for k, v in (_names_raw or {}).items()}
+    return _en2info_cache
+
+def _resolve_en(en: str, dex_fallback: int) -> tuple[int, str]:
+    en2info = _get_en2info()
     info = en2info.get(en.lower())
     if info:
         return info
@@ -1198,26 +1208,19 @@ async def get_pvp_api(league: str):
 
 @app.get("/api/status")
 async def get_status():
-    """각 데이터 소스의 마지막 갱신 시각과 다음 갱신까지 시간 반환."""
+    import time
+    now = time.time()
+    live_at_map = {"raids": _raids_live_at, "eggs": _eggs_live_at}
     result = {}
     for s in _REFRESH_SCRIPTS:
-        name = s["name"]
-        st   = _refresh_status[name]
-        raw_path = {
-            "raids": ".raw/current_raids.json",
-            "eggs":  ".raw/eggs.json",
-        }.get(name)
-        file_mtime = None
-        if raw_path:
-            p = Path(raw_path)
-            if p.exists():
-                from datetime import datetime as dt2
-                file_mtime = dt2.fromtimestamp(p.stat().st_mtime, tz=timezone.utc).isoformat(timespec="seconds")
+        name    = s["name"]
+        st      = _refresh_status[name]
+        live_at = live_at_map.get(name, 0.0)
         result[name] = {
             "last_ok":    st["last_ok"],
             "last_err":   st["last_err"],
             "running":    st["running"],
-            "file_mtime": file_mtime,
+            "live_age_s": int(now - live_at) if live_at > 0 else None,
             "interval_h": s["interval_h"],
         }
     return result

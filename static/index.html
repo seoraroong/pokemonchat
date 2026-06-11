@@ -10,7 +10,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="PokeMORE">
-  <link rel="apple-touch-icon" href="/static/icon.svg">
+  <link rel="apple-touch-icon" href="/icon-192.png">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -153,7 +153,7 @@
     .raid-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 7px; }
     .raid-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 10px; padding: 7px 5px 7px; text-align: center; cursor: pointer; transition: transform 0.12s, background 0.12s; display: flex; flex-direction: column; align-items: center; gap: 3px; }
     .raid-card:hover { background: #243450; border-color: #3b82f6; transform: translateY(-2px); }
-    .raid-sprite { width: 58px; height: 58px; object-fit: contain; }
+    .raid-sprite { width: 68px; height: 68px; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); }
     .raid-name { font-size: 0.72rem; font-weight: 600; color: #e2e8f0; line-height: 1.2; }
     .raid-shiny { font-size: 0.6rem; color: #f59e0b; }
     .raid-types { display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; }
@@ -317,6 +317,8 @@
     .move-chip  { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 4px 10px; font-size: 0.76rem; color: #94a3b8; display: inline-flex; align-items: center; gap: 5px; }
     .move-chip.elite { border-color: #d97706; color: #fbbf24; }
     .move-type-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .weather-boost { font-size: 0.72rem; color: #94a3b8; background: #1e293b; border: 1px solid #2d3f55; border-radius: 8px; padding: 5px 10px; margin-bottom: 12px; text-align: center; }
+    .session-sep { text-align: center; font-size: 0.68rem; color: #334155; padding: 6px 0 2px; letter-spacing: 0.5px; }
     .popup-chat-btn { display: block; width: 100%; padding: 12px; background: #b91c1c; border: none; border-radius: 14px; color: #fff; font-size: 0.92rem; font-weight: 600; cursor: pointer; transition: background 0.15s; margin-top: 6px; font-family: inherit; }
     .popup-chat-btn:hover { background: #dc2626; }
     .popup-secondary-btn { display: block; width: 100%; padding: 10px 12px; background: #1e293b; border: 1px solid #334155; border-radius: 12px; color: #94a3b8; font-size: 0.85rem; cursor: pointer; transition: all 0.15s; margin-bottom: 8px; font-family: inherit; text-align: left; }
@@ -517,6 +519,20 @@ const TYPE_BG = { normal:'#71727a',fire:'#e8621a',water:'#2980ef',electric:'#f2c
 const TYPE_EN_FROM_KO = {};
 for (const [en,ko] of Object.entries(TYPE_KO)) TYPE_EN_FROM_KO[ko] = en;
 
+const WEATHER_BOOST = {
+  fire:'맑음☀️', grass:'맑음☀️', ground:'맑음☀️',
+  normal:'부분흐림⛅', rock:'부분흐림⛅',
+  water:'비🌧️', electric:'비🌧️', bug:'비🌧️',
+  ice:'눈❄️', steel:'눈❄️',
+  fighting:'흐림☁️', poison:'흐림☁️', fairy:'흐림☁️',
+  flying:'바람🌬️', dragon:'바람🌬️', psychic:'바람🌬️',
+  dark:'안개🌫️', ghost:'안개🌫️',
+};
+function weatherBoostHtml(t1, t2) {
+  const weathers = [...new Set([t1,t2].filter(Boolean).map(t=>WEATHER_BOOST[t]).filter(Boolean))];
+  return weathers.length ? `<div class="weather-boost">날씨 부스트: ${weathers.join(' / ')}</div>` : '';
+}
+
 function typeBadgeHtml(t1, t2) {
   const b1 = t1 ? `<span class="type-badge" style="background:${TYPE_BG[t1]||'#71727a'}">${TYPE_KO[t1]||t1}</span>` : '';
   const b2 = t2 ? `<span class="type-badge" style="background:${TYPE_BG[t2]||'#71727a'}">${TYPE_KO[t2]||t2}</span>` : '';
@@ -555,6 +571,8 @@ function _loadHistory() {
     history = msgs;
     const w = document.getElementById('welcome'); if (w) w.remove();
     for (const m of msgs) addMsg(m.role==='user'?'user':'bot', renderMd(m.content));
+    const sep = document.createElement('div'); sep.className='session-sep'; sep.textContent='─── 이전 대화 ───';
+    chat.appendChild(sep);
     chat.scrollTop = chat.scrollHeight;
   } catch(_) {}
 }
@@ -781,12 +799,14 @@ async function loadRaids() {
       const period = endLabel ? `<span style="font-size:0.65rem;font-weight:400;color:#64748b;margin-left:6px">${endLabel}</span>` : '';
       html+=`<div class="tier-section"><div class="tier-label">${label} (${bosses.length})${period}</div><div class="raid-grid">`;
       for(const boss of bosses){
-        const spriteUrl=boss.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${boss.dex}.png`:`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Ccircle cx='29' cy='29' r='27' fill='%231e293b'/%3E%3C/svg%3E`;
+        const artUrl=boss.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${boss.dex}.png`:'';
+        const fallbackUrl=boss.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${boss.dex}.png`:`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Ccircle cx='29' cy='29' r='27' fill='%231e293b'/%3E%3C/svg%3E`;
+        const spriteUrl=artUrl||fallbackUrl;
         const typeKos=boss.types_ko?boss.types_ko.split(' / '):[];
         const typeHtml=typeKos.map(t=>{const en=TYPE_EN_FROM_KO[t]||'';return`<span class="type-badge" style="background:${TYPE_BG[en]||'#71727a'}">${t}</span>`;}).join('');
         const safeSlug=(boss.slug||'').replace(/'/g,"\\'");
         const clickAttr=boss.dex?`onclick="openPokemonPopup(${boss.dex},'${safeSlug}')"`:'' ;
-        html+=`<div class="raid-card" ${clickAttr}><img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.style.opacity='0.2'"><div class="raid-name">${esc(boss.ko_name)}</div>${boss.is_shiny?'<div class="raid-shiny">✦ 색변</div>':''}<div class="raid-types">${typeHtml}</div></div>`;
+        html+=`<div class="raid-card" ${clickAttr}><img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.src='${fallbackUrl}'">`+`<div class="raid-name">${esc(boss.ko_name)}</div>${boss.is_shiny?'<div class="raid-shiny">✦ 색변</div>':''}<div class="raid-types">${typeHtml}</div></div>`;
       }
       html+=`</div></div>`;}
     container.innerHTML=html;
@@ -795,28 +815,20 @@ async function loadRaids() {
 async function loadDataStatus() {
   try {
     const s = await (await fetch('/api/status')).json();
-    const raids = s.raids, eggs = s.eggs;
-    const mtime = raids?.file_mtime;
+    const raids = s.raids;
     const statusEl = document.getElementById('data-status-text');
     const btn = document.getElementById('refresh-btn');
     if (!statusEl) return;
-    if (raids?.running || eggs?.running) {
-      statusEl.textContent = '⏳ 갱신 중...';
-      statusEl.style.color = '#f59e0b';
-      if(btn) btn.disabled = true;
-      setTimeout(loadDataStatus, 5000);
-    } else if (mtime) {
-      const d = new Date(mtime), now = Date.now();
-      const diffH = Math.round((now - d.getTime()) / 3600000);
-      const label = diffH < 1 ? '방금 전' : diffH < 24 ? `${diffH}시간 전` : `${Math.floor(diffH/24)}일 전`;
-      statusEl.textContent = `마지막 갱신: ${label}`;
-      statusEl.style.color = diffH > 24 ? '#ef4444' : '#22c55e';
-      if(btn) btn.disabled = false;
+    const age = raids?.live_age_s;
+    if (age != null) {
+      const label = age < 60 ? '방금 전' : age < 3600 ? `${Math.floor(age/60)}분 전` : `${Math.floor(age/3600)}시간 전`;
+      statusEl.textContent = `실시간 데이터 · ${label} 캐시`;
+      statusEl.style.color = age > 3600 ? '#f59e0b' : '#22c55e';
     } else {
-      statusEl.textContent = raids?.last_err ? '⚠️ 갱신 오류' : '데이터 없음';
-      statusEl.style.color = '#ef4444';
-      if(btn) btn.disabled = false;
+      statusEl.textContent = '실시간 데이터';
+      statusEl.style.color = '#64748b';
     }
+    if(btn) btn.disabled = false;
   } catch { /* 무시 */ }
 }
 
@@ -941,6 +953,7 @@ async function openPokemonPopup(dex, bossSlug=null) {
       <img class="popup-sprite" src="${artUrl}" alt="${esc(p.ko)}" onerror="this.src='${fbUrl}'">
       <div class="popup-num">#${num}</div><div class="popup-ko">${esc(p.ko)}</div><div class="popup-en">${esc(p.en)}</div>
       <div class="popup-types"><span class="type-badge" style="background:${t1bg}">${t1ko}</span>${t2badge}</div>
+      ${weatherBoostHtml(p.t1, p.t2)}
       <div class="stat-grid">
         <div class="stat-item"><div class="stat-label">공격</div><div class="stat-val">${p.atk||'—'}</div></div>
         <div class="stat-item"><div class="stat-label">방어</div><div class="stat-val">${p.def||'—'}</div></div>
@@ -1005,6 +1018,7 @@ function switchTab(tab) {
     if(t===tab) el.style.display=(t==='raid')?'block':'flex';
     else el.style.display='none';
   }
+  try { localStorage.setItem('pm-tab', tab); } catch(_) {}
   if(tab==='chat') input.focus();
   if(tab==='dex'  && !dexLoaded)       loadDex();
   if(tab==='raid' && !raidEventLoaded) loadRaidEvents();
@@ -1244,6 +1258,8 @@ async function scanCard(file, previewUrl) {
     navigator.serviceWorker.register('/sw.js').catch(() => {});
   }
   _loadHistory();
+  const _savedTab = localStorage.getItem('pm-tab');
+  if (_savedTab && _savedTab !== 'chat') switchTab(_savedTab);
 </script>
 </body>
 </html>
