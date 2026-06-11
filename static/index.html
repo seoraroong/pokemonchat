@@ -625,7 +625,7 @@
     <div id="cm-nick-screen" class="cm-screen">
       <div class="cm-nick-logo"></div>
       <div class="cm-nick-title">채팅 커뮤니티</div>
-      <div class="cm-nick-sub">일회성 닉네임으로 참여합니다<br>탭을 나가면 닉네임이 초기화돼요</div>
+      <div class="cm-nick-sub">닉네임은 자동으로 저장됩니다<br>언제든 바꿔서 입장할 수 있어요</div>
       <input id="cm-nick-input" type="text" placeholder="닉네임 입력 (최대 15자)" maxlength="15" autocomplete="off">
       <button class="cm-enter-btn" onclick="cmEnterLobby()">입장하기</button>
     </div>
@@ -1351,6 +1351,13 @@ function switchTab(tab) {
   if(tab==='egg'  && !eggLoaded)       loadEggs();
   if(tab==='pvp'  && !pvpData[currentLeague]) loadPvP(currentLeague);
   if(tab==='map') initMap();
+  if(tab==='community' && !_cmNick) {
+    const saved = localStorage.getItem('cm_nick');
+    if (saved) {
+      document.getElementById('cm-nick-input').value = saved;
+      cmEnterLobby();
+    }
+  }
 }
 
 // ── 지역 한정 포켓몬 지도 ─────────────────────────────────────────
@@ -1608,6 +1615,7 @@ function cmEnterLobby() {
   const nick = (input.value||'').trim().slice(0,15);
   if (!nick) { input.focus(); return; }
   _cmNick = nick;
+  localStorage.setItem('cm_nick', nick);
   document.getElementById('cm-nick-screen').style.display = 'none';
   document.getElementById('cm-lobby-screen').style.display = 'flex';
   document.getElementById('cm-lobby-nick').textContent = `👤 ${nick}`;
@@ -1861,7 +1869,7 @@ function _cmReset() {
   const bar = document.getElementById('cm-quiz-bar');
   if (bar) { bar.classList.remove('visible'); bar.innerHTML = ''; }
   document.getElementById('cm-quiz-btn')?.classList.remove('active');
-  document.getElementById('cm-nick-input').value = '';
+  document.getElementById('cm-nick-input').value = localStorage.getItem('cm_nick') || '';
   document.getElementById('cm-nick-screen').style.display = 'flex';
   document.getElementById('cm-lobby-screen').style.display = 'none';
   document.getElementById('cm-room-screen').style.display = 'none';
