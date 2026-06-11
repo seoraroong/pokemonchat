@@ -1125,6 +1125,18 @@ async def manifest():
     return Response(content=content, media_type="application/manifest+json")
 
 
+@app.get("/icon-192.png")
+async def icon_192():
+    from fastapi.responses import Response
+    return Response(content=(Path("static") / "icon-192.png").read_bytes(), media_type="image/png")
+
+
+@app.get("/icon-512.png")
+async def icon_512():
+    from fastapi.responses import Response
+    return Response(content=(Path("static") / "icon-512.png").read_bytes(), media_type="image/png")
+
+
 @app.post("/chat")
 async def chat(req: ChatRequest):
     return StreamingResponse(
