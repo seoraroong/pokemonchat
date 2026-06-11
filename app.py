@@ -1320,12 +1320,136 @@ async def get_raid_rankings():
 
 
 # ── Community Chat Rooms ──────────────────────────────────────────────
-import uuid as _uuid
-import time as _time
+import uuid   as _uuid
+import time   as _time
+import random as _random
 
 _ROOM_MAX_USERS = 10
 _ROOM_MAX_MSGS  = 50
-_SERVER_EPOCH   = _time.time()   # 서버 재시작 감지용 — 프로세스 기동 시각
+_SERVER_EPOCH   = _time.time()
+
+# ── 퀴즈 헬퍼 ─────────────────────────────────────────────────────────
+_CHOSUNG_LIST = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ'
+_TYPE_KO_QUIZ = {
+    "normal":"노말","fire":"불꽃","water":"물","electric":"전기","grass":"풀",
+    "ice":"얼음","fighting":"격투","poison":"독","ground":"땅","flying":"비행",
+    "psychic":"에스퍼","bug":"벌레","rock":"바위","ghost":"고스트",
+    "dragon":"드래곤","dark":"악","steel":"강철","fairy":"페어리",
+}
+
+def _chosung(text: str) -> str:
+    return "".join(
+        _CHOSUNG_LIST[(ord(c) - 0xAC00) // 588]
+        if 0 <= ord(c) - 0xAC00 <= 11171 else c
+        for c in text
+    )
+
+def _type_ko_str(t1: str, t2: str) -> str:
+    s = _TYPE_KO_QUIZ.get(t1, t1)
+    if t2:
+        s += " / " + _TYPE_KO_QUIZ.get(t2, t2)
+    return s
+
+
+class _QuizState:
+    def __init__(self) -> None:
+        self.active           = True
+        self.current_dex: int = 0
+        self.current_ko:  str = ""
+        self.current_en:  str = ""
+        self.answered         = False
+        self.answered_event   = asyncio.Event()
+        self.scores: dict[str, int] = {}
+        self.question_num     = 1
+
+    @staticmethod
+    def build_pool() -> list:
+        if not _gm_raw or not _names_raw:
+            return []
+        pool = []
+        for dex_str, gm in _gm_raw.items():
+            nd  = _names_raw.get(dex_str, {})
+            ko  = nd.get("ko_name", "")
+            en  = nd.get("en_name", "")
+            t1  = gm.get("type1", "")
+            t2  = gm.get("type2", "") or ""
+            if t2 == "none":
+                t2 = ""
+            gen = nd.get("gen") or 0
+            if ko and t1:
+                pool.append((int(dex_str), ko, en, t1, t2, gen))
+        return pool
+
+
+async def _run_quiz(room: "type[None]") -> None:  # type hint uses string to avoid forward ref
+    HINT_TIMEOUT = 18
+    MAX_SCORE    = 10
+    _ensure_raw()
+    pool = _QuizState.build_pool()
+    if not pool:
+        room.quiz = None
+        return
+    try:
+        while room.quiz and room.quiz.active:
+            if room.count == 0:
+                break
+            dex, ko, en, t1, t2, gen = _random.choice(pool)
+            q = room.quiz
+            q.current_dex = dex
+            q.current_ko  = ko
+            q.current_en  = en
+            q.answered    = False
+            q.answered_event.clear()
+            hints = [
+                f"타입: {_type_ko_str(t1, t2)}",
+                f"세대: {gen}세대" if gen else "세대: ?",
+                f"이름: {len(ko)}글자",
+                f"초성: {_chosung(ko)}",
+            ]
+            await room.broadcast({
+                "type": "quiz_question", "dex": dex,
+                "question_num": q.question_num, "scores": dict(q.scores),
+            })
+            answered = False
+            for hi, hint_text in enumerate(hints):
+                try:
+                    await asyncio.wait_for(q.answered_event.wait(), timeout=float(HINT_TIMEOUT))
+                    answered = True
+                    break
+                except asyncio.TimeoutError:
+                    if not room.quiz or not room.quiz.active:
+                        return
+                    await room.broadcast({"type": "quiz_hint", "hint": hint_text, "hint_num": hi + 1})
+            if not answered:
+                try:
+                    await asyncio.wait_for(q.answered_event.wait(), timeout=float(HINT_TIMEOUT))
+                    answered = True
+                except asyncio.TimeoutError:
+                    pass
+            if not room.quiz or not room.quiz.active:
+                return
+            if not answered:
+                await room.broadcast({
+                    "type": "quiz_skip", "answer": ko, "dex": dex,
+                    "scores": dict(room.quiz.scores),
+                })
+                room.quiz.question_num += 1
+                await asyncio.sleep(3)
+                continue
+            await asyncio.sleep(3)
+            if not room.quiz or not room.quiz.active:
+                return
+            if max(room.quiz.scores.values(), default=0) >= MAX_SCORE:
+                break
+            room.quiz.question_num += 1
+    except asyncio.CancelledError:
+        pass
+    finally:
+        if room.quiz:
+            sc = dict(room.quiz.scores)
+            winner = max(sc, key=sc.get, default=None) if sc else None
+            await room.broadcast({"type": "quiz_end", "winner": winner, "scores": sc})
+            room.quiz = None
 
 
 class _Room:
@@ -1335,6 +1459,7 @@ class _Room:
         self.conns:     list[tuple[WebSocket, str]] = []
         self.msgs:      list[dict] = []
         self.created_at: float = _time.time()
+        self.quiz: _QuizState | None = None
 
     @property
     def count(self) -> int:
@@ -1422,15 +1547,36 @@ async def room_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> No
                     exclude=ws,
                 )
                 continue
+            if msg.get("type") == "quiz_start":
+                if not room.quiz and _ensure_raw() and _gm_raw:
+                    room.quiz = _QuizState()
+                    await room.broadcast({"type": "quiz_started", "nick": nick, "scores": {}})
+                    asyncio.create_task(_run_quiz(room))
+                continue
+            if msg.get("type") == "quiz_stop":
+                if room.quiz:
+                    room.quiz.active = False
+                    room.quiz.answered_event.set()
+                continue
             if msg.get("type") != "message":
                 continue
             text = (msg.get("text") or "").strip()
             if not text or len(text) > 300:
                 continue
+            # 퀴즈 정답 체크 (정답이면 quiz_correct 브로드캐스트 후 일반 메시지도 전송)
+            if room.quiz and room.quiz.active and not room.quiz.answered:
+                if text.lower() == room.quiz.current_ko.lower() or text.lower() == room.quiz.current_en.lower():
+                    room.quiz.answered = True
+                    room.quiz.scores[nick] = room.quiz.scores.get(nick, 0) + 1
+                    room.quiz.answered_event.set()
+                    await room.broadcast({
+                        "type": "quiz_correct", "nick": nick,
+                        "answer": room.quiz.current_ko,
+                        "dex": room.quiz.current_dex,
+                        "scores": dict(room.quiz.scores),
+                    })
             record: dict = {
-                "type": "message",
-                "nick": nick,
-                "text": text,
+                "type": "message", "nick": nick, "text": text,
                 "ts": datetime.now(timezone.utc).strftime("%H:%M"),
             }
             room.msgs.append(record)
@@ -1442,6 +1588,9 @@ async def room_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> No
     finally:
         room.remove(ws)
         if room.count == 0:
+            if room.quiz:
+                room.quiz.active = False
+                room.quiz.answered_event.set()
             _rooms.pop(room_id, None)
         else:
             await room.broadcast(
