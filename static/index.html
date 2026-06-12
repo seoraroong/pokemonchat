@@ -379,6 +379,10 @@
     .shiny-toggle-btn { display: block; margin: 6px auto 0; background: none; border: 1px solid #f59e0b; color: #f59e0b; border-radius: 12px; padding: 3px 16px; font-size: 0.72rem; cursor: pointer; font-family: inherit; transition: background 0.15s; }
     .shiny-toggle-btn:hover { background: rgba(245,158,11,0.12); }
     .shiny-toggle-btn.active { background: rgba(245,158,11,0.18); }
+    .form-switcher { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 8px 0 2px; }
+    .form-btn { padding: 3px 14px; border-radius: 20px; border: 1px solid #334155; background: #1e293b; color: #94a3b8; font-size: 0.72rem; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    .form-btn:hover { border-color: #60a5fa; color: #bfdbfe; }
+    .form-btn.active { border-color: #60a5fa; background: #1e3a5f; color: #93c5fd; font-weight: 700; }
     .shadow-info-box { background: linear-gradient(135deg,#1a0a2e,#120820); border: 1px solid rgba(120,0,220,0.5); border-radius: 12px; padding: 10px 14px; margin: 10px 0 4px; }
     .shadow-info-title { font-size: 0.72rem; font-weight: 700; color: #b060ff; margin-bottom: 8px; letter-spacing: 0.3px; }
     .shadow-stat-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; padding: 3px 0; border-bottom: 1px solid rgba(100,0,180,0.2); }
@@ -1533,9 +1537,16 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
         <div class="shadow-stat-row"><span class="shadow-stat-label">방어력</span><span class="shadow-def">× 0.833 &nbsp;↓ 17%</span></div>
         <div class="shadow-note">기본 기술로 <b style="color:#c084fc">답답함 (Frustration)</b> 고정 장착<br>이벤트 기간에만 다른 기술로 교체 가능 · 정화 시 일반 포켓몬으로 전환</div>
       </div>` : '';
+    const forms = p.forms || [];
+    const formSwitcher = forms.length > 0 ? `
+      <div class="form-switcher">
+        <button class="form-btn active" onclick="switchForm(${dex},0)">기본</button>
+        ${forms.map((f,i)=>`<button class="form-btn" onclick="switchForm(${f.form_dex},${i+1})">${esc(f.label)}</button>`).join('')}
+      </div>` : '';
     body.innerHTML=`
       ${spriteHtml}
       <button class="shiny-toggle-btn" id="shiny-toggle-btn" onclick="toggleShinySprite(${spriteDex})">✦ 색변 보기</button>
+      ${formSwitcher}
       <div class="popup-num">#${num}</div><div class="popup-ko">${esc(p.ko)}</div><div class="popup-en">${esc(p.en)}</div>
       <div class="popup-types"><span class="type-badge" style="background:${t1bg}">${t1ko}</span>${t2badge}</div>
       ${weatherBoostHtml(p.t1, p.t2)}
@@ -1636,6 +1647,20 @@ function toggleShinySprite(dex) {
     img.onerror = _shinyMode ? () => { img.src = fallback; img.onerror = null; } : null;
   }
   if (btn) { btn.textContent = _shinyMode ? '← 기본 보기' : '✦ 색변 보기'; btn.classList.toggle('active', _shinyMode); }
+}
+function switchForm(spriteDex, btnIdx) {
+  _shinyMode = false;
+  const img = document.getElementById('popup-main-sprite');
+  const artUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${spriteDex}.png`;
+  const fbUrl  = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${spriteDex}.png`;
+  if (img) { img.src = artUrl; img.onerror = () => { img.src = fbUrl; img.onerror = null; }; }
+  const shinyBtn = document.getElementById('shiny-toggle-btn');
+  if (shinyBtn) {
+    shinyBtn.textContent = '✦ 색변 보기';
+    shinyBtn.classList.remove('active');
+    shinyBtn.onclick = () => toggleShinySprite(spriteDex);
+  }
+  document.querySelectorAll('.form-btn').forEach((b, i) => b.classList.toggle('active', i === btnIdx));
 }
 function popupToChat(ko){closePokemonPopup();switchTab('chat');setTimeout(()=>ask(`${ko} 스탯이랑 기술 알려줘`),80);}
 

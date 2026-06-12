@@ -962,6 +962,7 @@ async def get_pokemon_detail(dex: int):
         "charged_moves": [move_info(m) for m in gmd.get("charged_moves", [])],
         "elite_fast":    [move_info(m) for m in gmd.get("elite_fast", [])],
         "elite_charged": [move_info(m) for m in gmd.get("elite_charged", [])],
+        "forms":         _get_forms_for_dex(dex),
     }
 
 
@@ -1176,6 +1177,26 @@ def _raid_form_dex(en: str) -> int | None:
     """리전폼의 PokeAPI form ID 반환 (스프라이트 전용, 데이터 조회에는 사용 금지)"""
     key = en.lower().replace("shadow ", "").strip()
     return _REGIONAL_FORM_DEX.get(key)
+
+_FORM_PREFIX_KO: dict[str, str] = {
+    "alolan ": "알로라",
+    "galarian ": "가라르",
+    "hisuian ": "히스이",
+}
+
+def _get_forms_for_dex(base_dex: int) -> list[dict]:
+    """주어진 base dex 번호에 존재하는 리전폼 목록 반환"""
+    en2info = _get_en2info()
+    forms = []
+    for form_key, form_dex_id in _REGIONAL_FORM_DEX.items():
+        for prefix_en, prefix_ko in _FORM_PREFIX_KO.items():
+            if form_key.startswith(prefix_en):
+                base_name = form_key[len(prefix_en):]
+                info = en2info.get(base_name)
+                if info and info[0] == base_dex:
+                    forms.append({"label": prefix_ko, "form_dex": form_dex_id})
+                break
+    return forms
 
 def _build_raids_from_scraped(raw_data: list) -> dict:
     by_tier: dict[str, list] = {}
