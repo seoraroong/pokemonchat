@@ -1283,17 +1283,48 @@ def _parse_event_html(html: str) -> dict:
         if rewards:
             tasks.append({"task": task, "rewards": rewards})
 
-    bonuses = _parse_event_bonuses(html)
-    return {"wild": wild, "raids": raids, "research": tasks, "bonuses": bonuses}
+    return {"wild": wild, "raids": raids, "research": tasks}
 
 
-@app.get("/api/event-text")
-async def event_text(url: str):
-    """이벤트 페이지 핵심 텍스트 반환 (보너스 데이터 없는 이벤트용 fallback)."""
+_event_summary_cache: dict[str, tuple[float, list[str]]] = {}
+_EVENT_SUMMARY_TTL = 3600
+
+@app.get("/api/event-summary")
+async def event_summary(url: str):
+    """Claude로 이벤트 페이지 한국어 요약 (구조화 데이터 없는 이벤트용)."""
+    import time
+    cached = _event_summary_cache.get(url)
+    if cached and time.time() - cached[0] < _EVENT_SUMMARY_TTL:
+        return {"bullets": cached[1]}
+
     text = await _fetch_event_page(url)
-    # 앞쪽 네비/헤더 잡음 제거: 첫 의미있는 단락부터
-    lines = [l.strip() for l in text.splitlines() if len(l.strip()) > 20]
-    return {"text": "\n".join(lines[:40])}
+    if not text:
+        return {"bullets": []}
+
+    try:
+        msg = await client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=400,
+            messages=[{
+                "role": "user",
+                "content": (
+                    "다음은 포켓몬 GO 이벤트 페이지 내용이야. "
+                    "핵심 정보만 추려서 한국어 bullet point로 5~8개 작성해줘.\n"
+                    "포함할 내용: 이벤트 기간, 주요 특전(보너스), 특이사항.\n"
+                    "각 항목은 한 줄로 간결하게. 번호나 기호 없이 텍스트만.\n\n"
+                    f"{text[:2500]}"
+                )
+            }]
+        )
+        raw = msg.content[0].text.strip()
+        bullets = [l.lstrip("-•·* ").strip() for l in raw.splitlines() if l.strip()]
+        bullets = [b for b in bullets if b]
+    except Exception as e:
+        log.warning(f"[event-summary] Claude 호출 실패: {e}")
+        bullets = []
+
+    _event_summary_cache[url] = (time.time(), bullets)
+    return {"bullets": bullets}
 
 
 @app.get("/api/event-detail")

@@ -985,13 +985,8 @@ function renderEventTab(tab) {
     ).join('');
   } else if (tab === 'info') {
     const bonuses = d.bonuses || [];
-    if (bonuses.length) {
-      body.innerHTML = `<ul class="event-bonus-list">${bonuses.map(b=>`<li class="event-bonus-item">✦ ${esc(b)}</li>`).join('')}</ul>`;
-    } else if (d.infoText) {
-      body.innerHTML = `<div style="font-size:0.8rem;color:#94a3b8;line-height:1.7;white-space:pre-wrap;padding:4px 0">${esc(d.infoText)}</div>`;
-    } else {
-      body.innerHTML = '<p class="raid-empty">이벤트 특전 정보가 없어요.</p>';
-    }
+    if (!bonuses.length) { body.innerHTML='<p class="raid-empty">이벤트 정보가 없어요.</p>'; return; }
+    body.innerHTML = `<ul class="event-bonus-list">${bonuses.map(b=>`<li class="event-bonus-item">✦ ${esc(b)}</li>`).join('')}</ul>`;
   }
 }
 
@@ -1028,25 +1023,24 @@ async function openEventSpawnSheet(url, name) {
     const data = await (await fetch(`/api/event-detail?url=${encodeURIComponent(url)}`)).json();
 
     // 3) 보너스: pre-loaded 우선, HTML 파싱 결과 fallback, 없으면 텍스트 페이지 fetch
-    let bonuses = preloadedBonuses.length ? preloadedBonuses : (data.bonuses || []);
-    let infoText = '';
+    let bonuses = preloadedBonuses.length ? preloadedBonuses : [];
     if (!bonuses.length) {
+      sub.textContent = 'AI 요약 중...';
       try {
-        const td = await (await fetch(`/api/event-text?url=${encodeURIComponent(url)}`)).json();
-        infoText = td.text || '';
+        const sd = await (await fetch(`/api/event-summary?url=${encodeURIComponent(url)}`)).json();
+        bonuses = sd.bullets || [];
       } catch {}
     }
 
-    _eventDetailData = { ...data, bonuses, infoText };
+    _eventDetailData = { ...data, bonuses };
 
     const wildCnt  = (data.wild||[]).length;
     const raidCnt  = Object.values(data.raids||{}).flat().length;
     const resCnt   = (data.research||[]).length;
     const hasPokemon = wildCnt + raidCnt + resCnt;
-    const bonusCnt = bonuses.length || (infoText ? 1 : 0);
     sub.textContent = hasPokemon
       ? `야생 ${wildCnt} · 레이드 ${raidCnt} · 리서치 ${resCnt}`
-      : (bonusCnt ? `이벤트 정보 있음` : '정보 없음');
+      : (bonuses.length ? `이벤트 정보 있음` : '정보 없음');
 
     const tabIdx = _pickDefaultEventTab(_eventDetailData);
     document.querySelectorAll('.event-detail-tab').forEach((b,i)=>b.classList.toggle('active',i===tabIdx));
