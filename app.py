@@ -282,6 +282,138 @@ def _parse_dt(s: str) -> datetime:
     return dt
 
 
+_REGION_PREFIX_KO: dict[str, str] = {
+    "hisuian": "히스이",
+    "galarian": "가라르",
+    "alolan": "알로라",
+    "paldean": "팔데아",
+    "shadow": "다크",
+    "mega": "메가",
+}
+
+_EVENT_TERM_KO: dict[str, str] = {
+    "community day": "커뮤니티 데이",
+    "spotlight hour": "스포트라이트 아워",
+    "raid hour": "레이드 아워",
+    "raid day": "레이드 데이",
+    "super mega raid day": "슈퍼 메가 레이드 데이",
+    "raid battles": "레이드",
+    "max monday": "맥스 먼데이",
+    "great league": "슈퍼리그",
+    "ultra league": "하이퍼리그",
+    "master league": "마스터리그",
+    "little cup": "리틀컵",
+    "go battle league": "GO 배틀리그",
+    "pokémon go fest": "포켓몬 GO 페스트",
+    "pokemon go fest": "포켓몬 GO 페스트",
+    "dynamax": "다이맥스",
+    "gigantamax": "거다이맥스",
+    "go tour": "GO 투어",
+    "in mega raids": "메가 레이드",
+    "in 5-star raid battles": "5성 레이드",
+    "in 4-star raid battles": "4성 레이드",
+    "in 3-star raid battles": "3성 레이드",
+    "in 1-star raid battles": "1성 레이드",
+    "during max monday": "맥스 먼데이 중",
+}
+
+def _build_en_ko_lookup() -> dict[str, str]:
+    if not _names_raw:
+        return {}
+    result: dict[str, str] = {}
+    for nd in _names_raw.values():
+        en = (nd.get("en_name") or "").strip()
+        ko = (nd.get("ko_name") or "").strip()
+        if en and ko:
+            result[en.lower()] = ko
+    return result
+
+_en_ko_cache: dict[str, str] | None = None
+
+def _poke_en_to_ko(en_name: str) -> str:
+    global _en_ko_cache
+    if _en_ko_cache is None or (not _en_ko_cache and _names_raw):
+        _en_ko_cache = _build_en_ko_lookup()
+    name = en_name.strip()
+    lower = name.lower()
+    # 직접 매칭
+    if lower in _en_ko_cache:
+        return _en_ko_cache[lower]
+    # 지역 접두사 처리 (e.g. "Hisuian Growlithe")
+    for prefix_en, prefix_ko in _REGION_PREFIX_KO.items():
+        if lower.startswith(prefix_en + " "):
+            base = name[len(prefix_en)+1:]
+            base_ko = _en_ko_cache.get(base.lower(), base)
+            return f"{prefix_ko} {base_ko}"
+    return name  # 번역 없으면 원문 유지
+
+def _translate_event_name(name: str, event_type: str) -> str:
+    """이벤트 이름을 한국어로 번역."""
+    import re as _re
+    n = name.strip()
+
+    # Community Day: "Frigibax Community Day"
+    m = _re.match(r"^(.+?)\s+Community Day$", n, _re.IGNORECASE)
+    if m:
+        return f"{_poke_en_to_ko(m.group(1))} 커뮤니티 데이"
+
+    # Spotlight Hour: "Swinub Spotlight Hour"
+    m = _re.match(r"^(.+?)\s+Spotlight Hour$", n, _re.IGNORECASE)
+    if m:
+        return f"{_poke_en_to_ko(m.group(1))} 스포트라이트 아워"
+
+    # Raid Hour: "Necrozma Raid Hour" / "Celesteela and Kartana Raid Hour"
+    m = _re.match(r"^(.+?)\s+Raid Hour$", n, _re.IGNORECASE)
+    if m:
+        pokemons = [p.strip() for p in _re.split(r"\s+and\s+", m.group(1), flags=_re.IGNORECASE)]
+        ko_names = " & ".join(_poke_en_to_ko(p) for p in pokemons)
+        return f"{ko_names} 레이드 아워"
+
+    # Raid Day: "Skarmory Super Mega Raid Day" / "X Raid Day"
+    m = _re.match(r"^(.+?)\s+(?:Super Mega )?Raid Day$", n, _re.IGNORECASE)
+    if m:
+        return f"{_poke_en_to_ko(m.group(1))} 레이드 데이"
+
+    # 5-star Raid Battles: "Zekrom in 5-star Raid Battles"
+    m = _re.match(r"^(.+?)\s+in\s+(\d+)-star Raid Battles$", n, _re.IGNORECASE)
+    if m:
+        return f"{_poke_en_to_ko(m.group(1))} {m.group(2)}성 레이드"
+
+    # Mega Raids: "Mega Lopunny in Mega Raids"
+    m = _re.match(r"^Mega (.+?)\s+in Mega Raids$", n, _re.IGNORECASE)
+    if m:
+        return f"메가 {_poke_en_to_ko(m.group(1))} 메가 레이드"
+
+    # Max Monday: "Dynamax Roggenrola during Max Monday"
+    m = _re.match(r"^Dynamax (.+?)\s+during Max Monday$", n, _re.IGNORECASE)
+    if m:
+        return f"맥스 먼데이: 다이맥스 {_poke_en_to_ko(m.group(1))}"
+
+    # GO Fest: "Pokémon GO Fest 2026: Copenhagen"
+    m = _re.match(r"^Pok[eé]mon GO Fest (\d+):\s*(.+)$", n, _re.IGNORECASE)
+    if m:
+        return f"포켓몬 GO 페스트 {m.group(1)}: {m.group(2)}"
+
+    # GO Tour: "Pokémon GO Tour: Unova"
+    m = _re.match(r"^Pok[eé]mon GO Tour:\s*(.+)$", n, _re.IGNORECASE)
+    if m:
+        return f"포켓몬 GO 투어: {m.group(1)}"
+
+    # Go Battle League — 파이프 구분자 있는 경우 앞부분만
+    if event_type == "go-battle-league" or "|" in n:
+        parts = [p.strip() for p in n.split("|")]
+        translated = parts[0]
+        for en, ko in _EVENT_TERM_KO.items():
+            translated = _re.sub(_re.escape(en), ko, translated, flags=_re.IGNORECASE)
+        return translated.strip()
+
+    # 매칭 없으면 일반 용어 치환
+    result = n
+    for en, ko in _EVENT_TERM_KO.items():
+        result = _re.sub(_re.escape(en), ko, result, flags=_re.IGNORECASE)
+    return result
+
+
 def _format_events(events: list[dict]) -> str:
     """현재 진행 중 + 7일 이내 예정 이벤트를 LLM용 텍스트로 포맷."""
     now = datetime.now(timezone.utc)
@@ -800,8 +932,11 @@ async def get_events_api():
             ed.get("communityday", {}).get("spawns") or
             ed.get("raidbattles", {})
         )
+        etype = e.get("eventType", "")
+        _ensure_raw()
         item = {
-            "name": e["name"], "type": e.get("eventType", ""),
+            "name": _translate_event_name(e["name"], etype),
+            "type": etype,
             "link": e.get("link", ""), "start": e["start"], "end": e["end"],
             "has_spawns": has_spawns,
         }
