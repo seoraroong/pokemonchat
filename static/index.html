@@ -1224,7 +1224,7 @@ function renderMegaRankings() {
     entries.map(e => {
       const spr = e.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${e.dex}.png` : '';
       const rc = e.rank<=3?' top3':'';
-      return `<div class="raid-row">
+      return `<div class="raid-row" ${e.dex?`onclick="openPokemonPopup(${e.dex})"`:''}>
         <span class="pvp-rank${rc}">#${e.rank}</span>
         <img class="pvp-sprite" src="${spr}" alt="${esc(e.ko)}" onerror="this.style.opacity='0.2'">
         <div class="pvp-info">
