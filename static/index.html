@@ -29,13 +29,13 @@
       background: #0f172a; color: #e2e8f0;
       display: flex; flex-direction: column; overflow: hidden;
     }
-    /* 데스크톱(500px 초과): 가운데 카드 */
+    /* 데스크톱(500px 초과): 가운데 카드 — PWA standalone이면 적용 안 함 */
     @media (min-width: 501px) {
-      body { display: flex; align-items: center; justify-content: center; height: 100dvh; }
-      #app { position: relative; max-width: 420px; height: 100dvh; max-height: 860px; }
+      html:not(.pwa-mode) body { display: flex; align-items: center; justify-content: center; height: 100dvh; }
+      html:not(.pwa-mode) #app { position: relative; max-width: 420px; height: 100dvh; max-height: 860px; }
     }
     @media (min-height: 900px) and (min-width: 501px) {
-      #app { border-radius: 24px; box-shadow: 0 32px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.05); }
+      html:not(.pwa-mode) #app { border-radius: 24px; box-shadow: 0 32px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.05); }
     }
 
     /* ── Header ── */
@@ -491,12 +491,17 @@
     .counter-move { font-size: 0.67rem; color: #64748b; }
   </style>
   <script>
-    // Samsung Internet / Galaxy PWA 초기 viewport 버그 수정
-    // PWA 첫 실행 시 980px 기본 뷰포트로 렌더링되는 문제 방지
     (function () {
+      // Samsung PWA: device-width 무시 우회 — screen.width로 viewport 직접 고정
       var m = document.querySelector('meta[name=viewport]');
-      if (m) { var c = m.content; m.content = ''; m.content = c; }
-      // innerHeight 기반 실제 vh CSS 변수 (Samsung 가상 키보드/네비 바 대응)
+      if (m) {
+        m.content = 'width=' + screen.width + ', initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover';
+      }
+      // PWA standalone 모드 감지 → 데스크탑 레이아웃 CSS 차단
+      var isStandalone = window.matchMedia('(display-mode: standalone)').matches
+                      || window.navigator.standalone === true;
+      if (isStandalone) document.documentElement.classList.add('pwa-mode');
+      // 실제 innerHeight를 CSS 변수로 (삼성 하단 바 대응)
       function applyVH() {
         document.documentElement.style.setProperty('--real-vh', window.innerHeight + 'px');
       }
