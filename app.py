@@ -1319,6 +1319,72 @@ async def get_raid_rankings():
     return result
 
 
+# ── Mega Rankings ─────────────────────────────────────────────────────
+_mega_rank_cache: dict | None = None
+
+def _mega_display_name(ko: str, form_name: str) -> str:
+    suffix = form_name.split("_mega")[-1].strip("_").upper()
+    return f"메가 {ko} {suffix}" if suffix else f"메가 {ko}"
+
+@app.get("/api/mega_rankings")
+async def get_mega_rankings():
+    global _mega_rank_cache
+    if _mega_rank_cache is not None:
+        return _mega_rank_cache
+    if not _ensure_raw() or not _gm_raw or not _go_moves_en:
+        return {}
+
+    type_entries: dict[str, list] = {}
+
+    for dex_str, gm in _gm_raw.items():
+        variant_forms = gm.get("variant_forms") or {}
+        fast_ids    = gm.get("fast_moves", [])
+        charged_ids = gm.get("charged_moves", [])
+        nd  = (_names_raw or {}).get(dex_str, {})
+        ko_base = nd.get("ko_name", "")
+        if not ko_base:
+            continue
+        dex = int(dex_str)
+
+        for form_name, fd in variant_forms.items():
+            if "_mega" not in form_name:
+                continue
+            atk = fd.get("atk", 0)
+            t1  = fd.get("type1", "")
+            t2  = fd.get("type2", "") or ""
+            if t2 == "none":
+                t2 = ""
+            if not atk or not t1:
+                continue
+            types = {t for t in [t1, t2] if t}
+            display = _mega_display_name(ko_base, form_name)
+
+            for ptype in types:
+                stab_fast    = [_go_moves_en[n] for n in fast_ids    if n in _go_moves_en and _go_moves_en[n].get("type") == ptype]
+                stab_charged = [_go_moves_en[n] for n in charged_ids if n in _go_moves_en and _go_moves_en[n].get("type") == ptype]
+                if not stab_fast or not stab_charged:
+                    continue
+                bf = max(stab_fast,    key=lambda m: m.get("dps_pve", 0))
+                bc = max(stab_charged, key=lambda m: m.get("power", 0) / max(m.get("energy_cost", 1), 1))
+                score = round(atk * (bf.get("dps_pve", 0) + bf.get("eps_pve", 0) * bc.get("power", 0) / max(bc.get("energy_cost", 1), 1)))
+                type_entries.setdefault(ptype, []).append({
+                    "dex": dex, "ko": display,
+                    "fast_ko": bf.get("ko_name") or bf.get("en_name", ""),
+                    "charged_ko": bc.get("ko_name") or bc.get("en_name", ""),
+                    "score": score,
+                })
+
+    result = {}
+    for ptype, entries in type_entries.items():
+        ranked = sorted(entries, key=lambda x: x["score"], reverse=True)[:10]
+        for i, e in enumerate(ranked, 1):
+            e["rank"] = i
+        result[ptype] = ranked
+
+    _mega_rank_cache = result
+    return result
+
+
 # ── Community Chat Rooms ──────────────────────────────────────────────
 import uuid   as _uuid
 import time   as _time

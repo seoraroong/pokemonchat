@@ -447,6 +447,8 @@
     /* ── 레이드 순위 ── */
     #raid-type-filter { display:none; gap:5px; overflow-x:auto; padding:4px 12px 8px; scrollbar-width:none; flex-shrink:0; }
     #raid-type-filter::-webkit-scrollbar { display:none; }
+    #mega-type-filter { display:none; gap:5px; overflow-x:auto; padding:4px 12px 8px; scrollbar-width:none; flex-shrink:0; }
+    #mega-type-filter::-webkit-scrollbar { display:none; }
     .raid-type-btn { flex-shrink:0; padding:4px 10px; border-radius:20px; font-size:0.73rem; font-weight:600; cursor:pointer; border:2px solid transparent; font-family:inherit; opacity:0.55; transition:opacity 0.15s; }
     .raid-type-btn.active { opacity:1; border-color:rgba(255,255,255,0.4); }
     .raid-row { display:flex; align-items:center; gap:8px; padding:6px 8px; background:#1e293b; border:1px solid #2d3f55; border-radius:10px; margin-bottom:5px; cursor:pointer; transition:background 0.12s; }
@@ -579,8 +581,10 @@
       <button class="pvp-tab" data-league="ul">하이퍼리그<span class="pvp-cp">CP 2,500</span></button>
       <button class="pvp-tab" data-league="ml">마스터리그<span class="pvp-cp">무제한</span></button>
       <button class="pvp-tab" data-league="raid">⚡ 레이드<span class="pvp-cp">타입별 순위</span></button>
+      <button class="pvp-tab" data-league="mega">✨ 메가<span class="pvp-cp">타입별 순위</span></button>
     </div>
     <div id="raid-type-filter"></div>
+    <div id="mega-type-filter"></div>
     <div id="pvp-list"><div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div></div>
   </div>
 
@@ -1127,15 +1131,25 @@ document.querySelectorAll('.km-tab').forEach(btn=>btn.addEventListener('click',(
 // ── PvP ───────────────────────────────────────────────────────────
 let pvpData={}, currentLeague='gl', pvpLoaded={};
 let _raidData=null, _raidType='fire';
+let _megaData=null, _megaType='dragon';
 
 async function loadPvP(league) {
   const filterEl = document.getElementById('raid-type-filter');
+  const megaFilterEl = document.getElementById('mega-type-filter');
   if (league === 'raid') {
     filterEl.style.display = 'flex';
+    megaFilterEl.style.display = 'none';
     await loadRaidRankings();
     return;
   }
+  if (league === 'mega') {
+    megaFilterEl.style.display = 'flex';
+    filterEl.style.display = 'none';
+    await loadMegaRankings();
+    return;
+  }
   filterEl.style.display = 'none';
+  megaFilterEl.style.display = 'none';
   if(pvpData[league]){renderPvP();return;}
   const listEl=document.getElementById('pvp-list');
   listEl.innerHTML='<div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div>';
@@ -1173,6 +1187,55 @@ function selectRaidType(type) {
   document.querySelectorAll('.raid-type-btn').forEach(b=>b.classList.toggle('active', b.dataset.type===type));
   renderRaidRankings();
 }
+async function loadMegaRankings() {
+  const listEl = document.getElementById('pvp-list');
+  const filterEl = document.getElementById('mega-type-filter');
+  if (!_megaData) {
+    listEl.innerHTML='<div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div>';
+    try {
+      _megaData = await (await fetch('/api/mega_rankings')).json();
+    } catch {
+      listEl.innerHTML='<div style="text-align:center;padding:32px;color:#475569">데이터를 불러올 수 없어요.</div>';
+      return;
+    }
+    const types = Object.keys(_megaData).sort((a,b)=>(TYPE_KO[a]||a).localeCompare(TYPE_KO[b]||b));
+    if (types.length && !types.includes(_megaType)) _megaType = types[0];
+    filterEl.innerHTML = types.map(t => {
+      const ko = TYPE_KO[t] || t;
+      const bg = TYPE_BG[t] || '#71727a';
+      return `<button class="raid-type-btn${t===_megaType?' active':''}" data-type="${t}" style="background:${bg};color:#fff" onclick="selectMegaType('${t}')">${ko}</button>`;
+    }).join('');
+  } else {
+    document.querySelectorAll('#mega-type-filter .raid-type-btn').forEach(b=>b.classList.toggle('active', b.dataset.type===_megaType));
+  }
+  renderMegaRankings();
+}
+function selectMegaType(type) {
+  _megaType = type;
+  document.querySelectorAll('#mega-type-filter .raid-type-btn').forEach(b=>b.classList.toggle('active', b.dataset.type===type));
+  renderMegaRankings();
+}
+function renderMegaRankings() {
+  const listEl = document.getElementById('pvp-list');
+  const entries = (_megaData||{})[_megaType]||[];
+  if (!entries.length) { listEl.innerHTML='<div style="text-align:center;padding:32px;color:#475569">데이터가 없어요.</div>'; return; }
+  const typeKo = TYPE_KO[_megaType] || _megaType;
+  listEl.innerHTML = `<div style="font-size:0.75rem;color:#64748b;padding:4px 0 8px;text-align:center">✨ ${typeKo}타입 최강 메가 진화 TOP ${entries.length}</div>` +
+    entries.map(e => {
+      const spr = e.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${e.dex}.png` : '';
+      const rc = e.rank<=3?' top3':'';
+      return `<div class="raid-row">
+        <span class="pvp-rank${rc}">#${e.rank}</span>
+        <img class="pvp-sprite" src="${spr}" alt="${esc(e.ko)}" onerror="this.style.opacity='0.2'">
+        <div class="pvp-info">
+          <div class="pvp-name-line"><span class="pvp-name">${esc(e.ko)}</span></div>
+          <div class="raid-move-line pvp-moves">${esc(e.fast_ko)} / ${esc(e.charged_ko)}</div>
+        </div>
+        <span class="raid-score-badge">${e.score.toLocaleString()}</span>
+      </div>`;
+    }).join('');
+}
+
 function renderRaidRankings() {
   const listEl = document.getElementById('pvp-list');
   const entries = (_raidData||{})[_raidType]||[];
