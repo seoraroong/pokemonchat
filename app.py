@@ -2111,12 +2111,12 @@ _CM_WIN_SCORE = 3
 _CM_MAX_PLAYERS = 8
 
 
-_CM_DIFF_RANGE = {"easy": 151, "normal": 386, "hard": 800}
+_CM_DIFF_RANGE = {"easy": 151, "normal": 493, "hard": 9999}
 
 def _cm_rand_word(difficulty: str = "normal") -> str:
     if not _names_raw:
         return "이상해씨"
-    max_dex = _CM_DIFF_RANGE.get(difficulty, 386)
+    max_dex = _CM_DIFF_RANGE.get(difficulty, 493)
     pool = [v["ko_name"] for k, v in _names_raw.items()
             if v.get("ko_name") and 1 <= int(k) <= max_dex]
     return _random.choice(pool) if pool else "이상해씨"
