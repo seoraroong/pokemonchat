@@ -520,8 +520,8 @@
     .cm-player-chip .score { font-weight:700; color:#60a5fa; }
     #cm-timer { font-size:0.78rem; font-weight:700; color:#94a3b8; min-width:28px; text-align:right; flex-shrink:0; }
     #cm-timer.urgent { color:#ef4444; }
-    #cm-canvas-wrap { flex-shrink:0; padding:8px 12px 0; }
-    #cm-canvas { display:block; width:100%; aspect-ratio:1; border-radius:10px; background:#fff; cursor:crosshair; touch-action:none; }
+    #cm-canvas-wrap { flex-shrink:0; padding:6px 12px 0; display:flex; justify-content:center; }
+    #cm-canvas { display:block; width:min(100%, 52vw); height:min(100%, 52vw); border-radius:10px; background:#fff; cursor:crosshair; touch-action:none; }
     #cm-tools { display:none; flex-wrap:wrap; gap:5px; align-items:center; padding:6px 12px; flex-shrink:0; }
     #cm-tools.visible { display:flex; }
     .cm-color-btn { width:22px; height:22px; border-radius:50%; border:2px solid transparent; cursor:pointer; transition:border-color 0.12s; flex-shrink:0; }
@@ -533,7 +533,7 @@
     #cm-clear-btn { background:#1e293b; border:1px solid #7f1d1d; border-radius:8px; padding:2px 8px; color:#f87171; font-size:0.72rem; cursor:pointer; font-family:inherit; margin-left:auto; }
     #cm-word-box { display:none; margin:6px 12px 0; padding:6px 12px; background:#1c2a1c; border:1px solid #166534; border-radius:10px; text-align:center; font-size:0.84rem; font-weight:700; color:#4ade80; flex-shrink:0; }
     #cm-word-box.visible { display:block; }
-    #cm-chat { flex:1; overflow-y:auto; padding:6px 12px; display:flex; flex-direction:column; gap:3px; min-height:0; }
+    #cm-chat { flex:1; overflow-y:auto; padding:6px 12px; display:flex; flex-direction:column; gap:3px; min-height:80px; }
     .cm-chat-msg { font-size:0.8rem; color:#94a3b8; }
     .cm-chat-msg .nm { font-weight:600; color:#e2e8f0; }
     .cm-chat-msg.correct { color:#4ade80; font-weight:700; }
@@ -2500,13 +2500,14 @@ function cmLeaveCmGame() {
 }
 
 function _cmCmGameInit() {
-  // canvas setup
   const canvas = document.getElementById('cm-canvas');
   const ctx = canvas.getContext('2d');
-  const wrap = document.getElementById('cm-canvas-wrap');
-  const size = wrap.clientWidth - 24;
-  canvas.width = size; canvas.height = size;
-  ctx.fillStyle = '#ffffff'; ctx.fillRect(0,0,size,size);
+  // CSS 적용 후 실제 크기로 픽셀 해상도 설정
+  requestAnimationFrame(() => {
+    const size = canvas.offsetWidth || 200;
+    canvas.width = size; canvas.height = size;
+    ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, size, size);
+  });
 
   document.getElementById('cm-chat').innerHTML = '';
   document.getElementById('cm-players-bar').innerHTML = '';
@@ -2656,6 +2657,10 @@ function _cmStartRound(msg) {
 function _cmClearLocal() {
   const canvas = document.getElementById('cm-canvas');
   const ctx = canvas.getContext('2d');
+  if (!canvas.width || canvas.width < 10) {
+    const s = canvas.offsetWidth || 200;
+    canvas.width = s; canvas.height = s;
+  }
   ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
