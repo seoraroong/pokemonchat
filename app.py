@@ -291,6 +291,26 @@ _REGION_PREFIX_KO: dict[str, str] = {
     "mega": "메가",
 }
 
+_MONTH_KO: dict[str, str] = {
+    "january": "1월", "february": "2월", "march": "3월", "april": "4월",
+    "may": "5월", "june": "6월", "july": "7월", "august": "8월",
+    "september": "9월", "october": "10월", "november": "11월", "december": "12월",
+}
+
+_KNOWN_EVENTS_KO: dict[str, str] = {
+    "forever forward": "포에버 포워드",
+    "go battle day": "GO 배틀 데이",
+    "raid weekend": "레이드 위크엔드",
+    "adventure week": "어드벤처 위크",
+    "water festival": "워터 페스티벌",
+    "halloween": "할로윈",
+    "festival of lights": "빛의 축제",
+    "spring into spring": "봄맞이 이벤트",
+    "spring event": "봄 이벤트",
+    "winter holiday": "겨울 이벤트",
+    "shedding light on uxie": "유크시의 빛",
+}
+
 _EVENT_TERM_KO: dict[str, str] = {
     "community day": "커뮤니티 데이",
     "spotlight hour": "스포트라이트 아워",
@@ -298,6 +318,7 @@ _EVENT_TERM_KO: dict[str, str] = {
     "raid day": "레이드 데이",
     "super mega raid day": "슈퍼 메가 레이드 데이",
     "raid battles": "레이드",
+    "shadow raids": "쉐도우 레이드",
     "max monday": "맥스 먼데이",
     "great league": "슈퍼리그",
     "ultra league": "하이퍼리그",
@@ -306,15 +327,30 @@ _EVENT_TERM_KO: dict[str, str] = {
     "go battle league": "GO 배틀리그",
     "pokémon go fest": "포켓몬 GO 페스트",
     "pokemon go fest": "포켓몬 GO 페스트",
+    "pokémon": "포켓몬",
+    "pokemon": "포켓몬",
     "dynamax": "다이맥스",
     "gigantamax": "거다이맥스",
     "go tour": "GO 투어",
+    "go pass": "GO 패스",
     "in mega raids": "메가 레이드",
     "in 5-star raid battles": "5성 레이드",
     "in 4-star raid battles": "4성 레이드",
     "in 3-star raid battles": "3성 레이드",
     "in 1-star raid battles": "1성 레이드",
     "during max monday": "맥스 먼데이 중",
+    "north america": "북미",
+    "europe": "유럽",
+    "asia-pacific": "아시아태평양",
+    "latin america": "중남미",
+    "international championships": "인터내셔널 챔피언십",
+    "championships": "챔피언십",
+    "championship": "챔피언십",
+    " and ": " & ",
+    "edition": "에디션",
+    "cup": "컵",
+    "season": "시즌",
+    "choose your path": "나만의 여정 선택",
 }
 
 def _build_en_ko_lookup() -> dict[str, str]:
@@ -347,17 +383,28 @@ def _poke_en_to_ko(en_name: str) -> str:
             return f"{prefix_ko} {base_ko}"
     return name  # 번역 없으면 원문 유지
 
+def _apply_terms(text: str) -> str:
+    import re as _re
+    result = text
+    for en, ko in _EVENT_TERM_KO.items():
+        result = _re.sub(_re.escape(en), ko, result, flags=_re.IGNORECASE)
+    return result.strip()
+
 def _translate_event_name(name: str, event_type: str) -> str:
     """이벤트 이름을 한국어로 번역."""
     import re as _re
     n = name.strip()
 
-    # Community Day: "Frigibax Community Day"
+    # 알려진 고유 이벤트명 직접 매핑
+    if n.lower() in _KNOWN_EVENTS_KO:
+        return _KNOWN_EVENTS_KO[n.lower()]
+
+    # Community Day
     m = _re.match(r"^(.+?)\s+Community Day$", n, _re.IGNORECASE)
     if m:
         return f"{_poke_en_to_ko(m.group(1))} 커뮤니티 데이"
 
-    # Spotlight Hour: "Swinub Spotlight Hour"
+    # Spotlight Hour
     m = _re.match(r"^(.+?)\s+Spotlight Hour$", n, _re.IGNORECASE)
     if m:
         return f"{_poke_en_to_ko(m.group(1))} 스포트라이트 아워"
@@ -369,12 +416,12 @@ def _translate_event_name(name: str, event_type: str) -> str:
         ko_names = " & ".join(_poke_en_to_ko(p) for p in pokemons)
         return f"{ko_names} 레이드 아워"
 
-    # Raid Day: "Skarmory Super Mega Raid Day" / "X Raid Day"
+    # Raid Day
     m = _re.match(r"^(.+?)\s+(?:Super Mega )?Raid Day$", n, _re.IGNORECASE)
     if m:
         return f"{_poke_en_to_ko(m.group(1))} 레이드 데이"
 
-    # 5-star Raid Battles: "Zekrom in 5-star Raid Battles"
+    # N-star Raid Battles: "Zekrom in 5-star Raid Battles"
     m = _re.match(r"^(.+?)\s+in\s+(\d+)-star Raid Battles$", n, _re.IGNORECASE)
     if m:
         return f"{_poke_en_to_ko(m.group(1))} {m.group(2)}성 레이드"
@@ -383,6 +430,11 @@ def _translate_event_name(name: str, event_type: str) -> str:
     m = _re.match(r"^Mega (.+?)\s+in Mega Raids$", n, _re.IGNORECASE)
     if m:
         return f"메가 {_poke_en_to_ko(m.group(1))} 메가 레이드"
+
+    # Shadow Raids: "Shadow Dialga in Shadow Raids"
+    m = _re.match(r"^Shadow (.+?)\s+in Shadow Raids$", n, _re.IGNORECASE)
+    if m:
+        return f"다크 {_poke_en_to_ko(m.group(1))} 쉐도우 레이드"
 
     # Max Monday: "Dynamax Roggenrola during Max Monday"
     m = _re.match(r"^Dynamax (.+?)\s+during Max Monday$", n, _re.IGNORECASE)
@@ -399,19 +451,19 @@ def _translate_event_name(name: str, event_type: str) -> str:
     if m:
         return f"포켓몬 GO 투어: {m.group(1)}"
 
-    # Go Battle League — 파이프 구분자 있는 경우 앞부분만
+    # GO Pass: "GO Pass: June"
+    m = _re.match(r"^GO Pass:\s*(.+)$", n, _re.IGNORECASE)
+    if m:
+        month_ko = _MONTH_KO.get(m.group(1).strip().lower(), m.group(1).strip())
+        return f"GO 패스: {month_ko}"
+
+    # Go Battle League — 파이프 구분자로 구분된 경우 앞부분만 번역
     if event_type == "go-battle-league" or "|" in n:
         parts = [p.strip() for p in n.split("|")]
-        translated = parts[0]
-        for en, ko in _EVENT_TERM_KO.items():
-            translated = _re.sub(_re.escape(en), ko, translated, flags=_re.IGNORECASE)
-        return translated.strip()
+        return _apply_terms(parts[0])
 
-    # 매칭 없으면 일반 용어 치환
-    result = n
-    for en, ko in _EVENT_TERM_KO.items():
-        result = _re.sub(_re.escape(en), ko, result, flags=_re.IGNORECASE)
-    return result
+    # 매칭 없으면 알려진 용어만 치환
+    return _apply_terms(n)
 
 
 def _format_events(events: list[dict]) -> str:
