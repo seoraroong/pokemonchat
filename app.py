@@ -1170,12 +1170,12 @@ def _raid_ko(en: str) -> tuple[int | None, str]:
     info = en2info.get(base.lower()) or en2info.get(_strip_form(base).lower())
     dex = info[0] if info else None
     ko  = prefix_ko + (info[1] if info else base)
-    # 리전폼은 PokeAPI form ID로 교체 (스프라이트 정확도 향상)
-    full_en_lower = en.lower().replace("shadow ", "").strip()
-    form_dex = _REGIONAL_FORM_DEX.get(full_en_lower)
-    if form_dex:
-        dex = form_dex
     return dex, ko
+
+def _raid_form_dex(en: str) -> int | None:
+    """리전폼의 PokeAPI form ID 반환 (스프라이트 전용, 데이터 조회에는 사용 금지)"""
+    key = en.lower().replace("shadow ", "").strip()
+    return _REGIONAL_FORM_DEX.get(key)
 
 def _build_raids_from_scraped(raw_data: list) -> dict:
     by_tier: dict[str, list] = {}
@@ -1207,8 +1207,10 @@ def _build_raids_from_scraped(raw_data: list) -> dict:
             cp_n   = cp.get("normal") or {}
             cp_b   = cp.get("boosted") or {}
             weather = [w.get("name","").lower() for w in (boss.get("boostedWeather") or []) if isinstance(w,dict)]
+            form_dex = _raid_form_dex(en)
             lst.append({
                 "en_name": en, "ko_name": ko, "slug": slug, "dex": dex,
+                "form_dex": form_dex,  # 리전폼 스프라이트 전용, None이면 dex 사용
                 "types_ko": types_ko,
                 "is_shiny": bool(boss.get("shiny", boss.get("canBeShiny", False)) if isinstance(boss, dict) else False),
                 "cp_min": cp_n.get("min"), "cp_max": cp_n.get("max"),

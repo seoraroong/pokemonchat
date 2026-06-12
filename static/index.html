@@ -1064,8 +1064,9 @@ async function renderRaidBossDetails(body, raidBosses) {
   for (const boss of raidBosses) {
     const bd = _raidBossMap[(boss.en||'').toLowerCase()] || {};
     const isShiny = !!(boss.can_shiny || bd.is_shiny);
-    const sprNormal = boss.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${boss.dex}.png` : '';
-    const sprShiny  = boss.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${boss.dex}.png` : '';
+    const spriteDex = bd.form_dex || boss.dex;
+    const sprNormal = spriteDex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${spriteDex}.png` : '';
+    const sprShiny  = spriteDex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${spriteDex}.png` : '';
     const typeKos = (bd.types_ko||'').split(' / ').filter(Boolean);
     const typeBadges = typeKos.map(t=>{const en=TYPE_EN_FROM_KO[t]||'';return`<span class="type-badge" style="background:${TYPE_BG[en]||'#71727a'}">${t}</span>`;}).join('');
     const cpNormal  = (bd.cp_min && bd.cp_max)         ? `<div class="boss-cp-badge">일반 <span>${bd.cp_min.toLocaleString()}–${bd.cp_max.toLocaleString()} CP</span></div>` : '';
@@ -1201,13 +1202,14 @@ async function loadRaids() {
       const period = endLabel ? `<span style="font-size:0.65rem;font-weight:400;color:#64748b;margin-left:6px">${endLabel}</span>` : '';
       html+=`<div class="tier-section"><div class="tier-label">${label} (${bosses.length})${period}</div><div class="raid-grid">`;
       for(const boss of bosses){
-        const artUrl=boss.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${boss.dex}.png`:'';
-        const fallbackUrl=boss.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${boss.dex}.png`:`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Ccircle cx='29' cy='29' r='27' fill='%231e293b'/%3E%3C/svg%3E`;
+        const spriteDex = boss.form_dex || boss.dex;  // 스프라이트: 리전폼 ID 우선
+        const artUrl=spriteDex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${spriteDex}.png`:'';
+        const fallbackUrl=spriteDex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${spriteDex}.png`:`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Ccircle cx='29' cy='29' r='27' fill='%231e293b'/%3E%3C/svg%3E`;
         const spriteUrl=artUrl||fallbackUrl;
         const typeKos=boss.types_ko?boss.types_ko.split(' / '):[];
         const typeHtml=typeKos.map(t=>{const en=TYPE_EN_FROM_KO[t]||'';return`<span class="type-badge" style="background:${TYPE_BG[en]||'#71727a'}">${t}</span>`;}).join('');
         const safeSlug=(boss.slug||'').replace(/'/g,"\\'");
-        const clickAttr=boss.dex?`onclick="openPokemonPopup(${boss.dex},'${safeSlug}')"`:'' ;
+        const clickAttr=boss.dex?`onclick="openPokemonPopup(${boss.dex},'${safeSlug}')"`:'' ;  // 팝업: 표준 dex
         const cpText = (boss.cp_min && boss.cp_max)
           ? `<div class="raid-cp">${boss.cp_min.toLocaleString()}–${boss.cp_max.toLocaleString()}</div>` : '';
         const cpBoost = (boss.cp_boosted_min && boss.cp_boosted_max)
