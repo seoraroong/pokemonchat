@@ -379,6 +379,14 @@
     .shiny-toggle-btn { display: block; margin: 6px auto 0; background: none; border: 1px solid #f59e0b; color: #f59e0b; border-radius: 12px; padding: 3px 16px; font-size: 0.72rem; cursor: pointer; font-family: inherit; transition: background 0.15s; }
     .shiny-toggle-btn:hover { background: rgba(245,158,11,0.12); }
     .shiny-toggle-btn.active { background: rgba(245,158,11,0.18); }
+    .shadow-info-box { background: linear-gradient(135deg,#1a0a2e,#120820); border: 1px solid rgba(120,0,220,0.5); border-radius: 12px; padding: 10px 14px; margin: 10px 0 4px; }
+    .shadow-info-title { font-size: 0.72rem; font-weight: 700; color: #b060ff; margin-bottom: 8px; letter-spacing: 0.3px; }
+    .shadow-stat-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; padding: 3px 0; border-bottom: 1px solid rgba(100,0,180,0.2); }
+    .shadow-stat-row:last-of-type { border-bottom: none; }
+    .shadow-stat-label { color: #94a3b8; }
+    .shadow-atk { color: #f87171; font-weight: 700; }
+    .shadow-def { color: #60a5fa; font-weight: 700; }
+    .shadow-note { font-size: 0.68rem; color: #7c3aed; margin-top: 7px; line-height: 1.5; padding-top: 6px; border-top: 1px solid rgba(100,0,180,0.2); }
     .boss-sprite-pair { display: flex; gap: 6px; align-items: center; }
     .boss-sprite-pair img { width: 52px; height: 52px; object-fit: contain; }
     .boss-sprite-label { font-size: 0.58rem; color: #475569; text-align: center; margin-top: 2px; }
@@ -1241,7 +1249,7 @@ async function loadRaids() {
         const typeKos=boss.types_ko?boss.types_ko.split(' / '):[];
         const typeHtml=typeKos.map(t=>{const en=TYPE_EN_FROM_KO[t]||'';return`<span class="type-badge" style="background:${TYPE_BG[en]||'#71727a'}">${t}</span>`;}).join('');
         const safeSlug=(boss.slug||'').replace(/'/g,"\\'");
-        const clickAttr=boss.dex?`onclick="openPokemonPopup(${boss.dex},'${safeSlug}')"`:'' ;  // 팝업: 표준 dex
+        const clickAttr=boss.dex?`onclick="openPokemonPopup(${boss.dex},'${safeSlug}',${isShadow})"`:'' ;
         const cpText = (boss.cp_min && boss.cp_max)
           ? `<div class="raid-cp">${boss.cp_min.toLocaleString()}–${boss.cp_max.toLocaleString()}</div>` : '';
         const cpBoost = (boss.cp_boosted_min && boss.cp_boosted_max)
@@ -1489,7 +1497,7 @@ function renderPvP() {
 document.querySelectorAll('.pvp-tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.pvp-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentLeague=btn.dataset.league;loadPvP(currentLeague);}));
 
 // ── 포켓몬 팝업 ───────────────────────────────────────────────────
-async function openPokemonPopup(dex, bossSlug=null) {
+async function openPokemonPopup(dex, bossSlug=null, isShadow=false) {
   if(!dex) return;
   const popup=document.getElementById('pokemon-popup'), overlay=document.getElementById('popup-overlay'), body=document.getElementById('popup-body');
   body.innerHTML='<div style="text-align:center;padding:36px 0;color:#64748b">불러오는 중...</div>';
@@ -1515,8 +1523,17 @@ async function openPokemonPopup(dex, bossSlug=null) {
     const counterSlug=bossSlug||toSlug(p.en);
 
     const shinyArtUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${dex}.png`;
+    const spriteImg = `<img class="popup-sprite" id="popup-main-sprite" src="${artUrl}" alt="${esc(p.ko)}" onerror="this.src='${fbUrl}'">`;
+    const spriteHtml = isShadow ? `<div class="shadow-aura" style="display:block;text-align:center">${spriteImg}</div>` : spriteImg;
+    const shadowSection = isShadow ? `
+      <div class="shadow-info-box">
+        <div class="shadow-info-title">⚡ 다크 포켓몬 보정</div>
+        <div class="shadow-stat-row"><span class="shadow-stat-label">공격력</span><span class="shadow-atk">× 1.2 &nbsp;↑ 20%</span></div>
+        <div class="shadow-stat-row"><span class="shadow-stat-label">방어력</span><span class="shadow-def">× 0.833 &nbsp;↓ 17%</span></div>
+        <div class="shadow-note">기본 기술로 <b style="color:#c084fc">답답함 (Frustration)</b> 고정 장착<br>이벤트 기간에만 다른 기술로 교체 가능 · 정화 시 일반 포켓몬으로 전환</div>
+      </div>` : '';
     body.innerHTML=`
-      <img class="popup-sprite" id="popup-main-sprite" src="${artUrl}" alt="${esc(p.ko)}" onerror="this.src='${fbUrl}'">
+      ${spriteHtml}
       <button class="shiny-toggle-btn" id="shiny-toggle-btn" onclick="toggleShinySprite(${dex})">✦ 색변 보기</button>
       <div class="popup-num">#${num}</div><div class="popup-ko">${esc(p.ko)}</div><div class="popup-en">${esc(p.en)}</div>
       <div class="popup-types"><span class="type-badge" style="background:${t1bg}">${t1ko}</span>${t2badge}</div>
@@ -1527,6 +1544,7 @@ async function openPokemonPopup(dex, bossSlug=null) {
         <div class="stat-item"><div class="stat-label">체력</div><div class="stat-val">${p.sta||'—'}</div></div>
         <div class="stat-item"><div class="stat-label">Max CP</div><div class="stat-val">${cp40}</div></div>
       </div>
+      ${shadowSection}
       <div class="move-section" id="evo-section"></div>
       ${fastHtml?`<div class="move-section"><div class="move-section-title">빠른 기술</div><div class="move-list">${fastHtml}</div></div>`:''}
       ${chargedHtml?`<div class="move-section"><div class="move-section-title">스페셜 기술</div><div class="move-list">${chargedHtml}</div></div>`:''}
