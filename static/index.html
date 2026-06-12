@@ -1250,7 +1250,7 @@ async function loadRaids() {
         const typeKos=boss.types_ko?boss.types_ko.split(' / '):[];
         const typeHtml=typeKos.map(t=>{const en=TYPE_EN_FROM_KO[t]||'';return`<span class="type-badge" style="background:${TYPE_BG[en]||'#71727a'}">${t}</span>`;}).join('');
         const safeSlug=(boss.slug||'').replace(/'/g,"\\'");
-        const clickAttr=boss.dex?`onclick="openPokemonPopup(${boss.dex},'${safeSlug}',${isShadow})"`:'' ;
+        const clickAttr=boss.dex?`onclick="openPokemonPopup(${boss.dex},'${safeSlug}',${isShadow},${boss.form_dex||'null'})"`:'' ;
         const cpText = (boss.cp_min && boss.cp_max)
           ? `<div class="raid-cp">${boss.cp_min.toLocaleString()}–${boss.cp_max.toLocaleString()}</div>` : '';
         const cpBoost = (boss.cp_boosted_min && boss.cp_boosted_max)
@@ -1497,7 +1497,7 @@ function renderPvP() {
 document.querySelectorAll('.pvp-tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.pvp-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');currentLeague=btn.dataset.league;loadPvP(currentLeague);}));
 
 // ── 포켓몬 팝업 ───────────────────────────────────────────────────
-async function openPokemonPopup(dex, bossSlug=null, isShadow=false) {
+async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null) {
   if(!dex) return;
   const popup=document.getElementById('pokemon-popup'), overlay=document.getElementById('popup-overlay'), body=document.getElementById('popup-body');
   body.innerHTML='<div style="text-align:center;padding:36px 0;color:#64748b">불러오는 중...</div>';
@@ -1517,12 +1517,13 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false) {
     const fastHtml=(p.fast_moves||[]).map(m=>mkMoveChip(m,eliteFastIds)).join('');
     const chargedHtml=(p.charged_moves||[]).map(m=>mkMoveChip(m,eliteChargedIds)).join('');
     const cp40=p.cp40?p.cp40.toLocaleString():'—';
-    const artUrl=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${dex}.png`;
-    const fbUrl=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${dex}.png`;
+    const spriteDex = formDex || dex;
+    const artUrl=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${spriteDex}.png`;
+    const fbUrl=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${spriteDex}.png`;
     const koSafe=p.ko.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
     const counterSlug=bossSlug||toSlug(p.en);
 
-    const shinyArtUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${dex}.png`;
+    const shinyArtUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${spriteDex}.png`;
     const spriteImg = `<img class="popup-sprite" id="popup-main-sprite" src="${artUrl}" alt="${esc(p.ko)}" onerror="this.src='${fbUrl}'">`;
     const spriteHtml = isShadow ? `<div style="text-align:center"><div class="shadow-aura" style="display:inline-flex">${spriteImg}</div></div>` : spriteImg;
     const shadowSection = isShadow ? `
@@ -1534,7 +1535,7 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false) {
       </div>` : '';
     body.innerHTML=`
       ${spriteHtml}
-      <button class="shiny-toggle-btn" id="shiny-toggle-btn" onclick="toggleShinySprite(${dex})">✦ 색변 보기</button>
+      <button class="shiny-toggle-btn" id="shiny-toggle-btn" onclick="toggleShinySprite(${spriteDex})">✦ 색변 보기</button>
       <div class="popup-num">#${num}</div><div class="popup-ko">${esc(p.ko)}</div><div class="popup-en">${esc(p.en)}</div>
       <div class="popup-types"><span class="type-badge" style="background:${t1bg}">${t1ko}</span>${t2badge}</div>
       ${weatherBoostHtml(p.t1, p.t2)}
