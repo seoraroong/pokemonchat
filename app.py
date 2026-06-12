@@ -2111,11 +2111,14 @@ _CM_WIN_SCORE = 3
 _CM_MAX_PLAYERS = 8
 
 
-def _cm_rand_word() -> str:
+_CM_DIFF_RANGE = {"easy": 151, "normal": 386, "hard": 800}
+
+def _cm_rand_word(difficulty: str = "normal") -> str:
     if not _names_raw:
         return "이상해씨"
+    max_dex = _CM_DIFF_RANGE.get(difficulty, 386)
     pool = [v["ko_name"] for k, v in _names_raw.items()
-            if v.get("ko_name") and 1 <= int(k) <= 800]
+            if v.get("ko_name") and 1 <= int(k) <= max_dex]
     return _random.choice(pool) if pool else "이상해씨"
 
 
@@ -2150,7 +2153,7 @@ async def _cm_start_round(room_id: str) -> None:
     room = _cm_rooms.get(room_id)
     if not room:
         return
-    word = _cm_rand_word()
+    word = _cm_rand_word(room.get("difficulty", "normal"))
     room.update(word=word, status="playing", guessed=set())
     if room.get("round_task"):
         room["round_task"].cancel()
@@ -2236,14 +2239,17 @@ async def _cm_wait_timer(room_id: str) -> None:
 
 class _CmCreateReq(BaseModel):
     nick: str
+    difficulty: str = "normal"
 
 
 @app.post("/api/catchmind/create")
 async def cm_create_room(req: _CmCreateReq):
     room_id = _cm_uuid.uuid4().hex[:6].upper()
+    diff = req.difficulty if req.difficulty in _CM_DIFF_RANGE else "normal"
     room: dict = {
         "room_id": room_id,
         "creator": req.nick.strip()[:15] or "트레이너",
+        "difficulty": diff,
         "players": {},
         "status": "waiting",
         "word": None,
@@ -2261,7 +2267,8 @@ async def cm_create_room(req: _CmCreateReq):
 async def cm_list_rooms():
     return [
         {"room_id": r["room_id"], "creator": r["creator"],
-         "status": r["status"], "players": len(r["players"])}
+         "status": r["status"], "players": len(r["players"]),
+         "difficulty": r.get("difficulty", "normal")}
         for r in _cm_rooms.values()
         if r["status"] in ("waiting", "playing")
     ]
