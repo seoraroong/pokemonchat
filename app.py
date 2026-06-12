@@ -1126,6 +1126,27 @@ _RAID_PREFIXES = [
     ("galarian ", "가라르 "), ("hisuian ", "히스이 "), ("paldean ", "팔데아 "),
 ]
 
+# PokeAPI regional form IDs (일반 dex 번호와 다른 경우만)
+_REGIONAL_FORM_DEX: dict[str, int] = {
+    "alolan rattata": 10091, "alolan raticate": 10092, "alolan raichu": 10093,
+    "alolan sandshrew": 10094, "alolan sandslash": 10095, "alolan vulpix": 10096,
+    "alolan ninetales": 10097, "alolan diglett": 10098, "alolan dugtrio": 10099,
+    "alolan meowth": 10100, "alolan persian": 10101, "alolan geodude": 10102,
+    "alolan graveler": 10103, "alolan golem": 10104, "alolan grimer": 10105,
+    "alolan muk": 10106, "alolan exeggutor": 10107, "alolan marowak": 10108,
+    "galarian meowth": 10158, "galarian ponyta": 10159, "galarian rapidash": 10160,
+    "galarian slowpoke": 10161, "galarian slowbro": 10162, "galarian farfetchd": 10163,
+    "galarian weezing": 10164, "galarian mr. mime": 10165, "galarian corsola": 10167,
+    "galarian zigzagoon": 10168, "galarian linoone": 10169, "galarian darumaka": 10174,
+    "galarian darmanitan": 10175, "galarian yamask": 10178, "galarian stunfisk": 10179,
+    "hisuian growlithe": 10229, "hisuian arcanine": 10230, "hisuian voltorb": 10231,
+    "hisuian electrode": 10232, "hisuian typhlosion": 10233, "hisuian qwilfish": 10234,
+    "hisuian sneasel": 10235, "hisuian samurott": 10236, "hisuian lilligant": 10237,
+    "hisuian zorua": 10238, "hisuian zoroark": 10239, "hisuian braviary": 10240,
+    "hisuian sliggoo": 10241, "hisuian goodra": 10242, "hisuian avalugg": 10243,
+    "hisuian decidueye": 10244,
+}
+
 def _normalize_raid_tier(raw: str) -> str:
     return _TIER_NORM.get(raw.lower().strip(), raw)
 
@@ -1136,13 +1157,24 @@ def _strip_form(en: str) -> str:
 def _raid_ko(en: str) -> tuple[int | None, str]:
     en2info = _get_en2info()
     prefix_ko, base = "", en
-    for en_pfx, ko_pfx in _RAID_PREFIXES:
-        if en.lower().startswith(en_pfx):
-            prefix_ko, base = ko_pfx, en[len(en_pfx):]
-            break
+    # 접두사를 모두 벗길 때까지 반복 ("Shadow Alolan Marowak" → "다크 알로라 " + "Marowak")
+    changed = True
+    while changed:
+        changed = False
+        for en_pfx, ko_pfx in _RAID_PREFIXES:
+            if base.lower().startswith(en_pfx):
+                prefix_ko += ko_pfx
+                base = base[len(en_pfx):]
+                changed = True
+                break
     info = en2info.get(base.lower()) or en2info.get(_strip_form(base).lower())
     dex = info[0] if info else None
     ko  = prefix_ko + (info[1] if info else base)
+    # 리전폼은 PokeAPI form ID로 교체 (스프라이트 정확도 향상)
+    full_en_lower = en.lower().replace("shadow ", "").strip()
+    form_dex = _REGIONAL_FORM_DEX.get(full_en_lower)
+    if form_dex:
+        dex = form_dex
     return dex, ko
 
 def _build_raids_from_scraped(raw_data: list) -> dict:
