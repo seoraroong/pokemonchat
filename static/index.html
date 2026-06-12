@@ -1524,7 +1524,7 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false) {
 
     const shinyArtUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${dex}.png`;
     const spriteImg = `<img class="popup-sprite" id="popup-main-sprite" src="${artUrl}" alt="${esc(p.ko)}" onerror="this.src='${fbUrl}'">`;
-    const spriteHtml = isShadow ? `<div class="shadow-aura" style="display:block;text-align:center">${spriteImg}</div>` : spriteImg;
+    const spriteHtml = isShadow ? `<div style="text-align:center"><div class="shadow-aura" style="display:inline-flex">${spriteImg}</div></div>` : spriteImg;
     const shadowSection = isShadow ? `
       <div class="shadow-info-box">
         <div class="shadow-info-title">⚡ 다크 포켓몬 보정</div>
