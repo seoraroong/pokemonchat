@@ -291,6 +291,68 @@ _REGION_PREFIX_KO: dict[str, str] = {
     "mega": "메가",
 }
 
+_BONUS_TERM_KO: dict[str, str] = {
+    "increased spawns": "야생 출현 증가",
+    "increased spawn": "야생 출현 증가",
+    "3x catch stardust": "포획 별의 모래 3배",
+    "2x catch stardust": "포획 별의 모래 2배",
+    "3x catch xp": "포획 경험치 3배",
+    "2x catch xp": "포획 경험치 2배",
+    "3x catch candy": "포획 사탕 3개",
+    "2x catch candy": "포획 사탕 2개",
+    "2x candy": "사탕 2배",
+    "3x candy": "사탕 3배",
+    "2x chance to receive candy xl": "왕사탕 획득 확률 2배",
+    "candy xl": "왕사탕",
+    "3-hour incense": "인센스 3시간",
+    "1-hour lures": "루어 모듈 1시간",
+    "lure modules": "루어 모듈",
+    "one additional special trade": "스페셜 교환 1회 추가",
+    "trades made will require 50% less stardust": "교환 별의 모래 50% 감소",
+    "50% less stardust": "별의 모래 50% 감소",
+    "half stardust": "별의 모래 절반",
+    "egg hatch distance": "알 부화 거리",
+    "1/4 egg hatch distance": "알 부화 거리 1/4",
+    "1/2 egg hatch distance": "알 부화 거리 1/2",
+    "buddy distance": "버디 거리",
+    "stardust": "별의 모래",
+    "special trade": "스페셜 교환",
+    "pokemon go fest": "포켓몬 GO 페스트",
+    "community day": "커뮤니티 데이",
+}
+
+def _translate_bonus(text: str) -> str:
+    lower = text.lower()
+    for en, ko in _BONUS_TERM_KO.items():
+        if en in lower:
+            return text.replace(text, ko) if lower == en else text
+    return text
+
+def _extract_bonuses_from_extra(ed: dict, etype: str) -> list[str]:
+    bonuses: list[str] = []
+    # Community Day 구조화 보너스
+    cd = ed.get("communityday", {})
+    for b in cd.get("bonuses", []):
+        t = (b.get("text") or "").strip()
+        if t:
+            bonuses.append(_translate_bonus(t))
+    # Raid Battles 보스 목록
+    rb = ed.get("raidbattles", {})
+    for boss in rb.get("bosses", []):
+        name = (boss.get("name") or "").strip()
+        if name:
+            ko = _poke_en_to_ko(name)
+            shiny = " ✦ 색변 가능" if boss.get("canBeShiny") else ""
+            bonuses.append(f"레이드 보스: {ko}{shiny}")
+    # Max Monday 보스
+    mm = ed.get("maxmonday", {})
+    for boss in mm.get("bosses", []):
+        name = (boss.get("name") or "").strip()
+        if name:
+            bonuses.append(f"맥스 배틀 보스: {_poke_en_to_ko(name)}")
+    return bonuses
+
+
 _MONTH_KO: dict[str, str] = {
     "january": "1월", "february": "2월", "march": "3월", "april": "4월",
     "may": "5월", "june": "6월", "july": "7월", "august": "8월",
@@ -986,11 +1048,13 @@ async def get_events_api():
         )
         etype = e.get("eventType", "")
         _ensure_raw()
+        bonuses = _extract_bonuses_from_extra(ed, etype)
         item = {
             "name": _translate_event_name(e["name"], etype),
             "type": etype,
             "link": e.get("link", ""), "start": e["start"], "end": e["end"],
             "has_spawns": has_spawns,
+            "bonuses": bonuses,
         }
         if ds <= 0:
             active.append(item)
@@ -1221,6 +1285,15 @@ def _parse_event_html(html: str) -> dict:
 
     bonuses = _parse_event_bonuses(html)
     return {"wild": wild, "raids": raids, "research": tasks, "bonuses": bonuses}
+
+
+@app.get("/api/event-text")
+async def event_text(url: str):
+    """이벤트 페이지 핵심 텍스트 반환 (보너스 데이터 없는 이벤트용 fallback)."""
+    text = await _fetch_event_page(url)
+    # 앞쪽 네비/헤더 잡음 제거: 첫 의미있는 단락부터
+    lines = [l.strip() for l in text.splitlines() if len(l.strip()) > 20]
+    return {"text": "\n".join(lines[:40])}
 
 
 @app.get("/api/event-detail")

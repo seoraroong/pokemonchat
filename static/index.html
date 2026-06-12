@@ -922,17 +922,21 @@ let raidEventLoaded=false;
 const EVENT_TYPE_CONFIG={'event':{bg:'#1e40af',text:'이벤트'},'community-day':{bg:'#15803d',text:'커뮤니티 데이'},'raid-battles':{bg:'#7c3aed',text:'레이드 배틀'},'raid-hour':{bg:'#6d28d9',text:'레이드 아워'},'raid-day':{bg:'#5b21b6',text:'레이드 데이'},'go-battle-league':{bg:'#b45309',text:'GO 배틀리그'},'pokemon-go-fest':{bg:'#be185d',text:'GO 페스트'},'max-mondays':{bg:'#0e7490',text:'맥스 먼데이'},'season':{bg:'#374151',text:'시즌'},'twitch-drops':{bg:'#7c2d12',text:'트위치 드롭'},'go-pass':{bg:'#1e3a5f',text:'GO 패스'}};
 function eventTypeCfg(type){return EVENT_TYPE_CONFIG[type]||{bg:'#374151',text:type||'이벤트'};}
 
+const _eventBonusMap = {}; // url → bonuses[]
+
 async function loadEvents() {
   const container=document.getElementById('events-container');
   try {
     const data=await(await fetch('/api/events')).json(); let html='';
+    const allEvents = [...(data.active||[]), ...(data.upcoming||[])];
+    allEvents.forEach(e => { if(e.link) _eventBonusMap[e.link] = e.bonuses || []; });
     const renderCard=(e,isActive)=>{
       const cfg=eventTypeCfg(e.type);
       const clickable=e.link?'clickable':'';
       const onclick=e.link?`onclick="openEventSpawnSheet('${e.link.replace(/'/g,"\\'")}','${esc(e.name).replace(/'/g,"\\'")}')"`:'';
       const dot=isActive?'<div class="event-active-dot"></div>':'';
       const time=isActive?fmtRemain(e.end):fmtUntil(e.start);
-      const hint=e.link?'<div class="event-spawn-hint">👆 포켓몬 정보 보기</div>':'';
+      const hint=e.link?'<div class="event-spawn-hint">👆 이벤트 정보 보기</div>':'';
       return `<div class="event-card ${clickable}" ${onclick}>${dot}<div class="event-info"><div class="event-name">${esc(e.name)}</div><div class="event-time">${time}</div>${hint}</div><span class="event-type-badge" style="background:${cfg.bg}">${cfg.text}</span></div>`;
     };
     if(data.active&&data.active.length){html+='<div style="font-size:0.72rem;color:#22c55e;font-weight:600;margin-bottom:8px;padding-left:2px">● 진행 중</div>';for(const e of data.active)html+=renderCard(e,true);}
@@ -981,8 +985,13 @@ function renderEventTab(tab) {
     ).join('');
   } else if (tab === 'info') {
     const bonuses = d.bonuses || [];
-    if (!bonuses.length) { body.innerHTML='<p class="raid-empty">이벤트 특전 정보가 없어요.</p>'; return; }
-    body.innerHTML = `<ul class="event-bonus-list">${bonuses.map(b=>`<li class="event-bonus-item">✦ ${esc(b)}</li>`).join('')}</ul>`;
+    if (bonuses.length) {
+      body.innerHTML = `<ul class="event-bonus-list">${bonuses.map(b=>`<li class="event-bonus-item">✦ ${esc(b)}</li>`).join('')}</ul>`;
+    } else if (d.infoText) {
+      body.innerHTML = `<div style="font-size:0.8rem;color:#94a3b8;line-height:1.7;white-space:pre-wrap;padding:4px 0">${esc(d.infoText)}</div>`;
+    } else {
+      body.innerHTML = '<p class="raid-empty">이벤트 특전 정보가 없어요.</p>';
+    }
   }
 }
 
@@ -993,10 +1002,10 @@ function switchEventTab(tab, btn) {
 }
 
 function _pickDefaultEventTab(data) {
-  if ((data.wild||[]).length)                           return 0; // 야생
-  if (Object.values(data.raids||{}).flat().length)      return 1; // 레이드
-  if ((data.research||[]).length)                       return 2; // 리서치
-  return 3;                                                        // 정보
+  if ((data.wild||[]).length)                           return 0;
+  if (Object.values(data.raids||{}).flat().length)      return 1;
+  if ((data.research||[]).length)                       return 2;
+  return 3; // 정보 (bonuses or infoText)
 }
 
 async function openEventSpawnSheet(url, name) {
@@ -1012,21 +1021,36 @@ async function openEventSpawnSheet(url, name) {
   document.querySelectorAll('.event-detail-tab').forEach((b,i)=>b.classList.toggle('active',i===0));
   sheet.classList.add('open'); backdrop.classList.add('open');
   try {
+    // 1) pre-loaded 보너스 (extraData에서 추출, 이미 events API에 포함)
+    const preloadedBonuses = _eventBonusMap[url] || [];
+
+    // 2) LeekDuck HTML 파싱 (포켓몬 데이터)
     const data = await (await fetch(`/api/event-detail?url=${encodeURIComponent(url)}`)).json();
-    _eventDetailData = data;
-    const wildCnt = (data.wild||[]).length;
-    const raidCnt = Object.values(data.raids||{}).flat().length;
-    const resCnt  = (data.research||[]).length;
-    const bonusCnt = (data.bonuses||[]).length;
+
+    // 3) 보너스: pre-loaded 우선, HTML 파싱 결과 fallback, 없으면 텍스트 페이지 fetch
+    let bonuses = preloadedBonuses.length ? preloadedBonuses : (data.bonuses || []);
+    let infoText = '';
+    if (!bonuses.length) {
+      try {
+        const td = await (await fetch(`/api/event-text?url=${encodeURIComponent(url)}`)).json();
+        infoText = td.text || '';
+      } catch {}
+    }
+
+    _eventDetailData = { ...data, bonuses, infoText };
+
+    const wildCnt  = (data.wild||[]).length;
+    const raidCnt  = Object.values(data.raids||{}).flat().length;
+    const resCnt   = (data.research||[]).length;
     const hasPokemon = wildCnt + raidCnt + resCnt;
+    const bonusCnt = bonuses.length || (infoText ? 1 : 0);
     sub.textContent = hasPokemon
       ? `야생 ${wildCnt} · 레이드 ${raidCnt} · 리서치 ${resCnt}`
-      : (bonusCnt ? `이벤트 특전 ${bonusCnt}개` : '정보 없음');
-    const tabIdx = _pickDefaultEventTab(data);
-    const tabs = document.querySelectorAll('.event-detail-tab');
-    tabs.forEach((b,i)=>b.classList.toggle('active',i===tabIdx));
-    const tabNames = ['wild','raids','research','info'];
-    renderEventTab(tabNames[tabIdx]);
+      : (bonusCnt ? `이벤트 정보 있음` : '정보 없음');
+
+    const tabIdx = _pickDefaultEventTab(_eventDetailData);
+    document.querySelectorAll('.event-detail-tab').forEach((b,i)=>b.classList.toggle('active',i===tabIdx));
+    renderEventTab(['wild','raids','research','info'][tabIdx]);
   } catch { sub.textContent = '불러오기 실패'; body.innerHTML = '<p class="raid-empty">오류가 발생했어요.</p>'; }
 }
 
