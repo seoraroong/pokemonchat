@@ -1049,12 +1049,26 @@ async def get_events_api():
         etype = e.get("eventType", "")
         _ensure_raw()
         bonuses = _extract_bonuses_from_extra(ed, etype)
+        # 레이드 보스 상세 (이벤트 시트 정보 탭용)
+        raid_bosses = []
+        for boss in (ed.get("raidbattles") or {}).get("bosses", []):
+            en = (boss.get("name") or "").strip()
+            if not en:
+                continue
+            en2 = _get_en2info()
+            info = en2.get(en.lower())
+            dex = info[0] if info else 0
+            ko  = info[1] if info else _poke_en_to_ko(en)
+            slug = re.sub(r"[^a-z0-9-]", "", en.lower().replace(" ", "-").replace("'", ""))
+            raid_bosses.append({"en": en, "ko": ko, "dex": dex, "slug": slug,
+                                "can_shiny": bool(boss.get("canBeShiny", False))})
         item = {
             "name": _translate_event_name(e["name"], etype),
             "type": etype,
             "link": e.get("link", ""), "start": e["start"], "end": e["end"],
             "has_spawns": has_spawns,
             "bonuses": bonuses,
+            "raid_bosses": raid_bosses,
         }
         if ds <= 0:
             active.append(item)
@@ -1157,8 +1171,18 @@ def _build_raids_from_scraped(raw_data: list) -> dict:
             types = [t.get("name","") if isinstance(t,dict) else t for t in (boss.get("types",[]) if isinstance(boss,dict) else [])]
             types_ko = " / ".join(_RAID_TYPE_KO.get(t.lower(), t) for t in types if t)
             slug = re.sub(r"[^a-z0-9-]","",en.lower().replace(" ","-").replace("'","").replace(".",""))
-            lst.append({"en_name":en,"ko_name":ko,"slug":slug,"dex":dex,"types_ko":types_ko,
-                        "is_shiny":bool(boss.get("shiny",boss.get("canBeShiny",False)) if isinstance(boss,dict) else False)})
+            cp     = (boss.get("combatPower") or {}) if isinstance(boss, dict) else {}
+            cp_n   = cp.get("normal") or {}
+            cp_b   = cp.get("boosted") or {}
+            weather = [w.get("name","").lower() for w in (boss.get("boostedWeather") or []) if isinstance(w,dict)]
+            lst.append({
+                "en_name": en, "ko_name": ko, "slug": slug, "dex": dex,
+                "types_ko": types_ko,
+                "is_shiny": bool(boss.get("shiny", boss.get("canBeShiny", False)) if isinstance(boss, dict) else False),
+                "cp_min": cp_n.get("min"), "cp_max": cp_n.get("max"),
+                "cp_boosted_min": cp_b.get("min"), "cp_boosted_max": cp_b.get("max"),
+                "weather": weather,
+            })
         if lst:
             result[tier] = lst
     return result

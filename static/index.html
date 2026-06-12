@@ -168,6 +168,21 @@
     .raid-shiny { font-size: 0.6rem; color: #f59e0b; }
     .raid-types { display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; }
     .raid-types .type-badge { font-size: 0.56rem; padding: 1px 5px; }
+    .raid-cp { font-size: 0.6rem; color: #94a3b8; line-height: 1.3; }
+    .raid-weather { font-size: 0.68rem; }
+    .boss-detail-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 14px; padding: 14px; margin-bottom: 12px; }
+    .boss-detail-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .boss-detail-sprite { width: 64px; height: 64px; object-fit: contain; }
+    .boss-detail-name { font-size: 1rem; font-weight: 700; color: #e2e8f0; }
+    .boss-detail-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 3px; }
+    .boss-cp-row { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; }
+    .boss-cp-badge { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 4px 10px; font-size: 0.72rem; color: #94a3b8; }
+    .boss-cp-badge span { color: #60a5fa; font-weight: 600; }
+    .boss-counters-title { font-size: 0.72rem; font-weight: 600; color: #64748b; margin: 10px 0 6px; }
+    .boss-counter-row { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid #1e293b; cursor: pointer; }
+    .boss-counter-sprite { width: 32px; height: 32px; object-fit: contain; }
+    .boss-counter-name { font-size: 0.78rem; font-weight: 600; color: #e2e8f0; }
+    .boss-counter-move { font-size: 0.68rem; color: #64748b; }
     .raid-empty { color: #475569; font-size: 0.82rem; text-align: center; padding: 14px 0; }
 
     /* ── 알 탭 ── */
@@ -923,13 +938,28 @@ const EVENT_TYPE_CONFIG={'event':{bg:'#1e40af',text:'이벤트'},'community-day'
 function eventTypeCfg(type){return EVENT_TYPE_CONFIG[type]||{bg:'#374151',text:type||'이벤트'};}
 
 const _eventBonusMap = {}; // url → bonuses[]
+const _eventRaidBossMap = {}; // url → raid_bosses[]
+const _raidBossMap = {}; // en_name.toLowerCase() → full boss data (from /api/raids)
+
+const _WEATHER_ICON = {
+  'sunny':'☀️','clear':'☀️','partly cloudy':'⛅','cloudy':'☁️',
+  'windy':'🌬️','rainy':'🌧️','snowy':'❄️','foggy':'🌫️',
+};
+function weatherIcons(list) {
+  return (list||[]).map(w => _WEATHER_ICON[w] || w).join(' ');
+}
 
 async function loadEvents() {
   const container=document.getElementById('events-container');
   try {
     const data=await(await fetch('/api/events')).json(); let html='';
     const allEvents = [...(data.active||[]), ...(data.upcoming||[])];
-    allEvents.forEach(e => { if(e.link) _eventBonusMap[e.link] = e.bonuses || []; });
+    allEvents.forEach(e => {
+      if(e.link) {
+        _eventBonusMap[e.link]    = e.bonuses     || [];
+        _eventRaidBossMap[e.link] = e.raid_bosses || [];
+      }
+    });
     const renderCard=(e,isActive)=>{
       const cfg=eventTypeCfg(e.type);
       const clickable=e.link?'clickable':'';
@@ -984,8 +1014,16 @@ function renderEventTab(tab) {
       </div>`
     ).join('');
   } else if (tab === 'info') {
-    const bonuses = d.bonuses || [];
-    if (!bonuses.length) { body.innerHTML='<p class="raid-empty">이벤트 정보가 없어요.</p>'; return; }
+    const raidBosses = d.raid_bosses || [];
+    const bonuses    = d.bonuses     || [];
+    if (!raidBosses.length && !bonuses.length) {
+      body.innerHTML = '<p class="raid-empty">이벤트 정보가 없어요.</p>'; return;
+    }
+    if (raidBosses.length) {
+      body.innerHTML = '<p class="raid-empty" style="color:#60a5fa;font-size:0.72rem">불러오는 중...</p>';
+      renderRaidBossDetails(body, raidBosses);
+      return;
+    }
     body.innerHTML = `<ul class="event-bonus-list">${bonuses.map(b=>`<li class="event-bonus-item">✦ ${esc(b)}</li>`).join('')}</ul>`;
   }
 }
@@ -994,6 +1032,52 @@ function switchEventTab(tab, btn) {
   document.querySelectorAll('.event-detail-tab').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   renderEventTab(tab);
+}
+
+async function renderRaidBossDetails(body, raidBosses) {
+  let html = '';
+  for (const boss of raidBosses) {
+    const bd = _raidBossMap[(boss.en||'').toLowerCase()] || {};
+    const spr = boss.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${boss.dex}.png` : '';
+    const typeKos = (bd.types_ko||'').split(' / ').filter(Boolean);
+    const typeBadges = typeKos.map(t=>{const en=TYPE_EN_FROM_KO[t]||'';return`<span class="type-badge" style="background:${TYPE_BG[en]||'#71727a'}">${t}</span>`;}).join('');
+    const shinyBadge = (boss.can_shiny||bd.is_shiny) ? '<span style="color:#f59e0b;font-size:0.72rem"> ✦ 색변 가능</span>' : '';
+    const cpNormal  = (bd.cp_min && bd.cp_max)         ? `<div class="boss-cp-badge">일반 <span>${bd.cp_min.toLocaleString()}–${bd.cp_max.toLocaleString()} CP</span></div>` : '';
+    const cpBoosted = (bd.cp_boosted_min && bd.cp_boosted_max) ? `<div class="boss-cp-badge">부스트 <span>${bd.cp_boosted_min.toLocaleString()}–${bd.cp_boosted_max.toLocaleString()} CP</span></div>` : '';
+    const wIcons = weatherIcons(bd.weather||[]);
+    html += `<div class="boss-detail-card">
+      <div class="boss-detail-header">
+        ${spr?`<img class="boss-detail-sprite" src="${spr}" onerror="this.style.opacity='0.2'">`:''}
+        <div>
+          <div class="boss-detail-name">${esc(boss.ko)}${shinyBadge}</div>
+          <div class="boss-detail-meta">${typeBadges}${wIcons?' &nbsp;'+wIcons:''}</div>
+        </div>
+      </div>
+      ${(cpNormal||cpBoosted)?`<div class="boss-cp-row">${cpNormal}${cpBoosted}</div>`:''}
+      <div id="counters-${boss.slug}"><div style="font-size:0.72rem;color:#475569">카운터 불러오는 중...</div></div>
+    </div>`;
+  }
+  body.innerHTML = html;
+  // 카운터 비동기 로드
+  for (const boss of raidBosses) {
+    if (!boss.slug) continue;
+    try {
+      const cd = await (await fetch(`/api/raid-counters/${boss.slug}`)).json();
+      const el = body.querySelector(`#counters-${boss.slug}`);
+      if (!el) continue;
+      const weaknessHtml = cd.weakness ? `<div style="font-size:0.72rem;color:#f87171;margin-bottom:6px">약점: ${esc(cd.weakness)}</div>` : '';
+      const counters = (cd.counters||[]).slice(0,5);
+      if (!counters.length) { el.innerHTML = weaknessHtml || ''; continue; }
+      el.innerHTML = weaknessHtml +
+        `<div class="boss-counters-title">추천 공격자</div>` +
+        counters.map(c => {
+          const cSpr = c.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${c.dex}.png` : '';
+          return `<div class="boss-counter-row" ${c.dex?`onclick="openPokemonPopup(${c.dex})"`:''}>`+
+            (cSpr?`<img class="boss-counter-sprite" src="${cSpr}" onerror="this.style.opacity='0.2'">`:'') +
+            `<div><div class="boss-counter-name">${esc(c.ko)}</div><div class="boss-counter-move">${esc(c.move||'')}</div></div></div>`;
+        }).join('');
+    } catch { /* 카운터 없으면 무시 */ }
+  }
 }
 
 function _pickDefaultEventTab(data) {
@@ -1032,7 +1116,8 @@ async function openEventSpawnSheet(url, name) {
       } catch {}
     }
 
-    _eventDetailData = { ...data, bonuses };
+    const raidBosses = _eventRaidBossMap[url] || [];
+    _eventDetailData = { ...data, bonuses, raid_bosses: raidBosses };
 
     const wildCnt  = (data.wild||[]).length;
     const raidCnt  = Object.values(data.raids||{}).flat().length;
@@ -1062,6 +1147,11 @@ async function loadRaids() {
       fetch('/api/raids').then(r=>r.json()),
       fetch('/api/events').then(r=>r.json()),
     ]);
+    // raidBossMap 빌드
+    for(const tier of Object.keys(data))
+      for(const boss of data[tier])
+        _raidBossMap[(boss.en_name||'').toLowerCase()] = boss;
+
     const tiers=TIER_ORDER.filter(t=>data[t]&&data[t].length);
     if(!tiers.length){container.innerHTML='<p class="raid-empty">현재 레이드 데이터가 없어요.</p>';return;}
 
@@ -1086,7 +1176,15 @@ async function loadRaids() {
         const typeHtml=typeKos.map(t=>{const en=TYPE_EN_FROM_KO[t]||'';return`<span class="type-badge" style="background:${TYPE_BG[en]||'#71727a'}">${t}</span>`;}).join('');
         const safeSlug=(boss.slug||'').replace(/'/g,"\\'");
         const clickAttr=boss.dex?`onclick="openPokemonPopup(${boss.dex},'${safeSlug}')"`:'' ;
-        html+=`<div class="raid-card" ${clickAttr}><img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.src='${fallbackUrl}'">`+`<div class="raid-name">${esc(boss.ko_name)}</div>${boss.is_shiny?'<div class="raid-shiny">✦ 색변</div>':''}<div class="raid-types">${typeHtml}</div></div>`;
+        const cpText = (boss.cp_min && boss.cp_max)
+          ? `<div class="raid-cp">${boss.cp_min.toLocaleString()}–${boss.cp_max.toLocaleString()}</div>` : '';
+        const cpBoost = (boss.cp_boosted_min && boss.cp_boosted_max)
+          ? `<div class="raid-cp" style="color:#7dd3fc">⛅ ${boss.cp_boosted_min.toLocaleString()}–${boss.cp_boosted_max.toLocaleString()}</div>` : '';
+        const weatherHtml = (boss.weather||[]).length
+          ? `<div class="raid-weather">${weatherIcons(boss.weather)}</div>` : '';
+        html+=`<div class="raid-card" ${clickAttr}><img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.src='${fallbackUrl}'">`+
+          `<div class="raid-name">${esc(boss.ko_name)}</div>${boss.is_shiny?'<div class="raid-shiny">✦ 색변</div>':''}` +
+          `<div class="raid-types">${typeHtml}</div>${cpText}${cpBoost}${weatherHtml}</div>`;
       }
       html+=`</div></div>`;}
     container.innerHTML=html;
