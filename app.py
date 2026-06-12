@@ -2101,6 +2101,252 @@ async def manual_refresh(name: str | None = None):
     return {t["name"]: _refresh_status[t["name"]] for t in targets}
 
 
+# ── Catch Mind ──────────────────────────────────────────────────────────
+import uuid as _cm_uuid
+
+_cm_rooms: dict[str, dict] = {}
+_CM_ROUND_SEC = 120
+_CM_WAIT_SEC  = 60
+_CM_WIN_SCORE = 3
+_CM_MAX_PLAYERS = 8
+
+
+def _cm_rand_word() -> str:
+    if not _names_raw:
+        return "이상해씨"
+    pool = [v["ko_name"] for k, v in _names_raw.items()
+            if v.get("ko_name") and 1 <= int(k) <= 800]
+    return _random.choice(pool) if pool else "이상해씨"
+
+
+async def _cm_send(ws: WebSocket, msg: dict) -> None:
+    try:
+        await ws.send_json(msg)
+    except Exception:
+        pass
+
+
+async def _cm_bcast(room_id: str, msg: dict, skip: WebSocket | None = None) -> None:
+    room = _cm_rooms.get(room_id)
+    if not room:
+        return
+    dead = []
+    for pid, p in list(room["players"].items()):
+        if p["ws"] is skip:
+            continue
+        try:
+            await p["ws"].send_json(msg)
+        except Exception:
+            dead.append(pid)
+    for pid in dead:
+        room["players"].pop(pid, None)
+
+
+def _cm_scores(room: dict) -> dict:
+    return {p["name"]: p["score"] for p in room["players"].values()}
+
+
+async def _cm_start_round(room_id: str) -> None:
+    room = _cm_rooms.get(room_id)
+    if not room:
+        return
+    word = _cm_rand_word()
+    room.update(word=word, status="playing", guessed=set())
+    if room.get("round_task"):
+        room["round_task"].cancel()
+
+    drawer_id = room["drawer_id"]
+    drawer_name = (room["players"].get(drawer_id) or {}).get("name", "???")
+    for pid, p in list(room["players"].items()):
+        msg: dict = {"type": "round_start", "drawer": drawer_name, "time": _CM_ROUND_SEC}
+        if pid == drawer_id:
+            msg["word"] = word
+        await _cm_send(p["ws"], msg)
+
+    room["round_task"] = asyncio.create_task(_cm_round_timer(room_id))
+
+
+async def _cm_round_timer(room_id: str) -> None:
+    try:
+        for t in range(_CM_ROUND_SEC, -1, -1):
+            if room_id not in _cm_rooms:
+                return
+            if _cm_rooms[room_id].get("status") != "playing":
+                return
+            await _cm_bcast(room_id, {"type": "timer", "t": t})
+            if t == 0:
+                await _cm_end_round(room_id, winner_id=None)
+                return
+            await asyncio.sleep(1)
+    except asyncio.CancelledError:
+        pass
+
+
+async def _cm_end_round(room_id: str, winner_id: str | None) -> None:
+    room = _cm_rooms.get(room_id)
+    if not room or room.get("status") in ("round_end", "game_over", "waiting"):
+        return
+    room["status"] = "round_end"
+    if room.get("round_task"):
+        room["round_task"].cancel()
+
+    if winner_id and winner_id in room["players"]:
+        room["players"][winner_id]["score"] += 1
+
+    scores = _cm_scores(room)
+    game_winner = next((name for name, s in scores.items() if s >= _CM_WIN_SCORE), None)
+
+    if game_winner:
+        await _cm_bcast(room_id, {
+            "type": "game_over", "winner": game_winner,
+            "word": room.get("word", ""), "scores": scores,
+        })
+        room["status"] = "game_over"
+        return
+
+    winner_name = room["players"].get(winner_id, {}).get("name") if winner_id else None
+    await _cm_bcast(room_id, {
+        "type": "round_end",
+        "word": room.get("word", ""), "winner": winner_name, "scores": scores,
+    })
+
+    # 다음 drawer: 정답자 or 순환
+    pids = list(room["players"].keys())
+    if winner_id and winner_id in pids:
+        room["drawer_id"] = winner_id
+    elif pids:
+        cur = pids.index(room["drawer_id"]) if room["drawer_id"] in pids else -1
+        room["drawer_id"] = pids[(cur + 1) % len(pids)]
+
+    await asyncio.sleep(3)
+    if room_id in _cm_rooms and _cm_rooms[room_id]["status"] == "round_end":
+        await _cm_start_round(room_id)
+
+
+async def _cm_wait_timer(room_id: str) -> None:
+    try:
+        await asyncio.sleep(_CM_WAIT_SEC)
+        room = _cm_rooms.get(room_id)
+        if room and room.get("status") == "waiting" and len(room["players"]) < 2:
+            await _cm_bcast(room_id, {"type": "room_closed"})
+            _cm_rooms.pop(room_id, None)
+    except asyncio.CancelledError:
+        pass
+
+
+class _CmCreateReq(BaseModel):
+    nick: str
+
+
+@app.post("/api/catchmind/create")
+async def cm_create_room(req: _CmCreateReq):
+    room_id = _cm_uuid.uuid4().hex[:6].upper()
+    room: dict = {
+        "room_id": room_id,
+        "creator": req.nick.strip()[:15] or "트레이너",
+        "players": {},
+        "status": "waiting",
+        "word": None,
+        "drawer_id": None,
+        "round_task": None,
+        "wait_task": None,
+        "guessed": set(),
+    }
+    _cm_rooms[room_id] = room
+    room["wait_task"] = asyncio.create_task(_cm_wait_timer(room_id))
+    return {"room_id": room_id}
+
+
+@app.get("/api/catchmind/rooms")
+async def cm_list_rooms():
+    return [
+        {"room_id": r["room_id"], "creator": r["creator"],
+         "status": r["status"], "players": len(r["players"])}
+        for r in _cm_rooms.values()
+        if r["status"] in ("waiting", "playing")
+    ]
+
+
+@app.websocket("/ws/catchmind/{room_id}")
+async def catchmind_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> None:
+    room = _cm_rooms.get(room_id)
+    if not room:
+        await ws.close(code=4004); return
+    if len(room["players"]) >= _CM_MAX_PLAYERS:
+        await ws.close(code=4003); return
+
+    nick = nick.strip()[:15] or "트레이너"
+    await ws.accept()
+    pid = _cm_uuid.uuid4().hex[:8]
+    room["players"][pid] = {"ws": ws, "name": nick, "score": 0}
+
+    await _cm_send(ws, {
+        "type": "joined", "pid": pid,
+        "players": [{"name": p["name"], "score": p["score"]} for p in room["players"].values()],
+        "status": room["status"],
+    })
+    await _cm_bcast(room_id, {
+        "type": "player_join", "name": nick, "count": len(room["players"]),
+    }, skip=ws)
+
+    if room["status"] == "waiting" and len(room["players"]) >= 2:
+        if room.get("wait_task"):
+            room["wait_task"].cancel()
+        room["drawer_id"] = _random.choice(list(room["players"].keys()))
+        await asyncio.sleep(0.5)
+        await _cm_start_round(room_id)
+
+    try:
+        while True:
+            data = await ws.receive_json()
+            t = data.get("type")
+            is_drawer = room.get("drawer_id") == pid
+            is_playing = room.get("status") == "playing"
+
+            if t == "draw" and is_drawer and is_playing:
+                await _cm_bcast(room_id, {"type": "draw", "d": data.get("d")}, skip=ws)
+
+            elif t == "clear" and is_drawer:
+                await _cm_bcast(room_id, {"type": "clear"}, skip=ws)
+
+            elif t == "guess" and is_playing and not is_drawer:
+                if pid in room.get("guessed", set()):
+                    continue
+                text = (data.get("text") or "").strip()
+                correct = text == room.get("word", "")
+                await _cm_bcast(room_id, {
+                    "type": "guess", "name": room["players"][pid]["name"],
+                    "text": text, "correct": correct,
+                })
+                if correct:
+                    room["guessed"].add(pid)
+                    await _cm_end_round(room_id, winner_id=pid)
+
+            elif t == "restart" and room.get("status") == "game_over":
+                for p in room["players"].values():
+                    p["score"] = 0
+                room["drawer_id"] = _random.choice(list(room["players"].keys()))
+                await _cm_start_round(room_id)
+
+    except (WebSocketDisconnect, Exception):
+        pass
+    finally:
+        left = room["players"].pop(pid, {}).get("name", "???")
+        await _cm_bcast(room_id, {
+            "type": "player_leave", "name": left, "count": len(room["players"]),
+        })
+        if not room["players"]:
+            for k in ("round_task", "wait_task"):
+                if room.get(k):
+                    room[k].cancel()
+            _cm_rooms.pop(room_id, None)
+        elif pid == room.get("drawer_id") and room.get("status") == "playing":
+            pids = list(room["players"].keys())
+            if pids:
+                room["drawer_id"] = pids[0]
+            await _cm_end_round(room_id, winner_id=None)
+
+
 @app.get("/", response_class=HTMLResponse)
 async def index():
     return (Path("static") / "index.html").read_text(encoding="utf-8")

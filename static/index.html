@@ -496,6 +496,58 @@
     #cm-quiz-start-confirm { background:#b91c1c; border:none; border-radius:8px; padding:7px; color:#fff; font-size:0.82rem; font-weight:600; cursor:pointer; font-family:inherit; width:100%; }
     #cm-quiz-start-confirm:hover { background:#dc2626; }
 
+    /* ── 캐치마인드 ── */
+    #cm-cm-lobby { flex:1; display:flex; flex-direction:column; min-height:0; overflow:hidden; }
+    #cm-cm-lobby-header { display:flex; align-items:center; gap:6px; padding:8px 12px; border-bottom:1px solid #1e293b; flex-shrink:0; font-weight:700; font-size:0.88rem; color:#e2e8f0; }
+    #cm-cm-lobby-header button { background:#1e293b; border:1px solid #334155; border-radius:8px; padding:3px 10px; color:#94a3b8; font-size:0.78rem; cursor:pointer; font-family:inherit; }
+    #cm-cm-lobby-header button:hover { border-color:#60a5fa; color:#e2e8f0; }
+    #cm-cm-lobby-header .cm-create-btn2 { margin-left:auto; background:#1e3a5f; border-color:#3b82f6; color:#93c5fd; font-weight:600; }
+    #cm-cm-room-list { flex:1; overflow-y:auto; padding:10px 12px; display:flex; flex-direction:column; gap:8px; }
+    .cm-cm-room-card { background:#1e293b; border:1px solid #334155; border-radius:12px; padding:10px 14px; display:flex; align-items:center; gap:10px; cursor:pointer; transition:border-color 0.15s; }
+    .cm-cm-room-card:hover { border-color:#3b82f6; }
+    .cm-cm-room-info { flex:1; }
+    .cm-cm-room-creator { font-size:0.84rem; font-weight:600; color:#e2e8f0; }
+    .cm-cm-room-meta { font-size:0.72rem; color:#64748b; margin-top:2px; }
+    .cm-cm-room-badge { font-size:0.7rem; padding:2px 8px; border-radius:10px; font-weight:600; }
+    .cm-cm-badge-wait { background:#1c2a1c; color:#4ade80; border:1px solid #166534; }
+    .cm-cm-badge-play { background:#1c1a10; color:#fbbf24; border:1px solid #854d0e; }
+    #cm-cm-game { flex:1; display:flex; flex-direction:column; min-height:0; overflow:hidden; }
+    #cm-game-header { padding:6px 12px; border-bottom:1px solid #1e293b; flex-shrink:0; display:flex; align-items:center; gap:8px; }
+    #cm-game-header .cm-back { background:none; border:none; color:#94a3b8; font-size:1rem; cursor:pointer; padding:0 4px; }
+    #cm-players-bar { display:flex; gap:6px; flex:1; overflow-x:auto; scrollbar-width:none; }
+    .cm-player-chip { display:flex; align-items:center; gap:3px; background:#1e293b; border:1px solid #334155; border-radius:20px; padding:2px 8px; font-size:0.72rem; color:#94a3b8; white-space:nowrap; flex-shrink:0; }
+    .cm-player-chip.drawer { border-color:#f59e0b; color:#fbbf24; }
+    .cm-player-chip .score { font-weight:700; color:#60a5fa; }
+    #cm-timer { font-size:0.78rem; font-weight:700; color:#94a3b8; min-width:28px; text-align:right; flex-shrink:0; }
+    #cm-timer.urgent { color:#ef4444; }
+    #cm-canvas-wrap { flex-shrink:0; padding:8px 12px 0; }
+    #cm-canvas { display:block; width:100%; aspect-ratio:1; border-radius:10px; background:#fff; cursor:crosshair; touch-action:none; }
+    #cm-tools { display:none; flex-wrap:wrap; gap:5px; align-items:center; padding:6px 12px; flex-shrink:0; }
+    #cm-tools.visible { display:flex; }
+    .cm-color-btn { width:22px; height:22px; border-radius:50%; border:2px solid transparent; cursor:pointer; transition:border-color 0.12s; flex-shrink:0; }
+    .cm-color-btn.active { border-color:#e2e8f0; }
+    .cm-size-btn { background:#1e293b; border:1px solid #334155; border-radius:8px; padding:2px 8px; color:#94a3b8; font-size:0.72rem; cursor:pointer; font-family:inherit; }
+    .cm-size-btn.active { border-color:#60a5fa; color:#93c5fd; }
+    #cm-eraser-btn { background:#1e293b; border:1px solid #334155; border-radius:8px; padding:2px 8px; color:#94a3b8; font-size:0.72rem; cursor:pointer; font-family:inherit; }
+    #cm-eraser-btn.active { border-color:#f59e0b; color:#fbbf24; }
+    #cm-clear-btn { background:#1e293b; border:1px solid #7f1d1d; border-radius:8px; padding:2px 8px; color:#f87171; font-size:0.72rem; cursor:pointer; font-family:inherit; margin-left:auto; }
+    #cm-word-box { display:none; margin:6px 12px 0; padding:6px 12px; background:#1c2a1c; border:1px solid #166534; border-radius:10px; text-align:center; font-size:0.84rem; font-weight:700; color:#4ade80; flex-shrink:0; }
+    #cm-word-box.visible { display:block; }
+    #cm-chat { flex:1; overflow-y:auto; padding:6px 12px; display:flex; flex-direction:column; gap:3px; min-height:0; }
+    .cm-chat-msg { font-size:0.8rem; color:#94a3b8; }
+    .cm-chat-msg .nm { font-weight:600; color:#e2e8f0; }
+    .cm-chat-msg.correct { color:#4ade80; font-weight:700; }
+    .cm-chat-msg.notice { color:#64748b; font-style:italic; }
+    #cm-guess-bar { display:flex; gap:6px; padding:8px 12px; border-top:1px solid #1e293b; flex-shrink:0; }
+    #cm-guess-input { flex:1; background:#1e293b; border:1px solid #334155; border-radius:10px; padding:7px 11px; color:#e2e8f0; font-size:0.84rem; font-family:inherit; outline:none; }
+    #cm-guess-input:focus { border-color:#3b82f6; }
+    #cm-guess-send { background:#1e3a5f; border:1px solid #3b82f6; border-radius:10px; padding:7px 14px; color:#93c5fd; font-size:0.84rem; cursor:pointer; font-family:inherit; }
+    .cm-overlay { position:absolute; inset:0; background:rgba(0,0,0,0.7); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; z-index:10; border-radius:10px; padding:20px; text-align:center; }
+    .cm-overlay-title { font-size:1.1rem; font-weight:700; color:#e2e8f0; }
+    .cm-overlay-sub { font-size:0.82rem; color:#94a3b8; }
+    .cm-overlay-scores { display:flex; flex-direction:column; gap:4px; width:100%; max-width:220px; }
+    .cm-score-row { display:flex; justify-content:space-between; background:#1e293b; border-radius:8px; padding:5px 12px; font-size:0.82rem; }
+    .cm-overlay-btn { background:#1e3a5f; border:1px solid #3b82f6; border-radius:10px; padding:8px 24px; color:#93c5fd; font-size:0.84rem; font-weight:600; cursor:pointer; font-family:inherit; }
     /* ── 진화 체인 ── */
     .evo-chain { display:flex; align-items:flex-start; gap:3px; overflow-x:auto; padding:4px 0 6px; scrollbar-width:none; }
     .evo-chain::-webkit-scrollbar { display:none; }
@@ -727,6 +779,7 @@
         <span id="cm-lobby-nick"></span>
         <div style="display:flex;gap:6px;align-items:center">
           <button id="cm-lobby-refresh" onclick="cmLoadRooms()" title="새로고침">🔄</button>
+          <button onclick="cmShowCatchmindLobby()" style="background:#1c1a10;border:1px solid #854d0e;border-radius:8px;padding:3px 10px;color:#fbbf24;font-size:0.78rem;cursor:pointer;font-family:inherit">🎨 캐치마인드</button>
           <button id="cm-create-btn" onclick="cmShowCreateRoom()">+ 방 만들기</button>
         </div>
       </div>
@@ -762,6 +815,53 @@
       <div id="cm-input-bar">
         <input id="cm-input" type="text" placeholder="메시지 입력..." autocomplete="off" maxlength="300">
         <button id="cm-send" onclick="cmSend()">↑</button>
+      </div>
+    </div>
+
+    <!-- 캐치마인드 로비 -->
+    <div id="cm-cm-lobby" class="cm-screen" style="display:none">
+      <div id="cm-cm-lobby-header">
+        <button onclick="cmShowChatLobby()">← 채팅</button>
+        <span>🎨 캐치마인드</span>
+        <button onclick="cmLoadCmRooms()" title="새로고침">🔄</button>
+        <button class="cm-create-btn2" onclick="cmCreateCmRoom()">+ 방 만들기</button>
+      </div>
+      <div id="cm-cm-room-list"><div style="text-align:center;padding:30px;color:#64748b;font-size:0.82rem">불러오는 중...</div></div>
+    </div>
+
+    <!-- 캐치마인드 게임 -->
+    <div id="cm-cm-game" class="cm-screen" style="display:none">
+      <div id="cm-game-header">
+        <button class="cm-back" onclick="cmLeaveCmGame()">←</button>
+        <div id="cm-players-bar"></div>
+        <div id="cm-timer">—</div>
+      </div>
+      <div id="cm-canvas-wrap" style="position:relative">
+        <canvas id="cm-canvas"></canvas>
+        <div id="cm-canvas-overlay" class="cm-overlay" style="display:none"></div>
+      </div>
+      <div id="cm-tools">
+        <div class="cm-color-btn active" style="background:#000000" data-color="#000000" onclick="cmPickColor(this)"></div>
+        <div class="cm-color-btn" style="background:#ef4444" data-color="#ef4444" onclick="cmPickColor(this)"></div>
+        <div class="cm-color-btn" style="background:#f97316" data-color="#f97316" onclick="cmPickColor(this)"></div>
+        <div class="cm-color-btn" style="background:#eab308" data-color="#eab308" onclick="cmPickColor(this)"></div>
+        <div class="cm-color-btn" style="background:#22c55e" data-color="#22c55e" onclick="cmPickColor(this)"></div>
+        <div class="cm-color-btn" style="background:#3b82f6" data-color="#3b82f6" onclick="cmPickColor(this)"></div>
+        <div class="cm-color-btn" style="background:#8b5cf6" data-color="#8b5cf6" onclick="cmPickColor(this)"></div>
+        <div class="cm-color-btn" style="background:#ffffff;border:2px solid #334155" data-color="#ffffff" onclick="cmPickColor(this)"></div>
+        <span style="width:1px;background:#334155;align-self:stretch;margin:0 2px"></span>
+        <button class="cm-size-btn active" data-size="4" onclick="cmPickSize(this)">S</button>
+        <button class="cm-size-btn" data-size="10" onclick="cmPickSize(this)">M</button>
+        <button class="cm-size-btn" data-size="22" onclick="cmPickSize(this)">L</button>
+        <button id="cm-eraser-btn" onclick="cmToggleEraser()">지우개</button>
+        <button id="cm-clear-btn" onclick="cmClearCanvas()">전체 지우기</button>
+      </div>
+      <div id="cm-word-box"></div>
+      <div id="cm-chat"></div>
+      <div id="cm-guess-bar">
+        <input id="cm-guess-input" placeholder="포켓몬 이름 맞춰보세요..." autocomplete="off" maxlength="20"
+               onkeydown="if(event.key==='Enter')cmSendGuess()">
+        <button id="cm-guess-send" onclick="cmSendGuess()">↑</button>
       </div>
     </div>
 
@@ -2223,6 +2323,7 @@ function cmSend() {
 function _cmReset() {
   clearTimeout(_cmReconnectTimer); _cmReconnectCount = 0;
   if (_cmWs) { _cmWs.close(); _cmWs = null; }
+  if (_cmWsCm) { _cmWsCm.close(); _cmWsCm = null; }
   clearInterval(_cmLobbyTimer);
   _cmNick = null; _cmRoomId = null; _cmServerEpoch = null;
   _typingUsers = {}; _cmUpdateTypingBar();
@@ -2320,6 +2421,331 @@ document.getElementById('cm-input').addEventListener('input', () => {
 document.getElementById('cm-nick-input').addEventListener('keydown', e => {
   if (e.key==='Enter') cmEnterLobby();
 });
+
+// ── 캐치마인드 ─────────────────────────────────────────────────────
+let _cmWsCm = null, _cmPid = null, _cmDrawerId = null, _cmIsDrawer = false;
+let _cmColor = '#000000', _cmSize = 4, _cmEraser = false;
+let _cmDrawing = false, _cmLastX = 0, _cmLastY = 0;
+let _cmLobbyTimer = null;
+
+function _cmScreen(id) {
+  ['cm-nick-screen','cm-lobby-screen','cm-room-screen','cm-cm-lobby','cm-cm-game']
+    .forEach(s => { const el=document.getElementById(s); if(el) el.style.display = s===id ? 'flex':'none'; });
+}
+
+function cmShowCatchmindLobby() {
+  _cmScreen('cm-cm-lobby');
+  cmLoadCmRooms();
+}
+function cmShowChatLobby() {
+  _cmScreen('cm-lobby-screen');
+}
+
+async function cmLoadCmRooms() {
+  const list = document.getElementById('cm-cm-room-list');
+  list.innerHTML = '<div style="text-align:center;padding:30px;color:#64748b;font-size:0.82rem">불러오는 중...</div>';
+  try {
+    const rooms = await fetch('/api/catchmind/rooms').then(r=>r.json());
+    if (!rooms.length) {
+      list.innerHTML = '<div style="text-align:center;padding:40px 20px;color:#64748b;font-size:0.82rem">진행 중인 방이 없어요<br>방을 만들어보세요!</div>';
+      return;
+    }
+    list.innerHTML = rooms.map(r => `
+      <div class="cm-cm-room-card" onclick="cmJoinCmRoom('${r.room_id}')">
+        <div class="cm-cm-room-info">
+          <div class="cm-cm-room-creator">${esc(r.creator)}의 방</div>
+          <div class="cm-cm-room-meta">${r.players}명 참가 중</div>
+        </div>
+        <span class="cm-cm-room-badge ${r.status==='waiting'?'cm-cm-badge-wait':'cm-cm-badge-play'}">${r.status==='waiting'?'대기 중':'게임 중'}</span>
+      </div>`).join('');
+  } catch(e) {
+    list.innerHTML = '<div style="text-align:center;padding:30px;color:#ef4444;font-size:0.82rem">불러오기 실패</div>';
+  }
+}
+
+async function cmCreateCmRoom() {
+  if (!_cmNick) return;
+  try {
+    const res = await fetch('/api/catchmind/create', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({nick: _cmNick})
+    }).then(r=>r.json());
+    cmJoinCmRoom(res.room_id);
+  } catch(e) { alert('방 만들기 실패'); }
+}
+
+function cmJoinCmRoom(roomId) {
+  if (!_cmNick) return;
+  if (_cmWsCm) { _cmWsCm.close(); _cmWsCm = null; }
+  const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+  const ws = new WebSocket(`${proto}//${location.host}/ws/catchmind/${roomId}?nick=${encodeURIComponent(_cmNick)}`);
+  _cmWsCm = ws;
+  _cmScreen('cm-cm-game');
+  _cmCmGameInit();
+
+  ws.onmessage = (e) => {
+    const msg = JSON.parse(e.data);
+    _cmHandleMsg(msg);
+  };
+  ws.onclose = (e) => {
+    if (e.code === 4004) { _cmCmChat('notice','방을 찾을 수 없어요.'); cmLeaveCmGame(); }
+    else if (e.code === 4003) { _cmCmChat('notice','방이 꽉 찼어요.'); cmLeaveCmGame(); }
+    else _cmCmChat('notice','연결이 끊어졌어요.');
+  };
+}
+
+function cmLeaveCmGame() {
+  if (_cmWsCm) { _cmWsCm.close(); _cmWsCm = null; }
+  _cmPid = null; _cmDrawerId = null; _cmIsDrawer = false;
+  cmShowCatchmindLobby();
+}
+
+function _cmCmGameInit() {
+  // canvas setup
+  const canvas = document.getElementById('cm-canvas');
+  const ctx = canvas.getContext('2d');
+  const wrap = document.getElementById('cm-canvas-wrap');
+  const size = wrap.clientWidth - 24;
+  canvas.width = size; canvas.height = size;
+  ctx.fillStyle = '#ffffff'; ctx.fillRect(0,0,size,size);
+
+  document.getElementById('cm-chat').innerHTML = '';
+  document.getElementById('cm-players-bar').innerHTML = '';
+  document.getElementById('cm-timer').textContent = '—';
+  document.getElementById('cm-tools').classList.remove('visible');
+  document.getElementById('cm-word-box').classList.remove('visible');
+  document.getElementById('cm-canvas-overlay').style.display = 'none';
+  document.getElementById('cm-guess-input').disabled = false;
+
+  _cmDrawing = false; _cmEraser = false; _cmColor = '#000000'; _cmSize = 4;
+  document.querySelectorAll('.cm-color-btn').forEach((b,i) => b.classList.toggle('active', i===0));
+  document.querySelectorAll('.cm-size-btn').forEach((b,i) => b.classList.toggle('active', i===0));
+  document.getElementById('cm-eraser-btn').classList.remove('active');
+
+  _cmBindCanvas(canvas);
+}
+
+function _cmBindCanvas(canvas) {
+  const getPos = (e) => {
+    const r = canvas.getBoundingClientRect();
+    const src = e.touches ? e.touches[0] : e;
+    return [(src.clientX - r.left) / r.width, (src.clientY - r.top) / r.height];
+  };
+  const start = (e) => {
+    if (!_cmIsDrawer) return;
+    e.preventDefault();
+    _cmDrawing = true;
+    [_cmLastX, _cmLastY] = getPos(e);
+    _cmEmitDraw(_cmLastX, _cmLastY, null, null);
+  };
+  const move = (e) => {
+    if (!_cmDrawing || !_cmIsDrawer) return;
+    e.preventDefault();
+    const [x, y] = getPos(e);
+    _cmEmitDraw(x, y, _cmLastX, _cmLastY);
+    _cmLastX = x; _cmLastY = y;
+  };
+  const end = () => { _cmDrawing = false; };
+
+  canvas.onmousedown = start;
+  canvas.onmousemove = move;
+  canvas.onmouseup = end;
+  canvas.onmouseleave = end;
+  canvas.addEventListener('touchstart', start, {passive:false});
+  canvas.addEventListener('touchmove', move, {passive:false});
+  canvas.addEventListener('touchend', end);
+}
+
+function _cmEmitDraw(x, y, lx, ly) {
+  const canvas = document.getElementById('cm-canvas');
+  const d = {x, y, lx, ly, c: _cmEraser ? '#ffffff' : _cmColor, s: _cmEraser ? _cmSize*2.5 : _cmSize};
+  _cmRenderStroke(canvas, d);
+  if (_cmWsCm && _cmWsCm.readyState === 1)
+    _cmWsCm.send(JSON.stringify({type:'draw', d}));
+}
+
+function _cmRenderStroke(canvas, d) {
+  const ctx = canvas.getContext('2d');
+  const w = canvas.width, h = canvas.height;
+  ctx.beginPath();
+  ctx.lineWidth = d.s;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.strokeStyle = d.c;
+  if (d.lx != null) {
+    ctx.moveTo(d.lx * w, d.ly * h);
+    ctx.lineTo(d.x * w, d.y * h);
+  } else {
+    ctx.arc(d.x * w, d.y * h, d.s/2, 0, Math.PI*2);
+    ctx.fillStyle = d.c;
+    ctx.fill();
+    return;
+  }
+  ctx.stroke();
+}
+
+function _cmHandleMsg(msg) {
+  const t = msg.type;
+  if (t === 'joined') {
+    _cmPid = msg.pid;
+    _cmUpdatePlayers(msg.players, null);
+    if (msg.status === 'waiting') {
+      _cmShowOverlay('⏳ 상대방 기다리는 중...', '1분 내 참여자가 없으면 방이 닫혀요', null, null);
+    }
+  } else if (t === 'player_join') {
+    _cmCmChat('notice', `${msg.name}님이 입장했어요 (${msg.count}명)`);
+    document.getElementById('cm-canvas-overlay').style.display = 'none';
+  } else if (t === 'player_leave') {
+    _cmCmChat('notice', `${msg.name}님이 퇴장했어요 (${msg.count}명)`);
+  } else if (t === 'round_start') {
+    _cmStartRound(msg);
+  } else if (t === 'draw') {
+    const canvas = document.getElementById('cm-canvas');
+    _cmRenderStroke(canvas, msg.d);
+  } else if (t === 'clear') {
+    _cmClearLocal();
+  } else if (t === 'timer') {
+    const el = document.getElementById('cm-timer');
+    el.textContent = msg.t + 's';
+    el.classList.toggle('urgent', msg.t <= 10);
+  } else if (t === 'guess') {
+    if (msg.correct) {
+      _cmCmChat('correct', `🎉 ${msg.name} 정답! (${msg.text})`);
+    } else {
+      _cmCmChat('msg', msg.name, msg.text);
+    }
+  } else if (t === 'round_end') {
+    const winText = msg.winner ? `정답자: ${msg.winner}` : '시간 초과!';
+    _cmShowOverlay(`🏁 라운드 종료`, `정답: ${msg.word}\n${winText}`, msg.scores, null);
+    _cmUpdateScores(msg.scores);
+  } else if (t === 'game_over') {
+    _cmShowOverlay(`🏆 게임 종료!`, `🥇 ${msg.winner} 승리!\n정답: ${msg.word}`, msg.scores, '다시 하기');
+    _cmUpdateScores(msg.scores);
+  } else if (t === 'room_closed') {
+    _cmShowOverlay('방이 닫혔어요', '1분 내 참여자가 없어 방이 닫혔습니다', null, '나가기');
+  }
+}
+
+function _cmStartRound(msg) {
+  _cmIsDrawer = !!msg.word;
+  document.getElementById('cm-canvas-overlay').style.display = 'none';
+  const tools = document.getElementById('cm-tools');
+  const wordBox = document.getElementById('cm-word-box');
+  const input = document.getElementById('cm-guess-input');
+
+  if (_cmIsDrawer) {
+    tools.classList.add('visible');
+    wordBox.textContent = `✏️ 그릴 포켓몬: ${msg.word}`;
+    wordBox.classList.add('visible');
+    input.disabled = true;
+    input.placeholder = '그림을 그려주세요!';
+  } else {
+    tools.classList.remove('visible');
+    wordBox.classList.remove('visible');
+    input.disabled = false;
+    input.placeholder = '포켓몬 이름 맞춰보세요...';
+  }
+
+  _cmClearLocal();
+  document.querySelectorAll('.cm-player-chip').forEach(chip => {
+    const name = chip.childNodes[0].textContent.trim();
+    chip.classList.toggle('drawer', name === msg.drawer);
+  });
+  _cmCmChat('notice', `✏️ ${msg.drawer}님이 그림을 그립니다!`);
+}
+
+function _cmClearLocal() {
+  const canvas = document.getElementById('cm-canvas');
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
+function _cmShowOverlay(title, sub, scores, btnText) {
+  const el = document.getElementById('cm-canvas-overlay');
+  const scoresHtml = scores ? Object.entries(scores)
+    .sort((a,b) => b[1]-a[1])
+    .map(([name, score]) => `<div class="cm-score-row"><span>${esc(name)}</span><span class="score" style="color:#60a5fa;font-weight:700">${score}점</span></div>`)
+    .join('') : '';
+  el.innerHTML = `
+    <div class="cm-overlay-title">${title}</div>
+    <div class="cm-overlay-sub" style="white-space:pre-line">${sub}</div>
+    ${scoresHtml ? `<div class="cm-overlay-scores">${scoresHtml}</div>` : ''}
+    ${btnText ? `<button class="cm-overlay-btn" onclick="${btnText==='나가기'?'cmLeaveCmGame()':'_cmRequestRestart()'}">${btnText}</button>` : ''}
+  `;
+  el.style.display = 'flex';
+}
+
+function _cmUpdatePlayers(players, drawerName) {
+  const bar = document.getElementById('cm-players-bar');
+  bar.innerHTML = players.map(p => {
+    const isDrawer = drawerName && p.name === drawerName;
+    return `<div class="cm-player-chip${isDrawer?' drawer':''}">${esc(p.name)} <span class="score">${p.score}</span></div>`;
+  }).join('');
+}
+
+function _cmUpdateScores(scores) {
+  const bar = document.getElementById('cm-players-bar');
+  const chips = bar.querySelectorAll('.cm-player-chip');
+  chips.forEach(chip => {
+    const name = chip.childNodes[0].textContent.trim();
+    if (scores[name] !== undefined) {
+      chip.querySelector('.score').textContent = scores[name];
+    }
+  });
+}
+
+function _cmCmChat(type, nameOrText, text) {
+  const chat = document.getElementById('cm-chat');
+  const div = document.createElement('div');
+  div.className = 'cm-chat-msg' + (type==='correct'?' correct':type==='notice'?' notice':'');
+  if (type === 'msg') {
+    div.innerHTML = `<span class="nm">${esc(nameOrText)}</span> ${esc(text)}`;
+  } else {
+    div.textContent = nameOrText;
+  }
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function _cmRequestRestart() {
+  if (_cmWsCm && _cmWsCm.readyState === 1)
+    _cmWsCm.send(JSON.stringify({type:'restart'}));
+  document.getElementById('cm-canvas-overlay').style.display = 'none';
+}
+
+function cmPickColor(btn) {
+  _cmEraser = false;
+  _cmColor = btn.dataset.color;
+  document.querySelectorAll('.cm-color-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('cm-eraser-btn').classList.remove('active');
+}
+
+function cmPickSize(btn) {
+  _cmSize = parseInt(btn.dataset.size);
+  document.querySelectorAll('.cm-size-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+function cmToggleEraser() {
+  _cmEraser = !_cmEraser;
+  document.getElementById('cm-eraser-btn').classList.toggle('active', _cmEraser);
+}
+
+function cmClearCanvas() {
+  _cmClearLocal();
+  if (_cmWsCm && _cmWsCm.readyState === 1)
+    _cmWsCm.send(JSON.stringify({type:'clear'}));
+}
+
+function cmSendGuess() {
+  const input = document.getElementById('cm-guess-input');
+  const text = input.value.trim();
+  if (!text || !_cmWsCm || _cmWsCm.readyState !== 1) return;
+  _cmWsCm.send(JSON.stringify({type:'guess', text}));
+  input.value = '';
+}
 </script>
 <script>
   if ('serviceWorker' in navigator) {
