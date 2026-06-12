@@ -146,6 +146,8 @@
     #event-detail-body { overflow-y: auto; flex: 1; padding: 0 12px 18px; }
     #event-detail-body::-webkit-scrollbar { width: 3px; }
     #event-detail-body::-webkit-scrollbar-thumb { background: #334155; }
+    .event-bonus-list { list-style: none; display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
+    .event-bonus-item { font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; padding: 8px 12px; background: #1e293b; border-radius: 10px; border-left: 3px solid #3b82f6; }
     .event-pm-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-top: 6px; }
     .event-research-item { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; }
     .event-research-task { font-size: 0.78rem; color: #94a3b8; margin-bottom: 8px; }
@@ -553,6 +555,7 @@
         <button class="event-detail-tab active" onclick="switchEventTab('wild',this)">🌿 야생</button>
         <button class="event-detail-tab" onclick="switchEventTab('raids',this)">⚔️ 레이드</button>
         <button class="event-detail-tab" onclick="switchEventTab('research',this)">📋 리서치</button>
+        <button class="event-detail-tab" onclick="switchEventTab('info',this)">ℹ️ 정보</button>
       </div>
       <div id="event-detail-body"></div>
     </div>
@@ -976,6 +979,10 @@ function renderEventTab(tab) {
         <div class="event-research-rewards">${t.rewards.map(p=>pmCard(p,false)).join('')}</div>
       </div>`
     ).join('');
+  } else if (tab === 'info') {
+    const bonuses = d.bonuses || [];
+    if (!bonuses.length) { body.innerHTML='<p class="raid-empty">이벤트 특전 정보가 없어요.</p>'; return; }
+    body.innerHTML = `<ul class="event-bonus-list">${bonuses.map(b=>`<li class="event-bonus-item">✦ ${esc(b)}</li>`).join('')}</ul>`;
   }
 }
 
@@ -983,6 +990,13 @@ function switchEventTab(tab, btn) {
   document.querySelectorAll('.event-detail-tab').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   renderEventTab(tab);
+}
+
+function _pickDefaultEventTab(data) {
+  if ((data.wild||[]).length)                           return 0; // 야생
+  if (Object.values(data.raids||{}).flat().length)      return 1; // 레이드
+  if ((data.research||[]).length)                       return 2; // 리서치
+  return 3;                                                        // 정보
 }
 
 async function openEventSpawnSheet(url, name) {
@@ -995,15 +1009,24 @@ async function openEventSpawnSheet(url, name) {
   title.textContent = name;
   sub.textContent = '불러오는 중...';
   body.innerHTML = '';
-  // 탭 초기화
   document.querySelectorAll('.event-detail-tab').forEach((b,i)=>b.classList.toggle('active',i===0));
   sheet.classList.add('open'); backdrop.classList.add('open');
   try {
     const data = await (await fetch(`/api/event-detail?url=${encodeURIComponent(url)}`)).json();
     _eventDetailData = data;
-    const total = (data.wild||[]).length + Object.values(data.raids||{}).flat().length + (data.research||[]).length;
-    sub.textContent = total ? `야생 ${(data.wild||[]).length} · 레이드 ${Object.values(data.raids||{}).flat().length} · 리서치 ${(data.research||[]).length}` : '정보 없음';
-    renderEventTab('wild');
+    const wildCnt = (data.wild||[]).length;
+    const raidCnt = Object.values(data.raids||{}).flat().length;
+    const resCnt  = (data.research||[]).length;
+    const bonusCnt = (data.bonuses||[]).length;
+    const hasPokemon = wildCnt + raidCnt + resCnt;
+    sub.textContent = hasPokemon
+      ? `야생 ${wildCnt} · 레이드 ${raidCnt} · 리서치 ${resCnt}`
+      : (bonusCnt ? `이벤트 특전 ${bonusCnt}개` : '정보 없음');
+    const tabIdx = _pickDefaultEventTab(data);
+    const tabs = document.querySelectorAll('.event-detail-tab');
+    tabs.forEach((b,i)=>b.classList.toggle('active',i===tabIdx));
+    const tabNames = ['wild','raids','research','info'];
+    renderEventTab(tabNames[tabIdx]);
   } catch { sub.textContent = '불러오기 실패'; body.innerHTML = '<p class="raid-empty">오류가 발생했어요.</p>'; }
 }
 

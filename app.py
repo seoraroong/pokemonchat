@@ -1168,6 +1168,27 @@ def _get_section_any(html: str, start_ids: list[str], stop_ids: list[str]) -> st
             return s
     return ""
 
+def _parse_event_bonuses(html: str) -> list[str]:
+    bonus_ids = ["event-bonuses", "bonuses", "features", "event-features",
+                 "bonuses-and-features", "bonus", "event-bonus"]
+    stop_ids  = ["wild-encounters", "spawns", "wild-spawns", "featured-pokemon",
+                 "one-star-raids", "three-star-raids", "five-star-raids", "mega-raids",
+                 "field-research", "research-tasks", "go-pass", "sales", "footer"]
+    section = _get_section_any(html, bonus_ids, stop_ids)
+    if not section:
+        return []
+    items = []
+    for li in re.findall(r"<li[^>]*>(.*?)</li>", section, re.DOTALL):
+        text = re.sub(r"<[^>]+>", "", li)
+        for ent, rep in [("&amp;", "&"), ("&nbsp;", " "), ("&#x27;", "'"),
+                         ("&apos;", "'"), ("&lt;", "<"), ("&gt;", ">"), ("&times;", "×")]:
+            text = text.replace(ent, rep)
+        text = re.sub(r"\s+", " ", text).strip()
+        if 5 < len(text) < 400:
+            items.append(text)
+    return items[:25]
+
+
 def _parse_event_html(html: str) -> dict:
     _STOP_ALL = ["go-pass", "sales", "graphic", "footer"]
     wild_ids = ["wild-encounters", "spawns", "wild-spawns", "featured-pokemon", "boosted-spawns"]
@@ -1198,7 +1219,8 @@ def _parse_event_html(html: str) -> dict:
         if rewards:
             tasks.append({"task": task, "rewards": rewards})
 
-    return {"wild": wild, "raids": raids, "research": tasks}
+    bonuses = _parse_event_bonuses(html)
+    return {"wild": wild, "raids": raids, "research": tasks, "bonuses": bonuses}
 
 
 @app.get("/api/event-detail")
