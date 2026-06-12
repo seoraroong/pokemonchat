@@ -164,6 +164,36 @@
     .raid-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 10px; padding: 7px 5px 7px; text-align: center; cursor: pointer; transition: transform 0.12s, background 0.12s; display: flex; flex-direction: column; align-items: center; gap: 3px; }
     .raid-card:hover { background: #243450; border-color: #3b82f6; transform: translateY(-2px); }
     .raid-sprite { width: 68px; height: 68px; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); }
+    /* Shadow(다크) 포켓몬 오라 효과 */
+    .shadow-aura { position: relative; display: inline-flex; align-items: center; justify-content: center; }
+    .shadow-aura::before {
+      content: ''; position: absolute; inset: -10px; border-radius: 50%; z-index: 0;
+      background: conic-gradient(
+        rgba(60,0,140,0) 0%, rgba(110,0,230,0.6) 18%, rgba(150,30,255,0.35) 33%,
+        rgba(60,0,140,0) 50%, rgba(100,0,210,0.55) 68%, rgba(140,20,255,0.3) 84%,
+        rgba(60,0,140,0) 100%);
+      filter: blur(5px);
+      animation: shadow-spin 2.4s linear infinite;
+    }
+    .shadow-aura::after {
+      content: ''; position: absolute; inset: -5px; border-radius: 50%; z-index: 0;
+      background: conic-gradient(
+        rgba(80,0,170,0) 0%, rgba(130,50,255,0.45) 28%,
+        rgba(80,0,170,0) 55%, rgba(110,10,220,0.4) 82%,
+        rgba(80,0,170,0) 100%);
+      filter: blur(3px);
+      animation: shadow-spin 1.7s linear infinite reverse;
+    }
+    .shadow-aura img {
+      position: relative; z-index: 1;
+      filter: drop-shadow(0 0 4px rgba(120,0,240,1)) drop-shadow(0 0 10px rgba(70,0,170,0.85)) brightness(0.84);
+      animation: shadow-glow 2s ease-in-out infinite;
+    }
+    @keyframes shadow-spin { to { transform: rotate(360deg); } }
+    @keyframes shadow-glow {
+      0%,100% { filter: drop-shadow(0 0 4px rgba(120,0,240,1)) drop-shadow(0 0 10px rgba(70,0,170,0.85)) brightness(0.84); }
+      50%      { filter: drop-shadow(0 0 7px rgba(160,0,255,1)) drop-shadow(0 0 18px rgba(100,0,210,0.95)) drop-shadow(0 0 28px rgba(50,0,140,0.55)) brightness(0.76); }
+    }
     .raid-name { font-size: 0.72rem; font-weight: 600; color: #e2e8f0; line-height: 1.2; }
     .raid-shiny { font-size: 0.6rem; color: #f59e0b; }
     .raid-types { display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; }
@@ -1072,12 +1102,14 @@ async function renderRaidBossDetails(body, raidBosses) {
     const cpNormal  = (bd.cp_min && bd.cp_max)         ? `<div class="boss-cp-badge">일반 <span>${bd.cp_min.toLocaleString()}–${bd.cp_max.toLocaleString()} CP</span></div>` : '';
     const cpBoosted = (bd.cp_boosted_min && bd.cp_boosted_max) ? `<div class="boss-cp-badge">부스트 <span>${bd.cp_boosted_min.toLocaleString()}–${bd.cp_boosted_max.toLocaleString()} CP</span></div>` : '';
     const wIcons = weatherIcons(bd.weather||[]);
+    const isShadowBoss = (boss.en||'').toLowerCase().startsWith('shadow');
+    const wrapShadow = (imgHtml) => isShadowBoss ? `<div class="shadow-aura">${imgHtml}</div>` : imgHtml;
     const spriteHtml = isShiny && sprNormal
       ? `<div class="boss-sprite-pair">
-           <div><img src="${sprNormal}" onerror="this.style.opacity='0.2'"><div class="boss-sprite-label">기본</div></div>
-           <div><img src="${sprShiny}"  onerror="this.style.opacity='0.2'"><div class="boss-sprite-label" style="color:#f59e0b">✦ 색변</div></div>
+           <div>${wrapShadow(`<img src="${sprNormal}" onerror="this.style.opacity='0.2'">`)}<div class="boss-sprite-label">기본</div></div>
+           <div><img src="${sprShiny}" onerror="this.style.opacity='0.2'"><div class="boss-sprite-label" style="color:#f59e0b">✦ 색변</div></div>
          </div>`
-      : (sprNormal ? `<img class="boss-detail-sprite" src="${sprNormal}" onerror="this.style.opacity='0.2'">` : '');
+      : (sprNormal ? wrapShadow(`<img class="boss-detail-sprite" src="${sprNormal}" onerror="this.style.opacity='0.2'">`) : '');
     html += `<div class="boss-detail-card">
       <div class="boss-detail-header">
         ${spriteHtml}
@@ -1216,7 +1248,11 @@ async function loadRaids() {
           ? `<div class="raid-cp" style="color:#7dd3fc">⛅ ${boss.cp_boosted_min.toLocaleString()}–${boss.cp_boosted_max.toLocaleString()}</div>` : '';
         const weatherHtml = (boss.weather||[]).length
           ? `<div class="raid-weather">${weatherIcons(boss.weather)}</div>` : '';
-        html+=`<div class="raid-card" ${clickAttr}><img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.src='${fallbackUrl}'">`+
+        const isShadow = (boss.en_name||'').toLowerCase().startsWith('shadow');
+        const spriteHtml = isShadow
+          ? `<div class="shadow-aura"><img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.src='${fallbackUrl}'"></div>`
+          : `<img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.src='${fallbackUrl}'">`;
+        html+=`<div class="raid-card" ${clickAttr}>${spriteHtml}`+
           `<div class="raid-name">${esc(boss.ko_name)}</div>${boss.is_shiny?'<div class="raid-shiny">✦ 색변</div>':''}` +
           `<div class="raid-types">${typeHtml}</div>${cpText}${cpBoost}${weatherHtml}</div>`;
       }
