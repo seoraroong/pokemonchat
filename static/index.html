@@ -1242,7 +1242,8 @@ async function loadRaids() {
       const period = endLabel ? `<span style="font-size:0.65rem;font-weight:400;color:#64748b;margin-left:6px">${endLabel}</span>` : '';
       html+=`<div class="tier-section"><div class="tier-label">${label} (${bosses.length})${period}</div><div class="raid-grid">`;
       for(const boss of bosses){
-        const spriteDex = boss.form_dex || boss.dex;  // 스프라이트: 리전폼 ID 우선
+        const isShadow = (boss.en_name||'').toLowerCase().startsWith('shadow');
+        const spriteDex = boss.form_dex || boss.dex;
         const artUrl=spriteDex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${spriteDex}.png`:'';
         const fallbackUrl=spriteDex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${spriteDex}.png`:`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 58 58'%3E%3Ccircle cx='29' cy='29' r='27' fill='%231e293b'/%3E%3C/svg%3E`;
         const spriteUrl=artUrl||fallbackUrl;
@@ -1256,7 +1257,6 @@ async function loadRaids() {
           ? `<div class="raid-cp" style="color:#7dd3fc">⛅ ${boss.cp_boosted_min.toLocaleString()}–${boss.cp_boosted_max.toLocaleString()}</div>` : '';
         const weatherHtml = (boss.weather||[]).length
           ? `<div class="raid-weather">${weatherIcons(boss.weather)}</div>` : '';
-        const isShadow = (boss.en_name||'').toLowerCase().startsWith('shadow');
         const spriteHtml = isShadow
           ? `<div class="shadow-aura"><img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.src='${fallbackUrl}'"></div>`
           : `<img class="raid-sprite" src="${spriteUrl}" alt="${esc(boss.ko_name)}" onerror="this.src='${fallbackUrl}'">`;
