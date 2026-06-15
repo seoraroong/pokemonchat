@@ -1,4 +1,4 @@
-const CACHE = 'pokemore-v1';
+const CACHE = 'pokemore-v2';
 const STATIC = ['/static/index.html', '/static/manifest.json', '/static/icon.svg'];
 
 self.addEventListener('install', e => {

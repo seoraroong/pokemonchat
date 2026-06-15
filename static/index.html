@@ -2,7 +2,21 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <script>
+    // Samsung PWA 980px 문제: device-width를 읽기 전에 올바른 width로 meta를 직접 생성
+    (function () {
+      var w = screen.width;
+      // 일부 기기에서 screen.width가 물리픽셀을 반환할 경우 DPR로 보정
+      if (w > 480 && window.devicePixelRatio > 1) {
+        w = Math.round(w / window.devicePixelRatio);
+      }
+      var m = document.createElement('meta');
+      m.name = 'viewport';
+      m.content = 'width=' + w + ', initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover';
+      document.head.appendChild(m);
+      window._vpW = w; // 이후 zoom 폴백에서 참조
+    })();
+  </script>
   <title>PokeMORE</title>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#0f172a">
@@ -598,11 +612,6 @@
   </style>
   <script>
     (function () {
-      // Samsung PWA: device-width 무시 우회 — screen.width로 viewport 직접 고정
-      var m = document.querySelector('meta[name=viewport]');
-      if (m) {
-        m.content = 'width=' + screen.width + ', initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover';
-      }
       // PWA standalone 모드 감지 → 데스크탑 레이아웃 CSS 차단
       var isStandalone = window.matchMedia('(display-mode: standalone)').matches
                       || window.navigator.standalone === true;
@@ -613,6 +622,14 @@
       }
       applyVH();
       window.addEventListener('resize', applyVH);
+      // 최후 방어선: DOM 로드 후에도 뷰포트가 980px이면 CSS zoom으로 강제 보정
+      window.addEventListener('DOMContentLoaded', function () {
+        if (window.innerWidth > 500) {
+          var targetW = window._vpW || screen.width;
+          if (targetW > 480 && window.devicePixelRatio > 1) targetW = Math.round(targetW / window.devicePixelRatio);
+          document.documentElement.style.zoom = targetW / window.innerWidth;
+        }
+      });
     })();
   </script>
 </head>
