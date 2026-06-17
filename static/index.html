@@ -1667,12 +1667,15 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
         <div class="shadow-note">기본 기술로 <b style="color:#c084fc">답답함 (Frustration)</b> 고정 장착<br>이벤트 기간에만 다른 기술로 교체 가능 · 정화 시 일반 포켓몬으로 전환</div>
       </div>` : '';
     const forms = p.forms || [];
-    const mkFBtn = (label, dexArg, idx, note, atk, def, sta, cp40arg, t1, t2, active) =>
-      `<button class="form-btn${active?' active':''}" data-note="${esc(note||'')}" data-atk="${atk||''}" data-def="${def||''}" data-sta="${sta||''}" data-cp40="${cp40arg||''}" data-t1="${t1||''}" data-t2="${t2||''}" onclick="switchForm(${dexArg},${idx})">${esc(label)}</button>`;
+    // 폼별 스탯을 전역 변수에 저장 (data attribute 방식보다 안정적)
+    _popupFormStats = [{atk:p.atk, def:p.def, sta:p.sta, cp40:p.cp40, t1:p.t1, t2:p.t2||''}];
+    forms.forEach(f => _popupFormStats.push(
+      (f.atk != null) ? {atk:f.atk, def:f.def, sta:f.sta, cp40:f.cp40, t1:f.t1||'', t2:f.t2||''} : null
+    ));
     const formSwitcher = forms.length > 0 ? `
       <div class="form-switcher">
-        ${mkFBtn('기본', dex, 0, '', p.atk, p.def, p.sta, p.cp40, p.t1, p.t2||'', true)}
-        ${forms.map((f,i)=>mkFBtn(f.label, f.form_dex, i+1, f.note||'', f.atk||'', f.def||'', f.sta||'', f.cp40||'', f.t1||'', f.t2||'', false)).join('')}
+        <button class="form-btn active" data-note="" onclick="switchForm(${dex},0)">기본</button>
+        ${forms.map((f,i)=>`<button class="form-btn" data-note="${esc(f.note||'')}" onclick="switchForm(${f.form_dex},${i+1})">${esc(f.label)}</button>`).join('')}
       </div>
       <div class="form-note" id="form-note"></div>` : '';
     body.innerHTML=`
@@ -1767,6 +1770,7 @@ function closePokemonPopup() {
 }
 
 let _shinyMode = false;
+let _popupFormStats = [];  // [base, form0, form1, ...] each {atk,def,sta,cp40,t1,t2}
 function toggleShinySprite(dex) {
   _shinyMode = !_shinyMode;
   const img = document.getElementById('popup-main-sprite');
@@ -1795,23 +1799,22 @@ function switchForm(spriteDex, btnIdx) {
   const btns = document.querySelectorAll('.form-btn');
   btns.forEach((b, i) => b.classList.toggle('active', i === btnIdx));
   const btn = btns[btnIdx];
-  if (!btn) return;
   const noteEl = document.getElementById('form-note');
-  if (noteEl) noteEl.textContent = btn.dataset.note || '';
-  // 폼별 스탯 업데이트 (gamemaster에 variant_forms 데이터가 있는 폼만)
-  if (btn.dataset.atk) {
-    const fmt = v => v ? Number(v).toLocaleString() : '—';
+  if (noteEl && btn) noteEl.textContent = btn.dataset.note || '';
+  // 폼별 스탯 업데이트
+  const stats = _popupFormStats[btnIdx];
+  if (stats && stats.atk != null) {
+    const fmt = v => (v != null) ? Number(v).toLocaleString() : '—';
     const el = id => document.getElementById(id);
-    if (el('ps-atk'))  el('ps-atk').textContent  = fmt(btn.dataset.atk);
-    if (el('ps-def'))  el('ps-def').textContent  = fmt(btn.dataset.def);
-    if (el('ps-sta'))  el('ps-sta').textContent  = fmt(btn.dataset.sta);
-    if (el('ps-cp40')) el('ps-cp40').textContent = fmt(btn.dataset.cp40);
-    if (btn.dataset.t1) {
-      const t2 = btn.dataset.t2;
+    if (el('ps-atk'))  el('ps-atk').textContent  = fmt(stats.atk);
+    if (el('ps-def'))  el('ps-def').textContent  = fmt(stats.def);
+    if (el('ps-sta'))  el('ps-sta').textContent  = fmt(stats.sta);
+    if (el('ps-cp40')) el('ps-cp40').textContent = fmt(stats.cp40);
+    if (stats.t1) {
       const typesEl = document.getElementById('popup-types');
       if (typesEl) typesEl.innerHTML =
-        `<span class="type-badge" style="background:${TYPE_BG[btn.dataset.t1]||'#71727a'}">${TYPE_KO[btn.dataset.t1]||btn.dataset.t1}</span>`+
-        (t2 ? `<span class="type-badge" style="background:${TYPE_BG[t2]||'#71727a'}">${TYPE_KO[t2]||t2}</span>` : '');
+        `<span class="type-badge" style="background:${TYPE_BG[stats.t1]||'#71727a'}">${TYPE_KO[stats.t1]||stats.t1}</span>`+
+        (stats.t2 ? `<span class="type-badge" style="background:${TYPE_BG[stats.t2]||'#71727a'}">${TYPE_KO[stats.t2]||stats.t2}</span>` : '');
     }
   }
 }
