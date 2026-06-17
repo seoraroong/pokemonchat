@@ -33,6 +33,13 @@ VARIANT_KEYWORDS = {
     "xl", "xs",
 }
 
+# 키워드 매칭이 안 되지만 명시적으로 variant로 처리할 species IDs
+VARIANT_SPECIFIC_IDS = {
+    "deoxys_attack", "deoxys_defense", "deoxys_speed",
+    "hoopa_unbound", "hoopa_confined",
+    "calyrex_ice_rider", "calyrex_shadow_rider",
+}
+
 # speciesId 에 언더스코어가 있지만 기본 폼인 특수 케이스
 BASE_FORM_OVERRIDES = {
     "nidoran_female", "nidoran_male", "mr_mime", "farfetch_d",
@@ -55,6 +62,8 @@ def calc_cp(atk, def_, sta, cpm):
 def is_variant(species_id: str) -> bool:
     if species_id in BASE_FORM_OVERRIDES:
         return False
+    if species_id in VARIANT_SPECIFIC_IDS:
+        return True
     parts = set(species_id.lower().split("_"))
     return bool(parts & VARIANT_KEYWORDS)
 

@@ -19535,7 +19535,68 @@
     ],
     "elite_fast": [],
     "elite_charged": [],
-    "variant_forms": {}
+    "variant_forms": {
+      "deoxys_attack": {
+        "atk": 414,
+        "def": 46,
+        "sta": 137,
+        "cp_40": 2580,
+        "cp_50": 2916,
+        "type1": "psychic",
+        "type2": "none",
+        "fast_moves": [
+          "Poison Jab",
+          "Zen Headbutt"
+        ],
+        "charged_moves": [
+          "Dark Pulse",
+          "Psycho Boost",
+          "Zap Cannon"
+        ],
+        "elite_fast": [],
+        "elite_charged": []
+      },
+      "deoxys_defense": {
+        "atk": 144,
+        "def": 330,
+        "sta": 137,
+        "cp_40": 2274,
+        "cp_50": 2570,
+        "type1": "psychic",
+        "type2": "none",
+        "fast_moves": [
+          "Counter",
+          "Zen Headbutt"
+        ],
+        "charged_moves": [
+          "Psycho Boost",
+          "Rock Slide",
+          "Thunderbolt"
+        ],
+        "elite_fast": [],
+        "elite_charged": []
+      },
+      "deoxys_speed": {
+        "atk": 230,
+        "def": 218,
+        "sta": 137,
+        "cp_40": 2879,
+        "cp_50": 3255,
+        "type1": "psychic",
+        "type2": "none",
+        "fast_moves": [
+          "Charge Beam",
+          "Zen Headbutt"
+        ],
+        "charged_moves": [
+          "Psycho Boost",
+          "Swift",
+          "Thunderbolt"
+        ],
+        "elite_fast": [],
+        "elite_charged": []
+      }
+    }
   },
   "387": {
     "dex": 387,
@@ -32469,7 +32530,48 @@
     ],
     "elite_fast": [],
     "elite_charged": [],
-    "variant_forms": {}
+    "variant_forms": {
+      "hoopa_confined": {
+        "atk": 261,
+        "def": 187,
+        "sta": 173,
+        "cp_40": 3359,
+        "cp_50": 3797,
+        "type1": "psychic",
+        "type2": "ghost",
+        "fast_moves": [
+          "Confusion",
+          "Astonish"
+        ],
+        "charged_moves": [
+          "Shadow Ball",
+          "Psybeam",
+          "Psychic"
+        ],
+        "elite_fast": [],
+        "elite_charged": []
+      },
+      "hoopa_unbound": {
+        "atk": 311,
+        "def": 191,
+        "sta": 173,
+        "cp_40": 4006,
+        "cp_50": 4530,
+        "type1": "psychic",
+        "type2": "dark",
+        "fast_moves": [
+          "Confusion",
+          "Astonish"
+        ],
+        "charged_moves": [
+          "Shadow Ball",
+          "Dark Pulse",
+          "Psychic"
+        ],
+        "elite_fast": [],
+        "elite_charged": []
+      }
+    }
   },
   "721": {
     "dex": 721,
@@ -37335,7 +37437,29 @@
     ],
     "elite_fast": [],
     "elite_charged": [],
-    "variant_forms": {}
+    "variant_forms": {
+      "calyrex_ice_rider": {
+        "atk": 268,
+        "def": 246,
+        "sta": 205,
+        "cp_40": 4235,
+        "cp_50": 4788,
+        "type1": "psychic",
+        "type2": "ice",
+        "fast_moves": [
+          "Confusion",
+          "Take Down"
+        ],
+        "charged_moves": [
+          "Psyshock",
+          "Psychic",
+          "Energy Ball",
+          "Avalanche"
+        ],
+        "elite_fast": [],
+        "elite_charged": []
+      }
+    }
   },
   "899": {
     "dex": 899,

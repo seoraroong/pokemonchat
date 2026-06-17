@@ -911,17 +911,18 @@ async def get_pokedex():
 
 # ── Pokémon detail / Events / Raids APIs ────────────────────────────
 
-_names_raw:    dict | None = None
-_gm_raw:       dict | None = None
-_pve_moves:    dict | None = None
-_move_en2ko:   dict | None = None   # en_name → ko_name
-_move_type_map: dict | None = None  # en_name → (type_en, type_ko)
-_go_moves_en:  dict | None = None   # en_name → full move dict (for raid DPS)
-_evo_extras:   dict | None = None   # dex_str → GO-specific evolution conditions
+_names_raw:         dict | None = None
+_gm_raw:            dict | None = None
+_pve_moves:         dict | None = None
+_move_en2ko:        dict | None = None   # en_name → ko_name
+_move_type_map:     dict | None = None  # en_name → (type_en, type_ko)
+_go_moves_en:       dict | None = None   # en_name → full move dict (for raid DPS)
+_evo_extras:        dict | None = None   # dex_str → GO-specific evolution conditions
+_type_effectiveness: dict | None = None  # type → {double_damage_from, half_damage_from, no_damage_from}
 
 
 def _ensure_raw() -> bool:
-    global _names_raw, _gm_raw, _pve_moves, _move_en2ko, _move_type_map, _go_moves_en, _evo_extras
+    global _names_raw, _gm_raw, _pve_moves, _move_en2ko, _move_type_map, _go_moves_en, _evo_extras, _type_effectiveness
     if _names_raw is not None:
         return True
     p1 = Path(".raw/go_all_names.json")
@@ -942,7 +943,44 @@ def _ensure_raw() -> bool:
         _move_en2ko = {}; _move_type_map = {}; _go_moves_en = {}
     p5 = Path(".raw/go_evo_extras.json")
     _evo_extras = json.loads(p5.read_text(encoding="utf-8")) if p5.exists() else {}
+    p6 = Path(".raw/type_effectiveness.json")
+    _type_effectiveness = json.loads(p6.read_text(encoding="utf-8")) if p6.exists() else {}
     return True
+
+
+def _calc_weaknesses(t1: str, t2: str) -> dict[str, list]:
+    """주어진 타입 조합에 대한 약점/내성/무효 계산."""
+    te = _type_effectiveness or {}
+    if not te or not t1:
+        return {}
+    result: dict[str, list] = {"weak": [], "resist": [], "immune": []}
+    for atk_t in te:
+        def eff(defender_type: str) -> float:
+            td = te.get(defender_type, {})
+            if atk_t in td.get("double_damage_from", []): return 2.0
+            if atk_t in td.get("no_damage_from",     []): return 0.0
+            if atk_t in td.get("half_damage_from",   []): return 0.5
+            return 1.0
+        combined = eff(t1) * (eff(t2) if t2 else 1.0)
+        if combined >= 2:
+            result["weak"].append({"type": atk_t, "mult": combined})
+        elif combined == 0:
+            result["immune"].append({"type": atk_t, "mult": 0})
+        elif combined < 1:
+            result["resist"].append({"type": atk_t, "mult": combined})
+    return result
+
+
+def _make_move_info(mid: str) -> dict:
+    """기술 이름(en) → id/ko/타입/DPS 딕셔너리."""
+    ko = (_move_en2ko or {}).get(mid, mid)
+    type_en, type_ko = (_move_type_map or {}).get(mid, ("", ""))
+    pve_key = mid.upper().replace(" ", "_")
+    pve = (_pve_moves or {}).get(pve_key, {})
+    return {
+        "id": mid, "ko": ko, "type": type_en, "type_ko": type_ko,
+        "dps": round(pve["dps_pve"], 2) if pve.get("dps_pve") is not None else None,
+    }
 
 
 @app.get("/api/pokemon/{dex}")
@@ -955,11 +993,7 @@ async def get_pokemon_detail(dex: int):
     if not nd:
         return {}
 
-    def move_info(mid: str) -> dict:
-        ko = (_move_en2ko or {}).get(mid, mid)
-        type_en, type_ko = (_move_type_map or {}).get(mid, ("", ""))
-        return {"id": mid, "ko": ko, "type": type_en, "type_ko": type_ko}
-
+    t1 = gmd.get("type1", "")
     t2 = gmd.get("type2", "") or ""
     if t2 == "none":
         t2 = ""
@@ -969,16 +1003,17 @@ async def get_pokemon_detail(dex: int):
         "ko":            nd["ko_name"],
         "en":            nd["en_name"],
         "gen":           nd["gen"],
-        "t1":            gmd.get("type1", ""),
+        "t1":            t1,
         "t2":            t2,
         "atk":           gmd.get("atk", 0),
         "def":           gmd.get("def", 0),
         "sta":           gmd.get("sta", 0),
         "cp40":          gmd.get("cp_40", 0),
-        "fast_moves":    [move_info(m) for m in gmd.get("fast_moves", [])],
-        "charged_moves": [move_info(m) for m in gmd.get("charged_moves", [])],
-        "elite_fast":    [move_info(m) for m in gmd.get("elite_fast", [])],
-        "elite_charged": [move_info(m) for m in gmd.get("elite_charged", [])],
+        "fast_moves":    [_make_move_info(m) for m in gmd.get("fast_moves", [])],
+        "charged_moves": [_make_move_info(m) for m in gmd.get("charged_moves", [])],
+        "elite_fast":    [_make_move_info(m) for m in gmd.get("elite_fast", [])],
+        "elite_charged": [_make_move_info(m) for m in gmd.get("elite_charged", [])],
+        "weaknesses":    _calc_weaknesses(t1, t2),
         "forms":         _get_forms_for_dex(dex),
     }
 
@@ -1250,40 +1285,43 @@ _FORM_PREFIX_KO: dict[str, tuple[str, str]] = {
 
 # PokeAPI form_dex → gamemaster variant_forms 키
 _FORM_DEX_TO_VARIANT: dict[int, str] = {
+    10001:  "deoxys_attack",
+    10002:  "deoxys_defense",
+    10003:  "deoxys_speed",
     10007:  "giratina_origin",
     10019:  "tornadus_therian",
     10020:  "thundurus_therian",
     10021:  "landorus_therian",
     10022:  "kyurem_black",
     10023:  "kyurem_white",
+    10086:  "hoopa_unbound",
     10120:  "zygarde_complete",
     10155:  "necrozma_dusk_mane",
     10156:  "necrozma_dawn_wings",
     10157:  "necrozma_ultra",
+    10193:  "calyrex_ice_rider",
+    10194:  "calyrex_shadow_rider",
     10245:  "dialga_origin",
     10246:  "palkia_origin",
     10249:  "enamorus_therian",
 }
 
 def _vf_stats(vf: dict) -> dict:
-    t2 = vf.get("type2", "") or ""
-
-    def move_info(mid: str) -> dict:
-        ko = (_move_en2ko or {}).get(mid, mid)
-        type_en, type_ko = (_move_type_map or {}).get(mid, ("", ""))
-        return {"id": mid, "ko": ko, "type": type_en, "type_ko": type_ko}
-
+    t2_raw = vf.get("type2", "") or ""
+    t1 = vf.get("type1", "")
+    t2 = "" if t2_raw == "none" else t2_raw
     return {
         "atk":           vf.get("atk"),
         "def":           vf.get("def"),
         "sta":           vf.get("sta"),
         "cp40":          vf.get("cp_40"),
-        "t1":            vf.get("type1", ""),
-        "t2":            "" if t2 == "none" else t2,
-        "fast_moves":    [move_info(m) for m in vf.get("fast_moves", [])],
-        "charged_moves": [move_info(m) for m in vf.get("charged_moves", [])],
-        "elite_fast":    [move_info(m) for m in vf.get("elite_fast", [])],
-        "elite_charged": [move_info(m) for m in vf.get("elite_charged", [])],
+        "t1":            t1,
+        "t2":            t2,
+        "weaknesses":    _calc_weaknesses(t1, t2),
+        "fast_moves":    [_make_move_info(m) for m in vf.get("fast_moves", [])],
+        "charged_moves": [_make_move_info(m) for m in vf.get("charged_moves", [])],
+        "elite_fast":    [_make_move_info(m) for m in vf.get("elite_fast", [])],
+        "elite_charged": [_make_move_info(m) for m in vf.get("elite_charged", [])],
     }
 
 def _get_forms_for_dex(base_dex: int) -> list[dict]:

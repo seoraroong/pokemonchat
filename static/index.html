@@ -396,6 +396,17 @@
     .form-btn { padding: 3px 14px; border-radius: 20px; border: 1px solid #334155; background: #1e293b; color: #94a3b8; font-size: 0.72rem; cursor: pointer; font-family: inherit; transition: all 0.15s; }
     .form-btn:hover { border-color: #60a5fa; color: #bfdbfe; }
     .form-btn.active { border-color: #60a5fa; background: #1e3a5f; color: #93c5fd; font-weight: 700; }
+    .move-dps { font-size: 0.62rem; color: #64748b; margin-left: 2px; }
+    .weakness-section { margin: 4px 0 12px; display: flex; flex-direction: column; gap: 4px; }
+    .weakness-row { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+    .weakness-label { font-size: 0.62rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.4px; min-width: 30px; }
+    .w-badge { display: inline-flex; align-items: center; gap: 1px; }
+    .w-badge .type-badge { font-size: 0.62rem; padding: 2px 7px; border-radius: 8px; }
+    .w-mult { font-size: 0.58rem; font-weight: 700; vertical-align: super; margin-left: 1px; line-height: 1; }
+    .w-mult.weak   { color: #ef4444; }
+    .w-mult.weak4x { color: #f97316; }
+    .w-mult.resist { color: #4ade80; }
+    .w-mult.immune { color: #64748b; }
     .shadow-info-box { background: linear-gradient(135deg,#1a0a2e,#120820); border: 1px solid rgba(120,0,220,0.5); border-radius: 12px; padding: 10px 14px; margin: 10px 0 4px; }
     .shadow-info-title { font-size: 0.72rem; font-weight: 700; color: #b060ff; margin-bottom: 8px; letter-spacing: 0.3px; }
     .shadow-stat-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; padding: 3px 0; border-bottom: 1px solid rgba(100,0,180,0.2); }
@@ -1646,7 +1657,7 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
     const t2badge=p.t2?`<span class="type-badge" style="background:${TYPE_BG[p.t2]||'#71727a'}">${TYPE_KO[p.t2]||p.t2}</span>`:'';
     const eliteFastIds=(p.elite_fast||[]).map(m=>m.id);
     const eliteChargedIds=(p.elite_charged||[]).map(m=>m.id);
-    const mkMoveChip=(m,eliteIds)=>{const e=eliteIds.includes(m.id);const dot=m.type?`<span class="move-type-dot" style="background:${TYPE_BG[m.type]||'#71727a'}" title="${m.type_ko||m.type}"></span>`:'';return`<span class="move-chip${e?' elite':''}">${dot}${esc(m.ko)}${e?' ✦':''}</span>`;};
+    const mkMoveChip=(m,eliteIds)=>{const e=eliteIds.includes(m.id);const dot=m.type?`<span class="move-type-dot" style="background:${TYPE_BG[m.type]||'#71727a'}" title="${m.type_ko||m.type}"></span>`:'';const dps=m.dps!=null?`<span class="move-dps">${m.dps}</span>`:'';return`<span class="move-chip${e?' elite':''}">${dot}${esc(m.ko)}${e?' ✦':''}${dps}</span>`;};
     const fastHtml=(p.fast_moves||[]).map(m=>mkMoveChip(m,eliteFastIds)).join('');
     const chargedHtml=(p.charged_moves||[]).map(m=>mkMoveChip(m,eliteChargedIds)).join('');
     const cp40=p.cp40?p.cp40.toLocaleString():'—';
@@ -1667,16 +1678,34 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
         <div class="shadow-note">기본 기술로 <b style="color:#c084fc">답답함 (Frustration)</b> 고정 장착<br>이벤트 기간에만 다른 기술로 교체 가능 · 정화 시 일반 포켓몬으로 전환</div>
       </div>` : '';
     const forms = p.forms || [];
+    // 약점 뱃지 HTML 생성
+    const mkWeaknessHtml = (w) => {
+      if (!w || (!w.weak?.length && !w.resist?.length && !w.immune?.length)) return '';
+      const mkBadge = (item, cls) => {
+        const bg = TYPE_BG[item.type] || '#71727a';
+        const typeKo = TYPE_KO[item.type] || item.type;
+        const mult = item.mult===4?'4×':item.mult===2?'2×':item.mult===0.5?'½×':item.mult===0.25?'¼×':item.mult===0?'0×':`${item.mult}×`;
+        return `<span class="w-badge"><span class="type-badge" style="background:${bg}">${typeKo}</span><span class="w-mult ${cls}">${mult}</span></span>`;
+      };
+      const weaks = [...(w.weak||[])].sort((a,b)=>b.mult-a.mult);
+      const resists = [...(w.resist||[]), ...(w.immune||[])].sort((a,b)=>a.mult-b.mult);
+      let html = '<div class="weakness-section">';
+      if (weaks.length) html += `<div class="weakness-row"><span class="weakness-label">약점</span>${weaks.map(x=>mkBadge(x,x.mult>=4?'weak4x':'weak')).join('')}</div>`;
+      if (resists.length) html += `<div class="weakness-row"><span class="weakness-label">내성</span>${resists.map(x=>mkBadge(x,x.mult===0?'immune':'resist')).join('')}</div>`;
+      html += '</div>';
+      return html;
+    };
     // 폼별 스탯+기술을 전역 변수에 저장
     const mkFormHtml = (fmoves, emoves, chmoves, ecmoves) => ({
       fastHtml:    (fmoves||[]).map(m=>mkMoveChip(m,(emoves||[]).map(x=>x.id))).join(''),
       chargedHtml: (chmoves||[]).map(m=>mkMoveChip(m,(ecmoves||[]).map(x=>x.id))).join(''),
     });
     _popupFormStats = [{atk:p.atk, def:p.def, sta:p.sta, cp40:p.cp40, t1:p.t1, t2:p.t2||'',
-      fastHtml, chargedHtml}];
+      fastHtml, chargedHtml, weaknessHtml: mkWeaknessHtml(p.weaknesses)}];
     forms.forEach(f => _popupFormStats.push(
       (f.atk != null) ? {atk:f.atk, def:f.def, sta:f.sta, cp40:f.cp40, t1:f.t1||'', t2:f.t2||'',
-        ...mkFormHtml(f.fast_moves, f.elite_fast, f.charged_moves, f.elite_charged)} : null
+        ...mkFormHtml(f.fast_moves, f.elite_fast, f.charged_moves, f.elite_charged),
+        weaknessHtml: mkWeaknessHtml(f.weaknesses)} : null
     ));
     const formSwitcher = forms.length > 0 ? `
       <div class="form-switcher">
@@ -1690,6 +1719,7 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
       ${formSwitcher}
       <div class="popup-num">#${num}</div><div class="popup-ko">${esc(p.ko)}</div><div class="popup-en">${esc(p.en)}</div>
       <div class="popup-types" id="popup-types"><span class="type-badge" style="background:${t1bg}">${t1ko}</span>${t2badge}</div>
+      <div id="popup-weakness-section">${mkWeaknessHtml(p.weaknesses)}</div>
       ${weatherBoostHtml(p.t1, p.t2)}
       <div class="stat-grid">
         <div class="stat-item"><div class="stat-label">공격</div><div class="stat-val" id="ps-atk">${p.atk||'—'}</div></div>
@@ -1828,6 +1858,8 @@ function switchForm(spriteDex, btnIdx) {
     const chSec = el('popup-charged-section');
     if (chSec) chSec.innerHTML = stats.chargedHtml
       ? `<div class="move-section-title">스페셜 기술</div><div class="move-list">${stats.chargedHtml}</div>` : '';
+    const weakSec = el('popup-weakness-section');
+    if (weakSec) weakSec.innerHTML = stats.weaknessHtml || '';
   }
 }
 function popupToChat(ko){closePokemonPopup();switchTab('chat');setTimeout(()=>ask(`${ko} 스탯이랑 기술 알려줘`),80);}
