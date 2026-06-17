@@ -1,35 +1,35 @@
 {
   "1": [
     {
-      "en_name": "Rockruff",
-      "ko_name": "암멍이",
-      "slug": "rockruff",
-      "dex": 744,
-      "types_ko": "바위",
+      "en_name": "Rhyhorn",
+      "ko_name": "뿔카노",
+      "slug": "rhyhorn",
+      "dex": 111,
+      "types_ko": "땅 / 바위",
       "is_shiny": true
     },
     {
-      "en_name": "Scraggy",
-      "ko_name": "곤율랭",
-      "slug": "scraggy",
-      "dex": 559,
-      "types_ko": "악 / 격투",
+      "en_name": "Skiddo",
+      "ko_name": "메이클",
+      "slug": "skiddo",
+      "dex": 672,
+      "types_ko": "풀",
       "is_shiny": true
     },
     {
-      "en_name": "Honedge",
-      "ko_name": "단칼빙",
-      "slug": "honedge",
-      "dex": 679,
-      "types_ko": "강철 / 고스트",
+      "en_name": "Espurr",
+      "ko_name": "냐스퍼",
+      "slug": "espurr",
+      "dex": 677,
+      "types_ko": "에스퍼",
       "is_shiny": true
     },
     {
-      "en_name": "Hisuian Growlithe",
-      "ko_name": "히스이 가디",
-      "slug": "hisuian-growlithe",
-      "dex": 58,
-      "types_ko": "불꽃 / 바위",
+      "en_name": "Fidough",
+      "ko_name": "쫀도기",
+      "slug": "fidough",
+      "dex": 926,
+      "types_ko": "페어리",
       "is_shiny": true
     },
     {
@@ -67,19 +67,11 @@
   ],
   "3": [
     {
-      "en_name": "Machamp",
-      "ko_name": "괴력몬",
-      "slug": "machamp",
-      "dex": 68,
-      "types_ko": "격투",
-      "is_shiny": true
-    },
-    {
-      "en_name": "Scizor",
-      "ko_name": "핫삼",
-      "slug": "scizor",
-      "dex": 212,
-      "types_ko": "벌레 / 강철",
+      "en_name": "Alolan Raichu",
+      "ko_name": "알로라 라이츄",
+      "slug": "alolan-raichu",
+      "dex": 26,
+      "types_ko": "전기 / 에스퍼",
       "is_shiny": true
     },
     {
@@ -88,6 +80,14 @@
       "slug": "magcargo",
       "dex": 219,
       "types_ko": "불꽃 / 바위",
+      "is_shiny": true
+    },
+    {
+      "en_name": "Flygon",
+      "ko_name": "플라이곤",
+      "slug": "flygon",
+      "dex": 330,
+      "types_ko": "땅 / 드래곤",
       "is_shiny": true
     },
     {
@@ -117,12 +117,12 @@
   ],
   "5": [
     {
-      "en_name": "Reshiram",
-      "ko_name": "레시라무",
-      "slug": "reshiram",
-      "dex": 643,
-      "types_ko": "드래곤 / 불꽃",
-      "is_shiny": true
+      "en_name": "Necrozma",
+      "ko_name": "네크로즈마",
+      "slug": "necrozma",
+      "dex": 800,
+      "types_ko": "에스퍼",
+      "is_shiny": false
     },
     {
       "en_name": "Shadow Dialga",
@@ -135,12 +135,12 @@
   ],
   "mega": [
     {
-      "en_name": "Mega Audino",
+      "en_name": "Mega Lopunny",
       "ko_name": "메가 이어롭",
-      "slug": "mega-audino",
-      "dex": 531,
-      "types_ko": "노말 / 페어리",
-      "is_shiny": false
+      "slug": "mega-lopunny",
+      "dex": 428,
+      "types_ko": "노말 / 격투",
+      "is_shiny": true
     }
   ]
 }
