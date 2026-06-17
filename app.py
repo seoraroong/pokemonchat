@@ -55,10 +55,23 @@ async def _run_script(script_name: str) -> tuple[bool, str]:
         return False, str(e)
 
 async def _refresh_one(name: str, script: str) -> None:
-    # raids_lock 파일이 있으면 raids 자동 갱신 건너뜀 (수동 수정 보호)
-    if name == "raids" and Path(".raw/raids_lock").exists():
-        log.info("[raids] raids_lock 존재 — 자동 갱신 건너뜀")
-        return
+    if name == "raids":
+        lock_path = Path(".raw/raids_lock")
+        if lock_path.exists():
+            import re as _re
+            from datetime import date as _date
+            text = lock_path.read_text(encoding="utf-8")
+            m = _re.search(r'(\d{4}-\d{2}-\d{2})', text)
+            if m:
+                age = (_date.today() - _date.fromisoformat(m.group(1))).days
+                if age < 7:
+                    log.info(f"[raids] raids_lock 존재 ({age}일 경과) — 자동 갱신 건너뜀")
+                    return
+                log.info(f"[raids] raids_lock 만료 ({age}일 경과) — lock 해제 후 갱신")
+                lock_path.unlink()
+            else:
+                log.info("[raids] raids_lock 존재 (날짜 없음) — 자동 갱신 건너뜀")
+                return
     st = _refresh_status[name]
     if st["running"]:
         return

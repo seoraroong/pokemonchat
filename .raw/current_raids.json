@@ -135,11 +135,11 @@
   ],
   "mega": [
     {
-      "en_name": "Mega Lopunny",
-      "ko_name": "메가 이어롭",
-      "slug": "mega-lopunny",
-      "dex": 428,
-      "types_ko": "노말 / 격투",
+      "en_name": "Mega Scizor",
+      "ko_name": "메가 핫삼",
+      "slug": "mega-scizor",
+      "dex": 212,
+      "types_ko": "벌레 / 강철",
       "is_shiny": true
     }
   ]

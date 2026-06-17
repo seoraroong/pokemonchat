@@ -20,7 +20,7 @@ summary: "페어리타입 로켓단 그런트 라인업 — 2026-06-08 기준"
 **슬롯 1:**
 | 포켓몬 | 타입 | 포획 | 색변 |
 |--------|------|------|------|
-| [[pokemon-snubbull|블루]] | 페어리 | O | O |
+| [[pokemon-snubbull|다부니]] | 페어리 | O | O |
 | [[pokemon-alolan-vulpix|Alolan Vulpix]] | 얼음 | O | O |
 | [[pokemon-ralts|랄토스]] | 에스퍼 / 페어리 | O | O |
 
@@ -28,7 +28,7 @@ summary: "페어리타입 로켓단 그런트 라인업 — 2026-06-08 기준"
 | 포켓몬 | 타입 | 포획 | 색변 |
 |--------|------|------|------|
 | [[pokemon-kirlia|킬리아]] | 에스퍼 / 페어리 | O | O |
-| [[pokemon-snubbull|블루]] | 페어리 | O | O |
+| [[pokemon-snubbull|다부니]] | 페어리 | O | O |
 | [[pokemon-galarian-weezing|Galarian Weezing]] | 독 / 페어리 | O | O |
 
 **슬롯 3:**
