@@ -392,6 +392,7 @@
     .shiny-toggle-btn:hover { background: rgba(245,158,11,0.12); }
     .shiny-toggle-btn.active { background: rgba(245,158,11,0.18); }
     .form-switcher { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 8px 0 2px; }
+    .form-note { font-size: 0.68rem; color: #7dd3fc; text-align: center; margin: 2px 0 4px; min-height: 1em; }
     .form-btn { padding: 3px 14px; border-radius: 20px; border: 1px solid #334155; background: #1e293b; color: #94a3b8; font-size: 0.72rem; cursor: pointer; font-family: inherit; transition: all 0.15s; }
     .form-btn:hover { border-color: #60a5fa; color: #bfdbfe; }
     .form-btn.active { border-color: #60a5fa; background: #1e3a5f; color: #93c5fd; font-weight: 700; }
@@ -1668,9 +1669,10 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
     const forms = p.forms || [];
     const formSwitcher = forms.length > 0 ? `
       <div class="form-switcher">
-        <button class="form-btn active" onclick="switchForm(${dex},0)">기본</button>
-        ${forms.map((f,i)=>`<button class="form-btn" onclick="switchForm(${f.form_dex},${i+1})">${esc(f.label)}</button>`).join('')}
-      </div>` : '';
+        <button class="form-btn active" data-note="" onclick="switchForm(${dex},0)">기본</button>
+        ${forms.map((f,i)=>`<button class="form-btn" data-note="${esc(f.note||'')}" onclick="switchForm(${f.form_dex},${i+1})">${esc(f.label)}</button>`).join('')}
+      </div>
+      <div class="form-note" id="form-note"></div>` : '';
     body.innerHTML=`
       ${spriteHtml}
       <button class="shiny-toggle-btn" id="shiny-toggle-btn" onclick="toggleShinySprite(${spriteDex})">✦ 색변 보기</button>
@@ -1789,6 +1791,11 @@ function switchForm(spriteDex, btnIdx) {
     shinyBtn.onclick = () => toggleShinySprite(spriteDex);
   }
   document.querySelectorAll('.form-btn').forEach((b, i) => b.classList.toggle('active', i === btnIdx));
+  const noteEl = document.getElementById('form-note');
+  if (noteEl) {
+    const activeBtn = document.querySelector('.form-btn.active');
+    noteEl.textContent = activeBtn ? (activeBtn.dataset.note || '') : '';
+  }
 }
 function popupToChat(ko){closePokemonPopup();switchTab('chat');setTimeout(()=>ask(`${ko} 스탯이랑 기술 알려줘`),80);}
 
