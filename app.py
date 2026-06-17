@@ -55,6 +55,10 @@ async def _run_script(script_name: str) -> tuple[bool, str]:
         return False, str(e)
 
 async def _refresh_one(name: str, script: str) -> None:
+    # raids_lock 파일이 있으면 raids 자동 갱신 건너뜀 (수동 수정 보호)
+    if name == "raids" and Path(".raw/raids_lock").exists():
+        log.info("[raids] raids_lock 존재 — 자동 갱신 건너뜀")
+        return
     st = _refresh_status[name]
     if st["running"]:
         return
@@ -1449,23 +1453,22 @@ async def event_spawns(url: str):
 @app.get("/api/raids")
 async def get_raids_api():
     import time
-    global _raids_live_cache, _raids_live_at
-    if _raids_live_cache and time.time() - _raids_live_at < RAIDS_LIVE_TTL:
-        return _raids_live_cache
+    # 로컬 파일 우선 반환 (수동 수정 및 자동 갱신 결과 모두 반영)
+    p = Path(".raw/current_raids.json")
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    # 파일 없을 때만 ScrapedDuck 직접 조회 (초기 부트스트랩)
     try:
         async with httpx.AsyncClient(timeout=15) as c:
             r = await c.get(SCRAPED_DUCK_RAIDS_URL)
             r.raise_for_status()
             processed = _build_raids_from_scraped(r.json())
         if processed:
-            _raids_live_cache = processed
-            _raids_live_at = time.time()
+            p.write_text(json.dumps(processed, ensure_ascii=False, indent=2), encoding="utf-8")
             return processed
     except Exception as ex:
         log.warning(f"[raids] live fetch 실패: {ex}")
-    # 파일 캐시 fallback
-    p = Path(".raw/current_raids.json")
-    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    return {}
 
 
 # ── Slug → dex lookup ────────────────────────────────────────────────
