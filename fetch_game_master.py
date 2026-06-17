@@ -138,6 +138,10 @@ for entry in pvpoke_list:
             "atk": atk, "def": def_, "sta": sta,
             "cp_40": record["cp_40"], "cp_50": record["cp_50"],
             "type1": t1, "type2": t2,
+            "fast_moves":    fast,
+            "charged_moves": charged,
+            "elite_fast":    elite_fast,
+            "elite_charged": elite_charged,
         }
     else:
         # 기본 폼

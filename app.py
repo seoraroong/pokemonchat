@@ -1258,6 +1258,8 @@ _FORM_DEX_TO_VARIANT: dict[int, str] = {
     10023:  "kyurem_white",
     10120:  "zygarde_complete",
     10155:  "necrozma_dusk_mane",
+    10156:  "necrozma_dawn_wings",
+    10157:  "necrozma_ultra",
     10245:  "dialga_origin",
     10246:  "palkia_origin",
     10249:  "enamorus_therian",
@@ -1265,13 +1267,23 @@ _FORM_DEX_TO_VARIANT: dict[int, str] = {
 
 def _vf_stats(vf: dict) -> dict:
     t2 = vf.get("type2", "") or ""
+
+    def move_info(mid: str) -> dict:
+        ko = (_move_en2ko or {}).get(mid, mid)
+        type_en, type_ko = (_move_type_map or {}).get(mid, ("", ""))
+        return {"id": mid, "ko": ko, "type": type_en, "type_ko": type_ko}
+
     return {
-        "atk":  vf.get("atk"),
-        "def":  vf.get("def"),
-        "sta":  vf.get("sta"),
-        "cp40": vf.get("cp_40"),
-        "t1":   vf.get("type1", ""),
-        "t2":   "" if t2 == "none" else t2,
+        "atk":           vf.get("atk"),
+        "def":           vf.get("def"),
+        "sta":           vf.get("sta"),
+        "cp40":          vf.get("cp_40"),
+        "t1":            vf.get("type1", ""),
+        "t2":            "" if t2 == "none" else t2,
+        "fast_moves":    [move_info(m) for m in vf.get("fast_moves", [])],
+        "charged_moves": [move_info(m) for m in vf.get("charged_moves", [])],
+        "elite_fast":    [move_info(m) for m in vf.get("elite_fast", [])],
+        "elite_charged": [move_info(m) for m in vf.get("elite_charged", [])],
     }
 
 def _get_forms_for_dex(base_dex: int) -> list[dict]:
