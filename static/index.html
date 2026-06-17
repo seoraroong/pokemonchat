@@ -397,6 +397,7 @@
     .form-btn:hover { border-color: #60a5fa; color: #bfdbfe; }
     .form-btn.active { border-color: #60a5fa; background: #1e3a5f; color: #93c5fd; font-weight: 700; }
     .move-dps { font-size: 0.62rem; color: #64748b; margin-left: 2px; }
+    .move-eps { font-size: 0.62rem; color: #38bdf8; margin-left: 2px; }
     .weakness-section { margin: 4px 0 12px; display: flex; flex-direction: column; gap: 4px; }
     .weakness-row { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
     .weakness-label { font-size: 0.62rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.4px; min-width: 30px; }
@@ -1657,7 +1658,7 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
     const t2badge=p.t2?`<span class="type-badge" style="background:${TYPE_BG[p.t2]||'#71727a'}">${TYPE_KO[p.t2]||p.t2}</span>`:'';
     const eliteFastIds=(p.elite_fast||[]).map(m=>m.id);
     const eliteChargedIds=(p.elite_charged||[]).map(m=>m.id);
-    const mkMoveChip=(m,eliteIds)=>{const e=eliteIds.includes(m.id);const dot=m.type?`<span class="move-type-dot" style="background:${TYPE_BG[m.type]||'#71727a'}" title="${m.type_ko||m.type}"></span>`:'';const dps=m.dps!=null?`<span class="move-dps">${m.dps}</span>`:'';return`<span class="move-chip${e?' elite':''}">${dot}${esc(m.ko)}${e?' ✦':''}${dps}</span>`;};
+    const mkMoveChip=(m,eliteIds)=>{const e=eliteIds.includes(m.id);const dot=m.type?`<span class="move-type-dot" style="background:${TYPE_BG[m.type]||'#71727a'}" title="${m.type_ko||m.type}"></span>`:'';const dps=m.dps!=null?`<span class="move-dps">${m.dps}</span>`:'';const eps=m.eps!=null?`<span class="move-eps">⚡${m.eps}</span>`:'';return`<span class="move-chip${e?' elite':''}">${dot}${esc(m.ko)}${e?' ✦':''}${dps}${eps}</span>`;};
     const fastHtml=(p.fast_moves||[]).map(m=>mkMoveChip(m,eliteFastIds)).join('');
     const chargedHtml=(p.charged_moves||[]).map(m=>mkMoveChip(m,eliteChargedIds)).join('');
     const cp40=p.cp40?p.cp40.toLocaleString():'—';

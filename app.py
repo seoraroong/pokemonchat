@@ -972,7 +972,7 @@ def _calc_weaknesses(t1: str, t2: str) -> dict[str, list]:
 
 
 def _make_move_info(mid: str) -> dict:
-    """기술 이름(en) → id/ko/타입/DPS 딕셔너리."""
+    """기술 이름(en) → id/ko/타입/DPS/EPS 딕셔너리."""
     ko = (_move_en2ko or {}).get(mid, mid)
     type_en, type_ko = (_move_type_map or {}).get(mid, ("", ""))
     pve_key = mid.upper().replace(" ", "_")
@@ -980,6 +980,7 @@ def _make_move_info(mid: str) -> dict:
     return {
         "id": mid, "ko": ko, "type": type_en, "type_ko": type_ko,
         "dps": round(pve["dps_pve"], 2) if pve.get("dps_pve") is not None else None,
+        "eps": round(pve["eps_pve"], 2) if pve.get("is_fast") and pve.get("eps_pve") is not None else None,
     }
 
 
