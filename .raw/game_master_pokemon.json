@@ -34822,6 +34822,29 @@
     "elite_fast": [],
     "elite_charged": [],
     "variant_forms": {
+      "necrozma_dawn_wings": {
+        "atk": 277,
+        "def": 220,
+        "sta": 200,
+        "cp_40": 4099,
+        "cp_50": 4634,
+        "type1": "psychic",
+        "type2": "ghost",
+        "fast_moves": [
+          "Metal Claw",
+          "Psycho Cut",
+          "Shadow Claw"
+        ],
+        "charged_moves": [
+          "Dark Pulse",
+          "Future Sight",
+          "Iron Head",
+          "Outrage",
+          "Moongeist Beam"
+        ],
+        "elite_fast": [],
+        "elite_charged": []
+      },
       "necrozma_dusk_mane": {
         "atk": 277,
         "def": 220,
@@ -34841,6 +34864,28 @@
           "Iron Head",
           "Outrage",
           "Sunsteel Strike"
+        ],
+        "elite_fast": [],
+        "elite_charged": []
+      },
+      "necrozma_ultra": {
+        "atk": 337,
+        "def": 196,
+        "sta": 200,
+        "cp_40": 4682,
+        "cp_50": 5293,
+        "type1": "psychic",
+        "type2": "dragon",
+        "fast_moves": [
+          "Metal Claw",
+          "Psycho Cut",
+          "Shadow Claw"
+        ],
+        "charged_moves": [
+          "Dark Pulse",
+          "Future Sight",
+          "Iron Head",
+          "Outrage"
         ],
         "elite_fast": [],
         "elite_charged": []

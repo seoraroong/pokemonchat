@@ -28,7 +28,8 @@ VARIANT_KEYWORDS = {
     "mega", "shadow", "purified", "origin", "therian", "black", "white",
     "resolute", "ordinary", "pirouette", "aria", "sunshine", "rainy", "snowy",
     "libre", "phd", "belle", "cosplay", "pop", "star", "rock",
-    "school", "complete", "dusk", "midnight", "midday",
+    "school", "complete", "dusk", "dawn", "wings", "mane", "ultra",
+    "midnight", "midday",
     "xl", "xs",
 }
 
