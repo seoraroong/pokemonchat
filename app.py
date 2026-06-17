@@ -1153,7 +1153,7 @@ _REGIONAL_FORM_DEX: dict[str, int] = {
     "alolan graveler": 10110, "alolan golem": 10111, "alolan grimer": 10112,
     "alolan muk": 10113, "alolan exeggutor": 10114, "alolan marowak": 10115,
     "galarian meowth": 10161, "galarian ponyta": 10162, "galarian rapidash": 10163,
-    "galarian slowpoke": 10164, "galarian slowbro": 10165, "galarian farfetchd": 10166,
+    "galarian slowpoke": 10164, "galarian slowbro": 10165, "galarian farfetch'd": 10166,
     "galarian weezing": 10167, "galarian mr. mime": 10168, "galarian corsola": 10173,
     "galarian zigzagoon": 10174, "galarian linoone": 10175, "galarian darumaka": 10176,
     "galarian darmanitan": 10177, "galarian yamask": 10179, "galarian stunfisk": 10180,
@@ -1242,28 +1242,71 @@ def _raid_form_dex(en: str) -> int | None:
     key = en.lower().replace("shadow ", "").strip()
     return _REGIONAL_FORM_DEX.get(key)
 
-_FORM_PREFIX_KO: dict[str, str] = {
-    "alolan ": "알로라",
-    "galarian ": "가라르",
-    "hisuian ": "히스이",
+_FORM_PREFIX_KO: dict[str, tuple[str, str]] = {
+    "alolan ":   ("알로라", "알로라 지역 변형 폼"),
+    "galarian ": ("가라르", "가라르 지역 변형 폼"),
+    "hisuian ":  ("히스이", "히스이 지역(고대 시놀) 변형 폼"),
 }
+
+# PokeAPI form_dex → gamemaster variant_forms 키
+_FORM_DEX_TO_VARIANT: dict[int, str] = {
+    10007:  "giratina_origin",
+    10019:  "tornadus_therian",
+    10020:  "thundurus_therian",
+    10021:  "landorus_therian",
+    10022:  "kyurem_black",
+    10023:  "kyurem_white",
+    10120:  "zygarde_complete",
+    10155:  "necrozma_dusk_mane",
+    10245:  "dialga_origin",
+    10246:  "palkia_origin",
+    10249:  "enamorus_therian",
+}
+
+def _vf_stats(vf: dict) -> dict:
+    t2 = vf.get("type2", "") or ""
+    return {
+        "atk":  vf.get("atk"),
+        "def":  vf.get("def"),
+        "sta":  vf.get("sta"),
+        "cp40": vf.get("cp_40"),
+        "t1":   vf.get("type1", ""),
+        "t2":   "" if t2 == "none" else t2,
+    }
 
 def _get_forms_for_dex(base_dex: int) -> list[dict]:
     """주어진 base dex 번호에 존재하는 모든 폼(지역 변형 + 특수/합체) 목록 반환"""
     en2info = _get_en2info()
+    gm_entry = (_gm_raw or {}).get(str(base_dex), {})
+    variant_data = gm_entry.get("variant_forms", {})
+    species_id = gm_entry.get("species_id", "")
     forms = []
+
     # 지역 변형 (알로라/가라르/히스이)
     for form_key, form_dex_id in _REGIONAL_FORM_DEX.items():
-        for prefix_en, prefix_ko in _FORM_PREFIX_KO.items():
+        for prefix_en, (prefix_ko, note) in _FORM_PREFIX_KO.items():
             if form_key.startswith(prefix_en):
                 base_name = form_key[len(prefix_en):]
                 info = en2info.get(base_name)
                 if info and info[0] == base_dex:
-                    forms.append({"label": prefix_ko, "form_dex": form_dex_id})
+                    entry: dict = {"label": prefix_ko, "form_dex": form_dex_id, "note": note}
+                    vk = f"{species_id}_{prefix_en.rstrip()}"  # e.g. "raichu_alolan"
+                    vf = variant_data.get(vk, {})
+                    if vf:
+                        entry.update(_vf_stats(vf))
+                    forms.append(entry)
                 break
+
     # 특수/합체/폼 변화
     for label_ko, form_dex_id, note in _SPECIAL_FORM_DEX.get(base_dex, []):
-        forms.append({"label": label_ko, "form_dex": form_dex_id, "note": note})
+        entry = {"label": label_ko, "form_dex": form_dex_id, "note": note}
+        vk = _FORM_DEX_TO_VARIANT.get(form_dex_id)
+        if vk:
+            vf = variant_data.get(vk, {})
+            if vf:
+                entry.update(_vf_stats(vf))
+        forms.append(entry)
+
     return forms
 
 def _build_raids_from_scraped(raw_data: list) -> dict:
@@ -1328,7 +1371,7 @@ def _get_en2info() -> dict:
     if _en2info_cache is not None:
         return _en2info_cache
     _ensure_raw()
-    _en2info_cache = {v["en_name"].lower(): (int(k), v["ko_name"]) for k, v in (_names_raw or {}).items()}
+    _en2info_cache = {v["en_name"].lower().replace("’", "'"): (int(k), v["ko_name"]) for k, v in (_names_raw or {}).items()}
     return _en2info_cache
 
 def _resolve_en(en: str, dex_fallback: int) -> tuple[int, str]:
