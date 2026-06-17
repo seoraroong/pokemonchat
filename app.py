@@ -1148,6 +1148,27 @@ _REGIONAL_FORM_DEX: dict[str, int] = {
     "hisuian decidueye": 10244,
 }
 
+# 특수/합체/폼 변화 포켓몬 — base dex → [(라벨, PokeAPI form id), ...]
+_SPECIAL_FORM_DEX: dict[int, list[tuple[str, int]]] = {
+    386: [("어택", 10001), ("디펜스", 10002), ("스피드", 10003)],          # 데오키시스
+    413: [("모래 망토", 10004), ("쓰레기 망토", 10005)],                    # 도롱마담
+    479: [("열기", 10008), ("세탁", 10009), ("냉동", 10010), ("선풍", 10011), ("제초", 10012)],  # 로토무
+    483: [("오리진", 10245)],                                              # 디아루가
+    484: [("오리진", 10246)],                                              # 펄기아
+    487: [("오리진", 10007)],                                              # 기라티나
+    492: [("스카이", 10006)],                                              # 쉐이미
+    641: [("영물", 10019)],                                                # 토네로스
+    642: [("영물", 10020)],                                                # 볼토로스
+    645: [("영물", 10021)],                                                # 랜드로스
+    646: [("블랙", 10022), ("화이트", 10023)],                             # 큐레무
+    648: [("피루에트", 10018)],                                            # 메로엣타
+    718: [("10%", 10181), ("퍼펙트", 10120)],                              # 지가르데
+    720: [("언바운드", 10086)],                                            # 후파
+    800: [("황혼의 갈기", 10155), ("새벽의 날개", 10156), ("울트라", 10157)], # 네크로즈마
+    898: [("아이스 라이더", 10193), ("섀도 라이더", 10194)],                # 칼리렉스
+    905: [("영물", 10249)],                                                # 에나모러스
+}
+
 def _normalize_raid_tier(raw: str) -> str:
     return _TIER_NORM.get(raw.lower().strip(), raw)
 
@@ -1185,9 +1206,10 @@ _FORM_PREFIX_KO: dict[str, str] = {
 }
 
 def _get_forms_for_dex(base_dex: int) -> list[dict]:
-    """주어진 base dex 번호에 존재하는 리전폼 목록 반환"""
+    """주어진 base dex 번호에 존재하는 모든 폼(지역 변형 + 특수/합체) 목록 반환"""
     en2info = _get_en2info()
     forms = []
+    # 지역 변형 (알로라/가라르/히스이)
     for form_key, form_dex_id in _REGIONAL_FORM_DEX.items():
         for prefix_en, prefix_ko in _FORM_PREFIX_KO.items():
             if form_key.startswith(prefix_en):
@@ -1196,6 +1218,9 @@ def _get_forms_for_dex(base_dex: int) -> list[dict]:
                 if info and info[0] == base_dex:
                     forms.append({"label": prefix_ko, "form_dex": form_dex_id})
                 break
+    # 특수/합체/폼 변화
+    for label_ko, form_dex_id in _SPECIAL_FORM_DEX.get(base_dex, []):
+        forms.append({"label": label_ko, "form_dex": form_dex_id})
     return forms
 
 def _build_raids_from_scraped(raw_data: list) -> dict:
