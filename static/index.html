@@ -136,6 +136,21 @@
     .dex-name { font-size: 0.76rem; font-weight: 600; color: #e2e8f0; line-height: 1.2; }
     .dex-types { display: flex; gap: 3px; flex-wrap: wrap; justify-content: center; }
     #dex-empty { grid-column: 1/-1; text-align: center; padding: 40px 0; color: #475569; font-size: 0.9rem; }
+    .dex-card { position: relative; }
+    .mega-badge { position: absolute; top: 4px; right: 4px; background: #f59e0b; color: #0f172a; font-size: 0.52rem; font-weight: 800; padding: 1px 4px; border-radius: 5px; line-height: 1.4; letter-spacing: 0.3px; }
+    #type-filter-row { display: flex; gap: 4px; overflow-x: auto; padding: 0 0 8px; scrollbar-width: none; flex-wrap: nowrap; }
+    #type-filter-row::-webkit-scrollbar { display: none; }
+    .type-chip { flex-shrink: 0; border: none; border-radius: 12px; padding: 3px 10px; font-size: 0.72rem; font-weight: 600; color: #fff; cursor: pointer; opacity: 0.55; transition: opacity 0.15s, transform 0.1s; }
+    .type-chip.active { opacity: 1; transform: scale(1.08); outline: 2px solid #fff; outline-offset: 1px; }
+    #weather-bar { display: flex; align-items: center; gap: 8px; background: #1e293b; border: 1px solid #2d3f55; border-radius: 10px; padding: 6px 12px; margin-bottom: 8px; font-size: 0.75rem; color: #94a3b8; }
+    #weather-bar .w-name { color: #e2e8f0; font-weight: 600; }
+    #weather-bar .w-types { display: flex; gap: 3px; margin-left: 4px; }
+    .counter-score { font-size: 0.62rem; color: #64748b; margin-left: 4px; }
+    .pvp-moveset-section { margin-top: 4px; }
+    .pvp-league-row { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; border-bottom: 1px solid #1e293b; }
+    .pvp-league-label { font-size: 0.65rem; color: #64748b; font-weight: 600; min-width: 42px; padding-top: 2px; }
+    .pvp-league-rank { font-size: 0.65rem; color: #f59e0b; font-weight: 700; min-width: 26px; }
+    .pvp-league-moves { font-size: 0.72rem; color: #cbd5e1; line-height: 1.5; }
 
     /* ── 레이드/이벤트 ── */
     #view-raid { flex: 1; overflow-y: auto; min-height: 0; background: #0f172a; }
@@ -676,6 +691,12 @@
   <div id="view-dex" class="view" style="display:none">
     <div id="dex-top">
       <div id="dex-search-wrap"><input id="dex-search" type="text" placeholder="포켓몬 이름으로 검색..."></div>
+      <div id="weather-bar" style="display:none">
+        <span id="weather-emoji"></span>
+        <span class="w-name" id="weather-name"></span>
+        <span style="color:#475569;font-size:0.68rem">부스트:</span>
+        <div class="w-types" id="weather-boost-types"></div>
+      </div>
       <div id="gen-tabs">
         <button class="gen-tab active" data-gen="0">전체</button>
         <button class="gen-tab" data-gen="1">1세대</button>
@@ -688,6 +709,7 @@
         <button class="gen-tab" data-gen="8">8세대</button>
         <button class="gen-tab" data-gen="9">9세대</button>
       </div>
+      <div id="type-filter-row"></div>
       <div id="dex-count"></div>
     </div>
     <div id="dex-grid"></div>
@@ -1107,8 +1129,63 @@ async function sendMessage() {
   finally { streaming=false; sendBtn.disabled=false; input.focus(); }
 }
 
+// ── 날씨 ──────────────────────────────────────────────────────────
+const WMO_TO_POGO = {
+  0:'sunny',1:'sunny',2:'partly-cloudy',3:'cloudy',
+  45:'fog',48:'fog',
+  51:'rain',53:'rain',55:'rain',56:'rain',57:'rain',
+  61:'rain',63:'rain',65:'rain',66:'rain',67:'rain',
+  71:'snow',73:'snow',75:'snow',77:'snow',85:'snow',86:'snow',
+  80:'rain',81:'rain',82:'rain',
+  95:'windy',96:'windy',99:'windy',
+};
+const POGO_WEATHER = {
+  'sunny':        {emoji:'☀️', name:'맑음',      types:['fire','grass','ground']},
+  'partly-cloudy':{emoji:'⛅', name:'구름 조금', types:['normal','rock']},
+  'cloudy':       {emoji:'☁️', name:'흐림',      types:['fairy','fighting','poison']},
+  'fog':          {emoji:'🌫️', name:'안개',      types:['ghost','dark']},
+  'rain':         {emoji:'🌧️', name:'비',        types:['water','electric','bug']},
+  'snow':         {emoji:'❄️', name:'눈',        types:['ice','steel']},
+  'windy':        {emoji:'🌬️', name:'바람',      types:['dragon','flying','psychic']},
+};
+let _currentWeather = null;
+async function initWeather() {
+  if(!navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(async pos => {
+    try {
+      const {latitude:lat,longitude:lon} = pos.coords;
+      const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=weather_code`);
+      const d = await r.json();
+      const code = d?.current?.weather_code;
+      const key = WMO_TO_POGO[code];
+      if(!key) return;
+      _currentWeather = POGO_WEATHER[key];
+      const bar=document.getElementById('weather-bar');
+      if(!bar||!_currentWeather) return;
+      document.getElementById('weather-emoji').textContent = _currentWeather.emoji;
+      document.getElementById('weather-name').textContent  = _currentWeather.name;
+      document.getElementById('weather-boost-types').innerHTML =
+        _currentWeather.types.map(t=>`<span class="type-badge" style="background:${TYPE_BG[t]||'#71727a'}">${TYPE_KO[t]||t}</span>`).join('');
+      bar.style.display='flex';
+    } catch(_){}
+  }, ()=>{}, {timeout:8000});
+}
+
 // ── 도감 ──────────────────────────────────────────────────────────
-let dexData=[], dexLoaded=false, currentGen=0, spriteObserver, searchTimer;
+let dexData=[], dexLoaded=false, currentGen=0, currentType='', spriteObserver, searchTimer;
+
+function buildTypeFilter() {
+  const row = document.getElementById('type-filter-row');
+  if(!row) return;
+  const types = ['normal','fire','water','electric','grass','ice','fighting','poison','ground','flying','psychic','bug','rock','ghost','dragon','dark','steel','fairy'];
+  row.innerHTML = types.map(t=>`<button class="type-chip" data-type="${t}" style="background:${TYPE_BG[t]||'#71727a'}">${TYPE_KO[t]||t}</button>`).join('');
+  row.querySelectorAll('.type-chip').forEach(btn=>btn.addEventListener('click',()=>{
+    const t=btn.dataset.type;
+    currentType = (currentType===t)?'':t;
+    row.querySelectorAll('.type-chip').forEach(b=>b.classList.toggle('active',b.dataset.type===currentType));
+    renderDex();
+  }));
+}
 
 async function loadDex() {
   const grid=document.getElementById('dex-grid'); grid.innerHTML='<div id="dex-empty">불러오는 중...</div>';
@@ -1116,19 +1193,27 @@ async function loadDex() {
     dexData=await (await fetch('/api/pokedex')).json(); dexLoaded=true;
     const counts={}; for(const p of dexData) counts[p.gen]=(counts[p.gen]||0)+1;
     document.querySelectorAll('.gen-tab').forEach(btn=>{const g=+btn.dataset.gen;if(g===0)btn.textContent=`전체 (${dexData.length})`;else if(counts[g])btn.textContent=`${g}세대 (${counts[g]})`;});
+    buildTypeFilter();
+    initWeather();
     renderDex();
   } catch { grid.innerHTML='<div id="dex-empty">데이터를 불러오지 못했어요.</div>'; }
 }
 function renderDex() {
   const search=document.getElementById('dex-search').value.trim().toLowerCase();
-  const filtered=dexData.filter(p=>{if(currentGen>0&&p.gen!==currentGen)return false;if(search)return p.ko.includes(search)||p.en.toLowerCase().includes(search)||String(p.dex).includes(search);return true;});
+  const filtered=dexData.filter(p=>{
+    if(currentGen>0&&p.gen!==currentGen) return false;
+    if(currentType&&p.t1!==currentType&&p.t2!==currentType) return false;
+    if(search) return p.ko.includes(search)||p.en.toLowerCase().includes(search)||String(p.dex).includes(search);
+    return true;
+  });
   const grid=document.getElementById('dex-grid'), count=document.getElementById('dex-count');
   count.textContent=`${filtered.length.toLocaleString()}마리`;
   if(!filtered.length){grid.innerHTML='<div id="dex-empty">검색 결과가 없어요.</div>';return;}
   grid.innerHTML=filtered.map(p=>{
     const num=String(p.dex).padStart(4,'0'), t1bg=TYPE_BG[p.t1]||'#71727a', t2bg=p.t2?TYPE_BG[p.t2]||'#71727a':null;
     const t2badge=p.t2?`<span class="type-badge" style="background:${t2bg}">${TYPE_KO[p.t2]||p.t2}</span>`:'';
-    return `<div class="dex-card" onclick="openPokemonPopup(${p.dex})"><div class="dex-num">#${num}</div>
+    const megaBadge=p.has_mega?'<span class="mega-badge">MEGA</span>':'';
+    return `<div class="dex-card" onclick="openPokemonPopup(${p.dex})">${megaBadge}<div class="dex-num">#${num}</div>
       <img class="dex-sprite loading" data-src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.dex}.png" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="${esc(p.ko)}" onload="this.classList.remove('loading')">
       <div class="dex-name">${esc(p.ko)}</div>
       <div class="dex-types"><span class="type-badge" style="background:${t1bg}">${TYPE_KO[p.t1]||p.t1}</span>${t2badge}</div></div>`;
@@ -1732,6 +1817,10 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
       <div class="move-section" id="evo-section"></div>
       <div class="move-section" id="popup-fast-section">${fastHtml?`<div class="move-section-title">빠른 기술</div><div class="move-list">${fastHtml}</div>`:''}</div>
       <div class="move-section" id="popup-charged-section">${chargedHtml?`<div class="move-section-title">스페셜 기술</div><div class="move-list">${chargedHtml}</div>`:''}</div>
+      <div class="move-section" id="pvp-section">
+        <div class="move-section-title">🏆 PvP 추천 기술셋</div>
+        <div id="popup-pvp-container"><div style="text-align:center;padding:6px;color:#64748b;font-size:0.78rem">불러오는 중...</div></div>
+      </div>
       <div class="move-section" id="counter-section">
         <div class="move-section-title">⚔️ 레이드 카운터</div>
         <div id="popup-counter-container">${bossSlug?'<div style="text-align:center;padding:10px;color:#64748b;font-size:0.8rem">불러오는 중...</div>':`<button class="popup-secondary-btn" onclick="expandCounters('${counterSlug}')">▶ 카운터 보기</button>`}</div>
@@ -1739,6 +1828,7 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
       <button class="popup-chat-btn" onclick="popupToChat('${koSafe}')">💬 채팅에서 더 알아보기</button>
     `;
     loadEvolutionChain(dex);
+    loadPvpMoveset(dex);
     if(bossSlug) loadCountersIntoPopup(bossSlug);
   } catch {
     body.innerHTML='<div style="text-align:center;padding:36px 0;color:#475569">데이터를 불러올 수 없어요.</div>';
@@ -1756,14 +1846,35 @@ async function loadCountersIntoPopup(slug) {
     for(const c of data.counters.slice(0,12)){
       const spr=c.dex?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${c.dex}.png`:'';
       const rc=+c.rank<=3?' top3':'';
+      const scoreHtml=c.score!=null?`<span class="counter-score">${c.score.toFixed(0)}</span>`:'';
       html+=`<div class="counter-row"${c.dex?` onclick="openPokemonPopup(${c.dex})"`:''}>
         <span class="counter-rank${rc}">#${c.rank}</span>
         ${spr?`<img class="counter-sprite" src="${spr}" alt="${esc(c.ko)}" onerror="this.style.opacity='0.2'">`:'<div class="counter-sprite"></div>'}
-        <div class="counter-info"><div class="counter-name">${esc(c.ko)}</div><div class="counter-move">${esc(c.move)}</div></div>
+        <div class="counter-info"><div class="counter-name">${esc(c.ko)}</div><div class="counter-move">${esc(c.move)}${scoreHtml}</div></div>
       </div>`;
     }
     container.innerHTML=html;
   } catch { container.innerHTML='<div style="text-align:center;padding:10px;color:#475569;font-size:0.8rem">불러오기 실패</div>'; }
+}
+
+async function loadPvpMoveset(dex) {
+  const container=document.getElementById('popup-pvp-container');
+  if(!container) return;
+  try {
+    const data=await(await fetch(`/api/pvp-moveset/${dex}`)).json();
+    const leagues=[['gl','슈퍼'],['ul','하이퍼'],['ml','마스터']];
+    const rows=leagues.filter(([k])=>data[k]).map(([k,name])=>{
+      const d=data[k];
+      return `<div class="pvp-league-row">
+        <span class="pvp-league-label">${name}</span>
+        <span class="pvp-league-rank">#${d.rank}</span>
+        <div class="pvp-league-moves">${esc(d.fast)} / ${esc(d.charged)}</div>
+      </div>`;
+    });
+    container.innerHTML=rows.length
+      ? `<div class="pvp-moveset-section">${rows.join('')}</div>`
+      : '<div style="text-align:center;padding:6px;color:#475569;font-size:0.78rem">PvP 랭킹 데이터 없음</div>';
+  } catch { container.innerHTML=''; }
 }
 
 async function loadEvolutionChain(dex) {

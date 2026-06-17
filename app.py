@@ -897,12 +897,13 @@ async def get_pokedex():
         if t2 == "none":
             t2 = ""
         result.append({
-            "dex": dex,
-            "ko":  nd["ko_name"],
-            "en":  nd["en_name"],
-            "gen": nd["gen"],
-            "t1":  gm_d.get("type1", ""),
-            "t2":  t2,
+            "dex":      dex,
+            "ko":       nd["ko_name"],
+            "en":       nd["en_name"],
+            "gen":      nd["gen"],
+            "t1":       gm_d.get("type1", ""),
+            "t2":       t2,
+            "has_mega": any("mega" in k for k in gm_d.get("variant_forms", {})),
         })
 
     _pokedex_cache = result
@@ -1668,13 +1669,15 @@ async def get_raid_counters_api(slug: str):
             pm = re.search(r'\[\[pokemon-([^\]|]+)\|([^\]]+)\]\]', line)
             all_links = re.findall(r'\[\[[^\]|]+\|([^\]]+)\]\]', line)
             if rank_m and pm:
-                # all_links: [포켓몬명, 기술명, ...] 순서 — move는 두 번째 링크
                 move_ko = all_links[1] if len(all_links) >= 2 else (all_links[0] if all_links else "")
+                # 마지막 숫자 컬럼 = DPS 배율 점수
+                score_m = re.search(r'\|\s*([\d.]+)\s*\|?\s*$', line.strip())
                 counters.append({
-                    "rank": rank_m.group(1),
-                    "dex":  slug_dex.get(pm.group(1)),
-                    "ko":   pm.group(2),
-                    "move": move_ko,
+                    "rank":  rank_m.group(1),
+                    "dex":   slug_dex.get(pm.group(1)),
+                    "ko":    pm.group(2),
+                    "move":  move_ko,
+                    "score": float(score_m.group(1)) if score_m else None,
                 })
         elif in_table and line.strip() and not line.strip().startswith("|") and not line.strip().startswith(">"):
             break
@@ -1814,6 +1817,35 @@ async def get_pvp_api(league: str):
             "charged":  strip_wiki(e.get("charged_ko", "")),
         })
     return {"entries": entries, "name": league_d["name"], "cp": league_d["cp"]}
+
+
+_pvp_moveset_cache: dict | None = None
+
+@app.get("/api/pvp-moveset/{dex}")
+async def get_pvp_moveset(dex: int):
+    """dex 번호로 각 리그 추천 기술셋 반환."""
+    global _pvp_moveset_cache
+    pvp_path = Path(".raw/pvp_rankings.json")
+    if not pvp_path.exists():
+        return {}
+    if _pvp_moveset_cache is None:
+        pvp = json.loads(pvp_path.read_text(encoding="utf-8"))
+        def _strip(s: str) -> str:
+            return re.sub(r'\[\[[^\]|]+\|([^\]]+)\]\]', r'\1', s)
+        cache: dict[int, dict] = {}
+        for lk, ld in pvp.items():
+            for e in ld.get("entries", []):
+                d = e.get("dex")
+                if not d:
+                    continue
+                cache.setdefault(d, {})[lk] = {
+                    "rank":    e["rank"],
+                    "score":   e.get("score", 0),
+                    "fast":    _strip(e.get("fast_ko", "")),
+                    "charged": _strip(e.get("charged_ko", "")),
+                }
+        _pvp_moveset_cache = cache
+    return _pvp_moveset_cache.get(dex, {})
 
 
 # ── Raid Rankings ─────────────────────────────────────────────────────
