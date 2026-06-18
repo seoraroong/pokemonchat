@@ -152,13 +152,14 @@
     #research-inner { flex: 1; overflow-y: auto; min-height: 0; display: none; }
     /* ── 필드 리서치 ── */
     #research-list { display: flex; flex-direction: column; gap: 8px; padding: 10px 12px 16px; }
-    .research-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 10px 12px; display: flex; align-items: center; gap: 10px; }
-    .research-task { flex: 1; font-size: 0.78rem; color: #e2e8f0; line-height: 1.35; }
-    .research-rewards { display: flex; gap: 6px; flex-shrink: 0; }
-    .research-pm { display: flex; flex-direction: column; align-items: center; gap: 1px; cursor: pointer; }
-    .research-pm img { width: 44px; height: 44px; object-fit: contain; }
-    .research-pm-name { font-size: 0.58rem; color: #94a3b8; text-align: center; max-width: 52px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .research-shiny { font-size: 0.58rem; color: #fbbf24; }
+    .research-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 10px 12px; }
+    .research-task { font-size: 0.8rem; color: #e2e8f0; line-height: 1.4; margin-bottom: 8px; }
+    .research-rewards { display: flex; align-items: flex-end; gap: 8px; }
+    .research-pm { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; cursor: pointer; flex-shrink: 0; }
+    .research-pm img { width: 48px; height: 48px; object-fit: contain; }
+    .research-pm-name { font-size: 0.6rem; color: #94a3b8; text-align: center; width: 52px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .research-shiny-dot { position: absolute; top: 0; right: 0; font-size: 0.65rem; line-height: 1; }
+    .research-more { font-size: 0.72rem; color: #475569; align-self: center; white-space: nowrap; }
     .raid-section { padding: 12px 14px 0; }
     .section-title { font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; padding: 0 2px 10px; }
     .event-card { background: #1a2744; border: 1px solid #2d3f55; border-radius: 12px; padding: 11px 13px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px; }
@@ -1658,19 +1659,23 @@ async function loadFieldResearch() {
 function renderResearch() {
   const list = document.getElementById('research-list');
   if (!_researchData.length) { list.innerHTML = '<div style="text-align:center;padding:32px;color:#475569">데이터 없음</div>'; return; }
+  const MAX_SHOW = 5;
   list.innerHTML = _researchData.map(task => {
-    const rewards = task.rewards.map(pm => {
+    const all = task.rewards;
+    const shown = all.slice(0, MAX_SHOW);
+    const extra = all.length - shown.length;
+    const rewardHtml = shown.map(pm => {
       const spr = pm.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pm.dex}.png` : '';
-      const shiny = pm.can_shiny ? `<div class="research-shiny">✨ 색이상</div>` : '';
+      const shiny = pm.can_shiny ? `<span class="research-shiny-dot">✨</span>` : '';
       return `<div class="research-pm" onclick="${pm.dex ? `openPokemonPopup(${pm.dex})` : ''}">
-        ${spr ? `<img src="${spr}" onerror="this.style.opacity='0.2'">` : '<div style="width:44px;height:44px"></div>'}
-        <div class="research-pm-name">${esc(pm.ko)}</div>
         ${shiny}
+        ${spr ? `<img src="${spr}" onerror="this.style.opacity='0.2'">` : '<div style="width:48px;height:48px"></div>'}
+        <div class="research-pm-name">${esc(pm.ko)}</div>
       </div>`;
-    }).join('');
+    }).join('') + (extra > 0 ? `<div class="research-more">+${extra}</div>` : '');
     return `<div class="research-card">
       <div class="research-task">${esc(task.text_ko)}</div>
-      <div class="research-rewards">${rewards}</div>
+      <div class="research-rewards">${rewardHtml}</div>
     </div>`;
   }).join('');
 }
