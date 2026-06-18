@@ -2,19 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <!-- Samsung PWA 980px 버그: device-width 키워드 대신 명시적 픽셀값 사용 -->
-  <meta name="viewport" content="width=360, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <script>
-    // screen.width로 기기별 정확한 값 반영 (Samsung이 JS 변경을 무시해도 위 360 폴백 유지)
-    (function () {
-      var w = screen.width;
-      var dpr = window.devicePixelRatio || 1;
-      // screen.width > 500이면 물리픽셀 가능성 → DPR 보정, DPR=1이면 390 기본값
-      if (w > 500) w = dpr > 1 ? Math.round(w / dpr) : 390;
-      var m = document.querySelector('meta[name=viewport]');
-      if (m) m.content = 'width=' + w + ',initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover';
-    })();
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
   <title>PokeMORE</title>
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#0f172a">
