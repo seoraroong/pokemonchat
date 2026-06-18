@@ -39,7 +39,7 @@ function NickScreen({ onEnter }) {
 }
 
 // ── 로비 ─────────────────────────────────────────────────────────────
-function LobbyScreen({ nick, onJoin, onChangeNick }) {
+function LobbyScreen({ nick, onJoin, onChangeNick, onCatchmind }) {
   const [rooms, setRooms] = useState([]);
   const [epoch, setEpoch] = useState(null);
   const [showRestart, setShowRestart] = useState(false);
@@ -81,6 +81,7 @@ function LobbyScreen({ nick, onJoin, onChangeNick }) {
         <span id="cm-lobby-nick" style={{ fontSize:'0.78rem', color:'#94a3b8', cursor:'pointer', textDecoration:'underline dotted', marginLeft:8 }} onClick={onChangeNick}>
           👤 {nick}
         </span>
+        <button onClick={onCatchmind} style={{ background:'#1c1a10', border:'1px solid #854d0e', borderRadius:8, padding:'3px 10px', color:'#fbbf24', fontSize:'0.78rem', cursor:'pointer', fontFamily:'inherit' }}>🎨 캐치마인드</button>
         <button id="cm-create-btn" onClick={createRoom} style={{ marginLeft:'auto' }}>+ 방 만들기</button>
         <button id="cm-lobby-refresh" onClick={loadRooms} title="새로고침">🔄</button>
       </div>
@@ -387,13 +388,377 @@ function RoomScreen({ nick, roomId, roomName, onLeave, onOpenPokemon }) {
   );
 }
 
-export default function CommunityTab({ onOpenPokemon }) {
-  const [nick, setNick] = useState(() => localStorage.getItem('cm_nick') || null);
-  const [room, setRoom] = useState(null); // { id, name }
+// ── 캐치마인드 로비 ──────────────────────────────────────────────────
+const DIFF_LABEL = { easy: '🌱 쉬움', normal: '⚔️ 보통', hard: '🔥 어려움' };
 
-  const enterLobby = (n) => { setNick(n); setRoom(null); };
-  const joinRoom = (id, name) => setRoom({ id, name });
-  const leaveRoom = () => setRoom(null);
+function CatchmindLobbyScreen({ nick, onJoin, onBack }) {
+  const [rooms, setRooms] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [showDiff, setShowDiff] = useState(false);
+
+  const loadRooms = useCallback(async () => {
+    setLoading(true);
+    try {
+      const data = await fetch('/api/catchmind/rooms').then(r => r.json());
+      setRooms(data);
+    } catch {}
+    setLoading(false);
+  }, []);
+
+  useEffect(() => { loadRooms(); }, [loadRooms]);
+
+  const createRoom = async (difficulty) => {
+    setShowDiff(false);
+    try {
+      const r = await fetch('/api/catchmind/create', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nick, difficulty }),
+      }).then(res => res.json());
+      onJoin(r.room_id);
+    } catch { alert('방 만들기 실패'); }
+  };
+
+  return (
+    <div id="cm-cm-lobby" className="cm-screen" style={{ display:'flex', flexDirection:'column' }}>
+      <div id="cm-cm-lobby-header">
+        <button onClick={onBack}>← 채팅</button>
+        <span>🎨 캐치마인드</span>
+        <button onClick={loadRooms} title="새로고침">🔄</button>
+        <button className="cm-create-btn2" onClick={() => setShowDiff(v => !v)}>+ 방 만들기</button>
+      </div>
+      {showDiff && (
+        <div id="cm-diff-picker" style={{ display:'flex', flexDirection:'column' }}>
+          <div className="diff-title">난이도를 선택하세요</div>
+          <div className="diff-row">
+            <button className="diff-btn easy" onClick={() => createRoom('easy')}>🌱 쉬움<br/><small>1세대 (151마리)</small></button>
+            <button className="diff-btn normal" onClick={() => createRoom('normal')}>⚔️ 보통<br/><small>1~4세대 (493마리)</small></button>
+            <button className="diff-btn hard" onClick={() => createRoom('hard')}>🔥 어려움<br/><small>전체 (1000마리+)</small></button>
+          </div>
+        </div>
+      )}
+      <div id="cm-cm-room-list">
+        {loading && <div style={{ textAlign:'center', padding:'30px', color:'#64748b', fontSize:'0.82rem' }}>불러오는 중...</div>}
+        {!loading && !rooms.length && (
+          <div style={{ textAlign:'center', padding:'40px 20px', color:'#64748b', fontSize:'0.82rem' }}>
+            진행 중인 방이 없어요<br/>방을 만들어보세요!
+          </div>
+        )}
+        {rooms.map(r => (
+          <div key={r.room_id} className="cm-cm-room-card" onClick={() => onJoin(r.room_id)}>
+            <div className="cm-cm-room-info">
+              <div className="cm-cm-room-creator">
+                {r.creator}의 방 <span className={`diff-badge ${r.difficulty || 'normal'}`}>{DIFF_LABEL[r.difficulty] || '⚔️ 보통'}</span>
+              </div>
+              <div className="cm-cm-room-meta">{r.players}명 참가 중</div>
+            </div>
+            <span className={`cm-cm-room-badge ${r.status === 'waiting' ? 'cm-cm-badge-wait' : 'cm-cm-badge-play'}`}>
+              {r.status === 'waiting' ? '대기 중' : '게임 중'}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ── 캐치마인드 게임 ──────────────────────────────────────────────────
+const CM_COLORS = ['#000000','#ef4444','#f97316','#eab308','#22c55e','#3b82f6','#8b5cf6','#ffffff'];
+const CM_SIZES  = [4, 10, 22];
+
+function CatchmindGameScreen({ nick, roomId, onLeave }) {
+  const canvasRef  = useRef(null);
+  const wsRef      = useRef(null);
+  const chatRef    = useRef(null);
+  const drawingRef = useRef(false);
+  const lastPos    = useRef({ x:0, y:0 });
+  const isDrawer   = useRef(false);
+  const colorRef   = useRef('#000000');
+  const sizeRef    = useRef(4);
+  const eraserRef  = useRef(false);
+
+  const [players, setPlayers]       = useState([]);
+  const [timer, setTimer]           = useState('—');
+  const [timerUrgent, setTimerUrgent] = useState(false);
+  const [showTools, setShowTools]   = useState(false);
+  const [wordBox, setWordBox]       = useState(null);
+  const [chatMsgs, setChatMsgs]     = useState([]);
+  const [guessInput, setGuessInput] = useState('');
+  const [guessDisabled, setGuessDisabled] = useState(false);
+  const [overlay, setOverlay]       = useState(null);
+  const [color, setColor]           = useState('#000000');
+  const [brushSize, setBrushSize]   = useState(4);
+  const [eraser, setEraser]         = useState(false);
+
+  // 상태 → ref 동기화 (캔버스 이벤트 핸들러에서 사용)
+  useEffect(() => { colorRef.current  = color;      }, [color]);
+  useEffect(() => { sizeRef.current   = brushSize;  }, [brushSize]);
+  useEffect(() => { eraserRef.current = eraser;     }, [eraser]);
+
+  const clearLocal = useCallback(() => {
+    const c = canvasRef.current;
+    if (!c) return;
+    if (!c.width || c.width < 10) { const s = c.offsetWidth || 200; c.width = s; c.height = s; }
+    const ctx = c.getContext('2d');
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, c.width, c.height);
+  }, []);
+
+  const renderStroke = useCallback((c, d) => {
+    const ctx = c.getContext('2d');
+    const w = c.width, h = c.height;
+    ctx.beginPath();
+    ctx.lineWidth = d.s;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.strokeStyle = d.c;
+    if (d.lx != null) {
+      ctx.moveTo(d.lx * w, d.ly * h);
+      ctx.lineTo(d.x  * w, d.y  * h);
+      ctx.stroke();
+    } else {
+      ctx.arc(d.x * w, d.y * h, d.s / 2, 0, Math.PI * 2);
+      ctx.fillStyle = d.c;
+      ctx.fill();
+    }
+  }, []);
+
+  const addChat = useCallback((type, a, b) => {
+    setChatMsgs(prev => [...prev, { type, a, b }]);
+    setTimeout(() => { if (chatRef.current) chatRef.current.scrollTop = chatRef.current.scrollHeight; }, 30);
+  }, []);
+
+  const handleMsg = useCallback((msg) => {
+    if (msg.type === 'joined') {
+      setPlayers((msg.players || []).map(p => ({ ...p, isDrawer: false })));
+      if (msg.status === 'waiting')
+        setOverlay({ title:'⏳ 상대방 기다리는 중...', sub:'1분 내 참여자가 없으면 방이 닫혀요', scores:null, btn:null });
+    } else if (msg.type === 'player_join') {
+      addChat('notice', `${msg.name}님이 입장했어요 (${msg.count}명)`);
+      setOverlay(null);
+    } else if (msg.type === 'player_leave') {
+      addChat('notice', `${msg.name}님이 퇴장했어요 (${msg.count}명)`);
+    } else if (msg.type === 'round_start') {
+      isDrawer.current = !!msg.word;
+      setOverlay(null);
+      setShowTools(!!msg.word);
+      setWordBox(msg.word ? `✏️ 그릴 포켓몬: ${msg.word}` : null);
+      setGuessDisabled(!!msg.word);
+      clearLocal();
+      setPlayers(prev => prev.map(p => ({ ...p, isDrawer: p.name === msg.drawer })));
+      addChat('notice', `✏️ ${msg.drawer}님이 그림을 그립니다!`);
+    } else if (msg.type === 'draw') {
+      const c = canvasRef.current;
+      if (c) renderStroke(c, msg.d);
+    } else if (msg.type === 'clear') {
+      clearLocal();
+    } else if (msg.type === 'timer') {
+      setTimer(msg.t + 's');
+      setTimerUrgent(msg.t <= 10);
+    } else if (msg.type === 'guess') {
+      if (msg.correct) addChat('correct', `🎉 ${msg.name} 정답! (${msg.text})`);
+      else             addChat('msg', msg.name, msg.text);
+    } else if (msg.type === 'round_end') {
+      const winText = msg.winner ? `정답자: ${msg.winner}` : '시간 초과!';
+      setOverlay({ title:'🏁 라운드 종료', sub:`정답: ${msg.word}\n${winText}`, scores:msg.scores, btn:null });
+      setPlayers(prev => prev.map(p => ({ ...p, score: msg.scores?.[p.name] ?? p.score })));
+    } else if (msg.type === 'game_over') {
+      setOverlay({ title:'🏆 게임 종료!', sub:`🥇 ${msg.winner} 승리!\n정답: ${msg.word}`, scores:msg.scores, btn:'다시 하기' });
+      setPlayers(prev => prev.map(p => ({ ...p, score: msg.scores?.[p.name] ?? p.score })));
+    } else if (msg.type === 'room_closed') {
+      setOverlay({ title:'방이 닫혔어요', sub:'1분 내 참여자가 없어 방이 닫혔습니다', scores:null, btn:'나가기' });
+    }
+  }, [addChat, clearLocal, renderStroke]);
+
+  // WebSocket 연결
+  useEffect(() => {
+    const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const ws = new WebSocket(`${proto}//${location.host}/ws/catchmind/${roomId}?nick=${encodeURIComponent(nick)}`);
+    wsRef.current = ws;
+    ws.onopen = () => {
+      const c = canvasRef.current;
+      if (c) requestAnimationFrame(() => {
+        const s = c.offsetWidth || 200;
+        c.width = s; c.height = s;
+        const ctx = c.getContext('2d');
+        ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, s, s);
+      });
+    };
+    ws.onmessage = (e) => { try { handleMsg(JSON.parse(e.data)); } catch {} };
+    ws.onclose = (e) => {
+      if      (e.code === 4004) { addChat('notice','방을 찾을 수 없어요.'); setTimeout(onLeave, 1500); }
+      else if (e.code === 4003) { addChat('notice','방이 꽉 찼어요.');      setTimeout(onLeave, 1500); }
+      else                      { addChat('notice','연결이 끊어졌어요.'); }
+    };
+    ws.onerror = () => ws.close();
+    return () => ws.close();
+  }, [roomId, nick, handleMsg, addChat, onLeave]);
+
+  // 캔버스 드로잉 이벤트
+  useEffect(() => {
+    const c = canvasRef.current;
+    if (!c) return;
+    const getPos = (e) => {
+      const r = c.getBoundingClientRect();
+      const src = e.touches ? e.touches[0] : e;
+      return [(src.clientX - r.left) / r.width, (src.clientY - r.top) / r.height];
+    };
+    const emitDraw = (x, y, lx, ly) => {
+      const d = { x, y, lx, ly, c: eraserRef.current ? '#ffffff' : colorRef.current, s: eraserRef.current ? sizeRef.current * 2.5 : sizeRef.current };
+      renderStroke(c, d);
+      if (wsRef.current?.readyState === 1) wsRef.current.send(JSON.stringify({ type:'draw', d }));
+    };
+    const start = (e) => {
+      if (!isDrawer.current) return;
+      e.preventDefault();
+      drawingRef.current = true;
+      const [x, y] = getPos(e);
+      lastPos.current = { x, y };
+      emitDraw(x, y, null, null);
+    };
+    const move = (e) => {
+      if (!drawingRef.current || !isDrawer.current) return;
+      e.preventDefault();
+      const [x, y] = getPos(e);
+      emitDraw(x, y, lastPos.current.x, lastPos.current.y);
+      lastPos.current = { x, y };
+    };
+    const end = () => { drawingRef.current = false; };
+    c.addEventListener('mousedown', start);
+    c.addEventListener('mousemove', move);
+    c.addEventListener('mouseup', end);
+    c.addEventListener('mouseleave', end);
+    c.addEventListener('touchstart', start, { passive:false });
+    c.addEventListener('touchmove',  move,  { passive:false });
+    c.addEventListener('touchend',   end);
+    return () => {
+      c.removeEventListener('mousedown', start);
+      c.removeEventListener('mousemove', move);
+      c.removeEventListener('mouseup', end);
+      c.removeEventListener('mouseleave', end);
+      c.removeEventListener('touchstart', start);
+      c.removeEventListener('touchmove', move);
+      c.removeEventListener('touchend', end);
+    };
+  }, [renderStroke]);
+
+  const sendClear = () => {
+    clearLocal();
+    if (wsRef.current?.readyState === 1) wsRef.current.send(JSON.stringify({ type:'clear' }));
+  };
+
+  const sendGuess = () => {
+    const text = guessInput.trim();
+    if (!text || wsRef.current?.readyState !== 1) return;
+    wsRef.current.send(JSON.stringify({ type:'guess', text }));
+    setGuessInput('');
+  };
+
+  const handleOverlayBtn = (btn) => {
+    if (btn === '나가기') { onLeave(); }
+    else {
+      if (wsRef.current?.readyState === 1) wsRef.current.send(JSON.stringify({ type:'restart' }));
+      setOverlay(null);
+    }
+  };
+
+  const pickColor = (c) => { setColor(c); setEraser(false); };
+  const pickSize  = (s) => { setBrushSize(s); setEraser(false); };
+
+  return (
+    <div id="cm-cm-game" className="cm-screen" style={{ display:'flex', flexDirection:'column' }}>
+      <div id="cm-game-header">
+        <button className="cm-back" onClick={onLeave}>←</button>
+        <div id="cm-players-bar">
+          {players.map((p, i) => (
+            <div key={i} className={`cm-player-chip${p.isDrawer ? ' drawer' : ''}`}>
+              {p.name} <span className="score">{p.score ?? 0}</span>
+            </div>
+          ))}
+        </div>
+        <div id="cm-timer" className={timerUrgent ? 'urgent' : ''}>{timer}</div>
+      </div>
+
+      <div id="cm-canvas-wrap" style={{ position:'relative' }}>
+        <canvas id="cm-canvas" ref={canvasRef} />
+        {overlay && (
+          <div className="cm-overlay" style={{ display:'flex' }}>
+            <div className="cm-overlay-title">{overlay.title}</div>
+            <div className="cm-overlay-sub" style={{ whiteSpace:'pre-line' }}>{overlay.sub}</div>
+            {overlay.scores && (
+              <div className="cm-overlay-scores">
+                {Object.entries(overlay.scores).sort((a,b) => b[1]-a[1]).map(([name, score]) => (
+                  <div key={name} className="cm-score-row">
+                    <span>{name}</span>
+                    <span className="score" style={{ color:'#60a5fa', fontWeight:700 }}>{score}점</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            {overlay.btn && <button className="cm-overlay-btn" onClick={() => handleOverlayBtn(overlay.btn)}>{overlay.btn}</button>}
+          </div>
+        )}
+      </div>
+
+      {showTools && (
+        <div id="cm-tools" className="visible">
+          {CM_COLORS.map((c) => (
+            <div
+              key={c}
+              className={`cm-color-btn${color === c && !eraser ? ' active' : ''}`}
+              style={{ background:c, ...(c==='#ffffff' ? { border:'2px solid #334155' } : {}) }}
+              onClick={() => pickColor(c)}
+            />
+          ))}
+          <span style={{ width:1, background:'#334155', alignSelf:'stretch', margin:'0 2px' }} />
+          {CM_SIZES.map((s, i) => (
+            <button key={s} className={`cm-size-btn${brushSize===s && !eraser ? ' active' : ''}`} onClick={() => pickSize(s)}>
+              {['S','M','L'][i]}
+            </button>
+          ))}
+          <button id="cm-eraser-btn" className={eraser ? 'active' : ''} onClick={() => setEraser(v => !v)}>지우개</button>
+          <button id="cm-clear-btn" onClick={sendClear}>전체 지우기</button>
+        </div>
+      )}
+
+      {wordBox && <div id="cm-word-box" className="visible">{wordBox}</div>}
+
+      <div id="cm-chat" ref={chatRef}>
+        {chatMsgs.map((m, i) => {
+          if (m.type === 'notice')  return <div key={i} className="cm-chat-msg notice">{m.a}</div>;
+          if (m.type === 'correct') return <div key={i} className="cm-chat-msg correct">{m.a}</div>;
+          return <div key={i} className="cm-chat-msg"><span className="nm">{m.a}</span> {m.b}</div>;
+        })}
+      </div>
+
+      <div id="cm-guess-bar">
+        <input
+          id="cm-guess-input"
+          placeholder={guessDisabled ? '그림을 그려주세요!' : '포켓몬 이름 맞춰보세요...'}
+          value={guessInput}
+          onChange={e => setGuessInput(e.target.value)}
+          onKeyDown={e => e.key === 'Enter' && sendGuess()}
+          disabled={guessDisabled}
+        />
+        <button id="cm-guess-send" onClick={sendGuess} disabled={guessDisabled}>↑</button>
+      </div>
+    </div>
+  );
+}
+
+// ── 메인 ─────────────────────────────────────────────────────────────
+export default function CommunityTab({ onOpenPokemon }) {
+  const [nick,   setNick]   = useState(() => localStorage.getItem('cm_nick') || null);
+  const [screen, setScreen] = useState('lobby'); // 'lobby' | 'room' | 'cm-lobby' | 'cm-game'
+  const [room,   setRoom]   = useState(null);    // { id, name }
+  const [cmRoom, setCmRoom] = useState(null);    // { id }
+
+  const enterLobby  = (n) => { setNick(n); setScreen('lobby'); };
+  const joinRoom    = (id, name) => { setRoom({ id, name }); setScreen('room'); };
+  const leaveRoom   = () => { setRoom(null); setScreen('lobby'); };
+  const goCatchmind = () => setScreen('cm-lobby');
+  const joinCmRoom  = (id) => { setCmRoom({ id }); setScreen('cm-game'); };
+  const leaveCmRoom = () => { setCmRoom(null); setScreen('cm-lobby'); };
+
   const changeNick = () => {
     const n = prompt('새 닉네임을 입력하세요 (최대 15자)', nick || '');
     if (!n?.trim()) return;
@@ -405,15 +770,17 @@ export default function CommunityTab({ onOpenPokemon }) {
   return (
     <div className="view" id="view-community">
       {!nick && <NickScreen onEnter={enterLobby} />}
-      {nick && !room && <LobbyScreen nick={nick} onJoin={joinRoom} onChangeNick={changeNick} />}
-      {nick && room && (
-        <RoomScreen
-          nick={nick}
-          roomId={room.id}
-          roomName={room.name}
-          onLeave={leaveRoom}
-          onOpenPokemon={onOpenPokemon}
-        />
+      {nick && screen === 'lobby' && (
+        <LobbyScreen nick={nick} onJoin={joinRoom} onChangeNick={changeNick} onCatchmind={goCatchmind} />
+      )}
+      {nick && screen === 'room' && room && (
+        <RoomScreen nick={nick} roomId={room.id} roomName={room.name} onLeave={leaveRoom} onOpenPokemon={onOpenPokemon} />
+      )}
+      {nick && screen === 'cm-lobby' && (
+        <CatchmindLobbyScreen nick={nick} onJoin={joinCmRoom} onBack={() => setScreen('lobby')} />
+      )}
+      {nick && screen === 'cm-game' && cmRoom && (
+        <CatchmindGameScreen nick={nick} roomId={cmRoom.id} onLeave={leaveCmRoom} />
       )}
     </div>
   );
