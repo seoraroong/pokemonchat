@@ -21,6 +21,10 @@ evolution_line: "dudunsparce"
 | 타입 | 노말 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It drives enemies out of its nest by sucking in enough air to fill its long, narrow lungs, then releasing the air in an intense blast.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

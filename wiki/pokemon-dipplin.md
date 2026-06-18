@@ -21,6 +21,10 @@ evolution_line: "dipplin"
 | 타입 | 풀 / 드래곤 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The head sticking out belongs to the fore-wyrm, while the tail belongs to the core-wyrm. The two share one apple and help each other out.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

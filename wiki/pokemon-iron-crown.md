@@ -21,6 +21,10 @@ evolution_line: "iron-crown"
 | 타입 | 강철 / 에스퍼 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> There was supposedly an incident in which it launched shining blades to cut everything around it to pieces. Little else is known about it.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

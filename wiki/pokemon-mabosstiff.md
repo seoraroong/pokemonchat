@@ -21,6 +21,10 @@ evolution_line: "mabosstiff"
 | 타입 | 악 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Mabosstiff loves playing with children. Though usually gentle, it takes on an intimidating look when protecting its family.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

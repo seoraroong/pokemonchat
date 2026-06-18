@@ -21,6 +21,10 @@ evolution_line: "iron-boulder"
 | 타입 | 바위 / 에스퍼 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It was named after a mysterious object recorded in an old book. Its body seems to be metallic.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

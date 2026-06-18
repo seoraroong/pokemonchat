@@ -21,6 +21,10 @@ evolution_line: "tinkatuff"
 | 타입 | 페어리 / 강철 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> These Pokémon make their homes in piles of scrap metal. They test the strength of each other’s hammers by smashing them together.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

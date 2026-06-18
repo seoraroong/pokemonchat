@@ -21,6 +21,10 @@ evolution_line: "rabsca"
 | 타입 | 벌레 / 에스퍼 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> An infant sleeps inside the ball. Rabsca rolls the ball soothingly with its legs to ensure the infant sleeps comfortably.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

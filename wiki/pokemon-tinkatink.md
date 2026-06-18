@@ -21,6 +21,10 @@ evolution_line: "tinkatink"
 | 타입 | 페어리 / 강철 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon pounds iron scraps together to make a hammer. It will remake the hammer again and again until it’s satisfied with the result.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

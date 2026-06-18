@@ -21,6 +21,10 @@ evolution_line: "flutter-mane"
 | 타입 | 고스트 / 페어리 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It has similar features to a ghostly pterosaur that was covered in a paranormal magazine, but the two have little else in common.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

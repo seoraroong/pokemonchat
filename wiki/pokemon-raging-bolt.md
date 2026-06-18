@@ -21,6 +21,10 @@ evolution_line: "raging-bolt"
 | 타입 | 전기 / 드래곤 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It bears resemblance to a Pokémon that became a hot topic for a short while after a paranormal magazine touted it as Raikou's ancestor.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

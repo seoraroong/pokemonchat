@@ -21,6 +21,10 @@ evolution_line: "nacli"
 | 타입 | 바위 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The ground scrapes its body as it travels, causing it to leave salt behind. Salt is constantly being created and replenished inside Nacli’s body.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

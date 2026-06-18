@@ -21,6 +21,10 @@ evolution_line: "brute-bonnet"
 | 타입 | 풀 / 악 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It bears a slight resemblance to a Pokémon described in a dubious magazine as a cross between a dinosaur and a mushroom.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

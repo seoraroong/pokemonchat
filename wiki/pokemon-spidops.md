@@ -21,6 +21,10 @@ evolution_line: "spidops"
 | 타입 | 벌레 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Spidops covers its territory in tough, sticky threads to set up traps for intruders.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

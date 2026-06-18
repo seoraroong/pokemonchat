@@ -21,6 +21,10 @@ evolution_line: "smoliv"
 | 타입 | 풀 / 노말 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon converts nutrients into oil, which it stores in the fruit on its head. It can easily go a whole week without eating or drinking.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

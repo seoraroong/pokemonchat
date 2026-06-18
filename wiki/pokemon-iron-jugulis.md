@@ -21,6 +21,10 @@ evolution_line: "iron-jugulis"
 | 타입 | 악 / 비행 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It’s possible that Iron Jugulis, an object described in an old book, may actually be this Pokémon.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

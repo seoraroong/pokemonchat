@@ -21,6 +21,10 @@ evolution_line: "ceruledge"
 | 타입 | 불꽃 / 고스트 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> An old set of armor steeped in grudges caused this Pokémon’s evolution. Ceruledge cuts its enemies to pieces without mercy.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

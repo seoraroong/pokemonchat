@@ -21,6 +21,10 @@ evolution_line: "grafaiai"
 | 타입 | 독 / 노말 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Each Grafaiai paints its own individual pattern, and it will paint that same pattern over and over again throughout its life.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

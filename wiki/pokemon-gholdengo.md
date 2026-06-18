@@ -21,6 +21,10 @@ evolution_line: "gholdengo"
 | 타입 | 강철 / 고스트 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It has a sturdy body made up of stacked coins. Gholdengo overwhelms its enemies by firing coin after coin at them in quick succession.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

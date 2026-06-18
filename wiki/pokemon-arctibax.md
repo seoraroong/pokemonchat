@@ -21,6 +21,10 @@ evolution_line: "arctibax"
 | 타입 | 드래곤 / 얼음 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It attacks with the blade of its frozen dorsal fin by doing a front flip in the air. Arctibax’s strong back and legs allow it to pull off this technique.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

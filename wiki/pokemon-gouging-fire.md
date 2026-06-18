@@ -21,6 +21,10 @@ evolution_line: "gouging-fire"
 | 타입 | 불꽃 / 드래곤 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It resembles an eerie Pokémon once shown in a paranormal magazine. That Pokémon was said to be an Entei regenerated from a fossil.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

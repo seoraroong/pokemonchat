@@ -21,6 +21,10 @@ evolution_line: "gimmighoul"
 | 타입 | 고스트 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It lives inside an old treasure chest. Sometimes it gets left in shop corners since no one realizes it’s actually a Pokémon.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

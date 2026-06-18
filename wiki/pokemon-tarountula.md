@@ -21,6 +21,10 @@ evolution_line: "tarountula"
 | 타입 | 벌레 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The thread it secretes from its rear is as strong as wire. The secret behind the thread’s strength is the topic of ongoing research.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "rellor"
 | 타입 | 벌레 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It rolls its mud ball around while the energy it needs for evolution matures. Eventually the time comes for it to evolve.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

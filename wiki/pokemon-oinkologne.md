@@ -21,6 +21,10 @@ evolution_line: "oinkologne"
 | 타입 | 노말 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It entrances female Pokémon with the sweet, alluring scent that wafts from all over its body.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

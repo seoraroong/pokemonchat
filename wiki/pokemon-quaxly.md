@@ -21,6 +21,10 @@ evolution_line: "quaxly"
 | 타입 | 물 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Its strong legs let it easily swim around in even fast-flowing rivers. It likes to keep things tidy and is prone to overthinking things.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "houndstone"
 | 타입 | 고스트 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> A lovingly mourned Pokémon was reborn as Houndstone. It doesn’t like anyone touching the protuberance atop its head.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

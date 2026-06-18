@@ -21,6 +21,10 @@ evolution_line: "arboliva"
 | 타입 | 풀 / 노말 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon drives back enemies by launching its rich, aromatic oil at them with enough force to smash a boulder.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "quaxwell"
 | 타입 | 물 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The hardworking Quaxwell observes people and Pokémon from various regions and incorporates their movements into its own dance routines.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

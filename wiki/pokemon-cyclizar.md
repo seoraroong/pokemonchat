@@ -21,6 +21,10 @@ evolution_line: "cyclizar"
 | 타입 | 드래곤 / 노말 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It can sprint at over 70 mph while carrying a human. The rider’s body heat warms Cyclizar’s back and lifts the Pokémon’s spirit.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "pecharunt"
 | 타입 | 독 / 고스트 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Its peach-shaped shell serves as storage for a potent poison. It makes poisonous mochi and serves them to people and Pokémon.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

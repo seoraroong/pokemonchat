@@ -21,6 +21,10 @@ evolution_line: "armarouge"
 | 타입 | 불꽃 / 에스퍼 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon clads itself in armor that has been fortified by psychic and fire energy, and it shoots blazing fireballs.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

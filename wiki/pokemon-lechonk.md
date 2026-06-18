@@ -21,6 +21,10 @@ evolution_line: "lechonk"
 | 타입 | 노말 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon spurns all but the finest of foods. Its body gives off an herblike scent that bug Pokémon detest.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "dolliv"
 | 타입 | 풀 / 노말 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It basks in the sun to its heart’s content until the fruits on its head ripen. After that, Dolliv departs from human settlements and goes on a journey.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

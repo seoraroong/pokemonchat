@@ -21,6 +21,10 @@ evolution_line: "bombirdier"
 | 타입 | 비행 / 악 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Bombirdier uses the apron on its chest to bundle up food, which it carries back to its nest. It enjoys dropping things that make loud noises.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

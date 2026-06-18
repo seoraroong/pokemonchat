@@ -21,6 +21,10 @@ evolution_line: "naclstack"
 | 타입 | 바위 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It compresses rock salt inside its body and shoots out hardened salt pellets with enough force to perforate an iron sheet.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

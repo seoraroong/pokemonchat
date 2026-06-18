@@ -21,6 +21,10 @@ evolution_line: "okidogi"
 | 타입 | 독 / 격투 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Okidogi is a ruffian with a short temper. It can pulverize anything by swinging around the chain on its neck.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

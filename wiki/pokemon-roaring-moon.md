@@ -21,6 +21,10 @@ evolution_line: "roaring-moon"
 | 타입 | 드래곤 / 악 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> According to an article in a dubious magazine, this Pokémon has some connection to a phenomenon that occurs in a certain region.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

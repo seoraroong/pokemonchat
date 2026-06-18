@@ -21,6 +21,10 @@ evolution_line: "koraidon"
 | 타입 | 격투 / 드래곤 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon resembles Cyclizar, but it is far burlier and more ferocious. Nothing is known about its ecology or other features.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

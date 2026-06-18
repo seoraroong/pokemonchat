@@ -21,6 +21,10 @@ evolution_line: "miraidon"
 | 타입 | 전기 / 드래곤 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This seems to be the Iron Serpent mentioned in an old book. The Iron Serpent is said to have turned the land to ash with its lightning.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

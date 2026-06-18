@@ -21,6 +21,10 @@ evolution_line: "iron-bundle"
 | 타입 | 얼음 / 물 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It resembles a mysterious object mentioned in an old book. There are only two reported sightings of this Pokémon.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "clodsire"
 | 타입 | 독 / 땅 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It lives at the bottom of ponds and swamps. It will carry Wooper on its back and ferry them across water from one shore to the other.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

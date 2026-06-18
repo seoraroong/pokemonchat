@@ -21,6 +21,10 @@ evolution_line: "ursaluna"
 | 타입 | 땅 / 노말 |
 | 세대 | 8세대 |
 
+
+## 도감 설명
+
+> I believe it was Hisui's swampy terrain that gave Ursaluna its burly physique and newfound capacity to manipulate peat at will.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

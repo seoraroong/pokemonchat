@@ -21,6 +21,10 @@ evolution_line: "frigibax"
 | 타입 | 드래곤 / 얼음 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon lives in forests and craggy areas. Using the power of its dorsal fin, it cools the inside of its nest like a refrigerator.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

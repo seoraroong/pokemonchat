@@ -21,6 +21,10 @@ evolution_line: "pawmot"
 | 타입 | 전기 / 격투 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Pawmot’s fluffy fur acts as a battery. It can store the same amount of electricity as an electric car.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

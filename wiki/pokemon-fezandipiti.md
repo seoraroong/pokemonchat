@@ -21,6 +21,10 @@ evolution_line: "fezandipiti"
 | 타입 | 독 / 페어리 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Fezandipiti beats its glossy wings to scatter pheromones that captivate people and Pokémon.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

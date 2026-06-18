@@ -21,6 +21,10 @@ evolution_line: "finizen"
 | 타입 | 물 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Its water ring is made from seawater mixed with a sticky fluid that Finizen secretes from its blowhole.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "toedscruel"
 | 타입 | 땅 / 풀 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It coils its 10 tentacles around prey and sucks out their nutrients, causing the prey pain. The folds along the rim of its head are a popular delicacy.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

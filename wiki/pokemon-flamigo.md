@@ -21,6 +21,10 @@ evolution_line: "flamigo"
 | 타입 | 비행 / 격투 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Thanks to a behavior of theirs known as “synchronizing,” an entire flock of these Pokémon can attack simultaneously in perfect harmony.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

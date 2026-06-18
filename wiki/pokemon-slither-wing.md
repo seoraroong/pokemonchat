@@ -21,6 +21,10 @@ evolution_line: "slither-wing"
 | 타입 | 벌레 / 격투 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon somewhat resembles an ancient form of Volcarona that was introduced in a dubious magazine.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

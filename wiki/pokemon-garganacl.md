@@ -21,6 +21,10 @@ evolution_line: "garganacl"
 | 타입 | 바위 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Many Pokémon gather around Garganacl, hoping to lick at its mineral-rich salt.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

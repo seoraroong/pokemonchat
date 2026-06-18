@@ -88,6 +88,13 @@ async def _refresh_one(name: str, script: str) -> None:
             _wiki_index_cache = None
             _slug_dex_cache   = None
             log.info(f"[refresh] {name} 완료")
+            # 레이드 갱신 시 위키 페이지도 업데이트
+            if name == "raids":
+                try:
+                    _update_raids_wiki()
+                    log.info("[refresh] current-raids.md 위키 업데이트 완료")
+                except Exception as e:
+                    log.warning(f"[refresh] current-raids.md 위키 업데이트 실패: {e}")
         else:
             st["last_err"] = f"{now}: {out[:200]}"
             log.warning(f"[refresh] {name} 실패: {out[:200]}")
@@ -1684,6 +1691,70 @@ async def get_raid_counters_api(slug: str):
             break
 
     return {"counters": counters[:15], "boss_ko": boss_ko, "weakness": weakness}
+
+
+# ── 레이드 위키 자동 갱신 ────────────────────────────────────────────
+_TIER_LABEL = {"mega": "메가 레이드", "5": "5성 레이드", "3": "3성 레이드", "1": "1성 레이드", "elite": "엘리트 레이드"}
+
+def _update_raids_wiki() -> None:
+    """current_raids.json 내용으로 wiki/current-raids.md 재생성."""
+    p = Path(".raw/current_raids.json")
+    if not p.exists():
+        return
+    raids: dict = json.loads(p.read_text(encoding="utf-8"))
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    total = sum(len(v) for v in raids.values())
+
+    lines = [
+        '---',
+        'title: "Current Raids / 현재 레이드 보스"',
+        'type: concept',
+        'language: ko',
+        f'created: 2026-06-05',
+        f'modified: {today}',
+        'tags: ["raid", "current", "boss", "event"]',
+        'aliases: ["현재 레이드", "레이드 보스", "레이드 보스 목록", "raid boss", "current raids"]',
+        f'summary: "현재 포켓몬 GO 레이드 보스 목록 — {today} 기준, 총 {total}마리"',
+        '---',
+        '',
+        '# 현재 레이드 보스',
+        '',
+        f'> 데이터 출처: [ScrapedDuck](https://github.com/bigfoott/ScrapedDuck) (LeekDuck 기반)',
+        f'> 기준일: {today}',
+        '> ⚠️ 레이드 보스는 자주 변경됩니다. 최신 정보는 [LeekDuck](https://leekduck.com/boss/) 에서 확인하세요.',
+    ]
+
+    for tier_key in ["mega", "elite", "5", "3", "1"]:
+        bosses = raids.get(tier_key, [])
+        if not bosses:
+            continue
+        label = _TIER_LABEL.get(tier_key, f"{tier_key}성 레이드")
+        lines += ['', f'### {label}', '', '| 포켓몬 | 타입 | 색변 |', '|--------|------|------|']
+        for b in bosses:
+            ko   = b.get("ko_name", b.get("en_name", ""))
+            slug = b.get("slug", "")
+            t    = b.get("types_ko", "")
+            shy  = "O" if b.get("is_shiny") else "-"
+            lines.append(f'| [[pokemon-{slug}|{ko}]] | {t} | {shy} |')
+
+    lines += [
+        '',
+        '## 레이드 카운터 찾기',
+        '',
+        '각 레이드 보스 이름을 클릭하면 개별 포켓몬 페이지로 이동합니다.',
+        '카운터 정보는 `raid-counters-{slug}` 페이지에서 확인할 수 있습니다.',
+        '',
+        '## Related Concepts',
+        '- [[type-chart]] — 타입 상성표',
+        '- [[moves-fast]] — 빠른 기술 목록',
+        '- [[moves-charged]] — 스페셜 기술 목록',
+    ]
+
+    wiki_path = Path("wiki/current-raids.md")
+    wiki_path.write_text("\n".join(lines), encoding="utf-8")
+    # 위키 인덱스 캐시 무효화
+    global _wiki_index_cache
+    _wiki_index_cache = None
 
 
 # ── Rockets API ───────────────────────────────────────────────────────

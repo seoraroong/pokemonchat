@@ -21,6 +21,10 @@ evolution_line: "pawmi"
 | 타입 | 전기 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The pads of its paws are electricity-discharging organs. Pawmi fires electricity from its forepaws while standing unsteadily on its hind legs.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

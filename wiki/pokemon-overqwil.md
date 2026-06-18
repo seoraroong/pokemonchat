@@ -21,6 +21,10 @@ evolution_line: "overqwil"
 | 타입 | 악 / 독 |
 | 세대 | 8세대 |
 
+
+## 도감 설명
+
+> Its lancelike spikes and savage temperament have earned it the nickname ”sea fiend.” It slurps up poison to nourish itself.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

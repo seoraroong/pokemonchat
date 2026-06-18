@@ -21,6 +21,10 @@ evolution_line: "iron-treads"
 | 타입 | 땅 / 강철 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Sightings of this Pokémon have occurred in recent years. It resembles a mysterious object described in an old expedition journal.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

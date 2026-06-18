@@ -21,6 +21,10 @@ evolution_line: "terapagos"
 | 타입 | 노말 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It’s thought that this Pokémon lived in ancient Paldea until it got caught in seismic shifts and went extinct.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

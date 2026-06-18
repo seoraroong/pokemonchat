@@ -21,6 +21,10 @@ evolution_line: "fuecoco"
 | 타입 | 불꽃 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Its flame sac is small, so energy is always leaking out. This energy is released from the dent atop Fuecoco’s head and flickers to and fro.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

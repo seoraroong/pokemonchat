@@ -21,6 +21,10 @@ evolution_line: "basculegion"
 | 타입 | 물 / 고스트 |
 | 세대 | 8세대 |
 
+
+## 도감 설명
+
+> Clads itself in the souls of comrades that perished before fulfilling their goals of journeying upstream. No other species throughout all Hisui's rivers is Basculegion's equal.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

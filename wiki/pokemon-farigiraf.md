@@ -21,6 +21,10 @@ evolution_line: "farigiraf"
 | 타입 | 노말 / 에스퍼 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The hardened head from the tail protects the head of the main body as Farigiraf whips its long neck around to headbutt enemies.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

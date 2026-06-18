@@ -21,6 +21,10 @@ evolution_line: "glimmet"
 | 타입 | 바위 / 독 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Glimmet’s toxic mineral crystals look just like flower petals. This Pokémon scatters poisonous powder like pollen to protect itself.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

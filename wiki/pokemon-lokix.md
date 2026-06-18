@@ -21,6 +21,10 @@ evolution_line: "lokix"
 | 타입 | 벌레 / 악 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It uses its normally folded third set of legs when in Showdown Mode. This places a huge burden on its body, so it can’t stay in this mode for long.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

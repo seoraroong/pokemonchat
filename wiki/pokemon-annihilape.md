@@ -21,6 +21,10 @@ evolution_line: "annihilape"
 | 타입 | 격투 / 고스트 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It imbues its fists with the power of the rage that it kept hidden in its heart. Opponents struck by these imbued fists will be shattered to their core.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

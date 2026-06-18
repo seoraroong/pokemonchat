@@ -21,6 +21,10 @@ evolution_line: "capsakid"
 | 타입 | 풀 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Traditional Paldean dishes can be extremely spicy because they include the shed front teeth of Capsakid among their ingredients.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

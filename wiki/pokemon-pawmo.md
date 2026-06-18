@@ -21,6 +21,10 @@ evolution_line: "pawmo"
 | 타입 | 전기 / 격투 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Pawmo uses a unique fighting technique in which it uses its forepaws to strike foes and zap them with electricity from its paw pads simultaneously.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

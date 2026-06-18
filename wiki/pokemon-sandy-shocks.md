@@ -21,6 +21,10 @@ evolution_line: "sandy-shocks"
 | 타입 | 전기 / 땅 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It slightly resembles a Magneton that lived for 10,000 years and was featured in an article in a paranormal magazine.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

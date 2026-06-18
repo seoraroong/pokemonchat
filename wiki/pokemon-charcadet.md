@@ -21,6 +21,10 @@ evolution_line: "charcadet"
 | 타입 | 불꽃 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Its firepower increases when it fights, reaching over 1,800 degrees Fahrenheit. It likes berries that are rich in fat.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

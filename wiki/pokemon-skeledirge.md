@@ -21,6 +21,10 @@ evolution_line: "skeledirge"
 | 타입 | 불꽃 / 고스트 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Skeledirge’s gentle singing soothes the souls of all that hear it. It burns its enemies to a crisp with flames of over 5,400 degrees Fahrenheit.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

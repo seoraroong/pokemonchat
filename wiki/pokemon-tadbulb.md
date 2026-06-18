@@ -21,6 +21,10 @@ evolution_line: "tadbulb"
 | 타입 | 전기 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It floats using the electricity stored in its body. When thunderclouds are around, Tadbulb will float higher off the ground.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

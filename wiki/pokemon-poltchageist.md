@@ -21,6 +21,10 @@ evolution_line: "poltchageist"
 | 타입 | 풀 / 고스트 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Poltchageist looks like a regional form of Sinistea, but it was recently discovered that the two Pokémon are entirely unrelated.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "cetitan"
 | 타입 | 얼음 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Ice energy builds up in the horn on its upper jaw, causing the horn to reach cryogenic temperatures that freeze its surroundings.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

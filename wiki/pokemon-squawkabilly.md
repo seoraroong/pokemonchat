@@ -21,6 +21,10 @@ evolution_line: "squawkabilly"
 | 타입 | 노말 / 비행 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Green-feathered flocks hold the most sway. When they’re out searching for food in the mornings and evenings, it gets very noisy.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "greavard"
 | 타입 | 고스트 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This friendly Pokémon doesn’t like being alone. Pay it even the slightest bit of attention, and it will follow you forever.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

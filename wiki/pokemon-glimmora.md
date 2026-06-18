@@ -21,6 +21,10 @@ evolution_line: "glimmora"
 | 타입 | 바위 / 독 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Glimmora’s petals are made of crystallized poison energy. It has recently become evident that these petals resemble Tera Jewels.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

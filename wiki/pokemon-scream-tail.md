@@ -21,6 +21,10 @@ evolution_line: "scream-tail"
 | 타입 | 페어리 / 에스퍼 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It resembles a mysterious Pokémon described in a paranormal magazine as a Jigglypuff from one billion years ago.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

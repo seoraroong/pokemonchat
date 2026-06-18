@@ -21,6 +21,10 @@ evolution_line: "flittle"
 | 타입 | 에스퍼 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It spends its time running around wastelands. If anyone steals its beloved berries, it will chase them down and exact its revenge.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

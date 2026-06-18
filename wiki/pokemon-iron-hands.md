@@ -21,6 +21,10 @@ evolution_line: "iron-hands"
 | 타입 | 격투 / 전기 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon shares many similarities with Iron Hands, an object mentioned in a certain expedition journal.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "kingambit"
 | 타입 | 악 / 강철 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Though it commands a massive army in battle, it’s not skilled at devising complex strategies. It just uses brute strength to keep pushing.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

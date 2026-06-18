@@ -21,6 +21,10 @@ evolution_line: "klawf"
 | 타입 | 바위 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon lives on sheer cliffs. It sidesteps opponents’ attacks, then lunges for their weak spots with its claws.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

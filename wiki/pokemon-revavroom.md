@@ -21,6 +21,10 @@ evolution_line: "revavroom"
 | 타입 | 강철 / 독 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Revavroom viciously threatens others with the sound of its exhaust. It sticks its tongue out from its cylindrical mouth and sprays toxic fluids.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

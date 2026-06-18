@@ -21,6 +21,10 @@ evolution_line: "meowscarada"
 | 타입 | 풀 / 악 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> With skillful misdirection, it rigs foes with pollen-packed flower bombs. Meowscarada sets off the bombs before its foes realize what’s going on.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "maschiff"
 | 타입 | 악 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Its well-developed jaw and fangs are strong enough to crunch through boulders, and its thick fat makes for an excellent defense.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

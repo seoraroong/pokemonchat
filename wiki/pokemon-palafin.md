@@ -21,6 +21,10 @@ evolution_line: "palafin"
 | 타입 | 물 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Its physical capabilities are no different than a Finizen’s, but when its allies are in danger, it transforms and powers itself up.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "enamorus"
 | 타입 | 페어리 / 비행 |
 | 세대 | 8세대 |
 
+
+## 도감 설명
+
+> When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pokémon's love gives rise to the budding of fresh life across Hisui.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

@@ -21,6 +21,10 @@ evolution_line: "quaquaval"
 | 타입 | 물 / 격투 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Dancing in ways that evoke far-away places, this Pokémon mesmerizes all that see it. Flourishes of its decorative water feathers slice into its foes.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

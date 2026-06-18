@@ -21,6 +21,10 @@ evolution_line: "baxcalibur"
 | 타입 | 드래곤 / 얼음 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It launches itself into battle by flipping upside down and spewing frigid air from its mouth. It finishes opponents off with its dorsal blade.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

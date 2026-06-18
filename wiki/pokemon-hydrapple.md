@@ -21,6 +21,10 @@ evolution_line: "hydrapple"
 | 타입 | 풀 / 드래곤 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> These capricious syrpents have banded together. On the rare occasion that their moods align, their true power is unleashed.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

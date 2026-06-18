@@ -21,6 +21,10 @@ evolution_line: "ogerpon"
 | 타입 | 풀 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This mischief-loving Pokémon is full of curiosity. It battles by drawing out the type-based energy contained within its masks.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

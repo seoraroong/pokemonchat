@@ -21,6 +21,10 @@ evolution_line: "espathra"
 | 타입 | 에스퍼 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It emits psychic power from the gaps between its multicolored frills and sprints at speeds greater than 120 mph.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

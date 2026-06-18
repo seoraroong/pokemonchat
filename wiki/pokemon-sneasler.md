@@ -21,6 +21,10 @@ evolution_line: "sneasler"
 | 타입 | 격투 / 독 |
 | 세대 | 8세대 |
 
+
+## 도감 설명
+
+> Because of Sneasler's virulent poison and daunting physical prowess, no other species could hope to best it on the frozen highlands. Preferring solitude, this species does not form packs.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

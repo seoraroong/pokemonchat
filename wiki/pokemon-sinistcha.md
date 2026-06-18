@@ -21,6 +21,10 @@ evolution_line: "sinistcha"
 | 타입 | 풀 / 고스트 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It prefers cool, dark places, such as the back of a shelf or the space beneath a home's floorboards. It wanders in search of prey after sunset.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

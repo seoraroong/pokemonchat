@@ -21,6 +21,10 @@ evolution_line: "shroodle"
 | 타입 | 독 / 노말 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> To keep enemies away from its territory, it paints markings around its nest using a poisonous liquid that has an acrid odor.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

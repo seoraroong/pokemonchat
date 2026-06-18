@@ -21,6 +21,10 @@ evolution_line: "cetoddle"
 | 타입 | 얼음 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It lives in frigid regions in pods of five or so individuals. It loves the minerals found in snow and ice.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

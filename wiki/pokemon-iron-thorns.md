@@ -21,6 +21,10 @@ evolution_line: "iron-thorns"
 | 타입 | 바위 / 전기 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Some of its notable features match those of an object named within a certain expedition journal as Iron Thorns.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

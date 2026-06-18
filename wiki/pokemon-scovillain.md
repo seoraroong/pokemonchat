@@ -21,6 +21,10 @@ evolution_line: "scovillain"
 | 타입 | 풀 / 불꽃 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The green head has turned vicious due to the spicy chemicals stimulating its brain. Once it goes on a rampage, there is no stopping it.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

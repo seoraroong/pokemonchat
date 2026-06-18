@@ -21,6 +21,10 @@ evolution_line: "great-tusk"
 | 타입 | 땅 / 격투 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This creature resembles a mysterious Pokémon that, according to a paranormal magazine, has lived since ancient times.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

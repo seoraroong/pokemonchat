@@ -21,6 +21,10 @@ evolution_line: "dondozo"
 | 타입 | 물 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It treats Tatsugiri like its boss and follows it loyally. Though powerful, Dondozo is apparently not very smart.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

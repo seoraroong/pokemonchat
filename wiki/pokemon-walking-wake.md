@@ -21,6 +21,10 @@ evolution_line: "walking-wake"
 | 타입 | 물 / 드래곤 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It resembles an illustration published in a paranormal magazine, said to be a depiction of a super-ancient Suicune.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

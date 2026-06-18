@@ -21,6 +21,10 @@ evolution_line: "wiglett"
 | 타입 | 물 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Though it looks like Diglett, Wiglett is an entirely different species. The resemblance seems to be a coincidental result of environmental adaptation.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

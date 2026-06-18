@@ -21,6 +21,10 @@ evolution_line: "tinkaton"
 | 타입 | 페어리 / 강철 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The hammer tops 220 pounds, yet it gets swung around easily by Tinkaton as it steals whatever it pleases and carries its plunder back home.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

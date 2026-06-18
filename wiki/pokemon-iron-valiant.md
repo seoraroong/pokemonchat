@@ -21,6 +21,10 @@ evolution_line: "iron-valiant"
 | 타입 | 페어리 / 격투 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It’s possible that this is the object listed as Iron Valiant in a certain expedition journal.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

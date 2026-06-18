@@ -21,6 +21,10 @@ evolution_line: "nymble"
 | 타입 | 벌레 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It’s highly skilled at a fighting style in which it uses its jumping capabilities to dodge incoming attacks while also dealing damage to opponents.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

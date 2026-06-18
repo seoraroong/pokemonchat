@@ -21,6 +21,10 @@ evolution_line: "brambleghast"
 | 타입 | 풀 / 고스트 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Brambleghast wanders around arid regions. On rare occasions, mass outbreaks of these Pokémon will bury an entire town.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

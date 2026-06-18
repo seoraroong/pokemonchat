@@ -21,6 +21,10 @@ evolution_line: "tandemaus"
 | 타입 | 노말 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The pair sticks together no matter what. They split any food they find exactly in half and then eat it together.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

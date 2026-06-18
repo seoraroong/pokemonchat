@@ -21,6 +21,10 @@ evolution_line: "munkidori"
 | 타입 | 독 / 에스퍼 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Munkidori keeps itself somewhere safe while it toys with its foes, using psychokinesis to induce intense dizziness.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

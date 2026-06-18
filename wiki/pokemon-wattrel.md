@@ -21,6 +21,10 @@ evolution_line: "wattrel"
 | 타입 | 전기 / 비행 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> These Pokémon make their nests on coastal cliffs. The nests have a strange, crackling texture, and they’re a popular delicacy.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

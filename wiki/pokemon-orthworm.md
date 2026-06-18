@@ -21,6 +21,10 @@ evolution_line: "orthworm"
 | 타입 | 강철 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> This Pokémon lives in arid deserts. It maintains its metal body by consuming iron from the soil.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

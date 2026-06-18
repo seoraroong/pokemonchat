@@ -21,6 +21,10 @@ evolution_line: "kleavor"
 | 타입 | 벌레 / 바위 |
 | 세대 | 8세대 |
 
+
+## 도감 설명
+
+> A violent creature that fells towering trees with its crude axes and shields itself with hard stone. If one should chance upon this Pokémon in the wilds, one's only recourse is to flee.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

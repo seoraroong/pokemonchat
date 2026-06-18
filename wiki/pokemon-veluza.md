@@ -21,6 +21,10 @@ evolution_line: "veluza"
 | 타입 | 물 / 에스퍼 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Veluza has excellent regenerative capabilities. It sheds spare flesh from its body to boost its agility, then charges at its prey.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

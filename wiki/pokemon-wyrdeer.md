@@ -21,6 +21,10 @@ evolution_line: "wyrdeer"
 | 타입 | 노말 / 에스퍼 |
 | 세대 | 8세대 |
 
+
+## 도감 설명
+
+> The black orbs shine with an uncanny light when the Pokémon is erecting invisible barriers. The fur shed from its beard retains heat well and is a highly useful material for winter clothing.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

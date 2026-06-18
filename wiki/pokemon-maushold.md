@@ -21,6 +21,10 @@ evolution_line: "maushold"
 | 타입 | 노말 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The larger pair protects the little ones during battles. When facing strong opponents, the whole group will join the fight.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

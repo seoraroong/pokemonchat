@@ -21,6 +21,10 @@ evolution_line: "crocalor"
 | 타입 | 불꽃 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The valve in Crocalor’s flame sac is closely connected to its vocal cords. This Pokémon utters a guttural cry as it spews flames every which way.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

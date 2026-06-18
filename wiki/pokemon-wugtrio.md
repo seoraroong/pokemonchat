@@ -21,6 +21,10 @@ evolution_line: "wugtrio"
 | 타입 | 물 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> A variety of fish Pokémon, Wugtrio was once considered to be a regional form of Dugtrio.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

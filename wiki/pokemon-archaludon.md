@@ -21,6 +21,10 @@ evolution_line: "archaludon"
 | 타입 | 강철 / 드래곤 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> It digs holes on mountains, searching for food. It’s so durable that being caught in a cave-in won’t faze it.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

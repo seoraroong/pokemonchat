@@ -21,6 +21,10 @@ evolution_line: "varoom"
 | 타입 | 강철 / 독 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The steel section is Varoom’s actual body. This Pokémon clings to rocks and converts the minerals within into energy to fuel its activities.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

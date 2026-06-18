@@ -21,6 +21,10 @@ evolution_line: "tatsugiri"
 | 타입 | 드래곤 / 물 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Tatsugiri is an extremely cunning Pokémon. It feigns weakness to lure in prey, then orders its partner to attack.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

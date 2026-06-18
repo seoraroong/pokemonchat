@@ -21,6 +21,10 @@ evolution_line: "iron-moth"
 | 타입 | 불꽃 / 독 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> No records exist of this species being caught. Data is lacking, but the Pokémon’s traits match up with an object described in an old book.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

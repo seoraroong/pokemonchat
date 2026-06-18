@@ -21,6 +21,10 @@ evolution_line: "dachsbun"
 | 타입 | 페어리 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The surface of this Pokémon’s skin hardens when exposed to intense heat, and its body has an appetizing aroma.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

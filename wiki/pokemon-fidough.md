@@ -21,6 +21,10 @@ evolution_line: "fidough"
 | 타입 | 페어리 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The yeast in Fidough’s breath is useful for cooking, so this Pokémon has been protected by people since long ago.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

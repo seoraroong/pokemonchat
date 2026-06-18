@@ -21,6 +21,10 @@ evolution_line: "toedscool"
 | 타입 | 땅 / 풀 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> Though it looks like Tentacool, Toedscool is a completely different species. Its legs may be thin, but it can run at a speed of 30 mph.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

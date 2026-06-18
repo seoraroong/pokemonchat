@@ -21,6 +21,10 @@ evolution_line: "floragato"
 | 타입 | 풀 / none |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> The hardness of Floragato’s fur depends on the Pokémon’s mood. When Floragato is prepared to battle, its fur becomes pointed and needle sharp.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |

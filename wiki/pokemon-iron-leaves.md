@@ -21,6 +21,10 @@ evolution_line: "iron-leaves"
 | 타입 | 풀 / 에스퍼 |
 | 세대 | 9세대 |
 
+
+## 도감 설명
+
+> According to the few eyewitness accounts that exist, it used its shining blades to julienne large trees and boulders.
 ## 포켓몬 GO 스탯
 
 | 항목 | 수치 |
