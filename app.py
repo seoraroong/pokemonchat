@@ -29,8 +29,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 
 # ── 자동 갱신 설정 ────────────────────────────────────────────────────
 _REFRESH_SCRIPTS: list[dict] = [
-    {"name": "raids",  "script": "fetch_current_raids.py",  "interval_h": 6},
-    {"name": "eggs",   "script": "fetch_eggs_and_rockets.py","interval_h": 12},
+    {"name": "raids",    "script": "fetch_current_raids.py",    "interval_h": 6},
+    {"name": "eggs",     "script": "fetch_eggs_and_rockets.py","interval_h": 12},
+    {"name": "research", "script": "fetch_field_research.py",  "interval_h": 24},
 ]
 _refresh_status: dict[str, dict] = {
     s["name"]: {"last_ok": None, "last_err": None, "running": False}
@@ -1756,6 +1757,15 @@ async def get_community_days_api():
 
     cdays.sort(key=lambda x: x["start"], reverse=True)
     return cdays
+
+
+# ── Field Research API ───────────────────────────────────────────────
+@app.get("/api/field-research")
+async def get_field_research_api():
+    p = Path(".raw/field_research.json")
+    if not p.exists():
+        return []
+    return json.loads(p.read_text(encoding="utf-8"))
 
 
 # ── Eggs API ─────────────────────────────────────────────────────────

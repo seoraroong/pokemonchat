@@ -142,9 +142,23 @@
     .pvp-league-moves { font-size: 0.72rem; color: #cbd5e1; line-height: 1.5; }
 
     /* ── 레이드/이벤트 ── */
-    #view-raid { flex: 1; overflow-y: auto; min-height: 0; background: #0f172a; }
-    #view-raid::-webkit-scrollbar { width: 4px; }
-    #view-raid::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+    #view-raid { flex: 1; display: flex; flex-direction: column; min-height: 0; background: #0f172a; overflow: hidden; }
+    #raid-mode-toggle { display: flex; gap: 6px; padding: 10px 12px 0; flex-shrink: 0; }
+    .raid-mode-btn { flex: 1; background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 7px 0; color: #64748b; font-size: 0.8rem; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    .raid-mode-btn.active { background: #1d3461; border-color: #3b82f6; color: #60a5fa; font-weight: 700; }
+    #raid-inner { flex: 1; overflow-y: auto; min-height: 0; }
+    #raid-inner::-webkit-scrollbar { width: 4px; }
+    #raid-inner::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+    #research-inner { flex: 1; overflow-y: auto; min-height: 0; display: none; }
+    /* ── 필드 리서치 ── */
+    #research-list { display: flex; flex-direction: column; gap: 8px; padding: 10px 12px 16px; }
+    .research-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; padding: 10px 12px; display: flex; align-items: center; gap: 10px; }
+    .research-task { flex: 1; font-size: 0.78rem; color: #e2e8f0; line-height: 1.35; }
+    .research-rewards { display: flex; gap: 6px; flex-shrink: 0; }
+    .research-pm { display: flex; flex-direction: column; align-items: center; gap: 1px; cursor: pointer; }
+    .research-pm img { width: 44px; height: 44px; object-fit: contain; }
+    .research-pm-name { font-size: 0.58rem; color: #94a3b8; text-align: center; max-width: 52px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .research-shiny { font-size: 0.58rem; color: #fbbf24; }
     .raid-section { padding: 12px 14px 0; }
     .section-title { font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; padding: 0 2px 10px; }
     .event-card { background: #1a2744; border: 1px solid #2d3f55; border-radius: 12px; padding: 11px 13px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px; }
@@ -740,7 +754,12 @@
   </div>
 
   <!-- ── 레이드/이벤트 뷰 ── -->
-  <div id="view-raid" style="display:none">
+  <div id="view-raid" class="view" style="display:none">
+    <div id="raid-mode-toggle">
+      <button class="raid-mode-btn active" onclick="setRaidMode('raid',this)">⚔️ 레이드/이벤트</button>
+      <button class="raid-mode-btn" onclick="setRaidMode('research',this)">📋 필드 리서치</button>
+    </div>
+    <div id="raid-inner">
     <div class="raid-section">
       <div id="data-status-bar" style="display:flex;align-items:center;justify-content:space-between;padding:2px 2px 10px;gap:8px">
         <span id="data-status-text" style="font-size:0.68rem;color:#475569">데이터 상태 확인 중...</span>
@@ -778,6 +797,10 @@
         <button class="event-detail-tab" onclick="switchEventTab('info',this)">ℹ️ 정보</button>
       </div>
       <div id="event-detail-body"></div>
+    </div>
+    </div><!-- /#raid-inner -->
+    <div id="research-inner">
+      <div id="research-list"></div>
     </div>
   </div>
 
@@ -1606,6 +1629,52 @@ async function loadRaidEvents(){
   loadDataStatus();
 }
 
+// ── 레이드 모드 토글 ──────────────────────────────────────────────
+let _raidMode = 'raid', _researchLoaded = false;
+function setRaidMode(mode, btn) {
+  _raidMode = mode;
+  document.querySelectorAll('.raid-mode-btn').forEach(b => b.classList.toggle('active', b === btn));
+  const raidInner     = document.getElementById('raid-inner');
+  const researchInner = document.getElementById('research-inner');
+  if (mode === 'raid') {
+    raidInner.style.display     = 'block';
+    researchInner.style.display = 'none';
+  } else {
+    raidInner.style.display     = 'none';
+    researchInner.style.display = 'block';
+    if (!_researchLoaded) loadFieldResearch();
+  }
+}
+let _researchData = [];
+async function loadFieldResearch() {
+  const list = document.getElementById('research-list');
+  list.innerHTML = '<div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div>';
+  try {
+    _researchData = await (await fetch('/api/field-research')).json();
+    _researchLoaded = true;
+    renderResearch();
+  } catch { list.innerHTML = '<div style="text-align:center;padding:32px;color:#475569">불러오기 실패</div>'; }
+}
+function renderResearch() {
+  const list = document.getElementById('research-list');
+  if (!_researchData.length) { list.innerHTML = '<div style="text-align:center;padding:32px;color:#475569">데이터 없음</div>'; return; }
+  list.innerHTML = _researchData.map(task => {
+    const rewards = task.rewards.map(pm => {
+      const spr = pm.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pm.dex}.png` : '';
+      const shiny = pm.can_shiny ? `<div class="research-shiny">✨ 색이상</div>` : '';
+      return `<div class="research-pm" onclick="${pm.dex ? `openPokemonPopup(${pm.dex})` : ''}">
+        ${spr ? `<img src="${spr}" onerror="this.style.opacity='0.2'">` : '<div style="width:44px;height:44px"></div>'}
+        <div class="research-pm-name">${esc(pm.ko)}</div>
+        ${shiny}
+      </div>`;
+    }).join('');
+    return `<div class="research-card">
+      <div class="research-task">${esc(task.text_ko)}</div>
+      <div class="research-rewards">${rewards}</div>
+    </div>`;
+  }).join('');
+}
+
 // ── 알/로켓 모드 토글 ──────────────────────────────────────────────
 let _eggMode = 'egg';
 function setEggMode(mode, btn) {
@@ -2164,7 +2233,7 @@ function switchTab(tab) {
   for(const [t,sel] of Object.entries(views)){
     const el=document.querySelector(sel);
     if(!el) continue;
-    if(t===tab) el.style.display=(t==='raid')?'block':'flex';
+    if(t===tab) el.style.display='flex';
     else el.style.display='none';
   }
   try { localStorage.setItem('pm-tab', tab); } catch(_) {}

@@ -1,0 +1,1834 @@
+[
+  {
+    "text_en": "Defeat a Team GO Rocket Grunt",
+    "text_ko": "팀 GO 로켓 그런트 처치",
+    "rewards": [
+      {
+        "en": "Cranidos",
+        "ko": "두개도스",
+        "dex": 408,
+        "can_shiny": true,
+        "cp_min": 730,
+        "cp_max": 780
+      },
+      {
+        "en": "Shieldon",
+        "ko": "방패톱스",
+        "dex": 410,
+        "can_shiny": true,
+        "cp_min": 348,
+        "cp_max": 381
+      }
+    ]
+  },
+  {
+    "text_en": "Make 5 Nice Throws",
+    "text_ko": "좋아요! 던지기 5회",
+    "rewards": [
+      {
+        "en": "Cranidos",
+        "ko": "두개도스",
+        "dex": 408,
+        "can_shiny": true,
+        "cp_min": 730,
+        "cp_max": 780
+      },
+      {
+        "en": "Shieldon",
+        "ko": "방패톱스",
+        "dex": 410,
+        "can_shiny": true,
+        "cp_min": 348,
+        "cp_max": 381
+      }
+    ]
+  },
+  {
+    "text_en": "Explore 1 km",
+    "text_ko": "1km 탐험",
+    "rewards": [
+      {
+        "en": "Cranidos",
+        "ko": "두개도스",
+        "dex": 408,
+        "can_shiny": true,
+        "cp_min": 730,
+        "cp_max": 780
+      },
+      {
+        "en": "Shieldon",
+        "ko": "방패톱스",
+        "dex": 410,
+        "can_shiny": true,
+        "cp_min": 348,
+        "cp_max": 381
+      }
+    ]
+  },
+  {
+    "text_en": "Catch 7 Pokémon",
+    "text_ko": "포켓몬 7마리 포획",
+    "rewards": [
+      {
+        "en": "Magikarp",
+        "ko": "잉어킹",
+        "dex": 129,
+        "can_shiny": true,
+        "cp_min": 99,
+        "cp_max": 117
+      },
+      {
+        "en": "Stufful",
+        "ko": "포곰곰",
+        "dex": 759,
+        "can_shiny": true,
+        "cp_min": 540,
+        "cp_max": 579
+      },
+      {
+        "en": "Wimpod",
+        "ko": "꼬시레",
+        "dex": 767,
+        "can_shiny": true,
+        "cp_min": 191,
+        "cp_max": 215
+      }
+    ]
+  },
+  {
+    "text_en": "Catch a Dragon-type Pokémon",
+    "text_ko": "드래곤 타입 포켓몬 포획",
+    "rewards": [
+      {
+        "en": "Dratini",
+        "ko": "미뇽",
+        "dex": 147,
+        "can_shiny": true,
+        "cp_min": 397,
+        "cp_max": 430
+      },
+      {
+        "en": "Bagon",
+        "ko": "아공이",
+        "dex": 371,
+        "can_shiny": true,
+        "cp_min": 459,
+        "cp_max": 495
+      },
+      {
+        "en": "Axew",
+        "ko": "터검니",
+        "dex": 610,
+        "can_shiny": true,
+        "cp_min": 547,
+        "cp_max": 586
+      }
+    ]
+  },
+  {
+    "text_en": "Catch 7 different species of Pokémon",
+    "text_ko": "서로 다른 포켓몬 7종 포획",
+    "rewards": [
+      {
+        "en": "Psyduck",
+        "ko": "고라파덕",
+        "dex": 54,
+        "can_shiny": true,
+        "cp_min": 439,
+        "cp_max": 474
+      },
+      {
+        "en": "Seaking",
+        "ko": "왕콘치",
+        "dex": 119,
+        "can_shiny": true,
+        "cp_min": 877,
+        "cp_max": 926
+      },
+      {
+        "en": "Marill",
+        "ko": "마릴",
+        "dex": 183,
+        "can_shiny": true,
+        "cp_min": 172,
+        "cp_max": 197
+      },
+      {
+        "en": "Teddiursa",
+        "ko": "깜지곰",
+        "dex": 216,
+        "can_shiny": true,
+        "cp_min": 530,
+        "cp_max": 569
+      },
+      {
+        "en": "Lombre",
+        "ko": "로토스",
+        "dex": 271,
+        "can_shiny": true,
+        "cp_min": 476,
+        "cp_max": 513
+      },
+      {
+        "en": "Stunky",
+        "ko": "스컹뿡",
+        "dex": 434,
+        "can_shiny": true,
+        "cp_min": 457,
+        "cp_max": 493
+      },
+      {
+        "en": "Liepard",
+        "ko": "레파르다스",
+        "dex": 510,
+        "can_shiny": true,
+        "cp_min": 744,
+        "cp_max": 791
+      },
+      {
+        "en": "Darumaka",
+        "ko": "달막화",
+        "dex": 554,
+        "can_shiny": true,
+        "cp_min": 576,
+        "cp_max": 618
+      },
+      {
+        "en": "Clauncher",
+        "ko": "완철포",
+        "dex": 692,
+        "can_shiny": true,
+        "cp_min": 431,
+        "cp_max": 466
+      },
+      {
+        "en": "Dedenne",
+        "ko": "데덴네",
+        "dex": 702,
+        "can_shiny": true,
+        "cp_min": 743,
+        "cp_max": 789
+      },
+      {
+        "en": "Cutiefly",
+        "ko": "에블리",
+        "dex": 742,
+        "can_shiny": true,
+        "cp_min": 349,
+        "cp_max": 380
+      },
+      {
+        "en": "Smoliv",
+        "ko": "미니브",
+        "dex": 928,
+        "can_shiny": true,
+        "cp_min": 335,
+        "cp_max": 366
+      }
+    ]
+  },
+  {
+    "text_en": "Catch 10 Grass-type Pokémon",
+    "text_ko": "풀 타입 포켓몬 10마리 포획",
+    "rewards": [
+      {
+        "en": "Bulbasaur",
+        "ko": "이상해씨",
+        "dex": 1,
+        "can_shiny": true,
+        "cp_min": 442,
+        "cp_max": 477
+      },
+      {
+        "en": "Chikorita",
+        "ko": "치코리타",
+        "dex": 152,
+        "can_shiny": true,
+        "cp_min": 368,
+        "cp_max": 400
+      },
+      {
+        "en": "Treecko",
+        "ko": "나무지기",
+        "dex": 252,
+        "can_shiny": true,
+        "cp_min": 417,
+        "cp_max": 451
+      },
+      {
+        "en": "Turtwig",
+        "ko": "모부기",
+        "dex": 387,
+        "can_shiny": true,
+        "cp_min": 472,
+        "cp_max": 508
+      },
+      {
+        "en": "Snivy",
+        "ko": "주리비얀",
+        "dex": 495,
+        "can_shiny": true,
+        "cp_min": 333,
+        "cp_max": 364
+      },
+      {
+        "en": "Chespin",
+        "ko": "도치마론",
+        "dex": 650,
+        "can_shiny": true,
+        "cp_min": 434,
+        "cp_max": 469
+      },
+      {
+        "en": "Rowlet",
+        "ko": "나몰빼미",
+        "dex": 722,
+        "can_shiny": true,
+        "cp_min": 418,
+        "cp_max": 453
+      },
+      {
+        "en": "Grookey",
+        "ko": "흥나숭",
+        "dex": 810,
+        "can_shiny": true,
+        "cp_min": 430,
+        "cp_max": 465
+      },
+      {
+        "en": "Sprigatito",
+        "ko": "나오하",
+        "dex": 906,
+        "can_shiny": true,
+        "cp_min": 401,
+        "cp_max": 435
+      }
+    ]
+  },
+  {
+    "text_en": "Catch 10 Fire-type Pokémon",
+    "text_ko": "불꽃 타입 포켓몬 10마리 포획",
+    "rewards": [
+      {
+        "en": "Charmander",
+        "ko": "파이리",
+        "dex": 4,
+        "can_shiny": true,
+        "cp_min": 387,
+        "cp_max": 420
+      },
+      {
+        "en": "Cyndaquil",
+        "ko": "브케인",
+        "dex": 155,
+        "can_shiny": true,
+        "cp_min": 387,
+        "cp_max": 420
+      },
+      {
+        "en": "Torchic",
+        "ko": "아차모",
+        "dex": 255,
+        "can_shiny": true,
+        "cp_min": 433,
+        "cp_max": 468
+      },
+      {
+        "en": "Chimchar",
+        "ko": "불꽃숭이",
+        "dex": 390,
+        "can_shiny": true,
+        "cp_min": 377,
+        "cp_max": 410
+      },
+      {
+        "en": "Tepig",
+        "ko": "뚜꾸리",
+        "dex": 498,
+        "can_shiny": true,
+        "cp_min": 428,
+        "cp_max": 464
+      },
+      {
+        "en": "Fennekin",
+        "ko": "푸호꼬",
+        "dex": 653,
+        "can_shiny": true,
+        "cp_min": 406,
+        "cp_max": 440
+      },
+      {
+        "en": "Litten",
+        "ko": "냐오불",
+        "dex": 725,
+        "can_shiny": true,
+        "cp_min": 409,
+        "cp_max": 443
+      },
+      {
+        "en": "Scorbunny",
+        "ko": "염버니",
+        "dex": 813,
+        "can_shiny": true,
+        "cp_min": 434,
+        "cp_max": 470
+      },
+      {
+        "en": "Fuecoco",
+        "ko": "뜨아거",
+        "dex": 909,
+        "can_shiny": true,
+        "cp_min": 447,
+        "cp_max": 483
+      }
+    ]
+  },
+  {
+    "text_en": "Catch 10 Water-type Pokémon",
+    "text_ko": "물 타입 포켓몬 10마리 포획",
+    "rewards": [
+      {
+        "en": "Squirtle",
+        "ko": "꼬부기",
+        "dex": 7,
+        "can_shiny": true,
+        "cp_min": 372,
+        "cp_max": 405
+      },
+      {
+        "en": "Totodile",
+        "ko": "리아코",
+        "dex": 158,
+        "can_shiny": true,
+        "cp_min": 449,
+        "cp_max": 485
+      },
+      {
+        "en": "Mudkip",
+        "ko": "물짱이",
+        "dex": 258,
+        "can_shiny": true,
+        "cp_min": 447,
+        "cp_max": 483
+      },
+      {
+        "en": "Piplup",
+        "ko": "팽도리",
+        "dex": 393,
+        "can_shiny": true,
+        "cp_min": 426,
+        "cp_max": 460
+      },
+      {
+        "en": "Oshawott",
+        "ko": "수댕이",
+        "dex": 501,
+        "can_shiny": true,
+        "cp_min": 413,
+        "cp_max": 448
+      },
+      {
+        "en": "Froakie",
+        "ko": "개구마르",
+        "dex": 656,
+        "can_shiny": true,
+        "cp_min": 392,
+        "cp_max": 425
+      },
+      {
+        "en": "Popplio",
+        "ko": "누리공",
+        "dex": 728,
+        "can_shiny": true,
+        "cp_min": 448,
+        "cp_max": 483
+      },
+      {
+        "en": "Sobble",
+        "ko": "울머기",
+        "dex": 816,
+        "can_shiny": false,
+        "cp_min": 434,
+        "cp_max": 470
+      },
+      {
+        "en": "Quaxly",
+        "ko": "꾸왁스",
+        "dex": 912,
+        "can_shiny": true,
+        "cp_min": 425,
+        "cp_max": 460
+      }
+    ]
+  },
+  {
+    "text_en": "Catch 5 Pokémon with Weather Boost",
+    "text_ko": "날씨 부스트 포켓몬 5마리 포획",
+    "rewards": [
+      {
+        "en": "Vulpix",
+        "ko": "식스테일",
+        "dex": 37,
+        "can_shiny": true,
+        "cp_min": 347,
+        "cp_max": 378
+      },
+      {
+        "en": "Poliwag",
+        "ko": "발챙이",
+        "dex": 60,
+        "can_shiny": true,
+        "cp_min": 324,
+        "cp_max": 355
+      },
+      {
+        "en": "Wingull",
+        "ko": "갈모매",
+        "dex": 278,
+        "can_shiny": true,
+        "cp_min": 298,
+        "cp_max": 328
+      },
+      {
+        "en": "Hippopotas",
+        "ko": "히포포타스",
+        "dex": 449,
+        "can_shiny": true,
+        "cp_min": 542,
+        "cp_max": 582
+      },
+      {
+        "en": "Snover",
+        "ko": "눈쓰개",
+        "dex": 459,
+        "can_shiny": true,
+        "cp_min": 460,
+        "cp_max": 497
+      },
+      {
+        "en": "Roggenrola",
+        "ko": "단굴",
+        "dex": 524,
+        "can_shiny": true,
+        "cp_min": 479,
+        "cp_max": 516
+      },
+      {
+        "en": "Vanillite",
+        "ko": "바닐프티",
+        "dex": 582,
+        "can_shiny": true,
+        "cp_min": 409,
+        "cp_max": 443
+      }
+    ]
+  },
+  {
+    "text_en": "Make 10 Curveball Throws",
+    "text_ko": "커브볼 던지기 10회",
+    "rewards": [
+      {
+        "en": "Alolan Geodude",
+        "ko": "Alolan Geodude",
+        "dex": 74,
+        "can_shiny": true,
+        "cp_min": 516,
+        "cp_max": 554
+      },
+      {
+        "en": "Electabuzz",
+        "ko": "에레브",
+        "dex": 125,
+        "can_shiny": true,
+        "cp_min": 949,
+        "cp_max": 1000
+      },
+      {
+        "en": "Makuhita",
+        "ko": "마크탕",
+        "dex": 296,
+        "can_shiny": true,
+        "cp_min": 318,
+        "cp_max": 350
+      },
+      {
+        "en": "Swablu",
+        "ko": "파비코",
+        "dex": 333,
+        "can_shiny": true,
+        "cp_min": 322,
+        "cp_max": 353
+      },
+      {
+        "en": "Baltoy",
+        "ko": "오뚝군",
+        "dex": 343,
+        "can_shiny": true,
+        "cp_min": 307,
+        "cp_max": 337
+      },
+      {
+        "en": "Dusclops",
+        "ko": "미라몽",
+        "dex": 356,
+        "can_shiny": true,
+        "cp_min": 638,
+        "cp_max": 682
+      },
+      {
+        "en": "Staravia",
+        "ko": "찌르버드",
+        "dex": 397,
+        "can_shiny": true,
+        "cp_min": 518,
+        "cp_max": 556
+      },
+      {
+        "en": "Emolga",
+        "ko": "에몽가",
+        "dex": 587,
+        "can_shiny": true,
+        "cp_min": 657,
+        "cp_max": 700
+      },
+      {
+        "en": "Ferroseed",
+        "ko": "철시드",
+        "dex": 597,
+        "can_shiny": true,
+        "cp_min": 370,
+        "cp_max": 403
+      },
+      {
+        "en": "Lechonk",
+        "ko": "맛보돈",
+        "dex": 915,
+        "can_shiny": true,
+        "cp_min": 285,
+        "cp_max": 314
+      }
+    ]
+  },
+  {
+    "text_en": "Make 10 Nice Throws",
+    "text_ko": "좋아요! 던지기 10회",
+    "rewards": [
+      {
+        "en": "Alolan Sandshrew",
+        "ko": "Alolan Sandshrew",
+        "dex": 27,
+        "can_shiny": true,
+        "cp_min": 516,
+        "cp_max": 554
+      },
+      {
+        "en": "Machop",
+        "ko": "알통몬",
+        "dex": 66,
+        "can_shiny": true,
+        "cp_min": 509,
+        "cp_max": 548
+      },
+      {
+        "en": "Magmar",
+        "ko": "마그마",
+        "dex": 126,
+        "can_shiny": true,
+        "cp_min": 973,
+        "cp_max": 1026
+      },
+      {
+        "en": "Magikarp",
+        "ko": "잉어킹",
+        "dex": 129,
+        "can_shiny": true,
+        "cp_min": 99,
+        "cp_max": 117
+      },
+      {
+        "en": "Sunkern",
+        "ko": "해너츠",
+        "dex": 191,
+        "can_shiny": true,
+        "cp_min": 148,
+        "cp_max": 169
+      },
+      {
+        "en": "Nuzleaf",
+        "ko": "잎새코",
+        "dex": 274,
+        "can_shiny": true,
+        "cp_min": 487,
+        "cp_max": 526
+      },
+      {
+        "en": "Stunfisk",
+        "ko": "메더",
+        "dex": 618,
+        "can_shiny": true,
+        "cp_min": 876,
+        "cp_max": 926
+      },
+      {
+        "en": "Trumbeak",
+        "ko": "크라파",
+        "dex": 732,
+        "can_shiny": true,
+        "cp_min": 592,
+        "cp_max": 633
+      },
+      {
+        "en": "Mareanie",
+        "ko": "시마사리",
+        "dex": 747,
+        "can_shiny": true,
+        "cp_min": 383,
+        "cp_max": 416
+      },
+      {
+        "en": "Nymble",
+        "ko": "콩알뚜기",
+        "dex": 919,
+        "can_shiny": true,
+        "cp_min": 228,
+        "cp_max": 253
+      }
+    ]
+  },
+  {
+    "text_en": "Make 2 Excellent Throws",
+    "text_ko": "훌륭해요! 던지기 2회",
+    "rewards": [
+      {
+        "en": "Goomy",
+        "ko": "미끄메라",
+        "dex": 704,
+        "can_shiny": true,
+        "cp_min": 385,
+        "cp_max": 418
+      }
+    ]
+  },
+  {
+    "text_en": "Make 3 Excellent Throws in a row",
+    "text_ko": "훌륭해요! 던지기 3회 연속",
+    "rewards": [
+      {
+        "en": "Larvitar",
+        "ko": "애버라스",
+        "dex": 246,
+        "can_shiny": true,
+        "cp_min": 411,
+        "cp_max": 445
+      },
+      {
+        "en": "Beldum",
+        "ko": "메탕",
+        "dex": 374,
+        "can_shiny": true,
+        "cp_min": 385,
+        "cp_max": 418
+      },
+      {
+        "en": "Gible",
+        "ko": "딥상어동",
+        "dex": 443,
+        "can_shiny": true,
+        "cp_min": 441,
+        "cp_max": 477
+      }
+    ]
+  },
+  {
+    "text_en": "Make 3 Great Throws",
+    "text_ko": "잘했어요! 던지기 3회",
+    "rewards": [
+      {
+        "en": "Omanyte",
+        "ko": "암나이트",
+        "dex": 138,
+        "can_shiny": true,
+        "cp_min": 620,
+        "cp_max": 662
+      },
+      {
+        "en": "Kabuto",
+        "ko": "투구",
+        "dex": 140,
+        "can_shiny": true,
+        "cp_min": 548,
+        "cp_max": 587
+      },
+      {
+        "en": "Clamperl",
+        "ko": "진주몽",
+        "dex": 366,
+        "can_shiny": true,
+        "cp_min": 507,
+        "cp_max": 544
+      },
+      {
+        "en": "Elgyem",
+        "ko": "리그레",
+        "dex": 605,
+        "can_shiny": true,
+        "cp_min": 554,
+        "cp_max": 593
+      },
+      {
+        "en": "Binacle",
+        "ko": "거북손손",
+        "dex": 688,
+        "can_shiny": true,
+        "cp_min": 373,
+        "cp_max": 405
+      }
+    ]
+  },
+  {
+    "text_en": "Make 3 Great Throws in a row",
+    "text_ko": "잘했어요! 던지기 3회 연속",
+    "rewards": [
+      {
+        "en": "Lileep",
+        "ko": "릴링",
+        "dex": 345,
+        "can_shiny": true,
+        "cp_min": 515,
+        "cp_max": 553
+      },
+      {
+        "en": "Anorith",
+        "ko": "아노딥스",
+        "dex": 347,
+        "can_shiny": true,
+        "cp_min": 613,
+        "cp_max": 655
+      }
+    ]
+  },
+  {
+    "text_en": "Make 5 Great Curveball Throws in a row",
+    "text_ko": "잘했어요! 커브볼 5회 연속",
+    "rewards": [
+      {
+        "en": "Spinda 2",
+        "ko": "Spinda 2",
+        "dex": 327,
+        "can_shiny": true,
+        "cp_min": 486,
+        "cp_max": 523
+      },
+      {
+        "en": "Spinda 3",
+        "ko": "Spinda 3",
+        "dex": 327,
+        "can_shiny": true,
+        "cp_min": 486,
+        "cp_max": 523
+      }
+    ]
+  },
+  {
+    "text_en": "Make 5 Nice Throws",
+    "text_ko": "좋아요! 던지기 5회",
+    "rewards": [
+      {
+        "en": "Alolan Diglett",
+        "ko": "Alolan Diglett",
+        "dex": 50,
+        "can_shiny": true,
+        "cp_min": 264,
+        "cp_max": 292
+      },
+      {
+        "en": "Diglett",
+        "ko": "디그다",
+        "dex": 50,
+        "can_shiny": true,
+        "cp_min": 262,
+        "cp_max": 289
+      },
+      {
+        "en": "Sudowoodo",
+        "ko": "꼬지모",
+        "dex": 185,
+        "can_shiny": true,
+        "cp_min": 871,
+        "cp_max": 920
+      }
+    ]
+  },
+  {
+    "text_en": "Win a raid",
+    "text_ko": "레이드 승리",
+    "rewards": [
+      {
+        "en": "Onix",
+        "ko": "롱스톤",
+        "dex": 95,
+        "can_shiny": true,
+        "cp_min": 435,
+        "cp_max": 472
+      },
+      {
+        "en": "Vaporeon",
+        "ko": "샤미드",
+        "dex": 134,
+        "can_shiny": true,
+        "cp_min": 1275,
+        "cp_max": 1335
+      },
+      {
+        "en": "Jolteon",
+        "ko": "쥬피썬더",
+        "dex": 135,
+        "can_shiny": true,
+        "cp_min": 1180,
+        "cp_max": 1238
+      },
+      {
+        "en": "Flareon",
+        "ko": "부스터",
+        "dex": 136,
+        "can_shiny": true,
+        "cp_min": 1239,
+        "cp_max": 1298
+      },
+      {
+        "en": "Snorlax",
+        "ko": "잠만보",
+        "dex": 143,
+        "can_shiny": true,
+        "cp_min": 1320,
+        "cp_max": 1382
+      },
+      {
+        "en": "Piloswine",
+        "ko": "메꾸리",
+        "dex": 221,
+        "can_shiny": true,
+        "cp_min": 953,
+        "cp_max": 1005
+      },
+      {
+        "en": "Sealeo",
+        "ko": "씨레오",
+        "dex": 364,
+        "can_shiny": true,
+        "cp_min": 690,
+        "cp_max": 735
+      },
+      {
+        "en": "Metang",
+        "ko": "메탕구",
+        "dex": 375,
+        "can_shiny": true,
+        "cp_min": 694,
+        "cp_max": 738
+      },
+      {
+        "en": "Luxio",
+        "ko": "럭시오",
+        "dex": 404,
+        "can_shiny": true,
+        "cp_min": 595,
+        "cp_max": 636
+      },
+      {
+        "en": "Gabite",
+        "ko": "한바이트",
+        "dex": 444,
+        "can_shiny": true,
+        "cp_min": 757,
+        "cp_max": 803
+      },
+      {
+        "en": "Lampent",
+        "ko": "램프라",
+        "dex": 608,
+        "can_shiny": true,
+        "cp_min": 688,
+        "cp_max": 732
+      },
+      {
+        "en": "Fletchinder",
+        "ko": "불화살빈",
+        "dex": 662,
+        "can_shiny": true,
+        "cp_min": 589,
+        "cp_max": 629
+      }
+    ]
+  },
+  {
+    "text_en": "Win a three-star raid or higher",
+    "text_ko": "별 3개 이상 레이드 승리",
+    "rewards": [
+      {
+        "en": "Tirtouga",
+        "ko": "프로토가",
+        "dex": 564,
+        "can_shiny": true,
+        "cp_min": 597,
+        "cp_max": 638
+      },
+      {
+        "en": "Archen",
+        "ko": "아켄",
+        "dex": 566,
+        "can_shiny": true,
+        "cp_min": 741,
+        "cp_max": 789
+      }
+    ]
+  },
+  {
+    "text_en": "Win 5 raids",
+    "text_ko": "레이드 5회 승리",
+    "rewards": [
+      {
+        "en": "Alolan Exeggutor",
+        "ko": "Alolan Exeggutor",
+        "dex": 103,
+        "can_shiny": true,
+        "cp_min": 1233,
+        "cp_max": 1292
+      },
+      {
+        "en": "Alolan Marowak",
+        "ko": "Alolan Marowak",
+        "dex": 105,
+        "can_shiny": true,
+        "cp_min": 741,
+        "cp_max": 786
+      },
+      {
+        "en": "Aerodactyl",
+        "ko": "프테라",
+        "dex": 142,
+        "can_shiny": true,
+        "cp_min": 1136,
+        "cp_max": 1193
+      }
+    ]
+  },
+  {
+    "text_en": "Explore 2 km",
+    "text_ko": "2km 탐험",
+    "rewards": [
+      {
+        "en": "Paras",
+        "ko": "파라스",
+        "dex": 46,
+        "can_shiny": true,
+        "cp_min": 402,
+        "cp_max": 436
+      },
+      {
+        "en": "Mankey",
+        "ko": "망키",
+        "dex": 56,
+        "can_shiny": true,
+        "cp_min": 462,
+        "cp_max": 499
+      },
+      {
+        "en": "Galarian Ponyta",
+        "ko": "Galarian Ponyta",
+        "dex": 77,
+        "can_shiny": true,
+        "cp_min": 683,
+        "cp_max": 727
+      },
+      {
+        "en": "Ponyta",
+        "ko": "포니타",
+        "dex": 77,
+        "can_shiny": true,
+        "cp_min": 683,
+        "cp_max": 727
+      },
+      {
+        "en": "Lapras",
+        "ko": "라프라스",
+        "dex": 131,
+        "can_shiny": true,
+        "cp_min": 1076,
+        "cp_max": 1131
+      },
+      {
+        "en": "Mantine",
+        "ko": "만타인",
+        "dex": 226,
+        "can_shiny": true,
+        "cp_min": 854,
+        "cp_max": 903
+      },
+      {
+        "en": "Houndour",
+        "ko": "델빌",
+        "dex": 228,
+        "can_shiny": true,
+        "cp_min": 491,
+        "cp_max": 529
+      },
+      {
+        "en": "Wailmer",
+        "ko": "고래왕자",
+        "dex": 320,
+        "can_shiny": true,
+        "cp_min": 584,
+        "cp_max": 629
+      },
+      {
+        "en": "Herdier",
+        "ko": "하데리어",
+        "dex": 507,
+        "can_shiny": true,
+        "cp_min": 636,
+        "cp_max": 678
+      },
+      {
+        "en": "Pawmi",
+        "ko": "빠모",
+        "dex": 921,
+        "can_shiny": true,
+        "cp_min": 244,
+        "cp_max": 272
+      }
+    ]
+  },
+  {
+    "text_en": "Hatch an Egg",
+    "text_ko": "알 부화",
+    "rewards": [
+      {
+        "en": "Alolan Marowak",
+        "ko": "Alolan Marowak",
+        "dex": 105,
+        "can_shiny": true,
+        "cp_min": 741,
+        "cp_max": 786
+      },
+      {
+        "en": "Scyther",
+        "ko": "스라크",
+        "dex": 123,
+        "can_shiny": true,
+        "cp_min": 1104,
+        "cp_max": 1160
+      },
+      {
+        "en": "Dratini",
+        "ko": "미뇽",
+        "dex": 147,
+        "can_shiny": true,
+        "cp_min": 397,
+        "cp_max": 430
+      },
+      {
+        "en": "Noctowl",
+        "ko": "야부엉",
+        "dex": 164,
+        "can_shiny": true,
+        "cp_min": 819,
+        "cp_max": 867
+      },
+      {
+        "en": "Sudowoodo",
+        "ko": "꼬지모",
+        "dex": 185,
+        "can_shiny": true,
+        "cp_min": 871,
+        "cp_max": 920
+      },
+      {
+        "en": "Nincada",
+        "ko": "토중몬",
+        "dex": 290,
+        "can_shiny": true,
+        "cp_min": 299,
+        "cp_max": 329
+      },
+      {
+        "en": "Combee",
+        "ko": "세꿀버리",
+        "dex": 415,
+        "can_shiny": true,
+        "cp_min": 188,
+        "cp_max": 212
+      },
+      {
+        "en": "Audino",
+        "ko": "이어롭",
+        "dex": 531,
+        "can_shiny": true,
+        "cp_min": 676,
+        "cp_max": 721
+      },
+      {
+        "en": "Cubchoo",
+        "ko": "코고미",
+        "dex": 613,
+        "can_shiny": true,
+        "cp_min": 422,
+        "cp_max": 458
+      },
+      {
+        "en": "Tyrunt",
+        "ko": "티고라스",
+        "dex": 696,
+        "can_shiny": true,
+        "cp_min": 658,
+        "cp_max": 700
+      },
+      {
+        "en": "Amaura",
+        "ko": "아마루스",
+        "dex": 698,
+        "can_shiny": true,
+        "cp_min": 545,
+        "cp_max": 584
+      },
+      {
+        "en": "Stufful",
+        "ko": "포곰곰",
+        "dex": 759,
+        "can_shiny": true,
+        "cp_min": 540,
+        "cp_max": 579
+      },
+      {
+        "en": "Wimpod",
+        "ko": "꼬시레",
+        "dex": 767,
+        "can_shiny": true,
+        "cp_min": 191,
+        "cp_max": 215
+      }
+    ]
+  },
+  {
+    "text_en": "Hatch 2 Eggs",
+    "text_ko": "알 2개 부화",
+    "rewards": [
+      {
+        "en": "Sneasel",
+        "ko": "포푸니",
+        "dex": 215,
+        "can_shiny": true,
+        "cp_min": 831,
+        "cp_max": 879
+      },
+      {
+        "en": "Mawile",
+        "ko": "입치트",
+        "dex": 303,
+        "can_shiny": true,
+        "cp_min": 658,
+        "cp_max": 700
+      },
+      {
+        "en": "Feebas",
+        "ko": "빈티나",
+        "dex": 349,
+        "can_shiny": true,
+        "cp_min": 99,
+        "cp_max": 117
+      }
+    ]
+  },
+  {
+    "text_en": "Spin 3 PokéStops or Gyms",
+    "text_ko": "포켓스탑/체육관 3개 돌리기",
+    "rewards": [
+      {
+        "en": "Doduo",
+        "ko": "두두",
+        "dex": 84,
+        "can_shiny": true,
+        "cp_min": 477,
+        "cp_max": 514
+      },
+      {
+        "en": "Remoraid",
+        "ko": "총어",
+        "dex": 223,
+        "can_shiny": true,
+        "cp_min": 358,
+        "cp_max": 391
+      },
+      {
+        "en": "Ralts",
+        "ko": "랄토스",
+        "dex": 280,
+        "can_shiny": true,
+        "cp_min": 206,
+        "cp_max": 231
+      },
+      {
+        "en": "Aron",
+        "ko": "가보리",
+        "dex": 304,
+        "can_shiny": true,
+        "cp_min": 522,
+        "cp_max": 560
+      }
+    ]
+  },
+  {
+    "text_en": "Spin 5 PokéStops or Gyms",
+    "text_ko": "포켓스탑/체육관 5개 돌리기",
+    "rewards": [
+      {
+        "en": "Alolan Rattata",
+        "ko": "Alolan Rattata",
+        "dex": 19,
+        "can_shiny": true,
+        "cp_min": 286,
+        "cp_max": 315
+      },
+      {
+        "en": "Rattata",
+        "ko": "꼬렛",
+        "dex": 19,
+        "can_shiny": true,
+        "cp_min": 286,
+        "cp_max": 315
+      },
+      {
+        "en": "Growlithe",
+        "ko": "가디",
+        "dex": 58,
+        "can_shiny": true,
+        "cp_min": 495,
+        "cp_max": 533
+      },
+      {
+        "en": "Hisuian Growlithe",
+        "ko": "Hisuian Growlithe",
+        "dex": 58,
+        "can_shiny": true,
+        "cp_min": 527,
+        "cp_max": 566
+      },
+      {
+        "en": "Galarian Slowpoke",
+        "ko": "Galarian Slowpoke",
+        "dex": 79,
+        "can_shiny": true,
+        "cp_min": 487,
+        "cp_max": 525
+      },
+      {
+        "en": "Slowpoke",
+        "ko": "야돈",
+        "dex": 79,
+        "can_shiny": true,
+        "cp_min": 487,
+        "cp_max": 525
+      },
+      {
+        "en": "Dunsparce",
+        "ko": "노고치",
+        "dex": 206,
+        "can_shiny": true,
+        "cp_min": 679,
+        "cp_max": 724
+      },
+      {
+        "en": "Sneasel",
+        "ko": "포푸니",
+        "dex": 215,
+        "can_shiny": true,
+        "cp_min": 831,
+        "cp_max": 879
+      },
+      {
+        "en": "Galarian Zigzagoon",
+        "ko": "Galarian Zigzagoon",
+        "dex": 263,
+        "can_shiny": true,
+        "cp_min": 193,
+        "cp_max": 218
+      },
+      {
+        "en": "Zigzagoon",
+        "ko": "지그제구리",
+        "dex": 263,
+        "can_shiny": true,
+        "cp_min": 193,
+        "cp_max": 218
+      },
+      {
+        "en": "Snorunt",
+        "ko": "눈꼬마",
+        "dex": 361,
+        "can_shiny": true,
+        "cp_min": 349,
+        "cp_max": 380
+      },
+      {
+        "en": "Bidoof",
+        "ko": "비버니",
+        "dex": 399,
+        "can_shiny": true,
+        "cp_min": 280,
+        "cp_max": 309
+      },
+      {
+        "en": "Hippopotas",
+        "ko": "히포포타스",
+        "dex": 449,
+        "can_shiny": true,
+        "cp_min": 542,
+        "cp_max": 582
+      },
+      {
+        "en": "Trubbish",
+        "ko": "깨봉이",
+        "dex": 568,
+        "can_shiny": true,
+        "cp_min": 395,
+        "cp_max": 428
+      },
+      {
+        "en": "Ducklett",
+        "ko": "꼬지보리",
+        "dex": 580,
+        "can_shiny": true,
+        "cp_min": 335,
+        "cp_max": 367
+      },
+      {
+        "en": "Dewpider",
+        "ko": "물거미",
+        "dex": 751,
+        "can_shiny": true,
+        "cp_min": 277,
+        "cp_max": 306
+      },
+      {
+        "en": "Skwovet",
+        "ko": "탐리스",
+        "dex": 819,
+        "can_shiny": true,
+        "cp_min": 371,
+        "cp_max": 404
+      },
+      {
+        "en": "Nickit",
+        "ko": "훔처우",
+        "dex": 827,
+        "can_shiny": false,
+        "cp_min": 278,
+        "cp_max": 306
+      },
+      {
+        "en": "Wooloo",
+        "ko": "우르",
+        "dex": 831,
+        "can_shiny": true,
+        "cp_min": 274,
+        "cp_max": 302
+      },
+      {
+        "en": "Tarountula",
+        "ko": "타랜툴라",
+        "dex": 917,
+        "can_shiny": false,
+        "cp_min": 219,
+        "cp_max": 244
+      },
+      {
+        "en": "Nacli",
+        "ko": "베베솔트",
+        "dex": 932,
+        "can_shiny": false,
+        "cp_min": 381,
+        "cp_max": 414
+      }
+    ]
+  },
+  {
+    "text_en": "Take a snapshot of a wild Pokémon",
+    "text_ko": "야생 포켓몬 사진 찍기",
+    "rewards": [
+      {
+        "en": "Trapinch",
+        "ko": "톱치",
+        "dex": 328,
+        "can_shiny": true,
+        "cp_min": 507,
+        "cp_max": 546
+      },
+      {
+        "en": "Croagunk",
+        "ko": "삐딱구리",
+        "dex": 453,
+        "can_shiny": true,
+        "cp_min": 375,
+        "cp_max": 408
+      },
+      {
+        "en": "Cottonee",
+        "ko": "소미안",
+        "dex": 546,
+        "can_shiny": true,
+        "cp_min": 271,
+        "cp_max": 300
+      }
+    ]
+  },
+  {
+    "text_en": "Evolve a Pokémon",
+    "text_ko": "포켓몬 진화",
+    "rewards": [
+      {
+        "en": "Seadra",
+        "ko": "시드라",
+        "dex": 117,
+        "can_shiny": true,
+        "cp_min": 848,
+        "cp_max": 897
+      },
+      {
+        "en": "Starmie",
+        "ko": "아쿠스타",
+        "dex": 121,
+        "can_shiny": true,
+        "cp_min": 1053,
+        "cp_max": 1107
+      },
+      {
+        "en": "Eevee",
+        "ko": "이브이",
+        "dex": 133,
+        "can_shiny": true,
+        "cp_min": 424,
+        "cp_max": 459
+      },
+      {
+        "en": "Magcargo",
+        "ko": "마그카르고",
+        "dex": 219,
+        "can_shiny": true,
+        "cp_min": 685,
+        "cp_max": 729
+      },
+      {
+        "en": "Grumpig",
+        "ko": "피그킹",
+        "dex": 326,
+        "can_shiny": true,
+        "cp_min": 964,
+        "cp_max": 1015
+      },
+      {
+        "en": "Whirlipede",
+        "ko": "휠구",
+        "dex": 544,
+        "can_shiny": true,
+        "cp_min": 454,
+        "cp_max": 490
+      },
+      {
+        "en": "Eelektrik",
+        "ko": "저리릴",
+        "dex": 603,
+        "can_shiny": true,
+        "cp_min": 691,
+        "cp_max": 735
+      },
+      {
+        "en": "Diggersby",
+        "ko": "파르토",
+        "dex": 660,
+        "can_shiny": true,
+        "cp_min": 605,
+        "cp_max": 646
+      }
+    ]
+  },
+  {
+    "text_en": "Power up Pokémon 3 times",
+    "text_ko": "포켓몬 3회 강화",
+    "rewards": [
+      {
+        "en": "Bulbasaur",
+        "ko": "이상해씨",
+        "dex": 1,
+        "can_shiny": true,
+        "cp_min": 442,
+        "cp_max": 477
+      },
+      {
+        "en": "Charmander",
+        "ko": "파이리",
+        "dex": 4,
+        "can_shiny": true,
+        "cp_min": 387,
+        "cp_max": 420
+      },
+      {
+        "en": "Squirtle",
+        "ko": "꼬부기",
+        "dex": 7,
+        "can_shiny": true,
+        "cp_min": 372,
+        "cp_max": 405
+      }
+    ]
+  },
+  {
+    "text_en": "Power up Pokémon 5 times",
+    "text_ko": "포켓몬 5회 강화",
+    "rewards": [
+      {
+        "en": "Snivy",
+        "ko": "주리비얀",
+        "dex": 495,
+        "can_shiny": true,
+        "cp_min": 333,
+        "cp_max": 364
+      },
+      {
+        "en": "Tepig",
+        "ko": "뚜꾸리",
+        "dex": 498,
+        "can_shiny": true,
+        "cp_min": 428,
+        "cp_max": 464
+      },
+      {
+        "en": "Oshawott",
+        "ko": "수댕이",
+        "dex": 501,
+        "can_shiny": true,
+        "cp_min": 413,
+        "cp_max": 448
+      }
+    ]
+  },
+  {
+    "text_en": "Power up Pokémon 7 times",
+    "text_ko": "포켓몬 7회 강화",
+    "rewards": [
+      {
+        "en": "Rowlet",
+        "ko": "나몰빼미",
+        "dex": 722,
+        "can_shiny": true,
+        "cp_min": 418,
+        "cp_max": 453
+      },
+      {
+        "en": "Litten",
+        "ko": "냐오불",
+        "dex": 725,
+        "can_shiny": true,
+        "cp_min": 409,
+        "cp_max": 443
+      },
+      {
+        "en": "Popplio",
+        "ko": "누리공",
+        "dex": 728,
+        "can_shiny": true,
+        "cp_min": 448,
+        "cp_max": 483
+      }
+    ]
+  },
+  {
+    "text_en": "Earn 2 Candies walking with your buddy",
+    "text_ko": "버디와 걸어서 사탕 2개 획득",
+    "rewards": [
+      {
+        "en": "Jigglypuff",
+        "ko": "푸린",
+        "dex": 39,
+        "can_shiny": true,
+        "cp_min": 277,
+        "cp_max": 310
+      },
+      {
+        "en": "Buneary",
+        "ko": "이어롤",
+        "dex": 427,
+        "can_shiny": true,
+        "cp_min": 501,
+        "cp_max": 539
+      },
+      {
+        "en": "Glameow",
+        "ko": "나옹마",
+        "dex": 431,
+        "can_shiny": true,
+        "cp_min": 367,
+        "cp_max": 400
+      },
+      {
+        "en": "Bunnelby",
+        "ko": "파르빗",
+        "dex": 659,
+        "can_shiny": true,
+        "cp_min": 212,
+        "cp_max": 237
+      },
+      {
+        "en": "Litleo",
+        "ko": "레오꼬",
+        "dex": 667,
+        "can_shiny": true,
+        "cp_min": 571,
+        "cp_max": 611
+      },
+      {
+        "en": "Dedenne",
+        "ko": "데덴네",
+        "dex": 702,
+        "can_shiny": true,
+        "cp_min": 743,
+        "cp_max": 789
+      }
+    ]
+  },
+  {
+    "text_en": "Earn 3 Candies walking with your buddy",
+    "text_ko": "버디와 걸어서 사탕 3개 획득",
+    "rewards": [
+      {
+        "en": "Galarian Stunfisk",
+        "ko": "Galarian Stunfisk",
+        "dex": 618,
+        "can_shiny": true,
+        "cp_min": 876,
+        "cp_max": 926
+      },
+      {
+        "en": "Stunfisk",
+        "ko": "메더",
+        "dex": 618,
+        "can_shiny": true,
+        "cp_min": 876,
+        "cp_max": 926
+      }
+    ]
+  },
+  {
+    "text_en": "Send 3 Gifts and add a sticker to each",
+    "text_ko": "선물 3개 보내고 스티커 붙이기",
+    "rewards": [
+      {
+        "en": "Clefairy",
+        "ko": "삐삐",
+        "dex": 35,
+        "can_shiny": true,
+        "cp_min": 458,
+        "cp_max": 495
+      },
+      {
+        "en": "Jigglypuff",
+        "ko": "푸린",
+        "dex": 39,
+        "can_shiny": true,
+        "cp_min": 277,
+        "cp_max": 310
+      },
+      {
+        "en": "Eevee",
+        "ko": "이브이",
+        "dex": 133,
+        "can_shiny": true,
+        "cp_min": 424,
+        "cp_max": 459
+      },
+      {
+        "en": "Togetic",
+        "ko": "토게틱",
+        "dex": 176,
+        "can_shiny": true,
+        "cp_min": 688,
+        "cp_max": 732
+      }
+    ]
+  },
+  {
+    "text_en": "Trade a Pokémon",
+    "text_ko": "포켓몬 교환",
+    "rewards": [
+      {
+        "en": "Poliwhirl",
+        "ko": "슈륙챙이",
+        "dex": 61,
+        "can_shiny": true,
+        "cp_min": 568,
+        "cp_max": 608
+      },
+      {
+        "en": "Machoke",
+        "ko": "근육몬",
+        "dex": 67,
+        "can_shiny": true,
+        "cp_min": 822,
+        "cp_max": 870
+      },
+      {
+        "en": "Haunter",
+        "ko": "고우스트",
+        "dex": 93,
+        "can_shiny": true,
+        "cp_min": 792,
+        "cp_max": 841
+      },
+      {
+        "en": "Karrablast",
+        "ko": "딱정곤",
+        "dex": 588,
+        "can_shiny": true,
+        "cp_min": 469,
+        "cp_max": 506
+      },
+      {
+        "en": "Shelmet",
+        "ko": "쪼마리",
+        "dex": 616,
+        "can_shiny": true,
+        "cp_min": 325,
+        "cp_max": 357
+      }
+    ]
+  },
+  {
+    "text_en": "Defeat a Team GO Rocket Grunt",
+    "text_ko": "팀 GO 로켓 그런트 처치",
+    "rewards": [
+      {
+        "en": "Meowth",
+        "ko": "나옹",
+        "dex": 52,
+        "can_shiny": true,
+        "cp_min": 292,
+        "cp_max": 320
+      },
+      {
+        "en": "Wobbuffet",
+        "ko": "마자용",
+        "dex": 202,
+        "can_shiny": true,
+        "cp_min": 399,
+        "cp_max": 440
+      },
+      {
+        "en": "Yamask",
+        "ko": "데스마스",
+        "dex": 562,
+        "can_shiny": true,
+        "cp_min": 387,
+        "cp_max": 420
+      }
+    ]
+  }
+]
