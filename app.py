@@ -928,10 +928,11 @@ _move_type_map:     dict | None = None  # en_name → (type_en, type_ko)
 _go_moves_en:       dict | None = None   # en_name → full move dict (for raid DPS)
 _evo_extras:        dict | None = None   # dex_str → GO-specific evolution conditions
 _type_effectiveness: dict | None = None  # type → {double_damage_from, half_damage_from, no_damage_from}
+_flavor_texts:      dict | None = None  # dex_str → {ko, en}
 
 
 def _ensure_raw() -> bool:
-    global _names_raw, _gm_raw, _pve_moves, _move_en2ko, _move_type_map, _go_moves_en, _evo_extras, _type_effectiveness
+    global _names_raw, _gm_raw, _pve_moves, _move_en2ko, _move_type_map, _go_moves_en, _evo_extras, _type_effectiveness, _flavor_texts
     if _names_raw is not None:
         return True
     p1 = Path(".raw/go_all_names.json")
@@ -954,6 +955,8 @@ def _ensure_raw() -> bool:
     _evo_extras = json.loads(p5.read_text(encoding="utf-8")) if p5.exists() else {}
     p6 = Path(".raw/type_effectiveness.json")
     _type_effectiveness = json.loads(p6.read_text(encoding="utf-8")) if p6.exists() else {}
+    p7 = Path(".raw/flavor_texts.json")
+    _flavor_texts = json.loads(p7.read_text(encoding="utf-8")) if p7.exists() else {}
     return True
 
 
@@ -1025,6 +1028,8 @@ async def get_pokemon_detail(dex: int):
         "elite_charged": [_make_move_info(m) for m in gmd.get("elite_charged", [])],
         "weaknesses":    _calc_weaknesses(t1, t2),
         "forms":         _get_forms_for_dex(dex),
+        "flavor_text":   (_flavor_texts or {}).get(dex_str, {}).get("ko") or
+                         (_flavor_texts or {}).get(dex_str, {}).get("en", ""),
     }
 
 

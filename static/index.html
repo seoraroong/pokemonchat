@@ -424,6 +424,7 @@
     .popup-num { text-align: center; font-size: 0.7rem; color: #475569; }
     .popup-ko  { text-align: center; font-size: 1.3rem; font-weight: 700; color: #f8fafc; margin-top: 1px; }
     .popup-en  { text-align: center; font-size: 0.8rem; color: #64748b; margin-bottom: 10px; }
+    .popup-flavor { font-size: 0.75rem; color: #94a3b8; font-style: italic; line-height: 1.5; padding: 6px 0 8px; border-bottom: 1px solid #1e293b; margin-bottom: 8px; }
     .popup-types { display: flex; gap: 6px; justify-content: center; margin-bottom: 14px; }
     .popup-types .type-badge { font-size: 0.76rem; padding: 3px 12px; border-radius: 10px; }
     .stat-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; margin-bottom: 14px; }
@@ -2055,6 +2056,7 @@ async function openPokemonPopup(dex, bossSlug=null, isShadow=false, formDex=null
       ${formSwitcher}
       <div class="popup-num">#${num}</div><div class="popup-ko">${esc(p.ko)}</div><div class="popup-en">${esc(p.en)}</div>
       <div class="popup-types" id="popup-types"><span class="type-badge" style="background:${t1bg}">${t1ko}</span>${t2badge}</div>
+      ${p.flavor_text?`<div class="popup-flavor">${esc(p.flavor_text)}</div>`:''}
       <div id="popup-weakness-section">${mkWeaknessHtml(p.weaknesses)}</div>
       ${weatherBoostHtml(p.t1, p.t2)}
       <div class="stat-grid">
