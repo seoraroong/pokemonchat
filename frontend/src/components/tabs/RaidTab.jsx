@@ -182,14 +182,26 @@ export default function RaidTab({ onOpenPokemon }) {
 
   const renderRaids = () => {
     if (!raids) return <p className="raid-empty">불러오는 중...</p>;
-    if (!raids.length && !raids.tiers) return <p className="raid-empty">레이드 데이터가 없어요.</p>;
     const byTier = {};
-    const list = raids.bosses || raids;
-    for (const boss of list) {
-      const tier = boss.tier || '5';
-      if (!byTier[tier]) byTier[tier] = [];
-      byTier[tier].push(boss);
+    if (Array.isArray(raids)) {
+      for (const boss of raids) {
+        const tier = boss.tier || '5';
+        if (!byTier[tier]) byTier[tier] = [];
+        byTier[tier].push(boss);
+      }
+    } else if (raids.bosses) {
+      for (const boss of raids.bosses) {
+        const tier = boss.tier || '5';
+        if (!byTier[tier]) byTier[tier] = [];
+        byTier[tier].push(boss);
+      }
+    } else {
+      // { "1": [...], "3": [...], "5": [...], "mega": [...] } 형태
+      for (const tier of Object.keys(raids)) {
+        if (Array.isArray(raids[tier])) byTier[tier] = raids[tier];
+      }
     }
+    if (!Object.values(byTier).some(a => a?.length)) return <p className="raid-empty">레이드 데이터가 없어요.</p>;
     return TIER_ORDER.filter(t => byTier[t]?.length).map(tier => {
       const label = TIER_LABEL[tier] || `${tier}성`;
       const bosses = byTier[tier];

@@ -25,7 +25,8 @@ body {
 
 header {
   background: linear-gradient(135deg, #b91c1c, #dc2626);
-  padding: 14px 20px; display: flex; align-items: center; gap: 12px;
+  padding: 14px 20px; padding-top: calc(14px + env(safe-area-inset-top, 0px));
+  display: flex; align-items: center; gap: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.4); flex-shrink: 0;
 }
 .pokeball { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(to bottom, #fff 50%, #dc2626 50%); border: 3px solid #fff; position: relative; flex-shrink: 0; }
