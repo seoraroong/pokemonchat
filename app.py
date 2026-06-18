@@ -1685,6 +1685,79 @@ async def get_raid_counters_api(slug: str):
     return {"counters": counters[:15], "boss_ko": boss_ko, "weakness": weakness}
 
 
+# ── Rockets API ───────────────────────────────────────────────────────
+@app.get("/api/rockets")
+async def get_rockets_api():
+    p = Path(".raw/rocket_lineups.json")
+    if not p.exists():
+        return []
+    _ensure_raw()
+    lineups: list[dict] = json.loads(p.read_text(encoding="utf-8"))
+    en2info = _get_en2info()
+
+    def resolve(pms: list) -> list:
+        out = []
+        for pm in (pms or []):
+            en = pm.get("name", "")
+            info = en2info.get(en.lower())
+            out.append({
+                "en": en, "ko": info[1] if info else en,
+                "dex": info[0] if info else 0,
+                "types": pm.get("types", []),
+                "is_encounter": pm.get("isEncounter", False),
+                "can_shiny": pm.get("canBeShiny", False),
+            })
+        return out
+
+    result = []
+    for entry in lineups:
+        result.append({
+            "name":   entry.get("name", ""),
+            "title":  entry.get("title", ""),
+            "type":   entry.get("type", ""),
+            "first":  resolve(entry.get("firstPokemon", [])),
+            "second": resolve(entry.get("secondPokemon", [])),
+            "third":  resolve(entry.get("thirdPokemon", [])),
+        })
+    return result
+
+
+# ── Community Days API ────────────────────────────────────────────────
+@app.get("/api/community-days")
+async def get_community_days_api():
+    events = await get_events()
+    _ensure_raw()
+    en2info = _get_en2info()
+
+    def resolve_pm(en: str) -> dict:
+        info = en2info.get(en.lower())
+        return {"en": en, "ko": info[1] if info else en, "dex": info[0] if info else 0}
+
+    cdays = []
+    for e in events:
+        if e.get("eventType") != "community-day":
+            continue
+        ed = e.get("extraData", {})
+        cd = ed.get("communityday", {})
+        spawns_raw = cd.get("spawns", [])
+        pokemon = [resolve_pm(sp["name"]) for sp in spawns_raw if sp.get("name")]
+        # extraData에 없으면 이벤트명에서 포켓몬 이름 파싱
+        if not pokemon:
+            m = re.match(r'^(.+?)\s*커뮤니티', _translate_event_name(e["name"], "community-day"))
+            if m:
+                pokemon = [resolve_pm(m.group(1).strip())]
+        cdays.append({
+            "name":    _translate_event_name(e["name"], "community-day"),
+            "start":   e["start"],
+            "end":     e["end"],
+            "link":    e.get("link", ""),
+            "pokemon": pokemon,
+        })
+
+    cdays.sort(key=lambda x: x["start"], reverse=True)
+    return cdays
+
+
 # ── Eggs API ─────────────────────────────────────────────────────────
 SCRAPED_DUCK_EGGS_URL = "https://raw.githubusercontent.com/bigfoott/ScrapedDuck/data/eggs.json"
 _eggs_live_cache: dict = {}

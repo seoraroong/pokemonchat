@@ -252,6 +252,39 @@
     .egg-badge.shiny { background: #78350f; color: #fde68a; }
     .egg-badge.as    { background: #1e3a5f; color: #93c5fd; }
 
+    /* ── 로켓단 ── */
+    #egg-mode-toggle { display: flex; gap: 6px; padding: 10px 12px 0; flex-shrink: 0; }
+    .egg-mode-btn { flex: 1; background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 7px 0; color: #64748b; font-size: 0.8rem; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    .egg-mode-btn.active { background: #1d3461; border-color: #3b82f6; color: #60a5fa; font-weight: 700; }
+    #view-rocket { flex: 1; display: none; flex-direction: column; overflow: hidden; }
+    #rocket-type-filter { display: flex; gap: 4px; overflow-x: auto; padding: 8px 12px 4px; scrollbar-width: none; flex-shrink: 0; }
+    #rocket-type-filter::-webkit-scrollbar { display: none; }
+    #rocket-list { flex: 1; overflow-y: auto; padding: 4px 10px 10px; display: flex; flex-direction: column; gap: 10px; }
+    .rocket-card { background: #1e293b; border: 1px solid #2d3f55; border-radius: 12px; overflow: hidden; }
+    .rocket-card-header { display: flex; align-items: center; gap: 8px; padding: 8px 12px; }
+    .rocket-type-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .rocket-name { font-size: 0.8rem; font-weight: 700; color: #e2e8f0; }
+    .rocket-slots { display: grid; grid-template-columns: repeat(3,1fr); gap: 4px; padding: 0 8px 8px; }
+    .rocket-slot { background: #0f172a; border-radius: 8px; padding: 6px 4px; }
+    .rocket-slot-label { font-size: 0.55rem; color: #475569; text-align: center; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.4px; }
+    .rocket-pm-list { display: flex; flex-direction: column; gap: 3px; }
+    .rocket-pm { display: flex; align-items: center; gap: 5px; cursor: pointer; border-radius: 6px; padding: 2px 4px; transition: background 0.1s; }
+    .rocket-pm:hover { background: #1e293b; }
+    .rocket-pm img { width: 30px; height: 30px; object-fit: contain; }
+    .rocket-pm-info { flex: 1; min-width: 0; }
+    .rocket-pm-name { font-size: 0.68rem; color: #cbd5e1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .rocket-pm-enc { font-size: 0.55rem; color: #34d399; }
+    /* ── 커뮤데이 아카이브 ── */
+    #cd-section { margin-top: 6px; }
+    #cd-list { display: flex; flex-direction: column; gap: 8px; padding: 0; }
+    .cd-card { background: #1e293b; border: 1px solid #15803d; border-radius: 12px; padding: 10px 12px; display: flex; align-items: center; gap: 10px; cursor: pointer; transition: background 0.15s; }
+    .cd-card:hover { background: #1a2e1e; }
+    .cd-date { font-size: 0.65rem; color: #4ade80; font-weight: 700; min-width: 38px; text-align: center; }
+    .cd-sprites { display: flex; gap: 2px; }
+    .cd-sprites img { width: 40px; height: 40px; object-fit: contain; }
+    .cd-info { flex: 1; min-width: 0; }
+    .cd-name { font-size: 0.78rem; font-weight: 600; color: #e2e8f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cd-pm-names { font-size: 0.65rem; color: #64748b; margin-top: 2px; }
     /* ── PvP 탭 ── */
     #view-pvp { background: #0f172a; }
     #pvp-top { flex-shrink: 0; padding: 10px 14px 8px; display: flex; gap: 6px; }
@@ -717,6 +750,13 @@
       <div class="section-title">⚔️ 현재 레이드 보스</div>
       <div id="raids-container"><p class="raid-empty">불러오는 중...</p></div>
     </div>
+    <div class="raid-section" style="margin-top:6px" id="cd-section">
+      <div class="section-title" style="display:flex;align-items:center;justify-content:space-between">
+        <span>📅 커뮤니티 데이</span>
+        <button onclick="toggleCdList()" id="cd-toggle-btn" style="background:none;border:1px solid #334155;border-radius:8px;color:#64748b;font-size:0.68rem;padding:3px 10px;cursor:pointer;font-family:inherit">펼치기</button>
+      </div>
+      <div id="cd-list" style="display:none;margin-top:8px"></div>
+    </div>
     <div style="height:20px"></div>
     <div id="event-spawn-backdrop" onclick="closeEventSpawnSheet()"></div>
     <div id="event-spawn-sheet">
@@ -738,20 +778,32 @@
     </div>
   </div>
 
-  <!-- ── 알 뷰 ── -->
+  <!-- ── 알/로켓 뷰 ── -->
   <div id="view-egg" class="view" style="display:none">
-    <div id="egg-top">
-      <div id="egg-km-tabs">
-        <button class="km-tab active" data-km="2km">2km</button>
-        <button class="km-tab" data-km="5km">5km</button>
-        <button class="km-tab" data-km="7km">7km</button>
-        <button class="km-tab" data-km="10km">10km</button>
-        <button class="km-tab" data-km="12km">12km</button>
-        <button class="km-tab" data-km="1km">1km</button>
-      </div>
-      <div id="egg-count"></div>
+    <div id="egg-mode-toggle">
+      <button class="egg-mode-btn active" onclick="setEggMode('egg',this)">🥚 알 부화</button>
+      <button class="egg-mode-btn" onclick="setEggMode('rocket',this)">🚀 로켓단</button>
     </div>
-    <div id="egg-grid"><div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div></div>
+    <!-- 알 부화 -->
+    <div id="view-egg-inner" style="display:flex;flex-direction:column;flex:1;overflow:hidden">
+      <div id="egg-top">
+        <div id="egg-km-tabs">
+          <button class="km-tab active" data-km="2km">2km</button>
+          <button class="km-tab" data-km="5km">5km</button>
+          <button class="km-tab" data-km="7km">7km</button>
+          <button class="km-tab" data-km="10km">10km</button>
+          <button class="km-tab" data-km="12km">12km</button>
+          <button class="km-tab" data-km="1km">1km</button>
+        </div>
+        <div id="egg-count"></div>
+      </div>
+      <div id="egg-grid"><div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div></div>
+    </div>
+    <!-- 로켓단 -->
+    <div id="view-rocket">
+      <div id="rocket-type-filter"></div>
+      <div id="rocket-list"></div>
+    </div>
   </div>
 
   <!-- ── PvP 뷰 ── -->
@@ -1529,6 +1581,119 @@ async function loadRaidEvents(){
   await Promise.all([loadEvents(), loadRaids()]);
   raidEventLoaded = true;
   loadDataStatus();
+}
+
+// ── 알/로켓 모드 토글 ──────────────────────────────────────────────
+let _eggMode = 'egg';
+function setEggMode(mode, btn) {
+  _eggMode = mode;
+  document.querySelectorAll('.egg-mode-btn').forEach(b => b.classList.toggle('active', b === btn));
+  const eggInner = document.getElementById('view-egg-inner');
+  const rocketView = document.getElementById('view-rocket');
+  if (mode === 'egg') {
+    eggInner.style.display = 'flex';
+    rocketView.style.display = 'none';
+  } else {
+    eggInner.style.display = 'none';
+    rocketView.style.display = 'flex';
+    if (!_rocketLoaded) loadRockets();
+  }
+}
+
+// ── 로켓단 ────────────────────────────────────────────────────────
+let _rocketData = [], _rocketLoaded = false, _rocketType = '';
+async function loadRockets() {
+  const list = document.getElementById('rocket-list');
+  list.innerHTML = '<div style="text-align:center;padding:32px;color:#64748b">불러오는 중...</div>';
+  try {
+    _rocketData = await (await fetch('/api/rockets')).json();
+    _rocketLoaded = true;
+    buildRocketTypeFilter();
+    renderRockets();
+  } catch { list.innerHTML = '<div style="text-align:center;padding:32px;color:#475569">불러오기 실패</div>'; }
+}
+function buildRocketTypeFilter() {
+  const row = document.getElementById('rocket-type-filter');
+  const types = [...new Set(_rocketData.filter(e=>e.type).map(e=>e.type))].sort();
+  row.innerHTML = `<button class="type-chip active" data-type="" style="background:#334155">전체</button>` +
+    types.map(t=>`<button class="type-chip" data-type="${t}" style="background:${TYPE_BG[t]||'#334155'}">${TYPE_KO[t]||t}</button>`).join('');
+  row.querySelectorAll('.type-chip').forEach(btn => btn.addEventListener('click', () => {
+    _rocketType = btn.dataset.type;
+    row.querySelectorAll('.type-chip').forEach(b => b.classList.toggle('active', b === btn));
+    renderRockets();
+  }));
+}
+function renderRockets() {
+  const list = document.getElementById('rocket-list');
+  const filtered = _rocketType ? _rocketData.filter(e => e.type === _rocketType) : _rocketData;
+  if (!filtered.length) { list.innerHTML = '<div style="text-align:center;padding:32px;color:#475569">데이터 없음</div>'; return; }
+  const mkSlot = (label, pms) => {
+    const pmHtml = pms.map(pm => {
+      const spr = pm.dex ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pm.dex}.png` : '';
+      const enc = pm.is_encounter ? `<span class="rocket-pm-enc">✦ 만남</span>` : '';
+      return `<div class="rocket-pm" onclick="event.stopPropagation();${pm.dex?`openPokemonPopup(${pm.dex})`:''}">
+        ${spr?`<img src="${spr}" onerror="this.style.opacity='0.2'">`:'<div style="width:30px;height:30px"></div>'}
+        <div class="rocket-pm-info"><div class="rocket-pm-name">${esc(pm.ko)}</div>${enc}</div>
+      </div>`;
+    }).join('');
+    return `<div class="rocket-slot"><div class="rocket-slot-label">${label}</div><div class="rocket-pm-list">${pmHtml}</div></div>`;
+  };
+  list.innerHTML = filtered.map(e => {
+    const bg = TYPE_BG[e.type] || '#334155';
+    const typeKo = e.type ? (TYPE_KO[e.type] || e.type) : '';
+    const headerLabel = e.title === 'Team GO Rocket Boss' ? '👑 보스' :
+                        e.title === 'Team GO Rocket Leader' ? '⭐ 간부' : `${typeKo} 그런트`;
+    return `<div class="rocket-card">
+      <div class="rocket-card-header">
+        <div class="rocket-type-dot" style="background:${bg}"></div>
+        <div class="rocket-name">${esc(headerLabel)} — ${esc(e.name)}</div>
+      </div>
+      <div class="rocket-slots">
+        ${mkSlot('1번째', e.first)}${mkSlot('2번째', e.second)}${mkSlot('3번째', e.third)}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── 커뮤니티 데이 ─────────────────────────────────────────────────
+let _cdLoaded = false;
+async function toggleCdList() {
+  const el = document.getElementById('cd-list');
+  const btn = document.getElementById('cd-toggle-btn');
+  if (el.style.display === 'none') {
+    el.style.display = 'flex';
+    el.style.flexDirection = 'column';
+    btn.textContent = '접기';
+    if (!_cdLoaded) await loadCommunityDays();
+  } else {
+    el.style.display = 'none';
+    btn.textContent = '펼치기';
+  }
+}
+async function loadCommunityDays() {
+  const el = document.getElementById('cd-list');
+  el.innerHTML = '<div style="text-align:center;padding:16px;color:#64748b">불러오는 중...</div>';
+  try {
+    const data = await (await fetch('/api/community-days')).json();
+    _cdLoaded = true;
+    if (!data.length) { el.innerHTML = '<div style="text-align:center;padding:16px;color:#475569">데이터 없음</div>'; return; }
+    el.innerHTML = data.map(cd => {
+      const dt = new Date(cd.start);
+      const dateLabel = `${dt.getFullYear()}.${String(dt.getMonth()+1).padStart(2,'0')}`;
+      const sprites = cd.pokemon.slice(0,2).map(p =>
+        p.dex ? `<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.dex}.png" onerror="this.style.display='none'">` : ''
+      ).join('');
+      const pmNames = cd.pokemon.map(p => p.ko).join(', ');
+      return `<div class="cd-card" onclick="${cd.link?`window.open('${cd.link}','_blank')`:''}">
+        <div class="cd-date">${dateLabel}</div>
+        <div class="cd-sprites">${sprites}</div>
+        <div class="cd-info">
+          <div class="cd-name">${esc(cd.name)}</div>
+          ${pmNames ? `<div class="cd-pm-names">${esc(pmNames)}</div>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+  } catch { el.innerHTML = '<div style="text-align:center;padding:16px;color:#475569">불러오기 실패</div>'; }
 }
 
 // ── 알 ────────────────────────────────────────────────────────────
