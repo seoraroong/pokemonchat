@@ -1,6 +1,6 @@
 # Wiki Index
 <!-- AUTO-GENERATED — DO NOT EDIT BY HAND -->
-**Last generated:** 2026-06-10T08:46:20Z
+**Last generated:** 2026-06-18T05:23:05Z
 **Total pages:** 1992
 
 ## Page Type Summary / 페이지 유형
@@ -352,1029 +352,1029 @@
 | moves-charged | Charged Moves / 스페셜 기술 목록 | concept | ko | 포켓몬 GO 스페셜 기술 전체 목록 — 233개 | 2026-06-05 |
 | moves-fast | Fast Moves / 빠른 기술 목록 | concept | ko | 포켓몬 GO 빠른 기술 전체 목록 — 98개 | 2026-06-05 |
 | pokedex-gen1 | 1세대 포켓덱스 / Gen 1 Pokédex | concept | ko | 1세대 포켓몬 151마리의 인덱스 — 각 포켓몬 개별 페이지로 연결 | 2026-06-05 |
-| pokemon-abomasnow | Abomasnow / 눈설왕 | concept | ko | #460 눈설왕 (풀 / 얼음) — GO 최대 CP: 2,362 | 2026-06-05 |
-| pokemon-abra | Abra / 캐이시 | concept | ko | #063 캐이시 (에스퍼 타입) — 기본 스탯 합계 310 | 2026-06-05 |
-| pokemon-absol | Absol / 앱솔 | concept | ko | #359 앱솔 (악 / none) — GO 최대 CP: 2,526 | 2026-06-05 |
-| pokemon-accelgor | Accelgor / 어지리더 | concept | ko | #617 어지리더 (벌레 / none) — GO 최대 CP: 2,441 | 2026-06-05 |
-| pokemon-aegislash | Aegislash / 킬가르도 | concept | ko | #681 킬가르도 (강철 / 고스트) — GO 최대 CP: 2,473 | 2026-06-05 |
-| pokemon-aerodactyl | Aerodactyl / 프테라 | concept | ko | #142 프테라 (바위/비행 타입) — 기본 스탯 합계 515 | 2026-06-05 |
-| pokemon-aggron | Aggron / 보스로라 | concept | ko | #306 보스로라 (강철 / 바위) — GO 최대 CP: 3,000 | 2026-06-05 |
-| pokemon-aipom | Aipom / 에이팜 | concept | ko | #190 에이팜 (노말 / none) — GO 최대 CP: 1,348 | 2026-06-05 |
-| pokemon-alakazam | Alakazam / 후딘 | concept | ko | #065 후딘 (에스퍼 타입) — 기본 스탯 합계 500 | 2026-06-05 |
-| pokemon-alcremie | Alcremie / 마휘핑 | concept | ko | #869 마휘핑 (페어리 / none) — GO 최대 CP: 2,682 | 2026-06-05 |
-| pokemon-alomomola | Alomomola / 맘복치 | concept | ko | #594 맘복치 (물 / none) — GO 최대 CP: 2,169 | 2026-06-05 |
-| pokemon-altaria | Altaria / 파비코리 | concept | ko | #334 파비코리 (드래곤 / 비행) — GO 최대 CP: 2,004 | 2026-06-05 |
-| pokemon-amaura | Amaura / 아마루스 | concept | ko | #698 아마루스 (바위 / 얼음) — GO 최대 CP: 1,363 | 2026-06-05 |
-| pokemon-ambipom | Ambipom / 겟핸보숭 | concept | ko | #424 겟핸보숭 (노말 / none) — GO 최대 CP: 2,418 | 2026-06-05 |
-| pokemon-amoonguss | Amoonguss / 뽀록나 | concept | ko | #591 뽀록나 (풀 / 독) — GO 최대 CP: 2,140 | 2026-06-05 |
-| pokemon-ampharos | Ampharos / 전룡 | concept | ko | #181 전룡 (전기 / none) — GO 최대 CP: 2,852 | 2026-06-05 |
-| pokemon-annihilape | Annihilape / 저승갓숭 | concept | ko | #979 저승갓숭 (격투 / 고스트) — GO 최대 CP: 3,268 | 2026-06-05 |
-| pokemon-anorith | Anorith / 아노딥스 | concept | ko | #347 아노딥스 (바위 / 벌레) — GO 최대 CP: 1,529 | 2026-06-05 |
-| pokemon-appletun | Appletun / 단지래플 | concept | ko | #842 단지래플 (풀 / 드래곤) — GO 최대 CP: 2,452 | 2026-06-05 |
-| pokemon-applin | Applin / 과사삭벌레 | concept | ko | #840 과사삭벌레 (풀 / 드래곤) — GO 최대 CP: 714 | 2026-06-05 |
-| pokemon-araquanid | Araquanid / 깨비물거미 | concept | ko | #752 깨비물거미 (물 / 벌레) — GO 최대 CP: 1,827 | 2026-06-05 |
-| pokemon-arbok | Arbok / 아보크 | concept | ko | #024 아보크 (독 타입) — 기본 스탯 합계 448 | 2026-06-05 |
-| pokemon-arboliva | Arboliva / 올리르바 | concept | ko | #930 올리르바 (풀 / 노말) — GO 최대 CP: 2,959 | 2026-06-05 |
-| pokemon-arcanine | Arcanine / 윈디 | concept | ko | #059 윈디 (불꽃 타입) — 기본 스탯 합계 555 | 2026-06-05 |
-| pokemon-arceus | Arceus / 아르세우스 | concept | ko | #493 아르세우스 (노말 / none) — GO 최대 CP: 3,989 | 2026-06-05 |
-| pokemon-archaludon | Archaludon / 브리두라스 | concept | ko | #1018 브리두라스 (강철 / 드래곤) — GO 최대 CP: 3,739 | 2026-06-05 |
-| pokemon-archen | Archen / 아켄 | concept | ko | #566 아켄 (바위 / 비행) — GO 최대 CP: 1,842 | 2026-06-05 |
-| pokemon-archeops | Archeops / 아케오스 | concept | ko | #567 아케오스 (바위 / 비행) — GO 최대 CP: 3,331 | 2026-06-05 |
-| pokemon-arctibax | Arctibax / 드니꽁 | concept | ko | #997 드니꽁 (드래곤 / 얼음) — GO 최대 CP: 2,092 | 2026-06-05 |
-| pokemon-arctovish | Arctovish / 어치르돈 | concept | ko | #883 어치르돈 (물 / 얼음) — GO 최대 CP: 2,447 | 2026-06-05 |
-| pokemon-arctozolt | Arctozolt / 파치르돈 | concept | ko | #881 파치르돈 (전기 / 얼음) — GO 최대 CP: 2,566 | 2026-06-05 |
-| pokemon-ariados | Ariados / 아리아도스 | concept | ko | #168 아리아도스 (벌레 / 독) — GO 최대 CP: 1,772 | 2026-06-05 |
-| pokemon-armaldo | Armaldo / 아말도 | concept | ko | #348 아말도 (바위 / 벌레) — GO 최대 CP: 2,848 | 2026-06-05 |
-| pokemon-armarouge | Armarouge / 카디나르마 | concept | ko | #936 카디나르마 (불꽃 / 에스퍼) — GO 최대 CP: 3,209 | 2026-06-05 |
-| pokemon-aromatisse | Aromatisse / 프레프티르 | concept | ko | #683 프레프티르 (페어리 / none) — GO 최대 CP: 2,341 | 2026-06-05 |
-| pokemon-aron | Aron / 가보리 | concept | ko | #304 가보리 (강철 / 바위) — GO 최대 CP: 1,307 | 2026-06-05 |
-| pokemon-arrokuda | Arrokuda / 찌로꼬치 | concept | ko | #846 찌로꼬치 (물 / none) — GO 최대 CP: 903 | 2026-06-05 |
-| pokemon-articuno | Articuno / 프리져 | concept | ko | #144 프리져 (얼음/비행 타입) — 기본 스탯 합계 580 | 2026-06-05 |
-| pokemon-audino | Audino / 다부니 | concept | ko | #531 다부니 (노말 / none) — GO 최대 CP: 1,682 | 2026-06-05 |
-| pokemon-aurorus | Aurorus / 아마루르가 | concept | ko | #699 아마루르가 (바위 / 얼음) — GO 최대 CP: 2,802 | 2026-06-05 |
-| pokemon-avalugg | Avalugg / 크레베이스 | concept | ko | #713 크레베이스 (얼음 / none) — GO 최대 CP: 3,198 | 2026-06-05 |
-| pokemon-axew | Axew / 터검니 | concept | ko | #610 터검니 (드래곤 / none) — GO 최대 CP: 1,368 | 2026-06-05 |
-| pokemon-azelf | Azelf / 아그놈 | concept | ko | #482 아그놈 (에스퍼 / none) — GO 최대 CP: 3,210 | 2026-06-05 |
-| pokemon-azumarill | Azumarill / 마릴리 | concept | ko | #184 마릴리 (물 / 페어리) — GO 최대 CP: 1,588 | 2026-06-05 |
-| pokemon-azurill | Azurill / 루리리 | concept | ko | #298 루리리 (노말 / 페어리) — GO 최대 CP: 364 | 2026-06-05 |
-| pokemon-bagon | Bagon / 아공이 | concept | ko | #371 아공이 (드래곤 / none) — GO 최대 CP: 1,156 | 2026-06-05 |
-| pokemon-baltoy | Baltoy / 오뚝군 | concept | ko | #343 오뚝군 (땅 / 에스퍼) — GO 최대 CP: 787 | 2026-06-05 |
-| pokemon-banette | Banette / 다크펫 | concept | ko | #354 다크펫 (고스트 / none) — GO 최대 CP: 2,298 | 2026-06-05 |
-| pokemon-barbaracle | Barbaracle / 거북손데스 | concept | ko | #689 거북손데스 (바위 / 물) — GO 최대 CP: 2,675 | 2026-06-05 |
-| pokemon-barboach | Barboach / 미꾸리 | concept | ko | #339 미꾸리 (물 / 땅) — GO 최대 CP: 819 | 2026-06-05 |
-| pokemon-barraskewda | Barraskewda / 꼬치조 | concept | ko | #847 꼬치조 (물 / none) — GO 최대 CP: 2,656 | 2026-06-05 |
-| pokemon-basculegion | Basculegion / 대쓰여너 | concept | ko | #902 대쓰여너 (물 / 고스트) — GO 최대 CP: 2,794 | 2026-06-05 |
-| pokemon-basculin | Basculin / 배쓰나이 | concept | ko | #550 배쓰나이 (물 / none) — GO 최대 CP: 2,090 | 2026-06-05 |
-| pokemon-bastiodon | Bastiodon / 바리톱스 | concept | ko | #411 바리톱스 (바위 / 강철) — GO 최대 CP: 1,539 | 2026-06-05 |
-| pokemon-baxcalibur | Baxcalibur / 드닐레이브 | concept | ko | #998 드닐레이브 (드래곤 / 얼음) — GO 최대 CP: 3,550 | 2026-06-05 |
-| pokemon-bayleef | Bayleef / 베이리프 | concept | ko | #153 베이리프 (풀 / none) — GO 최대 CP: 1,454 | 2026-06-05 |
-| pokemon-beartic | Beartic / 툰베어 | concept | ko | #614 툰베어 (얼음 / none) — GO 최대 CP: 3,042 | 2026-06-05 |
-| pokemon-beautifly | Beautifly / 뷰티플라이 | concept | ko | #267 뷰티플라이 (벌레 / 비행) — GO 최대 CP: 1,765 | 2026-06-05 |
-| pokemon-beedrill | Beedrill / 독침붕 | concept | ko | #015 독침붕 (벌레/독 타입) — 기본 스탯 합계 395 | 2026-06-05 |
-| pokemon-beheeyem | Beheeyem / 벰크 | concept | ko | #606 벰크 (에스퍼 / none) — GO 최대 CP: 2,753 | 2026-06-05 |
-| pokemon-beldum | Beldum / 메탕 | concept | ko | #374 메탕 (강철 / 에스퍼) — GO 최대 CP: 976 | 2026-06-05 |
-| pokemon-bellibolt | Bellibolt / 찌리배리 | concept | ko | #939 찌리배리 (전기 / none) — GO 최대 CP: 2,662 | 2026-06-05 |
-| pokemon-bellossom | Bellossom / 아르코 | concept | ko | #182 아르코 (풀 / none) — GO 최대 CP: 2,281 | 2026-06-05 |
-| pokemon-bellsprout | Bellsprout / 모다피 | concept | ko | #069 모다피 (풀/독 타입) — 기본 스탯 합계 300 | 2026-06-05 |
-| pokemon-bergmite | Bergmite / 꽁어름 | concept | ko | #712 꽁어름 (얼음 / none) — GO 최대 CP: 1,215 | 2026-06-05 |
-| pokemon-bewear | Bewear / 이븐곰 | concept | ko | #760 이븐곰 (노말 / 격투) — GO 최대 CP: 3,117 | 2026-06-05 |
-| pokemon-bibarel | Bibarel / 비버통 | concept | ko | #400 비버통 (노말 / 물) — GO 최대 CP: 1,823 | 2026-06-05 |
-| pokemon-bidoof | Bidoof / 비버니 | concept | ko | #399 비버니 (노말 / none) — GO 최대 CP: 721 | 2026-06-05 |
-| pokemon-binacle | Binacle / 거북손손 | concept | ko | #688 거북손손 (바위 / 물) — GO 최대 CP: 946 | 2026-06-05 |
-| pokemon-bisharp | Bisharp / 절각참 | concept | ko | #625 절각참 (악 / 강철) — GO 최대 CP: 2,844 | 2026-06-05 |
-| pokemon-blacephalon | Blacephalon / 두파팡 | concept | ko | #806 두파팡 (불꽃 / 고스트) — GO 최대 CP: 3,297 | 2026-06-05 |
-| pokemon-blastoise | Blastoise / 거북왕 | concept | ko | #009 거북왕 (물 타입) — 기본 스탯 합계 530 | 2026-06-05 |
-| pokemon-blaziken | Blaziken / 번치코 | concept | ko | #257 번치코 (불꽃 / 격투) — GO 최대 CP: 2,848 | 2026-06-05 |
-| pokemon-blipbug | Blipbug / 두루지벌레 | concept | ko | #824 두루지벌레 (벌레 / none) — GO 최대 CP: 358 | 2026-06-05 |
-| pokemon-blissey | Blissey / 해피너스 | concept | ko | #242 해피너스 (노말 / none) — GO 최대 CP: 2,757 | 2026-06-05 |
-| pokemon-blitzle | Blitzle / 줄뮤마 | concept | ko | #522 줄뮤마 (전기 / none) — GO 최대 CP: 882 | 2026-06-05 |
-| pokemon-boldore | Boldore / 암트르 | concept | ko | #525 암트르 (바위 / none) — GO 최대 CP: 2,029 | 2026-06-05 |
-| pokemon-boltund | Boltund / 펄스멍 | concept | ko | #836 펄스멍 (전기 / none) — GO 최대 CP: 2,176 | 2026-06-05 |
-| pokemon-bombirdier | Bombirdier / 떨구새 | concept | ko | #962 떨구새 (비행 / 악) — GO 최대 CP: 2,487 | 2026-06-05 |
-| pokemon-bonsly | Bonsly / 꼬지지 | concept | ko | #438 꼬지지 (바위 / none) — GO 최대 CP: 1,302 | 2026-06-05 |
-| pokemon-bouffalant | Bouffalant / 버프론 | concept | ko | #626 버프론 (노말 / none) — GO 최대 CP: 2,797 | 2026-06-05 |
-| pokemon-bounsweet | Bounsweet / 달콤아 | concept | ko | #761 달콤아 (풀 / none) — GO 최대 CP: 470 | 2026-06-05 |
-| pokemon-braixen | Braixen / 테르나 | concept | ko | #654 테르나 (불꽃 / none) — GO 최대 CP: 1,813 | 2026-06-05 |
-| pokemon-brambleghast | Brambleghast / 공푸리 | concept | ko | #947 공푸리 (풀 / 고스트) — GO 최대 CP: 2,428 | 2026-06-05 |
-| pokemon-bramblin | Bramblin / 그푸리 | concept | ko | #946 그푸리 (풀 / 고스트) — GO 최대 CP: 877 | 2026-06-05 |
-| pokemon-braviary | Braviary / 워글 | concept | ko | #628 워글 (노말 / 비행) — GO 최대 CP: 3,088 | 2026-06-05 |
-| pokemon-breloom | Breloom / 버섯모 | concept | ko | #286 버섯모 (풀 / 격투) — GO 최대 CP: 2,628 | 2026-06-05 |
-| pokemon-brionne | Brionne / 키요공 | concept | ko | #729 키요공 (물 / none) — GO 최대 CP: 1,885 | 2026-06-05 |
-| pokemon-bronzong | Bronzong / 동탁군 | concept | ko | #437 동탁군 (강철 / 에스퍼) — GO 최대 CP: 2,239 | 2026-06-05 |
-| pokemon-bronzor | Bronzor / 동미러 | concept | ko | #436 동미러 (강철 / 에스퍼) — GO 최대 CP: 603 | 2026-06-05 |
-| pokemon-brute-bonnet | Brute Bonnet / 사나운버섯 | concept | ko | #986 사나운버섯 (풀 / 악) — GO 최대 CP: 3,554 | 2026-06-05 |
-| pokemon-bruxish | Bruxish / 치갈기 | concept | ko | #779 치갈기 (물 / 에스퍼) — GO 최대 CP: 2,389 | 2026-06-05 |
-| pokemon-budew | Budew / 꼬몽울 | concept | ko | #406 꼬몽울 (풀 / 독) — GO 최대 CP: 856 | 2026-06-05 |
-| pokemon-buizel | Buizel / 브이젤 | concept | ko | #418 브이젤 (물 / none) — GO 최대 CP: 1,054 | 2026-06-05 |
-| pokemon-bulbasaur | Bulbasaur / 이상해씨 | concept | ko | #001 이상해씨 (풀/독 타입) — 기본 스탯 합계 318 | 2026-06-05 |
-| pokemon-buneary | Buneary / 이어롤 | concept | ko | #427 이어롤 (노말 / none) — GO 최대 CP: 1,258 | 2026-06-05 |
-| pokemon-bunnelby | Bunnelby / 파르빗 | concept | ko | #659 파르빗 (노말 / none) — GO 최대 CP: 553 | 2026-06-05 |
-| pokemon-burmy | Burmy / 도롱충이 | concept | ko | #412 도롱충이 (벌레 / none) — GO 최대 CP: 488 | 2026-06-05 |
-| pokemon-butterfree | Butterfree / 버터플 | concept | ko | #012 버터플 (벌레/비행 타입) — 기본 스탯 합계 395 | 2026-06-05 |
-| pokemon-buzzwole | Buzzwole / 매시붕 | concept | ko | #794 매시붕 (벌레 / 격투) — GO 최대 CP: 3,461 | 2026-06-05 |
-| pokemon-cacnea | Cacnea / 선인왕 | concept | ko | #331 선인왕 (풀 / none) — GO 최대 CP: 1,242 | 2026-06-05 |
-| pokemon-cacturne | Cacturne / 밤선인 | concept | ko | #332 밤선인 (풀 / 악) — GO 최대 CP: 2,298 | 2026-06-05 |
-| pokemon-calyrex | Calyrex / 버드렉스 | concept | ko | #898 버드렉스 (에스퍼 / 풀) — GO 최대 CP: 2,278 | 2026-06-05 |
-| pokemon-camerupt | Camerupt / 폭타 | concept | ko | #323 폭타 (불꽃 / 땅) — GO 최대 CP: 2,193 | 2026-06-05 |
-| pokemon-capsakid | Capsakid / 캡싸이 | concept | ko | #951 캡싸이 (풀 / none) — GO 최대 CP: 976 | 2026-06-05 |
-| pokemon-carbink | Carbink / 멜리시 | concept | ko | #703 멜리시 (바위 / 페어리) — GO 최대 CP: 1,467 | 2026-06-05 |
-| pokemon-carkol | Carkol / 탄차곤 | concept | ko | #838 탄차곤 (바위 / 불꽃) — GO 최대 CP: 1,512 | 2026-06-05 |
-| pokemon-carnivine | Carnivine / 무스틈니 | concept | ko | #455 무스틈니 (풀 / none) — GO 최대 CP: 2,159 | 2026-06-05 |
-| pokemon-carracosta | Carracosta / 늑골라 | concept | ko | #565 늑골라 (물 / 바위) — GO 최대 CP: 2,621 | 2026-06-05 |
-| pokemon-carvanha | Carvanha / 샤프니아 | concept | ko | #318 샤프니아 (물 / 악) — GO 최대 CP: 1,020 | 2026-06-05 |
-| pokemon-cascoon | Cascoon / 카스쿤 | concept | ko | #268 카스쿤 (벌레 / none) — GO 최대 CP: 553 | 2026-06-05 |
-| pokemon-castform | Castform / 캐스퐁 | concept | ko | #351 캐스퐁 (노말 / none) — GO 최대 CP: 1,632 | 2026-06-05 |
-| pokemon-caterpie | Caterpie / 캐터피 | concept | ko | #010 캐터피 (벌레 타입) — 기본 스탯 합계 195 | 2026-06-05 |
-| pokemon-celebi | Celebi / 세레비 | concept | ko | #251 세레비 (에스퍼 / 풀) — GO 최대 CP: 3,265 | 2026-06-05 |
-| pokemon-celesteela | Celesteela / 철화구야 | concept | ko | #797 철화구야 (강철 / 비행) — GO 최대 CP: 3,102 | 2026-06-05 |
-| pokemon-centiskorch | Centiskorch / 다태우지네 | concept | ko | #851 다태우지네 (불꽃 / 벌레) — GO 최대 CP: 2,990 | 2026-06-05 |
-| pokemon-ceruledge | Ceruledge / 파라블레이즈 | concept | ko | #937 파라블레이즈 (불꽃 / 고스트) — GO 최대 CP: 3,172 | 2026-06-05 |
-| pokemon-cetitan | Cetitan / 우락고래 | concept | ko | #975 우락고래 (얼음 / none) — GO 최대 CP: 3,113 | 2026-06-05 |
-| pokemon-cetoddle | Cetoddle / 터벅고래 | concept | ko | #974 터벅고래 (얼음 / none) — GO 최대 CP: 1,300 | 2026-06-05 |
-| pokemon-chandelure | Chandelure / 샹델라 | concept | ko | #609 샹델라 (고스트 / 불꽃) — GO 최대 CP: 3,268 | 2026-06-05 |
-| pokemon-chansey | Chansey / 럭키 | concept | ko | #113 럭키 (노말 타입) — 기본 스탯 합계 450 | 2026-06-05 |
-| pokemon-charcadet | Charcadet / 카르본 | concept | ko | #935 카르본 (불꽃 / none) — GO 최대 CP: 732 | 2026-06-05 |
-| pokemon-charizard | Charizard / 리자몽 | concept | ko | #006 리자몽 (불꽃/비행 타입) — 기본 스탯 합계 534 | 2026-06-05 |
-| pokemon-charjabug | Charjabug / 전지충이 | concept | ko | #737 전지충이 (벌레 / 전기) — GO 최대 CP: 1,697 | 2026-06-05 |
-| pokemon-charmander | Charmander / 파이리 | concept | ko | #004 파이리 (불꽃 타입) — 기본 스탯 합계 309 | 2026-06-05 |
-| pokemon-charmeleon | Charmeleon / 리자드 | concept | ko | #005 리자드 (불꽃 타입) — 기본 스탯 합계 405 | 2026-06-05 |
-| pokemon-chatot | Chatot / 페라페 | concept | ko | #441 페라페 (노말 / 비행) — GO 최대 CP: 1,791 | 2026-06-05 |
-| pokemon-cherrim | Cherrim / 체리꼬 | concept | ko | #421 체리꼬 (풀 / none) — GO 최대 CP: 2,048 | 2026-06-05 |
-| pokemon-cherubi | Cherubi / 체리버 | concept | ko | #420 체리버 (풀 / none) — GO 최대 CP: 950 | 2026-06-05 |
-| pokemon-chesnaught | Chesnaught / 브리가론 | concept | ko | #652 브리가론 (풀 / 격투) — GO 최대 CP: 2,954 | 2026-06-05 |
-| pokemon-chespin | Chespin / 도치마론 | concept | ko | #650 도치마론 (풀 / none) — GO 최대 CP: 1,096 | 2026-06-05 |
-| pokemon-chewtle | Chewtle / 깨물부기 | concept | ko | #833 깨물부기 (물 / none) — GO 최대 CP: 993 | 2026-06-05 |
+| pokemon-abomasnow | Abomasnow / 눈설왕 | concept | ko | #460 눈설왕 (풀 / 얼음) — GO 최대 CP: 2,362 | 2026-06-18 |
+| pokemon-abra | Abra / 캐이시 | concept | ko | #063 캐이시 (에스퍼) — GO 최대 CP: 1,342 | 2026-06-18 |
+| pokemon-absol | Absol / 앱솔 | concept | ko | #359 앱솔 (악) — GO 최대 CP: 2,526 | 2026-06-18 |
+| pokemon-accelgor | Accelgor / 어지리더 | concept | ko | #617 어지리더 (벌레) — GO 최대 CP: 2,441 | 2026-06-18 |
+| pokemon-aegislash | Aegislash / 킬가르도 | concept | ko | #681 킬가르도 (강철 / 고스트) — GO 최대 CP: 2,473 | 2026-06-18 |
+| pokemon-aerodactyl | Aerodactyl / 프테라 | concept | ko | #142 프테라 (바위 / 비행) — GO 최대 CP: 2,783 | 2026-06-18 |
+| pokemon-aggron | Aggron / 보스로라 | concept | ko | #306 보스로라 (강철 / 바위) — GO 최대 CP: 3,000 | 2026-06-18 |
+| pokemon-aipom | Aipom / 에이팜 | concept | ko | #190 에이팜 (노말) — GO 최대 CP: 1,348 | 2026-06-18 |
+| pokemon-alakazam | Alakazam / 후딘 | concept | ko | #065 후딘 (에스퍼) — GO 최대 CP: 3,057 | 2026-06-18 |
+| pokemon-alcremie | Alcremie / 마휘핑 | concept | ko | #869 마휘핑 (페어리) — GO 최대 CP: 2,682 | 2026-06-18 |
+| pokemon-alomomola | Alomomola / 맘복치 | concept | ko | #594 맘복치 (물) — GO 최대 CP: 2,169 | 2026-06-18 |
+| pokemon-altaria | Altaria / 파비코리 | concept | ko | #334 파비코리 (드래곤 / 비행) — GO 최대 CP: 2,004 | 2026-06-18 |
+| pokemon-amaura | Amaura / 아마루스 | concept | ko | #698 아마루스 (바위 / 얼음) — GO 최대 CP: 1,363 | 2026-06-18 |
+| pokemon-ambipom | Ambipom / 겟핸보숭 | concept | ko | #424 겟핸보숭 (노말) — GO 최대 CP: 2,418 | 2026-06-18 |
+| pokemon-amoonguss | Amoonguss / 뽀록나 | concept | ko | #591 뽀록나 (풀 / 독) — GO 최대 CP: 2,140 | 2026-06-18 |
+| pokemon-ampharos | Ampharos / 전룡 | concept | ko | #181 전룡 (전기) — GO 최대 CP: 2,852 | 2026-06-18 |
+| pokemon-annihilape | Annihilape / 저승갓숭 | concept | ko | #979 저승갓숭 (격투 / 고스트) — GO 최대 CP: 3,268 | 2026-06-18 |
+| pokemon-anorith | Anorith / 아노딥스 | concept | ko | #347 아노딥스 (바위 / 벌레) — GO 최대 CP: 1,529 | 2026-06-18 |
+| pokemon-appletun | Appletun / 단지래플 | concept | ko | #842 단지래플 (풀 / 드래곤) — GO 최대 CP: 2,452 | 2026-06-18 |
+| pokemon-applin | Applin / 과사삭벌레 | concept | ko | #840 과사삭벌레 (풀 / 드래곤) — GO 최대 CP: 714 | 2026-06-18 |
+| pokemon-araquanid | Araquanid / 깨비물거미 | concept | ko | #752 깨비물거미 (물 / 벌레) — GO 최대 CP: 1,827 | 2026-06-18 |
+| pokemon-arbok | Arbok / 아보크 | concept | ko | #024 아보크 (독) — GO 최대 CP: 1,921 | 2026-06-18 |
+| pokemon-arboliva | Arboliva / 올리르바 | concept | ko | #930 올리르바 (풀 / 노말) — GO 최대 CP: 2,959 | 2026-06-18 |
+| pokemon-arcanine | Arcanine / 윈디 | concept | ko | #059 윈디 (불꽃) — GO 최대 CP: 3,029 | 2026-06-18 |
+| pokemon-arceus | Arceus / 아르세우스 | concept | ko | #493 아르세우스 (노말) — GO 최대 CP: 3,989 | 2026-06-18 |
+| pokemon-archaludon | Archaludon / 브리두라스 | concept | ko | #1018 브리두라스 (강철 / 드래곤) — GO 최대 CP: 3,739 | 2026-06-18 |
+| pokemon-archen | Archen / 아켄 | concept | ko | #566 아켄 (바위 / 비행) — GO 최대 CP: 1,842 | 2026-06-18 |
+| pokemon-archeops | Archeops / 아케오스 | concept | ko | #567 아케오스 (바위 / 비행) — GO 최대 CP: 3,331 | 2026-06-18 |
+| pokemon-arctibax | Arctibax / 드니꽁 | concept | ko | #997 드니꽁 (드래곤 / 얼음) — GO 최대 CP: 2,092 | 2026-06-18 |
+| pokemon-arctovish | Arctovish / 어치르돈 | concept | ko | #883 어치르돈 (물 / 얼음) — GO 최대 CP: 2,447 | 2026-06-18 |
+| pokemon-arctozolt | Arctozolt / 파치르돈 | concept | ko | #881 파치르돈 (전기 / 얼음) — GO 최대 CP: 2,566 | 2026-06-18 |
+| pokemon-ariados | Ariados / 아리아도스 | concept | ko | #168 아리아도스 (벌레 / 독) — GO 최대 CP: 1,772 | 2026-06-18 |
+| pokemon-armaldo | Armaldo / 아말도 | concept | ko | #348 아말도 (바위 / 벌레) — GO 최대 CP: 2,848 | 2026-06-18 |
+| pokemon-armarouge | Armarouge / 카디나르마 | concept | ko | #936 카디나르마 (불꽃 / 에스퍼) — GO 최대 CP: 3,209 | 2026-06-18 |
+| pokemon-aromatisse | Aromatisse / 프레프티르 | concept | ko | #683 프레프티르 (페어리) — GO 최대 CP: 2,341 | 2026-06-18 |
+| pokemon-aron | Aron / 가보리 | concept | ko | #304 가보리 (강철 / 바위) — GO 최대 CP: 1,307 | 2026-06-18 |
+| pokemon-arrokuda | Arrokuda / 찌로꼬치 | concept | ko | #846 찌로꼬치 (물) — GO 최대 CP: 903 | 2026-06-18 |
+| pokemon-articuno | Articuno / 프리져 | concept | ko | #144 프리져 (얼음 / 비행) — GO 최대 CP: 3,051 | 2026-06-18 |
+| pokemon-audino | Audino / 다부니 | concept | ko | #531 이어롭 (노말) — GO 최대 CP: 1,682 | 2026-06-18 |
+| pokemon-aurorus | Aurorus / 아마루르가 | concept | ko | #699 아마루르가 (바위 / 얼음) — GO 최대 CP: 2,802 | 2026-06-18 |
+| pokemon-avalugg | Avalugg / 크레베이스 | concept | ko | #713 크레베이스 (얼음) — GO 최대 CP: 3,198 | 2026-06-18 |
+| pokemon-axew | Axew / 터검니 | concept | ko | #610 터검니 (드래곤) — GO 최대 CP: 1,368 | 2026-06-18 |
+| pokemon-azelf | Azelf / 아그놈 | concept | ko | #482 아그놈 (에스퍼) — GO 최대 CP: 3,210 | 2026-06-18 |
+| pokemon-azumarill | Azumarill / 마릴리 | concept | ko | #184 마릴리 (물 / 페어리) — GO 최대 CP: 1,588 | 2026-06-18 |
+| pokemon-azurill | Azurill / 루리리 | concept | ko | #298 루리리 (노말 / 페어리) — GO 최대 CP: 364 | 2026-06-18 |
+| pokemon-bagon | Bagon / 아공이 | concept | ko | #371 아공이 (드래곤) — GO 최대 CP: 1,156 | 2026-06-18 |
+| pokemon-baltoy | Baltoy / 오뚝군 | concept | ko | #343 오뚝군 (땅 / 에스퍼) — GO 최대 CP: 787 | 2026-06-18 |
+| pokemon-banette | Banette / 다크펫 | concept | ko | #354 다크펫 (고스트) — GO 최대 CP: 2,298 | 2026-06-18 |
+| pokemon-barbaracle | Barbaracle / 거북손데스 | concept | ko | #689 거북손데스 (바위 / 물) — GO 최대 CP: 2,675 | 2026-06-18 |
+| pokemon-barboach | Barboach / 미꾸리 | concept | ko | #339 미꾸리 (물 / 땅) — GO 최대 CP: 819 | 2026-06-18 |
+| pokemon-barraskewda | Barraskewda / 꼬치조 | concept | ko | #847 꼬치조 (물) — GO 최대 CP: 2,656 | 2026-06-18 |
+| pokemon-basculegion | Basculegion / 대쓰여너 | concept | ko | #902 대쓰여너 (물 / 고스트) — GO 최대 CP: 2,794 | 2026-06-18 |
+| pokemon-basculin | Basculin / 배쓰나이 | concept | ko | #550 배쓰나이 (물) — GO 최대 CP: 2,090 | 2026-06-18 |
+| pokemon-bastiodon | Bastiodon / 바리톱스 | concept | ko | #411 바리톱스 (바위 / 강철) — GO 최대 CP: 1,539 | 2026-06-18 |
+| pokemon-baxcalibur | Baxcalibur / 드닐레이브 | concept | ko | #998 드닐레이브 (드래곤 / 얼음) — GO 최대 CP: 3,550 | 2026-06-18 |
+| pokemon-bayleef | Bayleef / 베이리프 | concept | ko | #153 베이리프 (풀) — GO 최대 CP: 1,454 | 2026-06-18 |
+| pokemon-beartic | Beartic / 툰베어 | concept | ko | #614 툰베어 (얼음) — GO 최대 CP: 3,042 | 2026-06-18 |
+| pokemon-beautifly | Beautifly / 뷰티플라이 | concept | ko | #267 뷰티플라이 (벌레 / 비행) — GO 최대 CP: 1,765 | 2026-06-18 |
+| pokemon-beedrill | Beedrill / 독침붕 | concept | ko | #015 독침붕 (벌레 / 독) — GO 최대 CP: 1,846 | 2026-06-18 |
+| pokemon-beheeyem | Beheeyem / 벰크 | concept | ko | #606 벰크 (에스퍼) — GO 최대 CP: 2,753 | 2026-06-18 |
+| pokemon-beldum | Beldum / 메탕 | concept | ko | #374 메탕 (강철 / 에스퍼) — GO 최대 CP: 976 | 2026-06-18 |
+| pokemon-bellibolt | Bellibolt / 찌리배리 | concept | ko | #939 찌리배리 (전기) — GO 최대 CP: 2,662 | 2026-06-18 |
+| pokemon-bellossom | Bellossom / 아르코 | concept | ko | #182 아르코 (풀) — GO 최대 CP: 2,281 | 2026-06-18 |
+| pokemon-bellsprout | Bellsprout / 모다피 | concept | ko | #069 모다피 (풀 / 독) — GO 최대 CP: 1,033 | 2026-06-18 |
+| pokemon-bergmite | Bergmite / 꽁어름 | concept | ko | #712 꽁어름 (얼음) — GO 최대 CP: 1,215 | 2026-06-18 |
+| pokemon-bewear | Bewear / 이븐곰 | concept | ko | #760 이븐곰 (노말 / 격투) — GO 최대 CP: 3,117 | 2026-06-18 |
+| pokemon-bibarel | Bibarel / 비버통 | concept | ko | #400 비버통 (노말 / 물) — GO 최대 CP: 1,823 | 2026-06-18 |
+| pokemon-bidoof | Bidoof / 비버니 | concept | ko | #399 비버니 (노말) — GO 최대 CP: 721 | 2026-06-18 |
+| pokemon-binacle | Binacle / 거북손손 | concept | ko | #688 거북손손 (바위 / 물) — GO 최대 CP: 946 | 2026-06-18 |
+| pokemon-bisharp | Bisharp / 절각참 | concept | ko | #625 절각참 (악 / 강철) — GO 최대 CP: 2,844 | 2026-06-18 |
+| pokemon-blacephalon | Blacephalon / 두파팡 | concept | ko | #806 두파팡 (불꽃 / 고스트) — GO 최대 CP: 3,297 | 2026-06-18 |
+| pokemon-blastoise | Blastoise / 거북왕 | concept | ko | #009 거북왕 (물) — GO 최대 CP: 2,466 | 2026-06-18 |
+| pokemon-blaziken | Blaziken / 번치코 | concept | ko | #257 번치코 (불꽃 / 격투) — GO 최대 CP: 2,848 | 2026-06-18 |
+| pokemon-blipbug | Blipbug / 두루지벌레 | concept | ko | #824 두루지벌레 (벌레) — GO 최대 CP: 358 | 2026-06-18 |
+| pokemon-blissey | Blissey / 해피너스 | concept | ko | #242 해피너스 (노말) — GO 최대 CP: 2,757 | 2026-06-18 |
+| pokemon-blitzle | Blitzle / 줄뮤마 | concept | ko | #522 줄뮤마 (전기) — GO 최대 CP: 882 | 2026-06-18 |
+| pokemon-boldore | Boldore / 암트르 | concept | ko | #525 암트르 (바위) — GO 최대 CP: 2,029 | 2026-06-18 |
+| pokemon-boltund | Boltund / 펄스멍 | concept | ko | #836 펄스멍 (전기) — GO 최대 CP: 2,176 | 2026-06-18 |
+| pokemon-bombirdier | Bombirdier / 떨구새 | concept | ko | #962 떨구새 (비행 / 악) — GO 최대 CP: 2,487 | 2026-06-18 |
+| pokemon-bonsly | Bonsly / 꼬지지 | concept | ko | #438 꼬지지 (바위) — GO 최대 CP: 1,302 | 2026-06-18 |
+| pokemon-bouffalant | Bouffalant / 버프론 | concept | ko | #626 버프론 (노말) — GO 최대 CP: 2,797 | 2026-06-18 |
+| pokemon-bounsweet | Bounsweet / 달콤아 | concept | ko | #761 달콤아 (풀) — GO 최대 CP: 470 | 2026-06-18 |
+| pokemon-braixen | Braixen / 테르나 | concept | ko | #654 테르나 (불꽃) — GO 최대 CP: 1,813 | 2026-06-18 |
+| pokemon-brambleghast | Brambleghast / 공푸리 | concept | ko | #947 공푸리 (풀 / 고스트) — GO 최대 CP: 2,428 | 2026-06-18 |
+| pokemon-bramblin | Bramblin / 그푸리 | concept | ko | #946 그푸리 (풀 / 고스트) — GO 최대 CP: 877 | 2026-06-18 |
+| pokemon-braviary | Braviary / 워글 | concept | ko | #628 워글 (노말 / 비행) — GO 최대 CP: 3,088 | 2026-06-18 |
+| pokemon-breloom | Breloom / 버섯모 | concept | ko | #286 버섯모 (풀 / 격투) — GO 최대 CP: 2,628 | 2026-06-18 |
+| pokemon-brionne | Brionne / 키요공 | concept | ko | #729 키요공 (물) — GO 최대 CP: 1,885 | 2026-06-18 |
+| pokemon-bronzong | Bronzong / 동탁군 | concept | ko | #437 동탁군 (강철 / 에스퍼) — GO 최대 CP: 2,239 | 2026-06-18 |
+| pokemon-bronzor | Bronzor / 동미러 | concept | ko | #436 동미러 (강철 / 에스퍼) — GO 최대 CP: 603 | 2026-06-18 |
+| pokemon-brute-bonnet | Brute Bonnet / 사나운버섯 | concept | ko | #986 사나운버섯 (풀 / 악) — GO 최대 CP: 3,554 | 2026-06-18 |
+| pokemon-bruxish | Bruxish / 치갈기 | concept | ko | #779 치갈기 (물 / 에스퍼) — GO 최대 CP: 2,389 | 2026-06-18 |
+| pokemon-budew | Budew / 꼬몽울 | concept | ko | #406 꼬몽울 (풀 / 독) — GO 최대 CP: 856 | 2026-06-18 |
+| pokemon-buizel | Buizel / 브이젤 | concept | ko | #418 브이젤 (물) — GO 최대 CP: 1,054 | 2026-06-18 |
+| pokemon-bulbasaur | Bulbasaur / 이상해씨 | concept | ko | #001 이상해씨 (풀 / 독) — GO 최대 CP: 1,115 | 2026-06-18 |
+| pokemon-buneary | Buneary / 이어롤 | concept | ko | #427 이어롤 (노말) — GO 최대 CP: 1,258 | 2026-06-18 |
+| pokemon-bunnelby | Bunnelby / 파르빗 | concept | ko | #659 파르빗 (노말) — GO 최대 CP: 553 | 2026-06-18 |
+| pokemon-burmy | Burmy / 도롱충이 | concept | ko | #412 도롱충이 (벌레) — GO 최대 CP: 488 | 2026-06-18 |
+| pokemon-butterfree | Butterfree / 버터플 | concept | ko | #012 버터플 (벌레 / 비행) — GO 최대 CP: 1,827 | 2026-06-18 |
+| pokemon-buzzwole | Buzzwole / 매시붕 | concept | ko | #794 매시붕 (벌레 / 격투) — GO 최대 CP: 3,461 | 2026-06-18 |
+| pokemon-cacnea | Cacnea / 선인왕 | concept | ko | #331 선인왕 (풀) — GO 최대 CP: 1,242 | 2026-06-18 |
+| pokemon-cacturne | Cacturne / 밤선인 | concept | ko | #332 밤선인 (풀 / 악) — GO 최대 CP: 2,298 | 2026-06-18 |
+| pokemon-calyrex | Calyrex / 버드렉스 | concept | ko | #898 버드렉스 (에스퍼 / 풀) — GO 최대 CP: 2,278 | 2026-06-18 |
+| pokemon-camerupt | Camerupt / 폭타 | concept | ko | #323 폭타 (불꽃 / 땅) — GO 최대 CP: 2,193 | 2026-06-18 |
+| pokemon-capsakid | Capsakid / 캡싸이 | concept | ko | #951 캡싸이 (풀) — GO 최대 CP: 976 | 2026-06-18 |
+| pokemon-carbink | Carbink / 멜리시 | concept | ko | #703 멜리시 (바위 / 페어리) — GO 최대 CP: 1,467 | 2026-06-18 |
+| pokemon-carkol | Carkol / 탄차곤 | concept | ko | #838 탄차곤 (바위 / 불꽃) — GO 최대 CP: 1,512 | 2026-06-18 |
+| pokemon-carnivine | Carnivine / 무스틈니 | concept | ko | #455 무스틈니 (풀) — GO 최대 CP: 2,159 | 2026-06-18 |
+| pokemon-carracosta | Carracosta / 늑골라 | concept | ko | #565 늑골라 (물 / 바위) — GO 최대 CP: 2,621 | 2026-06-18 |
+| pokemon-carvanha | Carvanha / 샤프니아 | concept | ko | #318 샤프니아 (물 / 악) — GO 최대 CP: 1,020 | 2026-06-18 |
+| pokemon-cascoon | Cascoon / 카스쿤 | concept | ko | #268 카스쿤 (벌레) — GO 최대 CP: 553 | 2026-06-18 |
+| pokemon-castform | Castform / 캐스퐁 | concept | ko | #351 캐스퐁 (노말) — GO 최대 CP: 1,632 | 2026-06-18 |
+| pokemon-caterpie | Caterpie / 캐터피 | concept | ko | #010 캐터피 (벌레) — GO 최대 CP: 437 | 2026-06-18 |
+| pokemon-celebi | Celebi / 세레비 | concept | ko | #251 세레비 (에스퍼 / 풀) — GO 최대 CP: 3,265 | 2026-06-18 |
+| pokemon-celesteela | Celesteela / 철화구야 | concept | ko | #797 철화구야 (강철 / 비행) — GO 최대 CP: 3,102 | 2026-06-18 |
+| pokemon-centiskorch | Centiskorch / 다태우지네 | concept | ko | #851 다태우지네 (불꽃 / 벌레) — GO 최대 CP: 2,990 | 2026-06-18 |
+| pokemon-ceruledge | Ceruledge / 파라블레이즈 | concept | ko | #937 파라블레이즈 (불꽃 / 고스트) — GO 최대 CP: 3,172 | 2026-06-18 |
+| pokemon-cetitan | Cetitan / 우락고래 | concept | ko | #975 우락고래 (얼음) — GO 최대 CP: 3,113 | 2026-06-18 |
+| pokemon-cetoddle | Cetoddle / 터벅고래 | concept | ko | #974 터벅고래 (얼음) — GO 최대 CP: 1,300 | 2026-06-18 |
+| pokemon-chandelure | Chandelure / 샹델라 | concept | ko | #609 샹델라 (고스트 / 불꽃) — GO 최대 CP: 3,268 | 2026-06-18 |
+| pokemon-chansey | Chansey / 럭키 | concept | ko | #113 럭키 (노말) — GO 최대 CP: 1,255 | 2026-06-18 |
+| pokemon-charcadet | Charcadet / 카르본 | concept | ko | #935 카르본 (불꽃) — GO 최대 CP: 732 | 2026-06-18 |
+| pokemon-charizard | Charizard / 리자몽 | concept | ko | #006 리자몽 (불꽃 / 비행) — GO 최대 CP: 2,889 | 2026-06-18 |
+| pokemon-charjabug | Charjabug / 전지충이 | concept | ko | #737 전지충이 (벌레 / 전기) — GO 최대 CP: 1,697 | 2026-06-18 |
+| pokemon-charmander | Charmander / 파이리 | concept | ko | #004 파이리 (불꽃) — GO 최대 CP: 980 | 2026-06-18 |
+| pokemon-charmeleon | Charmeleon / 리자드 | concept | ko | #005 리자드 (불꽃) — GO 최대 CP: 1,653 | 2026-06-18 |
+| pokemon-chatot | Chatot / 페라페 | concept | ko | #441 페라페 (노말 / 비행) — GO 최대 CP: 1,791 | 2026-06-18 |
+| pokemon-cherrim | Cherrim / 체리꼬 | concept | ko | #421 체리꼬 (풀) — GO 최대 CP: 2,048 | 2026-06-18 |
+| pokemon-cherubi | Cherubi / 체리버 | concept | ko | #420 체리버 (풀) — GO 최대 CP: 950 | 2026-06-18 |
+| pokemon-chesnaught | Chesnaught / 브리가론 | concept | ko | #652 브리가론 (풀 / 격투) — GO 최대 CP: 2,954 | 2026-06-18 |
+| pokemon-chespin | Chespin / 도치마론 | concept | ko | #650 도치마론 (풀) — GO 최대 CP: 1,096 | 2026-06-18 |
+| pokemon-chewtle | Chewtle / 깨물부기 | concept | ko | #833 깨물부기 (물) — GO 최대 CP: 993 | 2026-06-18 |
 | pokemon-chi-yu | Chi-Yu / 위유이 | concept | ko | #1004 위유이 (악 / 불꽃) — GO 최대 CP: 3,457 | 2026-06-05 |
 | pokemon-chien-pao | Chien-Pao / 파오젠 | concept | ko | #1002 파오젠 (악 / 얼음) — GO 최대 CP: 3,329 | 2026-06-05 |
-| pokemon-chikorita | Chikorita / 치코리타 | concept | ko | #152 치코리타 (풀 / none) — GO 최대 CP: 935 | 2026-06-05 |
-| pokemon-chimchar | Chimchar / 불꽃숭이 | concept | ko | #390 불꽃숭이 (불꽃 / none) — GO 최대 CP: 957 | 2026-06-05 |
-| pokemon-chimecho | Chimecho / 치렁 | concept | ko | #358 치렁 (에스퍼 / none) — GO 최대 CP: 2,259 | 2026-06-05 |
-| pokemon-chinchou | Chinchou / 초라기 | concept | ko | #170 초라기 (물 / 전기) — GO 최대 CP: 1,119 | 2026-06-05 |
-| pokemon-chingling | Chingling / 랑딸랑 | concept | ko | #433 랑딸랑 (에스퍼 / none) — GO 최대 CP: 1,005 | 2026-06-05 |
-| pokemon-cinccino | Cinccino / 치라치노 | concept | ko | #573 치라치노 (노말 / none) — GO 최대 CP: 2,242 | 2026-06-05 |
-| pokemon-cinderace | Cinderace / 에이스번 | concept | ko | #815 에이스번 (불꽃 / none) — GO 최대 CP: 3,018 | 2026-06-05 |
-| pokemon-clamperl | Clamperl / 진주몽 | concept | ko | #366 진주몽 (물 / none) — GO 최대 CP: 1,270 | 2026-06-05 |
-| pokemon-clauncher | Clauncher / 완철포 | concept | ko | #692 완철포 (물 / none) — GO 최대 CP: 1,088 | 2026-06-05 |
-| pokemon-clawitzer | Clawitzer / 블로스터 | concept | ko | #693 블로스터 (물 / none) — GO 최대 CP: 2,763 | 2026-06-05 |
-| pokemon-claydol | Claydol / 점토도리 | concept | ko | #344 점토도리 (땅 / 에스퍼) — GO 최대 CP: 1,971 | 2026-06-05 |
-| pokemon-clefable | Clefable / 픽시 | concept | ko | #036 픽시 (페어리 타입) — 기본 스탯 합계 483 | 2026-06-05 |
-| pokemon-clefairy | Clefairy / 삐삐 | concept | ko | #035 삐삐 (페어리 타입) — 기본 스탯 합계 323 | 2026-06-05 |
-| pokemon-cleffa | Cleffa / 삐 | concept | ko | #173 삐 (페어리 / none) — GO 최대 CP: 671 | 2026-06-05 |
-| pokemon-clobbopus | Clobbopus / 때때무노 | concept | ko | #852 때때무노 (격투 / none) — GO 최대 CP: 1,137 | 2026-06-05 |
-| pokemon-clodsire | Clodsire / 토오 | concept | ko | #980 토오 (독 / 땅) — GO 최대 CP: 1,952 | 2026-06-05 |
-| pokemon-cloyster | Cloyster / 파르셀 | concept | ko | #091 파르셀 (물/얼음 타입) — 기본 스탯 합계 525 | 2026-06-05 |
-| pokemon-coalossal | Coalossal / 석탄산 | concept | ko | #839 석탄산 (바위 / 불꽃) — GO 최대 CP: 2,352 | 2026-06-05 |
-| pokemon-cobalion | Cobalion / 코바르온 | concept | ko | #638 코바르온 (강철 / 격투) — GO 최대 CP: 3,022 | 2026-06-05 |
-| pokemon-cofagrigus | Cofagrigus / 데스니칸 | concept | ko | #563 데스니칸 (고스트 / none) — GO 최대 CP: 2,273 | 2026-06-05 |
-| pokemon-combee | Combee / 세꿀버리 | concept | ko | #415 세꿀버리 (벌레 / 비행) — GO 최대 CP: 494 | 2026-06-05 |
-| pokemon-combusken | Combusken / 영치코 | concept | ko | #256 영치코 (불꽃 / 격투) — GO 최대 CP: 1,652 | 2026-06-05 |
-| pokemon-comfey | Comfey / 큐아링 | concept | ko | #764 큐아링 (페어리 / none) — GO 최대 CP: 2,115 | 2026-06-05 |
-| pokemon-conkeldurr | Conkeldurr / 노보청 | concept | ko | #534 노보청 (격투 / none) — GO 최대 CP: 3,337 | 2026-06-05 |
-| pokemon-copperajah | Copperajah / 대왕끼리동 | concept | ko | #879 대왕끼리동 (강철 / none) — GO 최대 CP: 2,980 | 2026-06-05 |
-| pokemon-corphish | Corphish / 가재군 | concept | ko | #341 가재군 (물 / none) — GO 최대 CP: 1,230 | 2026-06-05 |
-| pokemon-corsola | Corsola / 코산호 | concept | ko | #222 코산호 (물 / 바위) — GO 최대 CP: 1,378 | 2026-06-05 |
-| pokemon-corviknight | Corviknight / 아머까오 | concept | ko | #823 아머까오 (비행 / 강철) — GO 최대 CP: 2,457 | 2026-06-05 |
-| pokemon-corvisquire | Corvisquire / 파크로우 | concept | ko | #822 파크로우 (비행 / none) — GO 최대 CP: 1,363 | 2026-06-05 |
-| pokemon-cosmoem | Cosmoem / 코스모움 | concept | ko | #790 코스모움 (에스퍼 / none) — GO 최대 CP: 817 | 2026-06-05 |
-| pokemon-cosmog | Cosmog / 코스모그 | concept | ko | #789 코스모그 (에스퍼 / none) — GO 최대 CP: 432 | 2026-06-05 |
-| pokemon-cottonee | Cottonee / 소미안 | concept | ko | #546 소미안 (풀 / 페어리) — GO 최대 CP: 700 | 2026-06-05 |
-| pokemon-crabominable | Crabominable / 모단단게 | concept | ko | #740 모단단게 (격투 / 얼음) — GO 최대 CP: 2,907 | 2026-06-05 |
-| pokemon-crabrawler | Crabrawler / 오기지게 | concept | ko | #739 오기지게 (격투 / none) — GO 최대 CP: 1,363 | 2026-06-05 |
-| pokemon-cradily | Cradily / 릴리요 | concept | ko | #346 릴리요 (바위 / 풀) — GO 최대 CP: 2,211 | 2026-06-05 |
-| pokemon-cramorant | Cramorant / 윽우지 | concept | ko | #845 윽우지 (비행 / 물) — GO 최대 CP: 2,142 | 2026-06-05 |
-| pokemon-cranidos | Cranidos / 두개도스 | concept | ko | #408 두개도스 (바위 / none) — GO 최대 CP: 1,820 | 2026-06-05 |
-| pokemon-crawdaunt | Crawdaunt / 가재장군 | concept | ko | #342 가재장군 (물 / 악) — GO 최대 CP: 2,474 | 2026-06-05 |
-| pokemon-cresselia | Cresselia / 크레세리아 | concept | ko | #488 크레세리아 (에스퍼 / none) — GO 최대 CP: 2,857 | 2026-06-05 |
-| pokemon-croagunk | Croagunk / 삐딱구리 | concept | ko | #453 삐딱구리 (독 / 격투) — GO 최대 CP: 952 | 2026-06-05 |
-| pokemon-crobat | Crobat / 크로뱃 | concept | ko | #169 크로뱃 (독 / 비행) — GO 최대 CP: 2,646 | 2026-06-05 |
-| pokemon-crocalor | Crocalor / 악뜨거 | concept | ko | #910 악뜨거 (불꽃 / none) — GO 최대 CP: 1,936 | 2026-06-05 |
-| pokemon-croconaw | Croconaw / 엘리게이 | concept | ko | #159 엘리게이 (물 / none) — GO 최대 CP: 1,722 | 2026-06-05 |
-| pokemon-crustle | Crustle / 암팰리스 | concept | ko | #558 암팰리스 (벌레 / 바위) — GO 최대 CP: 2,542 | 2026-06-05 |
-| pokemon-cryogonal | Cryogonal / 프리지오 | concept | ko | #615 프리지오 (얼음 / none) — GO 최대 CP: 2,798 | 2026-06-05 |
-| pokemon-cubchoo | Cubchoo / 코고미 | concept | ko | #613 코고미 (얼음 / none) — GO 최대 CP: 1,069 | 2026-06-05 |
-| pokemon-cubone | Cubone / 탕구리 | concept | ko | #104 탕구리 (땅 타입) — 기본 스탯 합계 320 | 2026-06-05 |
-| pokemon-cufant | Cufant / 끼리동 | concept | ko | #878 끼리동 (강철 / none) — GO 최대 CP: 1,377 | 2026-06-05 |
-| pokemon-cursola | Cursola / 산호르곤 | concept | ko | #864 산호르곤 (고스트 / none) — GO 최대 CP: 3,063 | 2026-06-05 |
-| pokemon-cutiefly | Cutiefly / 에블리 | concept | ko | #742 에블리 (벌레 / 페어리) — GO 최대 CP: 888 | 2026-06-05 |
-| pokemon-cyclizar | Cyclizar / 모토마 | concept | ko | #967 모토마 (드래곤 / 노말) — GO 최대 CP: 2,354 | 2026-06-05 |
-| pokemon-cyndaquil | Cyndaquil / 브케인 | concept | ko | #155 브케인 (불꽃 / none) — GO 최대 CP: 980 | 2026-06-05 |
-| pokemon-dachsbun | Dachsbun / 바우첼 | concept | ko | #927 바우첼 (페어리 / none) — GO 최대 CP: 2,096 | 2026-06-05 |
-| pokemon-darkrai | Darkrai / 다크라이 | concept | ko | #491 다크라이 (악 / none) — GO 최대 CP: 3,739 | 2026-06-05 |
-| pokemon-darmanitan | Darmanitan / 불비달마 | concept | ko | #555 불비달마 (불꽃 / none) — GO 최대 CP: 3,105 | 2026-06-05 |
-| pokemon-dartrix | Dartrix / 빼미스로우 | concept | ko | #723 빼미스로우 (풀 / 비행) — GO 최대 CP: 1,725 | 2026-06-05 |
-| pokemon-darumaka | Darumaka / 달막화 | concept | ko | #554 달막화 (불꽃 / none) — GO 최대 CP: 1,442 | 2026-06-05 |
-| pokemon-decidueye | Decidueye / 모크나이퍼 | concept | ko | #724 모크나이퍼 (풀 / 고스트) — GO 최대 CP: 2,775 | 2026-06-05 |
-| pokemon-dedenne | Dedenne / 데덴네 | concept | ko | #702 데덴네 (전기 / 페어리) — GO 최대 CP: 1,841 | 2026-06-05 |
-| pokemon-deerling | Deerling / 사철록 | concept | ko | #585 사철록 (노말 / 풀) — GO 최대 CP: 1,135 | 2026-06-05 |
-| pokemon-deino | Deino / 모노두 | concept | ko | #633 모노두 (악 / 드래곤) — GO 최대 CP: 1,062 | 2026-06-05 |
-| pokemon-delcatty | Delcatty / 델케티 | concept | ko | #301 델케티 (노말 / none) — GO 최대 CP: 1,496 | 2026-06-05 |
-| pokemon-delibird | Delibird / 딜리버드 | concept | ko | #225 딜리버드 (얼음 / 비행) — GO 최대 CP: 1,094 | 2026-06-05 |
-| pokemon-delphox | Delphox / 마폭시 | concept | ko | #655 마폭시 (불꽃 / 에스퍼) — GO 최대 CP: 3,059 | 2026-06-05 |
-| pokemon-deoxys | Deoxys / 테오키스 | concept | ko | #386 테오키스 (에스퍼 / none) — GO 최대 CP: 3,160 | 2026-06-05 |
-| pokemon-dewgong | Dewgong / 쥬레곤 | concept | ko | #087 쥬레곤 (물/얼음 타입) — 기본 스탯 합계 475 | 2026-06-05 |
-| pokemon-dewott | Dewott / 쌍검자비 | concept | ko | #502 쌍검자비 (물 / none) — GO 최대 CP: 1,741 | 2026-06-05 |
-| pokemon-dewpider | Dewpider / 물거미 | concept | ko | #751 물거미 (물 / 벌레) — GO 최대 CP: 714 | 2026-06-05 |
-| pokemon-dhelmise | Dhelmise / 타타륜 | concept | ko | #781 타타륜 (고스트 / 풀) — GO 최대 CP: 2,950 | 2026-06-05 |
-| pokemon-dialga | Dialga / 디아루가 | concept | ko | #483 디아루가 (강철 / 드래곤) — GO 최대 CP: 4,038 | 2026-06-05 |
-| pokemon-diancie | Diancie / 디안시 | concept | ko | #719 디안시 (바위 / 페어리) — GO 최대 CP: 2,734 | 2026-06-05 |
-| pokemon-diggersby | Diggersby / 파르토 | concept | ko | #660 파르토 (노말 / 땅) — GO 최대 CP: 1,509 | 2026-06-05 |
-| pokemon-diglett | Diglett / 디그다 | concept | ko | #050 디그다 (땅 타입) — 기본 스탯 합계 265 | 2026-06-05 |
-| pokemon-dipplin | Dipplin / 과미르 | concept | ko | #1011 과미르 (풀 / 드래곤) — GO 최대 CP: 2,371 | 2026-06-05 |
-| pokemon-ditto | Ditto / 메타몽 | concept | ko | #132 메타몽 (노말 타입) — 기본 스탯 합계 288 | 2026-06-05 |
-| pokemon-dodrio | Dodrio / 두트리오 | concept | ko | #085 두트리오 (노말/비행 타입) — 기본 스탯 합계 470 | 2026-06-05 |
-| pokemon-doduo | Doduo / 두두 | concept | ko | #084 두두 (노말/비행 타입) — 기본 스탯 합계 310 | 2026-06-05 |
-| pokemon-dolliv | Dolliv / 올리뇨 | concept | ko | #929 올리뇨 (풀 / 노말) — GO 최대 CP: 1,432 | 2026-06-05 |
-| pokemon-dondozo | Dondozo / 어써러셔 | concept | ko | #977 어써러셔 (물 / none) — GO 최대 CP: 2,996 | 2026-06-05 |
-| pokemon-donphan | Donphan / 코리갑 | concept | ko | #232 코리갑 (땅 / none) — GO 최대 CP: 3,013 | 2026-06-05 |
-| pokemon-dottler | Dottler / 레돔벌레 | concept | ko | #825 레돔벌레 (벌레 / 에스퍼) — GO 최대 CP: 1,030 | 2026-06-05 |
-| pokemon-doublade | Doublade / 쌍검킬 | concept | ko | #680 쌍검킬 (강철 / 고스트) — GO 최대 CP: 2,443 | 2026-06-05 |
-| pokemon-dracovish | Dracovish / 어래곤 | concept | ko | #882 어래곤 (물 / 드래곤) — GO 최대 CP: 2,500 | 2026-06-05 |
-| pokemon-dracozolt | Dracozolt / 파치래곤 | concept | ko | #880 파치래곤 (전기 / 드래곤) — GO 최대 CP: 2,621 | 2026-06-05 |
-| pokemon-dragalge | Dragalge / 드래캄 | concept | ko | #691 드래캄 (독 / 드래곤) — GO 최대 CP: 2,383 | 2026-06-05 |
-| pokemon-dragapult | Dragapult / 드래펄트 | concept | ko | #887 드래펄트 (드래곤 / 고스트) — GO 최대 CP: 3,532 | 2026-06-05 |
-| pokemon-dragonair | Dragonair / 신뇽 | concept | ko | #148 신뇽 (드래곤 타입) — 기본 스탯 합계 420 | 2026-06-05 |
-| pokemon-dragonite | Dragonite / 망나뇽 | concept | ko | #149 망나뇽 (드래곤/비행 타입) — 기본 스탯 합계 600 | 2026-06-05 |
-| pokemon-drakloak | Drakloak / 드래런치 | concept | ko | #886 드래런치 (드래곤 / 고스트) — GO 최대 CP: 1,651 | 2026-06-05 |
-| pokemon-drampa | Drampa / 할비롱 | concept | ko | #780 할비롱 (노말 / 드래곤) — GO 최대 CP: 2,914 | 2026-06-05 |
-| pokemon-drapion | Drapion / 드래피온 | concept | ko | #452 드래피온 (독 / 악) — GO 최대 CP: 2,453 | 2026-06-05 |
-| pokemon-dratini | Dratini / 미뇽 | concept | ko | #147 미뇽 (드래곤 타입) — 기본 스탯 합계 300 | 2026-06-05 |
-| pokemon-drednaw | Drednaw / 갈가부기 | concept | ko | #834 갈가부기 (물 / 바위) — GO 최대 CP: 2,838 | 2026-06-05 |
-| pokemon-dreepy | Dreepy / 드라꼰 | concept | ko | #885 드라꼰 (드래곤 / 고스트) — GO 최대 CP: 767 | 2026-06-05 |
-| pokemon-drifblim | Drifblim / 둥실라이드 | concept | ko | #426 둥실라이드 (고스트 / 비행) — GO 최대 CP: 2,382 | 2026-06-05 |
-| pokemon-drifloon | Drifloon / 흔들풍손 | concept | ko | #425 흔들풍손 (고스트 / 비행) — GO 최대 CP: 1,197 | 2026-06-05 |
-| pokemon-drilbur | Drilbur / 두더류 | concept | ko | #529 두더류 (땅 / none) — GO 최대 CP: 1,376 | 2026-06-05 |
-| pokemon-drizzile | Drizzile / 누겔레온 | concept | ko | #817 누겔레온 (물 / none) — GO 최대 CP: 1,894 | 2026-06-05 |
-| pokemon-drowzee | Drowzee / 슬리프 | concept | ko | #096 슬리프 (에스퍼 타입) — 기본 스탯 합계 328 | 2026-06-05 |
-| pokemon-druddigon | Druddigon / 크리만 | concept | ko | #621 크리만 (드래곤 / none) — GO 최대 CP: 2,732 | 2026-06-05 |
-| pokemon-dubwool | Dubwool / 배우르 | concept | ko | #832 배우르 (노말 / none) — GO 최대 CP: 2,191 | 2026-06-05 |
-| pokemon-ducklett | Ducklett / 꼬지보리 | concept | ko | #580 꼬지보리 (물 / 비행) — GO 최대 CP: 856 | 2026-06-05 |
-| pokemon-dudunsparce | Dudunsparce / 노고고치 | concept | ko | #982 노고고치 (노말 / none) — GO 최대 CP: 2,739 | 2026-06-05 |
-| pokemon-dugtrio | Dugtrio / 닥트리오 | concept | ko | #051 닥트리오 (땅 타입) — 기본 스탯 합계 425 | 2026-06-05 |
-| pokemon-dunsparce | Dunsparce / 노고치 | concept | ko | #206 노고치 (노말 / none) — GO 최대 CP: 1,689 | 2026-06-05 |
-| pokemon-duosion | Duosion / 듀란 | concept | ko | #578 듀란 (에스퍼 / none) — GO 최대 CP: 2,018 | 2026-06-05 |
-| pokemon-duraludon | Duraludon / 두랄루돈 | concept | ko | #884 두랄루돈 (강철 / 드래곤) — GO 최대 CP: 3,067 | 2026-06-05 |
-| pokemon-durant | Durant / 아이앤트 | concept | ko | #632 아이앤트 (벌레 / 강철) — GO 최대 CP: 2,659 | 2026-06-05 |
-| pokemon-dusclops | Dusclops / 미라몽 | concept | ko | #356 미라몽 (고스트 / none) — GO 최대 CP: 1,591 | 2026-06-05 |
-| pokemon-dusknoir | Dusknoir / 야느와르몽 | concept | ko | #477 야느와르몽 (고스트 / none) — GO 최대 CP: 2,388 | 2026-06-05 |
-| pokemon-duskull | Duskull / 해골몽 | concept | ko | #355 해골몽 (고스트 / none) — GO 최대 CP: 706 | 2026-06-05 |
-| pokemon-dustox | Dustox / 독케일 | concept | ko | #269 독케일 (벌레 / 독) — GO 최대 CP: 1,224 | 2026-06-05 |
-| pokemon-dwebble | Dwebble / 돌살이 | concept | ko | #557 돌살이 (벌레 / 바위) — GO 최대 CP: 1,224 | 2026-06-05 |
-| pokemon-eelektrik | Eelektrik / 저리릴 | concept | ko | #603 저리릴 (전기 / none) — GO 최대 CP: 1,715 | 2026-06-05 |
-| pokemon-eelektross | Eelektross / 저리더프 | concept | ko | #604 저리더프 (전기 / none) — GO 최대 CP: 2,732 | 2026-06-05 |
-| pokemon-eevee | Eevee / 이브이 | concept | ko | #133 이브이 (노말 타입) — 기본 스탯 합계 325 | 2026-06-05 |
-| pokemon-eiscue | Eiscue / 빙큐보 | concept | ko | #875 빙큐보 (얼음 / none) — GO 최대 CP: 2,065 | 2026-06-05 |
-| pokemon-ekans | Ekans / 아보 | concept | ko | #023 아보 (독 타입) — 기본 스탯 합계 288 | 2026-06-05 |
-| pokemon-eldegoss | Eldegoss / 백솜모카 | concept | ko | #830 백솜모카 (풀 / none) — GO 최대 CP: 1,995 | 2026-06-05 |
-| pokemon-electabuzz | Electabuzz / 에레브 | concept | ko | #125 에레브 (전기 타입) — 기본 스탯 합계 490 | 2026-06-05 |
-| pokemon-electivire | Electivire / 에레키블 | concept | ko | #466 에레키블 (전기 / none) — GO 최대 CP: 3,079 | 2026-06-05 |
-| pokemon-electrike | Electrike / 썬더라이 | concept | ko | #309 썬더라이 (전기 / none) — GO 최대 CP: 965 | 2026-06-05 |
-| pokemon-electrode | Electrode / 붐볼 | concept | ko | #101 붐볼 (전기 타입) — 기본 스탯 합계 490 | 2026-06-05 |
-| pokemon-elekid | Elekid / 에레키드 | concept | ko | #239 에레키드 (전기 / none) — GO 최대 CP: 1,206 | 2026-06-05 |
-| pokemon-elgyem | Elgyem / 리그레 | concept | ko | #605 리그레 (에스퍼 / none) — GO 최대 CP: 1,385 | 2026-06-05 |
-| pokemon-emboar | Emboar / 염무왕 | concept | ko | #500 염무왕 (불꽃 / 격투) — GO 최대 CP: 2,982 | 2026-06-05 |
-| pokemon-emolga | Emolga / 에몽가 | concept | ko | #587 에몽가 (전기 / 비행) — GO 최대 CP: 1,633 | 2026-06-05 |
-| pokemon-empoleon | Empoleon / 엠페르트 | concept | ko | #395 엠페르트 (물 / 강철) — GO 최대 CP: 2,900 | 2026-06-05 |
-| pokemon-enamorus | Enamorus / 러브로스 | concept | ko | #905 러브로스 (페어리 / 비행) — GO 최대 CP: 3,425 | 2026-06-05 |
-| pokemon-entei | Entei / 앤테이 | concept | ko | #244 앤테이 (불꽃 / none) — GO 최대 CP: 3,473 | 2026-06-05 |
-| pokemon-escavalier | Escavalier / 슈바르고 | concept | ko | #589 슈바르고 (벌레 / 강철) — GO 최대 CP: 2,889 | 2026-06-05 |
-| pokemon-espathra | Espathra / 클레스퍼트라 | concept | ko | #956 클레스퍼트라 (에스퍼 / none) — GO 최대 CP: 2,477 | 2026-06-05 |
-| pokemon-espeon | Espeon / 에브이 | concept | ko | #196 에브이 (에스퍼 / none) — GO 최대 CP: 3,170 | 2026-06-05 |
-| pokemon-espurr | Espurr / 냐스퍼 | concept | ko | #677 냐스퍼 (에스퍼 / none) — GO 최대 CP: 1,259 | 2026-06-05 |
-| pokemon-eternatus | Eternatus / 무한다이노 | concept | ko | #890 무한다이노 (독 / 드래곤) — GO 최대 CP: 4,429 | 2026-06-05 |
-| pokemon-excadrill | Excadrill / 몰드류 | concept | ko | #530 몰드류 (땅 / 강철) — GO 최대 CP: 3,244 | 2026-06-05 |
-| pokemon-exeggcute | Exeggcute / 아라리 | concept | ko | #102 아라리 (풀/에스퍼 타입) — 기본 스탯 합계 325 | 2026-06-05 |
-| pokemon-exeggutor | Exeggutor / 나시 | concept | ko | #103 나시 (풀/에스퍼 타입) — 기본 스탯 합계 530 | 2026-06-05 |
-| pokemon-exploud | Exploud / 폭음룡 | concept | ko | #295 폭음룡 (노말 / none) — GO 최대 CP: 2,347 | 2026-06-05 |
-| pokemon-falinks | Falinks / 대여르 | concept | ko | #870 대여르 (격투 / none) — GO 최대 CP: 2,357 | 2026-06-05 |
+| pokemon-chikorita | Chikorita / 치코리타 | concept | ko | #152 치코리타 (풀) — GO 최대 CP: 935 | 2026-06-18 |
+| pokemon-chimchar | Chimchar / 불꽃숭이 | concept | ko | #390 불꽃숭이 (불꽃) — GO 최대 CP: 957 | 2026-06-18 |
+| pokemon-chimecho | Chimecho / 치렁 | concept | ko | #358 치렁 (에스퍼) — GO 최대 CP: 2,259 | 2026-06-18 |
+| pokemon-chinchou | Chinchou / 초라기 | concept | ko | #170 초라기 (물 / 전기) — GO 최대 CP: 1,119 | 2026-06-18 |
+| pokemon-chingling | Chingling / 랑딸랑 | concept | ko | #433 랑딸랑 (에스퍼) — GO 최대 CP: 1,005 | 2026-06-18 |
+| pokemon-cinccino | Cinccino / 치라치노 | concept | ko | #573 치라치노 (노말) — GO 최대 CP: 2,242 | 2026-06-18 |
+| pokemon-cinderace | Cinderace / 에이스번 | concept | ko | #815 에이스번 (불꽃) — GO 최대 CP: 3,018 | 2026-06-18 |
+| pokemon-clamperl | Clamperl / 진주몽 | concept | ko | #366 진주몽 (물) — GO 최대 CP: 1,270 | 2026-06-18 |
+| pokemon-clauncher | Clauncher / 완철포 | concept | ko | #692 완철포 (물) — GO 최대 CP: 1,088 | 2026-06-18 |
+| pokemon-clawitzer | Clawitzer / 블로스터 | concept | ko | #693 블로스터 (물) — GO 최대 CP: 2,763 | 2026-06-18 |
+| pokemon-claydol | Claydol / 점토도리 | concept | ko | #344 점토도리 (땅 / 에스퍼) — GO 최대 CP: 1,971 | 2026-06-18 |
+| pokemon-clefable | Clefable / 픽시 | concept | ko | #036 픽시 (페어리) — GO 최대 CP: 2,437 | 2026-06-18 |
+| pokemon-clefairy | Clefairy / 삐삐 | concept | ko | #035 삐삐 (페어리) — GO 최대 CP: 1,155 | 2026-06-18 |
+| pokemon-cleffa | Cleffa / 삐 | concept | ko | #173 삐 (페어리) — GO 최대 CP: 671 | 2026-06-18 |
+| pokemon-clobbopus | Clobbopus / 때때무노 | concept | ko | #852 때때무노 (격투) — GO 최대 CP: 1,137 | 2026-06-18 |
+| pokemon-clodsire | Clodsire / 토오 | concept | ko | #980 토오 (독 / 땅) — GO 최대 CP: 1,952 | 2026-06-18 |
+| pokemon-cloyster | Cloyster / 파르셀 | concept | ko | #091 파르셀 (물 / 얼음) — GO 최대 CP: 2,547 | 2026-06-18 |
+| pokemon-coalossal | Coalossal / 석탄산 | concept | ko | #839 석탄산 (바위 / 불꽃) — GO 최대 CP: 2,352 | 2026-06-18 |
+| pokemon-cobalion | Cobalion / 코바르온 | concept | ko | #638 코바르온 (강철 / 격투) — GO 최대 CP: 3,022 | 2026-06-18 |
+| pokemon-cofagrigus | Cofagrigus / 데스니칸 | concept | ko | #563 데스니칸 (고스트) — GO 최대 CP: 2,273 | 2026-06-18 |
+| pokemon-combee | Combee / 세꿀버리 | concept | ko | #415 세꿀버리 (벌레 / 비행) — GO 최대 CP: 494 | 2026-06-18 |
+| pokemon-combusken | Combusken / 영치코 | concept | ko | #256 영치코 (불꽃 / 격투) — GO 최대 CP: 1,652 | 2026-06-18 |
+| pokemon-comfey | Comfey / 큐아링 | concept | ko | #764 큐아링 (페어리) — GO 최대 CP: 2,115 | 2026-06-18 |
+| pokemon-conkeldurr | Conkeldurr / 노보청 | concept | ko | #534 노보청 (격투) — GO 최대 CP: 3,337 | 2026-06-18 |
+| pokemon-copperajah | Copperajah / 대왕끼리동 | concept | ko | #879 대왕끼리동 (강철) — GO 최대 CP: 2,980 | 2026-06-18 |
+| pokemon-corphish | Corphish / 가재군 | concept | ko | #341 가재군 (물) — GO 최대 CP: 1,230 | 2026-06-18 |
+| pokemon-corsola | Corsola / 코산호 | concept | ko | #222 코산호 (물 / 바위) — GO 최대 CP: 1,378 | 2026-06-18 |
+| pokemon-corviknight | Corviknight / 아머까오 | concept | ko | #823 아머까오 (비행 / 강철) — GO 최대 CP: 2,457 | 2026-06-18 |
+| pokemon-corvisquire | Corvisquire / 파크로우 | concept | ko | #822 파크로우 (비행) — GO 최대 CP: 1,363 | 2026-06-18 |
+| pokemon-cosmoem | Cosmoem / 코스모움 | concept | ko | #790 코스모움 (에스퍼) — GO 최대 CP: 817 | 2026-06-18 |
+| pokemon-cosmog | Cosmog / 코스모그 | concept | ko | #789 코스모그 (에스퍼) — GO 최대 CP: 432 | 2026-06-18 |
+| pokemon-cottonee | Cottonee / 소미안 | concept | ko | #546 소미안 (풀 / 페어리) — GO 최대 CP: 700 | 2026-06-18 |
+| pokemon-crabominable | Crabominable / 모단단게 | concept | ko | #740 모단단게 (격투 / 얼음) — GO 최대 CP: 2,907 | 2026-06-18 |
+| pokemon-crabrawler | Crabrawler / 오기지게 | concept | ko | #739 오기지게 (격투) — GO 최대 CP: 1,363 | 2026-06-18 |
+| pokemon-cradily | Cradily / 릴리요 | concept | ko | #346 릴리요 (바위 / 풀) — GO 최대 CP: 2,211 | 2026-06-18 |
+| pokemon-cramorant | Cramorant / 윽우지 | concept | ko | #845 윽우지 (비행 / 물) — GO 최대 CP: 2,142 | 2026-06-18 |
+| pokemon-cranidos | Cranidos / 두개도스 | concept | ko | #408 두개도스 (바위) — GO 최대 CP: 1,820 | 2026-06-18 |
+| pokemon-crawdaunt | Crawdaunt / 가재장군 | concept | ko | #342 가재장군 (물 / 악) — GO 최대 CP: 2,474 | 2026-06-18 |
+| pokemon-cresselia | Cresselia / 크레세리아 | concept | ko | #488 크레세리아 (에스퍼) — GO 최대 CP: 2,857 | 2026-06-18 |
+| pokemon-croagunk | Croagunk / 삐딱구리 | concept | ko | #453 삐딱구리 (독 / 격투) — GO 최대 CP: 952 | 2026-06-18 |
+| pokemon-crobat | Crobat / 크로뱃 | concept | ko | #169 크로뱃 (독 / 비행) — GO 최대 CP: 2,646 | 2026-06-18 |
+| pokemon-crocalor | Crocalor / 악뜨거 | concept | ko | #910 악뜨거 (불꽃) — GO 최대 CP: 1,936 | 2026-06-18 |
+| pokemon-croconaw | Croconaw / 엘리게이 | concept | ko | #159 엘리게이 (물) — GO 최대 CP: 1,722 | 2026-06-18 |
+| pokemon-crustle | Crustle / 암팰리스 | concept | ko | #558 암팰리스 (벌레 / 바위) — GO 최대 CP: 2,542 | 2026-06-18 |
+| pokemon-cryogonal | Cryogonal / 프리지오 | concept | ko | #615 프리지오 (얼음) — GO 최대 CP: 2,798 | 2026-06-18 |
+| pokemon-cubchoo | Cubchoo / 코고미 | concept | ko | #613 코고미 (얼음) — GO 최대 CP: 1,069 | 2026-06-18 |
+| pokemon-cubone | Cubone / 탕구리 | concept | ko | #104 탕구리 (땅) — GO 최대 CP: 1,019 | 2026-06-18 |
+| pokemon-cufant | Cufant / 끼리동 | concept | ko | #878 끼리동 (강철) — GO 최대 CP: 1,377 | 2026-06-18 |
+| pokemon-cursola | Cursola / 산호르곤 | concept | ko | #864 산호르곤 (고스트) — GO 최대 CP: 3,063 | 2026-06-18 |
+| pokemon-cutiefly | Cutiefly / 에블리 | concept | ko | #742 에블리 (벌레 / 페어리) — GO 최대 CP: 888 | 2026-06-18 |
+| pokemon-cyclizar | Cyclizar / 모토마 | concept | ko | #967 모토마 (드래곤 / 노말) — GO 최대 CP: 2,354 | 2026-06-18 |
+| pokemon-cyndaquil | Cyndaquil / 브케인 | concept | ko | #155 브케인 (불꽃) — GO 최대 CP: 980 | 2026-06-18 |
+| pokemon-dachsbun | Dachsbun / 바우첼 | concept | ko | #927 바우첼 (페어리) — GO 최대 CP: 2,096 | 2026-06-18 |
+| pokemon-darkrai | Darkrai / 다크라이 | concept | ko | #491 다크라이 (악) — GO 최대 CP: 3,739 | 2026-06-18 |
+| pokemon-darmanitan | Darmanitan / 불비달마 | concept | ko | #555 불비달마 (불꽃) — GO 최대 CP: 3,105 | 2026-06-18 |
+| pokemon-dartrix | Dartrix / 빼미스로우 | concept | ko | #723 빼미스로우 (풀 / 비행) — GO 최대 CP: 1,725 | 2026-06-18 |
+| pokemon-darumaka | Darumaka / 달막화 | concept | ko | #554 달막화 (불꽃) — GO 최대 CP: 1,442 | 2026-06-18 |
+| pokemon-decidueye | Decidueye / 모크나이퍼 | concept | ko | #724 모크나이퍼 (풀 / 고스트) — GO 최대 CP: 2,775 | 2026-06-18 |
+| pokemon-dedenne | Dedenne / 데덴네 | concept | ko | #702 데덴네 (전기 / 페어리) — GO 최대 CP: 1,841 | 2026-06-18 |
+| pokemon-deerling | Deerling / 사철록 | concept | ko | #585 사철록 (노말 / 풀) — GO 최대 CP: 1,135 | 2026-06-18 |
+| pokemon-deino | Deino / 모노두 | concept | ko | #633 모노두 (악 / 드래곤) — GO 최대 CP: 1,062 | 2026-06-18 |
+| pokemon-delcatty | Delcatty / 델케티 | concept | ko | #301 델케티 (노말) — GO 최대 CP: 1,496 | 2026-06-18 |
+| pokemon-delibird | Delibird / 딜리버드 | concept | ko | #225 딜리버드 (얼음 / 비행) — GO 최대 CP: 1,094 | 2026-06-18 |
+| pokemon-delphox | Delphox / 마폭시 | concept | ko | #655 마폭시 (불꽃 / 에스퍼) — GO 최대 CP: 3,059 | 2026-06-18 |
+| pokemon-deoxys | Deoxys / 테오키스 | concept | ko | #386 테오키스 (에스퍼) — GO 최대 CP: 3,160 | 2026-06-18 |
+| pokemon-dewgong | Dewgong / 쥬레곤 | concept | ko | #087 쥬레곤 (물 / 얼음) — GO 최대 CP: 1,985 | 2026-06-18 |
+| pokemon-dewott | Dewott / 쌍검자비 | concept | ko | #502 쌍검자비 (물) — GO 최대 CP: 1,741 | 2026-06-18 |
+| pokemon-dewpider | Dewpider / 물거미 | concept | ko | #751 물거미 (물 / 벌레) — GO 최대 CP: 714 | 2026-06-18 |
+| pokemon-dhelmise | Dhelmise / 타타륜 | concept | ko | #781 타타륜 (고스트 / 풀) — GO 최대 CP: 2,950 | 2026-06-18 |
+| pokemon-dialga | Dialga / 디아루가 | concept | ko | #483 디아루가 (강철 / 드래곤) — GO 최대 CP: 4,038 | 2026-06-18 |
+| pokemon-diancie | Diancie / 디안시 | concept | ko | #719 디안시 (바위 / 페어리) — GO 최대 CP: 2,734 | 2026-06-18 |
+| pokemon-diggersby | Diggersby / 파르토 | concept | ko | #660 파르토 (노말 / 땅) — GO 최대 CP: 1,509 | 2026-06-18 |
+| pokemon-diglett | Diglett / 디그다 | concept | ko | #050 디그다 (땅) — GO 최대 CP: 676 | 2026-06-18 |
+| pokemon-dipplin | Dipplin / 과미르 | concept | ko | #1011 과미르 (풀 / 드래곤) — GO 최대 CP: 2,371 | 2026-06-18 |
+| pokemon-ditto | Ditto / 메타몽 | concept | ko | #132 메타몽 (노말) — GO 최대 CP: 832 | 2026-06-18 |
+| pokemon-dodrio | Dodrio / 두트리오 | concept | ko | #085 두트리오 (노말 / 비행) — GO 최대 CP: 2,362 | 2026-06-18 |
+| pokemon-doduo | Doduo / 두두 | concept | ko | #084 두두 (노말 / 비행) — GO 최대 CP: 1,200 | 2026-06-18 |
+| pokemon-dolliv | Dolliv / 올리뇨 | concept | ko | #929 올리뇨 (풀 / 노말) — GO 최대 CP: 1,432 | 2026-06-18 |
+| pokemon-dondozo | Dondozo / 어써러셔 | concept | ko | #977 어써러셔 (물) — GO 최대 CP: 2,996 | 2026-06-18 |
+| pokemon-donphan | Donphan / 코리갑 | concept | ko | #232 코리갑 (땅) — GO 최대 CP: 3,013 | 2026-06-18 |
+| pokemon-dottler | Dottler / 레돔벌레 | concept | ko | #825 레돔벌레 (벌레 / 에스퍼) — GO 최대 CP: 1,030 | 2026-06-18 |
+| pokemon-doublade | Doublade / 쌍검킬 | concept | ko | #680 쌍검킬 (강철 / 고스트) — GO 최대 CP: 2,443 | 2026-06-18 |
+| pokemon-dracovish | Dracovish / 어래곤 | concept | ko | #882 어래곤 (물 / 드래곤) — GO 최대 CP: 2,500 | 2026-06-18 |
+| pokemon-dracozolt | Dracozolt / 파치래곤 | concept | ko | #880 파치래곤 (전기 / 드래곤) — GO 최대 CP: 2,621 | 2026-06-18 |
+| pokemon-dragalge | Dragalge / 드래캄 | concept | ko | #691 드래캄 (독 / 드래곤) — GO 최대 CP: 2,383 | 2026-06-18 |
+| pokemon-dragapult | Dragapult / 드래펄트 | concept | ko | #887 드래펄트 (드래곤 / 고스트) — GO 최대 CP: 3,532 | 2026-06-18 |
+| pokemon-dragonair | Dragonair / 신뇽 | concept | ko | #148 신뇽 (드래곤) — GO 최대 CP: 1,780 | 2026-06-18 |
+| pokemon-dragonite | Dragonite / 망나뇽 | concept | ko | #149 망나뇽 (드래곤 / 비행) — GO 최대 CP: 3,792 | 2026-06-18 |
+| pokemon-drakloak | Drakloak / 드래런치 | concept | ko | #886 드래런치 (드래곤 / 고스트) — GO 최대 CP: 1,651 | 2026-06-18 |
+| pokemon-drampa | Drampa / 할비롱 | concept | ko | #780 할비롱 (노말 / 드래곤) — GO 최대 CP: 2,914 | 2026-06-18 |
+| pokemon-drapion | Drapion / 드래피온 | concept | ko | #452 드래피온 (독 / 악) — GO 최대 CP: 2,453 | 2026-06-18 |
+| pokemon-dratini | Dratini / 미뇽 | concept | ko | #147 미뇽 (드래곤) — GO 최대 CP: 1,004 | 2026-06-18 |
+| pokemon-drednaw | Drednaw / 갈가부기 | concept | ko | #834 갈가부기 (물 / 바위) — GO 최대 CP: 2,838 | 2026-06-18 |
+| pokemon-dreepy | Dreepy / 드라꼰 | concept | ko | #885 드라꼰 (드래곤 / 고스트) — GO 최대 CP: 767 | 2026-06-18 |
+| pokemon-drifblim | Drifblim / 둥실라이드 | concept | ko | #426 둥실라이드 (고스트 / 비행) — GO 최대 CP: 2,382 | 2026-06-18 |
+| pokemon-drifloon | Drifloon / 흔들풍손 | concept | ko | #425 흔들풍손 (고스트 / 비행) — GO 최대 CP: 1,197 | 2026-06-18 |
+| pokemon-drilbur | Drilbur / 두더류 | concept | ko | #529 두더류 (땅) — GO 최대 CP: 1,376 | 2026-06-18 |
+| pokemon-drizzile | Drizzile / 누겔레온 | concept | ko | #817 누겔레온 (물) — GO 최대 CP: 1,894 | 2026-06-18 |
+| pokemon-drowzee | Drowzee / 슬리프 | concept | ko | #096 슬리프 (에스퍼) — GO 최대 CP: 1,040 | 2026-06-18 |
+| pokemon-druddigon | Druddigon / 크리만 | concept | ko | #621 크리만 (드래곤) — GO 최대 CP: 2,732 | 2026-06-18 |
+| pokemon-dubwool | Dubwool / 배우르 | concept | ko | #832 배우르 (노말) — GO 최대 CP: 2,191 | 2026-06-18 |
+| pokemon-ducklett | Ducklett / 꼬지보리 | concept | ko | #580 꼬지보리 (물 / 비행) — GO 최대 CP: 856 | 2026-06-18 |
+| pokemon-dudunsparce | Dudunsparce / 노고고치 | concept | ko | #982 노고고치 (노말) — GO 최대 CP: 2,739 | 2026-06-18 |
+| pokemon-dugtrio | Dugtrio / 닥트리오 | concept | ko | #051 닥트리오 (땅) — GO 최대 CP: 1,567 | 2026-06-18 |
+| pokemon-dunsparce | Dunsparce / 노고치 | concept | ko | #206 노고치 (노말) — GO 최대 CP: 1,689 | 2026-06-18 |
+| pokemon-duosion | Duosion / 듀란 | concept | ko | #578 듀란 (에스퍼) — GO 최대 CP: 2,018 | 2026-06-18 |
+| pokemon-duraludon | Duraludon / 두랄루돈 | concept | ko | #884 두랄루돈 (강철 / 드래곤) — GO 최대 CP: 3,067 | 2026-06-18 |
+| pokemon-durant | Durant / 아이앤트 | concept | ko | #632 아이앤트 (벌레 / 강철) — GO 최대 CP: 2,659 | 2026-06-18 |
+| pokemon-dusclops | Dusclops / 미라몽 | concept | ko | #356 미라몽 (고스트) — GO 최대 CP: 1,591 | 2026-06-18 |
+| pokemon-dusknoir | Dusknoir / 야느와르몽 | concept | ko | #477 야느와르몽 (고스트) — GO 최대 CP: 2,388 | 2026-06-18 |
+| pokemon-duskull | Duskull / 해골몽 | concept | ko | #355 해골몽 (고스트) — GO 최대 CP: 706 | 2026-06-18 |
+| pokemon-dustox | Dustox / 독케일 | concept | ko | #269 독케일 (벌레 / 독) — GO 최대 CP: 1,224 | 2026-06-18 |
+| pokemon-dwebble | Dwebble / 돌살이 | concept | ko | #557 돌살이 (벌레 / 바위) — GO 최대 CP: 1,224 | 2026-06-18 |
+| pokemon-eelektrik | Eelektrik / 저리릴 | concept | ko | #603 저리릴 (전기) — GO 최대 CP: 1,715 | 2026-06-18 |
+| pokemon-eelektross | Eelektross / 저리더프 | concept | ko | #604 저리더프 (전기) — GO 최대 CP: 2,732 | 2026-06-18 |
+| pokemon-eevee | Eevee / 이브이 | concept | ko | #133 이브이 (노말) — GO 최대 CP: 1,071 | 2026-06-18 |
+| pokemon-eiscue | Eiscue / 빙큐보 | concept | ko | #875 빙큐보 (얼음) — GO 최대 CP: 2,065 | 2026-06-18 |
+| pokemon-ekans | Ekans / 아보 | concept | ko | #023 아보 (독) — GO 최대 CP: 927 | 2026-06-18 |
+| pokemon-eldegoss | Eldegoss / 백솜모카 | concept | ko | #830 백솜모카 (풀) — GO 최대 CP: 1,995 | 2026-06-18 |
+| pokemon-electabuzz | Electabuzz / 에레브 | concept | ko | #125 에레브 (전기) — GO 최대 CP: 2,334 | 2026-06-18 |
+| pokemon-electivire | Electivire / 에레키블 | concept | ko | #466 에레키블 (전기) — GO 최대 CP: 3,079 | 2026-06-18 |
+| pokemon-electrike | Electrike / 썬더라이 | concept | ko | #309 썬더라이 (전기) — GO 최대 CP: 965 | 2026-06-18 |
+| pokemon-electrode | Electrode / 붐볼 | concept | ko | #101 붐볼 (전기) — GO 최대 CP: 2,099 | 2026-06-18 |
+| pokemon-elekid | Elekid / 에레키드 | concept | ko | #239 에레키드 (전기) — GO 최대 CP: 1,206 | 2026-06-18 |
+| pokemon-elgyem | Elgyem / 리그레 | concept | ko | #605 리그레 (에스퍼) — GO 최대 CP: 1,385 | 2026-06-18 |
+| pokemon-emboar | Emboar / 염무왕 | concept | ko | #500 염무왕 (불꽃 / 격투) — GO 최대 CP: 2,982 | 2026-06-18 |
+| pokemon-emolga | Emolga / 에몽가 | concept | ko | #587 에몽가 (전기 / 비행) — GO 최대 CP: 1,633 | 2026-06-18 |
+| pokemon-empoleon | Empoleon / 엠페르트 | concept | ko | #395 엠페르트 (물 / 강철) — GO 최대 CP: 2,900 | 2026-06-18 |
+| pokemon-enamorus | Enamorus / 러브로스 | concept | ko | #905 러브로스 (페어리 / 비행) — GO 최대 CP: 3,425 | 2026-06-18 |
+| pokemon-entei | Entei / 앤테이 | concept | ko | #244 앤테이 (불꽃) — GO 최대 CP: 3,473 | 2026-06-18 |
+| pokemon-escavalier | Escavalier / 슈바르고 | concept | ko | #589 슈바르고 (벌레 / 강철) — GO 최대 CP: 2,889 | 2026-06-18 |
+| pokemon-espathra | Espathra / 클레스퍼트라 | concept | ko | #956 클레스퍼트라 (에스퍼) — GO 최대 CP: 2,477 | 2026-06-18 |
+| pokemon-espeon | Espeon / 에브이 | concept | ko | #196 에브이 (에스퍼) — GO 최대 CP: 3,170 | 2026-06-18 |
+| pokemon-espurr | Espurr / 냐스퍼 | concept | ko | #677 냐스퍼 (에스퍼) — GO 최대 CP: 1,259 | 2026-06-18 |
+| pokemon-eternatus | Eternatus / 무한다이노 | concept | ko | #890 무한다이노 (독 / 드래곤) — GO 최대 CP: 4,429 | 2026-06-18 |
+| pokemon-excadrill | Excadrill / 몰드류 | concept | ko | #530 몰드류 (땅 / 강철) — GO 최대 CP: 3,244 | 2026-06-18 |
+| pokemon-exeggcute | Exeggcute / 아라리 | concept | ko | #102 아라리 (풀 / 에스퍼) — GO 최대 CP: 1,175 | 2026-06-18 |
+| pokemon-exeggutor | Exeggutor / 나시 | concept | ko | #103 나시 (풀 / 에스퍼) — GO 최대 CP: 3,014 | 2026-06-18 |
+| pokemon-exploud | Exploud / 폭음룡 | concept | ko | #295 폭음룡 (노말) — GO 최대 CP: 2,347 | 2026-06-18 |
+| pokemon-falinks | Falinks / 대여르 | concept | ko | #870 대여르 (격투) — GO 최대 CP: 2,357 | 2026-06-18 |
 | pokemon-farfetchd | Farfetchd / 파오리 | concept | ko | #083 파오리 (노말/비행 타입) — 기본 스탯 합계 377 | 2026-06-05 |
-| pokemon-farigiraf | Farigiraf / 키키링 | concept | ko | #981 키키링 (노말 / 에스퍼) — GO 최대 CP: 2,850 | 2026-06-05 |
-| pokemon-fearow | Fearow / 깨비드릴조 | concept | ko | #022 깨비드릴조 (노말/비행 타입) — 기본 스탯 합계 442 | 2026-06-05 |
-| pokemon-feebas | Feebas / 빈티나 | concept | ko | #349 빈티나 (물 / none) — GO 최대 CP: 274 | 2026-06-05 |
-| pokemon-fennekin | Fennekin / 푸호꼬 | concept | ko | #653 푸호꼬 (불꽃 / none) — GO 최대 CP: 1,028 | 2026-06-05 |
-| pokemon-feraligatr | Feraligatr / 장크로다일 | concept | ko | #160 장크로다일 (물 / none) — GO 최대 CP: 2,857 | 2026-06-05 |
-| pokemon-ferroseed | Ferroseed / 철시드 | concept | ko | #597 철시드 (풀 / 강철) — GO 최대 CP: 941 | 2026-06-05 |
-| pokemon-ferrothorn | Ferrothorn / 너트령 | concept | ko | #598 너트령 (풀 / 강철) — GO 최대 CP: 2,321 | 2026-06-05 |
-| pokemon-fezandipiti | Fezandipiti / 기로치 | concept | ko | #1016 기로치 (독 / 페어리) — GO 최대 CP: 2,433 | 2026-06-05 |
-| pokemon-fidough | Fidough / 쫀도기 | concept | ko | #926 쫀도기 (페어리 / none) — GO 최대 CP: 985 | 2026-06-05 |
-| pokemon-finizen | Finizen / 맨돌핀 | concept | ko | #963 맨돌핀 (물 / none) — GO 최대 CP: 874 | 2026-06-05 |
-| pokemon-finneon | Finneon / 형광어 | concept | ko | #456 형광어 (물 / none) — GO 최대 CP: 971 | 2026-06-05 |
-| pokemon-flaaffy | Flaaffy / 보송송 | concept | ko | #180 보송송 (전기 / none) — GO 최대 CP: 1,521 | 2026-06-05 |
+| pokemon-farigiraf | Farigiraf / 키키링 | concept | ko | #981 키키링 (노말 / 에스퍼) — GO 최대 CP: 2,850 | 2026-06-18 |
+| pokemon-fearow | Fearow / 깨비드릴조 | concept | ko | #022 깨비드릴조 (노말 / 비행) — GO 최대 CP: 1,997 | 2026-06-18 |
+| pokemon-feebas | Feebas / 빈티나 | concept | ko | #349 빈티나 (물) — GO 최대 CP: 274 | 2026-06-18 |
+| pokemon-fennekin | Fennekin / 푸호꼬 | concept | ko | #653 푸호꼬 (불꽃) — GO 최대 CP: 1,028 | 2026-06-18 |
+| pokemon-feraligatr | Feraligatr / 장크로다일 | concept | ko | #160 장크로다일 (물) — GO 최대 CP: 2,857 | 2026-06-18 |
+| pokemon-ferroseed | Ferroseed / 철시드 | concept | ko | #597 철시드 (풀 / 강철) — GO 최대 CP: 941 | 2026-06-18 |
+| pokemon-ferrothorn | Ferrothorn / 너트령 | concept | ko | #598 너트령 (풀 / 강철) — GO 최대 CP: 2,321 | 2026-06-18 |
+| pokemon-fezandipiti | Fezandipiti / 기로치 | concept | ko | #1016 기로치 (독 / 페어리) — GO 최대 CP: 2,433 | 2026-06-18 |
+| pokemon-fidough | Fidough / 쫀도기 | concept | ko | #926 쫀도기 (페어리) — GO 최대 CP: 985 | 2026-06-18 |
+| pokemon-finizen | Finizen / 맨돌핀 | concept | ko | #963 맨돌핀 (물) — GO 최대 CP: 874 | 2026-06-18 |
+| pokemon-finneon | Finneon / 형광어 | concept | ko | #456 형광어 (물) — GO 최대 CP: 971 | 2026-06-18 |
+| pokemon-flaaffy | Flaaffy / 보송송 | concept | ko | #180 보송송 (전기) — GO 최대 CP: 1,521 | 2026-06-18 |
 | pokemon-flabb | Flabébé / 플라베베 | concept | ko | #669 플라베베 (페어리 / none) — GO 최대 CP: 1,063 | 2026-06-05 |
-| pokemon-flamigo | Flamigo / 꼬이밍고 | concept | ko | #973 꼬이밍고 (비행 / 격투) — GO 최대 CP: 2,757 | 2026-06-05 |
-| pokemon-flapple | Flapple / 애프룡 | concept | ko | #841 애프룡 (풀 / 드래곤) — GO 최대 CP: 2,466 | 2026-06-05 |
-| pokemon-flareon | Flareon / 부스터 | concept | ko | #136 부스터 (불꽃 타입) — 기본 스탯 합계 525 | 2026-06-05 |
-| pokemon-fletchinder | Fletchinder / 불화살빈 | concept | ko | #662 불화살빈 (불꽃 / 비행) — GO 최대 CP: 1,469 | 2026-06-05 |
-| pokemon-fletchling | Fletchling / 화살꼬빈 | concept | ko | #661 화살꼬빈 (노말 / 비행) — GO 최대 CP: 800 | 2026-06-05 |
-| pokemon-flittle | Flittle / 하느라기 | concept | ko | #955 하느라기 (에스퍼 / none) — GO 최대 CP: 702 | 2026-06-05 |
-| pokemon-floatzel | Floatzel / 플로젤 | concept | ko | #419 플로젤 (물 / none) — GO 최대 CP: 2,443 | 2026-06-05 |
-| pokemon-floette | Floette / 플라엣테 | concept | ko | #670 플라엣테 (페어리 / none) — GO 최대 CP: 1,532 | 2026-06-05 |
-| pokemon-floragato | Floragato / 나로테 | concept | ko | #907 나로테 (풀 / none) — GO 최대 CP: 1,679 | 2026-06-05 |
-| pokemon-florges | Florges / 플라제스 | concept | ko | #671 플라제스 (페어리 / none) — GO 최대 CP: 3,234 | 2026-06-05 |
-| pokemon-flutter-mane | Flutter Mane / 날개치는머리 | concept | ko | #987 날개치는머리 (고스트 / 페어리) — GO 최대 CP: 3,696 | 2026-06-05 |
-| pokemon-flygon | Flygon / 플라이곤 | concept | ko | #330 플라이곤 (땅 / 드래곤) — GO 최대 CP: 2,661 | 2026-06-05 |
-| pokemon-fomantis | Fomantis / 짜랑랑 | concept | ko | #753 짜랑랑 (풀 / none) — GO 최대 CP: 741 | 2026-06-05 |
-| pokemon-foongus | Foongus / 깜놀버슬 | concept | ko | #590 깜놀버슬 (풀 / 독) — GO 최대 CP: 979 | 2026-06-05 |
-| pokemon-forretress | Forretress / 쏘콘 | concept | ko | #205 쏘콘 (벌레 / 강철) — GO 최대 CP: 2,282 | 2026-06-05 |
-| pokemon-fraxure | Fraxure / 액슨도 | concept | ko | #611 액슨도 (드래곤 / none) — GO 최대 CP: 2,234 | 2026-06-05 |
-| pokemon-frigibax | Frigibax / 드니차 | concept | ko | #996 드니차 (드래곤 / 얼음) — GO 최대 CP: 1,247 | 2026-06-05 |
-| pokemon-frillish | Frillish / 탱그릴 | concept | ko | #592 탱그릴 (물 / 고스트) — GO 최대 CP: 1,257 | 2026-06-05 |
-| pokemon-froakie | Froakie / 개구마르 | concept | ko | #656 개구마르 (물 / none) — GO 최대 CP: 992 | 2026-06-05 |
-| pokemon-frogadier | Frogadier / 개굴반장 | concept | ko | #657 개굴반장 (물 / none) — GO 최대 CP: 1,636 | 2026-06-05 |
-| pokemon-froslass | Froslass / 눈여아 | concept | ko | #478 눈여아 (얼음 / 고스트) — GO 최대 CP: 2,040 | 2026-06-05 |
-| pokemon-frosmoth | Frosmoth / 모스노우 | concept | ko | #873 모스노우 (얼음 / 벌레) — GO 최대 CP: 2,728 | 2026-06-05 |
-| pokemon-fuecoco | Fuecoco / 뜨아거 | concept | ko | #909 뜨아거 (불꽃 / none) — GO 최대 CP: 1,127 | 2026-06-05 |
-| pokemon-furfrou | Furfrou / 트리미앙 | concept | ko | #676 트리미앙 (노말 / none) — GO 최대 CP: 2,111 | 2026-06-05 |
-| pokemon-furret | Furret / 다꼬리 | concept | ko | #162 다꼬리 (노말 / none) — GO 최대 CP: 1,758 | 2026-06-05 |
-| pokemon-gabite | Gabite / 한바이트 | concept | ko | #444 한바이트 (드래곤 / 땅) — GO 최대 CP: 1,874 | 2026-06-05 |
-| pokemon-gallade | Gallade / 엘레이드 | concept | ko | #475 엘레이드 (에스퍼 / 격투) — GO 최대 CP: 3,093 | 2026-06-05 |
-| pokemon-galvantula | Galvantula / 전툴라 | concept | ko | #596 전툴라 (벌레 / 전기) — GO 최대 CP: 2,206 | 2026-06-05 |
-| pokemon-garbodor | Garbodor / 더스트나 | concept | ko | #569 더스트나 (독 / none) — GO 최대 CP: 2,345 | 2026-06-05 |
-| pokemon-garchomp | Garchomp / 한카리아스 | concept | ko | #445 한카리아스 (드래곤 / 땅) — GO 최대 CP: 3,962 | 2026-06-05 |
-| pokemon-gardevoir | Gardevoir / 가디안 | concept | ko | #282 가디안 (에스퍼 / 페어리) — GO 최대 CP: 3,093 | 2026-06-05 |
-| pokemon-garganacl | Garganacl / 콜로솔트 | concept | ko | #934 콜로솔트 (바위 / none) — GO 최대 CP: 2,711 | 2026-06-05 |
-| pokemon-gastly | Gastly / 고오스 | concept | ko | #092 고오스 (고스트/독 타입) — 기본 스탯 합계 310 | 2026-06-05 |
-| pokemon-gastrodon | Gastrodon / 트리토돈 | concept | ko | #423 트리토돈 (물 / 땅) — GO 최대 CP: 2,324 | 2026-06-05 |
-| pokemon-genesect | Genesect / 게노세크트 | concept | ko | #649 게노세크트 (벌레 / 강철) — GO 최대 CP: 3,353 | 2026-06-05 |
-| pokemon-gengar | Gengar / 팬텀 | concept | ko | #094 팬텀 (고스트/독 타입) — 기본 스탯 합계 500 | 2026-06-05 |
-| pokemon-geodude | Geodude / 꼬마돌 | concept | ko | #074 꼬마돌 (바위/땅 타입) — 기본 스탯 합계 300 | 2026-06-05 |
-| pokemon-gholdengo | Gholdengo / 타부자고 | concept | ko | #1000 타부자고 (강철 / 고스트) — GO 최대 CP: 3,517 | 2026-06-05 |
-| pokemon-gible | Gible / 딥상어동 | concept | ko | #443 딥상어동 (드래곤 / 땅) — GO 최대 CP: 1,112 | 2026-06-05 |
-| pokemon-gigalith | Gigalith / 기가이어스 | concept | ko | #526 기가이어스 (바위 / none) — GO 최대 CP: 3,228 | 2026-06-05 |
-| pokemon-gimmighoul | Gimmighoul / 모으령 | concept | ko | #999 모으령 (고스트 / none) — GO 최대 CP: 1,104 | 2026-06-05 |
-| pokemon-girafarig | Girafarig / 키링키 | concept | ko | #203 키링키 (노말 / 에스퍼) — GO 최대 CP: 2,046 | 2026-06-05 |
-| pokemon-giratina | Giratina / 기라티나 | concept | ko | #487 기라티나 (고스트 / 드래곤) — GO 최대 CP: 3,379 | 2026-06-05 |
-| pokemon-glaceon | Glaceon / 글레이시아 | concept | ko | #471 글레이시아 (얼음 / none) — GO 최대 CP: 3,126 | 2026-06-05 |
-| pokemon-glalie | Glalie / 얼음귀신 | concept | ko | #362 얼음귀신 (얼음 / none) — GO 최대 CP: 2,105 | 2026-06-05 |
-| pokemon-glameow | Glameow / 나옹마 | concept | ko | #431 나옹마 (노말 / none) — GO 최대 CP: 934 | 2026-06-05 |
-| pokemon-glastrier | Glastrier / 블리자포스 | concept | ko | #896 블리자포스 (얼음 / none) — GO 최대 CP: 3,895 | 2026-06-05 |
-| pokemon-gligar | Gligar / 글라이거 | concept | ko | #207 글라이거 (땅 / 비행) — GO 최대 CP: 1,857 | 2026-06-05 |
-| pokemon-glimmet | Glimmet / 초롱순 | concept | ko | #969 초롱순 (바위 / 독) — GO 최대 CP: 1,679 | 2026-06-05 |
-| pokemon-glimmora | Glimmora / 킬라플로르 | concept | ko | #970 킬라플로르 (바위 / 독) — GO 최대 CP: 3,273 | 2026-06-05 |
-| pokemon-gliscor | Gliscor / 글라이온 | concept | ko | #472 글라이온 (땅 / 비행) — GO 최대 CP: 2,692 | 2026-06-05 |
-| pokemon-gloom | Gloom / 냄새꼬 | concept | ko | #044 냄새꼬 (풀/독 타입) — 기본 스탯 합계 395 | 2026-06-05 |
-| pokemon-gogoat | Gogoat / 고고트 | concept | ko | #673 고고트 (풀 / none) — GO 최대 CP: 2,798 | 2026-06-05 |
-| pokemon-golbat | Golbat / 골뱃 | concept | ko | #042 골뱃 (독/비행 타입) — 기본 스탯 합계 455 | 2026-06-05 |
-| pokemon-goldeen | Goldeen / 콘치 | concept | ko | #118 콘치 (물 타입) — 기본 스탯 합계 320 | 2026-06-05 |
-| pokemon-golduck | Golduck / 골덕 | concept | ko | #055 골덕 (물 타입) — 기본 스탯 합계 500 | 2026-06-05 |
-| pokemon-golem | Golem / 딱구리 | concept | ko | #076 딱구리 (바위/땅 타입) — 기본 스탯 합계 495 | 2026-06-05 |
-| pokemon-golett | Golett / 골비람 | concept | ko | #622 골비람 (땅 / 고스트) — GO 최대 CP: 1,189 | 2026-06-05 |
-| pokemon-golisopod | Golisopod / 갑주무사 | concept | ko | #768 갑주무사 (벌레 / 물) — GO 최대 CP: 3,162 | 2026-06-05 |
-| pokemon-golurk | Golurk / 골루그 | concept | ko | #623 골루그 (땅 / 고스트) — GO 최대 CP: 2,854 | 2026-06-05 |
-| pokemon-goodra | Goodra / 미끄래곤 | concept | ko | #706 미끄래곤 (드래곤 / none) — GO 최대 CP: 3,505 | 2026-06-05 |
-| pokemon-goomy | Goomy / 미끄메라 | concept | ko | #704 미끄메라 (드래곤 / none) — GO 최대 CP: 976 | 2026-06-05 |
-| pokemon-gorebyss | Gorebyss / 분홍장이 | concept | ko | #368 분홍장이 (물 / none) — GO 최대 CP: 2,494 | 2026-06-05 |
-| pokemon-gossifleur | Gossifleur / 꼬모카 | concept | ko | #829 꼬모카 (풀 / none) — GO 최대 CP: 672 | 2026-06-05 |
-| pokemon-gothita | Gothita / 고디탱 | concept | ko | #574 고디탱 (에스퍼 / none) — GO 최대 CP: 951 | 2026-06-05 |
-| pokemon-gothitelle | Gothitelle / 고디모아젤 | concept | ko | #576 고디모아젤 (에스퍼 / none) — GO 최대 CP: 2,419 | 2026-06-05 |
-| pokemon-gothorita | Gothorita / 고디보미 | concept | ko | #575 고디보미 (에스퍼 / none) — GO 최대 CP: 1,604 | 2026-06-05 |
-| pokemon-gouging-fire | Gouging Fire / 꿰뚫는화염 | concept | ko | #1020 꿰뚫는화염 (불꽃 / 드래곤) — GO 최대 CP: 3,098 | 2026-06-05 |
-| pokemon-gourgeist | Gourgeist / 펌킨인 | concept | ko | #711 펌킨인 (고스트 / 풀) — GO 최대 CP: 2,390 | 2026-06-05 |
-| pokemon-grafaiai | Grafaiai / 태깅구르 | concept | ko | #945 태깅구르 (독 / 노말) — GO 최대 CP: 2,264 | 2026-06-05 |
-| pokemon-granbull | Granbull / 그랑블루 | concept | ko | #210 그랑블루 (페어리 / none) — GO 최대 CP: 2,552 | 2026-06-05 |
-| pokemon-grapploct | Grapploct / 케오퍼스 | concept | ko | #853 케오퍼스 (격투 / none) — GO 최대 CP: 2,664 | 2026-06-05 |
-| pokemon-graveler | Graveler / 데구리 | concept | ko | #075 데구리 (바위/땅 타입) — 기본 스탯 합계 390 | 2026-06-05 |
-| pokemon-great-tusk | Great Tusk / 위대한엄니 | concept | ko | #984 위대한엄니 (땅 / 격투) — GO 최대 CP: 4,024 | 2026-06-05 |
-| pokemon-greavard | Greavard / 망망이 | concept | ko | #971 망망이 (고스트 / none) — GO 최대 CP: 1,016 | 2026-06-05 |
-| pokemon-greedent | Greedent / 요씽리스 | concept | ko | #820 요씽리스 (노말 / none) — GO 최대 CP: 2,370 | 2026-06-05 |
-| pokemon-greninja | Greninja / 개굴닌자 | concept | ko | #658 개굴닌자 (물 / 악) — GO 최대 CP: 2,654 | 2026-06-05 |
-| pokemon-grimer | Grimer / 질퍽이 | concept | ko | #088 질퍽이 (독 타입) — 기본 스탯 합계 325 | 2026-06-05 |
-| pokemon-grimmsnarl | Grimmsnarl / 오롱털 | concept | ko | #861 오롱털 (악 / 페어리) — GO 최대 CP: 2,850 | 2026-06-05 |
-| pokemon-grookey | Grookey / 흥나숭 | concept | ko | #810 흥나숭 (풀 / none) — GO 최대 CP: 1,086 | 2026-06-05 |
-| pokemon-grotle | Grotle / 수풀부기 | concept | ko | #388 수풀부기 (풀 / none) — GO 최대 CP: 1,890 | 2026-06-05 |
-| pokemon-groudon | Groudon / 그란돈 | concept | ko | #383 그란돈 (땅 / none) — GO 최대 CP: 4,115 | 2026-06-05 |
-| pokemon-grovyle | Grovyle / 나무돌이 | concept | ko | #253 나무돌이 (풀 / none) — GO 최대 CP: 1,673 | 2026-06-05 |
-| pokemon-growlithe | Growlithe / 가디 | concept | ko | #058 가디 (불꽃 타입) — 기본 스탯 합계 350 | 2026-06-05 |
-| pokemon-grubbin | Grubbin / 턱지충이 | concept | ko | #736 턱지충이 (벌레 / none) — GO 최대 CP: 984 | 2026-06-05 |
-| pokemon-grumpig | Grumpig / 피그킹 | concept | ko | #326 피그킹 (에스퍼 / none) — GO 최대 CP: 2,369 | 2026-06-05 |
-| pokemon-gulpin | Gulpin / 꼴깍몬 | concept | ko | #316 꼴깍몬 (독 / none) — GO 최대 CP: 866 | 2026-06-05 |
-| pokemon-gumshoos | Gumshoos / 형사구스 | concept | ko | #735 형사구스 (노말 / none) — GO 최대 CP: 2,185 | 2026-06-05 |
-| pokemon-gurdurr | Gurdurr / 토쇠골 | concept | ko | #533 토쇠골 (격투 / none) — GO 최대 CP: 2,169 | 2026-06-05 |
-| pokemon-guzzlord | Guzzlord / 악식킹 | concept | ko | #799 악식킹 (악 / 드래곤) — GO 최대 CP: 2,887 | 2026-06-05 |
-| pokemon-gyarados | Gyarados / 갸라도스 | concept | ko | #130 갸라도스 (물/비행 타입) — 기본 스탯 합계 540 | 2026-06-05 |
+| pokemon-flamigo | Flamigo / 꼬이밍고 | concept | ko | #973 꼬이밍고 (비행 / 격투) — GO 최대 CP: 2,757 | 2026-06-18 |
+| pokemon-flapple | Flapple / 애프룡 | concept | ko | #841 애프룡 (풀 / 드래곤) — GO 최대 CP: 2,466 | 2026-06-18 |
+| pokemon-flareon | Flareon / 부스터 | concept | ko | #136 부스터 (불꽃) — GO 최대 CP: 3,029 | 2026-06-18 |
+| pokemon-fletchinder | Fletchinder / 불화살빈 | concept | ko | #662 불화살빈 (불꽃 / 비행) — GO 최대 CP: 1,469 | 2026-06-18 |
+| pokemon-fletchling | Fletchling / 화살꼬빈 | concept | ko | #661 화살꼬빈 (노말 / 비행) — GO 최대 CP: 800 | 2026-06-18 |
+| pokemon-flittle | Flittle / 하느라기 | concept | ko | #955 하느라기 (에스퍼) — GO 최대 CP: 702 | 2026-06-18 |
+| pokemon-floatzel | Floatzel / 플로젤 | concept | ko | #419 플로젤 (물) — GO 최대 CP: 2,443 | 2026-06-18 |
+| pokemon-floette | Floette / 플라엣테 | concept | ko | #670 플라엣테 (페어리) — GO 최대 CP: 1,532 | 2026-06-18 |
+| pokemon-floragato | Floragato / 나로테 | concept | ko | #907 나로테 (풀) — GO 최대 CP: 1,679 | 2026-06-18 |
+| pokemon-florges | Florges / 플라제스 | concept | ko | #671 플라제스 (페어리) — GO 최대 CP: 3,234 | 2026-06-18 |
+| pokemon-flutter-mane | Flutter Mane / 날개치는머리 | concept | ko | #987 날개치는머리 (고스트 / 페어리) — GO 최대 CP: 3,696 | 2026-06-18 |
+| pokemon-flygon | Flygon / 플라이곤 | concept | ko | #330 플라이곤 (땅 / 드래곤) — GO 최대 CP: 2,661 | 2026-06-18 |
+| pokemon-fomantis | Fomantis / 짜랑랑 | concept | ko | #753 짜랑랑 (풀) — GO 최대 CP: 741 | 2026-06-18 |
+| pokemon-foongus | Foongus / 깜놀버슬 | concept | ko | #590 깜놀버슬 (풀 / 독) — GO 최대 CP: 979 | 2026-06-18 |
+| pokemon-forretress | Forretress / 쏘콘 | concept | ko | #205 쏘콘 (벌레 / 강철) — GO 최대 CP: 2,282 | 2026-06-18 |
+| pokemon-fraxure | Fraxure / 액슨도 | concept | ko | #611 액슨도 (드래곤) — GO 최대 CP: 2,234 | 2026-06-18 |
+| pokemon-frigibax | Frigibax / 드니차 | concept | ko | #996 드니차 (드래곤 / 얼음) — GO 최대 CP: 1,247 | 2026-06-18 |
+| pokemon-frillish | Frillish / 탱그릴 | concept | ko | #592 탱그릴 (물 / 고스트) — GO 최대 CP: 1,257 | 2026-06-18 |
+| pokemon-froakie | Froakie / 개구마르 | concept | ko | #656 개구마르 (물) — GO 최대 CP: 992 | 2026-06-18 |
+| pokemon-frogadier | Frogadier / 개굴반장 | concept | ko | #657 개굴반장 (물) — GO 최대 CP: 1,636 | 2026-06-18 |
+| pokemon-froslass | Froslass / 눈여아 | concept | ko | #478 눈여아 (얼음 / 고스트) — GO 최대 CP: 2,040 | 2026-06-18 |
+| pokemon-frosmoth | Frosmoth / 모스노우 | concept | ko | #873 모스노우 (얼음 / 벌레) — GO 최대 CP: 2,728 | 2026-06-18 |
+| pokemon-fuecoco | Fuecoco / 뜨아거 | concept | ko | #909 뜨아거 (불꽃) — GO 최대 CP: 1,127 | 2026-06-18 |
+| pokemon-furfrou | Furfrou / 트리미앙 | concept | ko | #676 트리미앙 (노말) — GO 최대 CP: 2,111 | 2026-06-18 |
+| pokemon-furret | Furret / 다꼬리 | concept | ko | #162 다꼬리 (노말) — GO 최대 CP: 1,758 | 2026-06-18 |
+| pokemon-gabite | Gabite / 한바이트 | concept | ko | #444 한바이트 (드래곤 / 땅) — GO 최대 CP: 1,874 | 2026-06-18 |
+| pokemon-gallade | Gallade / 엘레이드 | concept | ko | #475 엘레이드 (에스퍼 / 격투) — GO 최대 CP: 3,093 | 2026-06-18 |
+| pokemon-galvantula | Galvantula / 전툴라 | concept | ko | #596 전툴라 (벌레 / 전기) — GO 최대 CP: 2,206 | 2026-06-18 |
+| pokemon-garbodor | Garbodor / 더스트나 | concept | ko | #569 더스트나 (독) — GO 최대 CP: 2,345 | 2026-06-18 |
+| pokemon-garchomp | Garchomp / 한카리아스 | concept | ko | #445 한카리아스 (드래곤 / 땅) — GO 최대 CP: 3,962 | 2026-06-18 |
+| pokemon-gardevoir | Gardevoir / 가디안 | concept | ko | #282 가디안 (에스퍼 / 페어리) — GO 최대 CP: 3,093 | 2026-06-18 |
+| pokemon-garganacl | Garganacl / 콜로솔트 | concept | ko | #934 콜로솔트 (바위) — GO 최대 CP: 2,711 | 2026-06-18 |
+| pokemon-gastly | Gastly / 고오스 | concept | ko | #092 고오스 (고스트 / 독) — GO 최대 CP: 1,229 | 2026-06-18 |
+| pokemon-gastrodon | Gastrodon / 트리토돈 | concept | ko | #423 트리토돈 (물 / 땅) — GO 최대 CP: 2,324 | 2026-06-18 |
+| pokemon-genesect | Genesect / 게노세크트 | concept | ko | #649 게노세크트 (벌레 / 강철) — GO 최대 CP: 3,353 | 2026-06-18 |
+| pokemon-gengar | Gengar / 팬텀 | concept | ko | #094 팬텀 (고스트 / 독) — GO 최대 CP: 2,878 | 2026-06-18 |
+| pokemon-geodude | Geodude / 꼬마돌 | concept | ko | #074 꼬마돌 (바위 / 땅) — GO 최대 CP: 1,293 | 2026-06-18 |
+| pokemon-gholdengo | Gholdengo / 타부자고 | concept | ko | #1000 타부자고 (강철 / 고스트) — GO 최대 CP: 3,517 | 2026-06-18 |
+| pokemon-gible | Gible / 딥상어동 | concept | ko | #443 딥상어동 (드래곤 / 땅) — GO 최대 CP: 1,112 | 2026-06-18 |
+| pokemon-gigalith | Gigalith / 기가이어스 | concept | ko | #526 기가이어스 (바위) — GO 최대 CP: 3,228 | 2026-06-18 |
+| pokemon-gimmighoul | Gimmighoul / 모으령 | concept | ko | #999 모으령 (고스트) — GO 최대 CP: 1,104 | 2026-06-18 |
+| pokemon-girafarig | Girafarig / 키링키 | concept | ko | #203 키링키 (노말 / 에스퍼) — GO 최대 CP: 2,046 | 2026-06-18 |
+| pokemon-giratina | Giratina / 기라티나 | concept | ko | #487 기라티나 (고스트 / 드래곤) — GO 최대 CP: 3,379 | 2026-06-18 |
+| pokemon-glaceon | Glaceon / 글레이시아 | concept | ko | #471 글레이시아 (얼음) — GO 최대 CP: 3,126 | 2026-06-18 |
+| pokemon-glalie | Glalie / 얼음귀신 | concept | ko | #362 얼음귀신 (얼음) — GO 최대 CP: 2,105 | 2026-06-18 |
+| pokemon-glameow | Glameow / 나옹마 | concept | ko | #431 나옹마 (노말) — GO 최대 CP: 934 | 2026-06-18 |
+| pokemon-glastrier | Glastrier / 블리자포스 | concept | ko | #896 블리자포스 (얼음) — GO 최대 CP: 3,895 | 2026-06-18 |
+| pokemon-gligar | Gligar / 글라이거 | concept | ko | #207 글라이거 (땅 / 비행) — GO 최대 CP: 1,857 | 2026-06-18 |
+| pokemon-glimmet | Glimmet / 초롱순 | concept | ko | #969 초롱순 (바위 / 독) — GO 최대 CP: 1,679 | 2026-06-18 |
+| pokemon-glimmora | Glimmora / 킬라플로르 | concept | ko | #970 킬라플로르 (바위 / 독) — GO 최대 CP: 3,273 | 2026-06-18 |
+| pokemon-gliscor | Gliscor / 글라이온 | concept | ko | #472 글라이온 (땅 / 비행) — GO 최대 CP: 2,692 | 2026-06-18 |
+| pokemon-gloom | Gloom / 냄새꼬 | concept | ko | #044 냄새꼬 (풀 / 독) — GO 최대 CP: 1,681 | 2026-06-18 |
+| pokemon-gogoat | Gogoat / 고고트 | concept | ko | #673 고고트 (풀) — GO 최대 CP: 2,798 | 2026-06-18 |
+| pokemon-golbat | Golbat / 골뱃 | concept | ko | #042 골뱃 (독 / 비행) — GO 최대 CP: 1,976 | 2026-06-18 |
+| pokemon-goldeen | Goldeen / 콘치 | concept | ko | #118 콘치 (물) — GO 최대 CP: 1,152 | 2026-06-18 |
+| pokemon-golduck | Golduck / 골덕 | concept | ko | #055 골덕 (물) — GO 최대 CP: 2,450 | 2026-06-18 |
+| pokemon-golem | Golem / 딱구리 | concept | ko | #076 딱구리 (바위 / 땅) — GO 최대 CP: 2,949 | 2026-06-18 |
+| pokemon-golett | Golett / 골비람 | concept | ko | #622 골비람 (땅 / 고스트) — GO 최대 CP: 1,189 | 2026-06-18 |
+| pokemon-golisopod | Golisopod / 갑주무사 | concept | ko | #768 갑주무사 (벌레 / 물) — GO 최대 CP: 3,162 | 2026-06-18 |
+| pokemon-golurk | Golurk / 골루그 | concept | ko | #623 골루그 (땅 / 고스트) — GO 최대 CP: 2,854 | 2026-06-18 |
+| pokemon-goodra | Goodra / 미끄래곤 | concept | ko | #706 미끄래곤 (드래곤) — GO 최대 CP: 3,505 | 2026-06-18 |
+| pokemon-goomy | Goomy / 미끄메라 | concept | ko | #704 미끄메라 (드래곤) — GO 최대 CP: 976 | 2026-06-18 |
+| pokemon-gorebyss | Gorebyss / 분홍장이 | concept | ko | #368 분홍장이 (물) — GO 최대 CP: 2,494 | 2026-06-18 |
+| pokemon-gossifleur | Gossifleur / 꼬모카 | concept | ko | #829 꼬모카 (풀) — GO 최대 CP: 672 | 2026-06-18 |
+| pokemon-gothita | Gothita / 고디탱 | concept | ko | #574 고디탱 (에스퍼) — GO 최대 CP: 951 | 2026-06-18 |
+| pokemon-gothitelle | Gothitelle / 고디모아젤 | concept | ko | #576 고디모아젤 (에스퍼) — GO 최대 CP: 2,419 | 2026-06-18 |
+| pokemon-gothorita | Gothorita / 고디보미 | concept | ko | #575 고디보미 (에스퍼) — GO 최대 CP: 1,604 | 2026-06-18 |
+| pokemon-gouging-fire | Gouging Fire / 꿰뚫는화염 | concept | ko | #1020 꿰뚫는화염 (불꽃 / 드래곤) — GO 최대 CP: 3,098 | 2026-06-18 |
+| pokemon-gourgeist | Gourgeist / 펌킨인 | concept | ko | #711 펌킨인 (고스트 / 풀) — GO 최대 CP: 2,390 | 2026-06-18 |
+| pokemon-grafaiai | Grafaiai / 태깅구르 | concept | ko | #945 태깅구르 (독 / 노말) — GO 최대 CP: 2,264 | 2026-06-18 |
+| pokemon-granbull | Granbull / 그랑블루 | concept | ko | #210 그랑블루 (페어리) — GO 최대 CP: 2,552 | 2026-06-18 |
+| pokemon-grapploct | Grapploct / 케오퍼스 | concept | ko | #853 케오퍼스 (격투) — GO 최대 CP: 2,664 | 2026-06-18 |
+| pokemon-graveler | Graveler / 데구리 | concept | ko | #075 데구리 (바위 / 땅) — GO 최대 CP: 1,897 | 2026-06-18 |
+| pokemon-great-tusk | Great Tusk / 위대한엄니 | concept | ko | #984 위대한엄니 (땅 / 격투) — GO 최대 CP: 4,024 | 2026-06-18 |
+| pokemon-greavard | Greavard / 망망이 | concept | ko | #971 망망이 (고스트) — GO 최대 CP: 1,016 | 2026-06-18 |
+| pokemon-greedent | Greedent / 요씽리스 | concept | ko | #820 요씽리스 (노말) — GO 최대 CP: 2,370 | 2026-06-18 |
+| pokemon-greninja | Greninja / 개굴닌자 | concept | ko | #658 개굴닌자 (물 / 악) — GO 최대 CP: 2,654 | 2026-06-18 |
+| pokemon-grimer | Grimer / 질퍽이 | concept | ko | #088 질퍽이 (독) — GO 최대 CP: 1,374 | 2026-06-18 |
+| pokemon-grimmsnarl | Grimmsnarl / 오롱털 | concept | ko | #861 오롱털 (악 / 페어리) — GO 최대 CP: 2,850 | 2026-06-18 |
+| pokemon-grookey | Grookey / 흥나숭 | concept | ko | #810 흥나숭 (풀) — GO 최대 CP: 1,086 | 2026-06-18 |
+| pokemon-grotle | Grotle / 수풀부기 | concept | ko | #388 수풀부기 (풀) — GO 최대 CP: 1,890 | 2026-06-18 |
+| pokemon-groudon | Groudon / 그란돈 | concept | ko | #383 그란돈 (땅) — GO 최대 CP: 4,115 | 2026-06-18 |
+| pokemon-grovyle | Grovyle / 나무돌이 | concept | ko | #253 나무돌이 (풀) — GO 최대 CP: 1,673 | 2026-06-18 |
+| pokemon-growlithe | Growlithe / 가디 | concept | ko | #058 가디 (불꽃) — GO 최대 CP: 1,243 | 2026-06-18 |
+| pokemon-grubbin | Grubbin / 턱지충이 | concept | ko | #736 턱지충이 (벌레) — GO 최대 CP: 984 | 2026-06-18 |
+| pokemon-grumpig | Grumpig / 피그킹 | concept | ko | #326 피그킹 (에스퍼) — GO 최대 CP: 2,369 | 2026-06-18 |
+| pokemon-gulpin | Gulpin / 꼴깍몬 | concept | ko | #316 꼴깍몬 (독) — GO 최대 CP: 866 | 2026-06-18 |
+| pokemon-gumshoos | Gumshoos / 형사구스 | concept | ko | #735 형사구스 (노말) — GO 최대 CP: 2,185 | 2026-06-18 |
+| pokemon-gurdurr | Gurdurr / 토쇠골 | concept | ko | #533 토쇠골 (격투) — GO 최대 CP: 2,169 | 2026-06-18 |
+| pokemon-guzzlord | Guzzlord / 악식킹 | concept | ko | #799 악식킹 (악 / 드래곤) — GO 최대 CP: 2,887 | 2026-06-18 |
+| pokemon-gyarados | Gyarados / 갸라도스 | concept | ko | #130 갸라도스 (물 / 비행) — GO 최대 CP: 3,391 | 2026-06-18 |
 | pokemon-hakamo-o | Hakamo-o / 짜랑고우 | concept | ko | #783 짜랑고우 (드래곤 / 격투) — GO 최대 CP: 1,686 | 2026-06-05 |
-| pokemon-happiny | Happiny / 핑복 | concept | ko | #440 핑복 (노말 / none) — GO 최대 CP: 371 | 2026-06-05 |
-| pokemon-hariyama | Hariyama / 하리뭉 | concept | ko | #297 하리뭉 (격투 / none) — GO 최대 CP: 2,829 | 2026-06-05 |
-| pokemon-hatenna | Hatenna / 몸지브림 | concept | ko | #856 몸지브림 (에스퍼 / none) — GO 최대 CP: 861 | 2026-06-05 |
-| pokemon-hatterene | Hatterene / 브리무음 | concept | ko | #858 브리무음 (에스퍼 / 페어리) — GO 최대 CP: 2,829 | 2026-06-05 |
-| pokemon-hattrem | Hattrem / 손지브림 | concept | ko | #857 손지브림 (에스퍼 / none) — GO 최대 CP: 1,634 | 2026-06-05 |
-| pokemon-haunter | Haunter / 고우스트 | concept | ko | #093 고우스트 (고스트/독 타입) — 기본 스탯 합계 405 | 2026-06-05 |
-| pokemon-hawlucha | Hawlucha / 루차불 | concept | ko | #701 루차불 (격투 / 비행) — GO 최대 CP: 2,410 | 2026-06-05 |
-| pokemon-haxorus | Haxorus / 액스라이즈 | concept | ko | #612 액스라이즈 (드래곤 / none) — GO 최대 CP: 3,593 | 2026-06-05 |
-| pokemon-heatmor | Heatmor / 앤티골 | concept | ko | #631 앤티골 (불꽃 / none) — GO 최대 CP: 2,395 | 2026-06-05 |
-| pokemon-heatran | Heatran / 히드런 | concept | ko | #485 히드런 (불꽃 / 강철) — GO 최대 CP: 3,754 | 2026-06-05 |
-| pokemon-heliolisk | Heliolisk / 일레도리자드 | concept | ko | #695 일레도리자드 (전기 / 노말) — GO 최대 CP: 2,600 | 2026-06-05 |
-| pokemon-helioptile | Helioptile / 목도리키텔 | concept | ko | #694 목도리키텔 (전기 / 노말) — GO 최대 CP: 933 | 2026-06-05 |
-| pokemon-heracross | Heracross / 헤라크로스 | concept | ko | #214 헤라크로스 (벌레 / 격투) — GO 최대 CP: 3,101 | 2026-06-05 |
-| pokemon-herdier | Herdier / 하데리어 | concept | ko | #507 하데리어 (노말 / none) — GO 최대 CP: 1,583 | 2026-06-05 |
-| pokemon-hippopotas | Hippopotas / 히포포타스 | concept | ko | #449 히포포타스 (땅 / none) — GO 최대 CP: 1,358 | 2026-06-05 |
-| pokemon-hippowdon | Hippowdon / 하마돈 | concept | ko | #450 하마돈 (땅 / none) — GO 최대 CP: 3,085 | 2026-06-05 |
-| pokemon-hitmonchan | Hitmonchan / 홍수몬 | concept | ko | #107 홍수몬 (격투 타입) — 기본 스탯 합계 455 | 2026-06-05 |
-| pokemon-hitmonlee | Hitmonlee / 시라소몬 | concept | ko | #106 시라소몬 (격투 타입) — 기본 스탯 합계 455 | 2026-06-05 |
-| pokemon-hitmontop | Hitmontop / 카포에라 | concept | ko | #237 카포에라 (격투 / none) — GO 최대 CP: 2,156 | 2026-06-05 |
+| pokemon-happiny | Happiny / 핑복 | concept | ko | #440 핑복 (노말) — GO 최대 CP: 371 | 2026-06-18 |
+| pokemon-hariyama | Hariyama / 하리뭉 | concept | ko | #297 하리뭉 (격투) — GO 최대 CP: 2,829 | 2026-06-18 |
+| pokemon-hatenna | Hatenna / 몸지브림 | concept | ko | #856 몸지브림 (에스퍼) — GO 최대 CP: 861 | 2026-06-18 |
+| pokemon-hatterene | Hatterene / 브리무음 | concept | ko | #858 브리무음 (에스퍼 / 페어리) — GO 최대 CP: 2,829 | 2026-06-18 |
+| pokemon-hattrem | Hattrem / 손지브림 | concept | ko | #857 손지브림 (에스퍼) — GO 최대 CP: 1,634 | 2026-06-18 |
+| pokemon-haunter | Haunter / 고우스트 | concept | ko | #093 고우스트 (고스트 / 독) — GO 최대 CP: 1,963 | 2026-06-18 |
+| pokemon-hawlucha | Hawlucha / 루차불 | concept | ko | #701 루차불 (격투 / 비행) — GO 최대 CP: 2,410 | 2026-06-18 |
+| pokemon-haxorus | Haxorus / 액스라이즈 | concept | ko | #612 액스라이즈 (드래곤) — GO 최대 CP: 3,593 | 2026-06-18 |
+| pokemon-heatmor | Heatmor / 앤티골 | concept | ko | #631 앤티골 (불꽃) — GO 최대 CP: 2,395 | 2026-06-18 |
+| pokemon-heatran | Heatran / 히드런 | concept | ko | #485 히드런 (불꽃 / 강철) — GO 최대 CP: 3,754 | 2026-06-18 |
+| pokemon-heliolisk | Heliolisk / 일레도리자드 | concept | ko | #695 일레도리자드 (전기 / 노말) — GO 최대 CP: 2,600 | 2026-06-18 |
+| pokemon-helioptile | Helioptile / 목도리키텔 | concept | ko | #694 목도리키텔 (전기 / 노말) — GO 최대 CP: 933 | 2026-06-18 |
+| pokemon-heracross | Heracross / 헤라크로스 | concept | ko | #214 헤라크로스 (벌레 / 격투) — GO 최대 CP: 3,101 | 2026-06-18 |
+| pokemon-herdier | Herdier / 하데리어 | concept | ko | #507 하데리어 (노말) — GO 최대 CP: 1,583 | 2026-06-18 |
+| pokemon-hippopotas | Hippopotas / 히포포타스 | concept | ko | #449 히포포타스 (땅) — GO 최대 CP: 1,358 | 2026-06-18 |
+| pokemon-hippowdon | Hippowdon / 하마돈 | concept | ko | #450 하마돈 (땅) — GO 최대 CP: 3,085 | 2026-06-18 |
+| pokemon-hitmonchan | Hitmonchan / 홍수몬 | concept | ko | #107 홍수몬 (격투) — GO 최대 CP: 2,332 | 2026-06-18 |
+| pokemon-hitmonlee | Hitmonlee / 시라소몬 | concept | ko | #106 시라소몬 (격투) — GO 최대 CP: 2,576 | 2026-06-18 |
+| pokemon-hitmontop | Hitmontop / 카포에라 | concept | ko | #237 카포에라 (격투) — GO 최대 CP: 2,156 | 2026-06-18 |
 | pokemon-ho-oh | Ho-Oh / 칠색조 | concept | ko | #250 칠색조 (불꽃 / 비행) — GO 최대 CP: 3,863 | 2026-06-05 |
-| pokemon-honchkrow | Honchkrow / 돈크로우 | concept | ko | #430 돈크로우 (악 / 비행) — GO 최대 CP: 2,711 | 2026-06-05 |
-| pokemon-honedge | Honedge / 단칼빙 | concept | ko | #679 단칼빙 (강철 / 고스트) — GO 최대 CP: 1,390 | 2026-06-05 |
-| pokemon-hoopa | Hoopa / 후파 | concept | ko | #720 후파 (에스퍼 / 고스트) — GO 최대 CP: 3,359 | 2026-06-05 |
-| pokemon-hoothoot | Hoothoot / 부우부 | concept | ko | #163 부우부 (노말 / 비행) — GO 최대 CP: 677 | 2026-06-05 |
-| pokemon-hoppip | Hoppip / 통통코 | concept | ko | #187 통통코 (풀 / 비행) — GO 최대 CP: 600 | 2026-06-05 |
-| pokemon-horsea | Horsea / 쏘드라 | concept | ko | #116 쏘드라 (물 타입) — 기본 스탯 합계 295 | 2026-06-05 |
-| pokemon-houndoom | Houndoom / 헬가 | concept | ko | #229 헬가 (악 / 불꽃) — GO 최대 CP: 2,635 | 2026-06-05 |
-| pokemon-houndour | Houndour / 델빌 | concept | ko | #228 델빌 (악 / 불꽃) — GO 최대 CP: 1,234 | 2026-06-05 |
-| pokemon-houndstone | Houndstone / 묘두기 | concept | ko | #972 묘두기 (고스트 / none) — GO 최대 CP: 2,514 | 2026-06-05 |
-| pokemon-huntail | Huntail / 헌테일 | concept | ko | #367 헌테일 (물 / none) — GO 최대 CP: 2,340 | 2026-06-05 |
-| pokemon-hydrapple | Hydrapple / 과미드라 | concept | ko | #1019 과미드라 (풀 / 드래곤) — GO 최대 CP: 3,234 | 2026-06-05 |
-| pokemon-hydreigon | Hydreigon / 삼삼드래 | concept | ko | #635 삼삼드래 (악 / 드래곤) — GO 최대 CP: 3,625 | 2026-06-05 |
-| pokemon-hypno | Hypno / 슬리퍼 | concept | ko | #097 슬리퍼 (에스퍼 타입) — 기본 스탯 합계 483 | 2026-06-05 |
-| pokemon-igglybuff | Igglybuff / 푸푸린 | concept | ko | #174 푸푸린 (노말 / 페어리) — GO 최대 CP: 535 | 2026-06-05 |
-| pokemon-illumise | Illumise / 네오비트 | concept | ko | #314 네오비트 (벌레 / none) — GO 최대 CP: 1,771 | 2026-06-05 |
-| pokemon-impidimp | Impidimp / 메롱꿍 | concept | ko | #859 메롱꿍 (악 / 페어리) — GO 최대 CP: 807 | 2026-06-05 |
-| pokemon-incineroar | Incineroar / 어흥염 | concept | ko | #727 어흥염 (불꽃 / 악) — GO 최대 CP: 2,996 | 2026-06-05 |
-| pokemon-indeedee | Indeedee / 에써르 | concept | ko | #876 에써르 (에스퍼 / 노말) — GO 최대 CP: 2,397 | 2026-06-05 |
-| pokemon-infernape | Infernape / 초염몽 | concept | ko | #392 초염몽 (불꽃 / 격투) — GO 최대 CP: 2,683 | 2026-06-05 |
-| pokemon-inkay | Inkay / 오케이징 | concept | ko | #686 오케이징 (악 / 에스퍼) — GO 최대 CP: 927 | 2026-06-05 |
-| pokemon-inteleon | Inteleon / 인텔리레온 | concept | ko | #818 인텔리레온 (물 / none) — GO 최대 CP: 2,964 | 2026-06-05 |
-| pokemon-iron-boulder | Iron Boulder / 무쇠암석 | concept | ko | #1022 무쇠암석 (바위 / 에스퍼) — GO 최대 CP: 3,128 | 2026-06-05 |
-| pokemon-iron-bundle | Iron Bundle / 무쇠보따리 | concept | ko | #991 무쇠보따리 (얼음 / 물) — GO 최대 CP: 3,368 | 2026-06-05 |
-| pokemon-iron-crown | Iron Crown / 무쇠감투 | concept | ko | #1023 무쇠감투 (강철 / 에스퍼) — GO 최대 CP: 3,086 | 2026-06-05 |
-| pokemon-iron-hands | Iron Hands / 무쇠손 | concept | ko | #992 무쇠손 (격투 / 전기) — GO 최대 CP: 4,112 | 2026-06-05 |
-| pokemon-iron-jugulis | Iron Jugulis / 무쇠머리 | concept | ko | #993 무쇠머리 (악 / 비행) — GO 최대 CP: 3,475 | 2026-06-05 |
-| pokemon-iron-leaves | Iron Leaves / 무쇠잎새 | concept | ko | #1010 무쇠잎새 (풀 / 에스퍼) — GO 최대 CP: 3,237 | 2026-06-05 |
-| pokemon-iron-moth | Iron Moth / 무쇠독나방 | concept | ko | #994 무쇠독나방 (불꽃 / 독) — GO 최대 CP: 3,844 | 2026-06-05 |
-| pokemon-iron-thorns | Iron Thorns / 무쇠가시 | concept | ko | #995 무쇠가시 (바위 / 전기) — GO 최대 CP: 3,759 | 2026-06-05 |
-| pokemon-iron-treads | Iron Treads / 무쇠바퀴 | concept | ko | #990 무쇠바퀴 (땅 / 강철) — GO 최대 CP: 3,422 | 2026-06-05 |
-| pokemon-iron-valiant | Iron Valiant / 무쇠무인 | concept | ko | #1006 무쇠무인 (페어리 / 격투) — GO 최대 CP: 3,488 | 2026-06-05 |
-| pokemon-ivysaur | Ivysaur / 이상해풀 | concept | ko | #002 이상해풀 (풀/독 타입) — 기본 스탯 합계 405 | 2026-06-05 |
+| pokemon-honchkrow | Honchkrow / 돈크로우 | concept | ko | #430 돈크로우 (악 / 비행) — GO 최대 CP: 2,711 | 2026-06-18 |
+| pokemon-honedge | Honedge / 단칼빙 | concept | ko | #679 단칼빙 (강철 / 고스트) — GO 최대 CP: 1,390 | 2026-06-18 |
+| pokemon-hoopa | Hoopa / 후파 | concept | ko | #720 후파 (에스퍼 / 고스트) — GO 최대 CP: 3,359 | 2026-06-18 |
+| pokemon-hoothoot | Hoothoot / 부우부 | concept | ko | #163 부우부 (노말 / 비행) — GO 최대 CP: 677 | 2026-06-18 |
+| pokemon-hoppip | Hoppip / 통통코 | concept | ko | #187 통통코 (풀 / 비행) — GO 최대 CP: 600 | 2026-06-18 |
+| pokemon-horsea | Horsea / 쏘드라 | concept | ko | #116 쏘드라 (물) — GO 최대 CP: 1,056 | 2026-06-18 |
+| pokemon-houndoom | Houndoom / 헬가 | concept | ko | #229 헬가 (악 / 불꽃) — GO 최대 CP: 2,635 | 2026-06-18 |
+| pokemon-houndour | Houndour / 델빌 | concept | ko | #228 델빌 (악 / 불꽃) — GO 최대 CP: 1,234 | 2026-06-18 |
+| pokemon-houndstone | Houndstone / 묘두기 | concept | ko | #972 묘두기 (고스트) — GO 최대 CP: 2,514 | 2026-06-18 |
+| pokemon-huntail | Huntail / 헌테일 | concept | ko | #367 헌테일 (물) — GO 최대 CP: 2,340 | 2026-06-18 |
+| pokemon-hydrapple | Hydrapple / 과미드라 | concept | ko | #1019 과미드라 (풀 / 드래곤) — GO 최대 CP: 3,234 | 2026-06-18 |
+| pokemon-hydreigon | Hydreigon / 삼삼드래 | concept | ko | #635 삼삼드래 (악 / 드래곤) — GO 최대 CP: 3,625 | 2026-06-18 |
+| pokemon-hypno | Hypno / 슬리퍼 | concept | ko | #097 슬리퍼 (에스퍼) — GO 최대 CP: 2,090 | 2026-06-18 |
+| pokemon-igglybuff | Igglybuff / 푸푸린 | concept | ko | #174 푸푸린 (노말 / 페어리) — GO 최대 CP: 535 | 2026-06-18 |
+| pokemon-illumise | Illumise / 네오비트 | concept | ko | #314 네오비트 (벌레) — GO 최대 CP: 1,771 | 2026-06-18 |
+| pokemon-impidimp | Impidimp / 메롱꿍 | concept | ko | #859 메롱꿍 (악 / 페어리) — GO 최대 CP: 807 | 2026-06-18 |
+| pokemon-incineroar | Incineroar / 어흥염 | concept | ko | #727 어흥염 (불꽃 / 악) — GO 최대 CP: 2,996 | 2026-06-18 |
+| pokemon-indeedee | Indeedee / 에써르 | concept | ko | #876 에써르 (에스퍼 / 노말) — GO 최대 CP: 2,397 | 2026-06-18 |
+| pokemon-infernape | Infernape / 초염몽 | concept | ko | #392 초염몽 (불꽃 / 격투) — GO 최대 CP: 2,683 | 2026-06-18 |
+| pokemon-inkay | Inkay / 오케이징 | concept | ko | #686 오케이징 (악 / 에스퍼) — GO 최대 CP: 927 | 2026-06-18 |
+| pokemon-inteleon | Inteleon / 인텔리레온 | concept | ko | #818 인텔리레온 (물) — GO 최대 CP: 2,964 | 2026-06-18 |
+| pokemon-iron-boulder | Iron Boulder / 무쇠암석 | concept | ko | #1022 무쇠암석 (바위 / 에스퍼) — GO 최대 CP: 3,128 | 2026-06-18 |
+| pokemon-iron-bundle | Iron Bundle / 무쇠보따리 | concept | ko | #991 무쇠보따리 (얼음 / 물) — GO 최대 CP: 3,368 | 2026-06-18 |
+| pokemon-iron-crown | Iron Crown / 무쇠감투 | concept | ko | #1023 무쇠감투 (강철 / 에스퍼) — GO 최대 CP: 3,086 | 2026-06-18 |
+| pokemon-iron-hands | Iron Hands / 무쇠손 | concept | ko | #992 무쇠손 (격투 / 전기) — GO 최대 CP: 4,112 | 2026-06-18 |
+| pokemon-iron-jugulis | Iron Jugulis / 무쇠머리 | concept | ko | #993 무쇠머리 (악 / 비행) — GO 최대 CP: 3,475 | 2026-06-18 |
+| pokemon-iron-leaves | Iron Leaves / 무쇠잎새 | concept | ko | #1010 무쇠잎새 (풀 / 에스퍼) — GO 최대 CP: 3,237 | 2026-06-18 |
+| pokemon-iron-moth | Iron Moth / 무쇠독나방 | concept | ko | #994 무쇠독나방 (불꽃 / 독) — GO 최대 CP: 3,844 | 2026-06-18 |
+| pokemon-iron-thorns | Iron Thorns / 무쇠가시 | concept | ko | #995 무쇠가시 (바위 / 전기) — GO 최대 CP: 3,759 | 2026-06-18 |
+| pokemon-iron-treads | Iron Treads / 무쇠바퀴 | concept | ko | #990 무쇠바퀴 (땅 / 강철) — GO 최대 CP: 3,422 | 2026-06-18 |
+| pokemon-iron-valiant | Iron Valiant / 무쇠무인 | concept | ko | #1006 무쇠무인 (페어리 / 격투) — GO 최대 CP: 3,488 | 2026-06-18 |
+| pokemon-ivysaur | Ivysaur / 이상해풀 | concept | ko | #002 이상해풀 (풀 / 독) — GO 최대 CP: 1,699 | 2026-06-18 |
 | pokemon-jangmo-o | Jangmo-o / 짜랑꼬 | concept | ko | #782 짜랑꼬 (드래곤 / none) — GO 최대 CP: 969 | 2026-06-05 |
-| pokemon-jellicent | Jellicent / 탱탱겔 | concept | ko | #593 탱탱겔 (물 / 고스트) — GO 최대 CP: 2,338 | 2026-06-05 |
-| pokemon-jigglypuff | Jigglypuff / 푸린 | concept | ko | #039 푸린 (노말/페어리 타입) — 기본 스탯 합계 270 | 2026-06-05 |
-| pokemon-jirachi | Jirachi / 지라치 | concept | ko | #385 지라치 (강철 / 에스퍼) — GO 최대 CP: 3,265 | 2026-06-05 |
-| pokemon-jolteon | Jolteon / 쥬피썬더 | concept | ko | #135 쥬피썬더 (전기 타입) — 기본 스탯 합계 525 | 2026-06-05 |
-| pokemon-joltik | Joltik / 파쪼옥 | concept | ko | #595 파쪼옥 (벌레 / 전기) — GO 최대 CP: 1,023 | 2026-06-05 |
-| pokemon-jumpluff | Jumpluff / 솜솜코 | concept | ko | #189 솜솜코 (풀 / 비행) — GO 최대 CP: 1,636 | 2026-06-05 |
-| pokemon-jynx | Jynx / 루주라 | concept | ko | #124 루주라 (얼음/에스퍼 타입) — 기본 스탯 합계 455 | 2026-06-05 |
-| pokemon-kabuto | Kabuto / 투구 | concept | ko | #140 투구 (바위/물 타입) — 기본 스탯 합계 355 | 2026-06-05 |
-| pokemon-kabutops | Kabutops / 투구푸스 | concept | ko | #141 투구푸스 (바위/물 타입) — 기본 스탯 합계 495 | 2026-06-05 |
-| pokemon-kadabra | Kadabra / 윤겔라 | concept | ko | #064 윤겔라 (에스퍼 타입) — 기본 스탯 합계 400 | 2026-06-05 |
-| pokemon-kakuna | Kakuna / 딱충이 | concept | ko | #014 딱충이 (벌레/독 타입) — 기본 스탯 합계 205 | 2026-06-05 |
-| pokemon-kangaskhan | Kangaskhan / 캥카 | concept | ko | #115 캥카 (노말 타입) — 기본 스탯 합계 490 | 2026-06-05 |
-| pokemon-karrablast | Karrablast / 딱정곤 | concept | ko | #588 딱정곤 (벌레 / none) — GO 최대 CP: 1,182 | 2026-06-05 |
-| pokemon-kartana | Kartana / 종이신도 | concept | ko | #798 종이신도 (풀 / 강철) — GO 최대 CP: 3,677 | 2026-06-05 |
-| pokemon-kecleon | Kecleon / 켈리몬 | concept | ko | #352 켈리몬 (노말 / none) — GO 최대 CP: 2,047 | 2026-06-05 |
-| pokemon-kilowattrel | Kilowattrel / 찌리비크 | concept | ko | #941 찌리비크 (전기 / 비행) — GO 최대 CP: 2,443 | 2026-06-05 |
-| pokemon-kingambit | Kingambit / 대도각참 | concept | ko | #983 대도각참 (악 / 강철) — GO 최대 CP: 3,614 | 2026-06-05 |
-| pokemon-kingdra | Kingdra / 킹드라 | concept | ko | #230 킹드라 (물 / 드래곤) — GO 최대 CP: 2,641 | 2026-06-05 |
-| pokemon-kingler | Kingler / 킹크랩 | concept | ko | #099 킹크랩 (물 타입) — 기본 스탯 합계 475 | 2026-06-05 |
-| pokemon-kirlia | Kirlia / 킬리아 | concept | ko | #281 킬리아 (에스퍼 / 페어리) — GO 최대 CP: 966 | 2026-06-05 |
-| pokemon-klang | Klang / 기기어르 | concept | ko | #600 기기어르 (강철 / none) — GO 최대 CP: 1,847 | 2026-06-05 |
-| pokemon-klawf | Klawf / 절벼게 | concept | ko | #950 절벼게 (바위 / none) — GO 최대 CP: 2,403 | 2026-06-05 |
-| pokemon-kleavor | Kleavor / 사마자르 | concept | ko | #900 사마자르 (벌레 / 바위) — GO 최대 CP: 3,146 | 2026-06-05 |
-| pokemon-klefki | Klefki / 클레피 | concept | ko | #707 클레피 (강철 / 페어리) — GO 최대 CP: 1,949 | 2026-06-05 |
-| pokemon-klink | Klink / 기어르 | concept | ko | #599 기어르 (강철 / none) — GO 최대 CP: 956 | 2026-06-05 |
-| pokemon-klinklang | Klinklang / 기기기어르 | concept | ko | #601 기기기어르 (강철 / none) — GO 최대 CP: 2,637 | 2026-06-05 |
-| pokemon-koffing | Koffing / 또가스 | concept | ko | #109 또가스 (독 타입) — 기본 스탯 합계 340 | 2026-06-05 |
-| pokemon-komala | Komala / 자말라 | concept | ko | #775 자말라 (노말 / none) — GO 최대 CP: 2,582 | 2026-06-05 |
+| pokemon-jellicent | Jellicent / 탱탱겔 | concept | ko | #593 탱탱겔 (물 / 고스트) — GO 최대 CP: 2,338 | 2026-06-18 |
+| pokemon-jigglypuff | Jigglypuff / 푸린 | concept | ko | #039 푸린 (노말 / 페어리) — GO 최대 CP: 724 | 2026-06-18 |
+| pokemon-jirachi | Jirachi / 지라치 | concept | ko | #385 지라치 (강철 / 에스퍼) — GO 최대 CP: 3,265 | 2026-06-18 |
+| pokemon-jolteon | Jolteon / 쥬피썬더 | concept | ko | #135 쥬피썬더 (전기) — GO 최대 CP: 2,888 | 2026-06-18 |
+| pokemon-joltik | Joltik / 파쪼옥 | concept | ko | #595 파쪼옥 (벌레 / 전기) — GO 최대 CP: 1,023 | 2026-06-18 |
+| pokemon-jumpluff | Jumpluff / 솜솜코 | concept | ko | #189 솜솜코 (풀 / 비행) — GO 최대 CP: 1,636 | 2026-06-18 |
+| pokemon-jynx | Jynx / 루주라 | concept | ko | #124 루주라 (얼음 / 에스퍼) — GO 최대 CP: 2,555 | 2026-06-18 |
+| pokemon-kabuto | Kabuto / 투구 | concept | ko | #140 투구 (바위 / 물) — GO 최대 CP: 1,370 | 2026-06-18 |
+| pokemon-kabutops | Kabutops / 투구푸스 | concept | ko | #141 투구푸스 (바위 / 물) — GO 최대 CP: 2,713 | 2026-06-18 |
+| pokemon-kadabra | Kadabra / 윤겔라 | concept | ko | #064 윤겔라 (에스퍼) — GO 최대 CP: 2,059 | 2026-06-18 |
+| pokemon-kakuna | Kakuna / 딱충이 | concept | ko | #014 딱충이 (벌레 / 독) — GO 최대 CP: 432 | 2026-06-18 |
+| pokemon-kangaskhan | Kangaskhan / 캥카 | concept | ko | #115 캥카 (노말) — GO 최대 CP: 2,586 | 2026-06-18 |
+| pokemon-karrablast | Karrablast / 딱정곤 | concept | ko | #588 딱정곤 (벌레) — GO 최대 CP: 1,182 | 2026-06-18 |
+| pokemon-kartana | Kartana / 종이신도 | concept | ko | #798 종이신도 (풀 / 강철) — GO 최대 CP: 3,677 | 2026-06-18 |
+| pokemon-kecleon | Kecleon / 켈리몬 | concept | ko | #352 켈리몬 (노말) — GO 최대 CP: 2,047 | 2026-06-18 |
+| pokemon-kilowattrel | Kilowattrel / 찌리비크 | concept | ko | #941 찌리비크 (전기 / 비행) — GO 최대 CP: 2,443 | 2026-06-18 |
+| pokemon-kingambit | Kingambit / 대도각참 | concept | ko | #983 대도각참 (악 / 강철) — GO 최대 CP: 3,614 | 2026-06-18 |
+| pokemon-kingdra | Kingdra / 킹드라 | concept | ko | #230 킹드라 (물 / 드래곤) — GO 최대 CP: 2,641 | 2026-06-18 |
+| pokemon-kingler | Kingler / 킹크랩 | concept | ko | #099 킹크랩 (물) — GO 최대 CP: 2,829 | 2026-06-18 |
+| pokemon-kirlia | Kirlia / 킬리아 | concept | ko | #281 킬리아 (에스퍼 / 페어리) — GO 최대 CP: 966 | 2026-06-18 |
+| pokemon-klang | Klang / 기기어르 | concept | ko | #600 기기어르 (강철) — GO 최대 CP: 1,847 | 2026-06-18 |
+| pokemon-klawf | Klawf / 절벼게 | concept | ko | #950 절벼게 (바위) — GO 최대 CP: 2,403 | 2026-06-18 |
+| pokemon-kleavor | Kleavor / 사마자르 | concept | ko | #900 사마자르 (벌레 / 바위) — GO 최대 CP: 3,146 | 2026-06-18 |
+| pokemon-klefki | Klefki / 클레피 | concept | ko | #707 클레피 (강철 / 페어리) — GO 최대 CP: 1,949 | 2026-06-18 |
+| pokemon-klink | Klink / 기어르 | concept | ko | #599 기어르 (강철) — GO 최대 CP: 956 | 2026-06-18 |
+| pokemon-klinklang | Klinklang / 기기기어르 | concept | ko | #601 기기기어르 (강철) — GO 최대 CP: 2,637 | 2026-06-18 |
+| pokemon-koffing | Koffing / 또가스 | concept | ko | #109 또가스 (독) — GO 최대 CP: 1,214 | 2026-06-18 |
+| pokemon-komala | Komala / 자말라 | concept | ko | #775 자말라 (노말) — GO 최대 CP: 2,582 | 2026-06-18 |
 | pokemon-kommo-o | Kommo-o / 짜랑고우거 | concept | ko | #784 짜랑고우거 (드래곤 / 격투) — GO 최대 CP: 3,309 | 2026-06-05 |
-| pokemon-koraidon | Koraidon / 코라이돈 | concept | ko | #1007 코라이돈 (격투 / 드래곤) — GO 최대 CP: 3,973 | 2026-06-05 |
-| pokemon-krabby | Krabby / 크랩 | concept | ko | #098 크랩 (물 타입) — 기본 스탯 합계 325 | 2026-06-05 |
-| pokemon-kricketot | Kricketot / 귀뚤뚜기 | concept | ko | #401 귀뚤뚜기 (벌레 / none) — GO 최대 CP: 401 | 2026-06-05 |
-| pokemon-kricketune | Kricketune / 귀뚤톡크 | concept | ko | #402 귀뚤톡크 (벌레 / none) — GO 최대 CP: 1,653 | 2026-06-05 |
-| pokemon-krokorok | Krokorok / 악비르 | concept | ko | #552 악비르 (땅 / 악) — GO 최대 CP: 1,418 | 2026-06-05 |
-| pokemon-krookodile | Krookodile / 악비아르 | concept | ko | #553 악비아르 (땅 / 악) — GO 최대 CP: 3,046 | 2026-06-05 |
-| pokemon-kubfu | Kubfu / 치고마 | concept | ko | #891 치고마 (격투 / none) — GO 최대 CP: 1,697 | 2026-06-05 |
-| pokemon-kyogre | Kyogre / 가이오가 | concept | ko | #382 가이오가 (물 / none) — GO 최대 CP: 4,115 | 2026-06-05 |
-| pokemon-kyurem | Kyurem / 큐레무 | concept | ko | #646 큐레무 (드래곤 / 얼음) — GO 최대 CP: 3,575 | 2026-06-05 |
-| pokemon-lairon | Lairon / 갱도라 | concept | ko | #305 갱도라 (강철 / 바위) — GO 최대 CP: 2,056 | 2026-06-05 |
-| pokemon-lampent | Lampent / 램프라 | concept | ko | #608 램프라 (고스트 / 불꽃) — GO 최대 CP: 1,708 | 2026-06-05 |
-| pokemon-landorus | Landorus / 랜드로스 | concept | ko | #645 랜드로스 (땅 / 비행) — GO 최대 CP: 3,588 | 2026-06-05 |
-| pokemon-lanturn | Lanturn / 랜턴 | concept | ko | #171 랜턴 (물 / 전기) — GO 최대 CP: 2,085 | 2026-06-05 |
-| pokemon-lapras | Lapras / 라프라스 | concept | ko | #131 라프라스 (물/얼음 타입) — 기본 스탯 합계 535 | 2026-06-05 |
-| pokemon-larvesta | Larvesta / 활화르바 | concept | ko | #636 활화르바 (벌레 / 불꽃) — GO 최대 CP: 1,496 | 2026-06-05 |
-| pokemon-larvitar | Larvitar / 애버라스 | concept | ko | #246 애버라스 (바위 / 땅) — GO 최대 CP: 1,040 | 2026-06-05 |
-| pokemon-latias | Latias / 라티아스 | concept | ko | #380 라티아스 (드래곤 / 에스퍼) — GO 최대 CP: 3,510 | 2026-06-05 |
-| pokemon-latios | Latios / 라티오스 | concept | ko | #381 라티오스 (드래곤 / 에스퍼) — GO 최대 CP: 3,812 | 2026-06-05 |
-| pokemon-leafeon | Leafeon / 리피아 | concept | ko | #470 리피아 (풀 / none) — GO 최대 CP: 2,944 | 2026-06-05 |
-| pokemon-leavanny | Leavanny / 모아머 | concept | ko | #542 모아머 (벌레 / 풀) — GO 최대 CP: 2,580 | 2026-06-05 |
-| pokemon-lechonk | Lechonk / 맛보돈 | concept | ko | #915 맛보돈 (노말 / none) — GO 최대 CP: 733 | 2026-06-05 |
-| pokemon-ledian | Ledian / 레디안 | concept | ko | #166 레디안 (벌레 / 비행) — GO 최대 CP: 1,346 | 2026-06-05 |
-| pokemon-ledyba | Ledyba / 레디바 | concept | ko | #165 레디바 (벌레 / 비행) — GO 최대 CP: 728 | 2026-06-05 |
-| pokemon-lickilicky | Lickilicky / 내룸벨트 | concept | ko | #463 내룸벨트 (노말 / none) — GO 최대 CP: 2,467 | 2026-06-05 |
-| pokemon-lickitung | Lickitung / 내루미 | concept | ko | #108 내루미 (노말 타입) — 기본 스탯 합계 385 | 2026-06-05 |
-| pokemon-liepard | Liepard / 레파르다스 | concept | ko | #510 레파르다스 (악 / none) — GO 최대 CP: 1,846 | 2026-06-05 |
-| pokemon-lileep | Lileep / 릴링 | concept | ko | #345 릴링 (바위 / 풀) — GO 최대 CP: 1,291 | 2026-06-05 |
-| pokemon-lilligant | Lilligant / 드레디어 | concept | ko | #549 드레디어 (풀 / none) — GO 최대 CP: 2,550 | 2026-06-05 |
-| pokemon-lillipup | Lillipup / 요테리 | concept | ko | #506 요테리 (노말 / none) — GO 최대 CP: 915 | 2026-06-05 |
-| pokemon-linoone | Linoone / 직구리 | concept | ko | #264 직구리 (노말 / none) — GO 최대 CP: 1,662 | 2026-06-05 |
-| pokemon-litleo | Litleo / 레오꼬 | concept | ko | #667 레오꼬 (불꽃 / 노말) — GO 최대 CP: 1,425 | 2026-06-05 |
-| pokemon-litten | Litten / 냐오불 | concept | ko | #725 냐오불 (불꽃 / none) — GO 최대 CP: 1,035 | 2026-06-05 |
-| pokemon-litwick | Litwick / 불켜미 | concept | ko | #607 불켜미 (고스트 / 불꽃) — GO 최대 CP: 1,006 | 2026-06-05 |
-| pokemon-lokix | Lokix / 엑스레그 | concept | ko | #920 엑스레그 (벌레 / 악) — GO 최대 CP: 2,317 | 2026-06-05 |
-| pokemon-lombre | Lombre / 로토스 | concept | ko | #271 로토스 (물 / 풀) — GO 최대 CP: 1,197 | 2026-06-05 |
-| pokemon-lopunny | Lopunny / 이어롭 | concept | ko | #428 이어롭 (노말 / none) — GO 최대 CP: 2,059 | 2026-06-05 |
-| pokemon-lotad | Lotad / 연꽃몬 | concept | ko | #270 연꽃몬 (물 / 풀) — GO 최대 CP: 598 | 2026-06-05 |
-| pokemon-loudred | Loudred / 노공룡 | concept | ko | #294 노공룡 (노말 / none) — GO 최대 CP: 1,327 | 2026-06-05 |
-| pokemon-lucario | Lucario / 루카리오 | concept | ko | #448 루카리오 (격투 / 강철) — GO 최대 CP: 2,703 | 2026-06-05 |
-| pokemon-ludicolo | Ludicolo / 로파파 | concept | ko | #272 로파파 (물 / 풀) — GO 최대 CP: 2,323 | 2026-06-05 |
-| pokemon-lugia | Lugia / 루기아 | concept | ko | #249 루기아 (에스퍼 / 비행) — GO 최대 CP: 3,703 | 2026-06-05 |
-| pokemon-lumineon | Lumineon / 네오라이트 | concept | ko | #457 네오라이트 (물 / none) — GO 최대 CP: 1,814 | 2026-06-05 |
-| pokemon-lunala | Lunala / 루나아라 | concept | ko | #792 루나아라 (에스퍼 / 고스트) — GO 최대 CP: 4,042 | 2026-06-05 |
-| pokemon-lunatone | Lunatone / 루나톤 | concept | ko | #337 루나톤 (바위 / 에스퍼) — GO 최대 CP: 2,327 | 2026-06-05 |
-| pokemon-lurantis | Lurantis / 라란티스 | concept | ko | #754 라란티스 (풀 / none) — GO 최대 CP: 2,398 | 2026-06-05 |
-| pokemon-luvdisc | Luvdisc / 사랑동이 | concept | ko | #370 사랑동이 (물 / none) — GO 최대 CP: 848 | 2026-06-05 |
-| pokemon-luxio | Luxio / 럭시오 | concept | ko | #404 럭시오 (전기 / none) — GO 최대 CP: 1,486 | 2026-06-05 |
-| pokemon-luxray | Luxray / 렌트라 | concept | ko | #405 렌트라 (전기 / none) — GO 최대 CP: 2,888 | 2026-06-05 |
-| pokemon-mabosstiff | Mabosstiff / 마피티프 | concept | ko | #943 마피티프 (악 / none) — GO 최대 CP: 2,963 | 2026-06-05 |
-| pokemon-machamp | Machamp / 괴력몬 | concept | ko | #068 괴력몬 (격투 타입) — 기본 스탯 합계 505 | 2026-06-05 |
-| pokemon-machoke | Machoke / 근육몬 | concept | ko | #067 근육몬 (격투 타입) — 기본 스탯 합계 405 | 2026-06-05 |
-| pokemon-machop | Machop / 알통몬 | concept | ko | #066 알통몬 (격투 타입) — 기본 스탯 합계 305 | 2026-06-05 |
-| pokemon-magby | Magby / 마그비 | concept | ko | #240 마그비 (불꽃 / none) — GO 최대 CP: 1,323 | 2026-06-05 |
-| pokemon-magcargo | Magcargo / 마그카르고 | concept | ko | #219 마그카르고 (불꽃 / 바위) — GO 최대 CP: 1,702 | 2026-06-05 |
-| pokemon-magearna | Magearna / 마기아나 | concept | ko | #801 마기아나 (강철 / 페어리) — GO 최대 CP: 3,615 | 2026-06-05 |
-| pokemon-magikarp | Magikarp / 잉어킹 | concept | ko | #129 잉어킹 (물 타입) — 기본 스탯 합계 200 | 2026-06-05 |
-| pokemon-magmar | Magmar / 마그마 | concept | ko | #126 마그마 (불꽃 타입) — 기본 스탯 합계 495 | 2026-06-05 |
-| pokemon-magmortar | Magmortar / 마그마번 | concept | ko | #467 마그마번 (불꽃 / none) — GO 최대 CP: 3,132 | 2026-06-05 |
-| pokemon-magnemite | Magnemite / 코일 | concept | ko | #081 코일 (전기/강철 타입) — 기본 스탯 합계 325 | 2026-06-05 |
-| pokemon-magneton | Magneton / 레어코일 | concept | ko | #082 레어코일 (전기/강철 타입) — 기본 스탯 합계 465 | 2026-06-05 |
-| pokemon-magnezone | Magnezone / 자포코일 | concept | ko | #462 자포코일 (전기 / 강철) — GO 최대 CP: 3,205 | 2026-06-05 |
-| pokemon-makuhita | Makuhita / 마크탕 | concept | ko | #296 마크탕 (격투 / none) — GO 최대 CP: 817 | 2026-06-05 |
-| pokemon-malamar | Malamar / 칼라마네로 | concept | ko | #687 칼라마네로 (악 / 에스퍼) — GO 최대 CP: 2,359 | 2026-06-05 |
-| pokemon-mamoswine | Mamoswine / 맘모꾸리 | concept | ko | #473 맘모꾸리 (얼음 / 땅) — GO 최대 CP: 3,328 | 2026-06-05 |
-| pokemon-manaphy | Manaphy / 마나피 | concept | ko | #490 마나피 (물 / none) — GO 최대 CP: 3,265 | 2026-06-05 |
-| pokemon-mandibuzz | Mandibuzz / 버랜지나 | concept | ko | #630 버랜지나 (악 / 비행) — GO 최대 CP: 2,138 | 2026-06-05 |
-| pokemon-manectric | Manectric / 썬더볼트 | concept | ko | #310 썬더볼트 (전기 / none) — GO 최대 CP: 2,340 | 2026-06-05 |
-| pokemon-mankey | Mankey / 망키 | concept | ko | #056 망키 (격투 타입) — 기본 스탯 합계 305 | 2026-06-05 |
-| pokemon-mantine | Mantine / 만타인 | concept | ko | #226 만타인 (물 / 비행) — GO 최대 CP: 2,108 | 2026-06-05 |
-| pokemon-mantyke | Mantyke / 타만타 | concept | ko | #458 타만타 (물 / 비행) — GO 최대 CP: 1,248 | 2026-06-05 |
-| pokemon-maractus | Maractus / 마라카치 | concept | ko | #556 마라카치 (풀 / none) — GO 최대 CP: 2,274 | 2026-06-05 |
-| pokemon-mareanie | Mareanie / 시마사리 | concept | ko | #747 시마사리 (독 / 물) — GO 최대 CP: 972 | 2026-06-05 |
-| pokemon-mareep | Mareep / 메리프 | concept | ko | #179 메리프 (전기 / none) — GO 최대 CP: 991 | 2026-06-05 |
-| pokemon-marill | Marill / 마릴 | concept | ko | #183 마릴 (물 / 페어리) — GO 최대 CP: 461 | 2026-06-05 |
-| pokemon-marowak | Marowak / 텅구리 | concept | ko | #105 텅구리 (땅 타입) — 기본 스탯 합계 425 | 2026-06-05 |
-| pokemon-marshadow | Marshadow / 마샤도 | concept | ko | #802 마샤도 (격투 / 고스트) — GO 최대 CP: 3,730 | 2026-06-05 |
-| pokemon-marshtomp | Marshtomp / 늪짱이 | concept | ko | #259 늪짱이 (물 / 땅) — GO 최대 CP: 1,776 | 2026-06-05 |
-| pokemon-maschiff | Maschiff / 오라티프 | concept | ko | #942 오라티프 (악 / none) — GO 최대 CP: 1,399 | 2026-06-05 |
-| pokemon-masquerain | Masquerain / 비나방 | concept | ko | #284 비나방 (벌레 / 비행) — GO 최대 CP: 2,270 | 2026-06-05 |
-| pokemon-maushold | Maushold / 파밀리쥐 | concept | ko | #925 파밀리쥐 (노말 / none) — GO 최대 CP: 1,985 | 2026-06-05 |
-| pokemon-mawile | Mawile / 입치트 | concept | ko | #303 입치트 (강철 / 페어리) — GO 최대 CP: 1,634 | 2026-06-05 |
-| pokemon-medicham | Medicham / 요가램 | concept | ko | #308 요가램 (격투 / 에스퍼) — GO 최대 CP: 1,431 | 2026-06-05 |
-| pokemon-meditite | Meditite / 요가랑 | concept | ko | #307 요가랑 (격투 / 에스퍼) — GO 최대 CP: 693 | 2026-06-05 |
-| pokemon-meganium | Meganium / 메가니움 | concept | ko | #154 메가니움 (풀 / none) — GO 최대 CP: 2,410 | 2026-06-05 |
-| pokemon-melmetal | Melmetal / 멜메탈 | concept | ko | #809 멜메탈 (강철 / none) — GO 최대 CP: 3,599 | 2026-06-05 |
-| pokemon-meltan | Meltan / 멜탄 | concept | ko | #808 멜탄 (강철 / none) — GO 최대 CP: 1,068 | 2026-06-05 |
-| pokemon-meowscarada | Meowscarada / 마스카나 | concept | ko | #908 마스카나 (풀 / 악) — GO 최대 CP: 2,825 | 2026-06-05 |
-| pokemon-meowstic | Meowstic / 냐오닉스 | concept | ko | #678 냐오닉스 (에스퍼 / none) — GO 최대 CP: 2,124 | 2026-06-05 |
-| pokemon-meowth | Meowth / 나옹 | concept | ko | #052 나옹 (노말 타입) — 기본 스탯 합계 290 | 2026-06-05 |
-| pokemon-mesprit | Mesprit / 엠라이트 | concept | ko | #481 엠라이트 (에스퍼 / none) — GO 최대 CP: 3,058 | 2026-06-05 |
-| pokemon-metagross | Metagross / 메타그로스 | concept | ko | #376 메타그로스 (강철 / 에스퍼) — GO 최대 CP: 3,791 | 2026-06-05 |
-| pokemon-metang | Metang / 메탕구 | concept | ko | #375 메탕구 (강철 / 에스퍼) — GO 최대 CP: 1,721 | 2026-06-05 |
-| pokemon-metapod | Metapod / 단데기 | concept | ko | #011 단데기 (벌레 타입) — 기본 스탯 합계 205 | 2026-06-05 |
-| pokemon-mew | Mew / 뮤 | concept | ko | #151 뮤 (에스퍼 타입) — 기본 스탯 합계 600 | 2026-06-05 |
-| pokemon-mewtwo | Mewtwo / 뮤츠 | concept | ko | #150 뮤츠 (에스퍼 타입) — 기본 스탯 합계 680 | 2026-06-05 |
-| pokemon-mienfoo | Mienfoo / 비조푸 | concept | ko | #619 비조푸 (격투 / none) — GO 최대 CP: 1,389 | 2026-06-05 |
-| pokemon-mienshao | Mienshao / 비조도 | concept | ko | #620 비조도 (격투 / none) — GO 최대 CP: 2,710 | 2026-06-05 |
-| pokemon-mightyena | Mightyena / 그라에나 | concept | ko | #262 그라에나 (악 / none) — GO 최대 CP: 1,926 | 2026-06-05 |
-| pokemon-milcery | Milcery / 마빌크 | concept | ko | #868 마빌크 (페어리 / none) — GO 최대 CP: 829 | 2026-06-05 |
-| pokemon-milotic | Milotic / 밀로틱 | concept | ko | #350 밀로틱 (물 / none) — GO 최대 CP: 3,005 | 2026-06-05 |
-| pokemon-miltank | Miltank / 밀탱크 | concept | ko | #241 밀탱크 (노말 / none) — GO 최대 CP: 2,354 | 2026-06-05 |
+| pokemon-koraidon | Koraidon / 코라이돈 | concept | ko | #1007 코라이돈 (격투 / 드래곤) — GO 최대 CP: 3,973 | 2026-06-18 |
+| pokemon-krabby | Krabby / 크랩 | concept | ko | #098 크랩 (물) — GO 최대 CP: 1,561 | 2026-06-18 |
+| pokemon-kricketot | Kricketot / 귀뚤뚜기 | concept | ko | #401 귀뚤뚜기 (벌레) — GO 최대 CP: 401 | 2026-06-18 |
+| pokemon-kricketune | Kricketune / 귀뚤톡크 | concept | ko | #402 귀뚤톡크 (벌레) — GO 최대 CP: 1,653 | 2026-06-18 |
+| pokemon-krokorok | Krokorok / 악비르 | concept | ko | #552 악비르 (땅 / 악) — GO 최대 CP: 1,418 | 2026-06-18 |
+| pokemon-krookodile | Krookodile / 악비아르 | concept | ko | #553 악비아르 (땅 / 악) — GO 최대 CP: 3,046 | 2026-06-18 |
+| pokemon-kubfu | Kubfu / 치고마 | concept | ko | #891 치고마 (격투) — GO 최대 CP: 1,697 | 2026-06-18 |
+| pokemon-kyogre | Kyogre / 가이오가 | concept | ko | #382 가이오가 (물) — GO 최대 CP: 4,115 | 2026-06-18 |
+| pokemon-kyurem | Kyurem / 큐레무 | concept | ko | #646 큐레무 (드래곤 / 얼음) — GO 최대 CP: 3,575 | 2026-06-18 |
+| pokemon-lairon | Lairon / 갱도라 | concept | ko | #305 갱도라 (강철 / 바위) — GO 최대 CP: 2,056 | 2026-06-18 |
+| pokemon-lampent | Lampent / 램프라 | concept | ko | #608 램프라 (고스트 / 불꽃) — GO 최대 CP: 1,708 | 2026-06-18 |
+| pokemon-landorus | Landorus / 랜드로스 | concept | ko | #645 랜드로스 (땅 / 비행) — GO 최대 CP: 3,588 | 2026-06-18 |
+| pokemon-lanturn | Lanturn / 랜턴 | concept | ko | #171 랜턴 (물 / 전기) — GO 최대 CP: 2,085 | 2026-06-18 |
+| pokemon-lapras | Lapras / 라프라스 | concept | ko | #131 라프라스 (물 / 얼음) — GO 최대 CP: 2,641 | 2026-06-18 |
+| pokemon-larvesta | Larvesta / 활화르바 | concept | ko | #636 활화르바 (벌레 / 불꽃) — GO 최대 CP: 1,496 | 2026-06-18 |
+| pokemon-larvitar | Larvitar / 애버라스 | concept | ko | #246 애버라스 (바위 / 땅) — GO 최대 CP: 1,040 | 2026-06-18 |
+| pokemon-latias | Latias / 라티아스 | concept | ko | #380 라티아스 (드래곤 / 에스퍼) — GO 최대 CP: 3,510 | 2026-06-18 |
+| pokemon-latios | Latios / 라티오스 | concept | ko | #381 라티오스 (드래곤 / 에스퍼) — GO 최대 CP: 3,812 | 2026-06-18 |
+| pokemon-leafeon | Leafeon / 리피아 | concept | ko | #470 리피아 (풀) — GO 최대 CP: 2,944 | 2026-06-18 |
+| pokemon-leavanny | Leavanny / 모아머 | concept | ko | #542 모아머 (벌레 / 풀) — GO 최대 CP: 2,580 | 2026-06-18 |
+| pokemon-lechonk | Lechonk / 맛보돈 | concept | ko | #915 맛보돈 (노말) — GO 최대 CP: 733 | 2026-06-18 |
+| pokemon-ledian | Ledian / 레디안 | concept | ko | #166 레디안 (벌레 / 비행) — GO 최대 CP: 1,346 | 2026-06-18 |
+| pokemon-ledyba | Ledyba / 레디바 | concept | ko | #165 레디바 (벌레 / 비행) — GO 최대 CP: 728 | 2026-06-18 |
+| pokemon-lickilicky | Lickilicky / 내룸벨트 | concept | ko | #463 내룸벨트 (노말) — GO 최대 CP: 2,467 | 2026-06-18 |
+| pokemon-lickitung | Lickitung / 내루미 | concept | ko | #108 내루미 (노말) — GO 최대 CP: 1,411 | 2026-06-18 |
+| pokemon-liepard | Liepard / 레파르다스 | concept | ko | #510 레파르다스 (악) — GO 최대 CP: 1,846 | 2026-06-18 |
+| pokemon-lileep | Lileep / 릴링 | concept | ko | #345 릴링 (바위 / 풀) — GO 최대 CP: 1,291 | 2026-06-18 |
+| pokemon-lilligant | Lilligant / 드레디어 | concept | ko | #549 드레디어 (풀) — GO 최대 CP: 2,550 | 2026-06-18 |
+| pokemon-lillipup | Lillipup / 요테리 | concept | ko | #506 요테리 (노말) — GO 최대 CP: 915 | 2026-06-18 |
+| pokemon-linoone | Linoone / 직구리 | concept | ko | #264 직구리 (노말) — GO 최대 CP: 1,662 | 2026-06-18 |
+| pokemon-litleo | Litleo / 레오꼬 | concept | ko | #667 레오꼬 (불꽃 / 노말) — GO 최대 CP: 1,425 | 2026-06-18 |
+| pokemon-litten | Litten / 냐오불 | concept | ko | #725 냐오불 (불꽃) — GO 최대 CP: 1,035 | 2026-06-18 |
+| pokemon-litwick | Litwick / 불켜미 | concept | ko | #607 불켜미 (고스트 / 불꽃) — GO 최대 CP: 1,006 | 2026-06-18 |
+| pokemon-lokix | Lokix / 엑스레그 | concept | ko | #920 엑스레그 (벌레 / 악) — GO 최대 CP: 2,317 | 2026-06-18 |
+| pokemon-lombre | Lombre / 로토스 | concept | ko | #271 로토스 (물 / 풀) — GO 최대 CP: 1,197 | 2026-06-18 |
+| pokemon-lopunny | Lopunny / 이어롭 | concept | ko | #428 이어롭 (노말) — GO 최대 CP: 2,059 | 2026-06-18 |
+| pokemon-lotad | Lotad / 연꽃몬 | concept | ko | #270 연꽃몬 (물 / 풀) — GO 최대 CP: 598 | 2026-06-18 |
+| pokemon-loudred | Loudred / 노공룡 | concept | ko | #294 노공룡 (노말) — GO 최대 CP: 1,327 | 2026-06-18 |
+| pokemon-lucario | Lucario / 루카리오 | concept | ko | #448 루카리오 (격투 / 강철) — GO 최대 CP: 2,703 | 2026-06-18 |
+| pokemon-ludicolo | Ludicolo / 로파파 | concept | ko | #272 로파파 (물 / 풀) — GO 최대 CP: 2,323 | 2026-06-18 |
+| pokemon-lugia | Lugia / 루기아 | concept | ko | #249 루기아 (에스퍼 / 비행) — GO 최대 CP: 3,703 | 2026-06-18 |
+| pokemon-lumineon | Lumineon / 네오라이트 | concept | ko | #457 네오라이트 (물) — GO 최대 CP: 1,814 | 2026-06-18 |
+| pokemon-lunala | Lunala / 루나아라 | concept | ko | #792 루나아라 (에스퍼 / 고스트) — GO 최대 CP: 4,042 | 2026-06-18 |
+| pokemon-lunatone | Lunatone / 루나톤 | concept | ko | #337 루나톤 (바위 / 에스퍼) — GO 최대 CP: 2,327 | 2026-06-18 |
+| pokemon-lurantis | Lurantis / 라란티스 | concept | ko | #754 라란티스 (풀) — GO 최대 CP: 2,398 | 2026-06-18 |
+| pokemon-luvdisc | Luvdisc / 사랑동이 | concept | ko | #370 사랑동이 (물) — GO 최대 CP: 848 | 2026-06-18 |
+| pokemon-luxio | Luxio / 럭시오 | concept | ko | #404 럭시오 (전기) — GO 최대 CP: 1,486 | 2026-06-18 |
+| pokemon-luxray | Luxray / 렌트라 | concept | ko | #405 렌트라 (전기) — GO 최대 CP: 2,888 | 2026-06-18 |
+| pokemon-mabosstiff | Mabosstiff / 마피티프 | concept | ko | #943 마피티프 (악) — GO 최대 CP: 2,963 | 2026-06-18 |
+| pokemon-machamp | Machamp / 괴력몬 | concept | ko | #068 괴력몬 (격투) — GO 최대 CP: 3,056 | 2026-06-18 |
+| pokemon-machoke | Machoke / 근육몬 | concept | ko | #067 근육몬 (격투) — GO 최대 CP: 2,031 | 2026-06-18 |
+| pokemon-machop | Machop / 알통몬 | concept | ko | #066 알통몬 (격투) — GO 최대 CP: 1,278 | 2026-06-18 |
+| pokemon-magby | Magby / 마그비 | concept | ko | #240 마그비 (불꽃) — GO 최대 CP: 1,323 | 2026-06-18 |
+| pokemon-magcargo | Magcargo / 마그카르고 | concept | ko | #219 마그카르고 (불꽃 / 바위) — GO 최대 CP: 1,702 | 2026-06-18 |
+| pokemon-magearna | Magearna / 마기아나 | concept | ko | #801 마기아나 (강철 / 페어리) — GO 최대 CP: 3,615 | 2026-06-18 |
+| pokemon-magikarp | Magikarp / 잉어킹 | concept | ko | #129 잉어킹 (물) — GO 최대 CP: 274 | 2026-06-18 |
+| pokemon-magmar | Magmar / 마그마 | concept | ko | #126 마그마 (불꽃) — GO 최대 CP: 2,394 | 2026-06-18 |
+| pokemon-magmortar | Magmortar / 마그마번 | concept | ko | #467 마그마번 (불꽃) — GO 최대 CP: 3,132 | 2026-06-18 |
+| pokemon-magnemite | Magnemite / 코일 | concept | ko | #081 코일 (전기 / 강철) — GO 최대 CP: 1,362 | 2026-06-18 |
+| pokemon-magneton | Magneton / 레어코일 | concept | ko | #082 레어코일 (전기 / 강철) — GO 최대 CP: 2,485 | 2026-06-18 |
+| pokemon-magnezone | Magnezone / 자포코일 | concept | ko | #462 자포코일 (전기 / 강철) — GO 최대 CP: 3,205 | 2026-06-18 |
+| pokemon-makuhita | Makuhita / 마크탕 | concept | ko | #296 마크탕 (격투) — GO 최대 CP: 817 | 2026-06-18 |
+| pokemon-malamar | Malamar / 칼라마네로 | concept | ko | #687 칼라마네로 (악 / 에스퍼) — GO 최대 CP: 2,359 | 2026-06-18 |
+| pokemon-mamoswine | Mamoswine / 맘모꾸리 | concept | ko | #473 맘모꾸리 (얼음 / 땅) — GO 최대 CP: 3,328 | 2026-06-18 |
+| pokemon-manaphy | Manaphy / 마나피 | concept | ko | #490 마나피 (물) — GO 최대 CP: 3,265 | 2026-06-18 |
+| pokemon-mandibuzz | Mandibuzz / 버랜지나 | concept | ko | #630 버랜지나 (악 / 비행) — GO 최대 CP: 2,138 | 2026-06-18 |
+| pokemon-manectric | Manectric / 썬더볼트 | concept | ko | #310 썬더볼트 (전기) — GO 최대 CP: 2,340 | 2026-06-18 |
+| pokemon-mankey | Mankey / 망키 | concept | ko | #056 망키 (격투) — GO 최대 CP: 1,164 | 2026-06-18 |
+| pokemon-mantine | Mantine / 만타인 | concept | ko | #226 만타인 (물 / 비행) — GO 최대 CP: 2,108 | 2026-06-18 |
+| pokemon-mantyke | Mantyke / 타만타 | concept | ko | #458 타만타 (물 / 비행) — GO 최대 CP: 1,248 | 2026-06-18 |
+| pokemon-maractus | Maractus / 마라카치 | concept | ko | #556 마라카치 (풀) — GO 최대 CP: 2,274 | 2026-06-18 |
+| pokemon-mareanie | Mareanie / 시마사리 | concept | ko | #747 시마사리 (독 / 물) — GO 최대 CP: 972 | 2026-06-18 |
+| pokemon-mareep | Mareep / 메리프 | concept | ko | #179 메리프 (전기) — GO 최대 CP: 991 | 2026-06-18 |
+| pokemon-marill | Marill / 마릴 | concept | ko | #183 마릴 (물 / 페어리) — GO 최대 CP: 461 | 2026-06-18 |
+| pokemon-marowak | Marowak / 텅구리 | concept | ko | #105 텅구리 (땅) — GO 최대 CP: 1,835 | 2026-06-18 |
+| pokemon-marshadow | Marshadow / 마샤도 | concept | ko | #802 마샤도 (격투 / 고스트) — GO 최대 CP: 3,730 | 2026-06-18 |
+| pokemon-marshtomp | Marshtomp / 늪짱이 | concept | ko | #259 늪짱이 (물 / 땅) — GO 최대 CP: 1,776 | 2026-06-18 |
+| pokemon-maschiff | Maschiff / 오라티프 | concept | ko | #942 오라티프 (악) — GO 최대 CP: 1,399 | 2026-06-18 |
+| pokemon-masquerain | Masquerain / 비나방 | concept | ko | #284 비나방 (벌레 / 비행) — GO 최대 CP: 2,270 | 2026-06-18 |
+| pokemon-maushold | Maushold / 파밀리쥐 | concept | ko | #925 파밀리쥐 (노말) — GO 최대 CP: 1,985 | 2026-06-18 |
+| pokemon-mawile | Mawile / 입치트 | concept | ko | #303 입치트 (강철 / 페어리) — GO 최대 CP: 1,634 | 2026-06-18 |
+| pokemon-medicham | Medicham / 요가램 | concept | ko | #308 요가램 (격투 / 에스퍼) — GO 최대 CP: 1,431 | 2026-06-18 |
+| pokemon-meditite | Meditite / 요가랑 | concept | ko | #307 요가랑 (격투 / 에스퍼) — GO 최대 CP: 693 | 2026-06-18 |
+| pokemon-meganium | Meganium / 메가니움 | concept | ko | #154 메가니움 (풀) — GO 최대 CP: 2,410 | 2026-06-18 |
+| pokemon-melmetal | Melmetal / 멜메탈 | concept | ko | #809 멜메탈 (강철) — GO 최대 CP: 3,599 | 2026-06-18 |
+| pokemon-meltan | Meltan / 멜탄 | concept | ko | #808 멜탄 (강철) — GO 최대 CP: 1,068 | 2026-06-18 |
+| pokemon-meowscarada | Meowscarada / 마스카나 | concept | ko | #908 마스카나 (풀 / 악) — GO 최대 CP: 2,825 | 2026-06-18 |
+| pokemon-meowstic | Meowstic / 냐오닉스 | concept | ko | #678 냐오닉스 (에스퍼) — GO 최대 CP: 2,124 | 2026-06-18 |
+| pokemon-meowth | Meowth / 나옹 | concept | ko | #052 나옹 (노말) — GO 최대 CP: 748 | 2026-06-18 |
+| pokemon-mesprit | Mesprit / 엠라이트 | concept | ko | #481 엠라이트 (에스퍼) — GO 최대 CP: 3,058 | 2026-06-18 |
+| pokemon-metagross | Metagross / 메타그로스 | concept | ko | #376 메타그로스 (강철 / 에스퍼) — GO 최대 CP: 3,791 | 2026-06-18 |
+| pokemon-metang | Metang / 메탕구 | concept | ko | #375 메탕구 (강철 / 에스퍼) — GO 최대 CP: 1,721 | 2026-06-18 |
+| pokemon-metapod | Metapod / 단데기 | concept | ko | #011 단데기 (벌레) — GO 최대 CP: 450 | 2026-06-18 |
+| pokemon-mew | Mew / 뮤 | concept | ko | #151 뮤 (에스퍼) — GO 최대 CP: 3,265 | 2026-06-18 |
+| pokemon-mewtwo | Mewtwo / 뮤츠 | concept | ko | #150 뮤츠 (에스퍼) — GO 최대 CP: 4,178 | 2026-06-18 |
+| pokemon-mienfoo | Mienfoo / 비조푸 | concept | ko | #619 비조푸 (격투) — GO 최대 CP: 1,389 | 2026-06-18 |
+| pokemon-mienshao | Mienshao / 비조도 | concept | ko | #620 비조도 (격투) — GO 최대 CP: 2,710 | 2026-06-18 |
+| pokemon-mightyena | Mightyena / 그라에나 | concept | ko | #262 그라에나 (악) — GO 최대 CP: 1,926 | 2026-06-18 |
+| pokemon-milcery | Milcery / 마빌크 | concept | ko | #868 마빌크 (페어리) — GO 최대 CP: 829 | 2026-06-18 |
+| pokemon-milotic | Milotic / 밀로틱 | concept | ko | #350 밀로틱 (물) — GO 최대 CP: 3,005 | 2026-06-18 |
+| pokemon-miltank | Miltank / 밀탱크 | concept | ko | #241 밀탱크 (노말) — GO 최대 CP: 2,354 | 2026-06-18 |
 | pokemon-mime-jr | Mime Jr. / 흉내내 | concept | ko | #439 흉내내 (에스퍼 / 페어리) — GO 최대 CP: 1,095 | 2026-06-05 |
-| pokemon-mimikyu | Mimikyu / 따라큐 | concept | ko | #778 따라큐 (고스트 / 페어리) — GO 최대 CP: 2,225 | 2026-06-05 |
-| pokemon-minccino | Minccino / 치라미 | concept | ko | #572 치라미 (노말 / none) — GO 최대 CP: 872 | 2026-06-05 |
-| pokemon-minior | Minior / 메테노 | concept | ko | #774 메테노 (바위 / 비행) — GO 최대 CP: 2,292 | 2026-06-05 |
-| pokemon-minun | Minun / 마이농 | concept | ko | #312 마이농 (전기 / none) — GO 최대 CP: 1,694 | 2026-06-05 |
-| pokemon-miraidon | Miraidon / 미라이돈 | concept | ko | #1008 미라이돈 (전기 / 드래곤) — GO 최대 CP: 3,973 | 2026-06-05 |
-| pokemon-misdreavus | Misdreavus / 무우마 | concept | ko | #200 무우마 (고스트 / none) — GO 최대 CP: 1,926 | 2026-06-05 |
-| pokemon-mismagius | Mismagius / 무우마직 | concept | ko | #429 무우마직 (고스트 / none) — GO 최대 CP: 2,615 | 2026-06-05 |
-| pokemon-moltres | Moltres / 파이어 | concept | ko | #146 파이어 (불꽃/비행 타입) — 기본 스탯 합계 580 | 2026-06-05 |
-| pokemon-monferno | Monferno / 파이숭이 | concept | ko | #391 파이숭이 (불꽃 / 격투) — GO 최대 CP: 1,574 | 2026-06-05 |
-| pokemon-morelull | Morelull / 자마슈 | concept | ko | #755 자마슈 (풀 / 페어리) — GO 최대 CP: 1,033 | 2026-06-05 |
-| pokemon-morgrem | Morgrem / 쏘겨모 | concept | ko | #860 쏘겨모 (악 / 페어리) — GO 최대 CP: 1,442 | 2026-06-05 |
-| pokemon-morpeko | Morpeko / 모르페코 | concept | ko | #877 모르페코 (전기 / 악) — GO 최대 CP: 1,942 | 2026-06-05 |
-| pokemon-mothim | Mothim / 나메일 | concept | ko | #414 나메일 (벌레 / 비행) — GO 최대 CP: 1,815 | 2026-06-05 |
-| pokemon-mr-mime | Mr-mime / 마임맨 | concept | ko | #122 마임맨 (에스퍼/페어리 타입) — 기본 스탯 합계 460 | 2026-06-05 |
-| pokemon-mr-rime | Mr. Rime / 마임꽁꽁 | concept | ko | #866 마임꽁꽁 (얼음 / 에스퍼) — GO 최대 CP: 2,827 | 2026-06-05 |
-| pokemon-mudbray | Mudbray / 머드나기 | concept | ko | #749 머드나기 (땅 / none) — GO 최대 CP: 1,892 | 2026-06-05 |
-| pokemon-mudkip | Mudkip / 물짱이 | concept | ko | #258 물짱이 (물 / none) — GO 최대 CP: 1,128 | 2026-06-05 |
-| pokemon-mudsdale | Mudsdale / 만마드 | concept | ko | #750 만마드 (땅 / none) — GO 최대 CP: 3,046 | 2026-06-05 |
-| pokemon-muk | Muk / 질뻐기 | concept | ko | #089 질뻐기 (독 타입) — 기본 스탯 합계 500 | 2026-06-05 |
-| pokemon-munchlax | Munchlax / 먹고자 | concept | ko | #446 먹고자 (노말 / none) — GO 최대 CP: 1,892 | 2026-06-05 |
-| pokemon-munkidori | Munkidori / 이야후 | concept | ko | #1015 이야후 (독 / 에스퍼) — GO 최대 CP: 2,938 | 2026-06-05 |
-| pokemon-munna | Munna / 몽나 | concept | ko | #517 몽나 (에스퍼 / none) — GO 최대 CP: 1,145 | 2026-06-05 |
-| pokemon-murkrow | Murkrow / 니로우 | concept | ko | #198 니로우 (악 / 비행) — GO 최대 CP: 1,562 | 2026-06-05 |
-| pokemon-musharna | Musharna / 몽얌나 | concept | ko | #518 몽얌나 (에스퍼 / none) — GO 최대 CP: 2,723 | 2026-06-05 |
-| pokemon-nacli | Nacli / 베베솔트 | concept | ko | #932 베베솔트 (바위 / none) — GO 최대 CP: 966 | 2026-06-05 |
-| pokemon-naclstack | Naclstack / 스태솔트 | concept | ko | #933 스태솔트 (바위 / none) — GO 최대 CP: 1,292 | 2026-06-05 |
-| pokemon-naganadel | Naganadel / 아고용 | concept | ko | #804 아고용 (독 / 드래곤) — GO 최대 CP: 3,173 | 2026-06-05 |
-| pokemon-natu | Natu / 네이티 | concept | ko | #177 네이티 (에스퍼 / 비행) — GO 최대 CP: 1,102 | 2026-06-05 |
-| pokemon-necrozma | Necrozma / 네크로즈마 | concept | ko | #800 네크로즈마 (에스퍼 / none) — GO 최대 CP: 3,682 | 2026-06-05 |
-| pokemon-nickit | Nickit / 훔처우 | concept | ko | #827 훔처우 (악 / none) — GO 최대 CP: 714 | 2026-06-05 |
-| pokemon-nidoking | Nidoking / 니드킹 | concept | ko | #034 니드킹 (독/땅 타입) — 기본 스탯 합계 505 | 2026-06-05 |
-| pokemon-nidoqueen | Nidoqueen / 니드퀸 | concept | ko | #031 니드퀸 (독/땅 타입) — 기본 스탯 합계 505 | 2026-06-05 |
+| pokemon-mimikyu | Mimikyu / 따라큐 | concept | ko | #778 따라큐 (고스트 / 페어리) — GO 최대 CP: 2,225 | 2026-06-18 |
+| pokemon-minccino | Minccino / 치라미 | concept | ko | #572 치라미 (노말) — GO 최대 CP: 872 | 2026-06-18 |
+| pokemon-minior | Minior / 메테노 | concept | ko | #774 메테노 (바위 / 비행) — GO 최대 CP: 2,292 | 2026-06-18 |
+| pokemon-minun | Minun / 마이농 | concept | ko | #312 마이농 (전기) — GO 최대 CP: 1,694 | 2026-06-18 |
+| pokemon-miraidon | Miraidon / 미라이돈 | concept | ko | #1008 미라이돈 (전기 / 드래곤) — GO 최대 CP: 3,973 | 2026-06-18 |
+| pokemon-misdreavus | Misdreavus / 무우마 | concept | ko | #200 무우마 (고스트) — GO 최대 CP: 1,926 | 2026-06-18 |
+| pokemon-mismagius | Mismagius / 무우마직 | concept | ko | #429 무우마직 (고스트) — GO 최대 CP: 2,615 | 2026-06-18 |
+| pokemon-moltres | Moltres / 파이어 | concept | ko | #146 파이어 (불꽃 / 비행) — GO 최대 CP: 3,465 | 2026-06-18 |
+| pokemon-monferno | Monferno / 파이숭이 | concept | ko | #391 파이숭이 (불꽃 / 격투) — GO 최대 CP: 1,574 | 2026-06-18 |
+| pokemon-morelull | Morelull / 자마슈 | concept | ko | #755 자마슈 (풀 / 페어리) — GO 최대 CP: 1,033 | 2026-06-18 |
+| pokemon-morgrem | Morgrem / 쏘겨모 | concept | ko | #860 쏘겨모 (악 / 페어리) — GO 최대 CP: 1,442 | 2026-06-18 |
+| pokemon-morpeko | Morpeko / 모르페코 | concept | ko | #877 모르페코 (전기 / 악) — GO 최대 CP: 1,942 | 2026-06-18 |
+| pokemon-mothim | Mothim / 나메일 | concept | ko | #414 나메일 (벌레 / 비행) — GO 최대 CP: 1,815 | 2026-06-18 |
+| pokemon-mr-mime | Mr-mime / 마임맨 | concept | ko | #122 마임맨 (에스퍼 / 페어리) — GO 최대 CP: 2,228 | 2026-06-18 |
+| pokemon-mr-rime | Mr. Rime / 마임꽁꽁 | concept | ko | #866 마임꽁꽁 (얼음 / 에스퍼) — GO 최대 CP: 2,827 | 2026-06-18 |
+| pokemon-mudbray | Mudbray / 머드나기 | concept | ko | #749 머드나기 (땅) — GO 최대 CP: 1,892 | 2026-06-18 |
+| pokemon-mudkip | Mudkip / 물짱이 | concept | ko | #258 물짱이 (물) — GO 최대 CP: 1,128 | 2026-06-18 |
+| pokemon-mudsdale | Mudsdale / 만마드 | concept | ko | #750 만마드 (땅) — GO 최대 CP: 3,046 | 2026-06-18 |
+| pokemon-muk | Muk / 질뻐기 | concept | ko | #089 질뻐기 (독) — GO 최대 CP: 2,757 | 2026-06-18 |
+| pokemon-munchlax | Munchlax / 먹고자 | concept | ko | #446 먹고자 (노말) — GO 최대 CP: 1,892 | 2026-06-18 |
+| pokemon-munkidori | Munkidori / 이야후 | concept | ko | #1015 이야후 (독 / 에스퍼) — GO 최대 CP: 2,938 | 2026-06-18 |
+| pokemon-munna | Munna / 몽나 | concept | ko | #517 몽나 (에스퍼) — GO 최대 CP: 1,145 | 2026-06-18 |
+| pokemon-murkrow | Murkrow / 니로우 | concept | ko | #198 니로우 (악 / 비행) — GO 최대 CP: 1,562 | 2026-06-18 |
+| pokemon-musharna | Musharna / 몽얌나 | concept | ko | #518 몽얌나 (에스퍼) — GO 최대 CP: 2,723 | 2026-06-18 |
+| pokemon-nacli | Nacli / 베베솔트 | concept | ko | #932 베베솔트 (바위) — GO 최대 CP: 966 | 2026-06-18 |
+| pokemon-naclstack | Naclstack / 스태솔트 | concept | ko | #933 스태솔트 (바위) — GO 최대 CP: 1,292 | 2026-06-18 |
+| pokemon-naganadel | Naganadel / 아고용 | concept | ko | #804 아고용 (독 / 드래곤) — GO 최대 CP: 3,173 | 2026-06-18 |
+| pokemon-natu | Natu / 네이티 | concept | ko | #177 네이티 (에스퍼 / 비행) — GO 최대 CP: 1,102 | 2026-06-18 |
+| pokemon-necrozma | Necrozma / 네크로즈마 | concept | ko | #800 네크로즈마 (에스퍼) — GO 최대 CP: 3,682 | 2026-06-18 |
+| pokemon-nickit | Nickit / 훔처우 | concept | ko | #827 훔처우 (악) — GO 최대 CP: 714 | 2026-06-18 |
+| pokemon-nidoking | Nidoking / 니드킹 | concept | ko | #034 니드킹 (독 / 땅) — GO 최대 CP: 2,567 | 2026-06-18 |
+| pokemon-nidoqueen | Nidoqueen / 니드퀸 | concept | ko | #031 니드퀸 (독 / 땅) — GO 최대 CP: 2,488 | 2026-06-18 |
 | pokemon-nidoran-f | Nidoran-f / 니드런♀ | concept | ko | #029 니드런♀ (독 타입) — 기본 스탯 합계 275 | 2026-06-05 |
 | pokemon-nidoran-m | Nidoran-m / 니드런♂ | concept | ko | #032 니드런♂ (독 타입) — 기본 스탯 합계 273 | 2026-06-05 |
 | pokemon-nidoran | Nidoran♀ / 니드런♀ | concept | ko | #029 니드런♀ (독 / none) — GO 최대 CP: 816 | 2026-06-05 |
-| pokemon-nidorina | Nidorina / 니드리나 | concept | ko | #030 니드리나 (독 타입) — 기본 스탯 합계 365 | 2026-06-05 |
-| pokemon-nidorino | Nidorino / 니드리노 | concept | ko | #033 니드리노 (독 타입) — 기본 스탯 합계 365 | 2026-06-05 |
-| pokemon-nihilego | Nihilego / 텅비드 | concept | ko | #793 텅비드 (바위 / 독) — GO 최대 CP: 3,949 | 2026-06-05 |
-| pokemon-nincada | Nincada / 토중몬 | concept | ko | #290 토중몬 (벌레 / 땅) — GO 최대 CP: 768 | 2026-06-05 |
-| pokemon-ninetales | Ninetales / 나인테일 | concept | ko | #038 나인테일 (불꽃 타입) — 기본 스탯 합계 505 | 2026-06-05 |
-| pokemon-ninjask | Ninjask / 아이스크 | concept | ko | #291 아이스크 (벌레 / 비행) — GO 최대 CP: 1,969 | 2026-06-05 |
-| pokemon-noctowl | Noctowl / 야부엉 | concept | ko | #164 야부엉 (노말 / 비행) — GO 최대 CP: 2,024 | 2026-06-05 |
-| pokemon-noibat | Noibat / 음뱃 | concept | ko | #714 음뱃 (비행 / 드래곤) — GO 최대 CP: 667 | 2026-06-05 |
-| pokemon-noivern | Noivern / 음번 | concept | ko | #715 음번 (비행 / 드래곤) — GO 최대 CP: 2,764 | 2026-06-05 |
-| pokemon-nosepass | Nosepass / 코코파스 | concept | ko | #299 코코파스 (바위 / none) — GO 최대 CP: 993 | 2026-06-05 |
-| pokemon-numel | Numel / 둔타 | concept | ko | #322 둔타 (불꽃 / 땅) — GO 최대 CP: 1,057 | 2026-06-05 |
-| pokemon-nuzleaf | Nuzleaf / 잎새코 | concept | ko | #274 잎새코 (풀 / 악) — GO 최대 CP: 1,227 | 2026-06-05 |
-| pokemon-nymble | Nymble / 콩알뚜기 | concept | ko | #919 콩알뚜기 (벌레 / none) — GO 최대 CP: 592 | 2026-06-05 |
-| pokemon-obstagoon | Obstagoon / 가로막구리 | concept | ko | #862 가로막구리 (악 / 노말) — GO 최대 CP: 2,652 | 2026-06-05 |
-| pokemon-octillery | Octillery / 대포무노 | concept | ko | #224 대포무노 (물 / none) — GO 최대 CP: 2,315 | 2026-06-05 |
-| pokemon-oddish | Oddish / 뚜벅쵸 | concept | ko | #043 뚜벅쵸 (풀/독 타입) — 기본 스탯 합계 320 | 2026-06-05 |
-| pokemon-ogerpon | Ogerpon / 오거폰 | concept | ko | #1017 오거폰 (풀 / none) — GO 최대 CP: 2,783 | 2026-06-05 |
-| pokemon-oinkologne | Oinkologne / 퍼퓨돈 | concept | ko | #916 퍼퓨돈 (노말 / none) — GO 최대 CP: 2,608 | 2026-06-05 |
-| pokemon-okidogi | Okidogi / 조타구 | concept | ko | #1014 조타구 (독 / 격투) — GO 최대 CP: 2,986 | 2026-06-05 |
-| pokemon-omanyte | Omanyte / 암나이트 | concept | ko | #138 암나이트 (바위/물 타입) — 기본 스탯 합계 355 | 2026-06-05 |
-| pokemon-omastar | Omastar / 암스타 | concept | ko | #139 암스타 (바위/물 타입) — 기본 스탯 합계 495 | 2026-06-05 |
-| pokemon-onix | Onix / 롱스톤 | concept | ko | #095 롱스톤 (바위/땅 타입) — 기본 스탯 합계 385 | 2026-06-05 |
-| pokemon-oranguru | Oranguru / 하랑우탄 | concept | ko | #765 하랑우탄 (노말 / 에스퍼) — GO 최대 CP: 2,450 | 2026-06-05 |
-| pokemon-orbeetle | Orbeetle / 이올브 | concept | ko | #826 이올브 (벌레 / 에스퍼) — GO 최대 CP: 2,223 | 2026-06-05 |
-| pokemon-oricorio | Oricorio / 춤추새 | concept | ko | #741 춤추새 (불꽃 / 비행) — GO 최대 CP: 2,333 | 2026-06-05 |
-| pokemon-orthworm | Orthworm / 꿈트렁 | concept | ko | #968 꿈트렁 (강철 / none) — GO 최대 CP: 2,299 | 2026-06-05 |
-| pokemon-oshawott | Oshawott / 수댕이 | concept | ko | #501 수댕이 (물 / none) — GO 최대 CP: 1,046 | 2026-06-05 |
-| pokemon-overqwil | Overqwil / 장침바루 | concept | ko | #904 장침바루 (악 / 독) — GO 최대 CP: 2,946 | 2026-06-05 |
-| pokemon-pachirisu | Pachirisu / 파치리스 | concept | ko | #417 파치리스 (전기 / none) — GO 최대 CP: 1,213 | 2026-06-05 |
-| pokemon-palafin | Palafin / 돌핀맨 | concept | ko | #964 돌핀맨 (물 / none) — GO 최대 CP: 1,927 | 2026-06-05 |
-| pokemon-palkia | Palkia / 펄기아 | concept | ko | #484 펄기아 (물 / 드래곤) — GO 최대 CP: 3,991 | 2026-06-05 |
-| pokemon-palossand | Palossand / 모래성이당 | concept | ko | #770 모래성이당 (고스트 / 땅) — GO 최대 CP: 2,444 | 2026-06-05 |
-| pokemon-palpitoad | Palpitoad / 두까비 | concept | ko | #536 두까비 (물 / 땅) — GO 최대 CP: 1,392 | 2026-06-05 |
-| pokemon-pancham | Pancham / 판짱 | concept | ko | #674 판짱 (격투 / none) — GO 최대 CP: 1,489 | 2026-06-05 |
-| pokemon-pangoro | Pangoro / 부란다 | concept | ko | #675 부란다 (격투 / 악) — GO 최대 CP: 2,902 | 2026-06-05 |
-| pokemon-panpour | Panpour / 앗차프 | concept | ko | #515 앗차프 (물 / none) — GO 최대 CP: 956 | 2026-06-05 |
-| pokemon-pansage | Pansage / 야나프 | concept | ko | #511 야나프 (풀 / none) — GO 최대 CP: 956 | 2026-06-05 |
-| pokemon-pansear | Pansear / 바오프 | concept | ko | #513 바오프 (불꽃 / none) — GO 최대 CP: 956 | 2026-06-05 |
-| pokemon-paras | Paras / 파라스 | concept | ko | #046 파라스 (벌레/풀 타입) — 기본 스탯 합계 285 | 2026-06-05 |
-| pokemon-parasect | Parasect / 파라섹트 | concept | ko | #047 파라섹트 (벌레/풀 타입) — 기본 스탯 합계 405 | 2026-06-05 |
-| pokemon-passimian | Passimian / 내던숭이 | concept | ko | #766 내던숭이 (격투 / none) — GO 최대 CP: 3,033 | 2026-06-05 |
-| pokemon-patrat | Patrat / 보르쥐 | concept | ko | #504 보르쥐 (노말 / none) — GO 최대 CP: 791 | 2026-06-05 |
-| pokemon-pawmi | Pawmi / 빠모 | concept | ko | #921 빠모 (전기 / none) — GO 최대 CP: 636 | 2026-06-05 |
-| pokemon-pawmo | Pawmo / 빠모트 | concept | ko | #922 빠모트 (전기 / 격투) — GO 최대 CP: 1,299 | 2026-06-05 |
-| pokemon-pawmot | Pawmot / 빠르모트 | concept | ko | #923 빠르모트 (전기 / 격투) — GO 최대 CP: 2,634 | 2026-06-05 |
-| pokemon-pawniard | Pawniard / 자망칼 | concept | ko | #624 자망칼 (악 / 강철) — GO 최대 CP: 1,433 | 2026-06-05 |
-| pokemon-pecharunt | Pecharunt / 복숭악동 | concept | ko | #1025 복숭악동 (독 / 고스트) — GO 최대 CP: 2,570 | 2026-06-05 |
-| pokemon-pelipper | Pelipper / 패리퍼 | concept | ko | #279 패리퍼 (물 / 비행) — GO 최대 CP: 2,127 | 2026-06-05 |
-| pokemon-perrserker | Perrserker / 나이킹 | concept | ko | #863 나이킹 (강철 / none) — GO 최대 CP: 2,386 | 2026-06-05 |
-| pokemon-persian | Persian / 페르시온 | concept | ko | #053 페르시온 (노말 타입) — 기본 스탯 합계 440 | 2026-06-05 |
-| pokemon-petilil | Petilil / 치릴리 | concept | ko | #548 치릴리 (풀 / none) — GO 최대 CP: 1,030 | 2026-06-05 |
-| pokemon-phanpy | Phanpy / 코코리 | concept | ko | #231 코코리 (땅 / none) — GO 최대 CP: 1,206 | 2026-06-05 |
-| pokemon-phantump | Phantump / 나목령 | concept | ko | #708 나목령 (고스트 / 풀) — GO 최대 CP: 1,123 | 2026-06-05 |
-| pokemon-pheromosa | Pheromosa / 페로코체 | concept | ko | #795 페로코체 (벌레 / 격투) — GO 최대 CP: 2,842 | 2026-06-05 |
-| pokemon-phione | Phione / 피오네 | concept | ko | #489 피오네 (물 / none) — GO 최대 CP: 2,105 | 2026-06-05 |
-| pokemon-pichu | Pichu / 피츄 | concept | ko | #172 피츄 (전기 / none) — GO 최대 CP: 473 | 2026-06-05 |
-| pokemon-pidgeot | Pidgeot / 피죤투 | concept | ko | #018 피죤투 (노말/비행 타입) — 기본 스탯 합계 479 | 2026-06-05 |
-| pokemon-pidgeotto | Pidgeotto / 피죤 | concept | ko | #017 피죤 (노말/비행 타입) — 기본 스탯 합계 349 | 2026-06-05 |
-| pokemon-pidgey | Pidgey / 구구 | concept | ko | #016 구구 (노말/비행 타입) — 기본 스탯 합계 251 | 2026-06-05 |
-| pokemon-pidove | Pidove / 콩둘기 | concept | ko | #519 콩둘기 (노말 / 비행) — GO 최대 CP: 848 | 2026-06-05 |
-| pokemon-pignite | Pignite / 차오꿀 | concept | ko | #499 차오꿀 (불꽃 / 격투) — GO 최대 CP: 1,924 | 2026-06-05 |
-| pokemon-pikachu | Pikachu / 피카츄 | concept | ko | #025 피카츄 (전기 타입) — 기본 스탯 합계 320 | 2026-06-05 |
-| pokemon-pikipek | Pikipek / 콕코구리 | concept | ko | #731 콕코구리 (노말 / 비행) — GO 최대 CP: 910 | 2026-06-05 |
-| pokemon-piloswine | Piloswine / 메꾸리 | concept | ko | #221 메꾸리 (얼음 / 땅) — GO 최대 CP: 2,345 | 2026-06-05 |
-| pokemon-pincurchin | Pincurchin / 찌르성게 | concept | ko | #871 찌르성게 (전기 / none) — GO 최대 CP: 1,931 | 2026-06-05 |
-| pokemon-pineco | Pineco / 피콘 | concept | ko | #204 피콘 (벌레 / none) — GO 최대 CP: 1,108 | 2026-06-05 |
-| pokemon-pinsir | Pinsir / 쁘사이저 | concept | ko | #127 쁘사이저 (벌레 타입) — 기본 스탯 합계 500 | 2026-06-05 |
-| pokemon-piplup | Piplup / 팽도리 | concept | ko | #393 팽도리 (물 / none) — GO 최대 CP: 1,075 | 2026-06-05 |
-| pokemon-plusle | Plusle / 플러시 | concept | ko | #311 플러시 (전기 / none) — GO 최대 CP: 1,778 | 2026-06-05 |
-| pokemon-poipole | Poipole / 베베놈 | concept | ko | #803 베베놈 (독 / none) — GO 최대 CP: 1,640 | 2026-06-05 |
-| pokemon-politoed | Politoed / 왕구리 | concept | ko | #186 왕구리 (물 / none) — GO 최대 CP: 2,449 | 2026-06-05 |
-| pokemon-poliwag | Poliwag / 발챙이 | concept | ko | #060 발챙이 (물 타입) — 기본 스탯 합계 300 | 2026-06-05 |
-| pokemon-poliwhirl | Poliwhirl / 슈륙챙이 | concept | ko | #061 슈륙챙이 (물 타입) — 기본 스탯 합계 385 | 2026-06-05 |
-| pokemon-poliwrath | Poliwrath / 강챙이 | concept | ko | #062 강챙이 (물/격투 타입) — 기본 스탯 합계 510 | 2026-06-05 |
-| pokemon-poltchageist | Poltchageist / 차데스 | concept | ko | #1012 차데스 (풀 / 고스트) — GO 최대 CP: 1,139 | 2026-06-05 |
-| pokemon-polteageist | Polteageist / 포트데스 | concept | ko | #855 포트데스 (고스트 / none) — GO 최대 CP: 3,058 | 2026-06-05 |
-| pokemon-ponyta | Ponyta / 포니타 | concept | ko | #077 포니타 (불꽃 타입) — 기본 스탯 합계 410 | 2026-06-05 |
-| pokemon-poochyena | Poochyena / 포챠나 | concept | ko | #261 포챠나 (악 / none) — GO 최대 CP: 678 | 2026-06-05 |
-| pokemon-popplio | Popplio / 누리공 | concept | ko | #728 누리공 (물 / none) — GO 최대 CP: 1,129 | 2026-06-05 |
+| pokemon-nidorina | Nidorina / 니드리나 | concept | ko | #030 니드리나 (독) — GO 최대 CP: 1,309 | 2026-06-18 |
+| pokemon-nidorino | Nidorino / 니드리노 | concept | ko | #033 니드리노 (독) — GO 최대 CP: 1,393 | 2026-06-18 |
+| pokemon-nihilego | Nihilego / 텅비드 | concept | ko | #793 텅비드 (바위 / 독) — GO 최대 CP: 3,949 | 2026-06-18 |
+| pokemon-nincada | Nincada / 토중몬 | concept | ko | #290 토중몬 (벌레 / 땅) — GO 최대 CP: 768 | 2026-06-18 |
+| pokemon-ninetales | Ninetales / 나인테일 | concept | ko | #038 나인테일 (불꽃) — GO 최대 CP: 2,279 | 2026-06-18 |
+| pokemon-ninjask | Ninjask / 아이스크 | concept | ko | #291 아이스크 (벌레 / 비행) — GO 최대 CP: 1,969 | 2026-06-18 |
+| pokemon-noctowl | Noctowl / 야부엉 | concept | ko | #164 야부엉 (노말 / 비행) — GO 최대 CP: 2,024 | 2026-06-18 |
+| pokemon-noibat | Noibat / 음뱃 | concept | ko | #714 음뱃 (비행 / 드래곤) — GO 최대 CP: 667 | 2026-06-18 |
+| pokemon-noivern | Noivern / 음번 | concept | ko | #715 음번 (비행 / 드래곤) — GO 최대 CP: 2,764 | 2026-06-18 |
+| pokemon-nosepass | Nosepass / 코코파스 | concept | ko | #299 코코파스 (바위) — GO 최대 CP: 993 | 2026-06-18 |
+| pokemon-numel | Numel / 둔타 | concept | ko | #322 둔타 (불꽃 / 땅) — GO 최대 CP: 1,057 | 2026-06-18 |
+| pokemon-nuzleaf | Nuzleaf / 잎새코 | concept | ko | #274 잎새코 (풀 / 악) — GO 최대 CP: 1,227 | 2026-06-18 |
+| pokemon-nymble | Nymble / 콩알뚜기 | concept | ko | #919 콩알뚜기 (벌레) — GO 최대 CP: 592 | 2026-06-18 |
+| pokemon-obstagoon | Obstagoon / 가로막구리 | concept | ko | #862 가로막구리 (악 / 노말) — GO 최대 CP: 2,652 | 2026-06-18 |
+| pokemon-octillery | Octillery / 대포무노 | concept | ko | #224 대포무노 (물) — GO 최대 CP: 2,315 | 2026-06-18 |
+| pokemon-oddish | Oddish / 뚜벅쵸 | concept | ko | #043 뚜벅쵸 (풀 / 독) — GO 최대 CP: 1,228 | 2026-06-18 |
+| pokemon-ogerpon | Ogerpon / 오거폰 | concept | ko | #1017 오거폰 (풀) — GO 최대 CP: 2,783 | 2026-06-18 |
+| pokemon-oinkologne | Oinkologne / 퍼퓨돈 | concept | ko | #916 퍼퓨돈 (노말) — GO 최대 CP: 2,608 | 2026-06-18 |
+| pokemon-okidogi | Okidogi / 조타구 | concept | ko | #1014 조타구 (독 / 격투) — GO 최대 CP: 2,986 | 2026-06-18 |
+| pokemon-omanyte | Omanyte / 암나이트 | concept | ko | #138 암나이트 (바위 / 물) — GO 최대 CP: 1,544 | 2026-06-18 |
+| pokemon-omastar | Omastar / 암스타 | concept | ko | #139 암스타 (바위 / 물) — GO 최대 CP: 2,786 | 2026-06-18 |
+| pokemon-onix | Onix / 롱스톤 | concept | ko | #095 롱스톤 (바위 / 땅) — GO 최대 CP: 1,101 | 2026-06-18 |
+| pokemon-oranguru | Oranguru / 하랑우탄 | concept | ko | #765 하랑우탄 (노말 / 에스퍼) — GO 최대 CP: 2,450 | 2026-06-18 |
+| pokemon-orbeetle | Orbeetle / 이올브 | concept | ko | #826 이올브 (벌레 / 에스퍼) — GO 최대 CP: 2,223 | 2026-06-18 |
+| pokemon-oricorio | Oricorio / 춤추새 | concept | ko | #741 춤추새 (불꽃 / 비행) — GO 최대 CP: 2,333 | 2026-06-18 |
+| pokemon-orthworm | Orthworm / 꿈트렁 | concept | ko | #968 꿈트렁 (강철) — GO 최대 CP: 2,299 | 2026-06-18 |
+| pokemon-oshawott | Oshawott / 수댕이 | concept | ko | #501 수댕이 (물) — GO 최대 CP: 1,046 | 2026-06-18 |
+| pokemon-overqwil | Overqwil / 장침바루 | concept | ko | #904 장침바루 (악 / 독) — GO 최대 CP: 2,946 | 2026-06-18 |
+| pokemon-pachirisu | Pachirisu / 파치리스 | concept | ko | #417 파치리스 (전기) — GO 최대 CP: 1,213 | 2026-06-18 |
+| pokemon-palafin | Palafin / 돌핀맨 | concept | ko | #964 돌핀맨 (물) — GO 최대 CP: 1,927 | 2026-06-18 |
+| pokemon-palkia | Palkia / 펄기아 | concept | ko | #484 펄기아 (물 / 드래곤) — GO 최대 CP: 3,991 | 2026-06-18 |
+| pokemon-palossand | Palossand / 모래성이당 | concept | ko | #770 모래성이당 (고스트 / 땅) — GO 최대 CP: 2,444 | 2026-06-18 |
+| pokemon-palpitoad | Palpitoad / 두까비 | concept | ko | #536 두까비 (물 / 땅) — GO 최대 CP: 1,392 | 2026-06-18 |
+| pokemon-pancham | Pancham / 판짱 | concept | ko | #674 판짱 (격투) — GO 최대 CP: 1,489 | 2026-06-18 |
+| pokemon-pangoro | Pangoro / 부란다 | concept | ko | #675 부란다 (격투 / 악) — GO 최대 CP: 2,902 | 2026-06-18 |
+| pokemon-panpour | Panpour / 앗차프 | concept | ko | #515 앗차프 (물) — GO 최대 CP: 956 | 2026-06-18 |
+| pokemon-pansage | Pansage / 야나프 | concept | ko | #511 야나프 (풀) — GO 최대 CP: 956 | 2026-06-18 |
+| pokemon-pansear | Pansear / 바오프 | concept | ko | #513 바오프 (불꽃) — GO 최대 CP: 956 | 2026-06-18 |
+| pokemon-paras | Paras / 파라스 | concept | ko | #046 파라스 (벌레 / 풀) — GO 최대 CP: 1,018 | 2026-06-18 |
+| pokemon-parasect | Parasect / 파라섹트 | concept | ko | #047 파라섹트 (벌레 / 풀) — GO 최대 CP: 1,859 | 2026-06-18 |
+| pokemon-passimian | Passimian / 내던숭이 | concept | ko | #766 내던숭이 (격투) — GO 최대 CP: 3,033 | 2026-06-18 |
+| pokemon-patrat | Patrat / 보르쥐 | concept | ko | #504 보르쥐 (노말) — GO 최대 CP: 791 | 2026-06-18 |
+| pokemon-pawmi | Pawmi / 빠모 | concept | ko | #921 빠모 (전기) — GO 최대 CP: 636 | 2026-06-18 |
+| pokemon-pawmo | Pawmo / 빠모트 | concept | ko | #922 빠모트 (전기 / 격투) — GO 최대 CP: 1,299 | 2026-06-18 |
+| pokemon-pawmot | Pawmot / 빠르모트 | concept | ko | #923 빠르모트 (전기 / 격투) — GO 최대 CP: 2,634 | 2026-06-18 |
+| pokemon-pawniard | Pawniard / 자망칼 | concept | ko | #624 자망칼 (악 / 강철) — GO 최대 CP: 1,433 | 2026-06-18 |
+| pokemon-pecharunt | Pecharunt / 복숭악동 | concept | ko | #1025 복숭악동 (독 / 고스트) — GO 최대 CP: 2,570 | 2026-06-18 |
+| pokemon-pelipper | Pelipper / 패리퍼 | concept | ko | #279 패리퍼 (물 / 비행) — GO 최대 CP: 2,127 | 2026-06-18 |
+| pokemon-perrserker | Perrserker / 나이킹 | concept | ko | #863 나이킹 (강철) — GO 최대 CP: 2,386 | 2026-06-18 |
+| pokemon-persian | Persian / 페르시온 | concept | ko | #053 페르시온 (노말) — GO 최대 CP: 1,689 | 2026-06-18 |
+| pokemon-petilil | Petilil / 치릴리 | concept | ko | #548 치릴리 (풀) — GO 최대 CP: 1,030 | 2026-06-18 |
+| pokemon-phanpy | Phanpy / 코코리 | concept | ko | #231 코코리 (땅) — GO 최대 CP: 1,206 | 2026-06-18 |
+| pokemon-phantump | Phantump / 나목령 | concept | ko | #708 나목령 (고스트 / 풀) — GO 최대 CP: 1,123 | 2026-06-18 |
+| pokemon-pheromosa | Pheromosa / 페로코체 | concept | ko | #795 페로코체 (벌레 / 격투) — GO 최대 CP: 2,842 | 2026-06-18 |
+| pokemon-phione | Phione / 피오네 | concept | ko | #489 피오네 (물) — GO 최대 CP: 2,105 | 2026-06-18 |
+| pokemon-pichu | Pichu / 피츄 | concept | ko | #172 피츄 (전기) — GO 최대 CP: 473 | 2026-06-18 |
+| pokemon-pidgeot | Pidgeot / 피죤투 | concept | ko | #018 피죤투 (노말 / 비행) — GO 최대 CP: 2,129 | 2026-06-18 |
+| pokemon-pidgeotto | Pidgeotto / 피죤 | concept | ko | #017 피죤 (노말 / 비행) — GO 최대 CP: 1,194 | 2026-06-18 |
+| pokemon-pidgey | Pidgey / 구구 | concept | ko | #016 구구 (노말 / 비행) — GO 최대 CP: 680 | 2026-06-18 |
+| pokemon-pidove | Pidove / 콩둘기 | concept | ko | #519 콩둘기 (노말 / 비행) — GO 최대 CP: 848 | 2026-06-18 |
+| pokemon-pignite | Pignite / 차오꿀 | concept | ko | #499 차오꿀 (불꽃 / 격투) — GO 최대 CP: 1,924 | 2026-06-18 |
+| pokemon-pikachu | Pikachu / 피카츄 | concept | ko | #025 피카츄 (전기) — GO 최대 CP: 938 | 2026-06-18 |
+| pokemon-pikipek | Pikipek / 콕코구리 | concept | ko | #731 콕코구리 (노말 / 비행) — GO 최대 CP: 910 | 2026-06-18 |
+| pokemon-piloswine | Piloswine / 메꾸리 | concept | ko | #221 메꾸리 (얼음 / 땅) — GO 최대 CP: 2,345 | 2026-06-18 |
+| pokemon-pincurchin | Pincurchin / 찌르성게 | concept | ko | #871 찌르성게 (전기) — GO 최대 CP: 1,931 | 2026-06-18 |
+| pokemon-pineco | Pineco / 피콘 | concept | ko | #204 피콘 (벌레) — GO 최대 CP: 1,108 | 2026-06-18 |
+| pokemon-pinsir | Pinsir / 쁘사이저 | concept | ko | #127 쁘사이저 (벌레) — GO 최대 CP: 2,959 | 2026-06-18 |
+| pokemon-piplup | Piplup / 팽도리 | concept | ko | #393 팽도리 (물) — GO 최대 CP: 1,075 | 2026-06-18 |
+| pokemon-plusle | Plusle / 플러시 | concept | ko | #311 플러시 (전기) — GO 최대 CP: 1,778 | 2026-06-18 |
+| pokemon-poipole | Poipole / 베베놈 | concept | ko | #803 베베놈 (독) — GO 최대 CP: 1,640 | 2026-06-18 |
+| pokemon-politoed | Politoed / 왕구리 | concept | ko | #186 왕구리 (물) — GO 최대 CP: 2,449 | 2026-06-18 |
+| pokemon-poliwag | Poliwag / 발챙이 | concept | ko | #060 발챙이 (물) — GO 최대 CP: 829 | 2026-06-18 |
+| pokemon-poliwhirl | Poliwhirl / 슈륙챙이 | concept | ko | #061 슈륙챙이 (물) — GO 최대 CP: 1,419 | 2026-06-18 |
+| pokemon-poliwrath | Poliwrath / 강챙이 | concept | ko | #062 강챙이 (물 / 격투) — GO 최대 CP: 2,586 | 2026-06-18 |
+| pokemon-poltchageist | Poltchageist / 차데스 | concept | ko | #1012 차데스 (풀 / 고스트) — GO 최대 CP: 1,139 | 2026-06-18 |
+| pokemon-polteageist | Polteageist / 포트데스 | concept | ko | #855 포트데스 (고스트) — GO 최대 CP: 3,058 | 2026-06-18 |
+| pokemon-ponyta | Ponyta / 포니타 | concept | ko | #077 포니타 (불꽃) — GO 최대 CP: 1,697 | 2026-06-18 |
+| pokemon-poochyena | Poochyena / 포챠나 | concept | ko | #261 포챠나 (악) — GO 최대 CP: 678 | 2026-06-18 |
+| pokemon-popplio | Popplio / 누리공 | concept | ko | #728 누리공 (물) — GO 최대 CP: 1,129 | 2026-06-18 |
 | pokemon-porygon-z | Porygon-Z / 폴리곤Z | concept | ko | #474 폴리곤Z (노말 / none) — GO 최대 CP: 3,266 | 2026-06-05 |
-| pokemon-porygon | Porygon / 폴리곤 | concept | ko | #137 폴리곤 (노말 타입) — 기본 스탯 합계 395 | 2026-06-05 |
-| pokemon-porygon2 | Porygon2 / 폴리곤2 | concept | ko | #233 폴리곤2 (노말 / none) — GO 최대 CP: 2,711 | 2026-06-05 |
-| pokemon-primarina | Primarina / 누리레느 | concept | ko | #730 누리레느 (물 / 페어리) — GO 최대 CP: 3,200 | 2026-06-05 |
-| pokemon-primeape | Primeape / 성원숭 | concept | ko | #057 성원숭 (격투 타입) — 기본 스탯 합계 455 | 2026-06-05 |
-| pokemon-prinplup | Prinplup / 팽태자 | concept | ko | #394 팽태자 (물 / none) — GO 최대 CP: 1,701 | 2026-06-05 |
-| pokemon-probopass | Probopass / 대코파스 | concept | ko | #476 대코파스 (바위 / 강철) — GO 최대 CP: 2,080 | 2026-06-05 |
-| pokemon-psyduck | Psyduck / 고라파덕 | concept | ko | #054 고라파덕 (물 타입) — 기본 스탯 합계 320 | 2026-06-05 |
-| pokemon-pumpkaboo | Pumpkaboo / 호바귀 | concept | ko | #710 호바귀 (고스트 / 풀) — GO 최대 CP: 1,222 | 2026-06-05 |
-| pokemon-pupitar | Pupitar / 데기라스 | concept | ko | #247 데기라스 (바위 / 땅) — GO 최대 CP: 1,766 | 2026-06-05 |
-| pokemon-purrloin | Purrloin / 쌔비냥 | concept | ko | #509 쌔비냥 (악 / none) — GO 최대 CP: 772 | 2026-06-05 |
-| pokemon-purugly | Purugly / 몬냥이 | concept | ko | #432 몬냥이 (노말 / none) — GO 최대 CP: 1,953 | 2026-06-05 |
-| pokemon-pyroar | Pyroar / 화염레오 | concept | ko | #668 화염레오 (불꽃 / 노말) — GO 최대 CP: 2,767 | 2026-06-05 |
-| pokemon-pyukumuku | Pyukumuku / 해무기 | concept | ko | #771 해무기 (물 / none) — GO 최대 CP: 1,372 | 2026-06-05 |
-| pokemon-quagsire | Quagsire / 누오 | concept | ko | #195 누오 (물 / 땅) — GO 최대 CP: 1,992 | 2026-06-05 |
-| pokemon-quaquaval | Quaquaval / 웨이니발 | concept | ko | #914 웨이니발 (물 / 격투) — GO 최대 CP: 3,018 | 2026-06-05 |
-| pokemon-quaxly | Quaxly / 꾸왁스 | concept | ko | #912 꾸왁스 (물 / none) — GO 최대 CP: 1,075 | 2026-06-05 |
-| pokemon-quaxwell | Quaxwell / 아꾸왁 | concept | ko | #913 아꾸왁 (물 / none) — GO 최대 CP: 1,775 | 2026-06-05 |
-| pokemon-quilava | Quilava / 마그케인 | concept | ko | #156 마그케인 (불꽃 / none) — GO 최대 CP: 1,653 | 2026-06-05 |
-| pokemon-quilladin | Quilladin / 도치보구 | concept | ko | #651 도치보구 (풀 / none) — GO 최대 CP: 1,719 | 2026-06-05 |
-| pokemon-qwilfish | Qwilfish / 침바루 | concept | ko | #211 침바루 (물 / 독) — GO 최대 CP: 2,051 | 2026-06-05 |
-| pokemon-raboot | Raboot / 래비풋 | concept | ko | #814 래비풋 (불꽃 / none) — GO 최대 CP: 1,824 | 2026-06-05 |
-| pokemon-rabsca | Rabsca / 베라카스 | concept | ko | #954 베라카스 (벌레 / 에스퍼) — GO 최대 CP: 2,623 | 2026-06-05 |
-| pokemon-raging-bolt | Raging Bolt / 날뛰는우레 | concept | ko | #1021 날뛰는우레 (전기 / 드래곤) — GO 최대 CP: 3,377 | 2026-06-05 |
-| pokemon-raichu | Raichu / 라이츄 | concept | ko | #026 라이츄 (전기 타입) — 기본 스탯 합계 485 | 2026-06-05 |
-| pokemon-raikou | Raikou / 라이코 | concept | ko | #243 라이코 (전기 / none) — GO 최대 CP: 3,452 | 2026-06-05 |
-| pokemon-ralts | Ralts / 랄토스 | concept | ko | #280 랄토스 (에스퍼 / 페어리) — GO 최대 CP: 539 | 2026-06-05 |
-| pokemon-rampardos | Rampardos / 램펄드 | concept | ko | #409 램펄드 (바위 / none) — GO 최대 CP: 3,298 | 2026-06-05 |
-| pokemon-rapidash | Rapidash / 날쌩마 | concept | ko | #078 날쌩마 (불꽃 타입) — 기본 스탯 합계 500 | 2026-06-05 |
-| pokemon-raticate | Raticate / 레트라 | concept | ko | #020 레트라 (노말 타입) — 기본 스탯 합계 413 | 2026-06-05 |
-| pokemon-rattata | Rattata / 꼬렛 | concept | ko | #019 꼬렛 (노말 타입) — 기본 스탯 합계 253 | 2026-06-05 |
-| pokemon-rayquaza | Rayquaza / 레쿠쟈 | concept | ko | #384 레쿠쟈 (드래곤 / 비행) — GO 최대 CP: 3,835 | 2026-06-05 |
-| pokemon-regice | Regice / 레지아이스 | concept | ko | #378 레지아이스 (얼음 / none) — GO 최대 CP: 3,122 | 2026-06-05 |
-| pokemon-regidrago | Regidrago / 레지드래고 | concept | ko | #895 레지드래고 (드래곤 / none) — GO 최대 CP: 2,973 | 2026-06-05 |
-| pokemon-regieleki | Regieleki / 레지에레키 | concept | ko | #894 레지에레키 (전기 / none) — GO 최대 CP: 2,803 | 2026-06-05 |
-| pokemon-regigigas | Regigigas / 레지기가스 | concept | ko | #486 레지기가스 (노말 / none) — GO 최대 CP: 4,346 | 2026-06-05 |
-| pokemon-regirock | Regirock / 레지락 | concept | ko | #377 레지락 (바위 / none) — GO 최대 CP: 3,122 | 2026-06-05 |
-| pokemon-registeel | Registeel / 레지스틸 | concept | ko | #379 레지스틸 (강철 / none) — GO 최대 CP: 2,447 | 2026-06-05 |
-| pokemon-relicanth | Relicanth / 시라칸 | concept | ko | #369 시라칸 (물 / 바위) — GO 최대 CP: 2,528 | 2026-06-05 |
-| pokemon-rellor | Rellor / 구르데 | concept | ko | #953 구르데 (벌레 / none) — GO 최대 CP: 815 | 2026-06-05 |
-| pokemon-remoraid | Remoraid / 총어 | concept | ko | #223 총어 (물 / none) — GO 최대 CP: 912 | 2026-06-05 |
-| pokemon-reshiram | Reshiram / 레시라무 | concept | ko | #643 레시라무 (드래곤 / 불꽃) — GO 최대 CP: 4,038 | 2026-06-05 |
-| pokemon-reuniclus | Reuniclus / 란쿨루스 | concept | ko | #579 란쿨루스 (에스퍼 / none) — GO 최대 CP: 2,927 | 2026-06-05 |
-| pokemon-revavroom | Revavroom / 부르르룸 | concept | ko | #966 부르르룸 (강철 / 독) — GO 최대 CP: 2,951 | 2026-06-05 |
-| pokemon-rhydon | Rhydon / 코뿌리 | concept | ko | #112 코뿌리 (땅/바위 타입) — 기본 스탯 합계 485 | 2026-06-05 |
-| pokemon-rhyhorn | Rhyhorn / 뿔카노 | concept | ko | #111 뿔카노 (땅/바위 타입) — 기본 스탯 합계 345 | 2026-06-05 |
-| pokemon-rhyperior | Rhyperior / 거대코뿌리 | concept | ko | #464 거대코뿌리 (땅 / 바위) — GO 최대 CP: 3,733 | 2026-06-05 |
-| pokemon-ribombee | Ribombee / 에리본 | concept | ko | #743 에리본 (벌레 / 페어리) — GO 최대 CP: 2,200 | 2026-06-05 |
-| pokemon-rillaboom | Rillaboom / 고릴타 | concept | ko | #812 고릴타 (풀 / none) — GO 최대 CP: 3,324 | 2026-06-05 |
-| pokemon-riolu | Riolu / 리오르 | concept | ko | #447 리오르 (격투 / none) — GO 최대 CP: 993 | 2026-06-05 |
-| pokemon-roaring-moon | Roaring Moon / 고동치는달 | concept | ko | #1005 고동치는달 (드래곤 / 악) — GO 최대 CP: 4,214 | 2026-06-05 |
-| pokemon-rockruff | Rockruff / 암멍이 | concept | ko | #744 암멍이 (바위 / none) — GO 최대 CP: 950 | 2026-06-05 |
-| pokemon-roggenrola | Roggenrola / 단굴 | concept | ko | #524 단굴 (바위 / none) — GO 최대 CP: 1,205 | 2026-06-05 |
-| pokemon-rolycoly | Rolycoly / 탄동 | concept | ko | #837 탄동 (바위 / none) — GO 최대 CP: 612 | 2026-06-05 |
-| pokemon-rookidee | Rookidee / 파라꼬 | concept | ko | #821 파라꼬 (비행 / none) — GO 최대 CP: 666 | 2026-06-05 |
-| pokemon-roselia | Roselia / 로젤리아 | concept | ko | #315 로젤리아 (풀 / 독) — GO 최대 CP: 1,870 | 2026-06-05 |
-| pokemon-roserade | Roserade / 로즈레이드 | concept | ko | #407 로즈레이드 (풀 / 독) — GO 최대 CP: 2,971 | 2026-06-05 |
-| pokemon-rotom | Rotom / 로토무 | concept | ko | #479 로토무 (전기 / 고스트) — GO 최대 CP: 2,031 | 2026-06-05 |
-| pokemon-rowlet | Rowlet / 나몰빼미 | concept | ko | #722 나몰빼미 (풀 / 비행) — GO 최대 CP: 1,058 | 2026-06-05 |
-| pokemon-rufflet | Rufflet / 수리둥보 | concept | ko | #627 수리둥보 (노말 / 비행) — GO 최대 CP: 1,491 | 2026-06-05 |
-| pokemon-runerigus | Runerigus / 데스판 | concept | ko | #867 데스판 (땅 / 고스트) — GO 최대 CP: 2,273 | 2026-06-05 |
-| pokemon-sableye | Sableye / 깜까미 | concept | ko | #302 깜까미 (악 / 고스트) — GO 최대 CP: 1,476 | 2026-06-05 |
-| pokemon-salamence | Salamence / 보만다 | concept | ko | #373 보만다 (드래곤 / 비행) — GO 최대 CP: 3,749 | 2026-06-05 |
-| pokemon-salandit | Salandit / 야도뇽 | concept | ko | #757 야도뇽 (독 / 불꽃) — GO 최대 CP: 1,122 | 2026-06-05 |
-| pokemon-salazzle | Salazzle / 염뉴트 | concept | ko | #758 염뉴트 (독 / 불꽃) — GO 최대 CP: 2,479 | 2026-06-05 |
-| pokemon-samurott | Samurott / 대검귀 | concept | ko | #503 대검귀 (물 / none) — GO 최대 CP: 2,826 | 2026-06-05 |
-| pokemon-sandaconda | Sandaconda / 사다이사 | concept | ko | #844 사다이사 (땅 / none) — GO 최대 CP: 2,790 | 2026-06-05 |
-| pokemon-sandile | Sandile / 깜눈크 | concept | ko | #551 깜눈크 (땅 / 악) — GO 최대 CP: 1,037 | 2026-06-05 |
-| pokemon-sandshrew | Sandshrew / 모래두지 | concept | ko | #027 모래두지 (땅 타입) — 기본 스탯 합계 300 | 2026-06-05 |
-| pokemon-sandslash | Sandslash / 고지 | concept | ko | #028 고지 (땅 타입) — 기본 스탯 합계 450 | 2026-06-05 |
-| pokemon-sandy-shocks | Sandy Shocks / 모래털가죽 | concept | ko | #989 모래털가죽 (전기 / 땅) — GO 최대 CP: 3,421 | 2026-06-05 |
-| pokemon-sandygast | Sandygast / 모래꿍 | concept | ko | #769 모래꿍 (고스트 / 땅) — GO 최대 CP: 1,233 | 2026-06-05 |
-| pokemon-sawk | Sawk / 타격귀 | concept | ko | #539 타격귀 (격투 / none) — GO 최대 CP: 2,788 | 2026-06-05 |
-| pokemon-sawsbuck | Sawsbuck / 바라철록 | concept | ko | #586 바라철록 (노말 / 풀) — GO 최대 CP: 2,416 | 2026-06-05 |
-| pokemon-scatterbug | Scatterbug / 분이벌레 | concept | ko | #664 분이벌레 (벌레 / none) — GO 최대 CP: 492 | 2026-06-05 |
-| pokemon-sceptile | Sceptile / 나무킹 | concept | ko | #254 나무킹 (풀 / none) — GO 최대 CP: 2,757 | 2026-06-05 |
-| pokemon-scizor | Scizor / 핫삼 | concept | ko | #212 핫삼 (벌레 / 강철) — GO 최대 CP: 3,001 | 2026-06-05 |
-| pokemon-scolipede | Scolipede / 펜드라 | concept | ko | #545 펜드라 (벌레 / 독) — GO 최대 CP: 2,447 | 2026-06-05 |
-| pokemon-scorbunny | Scorbunny / 염버니 | concept | ko | #813 염버니 (불꽃 / none) — GO 최대 CP: 1,097 | 2026-06-05 |
-| pokemon-scovillain | Scovillain / 스코빌런 | concept | ko | #952 스코빌런 (풀 / 불꽃) — GO 최대 CP: 2,317 | 2026-06-05 |
-| pokemon-scrafty | Scrafty / 곤율거니 | concept | ko | #560 곤율거니 (악 / 격투) — GO 최대 CP: 2,283 | 2026-06-05 |
-| pokemon-scraggy | Scraggy / 곤율랭 | concept | ko | #559 곤율랭 (악 / 격투) — GO 최대 CP: 1,372 | 2026-06-05 |
-| pokemon-scream-tail | Scream Tail / 우렁찬꼬리 | concept | ko | #985 우렁찬꼬리 (페어리 / 에스퍼) — GO 최대 CP: 2,475 | 2026-06-05 |
-| pokemon-scyther | Scyther / 스라크 | concept | ko | #123 스라크 (벌레/비행 타입) — 기본 스탯 합계 500 | 2026-06-05 |
-| pokemon-seadra | Seadra / 시드라 | concept | ko | #117 시드라 (물 타입) — 기본 스탯 합계 440 | 2026-06-05 |
-| pokemon-seaking | Seaking / 왕콘치 | concept | ko | #119 왕콘치 (물 타입) — 기본 스탯 합계 450 | 2026-06-05 |
-| pokemon-sealeo | Sealeo / 씨레오 | concept | ko | #364 씨레오 (얼음 / 물) — GO 최대 CP: 1,714 | 2026-06-05 |
-| pokemon-seedot | Seedot / 도토링 | concept | ko | #273 도토링 (풀 / none) — GO 최대 CP: 598 | 2026-06-05 |
-| pokemon-seel | Seel / 쥬쥬 | concept | ko | #086 쥬쥬 (물 타입) — 기본 스탯 합계 325 | 2026-06-05 |
-| pokemon-seismitoad | Seismitoad / 두빅굴 | concept | ko | #537 두빅굴 (물 / 땅) — GO 최대 CP: 2,564 | 2026-06-05 |
-| pokemon-sentret | Sentret / 꼬리선 | concept | ko | #161 꼬리선 (노말 / none) — GO 최대 CP: 618 | 2026-06-05 |
-| pokemon-serperior | Serperior / 샤로다 | concept | ko | #497 샤로다 (풀 / none) — GO 최대 CP: 2,277 | 2026-06-05 |
-| pokemon-servine | Servine / 샤비 | concept | ko | #496 샤비 (풀 / none) — GO 최대 CP: 1,441 | 2026-06-05 |
-| pokemon-seviper | Seviper / 세비퍼 | concept | ko | #336 세비퍼 (독 / none) — GO 최대 CP: 2,105 | 2026-06-05 |
-| pokemon-sewaddle | Sewaddle / 두르보 | concept | ko | #540 두르보 (벌레 / 풀) — GO 최대 CP: 977 | 2026-06-05 |
-| pokemon-sharpedo | Sharpedo / 샤크니아 | concept | ko | #319 샤크니아 (물 / 악) — GO 최대 CP: 2,181 | 2026-06-05 |
-| pokemon-shaymin | Shaymin / 쉐이미 | concept | ko | #492 쉐이미 (풀 / none) — GO 최대 CP: 3,265 | 2026-06-05 |
-| pokemon-shedinja | Shedinja / 껍질몬 | concept | ko | #292 껍질몬 (벌레 / 고스트) — GO 최대 CP: 393 | 2026-06-05 |
-| pokemon-shelgon | Shelgon / 쉘곤 | concept | ko | #372 쉘곤 (드래곤 / none) — GO 최대 CP: 2,031 | 2026-06-05 |
-| pokemon-shellder | Shellder / 셀러 | concept | ko | #090 셀러 (물 타입) — 기본 스탯 합계 305 | 2026-06-05 |
-| pokemon-shellos | Shellos / 깝질무 | concept | ko | #422 깝질무 (물 / none) — GO 최대 CP: 1,136 | 2026-06-05 |
-| pokemon-shelmet | Shelmet / 쪼마리 | concept | ko | #616 쪼마리 (벌레 / none) — GO 최대 CP: 834 | 2026-06-05 |
-| pokemon-shieldon | Shieldon / 방패톱스 | concept | ko | #410 방패톱스 (바위 / 강철) — GO 최대 CP: 890 | 2026-06-05 |
-| pokemon-shiftry | Shiftry / 다탱구 | concept | ko | #275 다탱구 (풀 / 악) — GO 최대 CP: 2,333 | 2026-06-05 |
-| pokemon-shiinotic | Shiinotic / 마셰이드 | concept | ko | #756 마셰이드 (풀 / 페어리) — GO 최대 CP: 1,861 | 2026-06-05 |
-| pokemon-shinx | Shinx / 꼬링크 | concept | ko | #403 꼬링크 (전기 / none) — GO 최대 CP: 876 | 2026-06-05 |
-| pokemon-shroodle | Shroodle / 땃쭈르 | concept | ko | #944 땃쭈르 (독 / 노말) — GO 최대 CP: 929 | 2026-06-05 |
-| pokemon-shroomish | Shroomish / 버섯꼬 | concept | ko | #285 버섯꼬 (풀 / none) — GO 최대 CP: 810 | 2026-06-05 |
-| pokemon-shuckle | Shuckle / 단단지 | concept | ko | #213 단단지 (벌레 / 바위) — GO 최대 CP: 405 | 2026-06-05 |
-| pokemon-shuppet | Shuppet / 어둠대신 | concept | ko | #353 어둠대신 (고스트 / none) — GO 최대 CP: 1,018 | 2026-06-05 |
-| pokemon-sigilyph | Sigilyph / 심보러 | concept | ko | #561 심보러 (에스퍼 / 비행) — GO 최대 CP: 2,550 | 2026-06-05 |
-| pokemon-silcoon | Silcoon / 실쿤 | concept | ko | #266 실쿤 (벌레 / none) — GO 최대 CP: 553 | 2026-06-05 |
-| pokemon-silicobra | Silicobra / 모래뱀 | concept | ko | #843 모래뱀 (땅 / none) — GO 최대 CP: 1,081 | 2026-06-05 |
-| pokemon-silvally | Silvally / 실버디 | concept | ko | #773 실버디 (노말 / none) — GO 최대 CP: 2,950 | 2026-06-05 |
-| pokemon-simipour | Simipour / 앗차키 | concept | ko | #516 앗차키 (물 / none) — GO 최대 CP: 2,350 | 2026-06-05 |
-| pokemon-simisage | Simisage / 야나키 | concept | ko | #512 야나키 (풀 / none) — GO 최대 CP: 2,350 | 2026-06-05 |
-| pokemon-simisear | Simisear / 바오키 | concept | ko | #514 바오키 (불꽃 / none) — GO 최대 CP: 2,350 | 2026-06-05 |
-| pokemon-sinistcha | Sinistcha / 그우린차 | concept | ko | #1013 그우린차 (풀 / 고스트) — GO 최대 CP: 2,957 | 2026-06-05 |
-| pokemon-sinistea | Sinistea / 데인차 | concept | ko | #854 데인차 (고스트 / none) — GO 최대 CP: 1,139 | 2026-06-05 |
+| pokemon-porygon | Porygon / 폴리곤 | concept | ko | #137 폴리곤 (노말) — GO 최대 CP: 1,720 | 2026-06-18 |
+| pokemon-porygon2 | Porygon2 / 폴리곤2 | concept | ko | #233 폴리곤2 (노말) — GO 최대 CP: 2,711 | 2026-06-18 |
+| pokemon-primarina | Primarina / 누리레느 | concept | ko | #730 누리레느 (물 / 페어리) — GO 최대 CP: 3,200 | 2026-06-18 |
+| pokemon-primeape | Primeape / 성원숭 | concept | ko | #057 성원숭 (격투) — GO 최대 CP: 2,288 | 2026-06-18 |
+| pokemon-prinplup | Prinplup / 팽태자 | concept | ko | #394 팽태자 (물) — GO 최대 CP: 1,701 | 2026-06-18 |
+| pokemon-probopass | Probopass / 대코파스 | concept | ko | #476 대코파스 (바위 / 강철) — GO 최대 CP: 2,080 | 2026-06-18 |
+| pokemon-psyduck | Psyduck / 고라파덕 | concept | ko | #054 고라파덕 (물) — GO 최대 CP: 1,106 | 2026-06-18 |
+| pokemon-pumpkaboo | Pumpkaboo / 호바귀 | concept | ko | #710 호바귀 (고스트 / 풀) — GO 최대 CP: 1,222 | 2026-06-18 |
+| pokemon-pupitar | Pupitar / 데기라스 | concept | ko | #247 데기라스 (바위 / 땅) — GO 최대 CP: 1,766 | 2026-06-18 |
+| pokemon-purrloin | Purrloin / 쌔비냥 | concept | ko | #509 쌔비냥 (악) — GO 최대 CP: 772 | 2026-06-18 |
+| pokemon-purugly | Purugly / 몬냥이 | concept | ko | #432 몬냥이 (노말) — GO 최대 CP: 1,953 | 2026-06-18 |
+| pokemon-pyroar | Pyroar / 화염레오 | concept | ko | #668 화염레오 (불꽃 / 노말) — GO 최대 CP: 2,767 | 2026-06-18 |
+| pokemon-pyukumuku | Pyukumuku / 해무기 | concept | ko | #771 해무기 (물) — GO 최대 CP: 1,372 | 2026-06-18 |
+| pokemon-quagsire | Quagsire / 누오 | concept | ko | #195 누오 (물 / 땅) — GO 최대 CP: 1,992 | 2026-06-18 |
+| pokemon-quaquaval | Quaquaval / 웨이니발 | concept | ko | #914 웨이니발 (물 / 격투) — GO 최대 CP: 3,018 | 2026-06-18 |
+| pokemon-quaxly | Quaxly / 꾸왁스 | concept | ko | #912 꾸왁스 (물) — GO 최대 CP: 1,075 | 2026-06-18 |
+| pokemon-quaxwell | Quaxwell / 아꾸왁 | concept | ko | #913 아꾸왁 (물) — GO 최대 CP: 1,775 | 2026-06-18 |
+| pokemon-quilava | Quilava / 마그케인 | concept | ko | #156 마그케인 (불꽃) — GO 최대 CP: 1,653 | 2026-06-18 |
+| pokemon-quilladin | Quilladin / 도치보구 | concept | ko | #651 도치보구 (풀) — GO 최대 CP: 1,719 | 2026-06-18 |
+| pokemon-qwilfish | Qwilfish / 침바루 | concept | ko | #211 침바루 (물 / 독) — GO 최대 CP: 2,051 | 2026-06-18 |
+| pokemon-raboot | Raboot / 래비풋 | concept | ko | #814 래비풋 (불꽃) — GO 최대 CP: 1,824 | 2026-06-18 |
+| pokemon-rabsca | Rabsca / 베라카스 | concept | ko | #954 베라카스 (벌레 / 에스퍼) — GO 최대 CP: 2,623 | 2026-06-18 |
+| pokemon-raging-bolt | Raging Bolt / 날뛰는우레 | concept | ko | #1021 날뛰는우레 (전기 / 드래곤) — GO 최대 CP: 3,377 | 2026-06-18 |
+| pokemon-raichu | Raichu / 라이츄 | concept | ko | #026 라이츄 (전기) — GO 최대 CP: 2,182 | 2026-06-18 |
+| pokemon-raikou | Raikou / 라이코 | concept | ko | #243 라이코 (전기) — GO 최대 CP: 3,452 | 2026-06-18 |
+| pokemon-ralts | Ralts / 랄토스 | concept | ko | #280 랄토스 (에스퍼 / 페어리) — GO 최대 CP: 539 | 2026-06-18 |
+| pokemon-rampardos | Rampardos / 램펄드 | concept | ko | #409 램펄드 (바위) — GO 최대 CP: 3,298 | 2026-06-18 |
+| pokemon-rapidash | Rapidash / 날쌩마 | concept | ko | #078 날쌩마 (불꽃) — GO 최대 CP: 2,461 | 2026-06-18 |
+| pokemon-raticate | Raticate / 레트라 | concept | ko | #020 레트라 (노말) — GO 최대 CP: 1,730 | 2026-06-18 |
+| pokemon-rattata | Rattata / 꼬렛 | concept | ko | #019 꼬렛 (노말) — GO 최대 CP: 734 | 2026-06-18 |
+| pokemon-rayquaza | Rayquaza / 레쿠쟈 | concept | ko | #384 레쿠쟈 (드래곤 / 비행) — GO 최대 CP: 3,835 | 2026-06-18 |
+| pokemon-regice | Regice / 레지아이스 | concept | ko | #378 레지아이스 (얼음) — GO 최대 CP: 3,122 | 2026-06-18 |
+| pokemon-regidrago | Regidrago / 레지드래고 | concept | ko | #895 레지드래고 (드래곤) — GO 최대 CP: 2,973 | 2026-06-18 |
+| pokemon-regieleki | Regieleki / 레지에레키 | concept | ko | #894 레지에레키 (전기) — GO 최대 CP: 2,803 | 2026-06-18 |
+| pokemon-regigigas | Regigigas / 레지기가스 | concept | ko | #486 레지기가스 (노말) — GO 최대 CP: 4,346 | 2026-06-18 |
+| pokemon-regirock | Regirock / 레지락 | concept | ko | #377 레지락 (바위) — GO 최대 CP: 3,122 | 2026-06-18 |
+| pokemon-registeel | Registeel / 레지스틸 | concept | ko | #379 레지스틸 (강철) — GO 최대 CP: 2,447 | 2026-06-18 |
+| pokemon-relicanth | Relicanth / 시라칸 | concept | ko | #369 시라칸 (물 / 바위) — GO 최대 CP: 2,528 | 2026-06-18 |
+| pokemon-rellor | Rellor / 구르데 | concept | ko | #953 구르데 (벌레) — GO 최대 CP: 815 | 2026-06-18 |
+| pokemon-remoraid | Remoraid / 총어 | concept | ko | #223 총어 (물) — GO 최대 CP: 912 | 2026-06-18 |
+| pokemon-reshiram | Reshiram / 레시라무 | concept | ko | #643 레시라무 (드래곤 / 불꽃) — GO 최대 CP: 4,038 | 2026-06-18 |
+| pokemon-reuniclus | Reuniclus / 란쿨루스 | concept | ko | #579 란쿨루스 (에스퍼) — GO 최대 CP: 2,927 | 2026-06-18 |
+| pokemon-revavroom | Revavroom / 부르르룸 | concept | ko | #966 부르르룸 (강철 / 독) — GO 최대 CP: 2,951 | 2026-06-18 |
+| pokemon-rhydon | Rhydon / 코뿌리 | concept | ko | #112 코뿌리 (땅 / 바위) — GO 최대 CP: 3,179 | 2026-06-18 |
+| pokemon-rhyhorn | Rhyhorn / 뿔카노 | concept | ko | #111 뿔카노 (땅 / 바위) — GO 최대 CP: 1,651 | 2026-06-18 |
+| pokemon-rhyperior | Rhyperior / 거대코뿌리 | concept | ko | #464 거대코뿌리 (땅 / 바위) — GO 최대 CP: 3,733 | 2026-06-18 |
+| pokemon-ribombee | Ribombee / 에리본 | concept | ko | #743 에리본 (벌레 / 페어리) — GO 최대 CP: 2,200 | 2026-06-18 |
+| pokemon-rillaboom | Rillaboom / 고릴타 | concept | ko | #812 고릴타 (풀) — GO 최대 CP: 3,324 | 2026-06-18 |
+| pokemon-riolu | Riolu / 리오르 | concept | ko | #447 리오르 (격투) — GO 최대 CP: 993 | 2026-06-18 |
+| pokemon-roaring-moon | Roaring Moon / 고동치는달 | concept | ko | #1005 고동치는달 (드래곤 / 악) — GO 최대 CP: 4,214 | 2026-06-18 |
+| pokemon-rockruff | Rockruff / 암멍이 | concept | ko | #744 암멍이 (바위) — GO 최대 CP: 950 | 2026-06-18 |
+| pokemon-roggenrola | Roggenrola / 단굴 | concept | ko | #524 단굴 (바위) — GO 최대 CP: 1,205 | 2026-06-18 |
+| pokemon-rolycoly | Rolycoly / 탄동 | concept | ko | #837 탄동 (바위) — GO 최대 CP: 612 | 2026-06-18 |
+| pokemon-rookidee | Rookidee / 파라꼬 | concept | ko | #821 파라꼬 (비행) — GO 최대 CP: 666 | 2026-06-18 |
+| pokemon-roselia | Roselia / 로젤리아 | concept | ko | #315 로젤리아 (풀 / 독) — GO 최대 CP: 1,870 | 2026-06-18 |
+| pokemon-roserade | Roserade / 로즈레이드 | concept | ko | #407 로즈레이드 (풀 / 독) — GO 최대 CP: 2,971 | 2026-06-18 |
+| pokemon-rotom | Rotom / 로토무 | concept | ko | #479 로토무 (전기 / 고스트) — GO 최대 CP: 2,031 | 2026-06-18 |
+| pokemon-rowlet | Rowlet / 나몰빼미 | concept | ko | #722 나몰빼미 (풀 / 비행) — GO 최대 CP: 1,058 | 2026-06-18 |
+| pokemon-rufflet | Rufflet / 수리둥보 | concept | ko | #627 수리둥보 (노말 / 비행) — GO 최대 CP: 1,491 | 2026-06-18 |
+| pokemon-runerigus | Runerigus / 데스판 | concept | ko | #867 데스판 (땅 / 고스트) — GO 최대 CP: 2,273 | 2026-06-18 |
+| pokemon-sableye | Sableye / 깜까미 | concept | ko | #302 깜까미 (악 / 고스트) — GO 최대 CP: 1,476 | 2026-06-18 |
+| pokemon-salamence | Salamence / 보만다 | concept | ko | #373 보만다 (드래곤 / 비행) — GO 최대 CP: 3,749 | 2026-06-18 |
+| pokemon-salandit | Salandit / 야도뇽 | concept | ko | #757 야도뇽 (독 / 불꽃) — GO 최대 CP: 1,122 | 2026-06-18 |
+| pokemon-salazzle | Salazzle / 염뉴트 | concept | ko | #758 염뉴트 (독 / 불꽃) — GO 최대 CP: 2,479 | 2026-06-18 |
+| pokemon-samurott | Samurott / 대검귀 | concept | ko | #503 대검귀 (물) — GO 최대 CP: 2,826 | 2026-06-18 |
+| pokemon-sandaconda | Sandaconda / 사다이사 | concept | ko | #844 사다이사 (땅) — GO 최대 CP: 2,790 | 2026-06-18 |
+| pokemon-sandile | Sandile / 깜눈크 | concept | ko | #551 깜눈크 (땅 / 악) — GO 최대 CP: 1,037 | 2026-06-18 |
+| pokemon-sandshrew | Sandshrew / 모래두지 | concept | ko | #027 모래두지 (땅) — GO 최대 CP: 1,261 | 2026-06-18 |
+| pokemon-sandslash | Sandslash / 고지 | concept | ko | #028 고지 (땅) — GO 최대 CP: 2,374 | 2026-06-18 |
+| pokemon-sandy-shocks | Sandy Shocks / 모래털가죽 | concept | ko | #989 모래털가죽 (전기 / 땅) — GO 최대 CP: 3,421 | 2026-06-18 |
+| pokemon-sandygast | Sandygast / 모래꿍 | concept | ko | #769 모래꿍 (고스트 / 땅) — GO 최대 CP: 1,233 | 2026-06-18 |
+| pokemon-sawk | Sawk / 타격귀 | concept | ko | #539 타격귀 (격투) — GO 최대 CP: 2,788 | 2026-06-18 |
+| pokemon-sawsbuck | Sawsbuck / 바라철록 | concept | ko | #586 바라철록 (노말 / 풀) — GO 최대 CP: 2,416 | 2026-06-18 |
+| pokemon-scatterbug | Scatterbug / 분이벌레 | concept | ko | #664 분이벌레 (벌레) — GO 최대 CP: 492 | 2026-06-18 |
+| pokemon-sceptile | Sceptile / 나무킹 | concept | ko | #254 나무킹 (풀) — GO 최대 CP: 2,757 | 2026-06-18 |
+| pokemon-scizor | Scizor / 핫삼 | concept | ko | #212 핫삼 (벌레 / 강철) — GO 최대 CP: 3,001 | 2026-06-18 |
+| pokemon-scolipede | Scolipede / 펜드라 | concept | ko | #545 펜드라 (벌레 / 독) — GO 최대 CP: 2,447 | 2026-06-18 |
+| pokemon-scorbunny | Scorbunny / 염버니 | concept | ko | #813 염버니 (불꽃) — GO 최대 CP: 1,097 | 2026-06-18 |
+| pokemon-scovillain | Scovillain / 스코빌런 | concept | ko | #952 스코빌런 (풀 / 불꽃) — GO 최대 CP: 2,317 | 2026-06-18 |
+| pokemon-scrafty | Scrafty / 곤율거니 | concept | ko | #560 곤율거니 (악 / 격투) — GO 최대 CP: 2,283 | 2026-06-18 |
+| pokemon-scraggy | Scraggy / 곤율랭 | concept | ko | #559 곤율랭 (악 / 격투) — GO 최대 CP: 1,372 | 2026-06-18 |
+| pokemon-scream-tail | Scream Tail / 우렁찬꼬리 | concept | ko | #985 우렁찬꼬리 (페어리 / 에스퍼) — GO 최대 CP: 2,475 | 2026-06-18 |
+| pokemon-scyther | Scyther / 스라크 | concept | ko | #123 스라크 (벌레 / 비행) — GO 최대 CP: 2,706 | 2026-06-18 |
+| pokemon-seadra | Seadra / 시드라 | concept | ko | #117 시드라 (물) — GO 최대 CP: 2,093 | 2026-06-18 |
+| pokemon-seaking | Seaking / 왕콘치 | concept | ko | #119 왕콘치 (물) — GO 최대 CP: 2,162 | 2026-06-18 |
+| pokemon-sealeo | Sealeo / 씨레오 | concept | ko | #364 씨레오 (얼음 / 물) — GO 최대 CP: 1,714 | 2026-06-18 |
+| pokemon-seedot | Seedot / 도토링 | concept | ko | #273 도토링 (풀) — GO 최대 CP: 598 | 2026-06-18 |
+| pokemon-seel | Seel / 쥬쥬 | concept | ko | #086 쥬쥬 (물) — GO 최대 CP: 971 | 2026-06-18 |
+| pokemon-seismitoad | Seismitoad / 두빅굴 | concept | ko | #537 두빅굴 (물 / 땅) — GO 최대 CP: 2,564 | 2026-06-18 |
+| pokemon-sentret | Sentret / 꼬리선 | concept | ko | #161 꼬리선 (노말) — GO 최대 CP: 618 | 2026-06-18 |
+| pokemon-serperior | Serperior / 샤로다 | concept | ko | #497 샤로다 (풀) — GO 최대 CP: 2,277 | 2026-06-18 |
+| pokemon-servine | Servine / 샤비 | concept | ko | #496 샤비 (풀) — GO 최대 CP: 1,441 | 2026-06-18 |
+| pokemon-seviper | Seviper / 세비퍼 | concept | ko | #336 세비퍼 (독) — GO 최대 CP: 2,105 | 2026-06-18 |
+| pokemon-sewaddle | Sewaddle / 두르보 | concept | ko | #540 두르보 (벌레 / 풀) — GO 최대 CP: 977 | 2026-06-18 |
+| pokemon-sharpedo | Sharpedo / 샤크니아 | concept | ko | #319 샤크니아 (물 / 악) — GO 최대 CP: 2,181 | 2026-06-18 |
+| pokemon-shaymin | Shaymin / 쉐이미 | concept | ko | #492 쉐이미 (풀) — GO 최대 CP: 3,265 | 2026-06-18 |
+| pokemon-shedinja | Shedinja / 껍질몬 | concept | ko | #292 껍질몬 (벌레 / 고스트) — GO 최대 CP: 393 | 2026-06-18 |
+| pokemon-shelgon | Shelgon / 쉘곤 | concept | ko | #372 쉘곤 (드래곤) — GO 최대 CP: 2,031 | 2026-06-18 |
+| pokemon-shellder | Shellder / 셀러 | concept | ko | #090 셀러 (물) — GO 최대 CP: 1,080 | 2026-06-18 |
+| pokemon-shellos | Shellos / 깝질무 | concept | ko | #422 깝질무 (물) — GO 최대 CP: 1,136 | 2026-06-18 |
+| pokemon-shelmet | Shelmet / 쪼마리 | concept | ko | #616 쪼마리 (벌레) — GO 최대 CP: 834 | 2026-06-18 |
+| pokemon-shieldon | Shieldon / 방패톱스 | concept | ko | #410 방패톱스 (바위 / 강철) — GO 최대 CP: 890 | 2026-06-18 |
+| pokemon-shiftry | Shiftry / 다탱구 | concept | ko | #275 다탱구 (풀 / 악) — GO 최대 CP: 2,333 | 2026-06-18 |
+| pokemon-shiinotic | Shiinotic / 마셰이드 | concept | ko | #756 마셰이드 (풀 / 페어리) — GO 최대 CP: 1,861 | 2026-06-18 |
+| pokemon-shinx | Shinx / 꼬링크 | concept | ko | #403 꼬링크 (전기) — GO 최대 CP: 876 | 2026-06-18 |
+| pokemon-shroodle | Shroodle / 땃쭈르 | concept | ko | #944 땃쭈르 (독 / 노말) — GO 최대 CP: 929 | 2026-06-18 |
+| pokemon-shroomish | Shroomish / 버섯꼬 | concept | ko | #285 버섯꼬 (풀) — GO 최대 CP: 810 | 2026-06-18 |
+| pokemon-shuckle | Shuckle / 단단지 | concept | ko | #213 단단지 (벌레 / 바위) — GO 최대 CP: 405 | 2026-06-18 |
+| pokemon-shuppet | Shuppet / 어둠대신 | concept | ko | #353 어둠대신 (고스트) — GO 최대 CP: 1,018 | 2026-06-18 |
+| pokemon-sigilyph | Sigilyph / 심보러 | concept | ko | #561 심보러 (에스퍼 / 비행) — GO 최대 CP: 2,550 | 2026-06-18 |
+| pokemon-silcoon | Silcoon / 실쿤 | concept | ko | #266 실쿤 (벌레) — GO 최대 CP: 553 | 2026-06-18 |
+| pokemon-silicobra | Silicobra / 모래뱀 | concept | ko | #843 모래뱀 (땅) — GO 최대 CP: 1,081 | 2026-06-18 |
+| pokemon-silvally | Silvally / 실버디 | concept | ko | #773 실버디 (노말) — GO 최대 CP: 2,950 | 2026-06-18 |
+| pokemon-simipour | Simipour / 앗차키 | concept | ko | #516 앗차키 (물) — GO 최대 CP: 2,350 | 2026-06-18 |
+| pokemon-simisage | Simisage / 야나키 | concept | ko | #512 야나키 (풀) — GO 최대 CP: 2,350 | 2026-06-18 |
+| pokemon-simisear | Simisear / 바오키 | concept | ko | #514 바오키 (불꽃) — GO 최대 CP: 2,350 | 2026-06-18 |
+| pokemon-sinistcha | Sinistcha / 그우린차 | concept | ko | #1013 그우린차 (풀 / 고스트) — GO 최대 CP: 2,957 | 2026-06-18 |
+| pokemon-sinistea | Sinistea / 데인차 | concept | ko | #854 데인차 (고스트) — GO 최대 CP: 1,139 | 2026-06-18 |
 | pokemon-sirfetchd | Sirfetch’d / 창파나이트 | concept | ko | #865 창파나이트 (격투 / none) — GO 최대 CP: 2,985 | 2026-06-05 |
-| pokemon-sizzlipede | Sizzlipede / 태우지네 | concept | ko | #850 태우지네 (불꽃 / 벌레) — GO 최대 CP: 1,049 | 2026-06-05 |
-| pokemon-skarmory | Skarmory / 무장조 | concept | ko | #227 무장조 (강철 / 비행) — GO 최대 CP: 2,108 | 2026-06-05 |
-| pokemon-skeledirge | Skeledirge / 라우드본 | concept | ko | #911 라우드본 (불꽃 / 고스트) — GO 최대 CP: 3,027 | 2026-06-05 |
-| pokemon-skiddo | Skiddo / 메이클 | concept | ko | #672 메이클 (풀 / none) — GO 최대 CP: 1,250 | 2026-06-05 |
-| pokemon-skiploom | Skiploom / 두코 | concept | ko | #188 두코 (풀 / 비행) — GO 최대 CP: 976 | 2026-06-05 |
-| pokemon-skitty | Skitty / 에나비 | concept | ko | #300 에나비 (노말 / none) — GO 최대 CP: 739 | 2026-06-05 |
-| pokemon-skorupi | Skorupi / 스콜피 | concept | ko | #451 스콜피 (독 / 벌레) — GO 최대 CP: 1,009 | 2026-06-05 |
-| pokemon-skrelp | Skrelp / 수레기 | concept | ko | #690 수레기 (독 / 물) — GO 최대 CP: 1,063 | 2026-06-05 |
-| pokemon-skuntank | Skuntank / 스컹탱크 | concept | ko | #435 스컹탱크 (독 / 악) — GO 최대 CP: 2,358 | 2026-06-05 |
-| pokemon-skwovet | Skwovet / 탐리스 | concept | ko | #819 탐리스 (노말 / none) — GO 최대 CP: 944 | 2026-06-05 |
-| pokemon-slaking | Slaking / 게을킹 | concept | ko | #289 게을킹 (노말 / none) — GO 최대 CP: 4,431 | 2026-06-05 |
-| pokemon-slakoth | Slakoth / 게을로 | concept | ko | #287 게을로 (노말 / none) — GO 최대 CP: 1,002 | 2026-06-05 |
-| pokemon-sliggoo | Sliggoo / 미끄네일 | concept | ko | #705 미끄네일 (드래곤 / none) — GO 최대 CP: 2,037 | 2026-06-05 |
-| pokemon-slither-wing | Slither Wing / 땅을기는날개 | concept | ko | #988 땅을기는날개 (벌레 / 격투) — GO 최대 CP: 3,628 | 2026-06-05 |
-| pokemon-slowbro | Slowbro / 야도란 | concept | ko | #080 야도란 (물/에스퍼 타입) — 기본 스탯 합계 490 | 2026-06-05 |
-| pokemon-slowking | Slowking / 야도킹 | concept | ko | #199 야도킹 (물 / 에스퍼) — GO 최대 CP: 2,545 | 2026-06-05 |
-| pokemon-slowpoke | Slowpoke / 야돈 | concept | ko | #079 야돈 (물/에스퍼 타입) — 기본 스탯 합계 315 | 2026-06-05 |
-| pokemon-slugma | Slugma / 마그마그 | concept | ko | #218 마그마그 (불꽃 / none) — GO 최대 CP: 895 | 2026-06-05 |
-| pokemon-slurpuff | Slurpuff / 나루림 | concept | ko | #685 나루림 (페어리 / none) — GO 최대 CP: 2,199 | 2026-06-05 |
-| pokemon-smeargle | Smeargle / 루브도 | concept | ko | #235 루브도 (노말 / none) — GO 최대 CP: 431 | 2026-06-05 |
-| pokemon-smoliv | Smoliv / 미니브 | concept | ko | #928 미니브 (풀 / 노말) — GO 최대 CP: 854 | 2026-06-05 |
-| pokemon-smoochum | Smoochum / 뽀뽀라 | concept | ko | #238 뽀뽀라 (얼음 / 에스퍼) — GO 최대 CP: 1,291 | 2026-06-05 |
-| pokemon-sneasel | Sneasel / 포푸니 | concept | ko | #215 포푸니 (악 / 얼음) — GO 최대 CP: 2,051 | 2026-06-05 |
-| pokemon-sneasler | Sneasler / 포푸니크 | concept | ko | #903 포푸니크 (격투 / 독) — GO 최대 CP: 3,222 | 2026-06-05 |
-| pokemon-snivy | Snivy / 주리비얀 | concept | ko | #495 주리비얀 (풀 / none) — GO 최대 CP: 849 | 2026-06-05 |
-| pokemon-snom | Snom / 누니머기 | concept | ko | #872 누니머기 (얼음 / 벌레) — GO 최대 CP: 528 | 2026-06-05 |
-| pokemon-snorlax | Snorlax / 잠만보 | concept | ko | #143 잠만보 (노말 타입) — 기본 스탯 합계 540 | 2026-06-05 |
-| pokemon-snorunt | Snorunt / 눈꼬마 | concept | ko | #361 눈꼬마 (얼음 / none) — GO 최대 CP: 888 | 2026-06-05 |
-| pokemon-snover | Snover / 눈쓰개 | concept | ko | #459 눈쓰개 (풀 / 얼음) — GO 최대 CP: 1,159 | 2026-06-05 |
-| pokemon-snubbull | Snubbull / 블루 | concept | ko | #209 블루 (페어리 / none) — GO 최대 CP: 1,237 | 2026-06-05 |
-| pokemon-sobble | Sobble / 울머기 | concept | ko | #816 울머기 (물 / none) — GO 최대 CP: 1,097 | 2026-06-05 |
-| pokemon-solgaleo | Solgaleo / 솔가레오 | concept | ko | #791 솔가레오 (에스퍼 / 강철) — GO 최대 CP: 4,042 | 2026-06-05 |
-| pokemon-solosis | Solosis / 유니란 | concept | ko | #577 유니란 (에스퍼 / none) — GO 최대 CP: 1,367 | 2026-06-05 |
-| pokemon-solrock | Solrock / 솔록 | concept | ko | #338 솔록 (바위 / 에스퍼) — GO 최대 CP: 2,327 | 2026-06-05 |
-| pokemon-spearow | Spearow / 깨비참 | concept | ko | #021 깨비참 (노말/비행 타입) — 기본 스탯 합계 262 | 2026-06-05 |
-| pokemon-spectrier | Spectrier / 레이스포스 | concept | ko | #897 레이스포스 (고스트 / none) — GO 최대 CP: 3,385 | 2026-06-05 |
-| pokemon-spewpa | Spewpa / 분떠도리 | concept | ko | #665 분떠도리 (벌레 / none) — GO 최대 CP: 479 | 2026-06-05 |
-| pokemon-spheal | Spheal / 대굴레오 | concept | ko | #363 대굴레오 (얼음 / 물) — GO 최대 CP: 962 | 2026-06-05 |
-| pokemon-spidops | Spidops / 트래피더 | concept | ko | #918 트래피더 (벌레 / none) — GO 최대 CP: 1,687 | 2026-06-05 |
-| pokemon-spinarak | Spinarak / 페이검 | concept | ko | #167 페이검 (벌레 / 독) — GO 최대 CP: 816 | 2026-06-05 |
-| pokemon-spinda | Spinda / 얼루기 | concept | ko | #327 얼루기 (노말 / none) — GO 최대 CP: 1,220 | 2026-06-05 |
-| pokemon-spiritomb | Spiritomb / 화강돌 | concept | ko | #442 화강돌 (고스트 / 악) — GO 최대 CP: 2,072 | 2026-06-05 |
-| pokemon-spoink | Spoink / 피그점프 | concept | ko | #325 피그점프 (에스퍼 / none) — GO 최대 CP: 1,334 | 2026-06-05 |
-| pokemon-sprigatito | Sprigatito / 나오하 | concept | ko | #906 나오하 (풀 / none) — GO 최대 CP: 1,015 | 2026-06-05 |
-| pokemon-spritzee | Spritzee / 슈쁘 | concept | ko | #682 슈쁘 (페어리 / none) — GO 최대 CP: 1,252 | 2026-06-05 |
-| pokemon-squawkabilly | Squawkabilly / 시비꼬 | concept | ko | #931 시비꼬 (노말 / 비행) — GO 최대 CP: 1,973 | 2026-06-05 |
-| pokemon-squirtle | Squirtle / 꼬부기 | concept | ko | #007 꼬부기 (물 타입) — 기본 스탯 합계 314 | 2026-06-05 |
-| pokemon-stakataka | Stakataka / 차곡차곡 | concept | ko | #805 차곡차곡 (바위 / 강철) — GO 최대 CP: 3,294 | 2026-06-05 |
-| pokemon-stantler | Stantler / 노라키 | concept | ko | #234 노라키 (노말 / none) — GO 최대 CP: 2,164 | 2026-06-05 |
-| pokemon-staraptor | Staraptor / 찌르호크 | concept | ko | #398 찌르호크 (노말 / 비행) — GO 최대 CP: 2,825 | 2026-06-05 |
-| pokemon-staravia | Staravia / 찌르버드 | concept | ko | #397 찌르버드 (노말 / 비행) — GO 최대 CP: 1,299 | 2026-06-05 |
-| pokemon-starly | Starly / 찌르꼬 | concept | ko | #396 찌르꼬 (노말 / 비행) — GO 최대 CP: 719 | 2026-06-05 |
-| pokemon-starmie | Starmie / 아쿠스타 | concept | ko | #121 아쿠스타 (물/에스퍼 타입) — 기본 스탯 합계 520 | 2026-06-05 |
-| pokemon-staryu | Staryu / 별가사리 | concept | ko | #120 별가사리 (물 타입) — 기본 스탯 합계 340 | 2026-06-05 |
-| pokemon-steelix | Steelix / 강철톤 | concept | ko | #208 강철톤 (강철 / 땅) — GO 최대 CP: 2,414 | 2026-06-05 |
-| pokemon-steenee | Steenee / 달무리나 | concept | ko | #762 달무리나 (풀 / none) — GO 최대 CP: 757 | 2026-06-05 |
-| pokemon-stonjourner | Stonjourner / 돌헨진 | concept | ko | #874 돌헨진 (바위 / none) — GO 최대 CP: 3,218 | 2026-06-05 |
-| pokemon-stoutland | Stoutland / 바랜드 | concept | ko | #508 바랜드 (노말 / none) — GO 최대 CP: 2,827 | 2026-06-05 |
-| pokemon-stufful | Stufful / 포곰곰 | concept | ko | #759 포곰곰 (노말 / 격투) — GO 최대 CP: 1,352 | 2026-06-05 |
-| pokemon-stunfisk | Stunfisk / 메더 | concept | ko | #618 메더 (땅 / 전기) — GO 최대 CP: 2,162 | 2026-06-05 |
-| pokemon-stunky | Stunky / 스컹뿡 | concept | ko | #434 스컹뿡 (독 / 악) — GO 최대 CP: 1,151 | 2026-06-05 |
-| pokemon-sudowoodo | Sudowoodo / 꼬지모 | concept | ko | #185 꼬지모 (바위 / none) — GO 최대 CP: 2,148 | 2026-06-05 |
-| pokemon-suicune | Suicune / 스이쿤 | concept | ko | #245 스이쿤 (물 / none) — GO 최대 CP: 2,983 | 2026-06-05 |
-| pokemon-sunflora | Sunflora / 해루미 | concept | ko | #192 해루미 (풀 / none) — GO 최대 CP: 2,141 | 2026-06-05 |
-| pokemon-sunkern | Sunkern / 해너츠 | concept | ko | #191 해너츠 (풀 / none) — GO 최대 CP: 395 | 2026-06-05 |
-| pokemon-surskit | Surskit / 비구술 | concept | ko | #283 비구술 (벌레 / 물) — GO 최대 CP: 791 | 2026-06-05 |
-| pokemon-swablu | Swablu / 파비코 | concept | ko | #333 파비코 (노말 / 비행) — GO 최대 CP: 824 | 2026-06-05 |
-| pokemon-swadloon | Swadloon / 두르쿤 | concept | ko | #541 두르쿤 (벌레 / 풀) — GO 최대 CP: 1,370 | 2026-06-05 |
-| pokemon-swalot | Swalot / 꿀꺽몬 | concept | ko | #317 꿀꺽몬 (독 / none) — GO 최대 CP: 1,978 | 2026-06-05 |
-| pokemon-swampert | Swampert / 대짱이 | concept | ko | #260 대짱이 (물 / 땅) — GO 최대 CP: 2,974 | 2026-06-05 |
-| pokemon-swanna | Swanna / 스완나 | concept | ko | #581 스완나 (물 / 비행) — GO 최대 CP: 2,088 | 2026-06-05 |
-| pokemon-swellow | Swellow / 스왈로 | concept | ko | #277 스왈로 (노말 / 비행) — GO 최대 CP: 1,920 | 2026-06-05 |
-| pokemon-swinub | Swinub / 꾸꾸리 | concept | ko | #220 꾸꾸리 (얼음 / 땅) — GO 최대 CP: 741 | 2026-06-05 |
-| pokemon-swirlix | Swirlix / 나룸퍼프 | concept | ko | #684 나룸퍼프 (페어리 / none) — GO 최대 CP: 1,179 | 2026-06-05 |
-| pokemon-swoobat | Swoobat / 맘박쥐 | concept | ko | #528 맘박쥐 (에스퍼 / 비행) — GO 최대 CP: 1,716 | 2026-06-05 |
-| pokemon-sylveon | Sylveon / 님피아 | concept | ko | #700 님피아 (페어리 / none) — GO 최대 CP: 3,069 | 2026-06-05 |
-| pokemon-tadbulb | Tadbulb / 빈나두 | concept | ko | #938 빈나두 (전기 / none) — GO 최대 CP: 911 | 2026-06-05 |
-| pokemon-taillow | Taillow / 테일로 | concept | ko | #276 테일로 (노말 / 비행) — GO 최대 CP: 765 | 2026-06-05 |
-| pokemon-talonflame | Talonflame / 파이어로 | concept | ko | #663 파이어로 (불꽃 / 비행) — GO 최대 CP: 2,205 | 2026-06-05 |
-| pokemon-tandemaus | Tandemaus / 두리쥐 | concept | ko | #924 두리쥐 (노말 / none) — GO 최대 CP: 891 | 2026-06-05 |
-| pokemon-tangela | Tangela / 덩쿠리 | concept | ko | #114 덩쿠리 (풀 타입) — 기본 스탯 합계 435 | 2026-06-05 |
-| pokemon-tangrowth | Tangrowth / 덩쿠림보 | concept | ko | #465 덩쿠림보 (풀 / none) — GO 최대 CP: 3,030 | 2026-06-05 |
-| pokemon-tapu-bulu | Tapu Bulu / 카푸브루루 | concept | ko | #787 카푸브루루 (풀 / 페어리) — GO 최대 CP: 3,419 | 2026-06-05 |
-| pokemon-tapu-fini | Tapu Fini / 카푸느지느 | concept | ko | #788 카푸느지느 (물 / 페어리) — GO 최대 CP: 2,857 | 2026-06-05 |
-| pokemon-tapu-koko | Tapu Koko / 카푸꼬꼬꼭 | concept | ko | #785 카푸꼬꼬꼭 (전기 / 페어리) — GO 최대 CP: 3,168 | 2026-06-05 |
-| pokemon-tapu-lele | Tapu Lele / 카푸나비나 | concept | ko | #786 카푸나비나 (에스퍼 / 페어리) — GO 최대 CP: 3,494 | 2026-06-05 |
-| pokemon-tarountula | Tarountula / 타랜툴라 | concept | ko | #917 타랜툴라 (벌레 / none) — GO 최대 CP: 571 | 2026-06-05 |
-| pokemon-tatsugiri | Tatsugiri / 싸리용 | concept | ko | #978 싸리용 (드래곤 / 물) — GO 최대 CP: 2,746 | 2026-06-05 |
-| pokemon-tauros | Tauros / 켄타로스 | concept | ko | #128 켄타로스 (노말 타입) — 기본 스탯 합계 490 | 2026-06-05 |
-| pokemon-teddiursa | Teddiursa / 깜지곰 | concept | ko | #216 깜지곰 (노말 / none) — GO 최대 CP: 1,328 | 2026-06-05 |
-| pokemon-tentacool | Tentacool / 왕눈해 | concept | ko | #072 왕눈해 (물/독 타입) — 기본 스탯 합계 335 | 2026-06-05 |
-| pokemon-tentacruel | Tentacruel / 독파리 | concept | ko | #073 독파리 (물/독 타입) — 기본 스탯 합계 515 | 2026-06-05 |
-| pokemon-tepig | Tepig / 뚜꾸리 | concept | ko | #498 뚜꾸리 (불꽃 / none) — GO 최대 CP: 1,083 | 2026-06-05 |
-| pokemon-terapagos | Terapagos / 테라파고스 | concept | ko | #1024 테라파고스 (노말 / none) — GO 최대 CP: 1,760 | 2026-06-05 |
-| pokemon-terrakion | Terrakion / 테라키온 | concept | ko | #639 테라키온 (바위 / 격투) — GO 최대 CP: 3,698 | 2026-06-05 |
-| pokemon-thievul | Thievul / 폭슬라이 | concept | ko | #828 폭슬라이 (악 / none) — GO 최대 CP: 2,136 | 2026-06-05 |
-| pokemon-throh | Throh / 던지미 | concept | ko | #538 던지미 (격투 / none) — GO 최대 CP: 2,562 | 2026-06-05 |
-| pokemon-thundurus | Thundurus / 볼트로스 | concept | ko | #642 볼트로스 (전기 / 비행) — GO 최대 CP: 3,345 | 2026-06-05 |
-| pokemon-thwackey | Thwackey / 채키몽 | concept | ko | #811 채키몽 (풀 / none) — GO 최대 CP: 1,876 | 2026-06-05 |
-| pokemon-timburr | Timburr / 으랏차 | concept | ko | #532 으랏차 (격투 / none) — GO 최대 CP: 1,315 | 2026-06-05 |
+| pokemon-sizzlipede | Sizzlipede / 태우지네 | concept | ko | #850 태우지네 (불꽃 / 벌레) — GO 최대 CP: 1,049 | 2026-06-18 |
+| pokemon-skarmory | Skarmory / 무장조 | concept | ko | #227 무장조 (강철 / 비행) — GO 최대 CP: 2,108 | 2026-06-18 |
+| pokemon-skeledirge | Skeledirge / 라우드본 | concept | ko | #911 라우드본 (불꽃 / 고스트) — GO 최대 CP: 3,027 | 2026-06-18 |
+| pokemon-skiddo | Skiddo / 메이클 | concept | ko | #672 메이클 (풀) — GO 최대 CP: 1,250 | 2026-06-18 |
+| pokemon-skiploom | Skiploom / 두코 | concept | ko | #188 두코 (풀 / 비행) — GO 최대 CP: 976 | 2026-06-18 |
+| pokemon-skitty | Skitty / 에나비 | concept | ko | #300 에나비 (노말) — GO 최대 CP: 739 | 2026-06-18 |
+| pokemon-skorupi | Skorupi / 스콜피 | concept | ko | #451 스콜피 (독 / 벌레) — GO 최대 CP: 1,009 | 2026-06-18 |
+| pokemon-skrelp | Skrelp / 수레기 | concept | ko | #690 수레기 (독 / 물) — GO 최대 CP: 1,063 | 2026-06-18 |
+| pokemon-skuntank | Skuntank / 스컹탱크 | concept | ko | #435 스컹탱크 (독 / 악) — GO 최대 CP: 2,358 | 2026-06-18 |
+| pokemon-skwovet | Skwovet / 탐리스 | concept | ko | #819 탐리스 (노말) — GO 최대 CP: 944 | 2026-06-18 |
+| pokemon-slaking | Slaking / 게을킹 | concept | ko | #289 게을킹 (노말) — GO 최대 CP: 4,431 | 2026-06-18 |
+| pokemon-slakoth | Slakoth / 게을로 | concept | ko | #287 게을로 (노말) — GO 최대 CP: 1,002 | 2026-06-18 |
+| pokemon-sliggoo | Sliggoo / 미끄네일 | concept | ko | #705 미끄네일 (드래곤) — GO 최대 CP: 2,037 | 2026-06-18 |
+| pokemon-slither-wing | Slither Wing / 땅을기는날개 | concept | ko | #988 땅을기는날개 (벌레 / 격투) — GO 최대 CP: 3,628 | 2026-06-18 |
+| pokemon-slowbro | Slowbro / 야도란 | concept | ko | #080 야도란 (물 / 에스퍼) — GO 최대 CP: 2,545 | 2026-06-18 |
+| pokemon-slowking | Slowking / 야도킹 | concept | ko | #199 야도킹 (물 / 에스퍼) — GO 최대 CP: 2,545 | 2026-06-18 |
+| pokemon-slowpoke | Slowpoke / 야돈 | concept | ko | #079 야돈 (물 / 에스퍼) — GO 최대 CP: 1,226 | 2026-06-18 |
+| pokemon-slugma | Slugma / 마그마그 | concept | ko | #218 마그마그 (불꽃) — GO 최대 CP: 895 | 2026-06-18 |
+| pokemon-slurpuff | Slurpuff / 나루림 | concept | ko | #685 나루림 (페어리) — GO 최대 CP: 2,199 | 2026-06-18 |
+| pokemon-smeargle | Smeargle / 루브도 | concept | ko | #235 루브도 (노말) — GO 최대 CP: 431 | 2026-06-18 |
+| pokemon-smoliv | Smoliv / 미니브 | concept | ko | #928 미니브 (풀 / 노말) — GO 최대 CP: 854 | 2026-06-18 |
+| pokemon-smoochum | Smoochum / 뽀뽀라 | concept | ko | #238 뽀뽀라 (얼음 / 에스퍼) — GO 최대 CP: 1,291 | 2026-06-18 |
+| pokemon-sneasel | Sneasel / 포푸니 | concept | ko | #215 포푸니 (악 / 얼음) — GO 최대 CP: 2,051 | 2026-06-18 |
+| pokemon-sneasler | Sneasler / 포푸니크 | concept | ko | #903 포푸니크 (격투 / 독) — GO 최대 CP: 3,222 | 2026-06-18 |
+| pokemon-snivy | Snivy / 주리비얀 | concept | ko | #495 주리비얀 (풀) — GO 최대 CP: 849 | 2026-06-18 |
+| pokemon-snom | Snom / 누니머기 | concept | ko | #872 누니머기 (얼음 / 벌레) — GO 최대 CP: 528 | 2026-06-18 |
+| pokemon-snorlax | Snorlax / 잠만보 | concept | ko | #143 잠만보 (노말) — GO 최대 CP: 3,225 | 2026-06-18 |
+| pokemon-snorunt | Snorunt / 눈꼬마 | concept | ko | #361 눈꼬마 (얼음) — GO 최대 CP: 888 | 2026-06-18 |
+| pokemon-snover | Snover / 눈쓰개 | concept | ko | #459 눈쓰개 (풀 / 얼음) — GO 최대 CP: 1,159 | 2026-06-18 |
+| pokemon-snubbull | Snubbull / 블루 | concept | ko | #209 다부니 (페어리) — GO 최대 CP: 1,237 | 2026-06-18 |
+| pokemon-sobble | Sobble / 울머기 | concept | ko | #816 울머기 (물) — GO 최대 CP: 1,097 | 2026-06-18 |
+| pokemon-solgaleo | Solgaleo / 솔가레오 | concept | ko | #791 솔가레오 (에스퍼 / 강철) — GO 최대 CP: 4,042 | 2026-06-18 |
+| pokemon-solosis | Solosis / 유니란 | concept | ko | #577 유니란 (에스퍼) — GO 최대 CP: 1,367 | 2026-06-18 |
+| pokemon-solrock | Solrock / 솔록 | concept | ko | #338 솔록 (바위 / 에스퍼) — GO 최대 CP: 2,327 | 2026-06-18 |
+| pokemon-spearow | Spearow / 깨비참 | concept | ko | #021 깨비참 (노말 / 비행) — GO 최대 CP: 798 | 2026-06-18 |
+| pokemon-spectrier | Spectrier / 레이스포스 | concept | ko | #897 레이스포스 (고스트) — GO 최대 CP: 3,385 | 2026-06-18 |
+| pokemon-spewpa | Spewpa / 분떠도리 | concept | ko | #665 분떠도리 (벌레) — GO 최대 CP: 479 | 2026-06-18 |
+| pokemon-spheal | Spheal / 대굴레오 | concept | ko | #363 대굴레오 (얼음 / 물) — GO 최대 CP: 962 | 2026-06-18 |
+| pokemon-spidops | Spidops / 트래피더 | concept | ko | #918 트래피더 (벌레) — GO 최대 CP: 1,687 | 2026-06-18 |
+| pokemon-spinarak | Spinarak / 페이검 | concept | ko | #167 페이검 (벌레 / 독) — GO 최대 CP: 816 | 2026-06-18 |
+| pokemon-spinda | Spinda / 얼루기 | concept | ko | #327 얼루기 (노말) — GO 최대 CP: 1,220 | 2026-06-18 |
+| pokemon-spiritomb | Spiritomb / 화강돌 | concept | ko | #442 화강돌 (고스트 / 악) — GO 최대 CP: 2,072 | 2026-06-18 |
+| pokemon-spoink | Spoink / 피그점프 | concept | ko | #325 피그점프 (에스퍼) — GO 최대 CP: 1,334 | 2026-06-18 |
+| pokemon-sprigatito | Sprigatito / 나오하 | concept | ko | #906 나오하 (풀) — GO 최대 CP: 1,015 | 2026-06-18 |
+| pokemon-spritzee | Spritzee / 슈쁘 | concept | ko | #682 슈쁘 (페어리) — GO 최대 CP: 1,252 | 2026-06-18 |
+| pokemon-squawkabilly | Squawkabilly / 시비꼬 | concept | ko | #931 시비꼬 (노말 / 비행) — GO 최대 CP: 1,973 | 2026-06-18 |
+| pokemon-squirtle | Squirtle / 꼬부기 | concept | ko | #007 꼬부기 (물) — GO 최대 CP: 946 | 2026-06-18 |
+| pokemon-stakataka | Stakataka / 차곡차곡 | concept | ko | #805 차곡차곡 (바위 / 강철) — GO 최대 CP: 3,294 | 2026-06-18 |
+| pokemon-stantler | Stantler / 노라키 | concept | ko | #234 노라키 (노말) — GO 최대 CP: 2,164 | 2026-06-18 |
+| pokemon-staraptor | Staraptor / 찌르호크 | concept | ko | #398 찌르호크 (노말 / 비행) — GO 최대 CP: 2,825 | 2026-06-18 |
+| pokemon-staravia | Staravia / 찌르버드 | concept | ko | #397 찌르버드 (노말 / 비행) — GO 최대 CP: 1,299 | 2026-06-18 |
+| pokemon-starly | Starly / 찌르꼬 | concept | ko | #396 찌르꼬 (노말 / 비행) — GO 최대 CP: 719 | 2026-06-18 |
+| pokemon-starmie | Starmie / 아쿠스타 | concept | ko | #121 아쿠스타 (물 / 에스퍼) — GO 최대 CP: 2,584 | 2026-06-18 |
+| pokemon-staryu | Staryu / 별가사리 | concept | ko | #120 별가사리 (물) — GO 최대 CP: 1,157 | 2026-06-18 |
+| pokemon-steelix | Steelix / 강철톤 | concept | ko | #208 강철톤 (강철 / 땅) — GO 최대 CP: 2,414 | 2026-06-18 |
+| pokemon-steenee | Steenee / 달무리나 | concept | ko | #762 달무리나 (풀) — GO 최대 CP: 757 | 2026-06-18 |
+| pokemon-stonjourner | Stonjourner / 돌헨진 | concept | ko | #874 돌헨진 (바위) — GO 최대 CP: 3,218 | 2026-06-18 |
+| pokemon-stoutland | Stoutland / 바랜드 | concept | ko | #508 바랜드 (노말) — GO 최대 CP: 2,827 | 2026-06-18 |
+| pokemon-stufful | Stufful / 포곰곰 | concept | ko | #759 포곰곰 (노말 / 격투) — GO 최대 CP: 1,352 | 2026-06-18 |
+| pokemon-stunfisk | Stunfisk / 메더 | concept | ko | #618 메더 (땅 / 전기) — GO 최대 CP: 2,162 | 2026-06-18 |
+| pokemon-stunky | Stunky / 스컹뿡 | concept | ko | #434 스컹뿡 (독 / 악) — GO 최대 CP: 1,151 | 2026-06-18 |
+| pokemon-sudowoodo | Sudowoodo / 꼬지모 | concept | ko | #185 꼬지모 (바위) — GO 최대 CP: 2,148 | 2026-06-18 |
+| pokemon-suicune | Suicune / 스이쿤 | concept | ko | #245 스이쿤 (물) — GO 최대 CP: 2,983 | 2026-06-18 |
+| pokemon-sunflora | Sunflora / 해루미 | concept | ko | #192 해루미 (풀) — GO 최대 CP: 2,141 | 2026-06-18 |
+| pokemon-sunkern | Sunkern / 해너츠 | concept | ko | #191 해너츠 (풀) — GO 최대 CP: 395 | 2026-06-18 |
+| pokemon-surskit | Surskit / 비구술 | concept | ko | #283 비구술 (벌레 / 물) — GO 최대 CP: 791 | 2026-06-18 |
+| pokemon-swablu | Swablu / 파비코 | concept | ko | #333 파비코 (노말 / 비행) — GO 최대 CP: 824 | 2026-06-18 |
+| pokemon-swadloon | Swadloon / 두르쿤 | concept | ko | #541 두르쿤 (벌레 / 풀) — GO 최대 CP: 1,370 | 2026-06-18 |
+| pokemon-swalot | Swalot / 꿀꺽몬 | concept | ko | #317 꿀꺽몬 (독) — GO 최대 CP: 1,978 | 2026-06-18 |
+| pokemon-swampert | Swampert / 대짱이 | concept | ko | #260 대짱이 (물 / 땅) — GO 최대 CP: 2,974 | 2026-06-18 |
+| pokemon-swanna | Swanna / 스완나 | concept | ko | #581 스완나 (물 / 비행) — GO 최대 CP: 2,088 | 2026-06-18 |
+| pokemon-swellow | Swellow / 스왈로 | concept | ko | #277 스왈로 (노말 / 비행) — GO 최대 CP: 1,920 | 2026-06-18 |
+| pokemon-swinub | Swinub / 꾸꾸리 | concept | ko | #220 꾸꾸리 (얼음 / 땅) — GO 최대 CP: 741 | 2026-06-18 |
+| pokemon-swirlix | Swirlix / 나룸퍼프 | concept | ko | #684 나룸퍼프 (페어리) — GO 최대 CP: 1,179 | 2026-06-18 |
+| pokemon-swoobat | Swoobat / 맘박쥐 | concept | ko | #528 맘박쥐 (에스퍼 / 비행) — GO 최대 CP: 1,716 | 2026-06-18 |
+| pokemon-sylveon | Sylveon / 님피아 | concept | ko | #700 님피아 (페어리) — GO 최대 CP: 3,069 | 2026-06-18 |
+| pokemon-tadbulb | Tadbulb / 빈나두 | concept | ko | #938 빈나두 (전기) — GO 최대 CP: 911 | 2026-06-18 |
+| pokemon-taillow | Taillow / 테일로 | concept | ko | #276 테일로 (노말 / 비행) — GO 최대 CP: 765 | 2026-06-18 |
+| pokemon-talonflame | Talonflame / 파이어로 | concept | ko | #663 파이어로 (불꽃 / 비행) — GO 최대 CP: 2,205 | 2026-06-18 |
+| pokemon-tandemaus | Tandemaus / 두리쥐 | concept | ko | #924 두리쥐 (노말) — GO 최대 CP: 891 | 2026-06-18 |
+| pokemon-tangela | Tangela / 덩쿠리 | concept | ko | #114 덩쿠리 (풀) — GO 최대 CP: 2,238 | 2026-06-18 |
+| pokemon-tangrowth | Tangrowth / 덩쿠림보 | concept | ko | #465 덩쿠림보 (풀) — GO 최대 CP: 3,030 | 2026-06-18 |
+| pokemon-tapu-bulu | Tapu Bulu / 카푸브루루 | concept | ko | #787 카푸브루루 (풀 / 페어리) — GO 최대 CP: 3,419 | 2026-06-18 |
+| pokemon-tapu-fini | Tapu Fini / 카푸느지느 | concept | ko | #788 카푸느지느 (물 / 페어리) — GO 최대 CP: 2,857 | 2026-06-18 |
+| pokemon-tapu-koko | Tapu Koko / 카푸꼬꼬꼭 | concept | ko | #785 카푸꼬꼬꼭 (전기 / 페어리) — GO 최대 CP: 3,168 | 2026-06-18 |
+| pokemon-tapu-lele | Tapu Lele / 카푸나비나 | concept | ko | #786 카푸나비나 (에스퍼 / 페어리) — GO 최대 CP: 3,494 | 2026-06-18 |
+| pokemon-tarountula | Tarountula / 타랜툴라 | concept | ko | #917 타랜툴라 (벌레) — GO 최대 CP: 571 | 2026-06-18 |
+| pokemon-tatsugiri | Tatsugiri / 싸리용 | concept | ko | #978 싸리용 (드래곤 / 물) — GO 최대 CP: 2,746 | 2026-06-18 |
+| pokemon-tauros | Tauros / 켄타로스 | concept | ko | #128 켄타로스 (노말) — GO 최대 CP: 2,620 | 2026-06-18 |
+| pokemon-teddiursa | Teddiursa / 깜지곰 | concept | ko | #216 깜지곰 (노말) — GO 최대 CP: 1,328 | 2026-06-18 |
+| pokemon-tentacool | Tentacool / 왕눈해 | concept | ko | #072 왕눈해 (물 / 독) — GO 최대 CP: 1,040 | 2026-06-18 |
+| pokemon-tentacruel | Tentacruel / 독파리 | concept | ko | #073 독파리 (물 / 독) — GO 최대 CP: 2,422 | 2026-06-18 |
+| pokemon-tepig | Tepig / 뚜꾸리 | concept | ko | #498 뚜꾸리 (불꽃) — GO 최대 CP: 1,083 | 2026-06-18 |
+| pokemon-terapagos | Terapagos / 테라파고스 | concept | ko | #1024 테라파고스 (노말) — GO 최대 CP: 1,760 | 2026-06-18 |
+| pokemon-terrakion | Terrakion / 테라키온 | concept | ko | #639 테라키온 (바위 / 격투) — GO 최대 CP: 3,698 | 2026-06-18 |
+| pokemon-thievul | Thievul / 폭슬라이 | concept | ko | #828 폭슬라이 (악) — GO 최대 CP: 2,136 | 2026-06-18 |
+| pokemon-throh | Throh / 던지미 | concept | ko | #538 던지미 (격투) — GO 최대 CP: 2,562 | 2026-06-18 |
+| pokemon-thundurus | Thundurus / 볼트로스 | concept | ko | #642 볼트로스 (전기 / 비행) — GO 최대 CP: 3,345 | 2026-06-18 |
+| pokemon-thwackey | Thwackey / 채키몽 | concept | ko | #811 채키몽 (풀) — GO 최대 CP: 1,876 | 2026-06-18 |
+| pokemon-timburr | Timburr / 으랏차 | concept | ko | #532 으랏차 (격투) — GO 최대 CP: 1,315 | 2026-06-18 |
 | pokemon-ting-lu | Ting-Lu / 딩루 | concept | ko | #1003 딩루 (악 / 땅) — GO 최대 CP: 3,532 | 2026-06-05 |
-| pokemon-tinkatink | Tinkatink / 어리짱 | concept | ko | #957 어리짱 (페어리 / 강철) — GO 최대 CP: 860 | 2026-06-05 |
-| pokemon-tinkaton | Tinkaton / 두드리짱 | concept | ko | #959 두드리짱 (페어리 / 강철) — GO 최대 CP: 2,250 | 2026-06-05 |
-| pokemon-tinkatuff | Tinkatuff / 벼리짱 | concept | ko | #958 벼리짱 (페어리 / 강철) — GO 최대 CP: 1,307 | 2026-06-05 |
-| pokemon-tirtouga | Tirtouga / 프로토가 | concept | ko | #564 프로토가 (물 / 바위) — GO 최대 CP: 1,488 | 2026-06-05 |
-| pokemon-toedscool | Toedscool / 들눈해 | concept | ko | #948 들눈해 (땅 / 풀) — GO 최대 CP: 1,040 | 2026-06-05 |
-| pokemon-toedscruel | Toedscruel / 육파리 | concept | ko | #949 육파리 (땅 / 풀) — GO 최대 CP: 2,422 | 2026-06-05 |
-| pokemon-togedemaru | Togedemaru / 토게데마루 | concept | ko | #777 토게데마루 (전기 / 강철) — GO 최대 CP: 2,160 | 2026-06-05 |
-| pokemon-togekiss | Togekiss / 토게키스 | concept | ko | #468 토게키스 (페어리 / 비행) — GO 최대 CP: 3,332 | 2026-06-05 |
-| pokemon-togepi | Togepi / 토게피 | concept | ko | #175 토게피 (페어리 / none) — GO 최대 CP: 657 | 2026-06-05 |
-| pokemon-togetic | Togetic / 토게틱 | concept | ko | #176 토게틱 (페어리 / 비행) — GO 최대 CP: 1,708 | 2026-06-05 |
-| pokemon-torchic | Torchic / 아차모 | concept | ko | #255 아차모 (불꽃 / none) — GO 최대 CP: 1,093 | 2026-06-05 |
-| pokemon-torkoal | Torkoal / 코터스 | concept | ko | #324 코터스 (불꽃 / none) — GO 최대 CP: 2,093 | 2026-06-05 |
-| pokemon-tornadus | Tornadus / 토네로스 | concept | ko | #641 토네로스 (비행 / none) — GO 최대 CP: 3,345 | 2026-06-05 |
-| pokemon-torracat | Torracat / 냐오히트 | concept | ko | #726 냐오히트 (불꽃 / none) — GO 최대 CP: 1,710 | 2026-06-05 |
-| pokemon-torterra | Torterra / 토대부기 | concept | ko | #389 토대부기 (풀 / 땅) — GO 최대 CP: 2,934 | 2026-06-05 |
-| pokemon-totodile | Totodile / 리아코 | concept | ko | #158 리아코 (물 / none) — GO 최대 CP: 1,131 | 2026-06-05 |
-| pokemon-toucannon | Toucannon / 왕큰부리 | concept | ko | #733 왕큰부리 (노말 / 비행) — GO 최대 CP: 2,689 | 2026-06-05 |
-| pokemon-toxapex | Toxapex / 더시마사리 | concept | ko | #748 더시마사리 (독 / 물) — GO 최대 CP: 1,685 | 2026-06-05 |
-| pokemon-toxel | Toxel / 일레즌 | concept | ko | #848 일레즌 (전기 / 독) — GO 최대 CP: 726 | 2026-06-05 |
-| pokemon-toxicroak | Toxicroak / 독개굴 | concept | ko | #454 독개굴 (독 / 격투) — GO 최대 CP: 2,488 | 2026-06-05 |
-| pokemon-toxtricity | Toxtricity / 스트린더 | concept | ko | #849 스트린더 (전기 / 독) — GO 최대 CP: 2,601 | 2026-06-05 |
-| pokemon-tranquill | Tranquill / 유토브 | concept | ko | #520 유토브 (노말 / 비행) — GO 최대 CP: 1,442 | 2026-06-05 |
-| pokemon-trapinch | Trapinch / 톱치 | concept | ko | #328 톱치 (땅 / none) — GO 최대 CP: 1,274 | 2026-06-05 |
-| pokemon-treecko | Treecko / 나무지기 | concept | ko | #252 나무지기 (풀 / none) — GO 최대 CP: 1,053 | 2026-06-05 |
-| pokemon-trevenant | Trevenant / 대로트 | concept | ko | #709 대로트 (고스트 / 풀) — GO 최대 CP: 2,559 | 2026-06-05 |
-| pokemon-tropius | Tropius / 트로피우스 | concept | ko | #357 트로피우스 (풀 / 비행) — GO 최대 CP: 1,941 | 2026-06-05 |
-| pokemon-trubbish | Trubbish / 깨봉이 | concept | ko | #568 깨봉이 (독 / none) — GO 최대 CP: 1,000 | 2026-06-05 |
-| pokemon-trumbeak | Trumbeak / 크라파 | concept | ko | #732 크라파 (노말 / 비행) — GO 최대 CP: 1,478 | 2026-06-05 |
-| pokemon-tsareena | Tsareena / 달코퀸 | concept | ko | #763 달코퀸 (풀 / none) — GO 최대 CP: 2,964 | 2026-06-05 |
-| pokemon-turtonator | Turtonator / 폭거북스 | concept | ko | #776 폭거북스 (불꽃 / 드래곤) — GO 최대 CP: 2,223 | 2026-06-05 |
-| pokemon-turtwig | Turtwig / 모부기 | concept | ko | #387 모부기 (풀 / none) — GO 최대 CP: 1,187 | 2026-06-05 |
-| pokemon-tympole | Tympole / 동챙이 | concept | ko | #535 동챙이 (물 / none) — GO 최대 CP: 839 | 2026-06-05 |
-| pokemon-tynamo | Tynamo / 저리어 | concept | ko | #602 저리어 (전기 / none) — GO 최대 CP: 811 | 2026-06-05 |
+| pokemon-tinkatink | Tinkatink / 어리짱 | concept | ko | #957 어리짱 (페어리 / 강철) — GO 최대 CP: 860 | 2026-06-18 |
+| pokemon-tinkaton | Tinkaton / 두드리짱 | concept | ko | #959 두드리짱 (페어리 / 강철) — GO 최대 CP: 2,250 | 2026-06-18 |
+| pokemon-tinkatuff | Tinkatuff / 벼리짱 | concept | ko | #958 벼리짱 (페어리 / 강철) — GO 최대 CP: 1,307 | 2026-06-18 |
+| pokemon-tirtouga | Tirtouga / 프로토가 | concept | ko | #564 프로토가 (물 / 바위) — GO 최대 CP: 1,488 | 2026-06-18 |
+| pokemon-toedscool | Toedscool / 들눈해 | concept | ko | #948 들눈해 (땅 / 풀) — GO 최대 CP: 1,040 | 2026-06-18 |
+| pokemon-toedscruel | Toedscruel / 육파리 | concept | ko | #949 육파리 (땅 / 풀) — GO 최대 CP: 2,422 | 2026-06-18 |
+| pokemon-togedemaru | Togedemaru / 토게데마루 | concept | ko | #777 토게데마루 (전기 / 강철) — GO 최대 CP: 2,160 | 2026-06-18 |
+| pokemon-togekiss | Togekiss / 토게키스 | concept | ko | #468 토게키스 (페어리 / 비행) — GO 최대 CP: 3,332 | 2026-06-18 |
+| pokemon-togepi | Togepi / 토게피 | concept | ko | #175 토게피 (페어리) — GO 최대 CP: 657 | 2026-06-18 |
+| pokemon-togetic | Togetic / 토게틱 | concept | ko | #176 토게틱 (페어리 / 비행) — GO 최대 CP: 1,708 | 2026-06-18 |
+| pokemon-torchic | Torchic / 아차모 | concept | ko | #255 아차모 (불꽃) — GO 최대 CP: 1,093 | 2026-06-18 |
+| pokemon-torkoal | Torkoal / 코터스 | concept | ko | #324 코터스 (불꽃) — GO 최대 CP: 2,093 | 2026-06-18 |
+| pokemon-tornadus | Tornadus / 토네로스 | concept | ko | #641 토네로스 (비행) — GO 최대 CP: 3,345 | 2026-06-18 |
+| pokemon-torracat | Torracat / 냐오히트 | concept | ko | #726 냐오히트 (불꽃) — GO 최대 CP: 1,710 | 2026-06-18 |
+| pokemon-torterra | Torterra / 토대부기 | concept | ko | #389 토대부기 (풀 / 땅) — GO 최대 CP: 2,934 | 2026-06-18 |
+| pokemon-totodile | Totodile / 리아코 | concept | ko | #158 리아코 (물) — GO 최대 CP: 1,131 | 2026-06-18 |
+| pokemon-toucannon | Toucannon / 왕큰부리 | concept | ko | #733 왕큰부리 (노말 / 비행) — GO 최대 CP: 2,689 | 2026-06-18 |
+| pokemon-toxapex | Toxapex / 더시마사리 | concept | ko | #748 더시마사리 (독 / 물) — GO 최대 CP: 1,685 | 2026-06-18 |
+| pokemon-toxel | Toxel / 일레즌 | concept | ko | #848 일레즌 (전기 / 독) — GO 최대 CP: 726 | 2026-06-18 |
+| pokemon-toxicroak | Toxicroak / 독개굴 | concept | ko | #454 독개굴 (독 / 격투) — GO 최대 CP: 2,488 | 2026-06-18 |
+| pokemon-toxtricity | Toxtricity / 스트린더 | concept | ko | #849 스트린더 (전기 / 독) — GO 최대 CP: 2,601 | 2026-06-18 |
+| pokemon-tranquill | Tranquill / 유토브 | concept | ko | #520 유토브 (노말 / 비행) — GO 최대 CP: 1,442 | 2026-06-18 |
+| pokemon-trapinch | Trapinch / 톱치 | concept | ko | #328 톱치 (땅) — GO 최대 CP: 1,274 | 2026-06-18 |
+| pokemon-treecko | Treecko / 나무지기 | concept | ko | #252 나무지기 (풀) — GO 최대 CP: 1,053 | 2026-06-18 |
+| pokemon-trevenant | Trevenant / 대로트 | concept | ko | #709 대로트 (고스트 / 풀) — GO 최대 CP: 2,559 | 2026-06-18 |
+| pokemon-tropius | Tropius / 트로피우스 | concept | ko | #357 트로피우스 (풀 / 비행) — GO 최대 CP: 1,941 | 2026-06-18 |
+| pokemon-trubbish | Trubbish / 깨봉이 | concept | ko | #568 깨봉이 (독) — GO 최대 CP: 1,000 | 2026-06-18 |
+| pokemon-trumbeak | Trumbeak / 크라파 | concept | ko | #732 크라파 (노말 / 비행) — GO 최대 CP: 1,478 | 2026-06-18 |
+| pokemon-tsareena | Tsareena / 달코퀸 | concept | ko | #763 달코퀸 (풀) — GO 최대 CP: 2,964 | 2026-06-18 |
+| pokemon-turtonator | Turtonator / 폭거북스 | concept | ko | #776 폭거북스 (불꽃 / 드래곤) — GO 최대 CP: 2,223 | 2026-06-18 |
+| pokemon-turtwig | Turtwig / 모부기 | concept | ko | #387 모부기 (풀) — GO 최대 CP: 1,187 | 2026-06-18 |
+| pokemon-tympole | Tympole / 동챙이 | concept | ko | #535 동챙이 (물) — GO 최대 CP: 839 | 2026-06-18 |
+| pokemon-tynamo | Tynamo / 저리어 | concept | ko | #602 저리어 (전기) — GO 최대 CP: 811 | 2026-06-18 |
 | pokemon-type-null | Type: Null / 타입:널 | concept | ko | #772 타입:널 (노말 / none) — GO 최대 CP: 2,664 | 2026-06-05 |
-| pokemon-typhlosion | Typhlosion / 블레이범 | concept | ko | #157 블레이범 (불꽃 / none) — GO 최대 CP: 2,889 | 2026-06-05 |
-| pokemon-tyranitar | Tyranitar / 마기라스 | concept | ko | #248 마기라스 (바위 / 악) — GO 최대 CP: 3,834 | 2026-06-05 |
-| pokemon-tyrantrum | Tyrantrum / 견고라스 | concept | ko | #697 견고라스 (바위 / 드래곤) — GO 최대 CP: 3,128 | 2026-06-05 |
-| pokemon-tyrogue | Tyrogue / 배루키 | concept | ko | #236 배루키 (격투 / none) — GO 최대 CP: 492 | 2026-06-05 |
-| pokemon-tyrunt | Tyrunt / 티고라스 | concept | ko | #696 티고라스 (바위 / 드래곤) — GO 최대 CP: 1,635 | 2026-06-05 |
-| pokemon-umbreon | Umbreon / 블래키 | concept | ko | #197 블래키 (악 / none) — GO 최대 CP: 2,137 | 2026-06-05 |
-| pokemon-unfezant | Unfezant / 켄호로우 | concept | ko | #521 켄호로우 (노말 / 비행) — GO 최대 CP: 2,734 | 2026-06-05 |
-| pokemon-unown | Unown / 안농 | concept | ko | #201 안농 (에스퍼 / none) — GO 최대 CP: 1,185 | 2026-06-05 |
-| pokemon-ursaluna | Ursaluna / 다투곰 | concept | ko | #901 다투곰 (땅 / 노말) — GO 최대 CP: 3,854 | 2026-06-05 |
-| pokemon-ursaring | Ursaring / 링곰 | concept | ko | #217 링곰 (노말 / none) — GO 최대 CP: 2,945 | 2026-06-05 |
-| pokemon-urshifu | Urshifu / 우라오스 | concept | ko | #892 우라오스 (격투 / 물) — GO 최대 CP: 3,606 | 2026-06-05 |
-| pokemon-uxie | Uxie / 유크시 | concept | ko | #480 유크시 (에스퍼 / none) — GO 최대 CP: 2,524 | 2026-06-05 |
-| pokemon-vanillish | Vanillish / 바닐리치 | concept | ko | #583 바닐리치 (얼음 / none) — GO 최대 CP: 1,591 | 2026-06-05 |
-| pokemon-vanillite | Vanillite / 바닐프티 | concept | ko | #582 바닐프티 (얼음 / none) — GO 최대 CP: 1,033 | 2026-06-05 |
-| pokemon-vanilluxe | Vanilluxe / 배바닐라 | concept | ko | #584 배바닐라 (얼음 / none) — GO 최대 CP: 2,822 | 2026-06-05 |
-| pokemon-vaporeon | Vaporeon / 샤미드 | concept | ko | #134 샤미드 (물 타입) — 기본 스탯 합계 525 | 2026-06-05 |
-| pokemon-varoom | Varoom / 부르롱 | concept | ko | #965 부르롱 (강철 / 독) — GO 최대 CP: 1,138 | 2026-06-05 |
-| pokemon-veluza | Veluza / 가비루사 | concept | ko | #976 가비루사 (물 / 에스퍼) — GO 최대 CP: 2,436 | 2026-06-05 |
-| pokemon-venipede | Venipede / 마디네 | concept | ko | #543 마디네 (벌레 / 독) — GO 최대 CP: 706 | 2026-06-05 |
-| pokemon-venomoth | Venomoth / 도나리 | concept | ko | #049 도나리 (벌레/독 타입) — 기본 스탯 합계 450 | 2026-06-05 |
-| pokemon-venonat | Venonat / 콘팡 | concept | ko | #048 콘팡 (벌레/독 타입) — 기본 스탯 합계 305 | 2026-06-05 |
-| pokemon-venusaur | Venusaur / 이상해꽃 | concept | ko | #003 이상해꽃 (풀/독 타입) — 기본 스탯 합계 525 | 2026-06-05 |
-| pokemon-vespiquen | Vespiquen / 비퀸 | concept | ko | #416 비퀸 (벌레 / 비행) — GO 최대 CP: 2,005 | 2026-06-05 |
-| pokemon-vibrava | Vibrava / 비브라바 | concept | ko | #329 비브라바 (땅 / 드래곤) — GO 최대 CP: 1,225 | 2026-06-05 |
-| pokemon-victini | Victini / 비크티니 | concept | ko | #494 비크티니 (에스퍼 / 불꽃) — GO 최대 CP: 3,265 | 2026-06-05 |
-| pokemon-victreebel | Victreebel / 우츠보트 | concept | ko | #071 우츠보트 (풀/독 타입) — 기본 스탯 합계 490 | 2026-06-05 |
-| pokemon-vigoroth | Vigoroth / 발바로 | concept | ko | #288 발바로 (노말 / none) — GO 최대 CP: 1,968 | 2026-06-05 |
-| pokemon-vikavolt | Vikavolt / 투구뿌논 | concept | ko | #738 투구뿌논 (벌레 / 전기) — GO 최대 CP: 3,117 | 2026-06-05 |
-| pokemon-vileplume | Vileplume / 라플레시아 | concept | ko | #045 라플레시아 (풀/독 타입) — 기본 스탯 합계 490 | 2026-06-05 |
-| pokemon-virizion | Virizion / 비리디온 | concept | ko | #640 비리디온 (풀 / 격투) — GO 최대 CP: 3,022 | 2026-06-05 |
-| pokemon-vivillon | Vivillon / 비비용 | concept | ko | #666 비비용 (벌레 / 비행) — GO 최대 CP: 1,855 | 2026-06-05 |
-| pokemon-volbeat | Volbeat / 볼비트 | concept | ko | #313 볼비트 (벌레 / none) — GO 최대 CP: 1,771 | 2026-06-05 |
-| pokemon-volcanion | Volcanion / 볼케니온 | concept | ko | #721 볼케니온 (불꽃 / 물) — GO 최대 CP: 3,628 | 2026-06-05 |
-| pokemon-volcarona | Volcarona / 불카모스 | concept | ko | #637 불카모스 (벌레 / 불꽃) — GO 최대 CP: 3,632 | 2026-06-05 |
-| pokemon-voltorb | Voltorb / 찌리리공 | concept | ko | #100 찌리리공 (전기 타입) — 기본 스탯 합계 330 | 2026-06-05 |
-| pokemon-vullaby | Vullaby / 벌차이 | concept | ko | #629 벌차이 (악 / 비행) — GO 최대 CP: 1,271 | 2026-06-05 |
-| pokemon-vulpix | Vulpix / 식스테일 | concept | ko | #037 식스테일 (불꽃 타입) — 기본 스탯 합계 299 | 2026-06-05 |
-| pokemon-wailmer | Wailmer / 고래왕자 | concept | ko | #320 고래왕자 (물 / none) — GO 최대 CP: 1,468 | 2026-06-05 |
-| pokemon-wailord | Wailord / 고래왕 | concept | ko | #321 고래왕 (물 / none) — GO 최대 CP: 2,280 | 2026-06-05 |
-| pokemon-walking-wake | Walking Wake / 굽이치는물결 | concept | ko | #1009 굽이치는물결 (물 / 드래곤) — GO 최대 CP: 3,119 | 2026-06-05 |
-| pokemon-walrein | Walrein / 씨카이저 | concept | ko | #365 씨카이저 (얼음 / 물) — GO 최대 CP: 2,726 | 2026-06-05 |
-| pokemon-wartortle | Wartortle / 어니부기 | concept | ko | #008 어니부기 (물 타입) — 기본 스탯 합계 405 | 2026-06-05 |
-| pokemon-watchog | Watchog / 보르그 | concept | ko | #505 보르그 (노말 / none) — GO 최대 CP: 1,819 | 2026-06-05 |
-| pokemon-wattrel | Wattrel / 찌리비 | concept | ko | #940 찌리비 (전기 / 비행) — GO 최대 CP: 826 | 2026-06-05 |
-| pokemon-weavile | Weavile / 포푸니라 | concept | ko | #461 포푸니라 (악 / 얼음) — GO 최대 CP: 3,005 | 2026-06-05 |
-| pokemon-weedle | Weedle / 뿔충이 | concept | ko | #013 뿔충이 (벌레/독 타입) — 기본 스탯 합계 195 | 2026-06-05 |
-| pokemon-weepinbell | Weepinbell / 우츠동 | concept | ko | #070 우츠동 (풀/독 타입) — 기본 스탯 합계 390 | 2026-06-05 |
-| pokemon-weezing | Weezing / 또도가스 | concept | ko | #110 또도가스 (독 타입) — 기본 스탯 합계 490 | 2026-06-05 |
-| pokemon-whimsicott | Whimsicott / 엘풍 | concept | ko | #547 엘풍 (풀 / 페어리) — GO 최대 CP: 2,014 | 2026-06-05 |
-| pokemon-whirlipede | Whirlipede / 휠구 | concept | ko | #544 휠구 (벌레 / 독) — GO 최대 CP: 1,144 | 2026-06-05 |
-| pokemon-whiscash | Whiscash / 메깅 | concept | ko | #340 메깅 (물 / 땅) — GO 최대 CP: 2,075 | 2026-06-05 |
-| pokemon-whismur | Whismur / 소곤룡 | concept | ko | #293 소곤룡 (노말 / none) — GO 최대 CP: 671 | 2026-06-05 |
-| pokemon-wigglytuff | Wigglytuff / 푸크린 | concept | ko | #040 푸크린 (노말/페어리 타입) — 기본 스탯 합계 435 | 2026-06-05 |
-| pokemon-wiglett | Wiglett / 바다그다 | concept | ko | #960 바다그다 (물 / none) — GO 최대 CP: 574 | 2026-06-05 |
-| pokemon-wimpod | Wimpod / 꼬시레 | concept | ko | #767 꼬시레 (벌레 / 물) — GO 최대 CP: 502 | 2026-06-05 |
-| pokemon-wingull | Wingull / 갈모매 | concept | ko | #278 갈모매 (물 / 비행) — GO 최대 CP: 765 | 2026-06-05 |
-| pokemon-wishiwashi | Wishiwashi / 약어리 | concept | ko | #746 약어리 (물 / none) — GO 최대 CP: 346 | 2026-06-05 |
+| pokemon-typhlosion | Typhlosion / 블레이범 | concept | ko | #157 블레이범 (불꽃) — GO 최대 CP: 2,889 | 2026-06-18 |
+| pokemon-tyranitar | Tyranitar / 마기라스 | concept | ko | #248 마기라스 (바위 / 악) — GO 최대 CP: 3,834 | 2026-06-18 |
+| pokemon-tyrantrum | Tyrantrum / 견고라스 | concept | ko | #697 견고라스 (바위 / 드래곤) — GO 최대 CP: 3,128 | 2026-06-18 |
+| pokemon-tyrogue | Tyrogue / 배루키 | concept | ko | #236 배루키 (격투) — GO 최대 CP: 492 | 2026-06-18 |
+| pokemon-tyrunt | Tyrunt / 티고라스 | concept | ko | #696 티고라스 (바위 / 드래곤) — GO 최대 CP: 1,635 | 2026-06-18 |
+| pokemon-umbreon | Umbreon / 블래키 | concept | ko | #197 블래키 (악) — GO 최대 CP: 2,137 | 2026-06-18 |
+| pokemon-unfezant | Unfezant / 켄호로우 | concept | ko | #521 켄호로우 (노말 / 비행) — GO 최대 CP: 2,734 | 2026-06-18 |
+| pokemon-unown | Unown / 안농 | concept | ko | #201 안농 (에스퍼) — GO 최대 CP: 1,185 | 2026-06-18 |
+| pokemon-ursaluna | Ursaluna / 다투곰 | concept | ko | #901 다투곰 (땅 / 노말) — GO 최대 CP: 3,854 | 2026-06-18 |
+| pokemon-ursaring | Ursaring / 링곰 | concept | ko | #217 링곰 (노말) — GO 최대 CP: 2,945 | 2026-06-18 |
+| pokemon-urshifu | Urshifu / 우라오스 | concept | ko | #892 우라오스 (격투 / 물) — GO 최대 CP: 3,606 | 2026-06-18 |
+| pokemon-uxie | Uxie / 유크시 | concept | ko | #480 유크시 (에스퍼) — GO 최대 CP: 2,524 | 2026-06-18 |
+| pokemon-vanillish | Vanillish / 바닐리치 | concept | ko | #583 바닐리치 (얼음) — GO 최대 CP: 1,591 | 2026-06-18 |
+| pokemon-vanillite | Vanillite / 바닐프티 | concept | ko | #582 바닐프티 (얼음) — GO 최대 CP: 1,033 | 2026-06-18 |
+| pokemon-vanilluxe | Vanilluxe / 배바닐라 | concept | ko | #584 배바닐라 (얼음) — GO 최대 CP: 2,822 | 2026-06-18 |
+| pokemon-vaporeon | Vaporeon / 샤미드 | concept | ko | #134 샤미드 (물) — GO 최대 CP: 3,114 | 2026-06-18 |
+| pokemon-varoom | Varoom / 부르롱 | concept | ko | #965 부르롱 (강철 / 독) — GO 최대 CP: 1,138 | 2026-06-18 |
+| pokemon-veluza | Veluza / 가비루사 | concept | ko | #976 가비루사 (물 / 에스퍼) — GO 최대 CP: 2,436 | 2026-06-18 |
+| pokemon-venipede | Venipede / 마디네 | concept | ko | #543 마디네 (벌레 / 독) — GO 최대 CP: 706 | 2026-06-18 |
+| pokemon-venomoth | Venomoth / 도나리 | concept | ko | #049 도나리 (벌레 / 독) — GO 최대 CP: 2,082 | 2026-06-18 |
+| pokemon-venonat | Venonat / 콘팡 | concept | ko | #048 콘팡 (벌레 / 독) — GO 최대 CP: 1,004 | 2026-06-18 |
+| pokemon-venusaur | Venusaur / 이상해꽃 | concept | ko | #003 이상해꽃 (풀 / 독) — GO 최대 CP: 2,720 | 2026-06-18 |
+| pokemon-vespiquen | Vespiquen / 비퀸 | concept | ko | #416 비퀸 (벌레 / 비행) — GO 최대 CP: 2,005 | 2026-06-18 |
+| pokemon-vibrava | Vibrava / 비브라바 | concept | ko | #329 비브라바 (땅 / 드래곤) — GO 최대 CP: 1,225 | 2026-06-18 |
+| pokemon-victini | Victini / 비크티니 | concept | ko | #494 비크티니 (에스퍼 / 불꽃) — GO 최대 CP: 3,265 | 2026-06-18 |
+| pokemon-victreebel | Victreebel / 우츠보트 | concept | ko | #071 우츠보트 (풀 / 독) — GO 최대 CP: 2,431 | 2026-06-18 |
+| pokemon-vigoroth | Vigoroth / 발바로 | concept | ko | #288 발바로 (노말) — GO 최대 CP: 1,968 | 2026-06-18 |
+| pokemon-vikavolt | Vikavolt / 투구뿌논 | concept | ko | #738 투구뿌논 (벌레 / 전기) — GO 최대 CP: 3,117 | 2026-06-18 |
+| pokemon-vileplume | Vileplume / 라플레시아 | concept | ko | #045 라플레시아 (풀 / 독) — GO 최대 CP: 2,559 | 2026-06-18 |
+| pokemon-virizion | Virizion / 비리디온 | concept | ko | #640 비리디온 (풀 / 격투) — GO 최대 CP: 3,022 | 2026-06-18 |
+| pokemon-vivillon | Vivillon / 비비용 | concept | ko | #666 비비용 (벌레 / 비행) — GO 최대 CP: 1,855 | 2026-06-18 |
+| pokemon-volbeat | Volbeat / 볼비트 | concept | ko | #313 볼비트 (벌레) — GO 최대 CP: 1,771 | 2026-06-18 |
+| pokemon-volcanion | Volcanion / 볼케니온 | concept | ko | #721 볼케니온 (불꽃 / 물) — GO 최대 CP: 3,628 | 2026-06-18 |
+| pokemon-volcarona | Volcarona / 불카모스 | concept | ko | #637 불카모스 (벌레 / 불꽃) — GO 최대 CP: 3,632 | 2026-06-18 |
+| pokemon-voltorb | Voltorb / 찌리리공 | concept | ko | #100 찌리리공 (전기) — GO 최대 CP: 1,010 | 2026-06-18 |
+| pokemon-vullaby | Vullaby / 벌차이 | concept | ko | #629 벌차이 (악 / 비행) — GO 최대 CP: 1,271 | 2026-06-18 |
+| pokemon-vulpix | Vulpix / 식스테일 | concept | ko | #037 식스테일 (불꽃) — GO 최대 CP: 883 | 2026-06-18 |
+| pokemon-wailmer | Wailmer / 고래왕자 | concept | ko | #320 고래왕자 (물) — GO 최대 CP: 1,468 | 2026-06-18 |
+| pokemon-wailord | Wailord / 고래왕 | concept | ko | #321 고래왕 (물) — GO 최대 CP: 2,280 | 2026-06-18 |
+| pokemon-walking-wake | Walking Wake / 굽이치는물결 | concept | ko | #1009 굽이치는물결 (물 / 드래곤) — GO 최대 CP: 3,119 | 2026-06-18 |
+| pokemon-walrein | Walrein / 씨카이저 | concept | ko | #365 씨카이저 (얼음 / 물) — GO 최대 CP: 2,726 | 2026-06-18 |
+| pokemon-wartortle | Wartortle / 어니부기 | concept | ko | #008 어니부기 (물) — GO 최대 CP: 1,488 | 2026-06-18 |
+| pokemon-watchog | Watchog / 보르그 | concept | ko | #505 보르그 (노말) — GO 최대 CP: 1,819 | 2026-06-18 |
+| pokemon-wattrel | Wattrel / 찌리비 | concept | ko | #940 찌리비 (전기 / 비행) — GO 최대 CP: 826 | 2026-06-18 |
+| pokemon-weavile | Weavile / 포푸니라 | concept | ko | #461 포푸니라 (악 / 얼음) — GO 최대 CP: 3,005 | 2026-06-18 |
+| pokemon-weedle | Weedle / 뿔충이 | concept | ko | #013 뿔충이 (벌레 / 독) — GO 최대 CP: 456 | 2026-06-18 |
+| pokemon-weepinbell | Weepinbell / 우츠동 | concept | ko | #070 우츠동 (풀 / 독) — GO 최대 CP: 1,611 | 2026-06-18 |
+| pokemon-weezing | Weezing / 또도가스 | concept | ko | #110 또도가스 (독) — GO 최대 CP: 2,293 | 2026-06-18 |
+| pokemon-whimsicott | Whimsicott / 엘풍 | concept | ko | #547 엘풍 (풀 / 페어리) — GO 최대 CP: 2,014 | 2026-06-18 |
+| pokemon-whirlipede | Whirlipede / 휠구 | concept | ko | #544 휠구 (벌레 / 독) — GO 최대 CP: 1,144 | 2026-06-18 |
+| pokemon-whiscash | Whiscash / 메깅 | concept | ko | #340 메깅 (물 / 땅) — GO 최대 CP: 2,075 | 2026-06-18 |
+| pokemon-whismur | Whismur / 소곤룡 | concept | ko | #293 소곤룡 (노말) — GO 최대 CP: 671 | 2026-06-18 |
+| pokemon-wigglytuff | Wigglytuff / 푸크린 | concept | ko | #040 푸크린 (노말 / 페어리) — GO 최대 CP: 1,926 | 2026-06-18 |
+| pokemon-wiglett | Wiglett / 바다그다 | concept | ko | #960 바다그다 (물) — GO 최대 CP: 574 | 2026-06-18 |
+| pokemon-wimpod | Wimpod / 꼬시레 | concept | ko | #767 꼬시레 (벌레 / 물) — GO 최대 CP: 502 | 2026-06-18 |
+| pokemon-wingull | Wingull / 갈모매 | concept | ko | #278 갈모매 (물 / 비행) — GO 최대 CP: 765 | 2026-06-18 |
+| pokemon-wishiwashi | Wishiwashi / 약어리 | concept | ko | #746 약어리 (물) — GO 최대 CP: 346 | 2026-06-18 |
 | pokemon-wo-chien | Wo-Chien / 총지엔 | concept | ko | #1001 총지엔 (악 / 풀) — GO 최대 CP: 2,937 | 2026-06-05 |
-| pokemon-wobbuffet | Wobbuffet / 마자용 | concept | ko | #202 마자용 (에스퍼 / none) — GO 최대 CP: 1,026 | 2026-06-05 |
-| pokemon-woobat | Woobat / 또르박쥐 | concept | ko | #527 또르박쥐 (에스퍼 / 비행) — GO 최대 CP: 1,016 | 2026-06-05 |
-| pokemon-wooloo | Wooloo / 우르 | concept | ko | #831 우르 (노말 / none) — GO 최대 CP: 706 | 2026-06-05 |
-| pokemon-wooper | Wooper / 우파 | concept | ko | #194 우파 (물 / 땅) — GO 최대 CP: 641 | 2026-06-05 |
-| pokemon-wormadam | Wormadam / 도롱마담 | concept | ko | #413 도롱마담 (벌레 / 풀) — GO 최대 CP: 1,773 | 2026-06-05 |
-| pokemon-wugtrio | Wugtrio / 바닥트리오 | concept | ko | #961 바닥트리오 (물 / none) — GO 최대 CP: 1,895 | 2026-06-05 |
-| pokemon-wurmple | Wurmple / 개무소 | concept | ko | #265 개무소 (벌레 / none) — GO 최대 CP: 578 | 2026-06-05 |
-| pokemon-wynaut | Wynaut / 마자 | concept | ko | #360 마자 (에스퍼 / none) — GO 최대 CP: 534 | 2026-06-05 |
-| pokemon-wyrdeer | Wyrdeer / 신비록 | concept | ko | #899 신비록 (노말 / 에스퍼) — GO 최대 CP: 2,732 | 2026-06-05 |
-| pokemon-xatu | Xatu / 네이티오 | concept | ko | #178 네이티오 (에스퍼 / 비행) — GO 최대 CP: 2,188 | 2026-06-05 |
-| pokemon-xerneas | Xerneas / 제르네아스 | concept | ko | #716 제르네아스 (페어리 / none) — GO 최대 CP: 3,781 | 2026-06-05 |
-| pokemon-xurkitree | Xurkitree / 전수목 | concept | ko | #796 전수목 (전기 / none) — GO 최대 CP: 3,937 | 2026-06-05 |
-| pokemon-yamask | Yamask / 데스마스 | concept | ko | #562 데스마스 (고스트 / none) — GO 최대 CP: 982 | 2026-06-05 |
-| pokemon-yamper | Yamper / 멍파치 | concept | ko | #835 멍파치 (전기 / none) — GO 최대 CP: 788 | 2026-06-05 |
-| pokemon-yanma | Yanma / 왕자리 | concept | ko | #193 왕자리 (벌레 / 비행) — GO 최대 CP: 1,470 | 2026-06-05 |
-| pokemon-yanmega | Yanmega / 메가자리 | concept | ko | #469 메가자리 (벌레 / 비행) — GO 최대 CP: 2,946 | 2026-06-05 |
-| pokemon-yungoos | Yungoos / 영구스 | concept | ko | #734 영구스 (노말 / none) — GO 최대 CP: 880 | 2026-06-05 |
-| pokemon-yveltal | Yveltal / 이벨타르 | concept | ko | #717 이벨타르 (악 / 비행) — GO 최대 CP: 3,781 | 2026-06-05 |
-| pokemon-zacian | Zacian / 자시안 | concept | ko | #888 자시안 (페어리 / 강철) — GO 최대 CP: 4,979 | 2026-06-05 |
-| pokemon-zamazenta | Zamazenta / 자마젠타 | concept | ko | #889 자마젠타 (격투 / 강철) — GO 최대 CP: 4,172 | 2026-06-05 |
-| pokemon-zangoose | Zangoose / 쟝고 | concept | ko | #335 쟝고 (노말 / none) — GO 최대 CP: 2,418 | 2026-06-05 |
-| pokemon-zapdos | Zapdos / 썬더 | concept | ko | #145 썬더 (전기/비행 타입) — 기본 스탯 합계 580 | 2026-06-05 |
-| pokemon-zarude | Zarude / 자루도 | concept | ko | #893 자루도 (악 / 풀) — GO 최대 CP: 3,833 | 2026-06-05 |
-| pokemon-zebstrika | Zebstrika / 제브라이카 | concept | ko | #523 제브라이카 (전기 / none) — GO 최대 CP: 2,428 | 2026-06-05 |
-| pokemon-zekrom | Zekrom / 제크로무 | concept | ko | #644 제크로무 (드래곤 / 전기) — GO 최대 CP: 4,038 | 2026-06-05 |
-| pokemon-zeraora | Zeraora / 제라오라 | concept | ko | #807 제라오라 (전기 / none) — GO 최대 CP: 3,419 | 2026-06-05 |
-| pokemon-zigzagoon | Zigzagoon / 지그제구리 | concept | ko | #263 지그제구리 (노말 / none) — GO 최대 CP: 508 | 2026-06-05 |
-| pokemon-zoroark | Zoroark / 조로아크 | concept | ko | #571 조로아크 (악 / none) — GO 최대 CP: 2,571 | 2026-06-05 |
-| pokemon-zorua | Zorua / 조로아 | concept | ko | #570 조로아 (악 / none) — GO 최대 CP: 1,175 | 2026-06-05 |
-| pokemon-zubat | Zubat / 주뱃 | concept | ko | #041 주뱃 (독/비행 타입) — 기본 스탯 합계 245 | 2026-06-05 |
-| pokemon-zweilous | Zweilous / 디헤드 | concept | ko | #634 디헤드 (악 / 드래곤) — GO 최대 CP: 1,839 | 2026-06-05 |
-| pokemon-zygarde | Zygarde / 지가르데 | concept | ko | #718 지가르데 (드래곤 / 땅) — GO 최대 CP: 2,375 | 2026-06-05 |
+| pokemon-wobbuffet | Wobbuffet / 마자용 | concept | ko | #202 마자용 (에스퍼) — GO 최대 CP: 1,026 | 2026-06-18 |
+| pokemon-woobat | Woobat / 또르박쥐 | concept | ko | #527 또르박쥐 (에스퍼 / 비행) — GO 최대 CP: 1,016 | 2026-06-18 |
+| pokemon-wooloo | Wooloo / 우르 | concept | ko | #831 우르 (노말) — GO 최대 CP: 706 | 2026-06-18 |
+| pokemon-wooper | Wooper / 우파 | concept | ko | #194 우파 (물 / 땅) — GO 최대 CP: 641 | 2026-06-18 |
+| pokemon-wormadam | Wormadam / 도롱마담 | concept | ko | #413 도롱마담 (벌레 / 풀) — GO 최대 CP: 1,773 | 2026-06-18 |
+| pokemon-wugtrio | Wugtrio / 바닥트리오 | concept | ko | #961 바닥트리오 (물) — GO 최대 CP: 1,895 | 2026-06-18 |
+| pokemon-wurmple | Wurmple / 개무소 | concept | ko | #265 개무소 (벌레) — GO 최대 CP: 578 | 2026-06-18 |
+| pokemon-wynaut | Wynaut / 마자 | concept | ko | #360 마자 (에스퍼) — GO 최대 CP: 534 | 2026-06-18 |
+| pokemon-wyrdeer | Wyrdeer / 신비록 | concept | ko | #899 신비록 (노말 / 에스퍼) — GO 최대 CP: 2,732 | 2026-06-18 |
+| pokemon-xatu | Xatu / 네이티오 | concept | ko | #178 네이티오 (에스퍼 / 비행) — GO 최대 CP: 2,188 | 2026-06-18 |
+| pokemon-xerneas | Xerneas / 제르네아스 | concept | ko | #716 제르네아스 (페어리) — GO 최대 CP: 3,781 | 2026-06-18 |
+| pokemon-xurkitree | Xurkitree / 전수목 | concept | ko | #796 전수목 (전기) — GO 최대 CP: 3,937 | 2026-06-18 |
+| pokemon-yamask | Yamask / 데스마스 | concept | ko | #562 데스마스 (고스트) — GO 최대 CP: 982 | 2026-06-18 |
+| pokemon-yamper | Yamper / 멍파치 | concept | ko | #835 멍파치 (전기) — GO 최대 CP: 788 | 2026-06-18 |
+| pokemon-yanma | Yanma / 왕자리 | concept | ko | #193 왕자리 (벌레 / 비행) — GO 최대 CP: 1,470 | 2026-06-18 |
+| pokemon-yanmega | Yanmega / 메가자리 | concept | ko | #469 메가자리 (벌레 / 비행) — GO 최대 CP: 2,946 | 2026-06-18 |
+| pokemon-yungoos | Yungoos / 영구스 | concept | ko | #734 영구스 (노말) — GO 최대 CP: 880 | 2026-06-18 |
+| pokemon-yveltal | Yveltal / 이벨타르 | concept | ko | #717 이벨타르 (악 / 비행) — GO 최대 CP: 3,781 | 2026-06-18 |
+| pokemon-zacian | Zacian / 자시안 | concept | ko | #888 자시안 (페어리 / 강철) — GO 최대 CP: 4,979 | 2026-06-18 |
+| pokemon-zamazenta | Zamazenta / 자마젠타 | concept | ko | #889 자마젠타 (격투 / 강철) — GO 최대 CP: 4,172 | 2026-06-18 |
+| pokemon-zangoose | Zangoose / 쟝고 | concept | ko | #335 쟝고 (노말) — GO 최대 CP: 2,418 | 2026-06-18 |
+| pokemon-zapdos | Zapdos / 썬더 | concept | ko | #145 썬더 (전기 / 비행) — GO 최대 CP: 3,527 | 2026-06-18 |
+| pokemon-zarude | Zarude / 자루도 | concept | ko | #893 자루도 (악 / 풀) — GO 최대 CP: 3,833 | 2026-06-18 |
+| pokemon-zebstrika | Zebstrika / 제브라이카 | concept | ko | #523 제브라이카 (전기) — GO 최대 CP: 2,428 | 2026-06-18 |
+| pokemon-zekrom | Zekrom / 제크로무 | concept | ko | #644 제크로무 (드래곤 / 전기) — GO 최대 CP: 4,038 | 2026-06-18 |
+| pokemon-zeraora | Zeraora / 제라오라 | concept | ko | #807 제라오라 (전기) — GO 최대 CP: 3,419 | 2026-06-18 |
+| pokemon-zigzagoon | Zigzagoon / 지그제구리 | concept | ko | #263 지그제구리 (노말) — GO 최대 CP: 508 | 2026-06-18 |
+| pokemon-zoroark | Zoroark / 조로아크 | concept | ko | #571 조로아크 (악) — GO 최대 CP: 2,571 | 2026-06-18 |
+| pokemon-zorua | Zorua / 조로아 | concept | ko | #570 조로아 (악) — GO 최대 CP: 1,175 | 2026-06-18 |
+| pokemon-zubat | Zubat / 주뱃 | concept | ko | #041 주뱃 (독 / 비행) — GO 최대 CP: 667 | 2026-06-18 |
+| pokemon-zweilous | Zweilous / 디헤드 | concept | ko | #634 디헤드 (악 / 드래곤) — GO 최대 CP: 1,839 | 2026-06-18 |
+| pokemon-zygarde | Zygarde / 지가르데 | concept | ko | #718 지가르데 (드래곤 / 땅) — GO 최대 CP: 2,375 | 2026-06-18 |
 | pvp-gl | PvP Rankings / 슈퍼리그 랭킹 | concept | ko | 포켓몬 GO 슈퍼리그 (CP 1,500 이하) PvP 랭킹 상위 50위 — PVPoke 기준 | 2026-06-05 |
 | pvp-ml | PvP Rankings / 마스터리그 랭킹 | concept | ko | 포켓몬 GO 마스터리그 (CP 10,000 이하) PvP 랭킹 상위 50위 — PVPoke 기준 | 2026-06-05 |
 | pvp-ul | PvP Rankings / 하이퍼리그 랭킹 | concept | ko | 포켓몬 GO 하이퍼리그 (CP 2,500 이하) PvP 랭킹 상위 50위 — PVPoke 기준 | 2026-06-05 |
@@ -1983,7 +1983,7 @@
 | rocket-grunt-steel | Rocket Grunt Steel / 강철타입 그런트 | concept | ko | 강철타입 로켓단 그런트 라인업 — 2026-06-08 기준 | 2026-06-08 |
 | rocket-grunt-water | Rocket Grunt Water / 물타입 그런트 | concept | ko | 물타입 로켓단 그런트 라인업 — 2026-06-08 기준 | 2026-06-08 |
 | rocket-grunts | Rocket Grunts / 로켓단 그런트 전체 목록 | concept | ko | Team GO Rocket 타입별 그런트 라인업 허브 — 2026-06-08 기준 | 2026-06-08 |
-| rocket-leaders | Rocket Leaders / 로켓단 간부 라인업 | concept | ko | Team GO Rocket 간부(Cliff/Arlo/Sierra) 및 보스 Giovanni 라인업 — 202 | 2026-06-08 |
+| rocket-leaders | Rocket Leaders / 로켓단 간부 라인업 | concept | ko | Team GO Rocket 간부(Cliff/Arlo/Sierra) 및 보스 Giovanni 라인업 — 2026-06-08 기준 | 2026-06-08 |
 | type-bug | Bug 타입 / 벌레 타입 | concept | ko | 포켓몬 벌레 타입의 공격/방어 상성 관계 | 2026-06-05 |
 | type-chart | 포켓몬 타입 상성표 / Type Chart | concept | ko | 포켓몬 18개 타입의 공격/방어 상성을 한눈에 볼 수 있는 허브 페이지 | 2026-06-05 |
 | type-dark | Dark 타입 / 악 타입 | concept | ko | 포켓몬 악 타입의 공격/방어 상성 관계 | 2026-06-05 |
@@ -2004,205 +2004,3 @@
 | type-steel | Steel 타입 / 강철 타입 | concept | ko | 포켓몬 강철 타입의 공격/방어 상성 관계 | 2026-06-05 |
 | type-water | Water 타입 / 물 타입 | concept | ko | 포켓몬 물 타입의 공격/방어 상성 관계 | 2026-06-05 |
 | weather-boost | Weather Boost / 날씨 부스트 | concept | ko | 날씨별 강화 타입 표 — 포켓몬 GO 날씨 부스트 (CP 상승 + 스타더스트 보너스) | 2026-06-08 |
-
-## By Tag / 태그별
-### pokemon (1023 pages)
-- [[pokemon-abomasnow]] — #460 눈설왕 (풀 / 얼음) — GO 최대 CP: 2,362
-- [[pokemon-abra]] — #063 캐이시 (에스퍼 타입) — 기본 스탯 합계 310
-- [[pokemon-absol]] — #359 앱솔 (악 / none) — GO 최대 CP: 2,526
-- [[pokemon-accelgor]] — #617 어지리더 (벌레 / none) — GO 최대 CP: 2,441
-- [[pokemon-aegislash]] — #681 킬가르도 (강철 / 고스트) — GO 최대 CP: 2,473
-- [[pokemon-aerodactyl]] — #142 프테라 (바위/비행 타입) — 기본 스탯 합계 515
-- [[pokemon-aggron]] — #306 보스로라 (강철 / 바위) — GO 최대 CP: 3,000
-- [[pokemon-aipom]] — #190 에이팜 (노말 / none) — GO 최대 CP: 1,348
-- [[pokemon-alakazam]] — #065 후딘 (에스퍼 타입) — 기본 스탯 합계 500
-- [[pokemon-alcremie]] — #869 마휘핑 (페어리 / none) — GO 최대 CP: 2,682
-- ... 외 1013개
-
-### raid (588 pages)
-- [[current-raids]] — 현재 포켓몬 GO 레이드 보스 목록 — 2026-06-05 기준, 총 17마리
-- [[raid-counters-abomasnow]] — 눈설왕 (풀 / 얼음) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-absol]] — 앱솔 (악) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-accelgor]] — 어지리더 (벌레) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-aegislash]] — 킬가르도 (강철 / 고스트) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-aerodactyl]] — 프테라 (바위 / 비행) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-aggron]] — 보스로라 (강철 / 바위) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-alakazam]] — 후딘 (에스퍼) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-alcremie]] — 마휘핑 (페어리) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-alomomola]] — 맘복치 (물) 레이드 카운터 상위 15위 — PvE DPS 기반
-- ... 외 578개
-
-### counter (586 pages)
-- [[raid-counters-abomasnow]] — 눈설왕 (풀 / 얼음) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-absol]] — 앱솔 (악) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-accelgor]] — 어지리더 (벌레) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-aegislash]] — 킬가르도 (강철 / 고스트) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-aerodactyl]] — 프테라 (바위 / 비행) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-aggron]] — 보스로라 (강철 / 바위) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-alakazam]] — 후딘 (에스퍼) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-alcremie]] — 마휘핑 (페어리) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-alomomola]] — 맘복치 (물) 레이드 카운터 상위 15위 — PvE DPS 기반
-- [[raid-counters-altaria]] — 파비코리 (드래곤 / 비행) 레이드 카운터 상위 15위 — PvE DPS 기반
-- ... 외 576개
-
-### type-none (413 pages)
-- [[pokemon-absol]] — #359 앱솔 (악 / none) — GO 최대 CP: 2,526
-- [[pokemon-accelgor]] — #617 어지리더 (벌레 / none) — GO 최대 CP: 2,441
-- [[pokemon-aipom]] — #190 에이팜 (노말 / none) — GO 최대 CP: 1,348
-- [[pokemon-alcremie]] — #869 마휘핑 (페어리 / none) — GO 최대 CP: 2,682
-- [[pokemon-alomomola]] — #594 맘복치 (물 / none) — GO 최대 CP: 2,169
-- [[pokemon-ambipom]] — #424 겟핸보숭 (노말 / none) — GO 최대 CP: 2,418
-- [[pokemon-ampharos]] — #181 전룡 (전기 / none) — GO 최대 CP: 2,852
-- [[pokemon-arceus]] — #493 아르세우스 (노말 / none) — GO 최대 CP: 3,989
-- [[pokemon-aromatisse]] — #683 프레프티르 (페어리 / none) — GO 최대 CP: 2,341
-- [[pokemon-arrokuda]] — #846 찌로꼬치 (물 / none) — GO 최대 CP: 903
-- ... 외 403개
-
-### move (330 pages)
-- [[move-acid-spray]] — 독 타입 스페셜 기술 — 위력: 20, 에너지 소모: 45, DPE: 0.44
-- [[move-acid]] — 독 타입 빠른 기술 — 위력: 6, DPT: 3.0, EPT: 4.0
-- [[move-acrobatics]] — 비행 타입 스페셜 기술 — 위력: 110, 에너지 소모: 55, DPE: 2.0
-- [[move-aerial-ace]] — 비행 타입 스페셜 기술 — 위력: 60, 에너지 소모: 45, DPE: 1.33
-- [[move-aeroblast]] — 비행 타입 스페셜 기술 — 위력: 170, 에너지 소모: 75, DPE: 2.27
-- [[move-air-cutter]] — 비행 타입 스페셜 기술 — 위력: 45, 에너지 소모: 35, DPE: 1.29
-- [[move-air-slash]] — 비행 타입 빠른 기술 — 위력: 0, DPT: 0.0, EPT: 2.0
-- [[move-ancient-power]] — 바위 타입 스페셜 기술 — 위력: 60, 에너지 소모: 45, DPE: 1.33
-- [[move-aqua-jet]] — 물 타입 스페셜 기술 — 위력: 70, 에너지 소모: 40, DPE: 1.75
-- [[move-aqua-step]] — 물 타입 스페셜 기술 — 위력: 55, 에너지 소모: 40, DPE: 1.38
-- ... 외 320개
-
-### move-data (330 pages)
-- [[move-acid-spray]] — 독 타입 스페셜 기술 — 위력: 20, 에너지 소모: 45, DPE: 0.44
-- [[move-acid]] — 독 타입 빠른 기술 — 위력: 6, DPT: 3.0, EPT: 4.0
-- [[move-acrobatics]] — 비행 타입 스페셜 기술 — 위력: 110, 에너지 소모: 55, DPE: 2.0
-- [[move-aerial-ace]] — 비행 타입 스페셜 기술 — 위력: 60, 에너지 소모: 45, DPE: 1.33
-- [[move-aeroblast]] — 비행 타입 스페셜 기술 — 위력: 170, 에너지 소모: 75, DPE: 2.27
-- [[move-air-cutter]] — 비행 타입 스페셜 기술 — 위력: 45, 에너지 소모: 35, DPE: 1.29
-- [[move-air-slash]] — 비행 타입 빠른 기술 — 위력: 0, DPT: 0.0, EPT: 2.0
-- [[move-ancient-power]] — 바위 타입 스페셜 기술 — 위력: 60, 에너지 소모: 45, DPE: 1.33
-- [[move-aqua-jet]] — 물 타입 스페셜 기술 — 위력: 70, 에너지 소모: 40, DPE: 1.75
-- [[move-aqua-step]] — 물 타입 스페셜 기술 — 위력: 55, 에너지 소모: 40, DPE: 1.38
-- ... 외 320개
-
-### type-water (265 pages)
-- [[move-aqua-jet]] — 물 타입 스페셜 기술 — 위력: 70, 에너지 소모: 40, DPE: 1.75
-- [[move-aqua-step]] — 물 타입 스페셜 기술 — 위력: 55, 에너지 소모: 40, DPE: 1.38
-- [[move-aqua-tail]] — 물 타입 스페셜 기술 — 위력: 55, 에너지 소모: 35, DPE: 1.57
-- [[move-brine]] — 물 타입 스페셜 기술 — 위력: 60, 에너지 소모: 50, DPE: 1.2
-- [[move-bubble-beam]] — 물 타입 스페셜 기술 — 위력: 25, 에너지 소모: 40, DPE: 0.62
-- [[move-bubble]] — 물 타입 빠른 기술 — 위력: 8, DPT: 2.67, EPT: 3.67
-- [[move-chilling-water]] — 물 타입 스페셜 기술 — 위력: 60, 에너지 소모: 45, DPE: 1.33
-- [[move-crabhammer]] — 물 타입 스페셜 기술 — 위력: 85, 에너지 소모: 50, DPE: 1.7
-- [[move-hidden-power-water]] — 물 타입 빠른 기술 — 위력: 9, DPT: 3.0, EPT: 2.67
-- [[move-hydro-cannon]] — 물 타입 스페셜 기술 — 위력: 80, 에너지 소모: 40, DPE: 2.0
-- ... 외 255개
-
-### charged (233 pages)
-- [[move-acid-spray]] — 독 타입 스페셜 기술 — 위력: 20, 에너지 소모: 45, DPE: 0.44
-- [[move-acrobatics]] — 비행 타입 스페셜 기술 — 위력: 110, 에너지 소모: 55, DPE: 2.0
-- [[move-aerial-ace]] — 비행 타입 스페셜 기술 — 위력: 60, 에너지 소모: 45, DPE: 1.33
-- [[move-aeroblast]] — 비행 타입 스페셜 기술 — 위력: 170, 에너지 소모: 75, DPE: 2.27
-- [[move-air-cutter]] — 비행 타입 스페셜 기술 — 위력: 45, 에너지 소모: 35, DPE: 1.29
-- [[move-ancient-power]] — 바위 타입 스페셜 기술 — 위력: 60, 에너지 소모: 45, DPE: 1.33
-- [[move-aqua-jet]] — 물 타입 스페셜 기술 — 위력: 70, 에너지 소모: 40, DPE: 1.75
-- [[move-aqua-step]] — 물 타입 스페셜 기술 — 위력: 55, 에너지 소모: 40, DPE: 1.38
-- [[move-aqua-tail]] — 물 타입 스페셜 기술 — 위력: 55, 에너지 소모: 35, DPE: 1.57
-- [[move-aura-sphere]] — 격투 타입 스페셜 기술 — 위력: 80, 에너지 소모: 40, DPE: 2.0
-- ... 외 223개
-
-### type-normal (225 pages)
-- [[move-body-slam]] — 노말 타입 스페셜 기술 — 위력: 55, 에너지 소모: 35, DPE: 1.57
-- [[move-boomburst]] — 노말 타입 스페셜 기술 — 위력: 150, 에너지 소모: 70, DPE: 2.14
-- [[move-crush-grip]] — 노말 타입 스페셜 기술 — 위력: 110, 에너지 소모: 50, DPE: 2.2
-- [[move-cut]] — 노말 타입 빠른 기술 — 위력: 3, DPT: 3.0, EPT: 2.0
-- [[move-frustration]] — 노말 타입 스페셜 기술 — 위력: 10, 에너지 소모: 70, DPE: 0.14
-- [[move-giga-impact]] — 노말 타입 스페셜 기술 — 위력: 150, 에너지 소모: 80, DPE: 1.88
-- [[move-hidden-power]] — 노말 타입 빠른 기술 — 위력: 9, DPT: 3.0, EPT: 2.67
-- [[move-horn-attack]] — 노말 타입 스페셜 기술 — 위력: 40, 에너지 소모: 35, DPE: 1.14
-- [[move-hyper-beam]] — 노말 타입 스페셜 기술 — 위력: 150, 에너지 소모: 80, DPE: 1.88
-- [[move-hyper-fang]] — 노말 타입 스페셜 기술 — 위력: 80, 에너지 소모: 50, DPE: 1.6
-- ... 외 215개
-
-### type-grass (218 pages)
-- [[move-bullet-seed]] — 풀 타입 빠른 기술 — 위력: 5, DPT: 1.67, EPT: 4.33
-- [[move-drum-beating]] — 풀 타입 스페셜 기술 — 위력: 60, 에너지 소모: 35, DPE: 1.71
-- [[move-energy-ball]] — 풀 타입 스페셜 기술 — 위력: 80, 에너지 소모: 45, DPE: 1.78
-- [[move-flower-trick]] — 풀 타입 스페셜 기술 — 위력: 30, 에너지 소모: 35, DPE: 0.86
-- [[move-frenzy-plant]] — 풀 타입 스페셜 기술 — 위력: 100, 에너지 소모: 45, DPE: 2.22
-- [[move-giga-drain]] — 풀 타입 스페셜 기술 — 위력: 50, 에너지 소모: 80, DPE: 0.62
-- [[move-grass-knot]] — 풀 타입 스페셜 기술 — 위력: 90, 에너지 소모: 50, DPE: 1.8
-- [[move-hidden-power-grass]] — 풀 타입 빠른 기술 — 위력: 9, DPT: 3.0, EPT: 2.67
-- [[move-leaf-blade]] — 풀 타입 스페셜 기술 — 위력: 70, 에너지 소모: 35, DPE: 2.0
-- [[move-leaf-storm]] — 풀 타입 스페셜 기술 — 위력: 130, 에너지 소모: 55, DPE: 2.36
-- ... 외 208개
-
-### type-flying (193 pages)
-- [[move-acrobatics]] — 비행 타입 스페셜 기술 — 위력: 110, 에너지 소모: 55, DPE: 2.0
-- [[move-aerial-ace]] — 비행 타입 스페셜 기술 — 위력: 60, 에너지 소모: 45, DPE: 1.33
-- [[move-aeroblast]] — 비행 타입 스페셜 기술 — 위력: 170, 에너지 소모: 75, DPE: 2.27
-- [[move-air-cutter]] — 비행 타입 스페셜 기술 — 위력: 45, 에너지 소모: 35, DPE: 1.29
-- [[move-air-slash]] — 비행 타입 빠른 기술 — 위력: 0, DPT: 0.0, EPT: 2.0
-- [[move-beak-blast]] — 비행 타입 스페셜 기술 — 위력: 110, 에너지 소모: 55, DPE: 2.0
-- [[move-bleakwind-storm]] — 비행 타입 스페셜 기술 — 위력: 60, 에너지 소모: 45, DPE: 1.33
-- [[move-brave-bird]] — 비행 타입 스페셜 기술 — 위력: 130, 에너지 소모: 55, DPE: 2.36
-- [[move-dragon-ascent]] — 비행 타입 스페셜 기술 — 위력: 110, 에너지 소모: 45, DPE: 2.44
-- [[move-drill-peck]] — 비행 타입 스페셜 기술 — 위력: 70, 에너지 소모: 40, DPE: 1.75
-- ... 외 183개
-
-### type-psychic (188 pages)
-- [[move-confusion]] — 에스퍼 타입 빠른 기술 — 위력: 16, DPT: 4.0, EPT: 3.5
-- [[move-extrasensory]] — 에스퍼 타입 빠른 기술 — 위력: 8, DPT: 2.67, EPT: 3.33
-- [[move-future-sight]] — 에스퍼 타입 스페셜 기술 — 위력: 110, 에너지 소모: 65, DPE: 1.69
-- [[move-heart-stamp]] — 에스퍼 타입 스페셜 기술 — 위력: 40, 에너지 소모: 40, DPE: 1.0
-- [[move-hidden-power-psychic]] — 에스퍼 타입 빠른 기술 — 위력: 9, DPT: 3.0, EPT: 2.67
-- [[move-luster-purge]] — 에스퍼 타입 스페셜 기술 — 위력: 120, 에너지 소모: 60, DPE: 2.0
-- [[move-mirror-coat]] — 에스퍼 타입 스페셜 기술 — 위력: 60, 에너지 소모: 55, DPE: 1.09
-- [[move-mist-ball]] — 에스퍼 타입 스페셜 기술 — 위력: 120, 에너지 소모: 60, DPE: 2.0
-- [[move-psybeam]] — 에스퍼 타입 스페셜 기술 — 위력: 70, 에너지 소모: 60, DPE: 1.17
-- [[move-psychic-fangs]] — 에스퍼 타입 스페셜 기술 — 위력: 40, 에너지 소모: 35, DPE: 1.14
-- ... 외 178개
-
-### type-fire (155 pages)
-- [[move-blast-burn]] — 불꽃 타입 스페셜 기술 — 위력: 110, 에너지 소모: 50, DPE: 2.2
-- [[move-blaze-kick]] — 불꽃 타입 스페셜 기술 — 위력: 60, 에너지 소모: 40, DPE: 1.5
-- [[move-ember]] — 불꽃 타입 빠른 기술 — 위력: 4, DPT: 2.0, EPT: 4.5
-- [[move-fire-blast]] — 불꽃 타입 스페셜 기술 — 위력: 140, 에너지 소모: 80, DPE: 1.75
-- [[move-fire-fang]] — 불꽃 타입 빠른 기술 — 위력: 8, DPT: 4.0, EPT: 3.0
-- [[move-fire-punch]] — 불꽃 타입 스페셜 기술 — 위력: 60, 에너지 소모: 40, DPE: 1.5
-- [[move-fire-spin]] — 불꽃 타입 빠른 기술 — 위력: 11, DPT: 3.67, EPT: 3.33
-- [[move-flame-burst]] — 불꽃 타입 스페셜 기술 — 위력: 70, 에너지 소모: 55, DPE: 1.27
-- [[move-flame-charge]] — 불꽃 타입 스페셜 기술 — 위력: 65, 에너지 소모: 50, DPE: 1.3
-- [[move-flame-wheel]] — 불꽃 타입 스페셜 기술 — 위력: 80, 에너지 소모: 45, DPE: 1.78
-- ... 외 145개
-
-### gen5 (154 pages)
-- [[pokemon-accelgor]] — #617 어지리더 (벌레 / none) — GO 최대 CP: 2,441
-- [[pokemon-alomomola]] — #594 맘복치 (물 / none) — GO 최대 CP: 2,169
-- [[pokemon-amoonguss]] — #591 뽀록나 (풀 / 독) — GO 최대 CP: 2,140
-- [[pokemon-archen]] — #566 아켄 (바위 / 비행) — GO 최대 CP: 1,842
-- [[pokemon-archeops]] — #567 아케오스 (바위 / 비행) — GO 최대 CP: 3,331
-- [[pokemon-audino]] — #531 다부니 (노말 / none) — GO 최대 CP: 1,682
-- [[pokemon-axew]] — #610 터검니 (드래곤 / none) — GO 최대 CP: 1,368
-- [[pokemon-basculin]] — #550 배쓰나이 (물 / none) — GO 최대 CP: 2,090
-- [[pokemon-beartic]] — #614 툰베어 (얼음 / none) — GO 최대 CP: 3,042
-- [[pokemon-beheeyem]] — #606 벰크 (에스퍼 / none) — GO 최대 CP: 2,753
-- ... 외 144개
-
-### gen1 (152 pages)
-- [[pokemon-abra]] — #063 캐이시 (에스퍼 타입) — 기본 스탯 합계 310
-- [[pokemon-aerodactyl]] — #142 프테라 (바위/비행 타입) — 기본 스탯 합계 515
-- [[pokemon-alakazam]] — #065 후딘 (에스퍼 타입) — 기본 스탯 합계 500
-- [[pokemon-arbok]] — #024 아보크 (독 타입) — 기본 스탯 합계 448
-- [[pokemon-arcanine]] — #059 윈디 (불꽃 타입) — 기본 스탯 합계 555
-- [[pokemon-articuno]] — #144 프리져 (얼음/비행 타입) — 기본 스탯 합계 580
-- [[pokemon-beedrill]] — #015 독침붕 (벌레/독 타입) — 기본 스탯 합계 395
-- [[pokemon-bellsprout]] — #069 모다피 (풀/독 타입) — 기본 스탯 합계 300
-- [[pokemon-blastoise]] — #009 거북왕 (물 타입) — 기본 스탯 합계 530
-- [[pokemon-bulbasaur]] — #001 이상해씨 (풀/독 타입) — 기본 스탯 합계 318
-- ... 외 142개
-
-## Orphan Pages / 고립 페이지
-(run /wiki-lint to check)
-
-## Review Queue / 검토 대기
-(none)

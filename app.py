@@ -1699,10 +1699,10 @@ async def get_rockets_api():
         out = []
         for pm in (pms or []):
             en = pm.get("name", "")
-            info = en2info.get(en.lower())
+            dex, ko = _resolve_en(en, 0)
             out.append({
-                "en": en, "ko": info[1] if info else en,
-                "dex": info[0] if info else 0,
+                "en": en, "ko": ko,
+                "dex": dex,
                 "types": pm.get("types", []),
                 "is_encounter": pm.get("isEncounter", False),
                 "can_shiny": pm.get("canBeShiny", False),
