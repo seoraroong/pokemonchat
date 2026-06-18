@@ -132,6 +132,7 @@
     .type-chip.active { opacity: 1; transform: scale(1.08); outline: 2px solid #fff; outline-offset: 1px; }
     #weather-bar { display: flex; align-items: center; gap: 8px; background: #1e293b; border: 1px solid #2d3f55; border-radius: 10px; padding: 6px 12px; margin-bottom: 8px; font-size: 0.75rem; color: #94a3b8; }
     #weather-bar .w-name { color: #e2e8f0; font-weight: 600; }
+    #weather-location { font-size: 0.68rem; color: #64748b; white-space: nowrap; }
     #weather-bar .w-types { display: flex; gap: 3px; margin-left: 4px; }
     .counter-score { font-size: 0.62rem; color: #64748b; margin-left: 4px; }
     .pvp-moveset-section { margin-top: 4px; }
@@ -713,6 +714,8 @@
     <div id="dex-top">
       <div id="dex-search-wrap"><input id="dex-search" type="text" placeholder="포켓몬 이름으로 검색..."></div>
       <div id="weather-bar" style="display:none">
+        <span id="weather-location"></span>
+        <span id="weather-loc-sep" style="color:#2d3f55;margin:0 4px;display:none">|</span>
         <span id="weather-emoji"></span>
         <span class="w-name" id="weather-name"></span>
         <span style="color:#475569;font-size:0.68rem">부스트:</span>
@@ -1194,19 +1197,39 @@ async function initWeather() {
   navigator.geolocation.getCurrentPosition(async pos => {
     try {
       const {latitude:lat,longitude:lon} = pos.coords;
-      const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=weather_code`);
-      const d = await r.json();
+      const [weatherRes, geoRes] = await Promise.all([
+        fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=weather_code`),
+        fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&accept-language=ko&zoom=10`, {
+          headers: {'User-Agent': 'PokemonGoChatbot/1.0'}
+        })
+      ]);
+      const d = await weatherRes.json();
       const code = d?.current?.weather_code;
       const key = WMO_TO_POGO[code];
       if(!key) return;
       _currentWeather = POGO_WEATHER[key];
-      const bar=document.getElementById('weather-bar');
-      if(!bar||!_currentWeather) return;
+      const bar = document.getElementById('weather-bar');
+      if(!bar || !_currentWeather) return;
+      // 위치명 표시
+      try {
+        const geo = await geoRes.json();
+        const addr = geo?.address || {};
+        const parts = [
+          addr.state || addr.province,
+          addr.city || addr.county || addr.city_district,
+          addr.suburb || addr.town
+        ].filter(Boolean);
+        const locText = parts.slice(0, 2).join(' ');
+        if(locText) {
+          document.getElementById('weather-location').textContent = '📍 ' + locText;
+          document.getElementById('weather-loc-sep').style.display = 'inline';
+        }
+      } catch(_){}
       document.getElementById('weather-emoji').textContent = _currentWeather.emoji;
       document.getElementById('weather-name').textContent  = _currentWeather.name;
       document.getElementById('weather-boost-types').innerHTML =
         _currentWeather.types.map(t=>`<span class="type-badge" style="background:${TYPE_BG[t]||'#71727a'}">${TYPE_KO[t]||t}</span>`).join('');
-      bar.style.display='flex';
+      bar.style.display = 'flex';
     } catch(_){}
   }, ()=>{}, {timeout:8000});
 }
