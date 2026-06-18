@@ -16,6 +16,7 @@ from dotenv import load_dotenv
 import anthropic
 from fastapi import FastAPI, UploadFile, File, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse, StreamingResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 load_dotenv()
@@ -2706,9 +2707,19 @@ async def catchmind_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") 
             await _cm_end_round(room_id, winner_id=None)
 
 
+_REACT_DIR = Path("static") / "react"
+_LEGACY_HTML = Path("static") / "index.html"
+
 @app.get("/", response_class=HTMLResponse)
 async def index():
-    return (Path("static") / "index.html").read_text(encoding="utf-8")
+    react_index = _REACT_DIR / "index.html"
+    if react_index.exists():
+        return react_index.read_text(encoding="utf-8")
+    return _LEGACY_HTML.read_text(encoding="utf-8")
+
+# React SPA assets (CSS/JS bundles)
+if (_REACT_DIR / "assets").exists():
+    app.mount("/assets", StaticFiles(directory=str(_REACT_DIR / "assets")), name="react-assets")
 
 
 @app.get("/sw.js")
