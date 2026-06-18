@@ -3,10 +3,10 @@ title: "Phanpy / 코코리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-ground", "type-none", "evo-line-phanpy"]
 aliases: ["코코리", "phanpy"]
-summary: "#231 코코리 (땅 / none) — GO 최대 CP: 1,206"
+summary: "#231 코코리 (땅) — GO 최대 CP: 1,206"
 evolution_line: "phanpy"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "phanpy"
 | 타입 | 땅 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-bulldoze|땅고르기]], [[move-rock-slide|스톤샤워]], [[move-trailblaze|Trailblaze]]

@@ -3,10 +3,10 @@ title: "Spinda / 얼루기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-spinda"]
 aliases: ["얼루기", "spinda"]
-summary: "#327 얼루기 (노말 / none) — GO 최대 CP: 1,220"
+summary: "#327 얼루기 (노말) — GO 최대 CP: 1,220"
 evolution_line: "spinda"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "spinda"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|335위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-psycho-cut|사이코커터]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-icy-wind|얼다바람]], [[move-rock-tomb|암석봉인]]

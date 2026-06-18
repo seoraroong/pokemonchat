@@ -3,10 +3,10 @@ title: "Herdier / 하데리어"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-none", "evo-line-herdier"]
 aliases: ["하데리어", "herdier"]
-summary: "#507 하데리어 (노말 / none) — GO 최대 CP: 1,583"
+summary: "#507 하데리어 (노말) — GO 최대 CP: 1,583"
 evolution_line: "herdier"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "herdier"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-lick|핥기]], [[move-take-down|돌진]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-thunderbolt|10만볼트]], [[move-play-rough|치근거리기]], [[move-dig|구멍파기]]

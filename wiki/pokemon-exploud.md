@@ -3,10 +3,10 @@ title: "Exploud / 폭음룡"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-exploud"]
 aliases: ["폭음룡", "exploud"]
-summary: "#295 폭음룡 (노말 / none) — GO 최대 CP: 2,347"
+summary: "#295 폭음룡 (노말) — GO 최대 CP: 2,347"
 evolution_line: "exploud"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "exploud"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-disarming-voice|차밍보이스]], [[move-fire-blast|불대문자]], [[move-boomburst|폭음파]]

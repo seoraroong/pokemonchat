@@ -3,10 +3,10 @@ title: "Vulpix / 식스테일"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-fire", "evo-line-vulpix"]
 aliases: ["식스테일", "vulpix"]
-summary: "#037 식스테일 (불꽃 타입) — 기본 스탯 합계 299"
+summary: "#037 식스테일 (불꽃) — GO 최대 CP: 883"
 evolution_line: "vulpix"
 ---
 
@@ -69,6 +69,13 @@ evolution_line: "vulpix"
 | 타입 | 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-flame-charge|니트로차지]], [[move-flamethrower|화염방사]], Weather Ball Fire

@@ -3,7 +3,7 @@ title: "Solrock / 솔록"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-rock", "type-psychic", "evo-line-solrock"]
 aliases: ["솔록", "solrock"]
 summary: "#338 솔록 (바위 / 에스퍼) — GO 최대 CP: 2,327"
@@ -35,6 +35,13 @@ evolution_line: "solrock"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|188위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|170위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 벌레, 고스트, 강철, 물, 풀, 악 |
+| 저항 | 노말, 비행, 독, 불꽃, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-rock-throw|돌떨구기]], [[move-psywave|사이코웨이브]]
 - **스페셜 기술:** [[move-psychic|사이코키네시스]], [[move-rock-slide|스톤샤워]], [[move-solar-beam|솔라빔]], Weather Ball Fire

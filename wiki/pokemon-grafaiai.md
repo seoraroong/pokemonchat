@@ -3,7 +3,7 @@ title: "Grafaiai / 태깅구르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-poison", "type-normal", "evo-line-grafaiai"]
 aliases: ["태깅구르", "grafaiai"]
 summary: "#945 태깅구르 (독 / 노말) — GO 최대 CP: 2,264"
@@ -34,6 +34,14 @@ evolution_line: "grafaiai"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|460위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼 |
+| 저항 | 독, 벌레, 풀, 페어리 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** [[move-acid-spray|애시드봄]], [[move-poison-fang|독엄니]], [[move-sludge-bomb|오물폭탄]]

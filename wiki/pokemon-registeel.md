@@ -3,10 +3,10 @@ title: "Registeel / 레지스틸"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-steel", "type-none", "evo-line-registeel"]
 aliases: ["레지스틸", "registeel"]
-summary: "#379 레지스틸 (강철 / none) — GO 최대 CP: 2,447"
+summary: "#379 레지스틸 (강철) — GO 최대 CP: 2,447"
 evolution_line: "registeel"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "registeel"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|26위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|232위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레, 강철, 풀, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-rock-smash|바위깨기]], [[move-lock-on|록온]]
 - **스페셜 기술:** [[move-flash-cannon|러스터캐논]], [[move-focus-blast|기합구슬]], [[move-hyper-beam|파괴광선]], [[move-zap-cannon|전자포]]  *(커뮤니티 데이/전용: [[move-zap-cannon|전자포]])*

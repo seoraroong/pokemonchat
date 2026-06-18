@@ -3,10 +3,10 @@ title: "Purugly / 몬냥이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-normal", "type-none", "evo-line-purugly"]
 aliases: ["몬냥이", "purugly"]
-summary: "#432 몬냥이 (노말 / none) — GO 최대 CP: 1,953"
+summary: "#432 몬냥이 (노말) — GO 최대 CP: 1,953"
 evolution_line: "purugly"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "purugly"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-play-rough|치근거리기]], [[move-thunder|번개]]

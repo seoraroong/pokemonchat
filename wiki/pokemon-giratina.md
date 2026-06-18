@@ -3,7 +3,7 @@ title: "Giratina / 기라티나"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ghost", "type-dragon", "evo-line-giratina"]
 aliases: ["기라티나", "giratina"]
 summary: "#487 기라티나 (고스트 / 드래곤) — GO 최대 CP: 3,379"
@@ -35,6 +35,14 @@ evolution_line: "giratina"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|35위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|86위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 얼음, 드래곤, 악, 페어리 |
+| 저항 | 독, 벌레, 불꽃, 물, 풀, 전기 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-dragon-claw|드래곤크루]], [[move-shadow-sneak|야습]], [[move-shadow-force|섀도다이브]]  *(커뮤니티 데이/전용: [[move-shadow-force|섀도다이브]])*

@@ -3,7 +3,7 @@ title: "Wormadam / 도롱마담"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-bug", "type-grass", "evo-line-wormadam"]
 aliases: ["도롱마담", "wormadam"]
 summary: "#413 도롱마담 (벌레 / 풀) — GO 최대 CP: 1,773"
@@ -33,6 +33,13 @@ evolution_line: "wormadam"
 | 타입 | 벌레 / 풀 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행(×4), 독, 바위, 벌레, 불꽃(×4), 얼음 |
+| 저항 | 격투, 땅(×¼), 물, 풀(×¼), 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-confusion|염동력]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-bug-buzz|벌레의야단법석]], [[move-energy-ball|에너지볼]], [[move-psybeam|환상빔]]

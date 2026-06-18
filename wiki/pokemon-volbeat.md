@@ -3,10 +3,10 @@ title: "Volbeat / 볼비트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-bug", "type-none", "evo-line-volbeat"]
 aliases: ["볼비트", "volbeat"]
-summary: "#313 볼비트 (벌레 / none) — GO 최대 CP: 1,771"
+summary: "#313 볼비트 (벌레) — GO 최대 CP: 1,771"
 evolution_line: "volbeat"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "volbeat"
 | 타입 | 벌레 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃 |
+| 저항 | 격투, 땅, 풀 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-struggle-bug|벌레의저항]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-bug-buzz|벌레의야단법석]], [[move-signal-beam|시그널빔]], [[move-thunderbolt|10만볼트]]

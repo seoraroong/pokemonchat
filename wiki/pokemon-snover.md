@@ -3,7 +3,7 @@ title: "Snover / 눈쓰개"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-grass", "type-ice", "evo-line-snover"]
 aliases: ["눈쓰개", "snover"]
 summary: "#459 눈쓰개 (풀 / 얼음) — GO 최대 CP: 1,159"
@@ -33,6 +33,13 @@ evolution_line: "snover"
 | 타입 | 풀 / 얼음 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 독, 바위, 벌레, 강철, 불꽃(×4) |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ice-shard|얼음뭉치]], [[move-powder-snow|눈싸라기]], [[move-leafage|나뭇잎]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-ice-beam|냉동빔]], [[move-stomp|짓밟기]]

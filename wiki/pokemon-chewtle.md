@@ -3,10 +3,10 @@ title: "Chewtle / 깨물부기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-water", "type-none", "evo-line-chewtle"]
 aliases: ["깨물부기", "chewtle"]
-summary: "#833 깨물부기 (물 / none) — GO 최대 CP: 993"
+summary: "#833 깨물부기 (물) — GO 최대 CP: 993"
 evolution_line: "chewtle"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "chewtle"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-surf|파도타기]]

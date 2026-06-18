@@ -3,7 +3,7 @@ title: "Camerupt / 폭타"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-fire", "type-ground", "evo-line-camerupt"]
 aliases: ["폭타", "camerupt"]
 summary: "#323 폭타 (불꽃 / 땅) — GO 최대 CP: 2,193"
@@ -35,6 +35,14 @@ evolution_line: "camerupt"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|373위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|188위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 물(×4) |
+| 저항 | 독, 벌레, 강철, 불꽃, 페어리 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-rock-smash|바위깨기]], [[move-incinerate|불태우기]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-overheat|오버히트]], [[move-solar-beam|솔라빔]], [[move-earth-power|대지의힘]], [[move-scorching-sands|열사의대지]], [[move-rock-tomb|암석봉인]]

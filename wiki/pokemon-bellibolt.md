@@ -3,10 +3,10 @@ title: "Bellibolt / 찌리배리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-electric", "type-none", "evo-line-bellibolt"]
 aliases: ["찌리배리", "bellibolt"]
-summary: "#939 찌리배리 (전기 / none) — GO 최대 CP: 2,662"
+summary: "#939 찌리배리 (전기) — GO 최대 CP: 2,662"
 evolution_line: "bellibolt"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "bellibolt"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|43위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|278위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-water-gun|물대포]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-parabolic-charge|파라볼라차지]], [[move-discharge|방전]], [[move-zap-cannon|전자포]]

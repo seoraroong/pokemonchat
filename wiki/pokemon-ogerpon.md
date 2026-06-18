@@ -3,10 +3,10 @@ title: "Ogerpon / 오거폰"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-grass", "type-none", "evo-line-ogerpon"]
 aliases: ["오거폰", "ogerpon"]
-summary: "#1017 오거폰 (풀 / none) — GO 최대 CP: 2,783"
+summary: "#1017 오거폰 (풀) — GO 최대 CP: 2,783"
 evolution_line: "ogerpon"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "ogerpon"
 | 타입 | 풀 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-vine-whip|덩굴채찍]], [[move-magical-leaf|메지컬리프]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-power-whip|파워휩]], [[move-grass-knot|풀묶기]], [[move-play-rough|치근거리기]]

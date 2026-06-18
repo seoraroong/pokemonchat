@@ -3,7 +3,7 @@ title: "Sealeo / 씨레오"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-ice", "type-water", "evo-line-sealeo"]
 aliases: ["씨레오", "sealeo"]
 summary: "#364 씨레오 (얼음 / 물) — GO 최대 CP: 1,714"
@@ -34,6 +34,13 @@ evolution_line: "sealeo"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|35위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 풀, 전기 |
+| 저항 | 물, 얼음(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-aurora-beam|오로라빔]], [[move-body-slam|누르기]], [[move-water-pulse|물의파동]], [[move-surf|파도타기]]

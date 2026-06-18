@@ -3,7 +3,7 @@ title: "Wingull / 갈모매"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-flying", "evo-line-wingull"]
 aliases: ["갈모매", "wingull"]
 summary: "#278 갈모매 (물 / 비행) — GO 최대 CP: 765"
@@ -33,6 +33,14 @@ evolution_line: "wingull"
 | 타입 | 물 / 비행 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기(×4) |
+| 저항 | 격투, 벌레, 강철, 불꽃, 물 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-air-cutter|에어컷터]], [[move-ice-beam|냉동빔]], [[move-water-pulse|물의파동]]

@@ -3,10 +3,10 @@ title: "Ekans / 아보"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-poison", "evo-line-ekans"]
 aliases: ["아보", "ekans"]
-summary: "#023 아보 (독 타입) — 기본 스탯 합계 288"
+summary: "#023 아보 (독) — GO 최대 CP: 927"
 evolution_line: "ekans"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "ekans"
 | 타입 | 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 풀, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-poison-sting|독침]]
 - **스페셜 기술:** [[move-gunk-shot|더스트슈트]], [[move-poison-fang|독엄니]], [[move-sludge-bomb|오물폭탄]], [[move-wrap|김밥말이]]  *(커뮤니티 데이/전용: [[move-gunk-shot|더스트슈트]])*

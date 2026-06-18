@@ -3,7 +3,7 @@ title: "Snom / 누니머기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ice", "type-bug", "evo-line-snom"]
 aliases: ["누니머기", "snom"]
 summary: "#872 누니머기 (얼음 / 벌레) — GO 최대 CP: 528"
@@ -33,6 +33,13 @@ evolution_line: "snom"
 | 타입 | 얼음 / 벌레 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위(×4), 강철, 불꽃(×4) |
+| 저항 | 땅, 풀, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]], [[move-struggle-bug|벌레의저항]]
 - **스페셜 기술:** [[move-icy-wind|얼다바람]], [[move-bug-buzz|벌레의야단법석]]

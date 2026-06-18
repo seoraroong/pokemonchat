@@ -3,10 +3,10 @@ title: "Wooloo / 우르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-normal", "type-none", "evo-line-wooloo"]
 aliases: ["우르", "wooloo"]
-summary: "#831 우르 (노말 / none) — GO 최대 CP: 706"
+summary: "#831 우르 (노말) — GO 최대 CP: 706"
 evolution_line: "wooloo"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "wooloo"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-wild-charge|와일드볼트]], [[move-payback|보복]], [[move-stomp|짓밟기]]

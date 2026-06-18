@@ -3,10 +3,10 @@ title: "Buneary / 이어롤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-normal", "type-none", "evo-line-buneary"]
 aliases: ["이어롤", "buneary"]
-summary: "#427 이어롤 (노말 / none) — GO 최대 CP: 1,258"
+summary: "#427 이어롤 (노말) — GO 최대 CP: 1,258"
 evolution_line: "buneary"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "buneary"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-pound|막치기]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-fire-punch|불꽃펀치]], [[move-swift|스피드스타]]

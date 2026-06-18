@@ -3,10 +3,10 @@ title: "Wiglett / 바다그다"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-water", "type-none", "evo-line-wiglett"]
 aliases: ["바다그다", "wiglett"]
-summary: "#960 바다그다 (물 / none) — GO 최대 CP: 574"
+summary: "#960 바다그다 (물) — GO 최대 CP: 574"
 evolution_line: "wiglett"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "wiglett"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-liquidation|아쿠아브레이크]], [[move-dig|구멍파기]], [[move-surf|파도타기]]

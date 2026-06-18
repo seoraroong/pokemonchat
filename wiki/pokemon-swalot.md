@@ -3,10 +3,10 @@ title: "Swalot / 꿀꺽몬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-poison", "type-none", "evo-line-swalot"]
 aliases: ["꿀꺽몬", "swalot"]
-summary: "#317 꿀꺽몬 (독 / none) — GO 최대 CP: 1,978"
+summary: "#317 꿀꺽몬 (독) — GO 최대 CP: 1,978"
 evolution_line: "swalot"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "swalot"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|109위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|450위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 풀, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-infestation|엉겨붙기]], [[move-rock-smash|바위깨기]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-gunk-shot|더스트슈트]], [[move-ice-beam|냉동빔]], [[move-sludge-bomb|오물폭탄]], [[move-acid-spray|애시드봄]], [[move-sludge|오물공격]]

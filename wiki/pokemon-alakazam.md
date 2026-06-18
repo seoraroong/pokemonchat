@@ -3,10 +3,10 @@ title: "Alakazam / 후딘"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-psychic", "evo-line-abra"]
 aliases: ["후딘", "alakazam"]
-summary: "#065 후딘 (에스퍼 타입) — 기본 스탯 합계 500"
+summary: "#065 후딘 (에스퍼) — GO 최대 CP: 3,057"
 evolution_line: "abra"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "abra"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|296위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-psycho-cut|사이코커터]], [[move-counter|카운터]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-fire-punch|불꽃펀치]], [[move-focus-blast|기합구슬]], [[move-future-sight|미래예지]], [[move-psychic|사이코키네시스]], [[move-shadow-ball|섀도볼]]  *(커뮤니티 데이/전용: [[move-counter|카운터]], [[move-dazzling-gleam|매지컬샤인]], [[move-psychic|사이코키네시스]])*

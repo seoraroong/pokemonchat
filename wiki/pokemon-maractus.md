@@ -3,10 +3,10 @@ title: "Maractus / 마라카치"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-grass", "type-none", "evo-line-maractus"]
 aliases: ["마라카치", "maractus"]
-summary: "#556 마라카치 (풀 / none) — GO 최대 CP: 2,274"
+summary: "#556 마라카치 (풀) — GO 최대 CP: 2,274"
 evolution_line: "maractus"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "maractus"
 | 타입 | 풀 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-seed|기관총]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-petal-blizzard|꽃보라]], [[move-solar-beam|솔라빔]]

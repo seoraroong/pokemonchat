@@ -3,7 +3,7 @@ title: "Toedscool / 들눈해"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-ground", "type-grass", "evo-line-toedscool"]
 aliases: ["들눈해", "toedscool"]
 summary: "#948 들눈해 (땅 / 풀) — GO 최대 CP: 1,040"
@@ -33,6 +33,14 @@ evolution_line: "toedscool"
 | 타입 | 땅 / 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 벌레, 불꽃, 얼음(×4) |
+| 저항 | 땅, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-earth-power|대지의힘]], [[move-seed-bomb|씨폭탄]], [[move-wrap|김밥말이]]

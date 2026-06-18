@@ -3,7 +3,7 @@ title: "Azumarill / 마릴리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-fairy", "evo-line-azumarill"]
 aliases: ["마릴리", "azumarill"]
 summary: "#184 마릴리 (물 / 페어리) — GO 최대 CP: 1,588"
@@ -34,6 +34,14 @@ evolution_line: "azumarill"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|13위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 풀, 전기 |
+| 저항 | 격투, 벌레, 불꽃, 물, 얼음, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-hydro-pump|하이드로펌프]], [[move-ice-beam|냉동빔]], [[move-play-rough|치근거리기]]

@@ -3,7 +3,7 @@ title: "Vikavolt / 투구뿌논"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-bug", "type-electric", "evo-line-vikavolt"]
 aliases: ["투구뿌논", "vikavolt"]
 summary: "#738 투구뿌논 (벌레 / 전기) — GO 최대 CP: 3,117"
@@ -36,6 +36,13 @@ evolution_line: "vikavolt"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|316위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|224위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 불꽃 |
+| 저항 | 격투, 강철, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-spark|스파크]], [[move-mud-slap|진흙뿌리기]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** X Scissor, [[move-discharge|방전]], [[move-crunch|깨물어부수기]], [[move-fly|공중날기]]  *(커뮤니티 데이/전용: [[move-volt-switch|볼트체인지]])*

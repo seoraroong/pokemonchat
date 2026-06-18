@@ -3,10 +3,10 @@ title: "Yungoos / 영구스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-normal", "type-none", "evo-line-yungoos"]
 aliases: ["영구스", "yungoos"]
-summary: "#734 영구스 (노말 / none) — GO 최대 CP: 880"
+summary: "#734 영구스 (노말) — GO 최대 CP: 880"
 evolution_line: "yungoos"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "yungoos"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-hyper-fang|필살앞니]], [[move-crunch|깨물어부수기]], [[move-rock-tomb|암석봉인]]

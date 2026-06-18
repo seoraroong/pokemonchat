@@ -3,7 +3,7 @@ title: "Miraidon / 미라이돈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-electric", "type-dragon", "evo-line-miraidon"]
 aliases: ["미라이돈", "miraidon"]
 summary: "#1008 미라이돈 (전기 / 드래곤) — GO 최대 CP: 3,973"
@@ -33,6 +33,13 @@ evolution_line: "miraidon"
 | 타입 | 전기 / 드래곤 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 얼음, 드래곤, 페어리 |
+| 저항 | 비행, 강철, 불꽃, 물, 풀, 전기(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-dragon-tail|드래곤테일]]
 - **스페셜 기술:** [[move-hyper-beam|파괴광선]], [[move-dragon-pulse|용의파동]], [[move-thunder|번개]], [[move-outrage|역린]]

@@ -3,10 +3,10 @@ title: "Conkeldurr / 노보청"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-fighting", "type-none", "evo-line-conkeldurr"]
 aliases: ["노보청", "conkeldurr"]
-summary: "#534 노보청 (격투 / none) — GO 최대 CP: 3,337"
+summary: "#534 노보청 (격투) — GO 최대 CP: 3,337"
 evolution_line: "conkeldurr"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "conkeldurr"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|234위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|92위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-poison-jab|독찌르기]], [[move-force-palm|발경]]
 - **스페셜 기술:** [[move-dynamic-punch|폭발펀치]], [[move-focus-blast|기합구슬]], [[move-stone-edge|스톤에지]], [[move-brutal-swing|세차게휘두르기]]  *(커뮤니티 데이/전용: [[move-brutal-swing|세차게휘두르기]])*

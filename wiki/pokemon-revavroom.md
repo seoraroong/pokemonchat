@@ -3,7 +3,7 @@ title: "Revavroom / 부르르룸"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-steel", "type-poison", "evo-line-revavroom"]
 aliases: ["부르르룸", "revavroom"]
 summary: "#966 부르르룸 (강철 / 독) — GO 최대 CP: 2,951"
@@ -34,6 +34,14 @@ evolution_line: "revavroom"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|325위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅(×4), 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레(×¼), 강철, 풀(×¼), 얼음, 드래곤, 페어리(×¼) |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-lick|핥기]], [[move-poison-jab|독찌르기]], [[move-metal-sound|금속음]]
 - **스페셜 기술:** [[move-acid-spray|애시드봄]], [[move-gunk-shot|더스트슈트]], [[move-gyro-ball|자이로볼]], [[move-overheat|오버히트]]

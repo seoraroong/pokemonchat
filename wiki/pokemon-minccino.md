@@ -3,10 +3,10 @@ title: "Minccino / 치라미"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-none", "evo-line-minccino"]
 aliases: ["치라미", "minccino"]
-summary: "#572 치라미 (노말 / none) — GO 최대 CP: 872"
+summary: "#572 치라미 (노말) — GO 최대 CP: 872"
 evolution_line: "minccino"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "minccino"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-pound|막치기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-swift|스피드스타]], [[move-thunderbolt|10만볼트]], [[move-aqua-tail|아쿠아테일]]

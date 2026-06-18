@@ -3,7 +3,7 @@ title: "Arctibax / 드니꽁"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-dragon", "type-ice", "evo-line-arctibax"]
 aliases: ["드니꽁", "arctibax"]
 summary: "#997 드니꽁 (드래곤 / 얼음) — GO 최대 CP: 2,092"
@@ -35,6 +35,13 @@ evolution_line: "arctibax"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|206위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|302위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 드래곤, 페어리 |
+| 저항 | 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-ice-fang|얼음엄니]]
 - **스페셜 기술:** [[move-dragon-claw|드래곤크루]], [[move-avalanche|눈사태]], [[move-outrage|역린]], [[move-icy-wind|얼다바람]]

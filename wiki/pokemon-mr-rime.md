@@ -3,7 +3,7 @@ title: "Mr. Rime / 마임꽁꽁"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ice", "type-psychic", "evo-line-mr-rime"]
 aliases: ["마임꽁꽁", "mr. rime"]
 summary: "#866 마임꽁꽁 (얼음 / 에스퍼) — GO 최대 CP: 2,827"
@@ -34,6 +34,13 @@ evolution_line: "mr-rime"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|336위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 벌레, 고스트, 강철, 불꽃, 악 |
+| 저항 | 에스퍼, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-zen-headbutt|사념의박치기]], [[move-ice-shard|얼음뭉치]]
 - **스페셜 기술:** [[move-psybeam|환상빔]], [[move-psychic|사이코키네시스]], [[move-ice-punch|냉동펀치]], [[move-icy-wind|얼다바람]], [[move-triple-axel|트리플악셀]]

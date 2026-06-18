@@ -3,7 +3,7 @@ title: "Skrelp / 수레기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-poison", "type-water", "evo-line-skrelp"]
 aliases: ["수레기", "skrelp"]
 summary: "#690 수레기 (독 / 물) — GO 최대 CP: 1,063"
@@ -33,6 +33,13 @@ evolution_line: "skrelp"
 | 타입 | 독 / 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 전기, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 강철, 불꽃, 물, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-acid|용해액]]
 - **스페셜 기술:** [[move-aqua-tail|아쿠아테일]], [[move-water-pulse|물의파동]], [[move-twister|회오리]], [[move-sludge-bomb|오물폭탄]]

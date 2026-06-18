@@ -3,10 +3,10 @@ title: "Glalie / 얼음귀신"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-ice", "type-none", "evo-line-glalie"]
 aliases: ["얼음귀신", "glalie"]
-summary: "#362 얼음귀신 (얼음 / none) — GO 최대 CP: 2,105"
+summary: "#362 얼음귀신 (얼음) — GO 최대 CP: 2,105"
 evolution_line: "glalie"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "glalie"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|289위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|306위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-frost-breath|얼음숨결]], [[move-ice-shard|얼음뭉치]], [[move-rollout|구르기]], [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-avalanche|눈사태]], [[move-gyro-ball|자이로볼]], [[move-shadow-ball|섀도볼]]

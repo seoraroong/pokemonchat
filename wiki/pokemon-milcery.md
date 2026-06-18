@@ -3,10 +3,10 @@ title: "Milcery / 마빌크"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-fairy", "type-none", "evo-line-milcery"]
 aliases: ["마빌크", "milcery"]
-summary: "#868 마빌크 (페어리 / none) — GO 최대 CP: 829"
+summary: "#868 마빌크 (페어리) — GO 최대 CP: 829"
 evolution_line: "milcery"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "milcery"
 | 타입 | 페어리 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]]

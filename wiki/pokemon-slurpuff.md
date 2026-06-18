@@ -3,10 +3,10 @@ title: "Slurpuff / 나루림"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fairy", "type-none", "evo-line-slurpuff"]
 aliases: ["나루림", "slurpuff"]
-summary: "#685 나루림 (페어리 / none) — GO 최대 CP: 2,199"
+summary: "#685 나루림 (페어리) — GO 최대 CP: 2,199"
 evolution_line: "slurpuff"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "slurpuff"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|253위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|158위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-charm|애교부리기]], [[move-fairy-wind|요정의바람]]
 - **스페셜 기술:** [[move-play-rough|치근거리기]], [[move-energy-ball|에너지볼]], [[move-flamethrower|화염방사]], [[move-draining-kiss|드레인키스]]

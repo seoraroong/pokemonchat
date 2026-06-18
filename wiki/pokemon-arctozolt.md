@@ -3,7 +3,7 @@ title: "Arctozolt / 파치르돈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-electric", "type-ice", "evo-line-arctozolt"]
 aliases: ["파치르돈", "arctozolt"]
 summary: "#881 파치르돈 (전기 / 얼음) — GO 최대 CP: 2,566"
@@ -33,6 +33,13 @@ evolution_line: "arctozolt"
 | 타입 | 전기 / 얼음 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 바위, 불꽃 |
+| 저항 | 비행, 전기, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]], [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-avalanche|눈사태]], [[move-ancient-power|원시의힘]]

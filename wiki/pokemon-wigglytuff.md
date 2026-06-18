@@ -3,10 +3,10 @@ title: "Wigglytuff / 푸크린"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "type-fairy", "evo-line-jigglypuff"]
 aliases: ["푸크린", "wigglytuff"]
-summary: "#040 푸크린 (노말/페어리 타입) — 기본 스탯 합계 435"
+summary: "#040 푸크린 (노말 / 페어리) — GO 최대 CP: 1,926"
 evolution_line: "jigglypuff"
 ---
 
@@ -72,6 +72,14 @@ evolution_line: "jigglypuff"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|79위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 벌레, 악 |
+| 무효 | 고스트, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-pound|막치기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-hyper-beam|파괴광선]], [[move-ice-beam|냉동빔]], [[move-play-rough|치근거리기]], [[move-disarming-voice|차밍보이스]], [[move-icy-wind|얼다바람]], [[move-swift|스피드스타]]

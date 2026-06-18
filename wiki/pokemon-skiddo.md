@@ -3,10 +3,10 @@ title: "Skiddo / 메이클"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-grass", "type-none", "evo-line-skiddo"]
 aliases: ["메이클", "skiddo"]
-summary: "#672 메이클 (풀 / none) — GO 최대 CP: 1,250"
+summary: "#672 메이클 (풀) — GO 최대 CP: 1,250"
 evolution_line: "skiddo"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "skiddo"
 | 타입 | 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-zen-headbutt|사념의박치기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-seed-bomb|씨폭탄]]

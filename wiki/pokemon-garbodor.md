@@ -3,10 +3,10 @@ title: "Garbodor / 더스트나"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-poison", "type-none", "evo-line-garbodor"]
 aliases: ["더스트나", "garbodor"]
-summary: "#569 더스트나 (독 / none) — GO 최대 CP: 2,345"
+summary: "#569 더스트나 (독) — GO 최대 CP: 2,345"
 evolution_line: "garbodor"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "garbodor"
 | 타입 | 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 풀, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-infestation|엉겨붙기]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-acid-spray|애시드봄]], [[move-seed-bomb|씨폭탄]], [[move-gunk-shot|더스트슈트]], [[move-body-slam|누르기]]

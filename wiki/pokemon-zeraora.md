@@ -3,10 +3,10 @@ title: "Zeraora / 제라오라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-electric", "type-none", "evo-line-zeraora"]
 aliases: ["제라오라", "zeraora"]
-summary: "#807 제라오라 (전기 / none) — GO 최대 CP: 3,419"
+summary: "#807 제라오라 (전기) — GO 최대 CP: 3,419"
 evolution_line: "zeraora"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "zeraora"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|138위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|104위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-spark|스파크]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** [[move-thunder-punch|번개펀치]], [[move-discharge|방전]], [[move-wild-charge|와일드볼트]], [[move-plasma-fists|플라스마피스트]]

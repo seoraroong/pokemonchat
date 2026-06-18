@@ -3,10 +3,10 @@ title: "Pidgeotto / 피죤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "type-flying", "evo-line-pidgey"]
 aliases: ["피죤", "pidgeotto"]
-summary: "#017 피죤 (노말/비행 타입) — 기본 스탯 합계 349"
+summary: "#017 피죤 (노말 / 비행) — GO 최대 CP: 1,194"
 evolution_line: "pidgey"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "pidgey"
 | 타입 | 노말 / 비행 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-steel-wing|강철날개]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-air-cutter|에어컷터]], [[move-twister|회오리]]

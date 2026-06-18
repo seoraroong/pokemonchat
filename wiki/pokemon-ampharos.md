@@ -3,10 +3,10 @@ title: "Ampharos / 전룡"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-electric", "type-none", "evo-line-ampharos"]
 aliases: ["전룡", "ampharos"]
-summary: "#181 전룡 (전기 / none) — GO 최대 CP: 2,852"
+summary: "#181 전룡 (전기) — GO 최대 CP: 2,852"
 evolution_line: "ampharos"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "ampharos"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|83위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|260위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** [[move-dragon-pulse|용의파동]], [[move-focus-blast|기합구슬]], [[move-power-gem|파워젬]], [[move-thunder|번개]], [[move-zap-cannon|전자포]], [[move-thunder-punch|번개펀치]], [[move-brutal-swing|세차게휘두르기]], [[move-trailblaze|Trailblaze]]  *(커뮤니티 데이/전용: [[move-dragon-pulse|용의파동]])*

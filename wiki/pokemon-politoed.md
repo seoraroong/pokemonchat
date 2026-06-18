@@ -3,10 +3,10 @@ title: "Politoed / 왕구리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-none", "evo-line-politoed"]
 aliases: ["왕구리", "politoed"]
-summary: "#186 왕구리 (물 / none) — GO 최대 CP: 2,449"
+summary: "#186 왕구리 (물) — GO 최대 CP: 2,449"
 evolution_line: "politoed"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "politoed"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|191위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|122위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-earthquake|지진]], [[move-hydro-pump|하이드로펌프]], [[move-surf|파도타기]], Weather Ball Water, [[move-ice-beam|냉동빔]], [[move-scald|열탕]]  *(커뮤니티 데이/전용: [[move-earthquake|지진]], [[move-ice-beam|냉동빔]])*

@@ -3,10 +3,10 @@ title: "Oshawott / 수댕이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-none", "evo-line-oshawott"]
 aliases: ["수댕이", "oshawott"]
-summary: "#501 수댕이 (물 / none) — GO 최대 CP: 1,046"
+summary: "#501 수댕이 (물) — GO 최대 CP: 1,046"
 evolution_line: "oshawott"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "oshawott"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-aqua-tail|아쿠아테일]], [[move-water-pulse|물의파동]], [[move-night-slash|깜짝베기]]

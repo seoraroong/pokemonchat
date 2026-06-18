@@ -3,7 +3,7 @@ title: "Primarina / 누리레느"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-water", "type-fairy", "evo-line-primarina"]
 aliases: ["누리레느", "primarina"]
 summary: "#730 누리레느 (물 / 페어리) — GO 최대 CP: 3,200"
@@ -36,6 +36,14 @@ evolution_line: "primarina"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|66위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|48위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 풀, 전기 |
+| 저항 | 격투, 벌레, 불꽃, 물, 얼음, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charm|애교부리기]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-psychic|사이코키네시스]], [[move-hydro-pump|하이드로펌프]], [[move-moonblast|문포스]], [[move-disarming-voice|차밍보이스]], [[move-hydro-cannon|하이드로캐논]], [[move-sparkling-aria|물거품아리아]]  *(커뮤니티 데이/전용: [[move-hydro-cannon|하이드로캐논]])*

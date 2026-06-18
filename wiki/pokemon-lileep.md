@@ -3,7 +3,7 @@ title: "Lileep / 릴링"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-rock", "type-grass", "evo-line-lileep"]
 aliases: ["릴링", "lileep"]
 summary: "#345 릴링 (바위 / 풀) — GO 최대 CP: 1,291"
@@ -34,6 +34,13 @@ evolution_line: "lileep"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|347위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 강철, 얼음 |
+| 저항 | 노말, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-infestation|엉겨붙기]], [[move-bullet-seed|기관총]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-grass-knot|풀묶기]], [[move-mirror-coat|미러코트]]

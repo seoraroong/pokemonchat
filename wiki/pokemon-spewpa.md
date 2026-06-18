@@ -3,10 +3,10 @@ title: "Spewpa / 분떠도리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-bug", "type-none", "evo-line-spewpa"]
 aliases: ["분떠도리", "spewpa"]
-summary: "#665 분떠도리 (벌레 / none) — GO 최대 CP: 479"
+summary: "#665 분떠도리 (벌레) — GO 최대 CP: 479"
 evolution_line: "spewpa"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "spewpa"
 | 타입 | 벌레 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃 |
+| 저항 | 격투, 땅, 풀 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-struggle-bug|벌레의저항]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

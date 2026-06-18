@@ -3,10 +3,10 @@ title: "Purrloin / 쌔비냥"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-none", "evo-line-purrloin"]
 aliases: ["쌔비냥", "purrloin"]
-summary: "#509 쌔비냥 (악 / none) — GO 최대 CP: 772"
+summary: "#509 쌔비냥 (악) — GO 최대 CP: 772"
 evolution_line: "purrloin"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "purrloin"
 | 타입 | 악 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-night-slash|깜짝베기]], [[move-play-rough|치근거리기]], [[move-dark-pulse|악의파동]]

@@ -3,10 +3,10 @@ title: "Raichu / 라이츄"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-electric", "evo-line-pikachu"]
 aliases: ["라이츄", "raichu"]
-summary: "#026 라이츄 (전기 타입) — 기본 스탯 합계 485"
+summary: "#026 라이츄 (전기) — GO 최대 CP: 2,182"
 evolution_line: "pikachu"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "pikachu"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|202위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|219위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-spark|스파크]], [[move-thunder-shock|전기쇼크]], [[move-volt-switch|볼트체인지]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-thunder|번개]], [[move-thunder-punch|번개펀치]], [[move-wild-charge|와일드볼트]], [[move-skull-bash|로케트박치기]], [[move-trailblaze|Trailblaze]], [[move-surf|파도타기]]  *(커뮤니티 데이/전용: [[move-thunder|번개]])*

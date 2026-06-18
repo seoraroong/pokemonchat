@@ -3,7 +3,7 @@ title: "Carracosta / 늑골라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-rock", "evo-line-carracosta"]
 aliases: ["늑골라", "carracosta"]
 summary: "#565 늑골라 (물 / 바위) — GO 최대 CP: 2,621"
@@ -34,6 +34,13 @@ evolution_line: "carracosta"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|380위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-rock-throw|돌떨구기]]
 - **스페셜 기술:** [[move-surf|파도타기]], [[move-ancient-power|원시의힘]], [[move-body-slam|누르기]], [[move-liquidation|아쿠아브레이크]]

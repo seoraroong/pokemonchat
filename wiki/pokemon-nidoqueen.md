@@ -3,10 +3,10 @@ title: "Nidoqueen / 니드퀸"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-poison", "type-ground", "evo-line-nidoran-f"]
 aliases: ["니드퀸", "nidoqueen"]
-summary: "#031 니드퀸 (독/땅 타입) — 기본 스탯 합계 505"
+summary: "#031 니드퀸 (독 / 땅) — GO 최대 CP: 2,488"
 evolution_line: "nidoran-f"
 ---
 
@@ -73,6 +73,14 @@ evolution_line: "nidoran-f"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|227위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|107위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 물, 에스퍼, 얼음 |
+| 저항 | 격투, 독(×¼), 바위, 벌레, 페어리 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-poison-jab|독찌르기]], [[move-poison-sting|독침]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-sludge-wave|오물웨이브]], [[move-stone-edge|스톤에지]], [[move-earth-power|대지의힘]], [[move-poison-fang|독엄니]]

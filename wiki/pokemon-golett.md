@@ -3,7 +3,7 @@ title: "Golett / 골비람"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ground", "type-ghost", "evo-line-golett"]
 aliases: ["골비람", "golett"]
 summary: "#622 골비람 (땅 / 고스트) — GO 최대 CP: 1,189"
@@ -33,6 +33,14 @@ evolution_line: "golett"
 | 타입 | 땅 / 고스트 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 물, 풀, 얼음, 악 |
+| 저항 | 독(×¼), 바위, 벌레 |
+| 무효 | 노말, 격투, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-shadow-punch|섀도펀치]], [[move-brick-break|깨트리다]], [[move-night-shade|나이트헤드]]

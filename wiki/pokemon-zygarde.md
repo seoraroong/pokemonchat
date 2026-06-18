@@ -3,7 +3,7 @@ title: "Zygarde / 지가르데"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-dragon", "type-ground", "evo-line-zygarde"]
 aliases: ["지가르데", "zygarde"]
 summary: "#718 지가르데 (드래곤 / 땅) — GO 최대 CP: 2,375"
@@ -33,6 +33,14 @@ evolution_line: "zygarde"
 | 타입 | 드래곤 / 땅 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음(×4), 드래곤, 페어리 |
+| 저항 | 독, 바위, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-bite|물기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-outrage|역린]], [[move-earthquake|지진]], [[move-crunch|깨물어부수기]], [[move-hyper-beam|파괴광선]], [[move-bulldoze|땅고르기]]

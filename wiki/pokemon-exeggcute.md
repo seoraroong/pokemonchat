@@ -3,10 +3,10 @@ title: "Exeggcute / 아라리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-grass", "type-psychic", "evo-line-exeggcute"]
 aliases: ["아라리", "exeggcute"]
-summary: "#102 아라리 (풀/에스퍼 타입) — 기본 스탯 합계 325"
+summary: "#102 아라리 (풀 / 에스퍼) — GO 최대 CP: 1,175"
 evolution_line: "exeggcute"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "exeggcute"
 | 타입 | 풀 / 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레(×4), 고스트, 불꽃, 얼음, 악 |
+| 저항 | 격투, 땅, 물, 풀, 전기, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-seed|기관총]], [[move-confusion|염동력]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-psychic|사이코키네시스]], [[move-seed-bomb|씨폭탄]]

@@ -3,7 +3,7 @@ title: "Roserade / 로즈레이드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-grass", "type-poison", "evo-line-roserade"]
 aliases: ["로즈레이드", "roserade"]
 summary: "#407 로즈레이드 (풀 / 독) — GO 최대 CP: 2,971"
@@ -36,6 +36,13 @@ evolution_line: "roserade"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|253위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|241위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 불꽃, 에스퍼, 얼음 |
+| 저항 | 격투, 물, 풀(×¼), 전기, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-poison-jab|독찌르기]], [[move-razor-leaf|잎날가르기]], [[move-bullet-seed|기관총]], [[move-magical-leaf|메지컬리프]], [[move-poison-sting|독침]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-grass-knot|풀묶기]], [[move-sludge-bomb|오물폭탄]], [[move-solar-beam|솔라빔]], Weather Ball Fire, [[move-leaf-storm|리프스톰]]  *(커뮤니티 데이/전용: [[move-bullet-seed|기관총]], Weather Ball Fire)*

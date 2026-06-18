@@ -3,7 +3,7 @@ title: "Flamigo / 꼬이밍고"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-flying", "type-fighting", "evo-line-flamigo"]
 aliases: ["꼬이밍고", "flamigo"]
 summary: "#973 꼬이밍고 (비행 / 격투) — GO 최대 CP: 2,757"
@@ -35,6 +35,14 @@ evolution_line: "flamigo"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|244위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|210위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 전기, 에스퍼, 얼음, 페어리 |
+| 저항 | 격투, 벌레(×¼), 풀, 악 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-wing-attack|날개치기]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-brave-bird|브레이브버드]], [[move-upper-hand|기선제압]]

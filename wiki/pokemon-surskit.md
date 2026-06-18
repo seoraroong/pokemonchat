@@ -3,7 +3,7 @@ title: "Surskit / 비구술"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-bug", "type-water", "evo-line-surskit"]
 aliases: ["비구술", "surskit"]
 summary: "#283 비구술 (벌레 / 물) — GO 최대 CP: 791"
@@ -33,6 +33,13 @@ evolution_line: "surskit"
 | 타입 | 벌레 / 물 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 전기 |
+| 저항 | 격투, 땅, 강철, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-bug-bite|벌레먹음]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-bubble-beam|거품광선]], [[move-signal-beam|시그널빔]]

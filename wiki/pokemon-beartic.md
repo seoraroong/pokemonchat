@@ -3,10 +3,10 @@ title: "Beartic / 툰베어"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ice", "type-none", "evo-line-beartic"]
 aliases: ["툰베어", "beartic"]
-summary: "#614 툰베어 (얼음 / none) — GO 최대 CP: 3,042"
+summary: "#614 툰베어 (얼음) — GO 최대 CP: 3,042"
 evolution_line: "beartic"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "beartic"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|248위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-ice-punch|냉동펀치]], [[move-surf|파도타기]], [[move-play-rough|치근거리기]], [[move-liquidation|아쿠아브레이크]]

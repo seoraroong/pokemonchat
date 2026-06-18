@@ -3,10 +3,10 @@ title: "Wobbuffet / 마자용"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-psychic", "type-none", "evo-line-wobbuffet"]
 aliases: ["마자용", "wobbuffet"]
-summary: "#202 마자용 (에스퍼 / none) — GO 최대 CP: 1,026"
+summary: "#202 마자용 (에스퍼) — GO 최대 CP: 1,026"
 evolution_line: "wobbuffet"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "wobbuffet"
 | 타입 | 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-splash|튀어오르기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-mirror-coat|미러코트]]

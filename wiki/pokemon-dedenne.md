@@ -3,7 +3,7 @@ title: "Dedenne / 데덴네"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-electric", "type-fairy", "evo-line-dedenne"]
 aliases: ["데덴네", "dedenne"]
 summary: "#702 데덴네 (전기 / 페어리) — GO 최대 CP: 1,841"
@@ -34,6 +34,14 @@ evolution_line: "dedenne"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|228위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 땅 |
+| 저항 | 격투, 비행, 벌레, 전기, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-play-rough|치근거리기]], [[move-parabolic-charge|파라볼라차지]]

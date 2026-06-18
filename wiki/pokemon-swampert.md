@@ -3,7 +3,7 @@ title: "Swampert / 대짱이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-ground", "evo-line-swampert"]
 aliases: ["대짱이", "swampert"]
 summary: "#260 대짱이 (물 / 땅) — GO 최대 CP: 2,974"
@@ -36,6 +36,14 @@ evolution_line: "swampert"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|39위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|103위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀(×4) |
+| 저항 | 독, 바위, 강철, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-sludge-wave|오물웨이브]], [[move-surf|파도타기]], [[move-hydro-cannon|하이드로캐논]], [[move-muddy-water|탁류]], [[move-sludge|오물공격]]  *(커뮤니티 데이/전용: [[move-hydro-cannon|하이드로캐논]])*

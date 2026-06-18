@@ -3,7 +3,7 @@ title: "Noibat / 음뱃"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-flying", "type-dragon", "evo-line-noibat"]
 aliases: ["음뱃", "noibat"]
 summary: "#714 음뱃 (비행 / 드래곤) — GO 최대 CP: 667"
@@ -33,6 +33,14 @@ evolution_line: "noibat"
 | 타입 | 비행 / 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 얼음(×4), 드래곤, 페어리 |
+| 저항 | 격투, 벌레, 불꽃, 물, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-wing-attack|날개치기]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-dragon-pulse|용의파동]], [[move-air-cutter|에어컷터]], [[move-heat-wave|열풍]]

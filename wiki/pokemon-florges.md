@@ -3,10 +3,10 @@ title: "Florges / 플라제스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fairy", "type-none", "evo-line-florges"]
 aliases: ["플라제스", "florges"]
-summary: "#671 플라제스 (페어리 / none) — GO 최대 CP: 3,234"
+summary: "#671 플라제스 (페어리) — GO 최대 CP: 3,234"
 evolution_line: "florges"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "florges"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|6위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|33위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-vine-whip|덩굴채찍]], [[move-tackle|몸통박치기]], [[move-razor-leaf|잎날가르기]], [[move-fairy-wind|요정의바람]]
 - **스페셜 기술:** [[move-moonblast|문포스]], [[move-petal-blizzard|꽃보라]], [[move-psychic|사이코키네시스]], [[move-disarming-voice|차밍보이스]], [[move-trailblaze|Trailblaze]], [[move-chilling-water|Chilling Water]]  *(커뮤니티 데이/전용: [[move-chilling-water|Chilling Water]])*

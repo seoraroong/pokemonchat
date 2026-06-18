@@ -3,10 +3,10 @@ title: "Greavard / 망망이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-ghost", "type-none", "evo-line-greavard"]
 aliases: ["망망이", "greavard"]
-summary: "#971 망망이 (고스트 / none) — GO 최대 CP: 1,016"
+summary: "#971 망망이 (고스트) — GO 최대 CP: 1,016"
 evolution_line: "greavard"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "greavard"
 | 타입 | 고스트 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 악 |
+| 저항 | 독, 벌레 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-lick|핥기]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-dig|구멍파기]], [[move-psychic-fangs|사이코팽]]

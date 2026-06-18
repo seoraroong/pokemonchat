@@ -3,10 +3,10 @@ title: "Bulbasaur / 이상해씨"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-grass", "type-poison", "evo-line-bulbasaur"]
 aliases: ["이상해씨", "bulbasaur"]
-summary: "#001 이상해씨 (풀/독 타입) — 기본 스탯 합계 318"
+summary: "#001 이상해씨 (풀 / 독) — GO 최대 CP: 1,115"
 evolution_line: "bulbasaur"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "bulbasaur"
 | 타입 | 풀 / 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 불꽃, 에스퍼, 얼음 |
+| 저항 | 격투, 물, 풀(×¼), 전기, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-vine-whip|덩굴채찍]]
 - **스페셜 기술:** [[move-power-whip|파워휩]], [[move-seed-bomb|씨폭탄]], [[move-sludge-bomb|오물폭탄]]

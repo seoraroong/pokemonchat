@@ -3,10 +3,10 @@ title: "Gyarados / 갸라도스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "type-flying", "evo-line-magikarp"]
 aliases: ["갸라도스", "gyarados"]
-summary: "#130 갸라도스 (물/비행 타입) — 기본 스탯 합계 540"
+summary: "#130 갸라도스 (물 / 비행) — GO 최대 CP: 3,391"
 evolution_line: "magikarp"
 ---
 
@@ -73,6 +73,14 @@ evolution_line: "magikarp"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|51위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|57위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기(×4) |
+| 저항 | 격투, 벌레, 강철, 불꽃, 물 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-dragon-breath|용의숨결]], [[move-dragon-tail|드래곤테일]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-dragon-pulse|용의파동]], [[move-hydro-pump|하이드로펌프]], [[move-outrage|역린]], [[move-twister|회오리]], [[move-aqua-tail|아쿠아테일]]  *(커뮤니티 데이/전용: [[move-dragon-tail|드래곤테일]], [[move-dragon-pulse|용의파동]], [[move-aqua-tail|아쿠아테일]])*

@@ -3,10 +3,10 @@ title: "Dusknoir / 야느와르몽"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ghost", "type-none", "evo-line-dusknoir"]
 aliases: ["야느와르몽", "dusknoir"]
-summary: "#477 야느와르몽 (고스트 / none) — GO 최대 CP: 2,388"
+summary: "#477 야느와르몽 (고스트) — GO 최대 CP: 2,388"
 evolution_line: "dusknoir"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "dusknoir"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|87위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|29위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 악 |
+| 저항 | 독, 벌레 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-hex|병상첨병]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-ominous-wind|괴상한바람]], [[move-psychic|사이코키네시스]], [[move-shadow-ball|섀도볼]], [[move-poltergeist|폴터가이스트]], [[move-shadow-punch|섀도펀치]], [[move-dynamic-punch|폭발펀치]]  *(커뮤니티 데이/전용: [[move-shadow-ball|섀도볼]])*

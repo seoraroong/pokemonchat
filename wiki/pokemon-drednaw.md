@@ -3,7 +3,7 @@ title: "Drednaw / 갈가부기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-water", "type-rock", "evo-line-drednaw"]
 aliases: ["갈가부기", "drednaw"]
 summary: "#834 갈가부기 (물 / 바위) — GO 최대 CP: 2,838"
@@ -33,6 +33,13 @@ evolution_line: "drednaw"
 | 타입 | 물 / 바위 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-waterfall|폭포오르기]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-surf|파도타기]], [[move-rock-blast|락블레스트]], [[move-crunch|깨물어부수기]]

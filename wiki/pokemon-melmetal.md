@@ -3,10 +3,10 @@ title: "Melmetal / 멜메탈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-steel", "type-none", "evo-line-melmetal"]
 aliases: ["멜메탈", "melmetal"]
-summary: "#809 멜메탈 (강철 / none) — GO 최대 CP: 3,599"
+summary: "#809 멜메탈 (강철) — GO 최대 CP: 3,599"
 evolution_line: "melmetal"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "melmetal"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|65위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|37위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레, 강철, 풀, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-flash-cannon|러스터캐논]], [[move-hyper-beam|파괴광선]], [[move-rock-slide|스톤샤워]], [[move-thunderbolt|10만볼트]], Super Power, [[move-double-iron-bash|더블펀처]], [[move-dynamic-punch|폭발펀치]]  *(커뮤니티 데이/전용: [[move-double-iron-bash|더블펀처]])*

@@ -3,7 +3,7 @@ title: "Palkia / 펄기아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-water", "type-dragon", "evo-line-palkia"]
 aliases: ["펄기아", "palkia"]
 summary: "#484 펄기아 (물 / 드래곤) — GO 최대 CP: 3,991"
@@ -35,6 +35,13 @@ evolution_line: "palkia"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|221위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|26위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 드래곤, 페어리 |
+| 저항 | 강철, 불꽃(×¼), 물(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-dragon-tail|드래곤테일]]
 - **스페셜 기술:** [[move-draco-meteor|용성군]], [[move-fire-blast|불대문자]], [[move-hydro-pump|하이드로펌프]], [[move-aqua-tail|아쿠아테일]]

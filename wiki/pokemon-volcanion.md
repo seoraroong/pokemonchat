@@ -3,7 +3,7 @@ title: "Volcanion / 볼케니온"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fire", "type-water", "evo-line-volcanion"]
 aliases: ["볼케니온", "volcanion"]
 summary: "#721 볼케니온 (불꽃 / 물) — GO 최대 CP: 3,628"
@@ -35,6 +35,13 @@ evolution_line: "volcanion"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|305위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|61위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 전기 |
+| 저항 | 벌레, 강철(×¼), 불꽃(×¼), 얼음(×¼), 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-incinerate|불태우기]], [[move-water-gun|물대포]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-hydro-pump|하이드로펌프]], [[move-overheat|오버히트]], [[move-earth-power|대지의힘]], [[move-sludge-bomb|오물폭탄]], [[move-scald|열탕]]

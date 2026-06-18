@@ -3,10 +3,10 @@ title: "Milotic / 밀로틱"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-none", "evo-line-milotic"]
 aliases: ["밀로틱", "milotic"]
-summary: "#350 밀로틱 (물 / none) — GO 최대 CP: 3,005"
+summary: "#350 밀로틱 (물) — GO 최대 CP: 3,005"
 evolution_line: "milotic"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "milotic"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|37위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|99위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-hyper-beam|파괴광선]], [[move-surf|파도타기]], [[move-wrap|김밥말이]], [[move-aqua-tail|아쿠아테일]]

@@ -3,10 +3,10 @@ title: "Cufant / 끼리동"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-steel", "type-none", "evo-line-cufant"]
 aliases: ["끼리동", "cufant"]
-summary: "#878 끼리동 (강철 / none) — GO 최대 CP: 1,377"
+summary: "#878 끼리동 (강철) — GO 최대 CP: 1,377"
 evolution_line: "cufant"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "cufant"
 | 타입 | 강철 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레, 강철, 풀, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-iron-head|아이언헤드]], [[move-dig|구멍파기]], [[move-play-rough|치근거리기]]

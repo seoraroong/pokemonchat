@@ -3,10 +3,10 @@ title: "Rookidee / 파라꼬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-flying", "type-none", "evo-line-rookidee"]
 aliases: ["파라꼬", "rookidee"]
-summary: "#821 파라꼬 (비행 / none) — GO 최대 CP: 666"
+summary: "#821 파라꼬 (비행) — GO 최대 CP: 666"
 evolution_line: "rookidee"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "rookidee"
 | 타입 | 비행 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 격투, 벌레, 풀 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-air-slash|에어슬래시]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-sky-attack|불새]], [[move-payback|보복]]

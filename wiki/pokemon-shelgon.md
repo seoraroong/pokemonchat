@@ -3,10 +3,10 @@ title: "Shelgon / 쉘곤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dragon", "type-none", "evo-line-shelgon"]
 aliases: ["쉘곤", "shelgon"]
-summary: "#372 쉘곤 (드래곤 / none) — GO 최대 CP: 2,031"
+summary: "#372 쉘곤 (드래곤) — GO 최대 CP: 2,031"
 evolution_line: "shelgon"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "shelgon"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|63위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|283위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-ember|불꽃세례]]
 - **스페셜 기술:** [[move-dragon-pulse|용의파동]], [[move-flamethrower|화염방사]], [[move-twister|회오리]], [[move-crunch|깨물어부수기]]

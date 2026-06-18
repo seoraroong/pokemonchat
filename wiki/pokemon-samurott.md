@@ -3,10 +3,10 @@ title: "Samurott / 대검귀"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-none", "evo-line-samurott"]
 aliases: ["대검귀", "samurott"]
-summary: "#503 대검귀 (물 / none) — GO 최대 CP: 2,826"
+summary: "#503 대검귀 (물) — GO 최대 CP: 2,826"
 evolution_line: "samurott"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "samurott"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|67위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|246위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fury-cutter|연속자르기]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-hydro-pump|하이드로펌프]], [[move-blizzard|눈보라]], [[move-megahorn|메가폰]], [[move-razor-shell|셸블레이드]], [[move-hydro-cannon|하이드로캐논]], [[move-liquidation|아쿠아브레이크]]  *(커뮤니티 데이/전용: [[move-hydro-cannon|하이드로캐논]])*

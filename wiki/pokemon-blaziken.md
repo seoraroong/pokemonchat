@@ -3,7 +3,7 @@ title: "Blaziken / 번치코"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-fire", "type-fighting", "evo-line-blaziken"]
 aliases: ["번치코", "blaziken"]
 summary: "#257 번치코 (불꽃 / 격투) — GO 최대 CP: 2,848"
@@ -35,6 +35,13 @@ evolution_line: "blaziken"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|231위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|179위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 땅, 물, 에스퍼 |
+| 저항 | 벌레(×¼), 강철, 불꽃, 풀, 얼음, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-fire-spin|회오리불꽃]], [[move-ember|불꽃세례]]
 - **스페셜 기술:** [[move-brave-bird|브레이브버드]], [[move-focus-blast|기합구슬]], [[move-overheat|오버히트]], [[move-stone-edge|스톤에지]], [[move-blast-burn|블러스트번]], [[move-blaze-kick|브레이즈킥]], [[move-aura-sphere|파동탄]]  *(커뮤니티 데이/전용: [[move-blast-burn|블러스트번]], [[move-stone-edge|스톤에지]])*

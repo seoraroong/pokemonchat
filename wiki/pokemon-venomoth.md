@@ -3,10 +3,10 @@ title: "Venomoth / 도나리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-bug", "type-poison", "evo-line-venonat"]
 aliases: ["도나리", "venomoth"]
-summary: "#049 도나리 (벌레/독 타입) — 기본 스탯 합계 450"
+summary: "#049 도나리 (벌레 / 독) — GO 최대 CP: 2,082"
 evolution_line: "venonat"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "venonat"
 | 타입 | 벌레 / 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃, 에스퍼 |
+| 저항 | 격투(×¼), 독, 벌레, 풀(×¼), 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-confusion|염동력]], [[move-infestation|엉겨붙기]], [[move-psywave|사이코웨이브]]
 - **스페셜 기술:** [[move-bug-buzz|벌레의야단법석]], [[move-poison-fang|독엄니]], [[move-psychic|사이코키네시스]], [[move-silver-wind|은빛바람]]  *(커뮤니티 데이/전용: [[move-bug-bite|벌레먹음]])*

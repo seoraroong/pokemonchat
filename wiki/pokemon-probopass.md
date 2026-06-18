@@ -3,7 +3,7 @@ title: "Probopass / 대코파스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-rock", "type-steel", "evo-line-probopass"]
 aliases: ["대코파스", "probopass"]
 summary: "#476 대코파스 (바위 / 강철) — GO 최대 CP: 2,080"
@@ -33,6 +33,14 @@ evolution_line: "probopass"
 | 타입 | 바위 / 강철 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투(×4), 땅(×4), 물 |
+| 저항 | 노말(×¼), 비행(×¼), 바위, 벌레, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-throw|돌떨구기]], [[move-spark|스파크]]
 - **스페셜 기술:** [[move-magnet-bomb|마그넷봄]], [[move-rock-slide|스톤샤워]], [[move-thunderbolt|10만볼트]], [[move-zap-cannon|전자포]]

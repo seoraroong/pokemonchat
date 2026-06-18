@@ -3,7 +3,7 @@ title: "Forretress / 쏘콘"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-bug", "type-steel", "evo-line-forretress"]
 aliases: ["쏘콘", "forretress"]
 summary: "#205 쏘콘 (벌레 / 강철) — GO 최대 CP: 2,282"
@@ -35,6 +35,14 @@ evolution_line: "forretress"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|10위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|14위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 불꽃(×4) |
+| 저항 | 노말, 벌레, 강철, 풀(×¼), 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-struggle-bug|벌레의저항]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-heavy-slam|헤비봄버]], [[move-rock-tomb|암석봉인]], [[move-sand-tomb|모래지옥]], [[move-mirror-shot|미러숏]]

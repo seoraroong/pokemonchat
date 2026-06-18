@@ -3,10 +3,10 @@ title: "Lopunny / 이어롭"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-normal", "type-none", "evo-line-lopunny"]
 aliases: ["이어롭", "lopunny"]
-summary: "#428 이어롭 (노말 / none) — GO 최대 CP: 2,059"
+summary: "#428 이어롭 (노말) — GO 최대 CP: 2,059"
 evolution_line: "lopunny"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "lopunny"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|355위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-pound|막치기]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-fire-punch|불꽃펀치]], [[move-focus-blast|기합구슬]], [[move-hyper-beam|파괴광선]], [[move-triple-axel|트리플악셀]], [[move-thunder-punch|번개펀치]], [[move-shadow-ball|섀도볼]]

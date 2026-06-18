@@ -3,7 +3,7 @@ title: "Wyrdeer / 신비록"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-normal", "type-psychic", "evo-line-wyrdeer"]
 aliases: ["신비록", "wyrdeer"]
 summary: "#899 신비록 (노말 / 에스퍼) — GO 최대 CP: 2,732"
@@ -35,6 +35,14 @@ evolution_line: "wyrdeer"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|354위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|362위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 악 |
+| 저항 | 에스퍼 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-zen-headbutt|사념의박치기]], [[move-confusion|염동력]]
 - **스페셜 기술:** [[move-megahorn|메가폰]], [[move-stomp|짓밟기]], [[move-wild-charge|와일드볼트]], [[move-psychic|사이코키네시스]]

@@ -3,10 +3,10 @@ title: "Regieleki / 레지에레키"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-electric", "type-none", "evo-line-regieleki"]
 aliases: ["레지에레키", "regieleki"]
-summary: "#894 레지에레키 (전기 / none) — GO 최대 CP: 2,803"
+summary: "#894 레지에레키 (전기) — GO 최대 CP: 2,803"
 evolution_line: "regieleki"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "regieleki"
 | 버디 거리 | 20km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|359위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-lock-on|록온]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** [[move-zap-cannon|전자포]], [[move-thunder|번개]], [[move-hyper-beam|파괴광선]], [[move-thunder-cage|썬더프리즌]]  *(커뮤니티 데이/전용: [[move-thunder-cage|썬더프리즌]])*

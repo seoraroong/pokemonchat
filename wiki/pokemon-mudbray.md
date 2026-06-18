@@ -3,10 +3,10 @@ title: "Mudbray / 머드나기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-ground", "type-none", "evo-line-mudbray"]
 aliases: ["머드나기", "mudbray"]
-summary: "#749 머드나기 (땅 / none) — GO 최대 CP: 1,892"
+summary: "#749 머드나기 (땅) — GO 최대 CP: 1,892"
 evolution_line: "mudbray"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "mudbray"
 | 타입 | 땅 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-bulldoze|땅고르기]], [[move-body-slam|누르기]], [[move-earthquake|지진]]

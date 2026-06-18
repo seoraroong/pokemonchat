@@ -3,10 +3,10 @@ title: "Dragonair / 신뇽"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-dragon", "evo-line-dratini"]
 aliases: ["신뇽", "dragonair"]
-summary: "#148 신뇽 (드래곤 타입) — 기본 스탯 합계 420"
+summary: "#148 신뇽 (드래곤) — GO 최대 CP: 1,780"
 evolution_line: "dratini"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "dratini"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|93위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-iron-tail|아이언테일]]
 - **스페셜 기술:** [[move-aqua-tail|아쿠아테일]], [[move-dragon-pulse|용의파동]], [[move-wrap|김밥말이]], [[move-body-slam|누르기]]

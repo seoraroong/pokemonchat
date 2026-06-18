@@ -3,10 +3,10 @@ title: "Bouffalant / 버프론"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-none", "evo-line-bouffalant"]
 aliases: ["버프론", "bouffalant"]
-summary: "#626 버프론 (노말 / none) — GO 최대 CP: 2,797"
+summary: "#626 버프론 (노말) — GO 최대 CP: 2,797"
 evolution_line: "bouffalant"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "bouffalant"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|467위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|369위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-zen-headbutt|사념의박치기]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-megahorn|메가폰]], [[move-stomp|짓밟기]], [[move-skull-bash|로케트박치기]], [[move-earthquake|지진]]

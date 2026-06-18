@@ -3,7 +3,7 @@ title: "Sneasler / 포푸니크"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-fighting", "type-poison", "evo-line-sneasler"]
 aliases: ["포푸니크", "sneasler"]
 summary: "#903 포푸니크 (격투 / 독) — GO 최대 CP: 3,222"
@@ -34,6 +34,13 @@ evolution_line: "sneasler"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|192위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 땅, 에스퍼(×4) |
+| 저항 | 격투, 독, 바위, 벌레(×¼), 풀, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-poison-jab|독찌르기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-close-combat|인파이트]], X Scissor

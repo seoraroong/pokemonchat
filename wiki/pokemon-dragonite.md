@@ -3,10 +3,10 @@ title: "Dragonite / 망나뇽"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-dragon", "type-flying", "evo-line-dratini"]
 aliases: ["망나뇽", "dragonite"]
-summary: "#149 망나뇽 (드래곤/비행 타입) — 기본 스탯 합계 600"
+summary: "#149 망나뇽 (드래곤 / 비행) — GO 최대 CP: 3,792"
 evolution_line: "dratini"
 ---
 
@@ -73,6 +73,14 @@ evolution_line: "dratini"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|299위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|62위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 얼음(×4), 드래곤, 페어리 |
+| 저항 | 격투, 벌레, 불꽃, 물, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-dragon-tail|드래곤테일]], [[move-steel-wing|강철날개]]
 - **스페셜 기술:** [[move-draco-meteor|용성군]], [[move-dragon-claw|드래곤크루]], [[move-dragon-pulse|용의파동]], [[move-hurricane|폭풍]], [[move-hyper-beam|파괴광선]], [[move-outrage|역린]], Super Power, [[move-thunder-punch|번개펀치]]  *(커뮤니티 데이/전용: [[move-draco-meteor|용성군]], [[move-dragon-pulse|용의파동]])*

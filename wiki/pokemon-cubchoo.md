@@ -3,10 +3,10 @@ title: "Cubchoo / 코고미"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ice", "type-none", "evo-line-cubchoo"]
 aliases: ["코고미", "cubchoo"]
-summary: "#613 코고미 (얼음 / none) — GO 최대 CP: 1,069"
+summary: "#613 코고미 (얼음) — GO 최대 CP: 1,069"
 evolution_line: "cubchoo"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "cubchoo"
 | 타입 | 얼음 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-ice-punch|냉동펀치]], [[move-icy-wind|얼다바람]], [[move-play-rough|치근거리기]]

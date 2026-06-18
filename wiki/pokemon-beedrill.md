@@ -3,10 +3,10 @@ title: "Beedrill / 독침붕"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-bug", "type-poison", "evo-line-weedle"]
 aliases: ["독침붕", "beedrill"]
-summary: "#015 독침붕 (벌레/독 타입) — 기본 스탯 합계 395"
+summary: "#015 독침붕 (벌레 / 독) — GO 최대 CP: 1,846"
 evolution_line: "weedle"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "weedle"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|453위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃, 에스퍼 |
+| 저항 | 격투(×¼), 독, 벌레, 풀(×¼), 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-infestation|엉겨붙기]], [[move-poison-jab|독찌르기]], [[move-poison-sting|독침]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-sludge-bomb|오물폭탄]], X Scissor, [[move-fell-stinger|마지막일침]], [[move-drill-run|드릴라이너]]  *(커뮤니티 데이/전용: [[move-bug-bite|벌레먹음]], [[move-drill-run|드릴라이너]])*

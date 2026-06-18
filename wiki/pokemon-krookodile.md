@@ -3,7 +3,7 @@ title: "Krookodile / 악비아르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ground", "type-dark", "evo-line-krookodile"]
 aliases: ["악비아르", "krookodile"]
 summary: "#553 악비아르 (땅 / 악) — GO 최대 CP: 3,046"
@@ -35,6 +35,14 @@ evolution_line: "krookodile"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|490위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|231위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 물, 풀, 얼음, 페어리 |
+| 저항 | 독, 바위, 고스트, 악 |
+| 무효 | 전기, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-snarl|바크아웃]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-crunch|깨물어부수기]], [[move-outrage|역린]], [[move-brick-break|깨트리다]], [[move-sand-tomb|모래지옥]]

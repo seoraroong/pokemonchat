@@ -3,7 +3,7 @@ title: "Gible / 딥상어동"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-dragon", "type-ground", "evo-line-gible"]
 aliases: ["딥상어동", "gible"]
 summary: "#443 딥상어동 (드래곤 / 땅) — GO 최대 CP: 1,112"
@@ -33,6 +33,14 @@ evolution_line: "gible"
 | 타입 | 드래곤 / 땅 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음(×4), 드래곤, 페어리 |
+| 저항 | 독, 바위, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-dig|구멍파기]], [[move-twister|회오리]]

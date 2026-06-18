@@ -3,7 +3,7 @@ title: "Poltchageist / 차데스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-grass", "type-ghost", "evo-line-poltchageist"]
 aliases: ["차데스", "poltchageist"]
 summary: "#1012 차데스 (풀 / 고스트) — GO 최대 CP: 1,139"
@@ -33,6 +33,14 @@ evolution_line: "poltchageist"
 | 타입 | 풀 / 고스트 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 고스트, 불꽃, 얼음, 악 |
+| 저항 | 땅, 물, 풀, 전기 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-energy-ball|에너지볼]], [[move-poltergeist|폴터가이스트]]

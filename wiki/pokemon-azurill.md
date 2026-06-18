@@ -3,7 +3,7 @@ title: "Azurill / 루리리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-fairy", "evo-line-azurill"]
 aliases: ["루리리", "azurill"]
 summary: "#298 루리리 (노말 / 페어리) — GO 최대 CP: 364"
@@ -33,6 +33,14 @@ evolution_line: "azurill"
 | 타입 | 노말 / 페어리 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 벌레, 악 |
+| 무효 | 고스트, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-bubble-beam|거품광선]], [[move-ice-beam|냉동빔]]

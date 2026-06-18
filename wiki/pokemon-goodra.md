@@ -3,10 +3,10 @@ title: "Goodra / 미끄래곤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-dragon", "type-none", "evo-line-goodra"]
 aliases: ["미끄래곤", "goodra"]
-summary: "#706 미끄래곤 (드래곤 / none) — GO 최대 CP: 3,505"
+summary: "#706 미끄래곤 (드래곤) — GO 최대 CP: 3,505"
 evolution_line: "goodra"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "goodra"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|82위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|52위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-dragon-breath|용의숨결]]
 - **스페셜 기술:** [[move-draco-meteor|용성군]], [[move-sludge-wave|오물웨이브]], [[move-muddy-water|탁류]], [[move-power-whip|파워휩]], [[move-aqua-tail|아쿠아테일]], [[move-thunder-punch|번개펀치]]  *(커뮤니티 데이/전용: [[move-thunder-punch|번개펀치]])*

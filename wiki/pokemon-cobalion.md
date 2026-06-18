@@ -3,7 +3,7 @@ title: "Cobalion / 코바르온"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-steel", "type-fighting", "evo-line-cobalion"]
 aliases: ["코바르온", "cobalion"]
 summary: "#638 코바르온 (강철 / 격투) — GO 최대 CP: 3,022"
@@ -35,6 +35,14 @@ evolution_line: "cobalion"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|74위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|101위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃 |
+| 저항 | 노말, 바위(×¼), 벌레(×¼), 강철, 풀, 얼음, 드래곤, 악 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-zen-headbutt|사념의박치기]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-iron-head|아이언헤드]], [[move-stone-edge|스톤에지]], [[move-sacred-sword|성스러운칼]]  *(커뮤니티 데이/전용: [[move-sacred-sword|성스러운칼]])*

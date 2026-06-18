@@ -3,10 +3,10 @@ title: "Fearow / 깨비드릴조"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "type-flying", "evo-line-spearow"]
 aliases: ["깨비드릴조", "fearow"]
-summary: "#022 깨비드릴조 (노말/비행 타입) — 기본 스탯 합계 442"
+summary: "#022 깨비드릴조 (노말 / 비행) — GO 최대 CP: 1,997"
 evolution_line: "spearow"
 ---
 
@@ -72,6 +72,14 @@ evolution_line: "spearow"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|65위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|357위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-steel-wing|강철날개]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-drill-run|드릴라이너]], [[move-sky-attack|불새]], [[move-twister|회오리]], [[move-fly|공중날기]], [[move-drill-peck|회전부리]]  *(커뮤니티 데이/전용: [[move-twister|회오리]])*

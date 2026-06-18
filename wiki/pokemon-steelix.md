@@ -3,7 +3,7 @@ title: "Steelix / 강철톤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-steel", "type-ground", "evo-line-steelix"]
 aliases: ["강철톤", "steelix"]
 summary: "#208 강철톤 (강철 / 땅) — GO 최대 CP: 2,414"
@@ -36,6 +36,14 @@ evolution_line: "steelix"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|63위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|329위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃, 물 |
+| 저항 | 노말, 비행, 바위(×¼), 벌레, 강철, 에스퍼, 드래곤, 페어리 |
+| 무효 | 독, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-iron-tail|아이언테일]], [[move-thunder-fang|번개엄니]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-earthquake|지진]], [[move-heavy-slam|헤비봄버]], [[move-psychic-fangs|사이코팽]], [[move-breaking-swipe|와이드브레이커]]

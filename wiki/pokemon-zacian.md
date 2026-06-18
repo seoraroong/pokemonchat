@@ -3,7 +3,7 @@ title: "Zacian / 자시안"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-fairy", "type-steel", "evo-line-zacian"]
 aliases: ["자시안", "zacian"]
 summary: "#888 자시안 (페어리 / 강철) — GO 최대 CP: 4,979"
@@ -34,6 +34,14 @@ evolution_line: "zacian"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|1위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레(×¼), 풀, 에스퍼, 얼음, 악, 페어리 |
+| 무효 | 독, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-air-slash|에어슬래시]]
 - **스페셜 기술:** [[move-play-rough|치근거리기]], [[move-close-combat|인파이트]], [[move-giga-impact|기가임팩트]], [[move-behemoth-blade|거수참]]

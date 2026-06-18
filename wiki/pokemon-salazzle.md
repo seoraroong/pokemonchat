@@ -3,7 +3,7 @@ title: "Salazzle / 염뉴트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-poison", "type-fire", "evo-line-salazzle"]
 aliases: ["염뉴트", "salazzle"]
 summary: "#758 염뉴트 (독 / 불꽃) — GO 최대 CP: 2,479"
@@ -35,6 +35,13 @@ evolution_line: "salazzle"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|458위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|406위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅(×4), 바위, 물, 에스퍼 |
+| 저항 | 격투, 독, 벌레(×¼), 강철, 불꽃, 풀(×¼), 얼음, 페어리(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-incinerate|불태우기]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** [[move-poison-fang|독엄니]], [[move-fire-blast|불대문자]], [[move-dragon-pulse|용의파동]], [[move-sludge-wave|오물웨이브]]

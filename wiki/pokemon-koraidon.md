@@ -3,7 +3,7 @@ title: "Koraidon / 코라이돈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-fighting", "type-dragon", "evo-line-koraidon"]
 aliases: ["코라이돈", "koraidon"]
 summary: "#1007 코라이돈 (격투 / 드래곤) — GO 최대 CP: 3,973"
@@ -33,6 +33,13 @@ evolution_line: "koraidon"
 | 타입 | 격투 / 드래곤 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 얼음, 드래곤, 페어리(×4) |
+| 저항 | 바위, 벌레, 불꽃, 물, 풀, 전기, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-dragon-tail|드래곤테일]]
 - **스페셜 기술:** [[move-giga-impact|기가임팩트]], [[move-dragon-claw|드래곤크루]], [[move-close-combat|인파이트]], [[move-outrage|역린]]

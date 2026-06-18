@@ -3,7 +3,7 @@ title: "Appletun / 단지래플"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-grass", "type-dragon", "evo-line-appletun"]
 aliases: ["단지래플", "appletun"]
 summary: "#842 단지래플 (풀 / 드래곤) — GO 최대 CP: 2,452"
@@ -34,6 +34,13 @@ evolution_line: "appletun"
 | 버디 거리 | 5km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|439위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 얼음(×4), 드래곤, 페어리 |
+| 저항 | 땅, 물(×¼), 풀(×¼), 전기(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-seed|기관총]], [[move-astonish|놀래키기]]
 - **스페셜 기술:** [[move-dragon-pulse|용의파동]], [[move-energy-ball|에너지볼]], [[move-outrage|역린]], [[move-seed-bomb|씨폭탄]]

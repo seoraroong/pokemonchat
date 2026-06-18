@@ -3,10 +3,10 @@ title: "Mudsdale / 만마드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-ground", "type-none", "evo-line-mudsdale"]
 aliases: ["만마드", "mudsdale"]
-summary: "#750 만마드 (땅 / none) — GO 최대 CP: 3,046"
+summary: "#750 만마드 (땅) — GO 최대 CP: 3,046"
 evolution_line: "mudsdale"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "mudsdale"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|347위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|218위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-bulldoze|땅고르기]], [[move-body-slam|누르기]], [[move-earthquake|지진]], [[move-heavy-slam|헤비봄버]]

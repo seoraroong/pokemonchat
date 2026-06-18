@@ -3,7 +3,7 @@ title: "Magearna / 마기아나"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-steel", "type-fairy", "evo-line-magearna"]
 aliases: ["마기아나", "magearna"]
 summary: "#801 마기아나 (강철 / 페어리) — GO 최대 CP: 3,615"
@@ -33,6 +33,14 @@ evolution_line: "magearna"
 | 타입 | 강철 / 페어리 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레(×¼), 풀, 에스퍼, 얼음, 악, 페어리 |
+| 무효 | 독, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-struggle|발버둥]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

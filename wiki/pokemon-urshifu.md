@@ -3,7 +3,7 @@ title: "Urshifu / 우라오스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-fighting", "type-water", "evo-line-urshifu"]
 aliases: ["우라오스", "urshifu"]
 summary: "#892 우라오스 (격투 / 물) — GO 최대 CP: 3,606"
@@ -35,6 +35,13 @@ evolution_line: "urshifu"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|429위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|69위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 풀, 전기, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 강철, 불꽃, 물, 얼음, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-counter|카운터]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-dynamic-punch|폭발펀치]], [[move-close-combat|인파이트]], [[move-aqua-jet|아쿠아제트]]

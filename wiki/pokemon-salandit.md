@@ -3,7 +3,7 @@ title: "Salandit / 야도뇽"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-poison", "type-fire", "evo-line-salandit"]
 aliases: ["야도뇽", "salandit"]
 summary: "#757 야도뇽 (독 / 불꽃) — GO 최대 CP: 1,122"
@@ -33,6 +33,13 @@ evolution_line: "salandit"
 | 타입 | 독 / 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅(×4), 바위, 물, 에스퍼 |
+| 저항 | 격투, 독, 벌레(×¼), 강철, 불꽃, 풀(×¼), 얼음, 페어리(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** [[move-poison-fang|독엄니]], [[move-flamethrower|화염방사]], [[move-dragon-pulse|용의파동]]

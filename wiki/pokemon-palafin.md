@@ -3,10 +3,10 @@ title: "Palafin / 돌핀맨"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-water", "type-none", "evo-line-palafin"]
 aliases: ["돌핀맨", "palafin"]
-summary: "#964 돌핀맨 (물 / none) — GO 최대 CP: 1,927"
+summary: "#964 돌핀맨 (물) — GO 최대 CP: 1,927"
 evolution_line: "palafin"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "palafin"
 | 타입 | 물 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-waterfall|폭포오르기]], [[move-charm|애교부리기]], [[move-counter|카운터]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-water-pulse|물의파동]], [[move-icy-wind|얼다바람]], [[move-drain-punch|드레인펀치]], [[move-acrobatics|애크러뱃]]

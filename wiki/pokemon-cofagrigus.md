@@ -3,10 +3,10 @@ title: "Cofagrigus / 데스니칸"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ghost", "type-none", "evo-line-cofagrigus"]
 aliases: ["데스니칸", "cofagrigus"]
-summary: "#563 데스니칸 (고스트 / none) — GO 최대 CP: 2,273"
+summary: "#563 데스니칸 (고스트) — GO 최대 CP: 2,273"
 evolution_line: "cofagrigus"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "cofagrigus"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|247위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|96위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 악 |
+| 저항 | 독, 벌레 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-zen-headbutt|사념의박치기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-dark-pulse|악의파동]], [[move-psychic|사이코키네시스]]

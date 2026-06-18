@@ -3,7 +3,7 @@ title: "Coalossal / 석탄산"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-rock", "type-fire", "evo-line-coalossal"]
 aliases: ["석탄산", "coalossal"]
 summary: "#839 석탄산 (바위 / 불꽃) — GO 최대 CP: 2,352"
@@ -36,6 +36,13 @@ evolution_line: "coalossal"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|129위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|328위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅(×4), 바위, 물(×4) |
+| 저항 | 노말, 비행, 독, 벌레, 불꽃(×¼), 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-smack-down|떨어뜨리기]], [[move-fire-spin|회오리불꽃]]
 - **스페셜 기술:** [[move-rock-blast|락블레스트]], [[move-rock-slide|스톤샤워]], [[move-flame-charge|니트로차지]]

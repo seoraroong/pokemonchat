@@ -3,10 +3,10 @@ title: "Omastar / 암스타"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-rock", "type-water", "evo-line-omanyte"]
 aliases: ["암스타", "omastar"]
-summary: "#139 암스타 (바위/물 타입) — 기본 스탯 합계 495"
+summary: "#139 암스타 (바위 / 물) — GO 최대 CP: 2,786"
 evolution_line: "omanyte"
 ---
 
@@ -72,6 +72,13 @@ evolution_line: "omanyte"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|366위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-rock-throw|돌떨구기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-hydro-pump|하이드로펌프]], [[move-rock-blast|락블레스트]], [[move-rock-slide|스톤샤워]]  *(커뮤니티 데이/전용: [[move-rock-throw|돌떨구기]], [[move-rock-slide|스톤샤워]])*

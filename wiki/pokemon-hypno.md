@@ -3,10 +3,10 @@ title: "Hypno / 슬리퍼"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-psychic", "evo-line-drowzee"]
 aliases: ["슬리퍼", "hypno"]
-summary: "#097 슬리퍼 (에스퍼 타입) — 기본 스탯 합계 483"
+summary: "#097 슬리퍼 (에스퍼) — GO 최대 CP: 2,090"
 evolution_line: "drowzee"
 ---
 
@@ -72,6 +72,13 @@ evolution_line: "drowzee"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|208위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|308위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-focus-blast|기합구슬]], [[move-future-sight|미래예지]], [[move-psychic|사이코키네시스]], [[move-psyshock|사이코쇼크]], [[move-shadow-ball|섀도볼]], [[move-fire-punch|불꽃펀치]], [[move-ice-punch|냉동펀치]], [[move-thunder-punch|번개펀치]]  *(커뮤니티 데이/전용: [[move-psyshock|사이코쇼크]])*

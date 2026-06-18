@@ -3,10 +3,10 @@ title: "Quaxly / 꾸왁스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-water", "type-none", "evo-line-quaxly"]
 aliases: ["꾸왁스", "quaxly"]
-summary: "#912 꾸왁스 (물 / none) — GO 최대 CP: 1,075"
+summary: "#912 꾸왁스 (물) — GO 최대 CP: 1,075"
 evolution_line: "quaxly"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "quaxly"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-aerial-ace|제비반환]], [[move-liquidation|아쿠아브레이크]]

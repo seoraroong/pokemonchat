@@ -3,10 +3,10 @@ title: "Lechonk / 맛보돈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-normal", "type-none", "evo-line-lechonk"]
 aliases: ["맛보돈", "lechonk"]
-summary: "#915 맛보돈 (노말 / none) — GO 최대 CP: 733"
+summary: "#915 맛보돈 (노말) — GO 최대 CP: 733"
 evolution_line: "lechonk"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "lechonk"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-body-slam|누르기]], [[move-trailblaze|Trailblaze]]

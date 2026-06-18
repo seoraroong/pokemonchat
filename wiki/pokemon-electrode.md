@@ -3,10 +3,10 @@ title: "Electrode / 붐볼"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-electric", "evo-line-voltorb"]
 aliases: ["붐볼", "electrode"]
-summary: "#101 붐볼 (전기 타입) — 기본 스탯 합계 490"
+summary: "#101 붐볼 (전기) — GO 최대 CP: 2,099"
 evolution_line: "voltorb"
 ---
 
@@ -72,6 +72,13 @@ evolution_line: "voltorb"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|313위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|418위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-spark|스파크]], [[move-tackle|몸통박치기]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-hyper-beam|파괴광선]], [[move-thunderbolt|10만볼트]], [[move-foul-play|속임수]]  *(커뮤니티 데이/전용: [[move-tackle|몸통박치기]])*

@@ -3,7 +3,7 @@ title: "Rayquaza / 레쿠쟈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dragon", "type-flying", "evo-line-rayquaza"]
 aliases: ["레쿠쟈", "rayquaza"]
 summary: "#384 레쿠쟈 (드래곤 / 비행) — GO 최대 CP: 3,835"
@@ -36,6 +36,14 @@ evolution_line: "rayquaza"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|351위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|95위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 얼음(×4), 드래곤, 페어리 |
+| 저항 | 격투, 벌레, 불꽃, 물, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-air-slash|에어슬래시]], [[move-dragon-tail|드래곤테일]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-ancient-power|원시의힘]], [[move-outrage|역린]], [[move-hurricane|폭풍]], [[move-breaking-swipe|와이드브레이커]], [[move-dragon-ascent|화룡점정]]  *(커뮤니티 데이/전용: [[move-hurricane|폭풍]], [[move-breaking-swipe|와이드브레이커]], [[move-dragon-ascent|화룡점정]])*

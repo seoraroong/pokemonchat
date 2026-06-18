@@ -3,7 +3,7 @@ title: "Cacturne / 밤선인"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-grass", "type-dark", "evo-line-cacturne"]
 aliases: ["밤선인", "cacturne"]
 summary: "#332 밤선인 (풀 / 악) — GO 최대 CP: 2,298"
@@ -34,6 +34,14 @@ evolution_line: "cacturne"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|447위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 독, 벌레(×4), 불꽃, 얼음, 페어리 |
+| 저항 | 땅, 고스트, 물, 풀, 전기, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-poison-jab|독찌르기]], [[move-sucker-punch|기습]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-dynamic-punch|폭발펀치]], [[move-grass-knot|풀묶기]], [[move-payback|보복]], [[move-trailblaze|Trailblaze]]

@@ -3,10 +3,10 @@ title: "Maushold / 파밀리쥐"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-normal", "type-none", "evo-line-maushold"]
 aliases: ["파밀리쥐", "maushold"]
-summary: "#925 파밀리쥐 (노말 / none) — GO 최대 CP: 1,985"
+summary: "#925 파밀리쥐 (노말) — GO 최대 CP: 1,985"
 evolution_line: "maushold"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "maushold"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|442위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-take-down|돌진]], [[move-mud-shot|머드숏]], [[move-bullet-seed|기관총]]
 - **스페셜 기술:** [[move-swift|스피드스타]], [[move-play-rough|치근거리기]], [[move-crunch|깨물어부수기]]

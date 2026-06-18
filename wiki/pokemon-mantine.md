@@ -3,7 +3,7 @@ title: "Mantine / 만타인"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-flying", "evo-line-mantine"]
 aliases: ["만타인", "mantine"]
 summary: "#226 만타인 (물 / 비행) — GO 최대 CP: 2,108"
@@ -35,6 +35,14 @@ evolution_line: "mantine"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|20위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|132위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기(×4) |
+| 저항 | 격투, 벌레, 강철, 불꽃, 물 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-bullet-seed|기관총]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-ice-beam|냉동빔]], [[move-water-pulse|물의파동]], [[move-bubble-beam|거품광선]], [[move-twister|회오리]]

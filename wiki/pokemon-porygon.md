@@ -3,10 +3,10 @@ title: "Porygon / 폴리곤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "evo-line-porygon"]
 aliases: ["폴리곤", "porygon"]
-summary: "#137 폴리곤 (노말 타입) — 기본 스탯 합계 395"
+summary: "#137 폴리곤 (노말) — GO 최대 CP: 1,720"
 evolution_line: "porygon"
 ---
 
@@ -70,6 +70,14 @@ evolution_line: "porygon"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], Hidden Power Bug, Hidden Power Dark, Hidden Power Dragon, Hidden Power Electric, Hidden Power Fighting, Hidden Power Fire, Hidden Power Flying, Hidden Power Ghost, Hidden Power Grass, Hidden Power Ground, Hidden Power Ice, Hidden Power Poison, Hidden Power Psychic, Hidden Power Rock, Hidden Power Steel, Hidden Power Water, [[move-quick-attack|전광석화]], [[move-tackle|몸통박치기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-hyper-beam|파괴광선]], [[move-psybeam|환상빔]], [[move-signal-beam|시그널빔]], [[move-solar-beam|솔라빔]], [[move-zap-cannon|전자포]]  *(커뮤니티 데이/전용: [[move-tackle|몸통박치기]], [[move-zen-headbutt|사념의박치기]], [[move-signal-beam|시그널빔]], [[move-psybeam|환상빔]], [[move-discharge|방전]])*

@@ -3,7 +3,7 @@ title: "Glimmora / 킬라플로르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-rock", "type-poison", "evo-line-glimmora"]
 aliases: ["킬라플로르", "glimmora"]
 summary: "#970 킬라플로르 (바위 / 독) — GO 최대 CP: 3,273"
@@ -34,6 +34,13 @@ evolution_line: "glimmora"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|364위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅(×4), 강철, 물, 에스퍼 |
+| 저항 | 노말, 비행, 독(×¼), 벌레, 불꽃, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-throw|돌떨구기]], [[move-smack-down|떨어뜨리기]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-power-gem|파워젬]], [[move-sludge-wave|오물웨이브]], [[move-meteor-beam|메테오빔]]

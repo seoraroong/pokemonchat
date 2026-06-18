@@ -3,7 +3,7 @@ title: "Cottonee / 소미안"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-grass", "type-fairy", "evo-line-cottonee"]
 aliases: ["소미안", "cottonee"]
 summary: "#546 소미안 (풀 / 페어리) — GO 최대 CP: 700"
@@ -33,6 +33,14 @@ evolution_line: "cottonee"
 | 타입 | 풀 / 페어리 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독(×4), 강철, 불꽃, 얼음 |
+| 저항 | 격투, 땅, 물, 풀, 전기, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charm|애교부리기]], [[move-razor-leaf|잎날가르기]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-seed-bomb|씨폭탄]], [[move-grass-knot|풀묶기]]

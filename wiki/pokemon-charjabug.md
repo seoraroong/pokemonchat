@@ -3,7 +3,7 @@ title: "Charjabug / 전지충이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-bug", "type-electric", "evo-line-charjabug"]
 aliases: ["전지충이", "charjabug"]
 summary: "#737 전지충이 (벌레 / 전기) — GO 최대 CP: 1,697"
@@ -34,6 +34,13 @@ evolution_line: "charjabug"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|42위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 불꽃 |
+| 저항 | 격투, 강철, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-spark|스파크]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** X Scissor, [[move-discharge|방전]], [[move-crunch|깨물어부수기]]  *(커뮤니티 데이/전용: [[move-volt-switch|볼트체인지]])*

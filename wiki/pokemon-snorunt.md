@@ -3,10 +3,10 @@ title: "Snorunt / 눈꼬마"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-ice", "type-none", "evo-line-snorunt"]
 aliases: ["눈꼬마", "snorunt"]
-summary: "#361 눈꼬마 (얼음 / none) — GO 최대 CP: 888"
+summary: "#361 눈꼬마 (얼음) — GO 최대 CP: 888"
 evolution_line: "snorunt"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "snorunt"
 | 타입 | 얼음 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-hex|병상첨병]], [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-avalanche|눈사태]], [[move-icy-wind|얼다바람]], [[move-shadow-ball|섀도볼]]

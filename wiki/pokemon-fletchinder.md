@@ -3,7 +3,7 @@ title: "Fletchinder / 불화살빈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fire", "type-flying", "evo-line-fletchinder"]
 aliases: ["불화살빈", "fletchinder"]
 summary: "#662 불화살빈 (불꽃 / 비행) — GO 최대 CP: 1,469"
@@ -34,6 +34,14 @@ evolution_line: "fletchinder"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|346위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위(×4), 물, 전기 |
+| 저항 | 격투, 벌레(×¼), 강철, 불꽃, 풀(×¼), 페어리 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-ember|불꽃세례]], [[move-steel-wing|강철날개]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-heat-wave|열풍]], [[move-flame-charge|니트로차지]], [[move-fly|공중날기]]

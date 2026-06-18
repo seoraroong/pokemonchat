@@ -3,7 +3,7 @@ title: "Abomasnow / 눈설왕"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-grass", "type-ice", "evo-line-abomasnow"]
 aliases: ["눈설왕", "abomasnow"]
 summary: "#460 눈설왕 (풀 / 얼음) — GO 최대 CP: 2,362"
@@ -35,6 +35,13 @@ evolution_line: "abomasnow"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|146위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|128위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 독, 바위, 벌레, 강철, 불꽃(×4) |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]], [[move-razor-leaf|잎날가르기]], [[move-leafage|나뭇잎]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-energy-ball|에너지볼]], [[move-outrage|역린]], Weather Ball Ice, [[move-icy-wind|얼다바람]]

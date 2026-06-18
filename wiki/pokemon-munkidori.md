@@ -3,7 +3,7 @@ title: "Munkidori / 이야후"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-poison", "type-psychic", "evo-line-munkidori"]
 aliases: ["이야후", "munkidori"]
 summary: "#1015 이야후 (독 / 에스퍼) — GO 최대 CP: 2,938"
@@ -33,6 +33,13 @@ evolution_line: "munkidori"
 | 타입 | 독 / 에스퍼 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 악 |
+| 저항 | 격투(×¼), 독, 풀, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-poison-jab|독찌르기]], [[move-confusion|염동력]]
 - **스페셜 기술:** [[move-sludge-bomb|오물폭탄]], [[move-future-sight|미래예지]], [[move-psychic|사이코키네시스]]

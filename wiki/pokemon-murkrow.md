@@ -3,7 +3,7 @@ title: "Murkrow / 니로우"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-dark", "type-flying", "evo-line-murkrow"]
 aliases: ["니로우", "murkrow"]
 summary: "#198 니로우 (악 / 비행) — GO 최대 CP: 1,562"
@@ -34,6 +34,14 @@ evolution_line: "murkrow"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|214위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음, 페어리 |
+| 저항 | 고스트, 풀, 악 |
+| 무효 | 땅, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-peck|쪼기]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-drill-peck|회전부리]], [[move-foul-play|속임수]]

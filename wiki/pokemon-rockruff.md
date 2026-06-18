@@ -3,10 +3,10 @@ title: "Rockruff / 암멍이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-rock", "type-none", "evo-line-rockruff"]
 aliases: ["암멍이", "rockruff"]
-summary: "#744 암멍이 (바위 / none) — GO 최대 CP: 950"
+summary: "#744 암멍이 (바위) — GO 최대 CP: 950"
 evolution_line: "rockruff"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "rockruff"
 | 타입 | 바위 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀 |
+| 저항 | 노말, 비행, 독, 불꽃 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-rock-throw|돌떨구기]]
 - **스페셜 기술:** [[move-stone-edge|스톤에지]], [[move-rock-tomb|암석봉인]], [[move-crunch|깨물어부수기]], [[move-trailblaze|Trailblaze]]

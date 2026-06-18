@@ -3,10 +3,10 @@ title: "Xurkitree / 전수목"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-electric", "type-none", "evo-line-xurkitree"]
 aliases: ["전수목", "xurkitree"]
-summary: "#796 전수목 (전기 / none) — GO 최대 CP: 3,937"
+summary: "#796 전수목 (전기) — GO 최대 CP: 3,937"
 evolution_line: "xurkitree"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "xurkitree"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|124위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-spark|스파크]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-thunder|번개]], [[move-power-whip|파워휩]], [[move-dazzling-gleam|매지컬샤인]]

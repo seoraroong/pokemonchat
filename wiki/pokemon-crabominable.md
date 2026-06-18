@@ -3,7 +3,7 @@ title: "Crabominable / 모단단게"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-fighting", "type-ice", "evo-line-crabominable"]
 aliases: ["모단단게", "crabominable"]
 summary: "#740 모단단게 (격투 / 얼음) — GO 최대 CP: 2,907"
@@ -34,6 +34,13 @@ evolution_line: "crabominable"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|358위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 강철, 불꽃, 에스퍼, 페어리 |
+| 저항 | 벌레, 얼음, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-bubble|거품]]
 - **스페셜 기술:** Power Up Punch, [[move-crabhammer|찝게햄머]], [[move-payback|보복]], [[move-ice-punch|냉동펀치]], [[move-brick-break|깨트리다]]

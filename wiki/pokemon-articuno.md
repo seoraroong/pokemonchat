@@ -3,10 +3,10 @@ title: "Articuno / 프리져"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-ice", "type-flying", "evo-line-articuno", "legendary"]
 aliases: ["프리져", "articuno"]
-summary: "#144 프리져 (얼음/비행 타입) — 기본 스탯 합계 580"
+summary: "#144 프리져 (얼음 / 비행) — GO 최대 CP: 3,051"
 evolution_line: "articuno"
 ---
 
@@ -73,6 +73,14 @@ evolution_line: "articuno"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|103위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|125위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위(×4), 강철, 불꽃, 전기 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-frost-breath|얼음숨결]], [[move-ice-shard|얼음뭉치]], [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-hurricane|폭풍]], [[move-ice-beam|냉동빔]], [[move-icy-wind|얼다바람]], [[move-ancient-power|원시의힘]], [[move-triple-axel|트리플악셀]]  *(커뮤니티 데이/전용: [[move-hurricane|폭풍]])*

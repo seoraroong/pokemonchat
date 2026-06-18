@@ -3,10 +3,10 @@ title: "Mabosstiff / 마피티프"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-dark", "type-none", "evo-line-mabosstiff"]
 aliases: ["마피티프", "mabosstiff"]
-summary: "#943 마피티프 (악 / none) — GO 최대 CP: 2,963"
+summary: "#943 마피티프 (악) — GO 최대 CP: 2,963"
 evolution_line: "mabosstiff"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "mabosstiff"
 | 타입 | 악 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-snarl|바크아웃]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-payback|보복]], [[move-dig|구멍파기]]

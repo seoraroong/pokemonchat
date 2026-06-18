@@ -3,10 +3,10 @@ title: "Cetoddle / 터벅고래"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-ice", "type-none", "evo-line-cetoddle"]
 aliases: ["터벅고래", "cetoddle"]
-summary: "#974 터벅고래 (얼음 / none) — GO 최대 CP: 1,300"
+summary: "#974 터벅고래 (얼음) — GO 최대 CP: 1,300"
 evolution_line: "cetoddle"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "cetoddle"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|222위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ice-shard|얼음뭉치]], [[move-tackle|몸통박치기]], [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-avalanche|눈사태]], [[move-heavy-slam|헤비봄버]]

@@ -3,10 +3,10 @@ title: "Poliwrath / 강챙이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "type-fighting", "evo-line-poliwag"]
 aliases: ["강챙이", "poliwrath"]
-summary: "#062 강챙이 (물/격투 타입) — 기본 스탯 합계 510"
+summary: "#062 강챙이 (물 / 격투) — GO 최대 CP: 2,586"
 evolution_line: "poliwag"
 ---
 
@@ -74,6 +74,13 @@ evolution_line: "poliwag"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|282위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|291위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 풀, 전기, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 강철, 불꽃, 물, 얼음, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-mud-shot|머드숏]], [[move-rock-smash|바위깨기]], [[move-counter|카운터]]
 - **스페셜 기술:** [[move-dynamic-punch|폭발펀치]], [[move-hydro-pump|하이드로펌프]], [[move-ice-punch|냉동펀치]], [[move-submission|지옥의바퀴]], Power Up Punch, [[move-scald|열탕]], [[move-icy-wind|얼다바람]]  *(커뮤니티 데이/전용: [[move-submission|지옥의바퀴]], [[move-counter|카운터]])*

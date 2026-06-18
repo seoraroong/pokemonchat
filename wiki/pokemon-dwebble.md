@@ -3,7 +3,7 @@ title: "Dwebble / 돌살이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-rock", "evo-line-dwebble"]
 aliases: ["돌살이", "dwebble"]
 summary: "#557 돌살이 (벌레 / 바위) — GO 최대 CP: 1,224"
@@ -33,6 +33,13 @@ evolution_line: "dwebble"
 | 타입 | 벌레 / 바위 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 강철, 물 |
+| 저항 | 노말, 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-cut|풀베기]], [[move-smack-down|떨어뜨리기]]
 - **스페셜 기술:** [[move-rock-blast|락블레스트]], X Scissor, [[move-rock-tomb|암석봉인]]

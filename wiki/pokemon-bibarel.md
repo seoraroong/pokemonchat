@@ -3,7 +3,7 @@ title: "Bibarel / 비버통"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-normal", "type-water", "evo-line-bibarel"]
 aliases: ["비버통", "bibarel"]
 summary: "#400 비버통 (노말 / 물) — GO 최대 CP: 1,823"
@@ -34,6 +34,14 @@ evolution_line: "bibarel"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|486위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-take-down|돌진]], [[move-water-gun|물대포]], [[move-rollout|구르기]]
 - **스페셜 기술:** [[move-hyper-beam|파괴광선]], [[move-hyper-fang|필살앞니]], [[move-surf|파도타기]]

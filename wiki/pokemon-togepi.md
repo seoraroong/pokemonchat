@@ -3,10 +3,10 @@ title: "Togepi / 토게피"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-fairy", "type-none", "evo-line-togepi"]
 aliases: ["토게피", "togepi"]
-summary: "#175 토게피 (페어리 / none) — GO 최대 CP: 657"
+summary: "#175 토게피 (페어리) — GO 최대 CP: 657"
 evolution_line: "togepi"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "togepi"
 | 타입 | 페어리 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** Hidden Power Bug, Hidden Power Dark, Hidden Power Dragon, Hidden Power Electric, Hidden Power Fighting, Hidden Power Fire, Hidden Power Flying, Hidden Power Ghost, Hidden Power Grass, Hidden Power Ground, Hidden Power Ice, Hidden Power Poison, Hidden Power Psychic, Hidden Power Rock, Hidden Power Steel, Hidden Power Water, [[move-peck|쪼기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-dazzling-gleam|매지컬샤인]], [[move-psyshock|사이코쇼크]]  *(커뮤니티 데이/전용: [[move-zen-headbutt|사념의박치기]])*

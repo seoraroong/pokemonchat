@@ -3,10 +3,10 @@ title: "Feebas / 빈티나"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-none", "evo-line-feebas"]
 aliases: ["빈티나", "feebas"]
-summary: "#349 빈티나 (물 / none) — GO 최대 CP: 274"
+summary: "#349 빈티나 (물) — GO 최대 CP: 274"
 evolution_line: "feebas"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "feebas"
 | 타입 | 물 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-mirror-coat|미러코트]]

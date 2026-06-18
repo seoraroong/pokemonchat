@@ -3,10 +3,10 @@ title: "Xerneas / 제르네아스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fairy", "type-none", "evo-line-xerneas"]
 aliases: ["제르네아스", "xerneas"]
-summary: "#716 제르네아스 (페어리 / none) — GO 최대 CP: 3,781"
+summary: "#716 제르네아스 (페어리) — GO 최대 CP: 3,781"
 evolution_line: "xerneas"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "xerneas"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|193위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|6위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-zen-headbutt|사념의박치기]], [[move-geomancy|지오컨트롤]]
 - **스페셜 기술:** [[move-moonblast|문포스]], [[move-megahorn|메가폰]], [[move-close-combat|인파이트]], [[move-giga-impact|기가임팩트]], [[move-thunder|번개]]  *(커뮤니티 데이/전용: [[move-geomancy|지오컨트롤]])*

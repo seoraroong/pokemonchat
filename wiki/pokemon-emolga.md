@@ -3,7 +3,7 @@ title: "Emolga / 에몽가"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-electric", "type-flying", "evo-line-emolga"]
 aliases: ["에몽가", "emolga"]
 summary: "#587 에몽가 (전기 / 비행) — GO 최대 CP: 1,633"
@@ -34,6 +34,14 @@ evolution_line: "emolga"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|123위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 얼음 |
+| 저항 | 격투, 비행, 벌레, 강철, 풀 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-aerial-ace|제비반환]], [[move-thunderbolt|10만볼트]], [[move-acrobatics|애크러뱃]]

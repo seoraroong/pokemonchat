@@ -3,10 +3,10 @@ title: "Mew / 뮤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-psychic", "evo-line-mew", "mythical"]
 aliases: ["뮤", "mew"]
-summary: "#151 뮤 (에스퍼 타입) — 기본 스탯 합계 600"
+summary: "#151 뮤 (에스퍼) — GO 최대 CP: 3,265"
 evolution_line: "mew"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "mew"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|202위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|113위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-cut|풀베기]], [[move-dragon-tail|드래곤테일]], [[move-frost-breath|얼음숨결]], [[move-infestation|엉겨붙기]], [[move-poison-jab|독찌르기]], [[move-pound|막치기]], [[move-rock-smash|바위깨기]], [[move-shadow-claw|섀도크루]], [[move-snarl|바크아웃]], [[move-steel-wing|강철날개]], [[move-struggle-bug|벌레의저항]], [[move-volt-switch|볼트체인지]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-blizzard|눈보라]], [[move-bulldoze|땅고르기]], [[move-dark-pulse|악의파동]], [[move-dazzling-gleam|매지컬샤인]], [[move-dragon-claw|드래곤크루]], [[move-energy-ball|에너지볼]], [[move-flame-charge|니트로차지]], [[move-flash-cannon|러스터캐논]], [[move-focus-blast|기합구슬]], [[move-grass-knot|풀묶기]], [[move-gyro-ball|자이로볼]], [[move-hyper-beam|파괴광선]], [[move-ice-beam|냉동빔]], [[move-low-sweep|로킥]], [[move-overheat|오버히트]], [[move-psychic|사이코키네시스]], [[move-psyshock|사이코쇼크]], [[move-rock-slide|스톤샤워]], [[move-solar-beam|솔라빔]], [[move-stone-edge|스톤에지]], [[move-surf|파도타기]], [[move-thunder|번개]], [[move-thunderbolt|10만볼트]], [[move-wild-charge|와일드볼트]]

@@ -3,10 +3,10 @@ title: "Regigigas / 레지기가스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-normal", "type-none", "evo-line-regigigas"]
 aliases: ["레지기가스", "regigigas"]
-summary: "#486 레지기가스 (노말 / none) — GO 최대 CP: 4,346"
+summary: "#486 레지기가스 (노말) — GO 최대 CP: 4,346"
 evolution_line: "regigigas"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "regigigas"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|239위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** Hidden Power Bug, Hidden Power Dark, Hidden Power Dragon, Hidden Power Electric, Hidden Power Fighting, Hidden Power Fire, Hidden Power Flying, Hidden Power Ghost, Hidden Power Grass, Hidden Power Ground, Hidden Power Ice, Hidden Power Poison, Hidden Power Psychic, Hidden Power Rock, Hidden Power Steel, Hidden Power Water, [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-giga-impact|기가임팩트]], [[move-focus-blast|기합구슬]], [[move-thunder|번개]], [[move-crush-grip|묵사발]]  *(커뮤니티 데이/전용: [[move-crush-grip|묵사발]])*

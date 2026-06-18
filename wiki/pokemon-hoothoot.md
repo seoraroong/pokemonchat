@@ -3,7 +3,7 @@ title: "Hoothoot / 부우부"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-flying", "evo-line-hoothoot"]
 aliases: ["부우부", "hoothoot"]
 summary: "#163 부우부 (노말 / 비행) — GO 최대 CP: 677"
@@ -33,6 +33,14 @@ evolution_line: "hoothoot"
 | 타입 | 노말 / 비행 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-peck|쪼기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-night-shade|나이트헤드]], [[move-sky-attack|불새]]

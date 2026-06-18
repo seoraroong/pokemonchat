@@ -3,10 +3,10 @@ title: "Simisear / 바오키"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-fire", "type-none", "evo-line-simisear"]
 aliases: ["바오키", "simisear"]
-summary: "#514 바오키 (불꽃 / none) — GO 최대 CP: 2,350"
+summary: "#514 바오키 (불꽃) — GO 최대 CP: 2,350"
 evolution_line: "simisear"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "simisear"
 | 타입 | 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-fire-spin|회오리불꽃]]
 - **스페셜 기술:** [[move-flamethrower|화염방사]], [[move-fire-blast|불대문자]], [[move-crunch|깨물어부수기]]

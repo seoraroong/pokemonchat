@@ -3,10 +3,10 @@ title: "Necrozma / 네크로즈마"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-psychic", "type-none", "evo-line-necrozma"]
 aliases: ["네크로즈마", "necrozma"]
-summary: "#800 네크로즈마 (에스퍼 / none) — GO 최대 CP: 3,682"
+summary: "#800 네크로즈마 (에스퍼) — GO 최대 CP: 3,682"
 evolution_line: "necrozma"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "necrozma"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|135위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-psycho-cut|사이코커터]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-future-sight|미래예지]], [[move-iron-head|아이언헤드]], [[move-outrage|역린]]

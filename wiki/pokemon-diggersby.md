@@ -3,7 +3,7 @@ title: "Diggersby / 파르토"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-normal", "type-ground", "evo-line-diggersby"]
 aliases: ["파르토", "diggersby"]
 summary: "#660 파르토 (노말 / 땅) — GO 최대 CP: 1,509"
@@ -34,6 +34,14 @@ evolution_line: "diggersby"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|73위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 고스트, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-hyper-beam|파괴광선]], [[move-earthquake|지진]], [[move-fire-punch|불꽃펀치]], [[move-scorching-sands|열사의대지]]

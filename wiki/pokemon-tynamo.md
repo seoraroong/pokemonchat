@@ -3,10 +3,10 @@ title: "Tynamo / 저리어"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-electric", "type-none", "evo-line-tynamo"]
 aliases: ["저리어", "tynamo"]
-summary: "#602 저리어 (전기 / none) — GO 최대 CP: 811"
+summary: "#602 저리어 (전기) — GO 최대 CP: 811"
 evolution_line: "tynamo"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "tynamo"
 | 타입 | 전기 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-spark|스파크]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

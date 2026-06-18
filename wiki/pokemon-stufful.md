@@ -3,7 +3,7 @@ title: "Stufful / 포곰곰"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-normal", "type-fighting", "evo-line-stufful"]
 aliases: ["포곰곰", "stufful"]
 summary: "#759 포곰곰 (노말 / 격투) — GO 최대 CP: 1,352"
@@ -33,6 +33,14 @@ evolution_line: "stufful"
 | 타입 | 노말 / 격투 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]]
 - **스페셜 기술:** Super Power, [[move-brick-break|깨트리다]], [[move-stomp|짓밟기]]

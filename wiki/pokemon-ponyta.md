@@ -3,10 +3,10 @@ title: "Ponyta / 포니타"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-fire", "evo-line-ponyta"]
 aliases: ["포니타", "ponyta"]
-summary: "#077 포니타 (불꽃 타입) — 기본 스탯 합계 410"
+summary: "#077 포니타 (불꽃) — GO 최대 CP: 1,697"
 evolution_line: "ponyta"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "ponyta"
 | 타입 | 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-fire-blast|불대문자]], [[move-flame-charge|니트로차지]], [[move-flame-wheel|화염자동차]], [[move-stomp|짓밟기]]  *(커뮤니티 데이/전용: [[move-fire-blast|불대문자]])*

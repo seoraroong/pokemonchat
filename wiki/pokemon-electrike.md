@@ -3,10 +3,10 @@ title: "Electrike / 썬더라이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-electric", "type-none", "evo-line-electrike"]
 aliases: ["썬더라이", "electrike"]
-summary: "#309 썬더라이 (전기 / none) — GO 최대 CP: 965"
+summary: "#309 썬더라이 (전기) — GO 최대 CP: 965"
 evolution_line: "electrike"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "electrike"
 | 타입 | 전기 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-spark|스파크]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-swift|스피드스타]], [[move-thunderbolt|10만볼트]]

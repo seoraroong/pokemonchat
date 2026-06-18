@@ -3,10 +3,10 @@ title: "Komala / 자말라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-normal", "type-none", "evo-line-komala"]
 aliases: ["자말라", "komala"]
-summary: "#775 자말라 (노말 / none) — GO 최대 CP: 2,582"
+summary: "#775 자말라 (노말) — GO 최대 CP: 2,582"
 evolution_line: "komala"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "komala"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rollout|구르기]], [[move-yawn|하품]]
 - **스페셜 기술:** [[move-play-rough|치근거리기]], [[move-bulldoze|땅고르기]], [[move-payback|보복]]

@@ -3,7 +3,7 @@ title: "Litleo / 레오꼬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fire", "type-normal", "evo-line-litleo"]
 aliases: ["레오꼬", "litleo"]
 summary: "#667 레오꼬 (불꽃 / 노말) — GO 최대 CP: 1,425"
@@ -34,6 +34,14 @@ evolution_line: "litleo"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|496위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fire-fang|불꽃엄니]], [[move-tackle|몸통박치기]], [[move-ember|불꽃세례]], [[move-incinerate|불태우기]]
 - **스페셜 기술:** [[move-flame-charge|니트로차지]], [[move-flamethrower|화염방사]], [[move-crunch|깨물어부수기]]

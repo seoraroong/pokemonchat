@@ -3,10 +3,10 @@ title: "Sylveon / 님피아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fairy", "type-none", "evo-line-sylveon"]
 aliases: ["님피아", "sylveon"]
-summary: "#700 님피아 (페어리 / none) — GO 최대 CP: 3,069"
+summary: "#700 님피아 (페어리) — GO 최대 CP: 3,069"
 evolution_line: "sylveon"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "sylveon"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|64위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|54위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charm|애교부리기]], [[move-quick-attack|전광석화]], [[move-fairy-wind|요정의바람]]
 - **스페셜 기술:** [[move-moonblast|문포스]], [[move-dazzling-gleam|매지컬샤인]], [[move-draining-kiss|드레인키스]], [[move-last-resort|뒀다쓰기]], [[move-psyshock|사이코쇼크]], [[move-shadow-ball|섀도볼]]  *(커뮤니티 데이/전용: [[move-last-resort|뒀다쓰기]], [[move-psyshock|사이코쇼크]])*

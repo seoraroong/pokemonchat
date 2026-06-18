@@ -3,10 +3,10 @@ title: "Espathra / 클레스퍼트라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-psychic", "type-none", "evo-line-espathra"]
 aliases: ["클레스퍼트라", "espathra"]
-summary: "#956 클레스퍼트라 (에스퍼 / none) — GO 최대 CP: 2,477"
+summary: "#956 클레스퍼트라 (에스퍼) — GO 최대 CP: 2,477"
 evolution_line: "espathra"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "espathra"
 | 타입 | 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-confusion|염동력]]
 - **스페셜 기술:** [[move-psybeam|환상빔]], [[move-psyshock|사이코쇼크]], [[move-psychic|사이코키네시스]], [[move-dazzling-gleam|매지컬샤인]]

@@ -3,10 +3,10 @@ title: "Pyukumuku / 해무기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-water", "type-none", "evo-line-pyukumuku"]
 aliases: ["해무기", "pyukumuku"]
-summary: "#771 해무기 (물 / none) — GO 최대 CP: 1,372"
+summary: "#771 해무기 (물) — GO 최대 CP: 1,372"
 evolution_line: "pyukumuku"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "pyukumuku"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]]
 - **스페셜 기술:** [[move-mirror-coat|미러코트]]

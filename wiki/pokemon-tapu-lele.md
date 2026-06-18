@@ -3,7 +3,7 @@ title: "Tapu Lele / 카푸나비나"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-psychic", "type-fairy", "evo-line-tapu-lele"]
 aliases: ["카푸나비나", "tapu lele"]
 summary: "#786 카푸나비나 (에스퍼 / 페어리) — GO 최대 CP: 3,494"
@@ -35,6 +35,14 @@ evolution_line: "tapu-lele"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|297위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|49위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 고스트, 강철 |
+| 저항 | 격투(×¼), 에스퍼 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-astonish|놀래키기]]
 - **스페셜 기술:** [[move-psyshock|사이코쇼크]], [[move-moonblast|문포스]], [[move-focus-blast|기합구슬]], [[move-future-sight|미래예지]], Natures Madness, [[move-draining-kiss|드레인키스]]  *(커뮤니티 데이/전용: Natures Madness)*

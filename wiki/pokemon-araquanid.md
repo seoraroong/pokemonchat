@@ -3,7 +3,7 @@ title: "Araquanid / 깨비물거미"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-water", "type-bug", "evo-line-araquanid"]
 aliases: ["깨비물거미", "araquanid"]
 summary: "#752 깨비물거미 (물 / 벌레) — GO 최대 CP: 1,827"
@@ -34,6 +34,13 @@ evolution_line: "araquanid"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|142위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 전기 |
+| 저항 | 격투, 땅, 강철, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-infestation|엉겨붙기]], [[move-bug-bite|벌레먹음]]
 - **스페셜 기술:** [[move-bug-buzz|벌레의야단법석]], [[move-bubble-beam|거품광선]], [[move-mirror-coat|미러코트]], [[move-water-pulse|물의파동]]

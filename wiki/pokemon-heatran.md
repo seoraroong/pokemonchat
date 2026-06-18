@@ -3,7 +3,7 @@ title: "Heatran / 히드런"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-fire", "type-steel", "evo-line-heatran"]
 aliases: ["히드런", "heatran"]
 summary: "#485 히드런 (불꽃 / 강철) — GO 최대 CP: 3,754"
@@ -35,6 +35,14 @@ evolution_line: "heatran"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|377위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|78위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅(×4), 물 |
+| 저항 | 노말, 비행, 벌레(×¼), 강철(×¼), 풀(×¼), 에스퍼, 얼음(×¼), 드래곤, 페어리(×¼) |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-fire-spin|회오리불꽃]]
 - **스페셜 기술:** [[move-fire-blast|불대문자]], [[move-iron-head|아이언헤드]], [[move-stone-edge|스톤에지]], [[move-flamethrower|화염방사]], [[move-earth-power|대지의힘]], [[move-magma-storm|마그마스톰]]  *(커뮤니티 데이/전용: [[move-magma-storm|마그마스톰]])*

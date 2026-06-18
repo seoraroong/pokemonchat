@@ -3,7 +3,7 @@ title: "Armarouge / 카디나르마"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-fire", "type-psychic", "evo-line-armarouge"]
 aliases: ["카디나르마", "armarouge"]
 summary: "#936 카디나르마 (불꽃 / 에스퍼) — GO 최대 CP: 3,209"
@@ -36,6 +36,13 @@ evolution_line: "armarouge"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|194위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|128위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 고스트, 물, 악 |
+| 저항 | 격투, 강철, 불꽃, 풀, 에스퍼, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-incinerate|불태우기]]
 - **스페셜 기술:** [[move-flame-charge|니트로차지]], [[move-heat-wave|열풍]], [[move-flamethrower|화염방사]], [[move-psyshock|사이코쇼크]]

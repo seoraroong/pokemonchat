@@ -3,7 +3,7 @@ title: "Lampent / 램프라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ghost", "type-fire", "evo-line-lampent"]
 aliases: ["램프라", "lampent"]
 summary: "#608 램프라 (고스트 / 불꽃) — GO 최대 CP: 1,708"
@@ -33,6 +33,14 @@ evolution_line: "lampent"
 | 타입 | 고스트 / 불꽃 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 고스트, 물, 악 |
+| 저항 | 독, 벌레(×¼), 강철, 불꽃, 풀, 얼음, 페어리 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-ember|불꽃세례]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-flame-burst|불꽃튀기기]], [[move-heat-wave|열풍]]

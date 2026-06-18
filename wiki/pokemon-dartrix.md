@@ -3,7 +3,7 @@ title: "Dartrix / 빼미스로우"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-grass", "type-flying", "evo-line-dartrix"]
 aliases: ["빼미스로우", "dartrix"]
 summary: "#723 빼미스로우 (풀 / 비행) — GO 최대 CP: 1,725"
@@ -34,6 +34,14 @@ evolution_line: "dartrix"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|166위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 바위, 불꽃, 얼음(×4) |
+| 저항 | 격투, 물, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-razor-leaf|잎날가르기]], [[move-leafage|나뭇잎]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-seed-bomb|씨폭탄]], [[move-energy-ball|에너지볼]], [[move-brave-bird|브레이브버드]]

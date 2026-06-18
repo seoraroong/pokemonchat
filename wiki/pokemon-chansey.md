@@ -3,10 +3,10 @@ title: "Chansey / 럭키"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "evo-line-chansey"]
 aliases: ["럭키", "chansey"]
-summary: "#113 럭키 (노말 타입) — 기본 스탯 합계 450"
+summary: "#113 럭키 (노말) — GO 최대 CP: 1,255"
 evolution_line: "chansey"
 ---
 
@@ -70,6 +70,14 @@ evolution_line: "chansey"
 | 타입 | 노말 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-pound|막치기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-hyper-beam|파괴광선]], [[move-psybeam|환상빔]], [[move-psychic|사이코키네시스]]

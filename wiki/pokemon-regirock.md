@@ -3,10 +3,10 @@ title: "Regirock / 레지락"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-rock", "type-none", "evo-line-regirock"]
 aliases: ["레지락", "regirock"]
-summary: "#377 레지락 (바위 / none) — GO 최대 CP: 3,122"
+summary: "#377 레지락 (바위) — GO 최대 CP: 3,122"
 evolution_line: "regirock"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "regirock"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|140위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|151위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀 |
+| 저항 | 노말, 비행, 독, 불꽃 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-rock-throw|돌떨구기]], [[move-lock-on|록온]]
 - **스페셜 기술:** [[move-focus-blast|기합구슬]], [[move-stone-edge|스톤에지]], [[move-zap-cannon|전자포]], [[move-earthquake|지진]]  *(커뮤니티 데이/전용: [[move-earthquake|지진]])*

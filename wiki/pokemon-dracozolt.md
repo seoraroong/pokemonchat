@@ -3,7 +3,7 @@ title: "Dracozolt / 파치래곤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-electric", "type-dragon", "evo-line-dracozolt"]
 aliases: ["파치래곤", "dracozolt"]
 summary: "#880 파치래곤 (전기 / 드래곤) — GO 최대 CP: 2,621"
@@ -33,6 +33,13 @@ evolution_line: "dracozolt"
 | 타입 | 전기 / 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 얼음, 드래곤, 페어리 |
+| 저항 | 비행, 강철, 불꽃, 물, 풀, 전기(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-dragon-pulse|용의파동]], [[move-ancient-power|원시의힘]]

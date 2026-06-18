@@ -3,7 +3,7 @@ title: "Lucario / 루카리오"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-fighting", "type-steel", "evo-line-lucario"]
 aliases: ["루카리오", "lucario"]
 summary: "#448 루카리오 (격투 / 강철) — GO 최대 CP: 2,703"
@@ -35,6 +35,14 @@ evolution_line: "lucario"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|316위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|176위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃 |
+| 저항 | 노말, 바위(×¼), 벌레(×¼), 강철, 풀, 얼음, 드래곤, 악 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-punch|불릿펀치]], [[move-counter|카운터]], [[move-force-palm|발경]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-flash-cannon|러스터캐논]], [[move-shadow-ball|섀도볼]], Power Up Punch, [[move-aura-sphere|파동탄]], [[move-blaze-kick|브레이즈킥]], [[move-thunder-punch|번개펀치]], [[move-meteor-mash|코멧펀치]]  *(커뮤니티 데이/전용: [[move-force-palm|발경]])*

@@ -3,10 +3,10 @@ title: "Skitty / 에나비"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-skitty"]
 aliases: ["에나비", "skitty"]
-summary: "#300 에나비 (노말 / none) — GO 최대 CP: 739"
+summary: "#300 에나비 (노말) — GO 최대 CP: 739"
 evolution_line: "skitty"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "skitty"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-disarming-voice|차밍보이스]], [[move-wild-charge|와일드볼트]]

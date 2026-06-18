@@ -3,10 +3,10 @@ title: "Polteageist / 포트데스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ghost", "type-none", "evo-line-polteageist"]
 aliases: ["포트데스", "polteageist"]
-summary: "#855 포트데스 (고스트 / none) — GO 최대 CP: 3,058"
+summary: "#855 포트데스 (고스트) — GO 최대 CP: 3,058"
 evolution_line: "polteageist"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "polteageist"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|265위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 악 |
+| 저항 | 독, 벌레 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-sucker-punch|기습]], [[move-hex|병상첨병]]
 - **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-dark-pulse|악의파동]], [[move-psychic|사이코키네시스]]

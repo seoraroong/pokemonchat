@@ -3,10 +3,10 @@ title: "Torkoal / 코터스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-fire", "type-none", "evo-line-torkoal"]
 aliases: ["코터스", "torkoal"]
-summary: "#324 코터스 (불꽃 / none) — GO 최대 CP: 2,093"
+summary: "#324 코터스 (불꽃) — GO 최대 CP: 2,093"
 evolution_line: "torkoal"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "torkoal"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|185위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|294위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-fire-spin|회오리불꽃]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-overheat|오버히트]], [[move-solar-beam|솔라빔]], [[move-flame-wheel|화염자동차]]

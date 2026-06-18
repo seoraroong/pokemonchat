@@ -3,10 +3,10 @@ title: "Pichu / 피츄"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-electric", "type-none", "evo-line-pichu"]
 aliases: ["피츄", "pichu"]
-summary: "#172 피츄 (전기 / none) — GO 최대 CP: 473"
+summary: "#172 피츄 (전기) — GO 최대 CP: 473"
 evolution_line: "pichu"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "pichu"
 | 타입 | 전기 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-disarming-voice|차밍보이스]], [[move-thunder-punch|번개펀치]], [[move-thunderbolt|10만볼트]]

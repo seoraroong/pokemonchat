@@ -3,7 +3,7 @@ title: "Natu / 네이티"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-psychic", "type-flying", "evo-line-natu"]
 aliases: ["네이티", "natu"]
 summary: "#177 네이티 (에스퍼 / 비행) — GO 최대 CP: 1,102"
@@ -33,6 +33,14 @@ evolution_line: "natu"
 | 타입 | 에스퍼 / 비행 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 고스트, 전기, 얼음, 악 |
+| 저항 | 격투(×¼), 풀, 에스퍼 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-drill-peck|회전부리]], [[move-night-shade|나이트헤드]], [[move-psyshock|사이코쇼크]]

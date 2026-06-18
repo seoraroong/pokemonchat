@@ -3,7 +3,7 @@ title: "Croagunk / 삐딱구리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-poison", "type-fighting", "evo-line-croagunk"]
 aliases: ["삐딱구리", "croagunk"]
 summary: "#453 삐딱구리 (독 / 격투) — GO 최대 CP: 952"
@@ -33,6 +33,13 @@ evolution_line: "croagunk"
 | 타입 | 독 / 격투 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 땅, 에스퍼(×4) |
+| 저항 | 격투, 독, 바위, 벌레(×¼), 풀, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-poison-jab|독찌르기]], [[move-poison-sting|독침]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-low-sweep|로킥]], [[move-sludge-bomb|오물폭탄]]

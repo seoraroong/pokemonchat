@@ -3,10 +3,10 @@ title: "Graveler / 데구리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-rock", "type-ground", "evo-line-geodude"]
 aliases: ["데구리", "graveler"]
-summary: "#075 데구리 (바위/땅 타입) — 기본 스탯 합계 390"
+summary: "#075 데구리 (바위 / 땅) — GO 최대 CP: 1,897"
 evolution_line: "geodude"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "geodude"
 | 타입 | 바위 / 땅 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물(×4), 풀(×4), 얼음 |
+| 저항 | 노말, 비행, 독(×¼), 바위, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-mud-slap|진흙뿌리기]], [[move-rock-throw|돌떨구기]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-rock-blast|락블레스트]], [[move-rock-slide|스톤샤워]], [[move-stone-edge|스톤에지]]  *(커뮤니티 데이/전용: [[move-rock-slide|스톤샤워]])*

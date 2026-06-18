@@ -3,10 +3,10 @@ title: "Remoraid / 총어"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-none", "evo-line-remoraid"]
 aliases: ["총어", "remoraid"]
-summary: "#223 총어 (물 / none) — GO 최대 CP: 912"
+summary: "#223 총어 (물) — GO 최대 CP: 912"
 evolution_line: "remoraid"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "remoraid"
 | 타입 | 물 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-aurora-beam|오로라빔]], [[move-rock-blast|락블레스트]], [[move-water-pulse|물의파동]]

@@ -3,7 +3,7 @@ title: "Vullaby / 벌차이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-flying", "evo-line-vullaby"]
 aliases: ["벌차이", "vullaby"]
 summary: "#629 벌차이 (악 / 비행) — GO 최대 CP: 1,271"
@@ -34,6 +34,14 @@ evolution_line: "vullaby"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|350위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음, 페어리 |
+| 저항 | 고스트, 풀, 악 |
+| 무효 | 땅, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-air-slash|에어슬래시]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-brave-bird|브레이브버드]], [[move-foul-play|속임수]]

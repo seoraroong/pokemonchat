@@ -3,7 +3,7 @@ title: "Escavalier / 슈바르고"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-steel", "evo-line-escavalier"]
 aliases: ["슈바르고", "escavalier"]
 summary: "#589 슈바르고 (벌레 / 강철) — GO 최대 CP: 2,889"
@@ -36,6 +36,14 @@ evolution_line: "escavalier"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|391위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|245위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 불꽃(×4) |
+| 저항 | 노말, 벌레, 강철, 풀(×¼), 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-bug-bite|벌레먹음]]
 - **스페셜 기술:** [[move-megahorn|메가폰]], [[move-acid-spray|애시드봄]], [[move-drill-run|드릴라이너]], [[move-aerial-ace|제비반환]], [[move-razor-shell|셸블레이드]]  *(커뮤니티 데이/전용: [[move-razor-shell|셸블레이드]])*

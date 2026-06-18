@@ -3,10 +3,10 @@ title: "Persian / 페르시온"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "evo-line-meowth"]
 aliases: ["페르시온", "persian"]
-summary: "#053 페르시온 (노말 타입) — 기본 스탯 합계 440"
+summary: "#053 페르시온 (노말) — GO 최대 CP: 1,689"
 evolution_line: "meowth"
 ---
 
@@ -70,6 +70,14 @@ evolution_line: "meowth"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-scratch|할퀴기]]
 - **스페셜 기술:** [[move-foul-play|속임수]], [[move-night-slash|깜짝베기]], [[move-play-rough|치근거리기]], [[move-power-gem|파워젬]], [[move-payback|보복]]  *(커뮤니티 데이/전용: [[move-night-slash|깜짝베기]])*

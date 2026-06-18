@@ -3,7 +3,7 @@ title: "Scolipede / 펜드라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-poison", "evo-line-scolipede"]
 aliases: ["펜드라", "scolipede"]
 summary: "#545 펜드라 (벌레 / 독) — GO 최대 CP: 2,447"
@@ -35,6 +35,13 @@ evolution_line: "scolipede"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|491위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|358위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃, 에스퍼 |
+| 저항 | 격투(×¼), 독, 벌레, 풀(×¼), 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-poison-jab|독찌르기]], [[move-poison-sting|독침]]
 - **스페셜 기술:** [[move-megahorn|메가폰]], [[move-sludge-bomb|오물폭탄]], [[move-gyro-ball|자이로볼]], X Scissor, [[move-aqua-tail|아쿠아테일]]

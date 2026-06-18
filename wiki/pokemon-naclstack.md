@@ -3,10 +3,10 @@ title: "Naclstack / 스태솔트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-rock", "type-none", "evo-line-naclstack"]
 aliases: ["스태솔트", "naclstack"]
-summary: "#933 스태솔트 (바위 / none) — GO 최대 CP: 1,292"
+summary: "#933 스태솔트 (바위) — GO 최대 CP: 1,292"
 evolution_line: "naclstack"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "naclstack"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|356위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀 |
+| 저항 | 노말, 비행, 독, 불꽃 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-smack-down|떨어뜨리기]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-rock-blast|락블레스트]], [[move-rock-tomb|암석봉인]], [[move-ancient-power|원시의힘]]

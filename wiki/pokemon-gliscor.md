@@ -3,7 +3,7 @@ title: "Gliscor / 글라이온"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ground", "type-flying", "evo-line-gliscor"]
 aliases: ["글라이온", "gliscor"]
 summary: "#472 글라이온 (땅 / 비행) — GO 최대 CP: 2,692"
@@ -36,6 +36,14 @@ evolution_line: "gliscor"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|150위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|313위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 얼음(×4) |
+| 저항 | 격투, 독, 벌레 |
+| 무효 | 땅, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fury-cutter|연속자르기]], [[move-wing-attack|날개치기]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-earthquake|지진]], [[move-night-slash|깜짝베기]], [[move-sand-tomb|모래지옥]], [[move-acrobatics|애크러뱃]]

@@ -3,7 +3,7 @@ title: "Flutter Mane / 날개치는머리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-ghost", "type-fairy", "evo-line-flutter-mane"]
 aliases: ["날개치는머리", "flutter mane"]
 summary: "#987 날개치는머리 (고스트 / 페어리) — GO 최대 CP: 3,696"
@@ -33,6 +33,14 @@ evolution_line: "flutter-mane"
 | 타입 | 고스트 / 페어리 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 강철 |
+| 저항 | 벌레(×¼) |
+| 무효 | 노말, 격투, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

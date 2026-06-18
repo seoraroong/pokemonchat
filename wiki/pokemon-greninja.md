@@ -3,7 +3,7 @@ title: "Greninja / 개굴닌자"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-water", "type-dark", "evo-line-greninja"]
 aliases: ["개굴닌자", "greninja"]
 summary: "#658 개굴닌자 (물 / 악) — GO 최대 CP: 2,654"
@@ -35,6 +35,14 @@ evolution_line: "greninja"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|193위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|251위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 풀, 전기, 페어리 |
+| 저항 | 고스트, 강철, 불꽃, 물, 얼음, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-bubble|거품]], [[move-water-shuriken|물수리검]]
 - **스페셜 기술:** [[move-night-slash|깜짝베기]], [[move-aerial-ace|제비반환]], [[move-surf|파도타기]], [[move-hydro-pump|하이드로펌프]], [[move-hydro-cannon|하이드로캐논]]  *(커뮤니티 데이/전용: [[move-hydro-cannon|하이드로캐논]])*

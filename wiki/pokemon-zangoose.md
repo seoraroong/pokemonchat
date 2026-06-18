@@ -3,10 +3,10 @@ title: "Zangoose / 쟝고"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-zangoose"]
 aliases: ["쟝고", "zangoose"]
-summary: "#335 쟝고 (노말 / none) — GO 최대 CP: 2,418"
+summary: "#335 쟝고 (노말) — GO 최대 CP: 2,418"
 evolution_line: "zangoose"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "zangoose"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fury-cutter|연속자르기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-dig|구멍파기]], [[move-night-slash|깜짝베기]]

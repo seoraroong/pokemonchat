@@ -3,7 +3,7 @@ title: "Basculegion / 대쓰여너"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-water", "type-ghost", "evo-line-basculegion"]
 aliases: ["대쓰여너", "basculegion"]
 summary: "#902 대쓰여너 (물 / 고스트) — GO 최대 CP: 2,794"
@@ -33,6 +33,14 @@ evolution_line: "basculegion"
 | 타입 | 물 / 고스트 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 풀, 전기, 악 |
+| 저항 | 독, 벌레, 강철, 불꽃, 물, 얼음 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

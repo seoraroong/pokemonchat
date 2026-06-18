@@ -3,10 +3,10 @@ title: "Nickit / 훔처우"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-dark", "type-none", "evo-line-nickit"]
 aliases: ["훔처우", "nickit"]
-summary: "#827 훔처우 (악 / none) — GO 최대 CP: 714"
+summary: "#827 훔처우 (악) — GO 최대 CP: 714"
 evolution_line: "nickit"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "nickit"
 | 타입 | 악 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-snarl|바크아웃]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-night-slash|깜짝베기]], [[move-play-rough|치근거리기]]

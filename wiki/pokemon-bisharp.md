@@ -3,7 +3,7 @@ title: "Bisharp / 절각참"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-steel", "evo-line-bisharp"]
 aliases: ["절각참", "bisharp"]
 summary: "#625 절각참 (악 / 강철) — GO 최대 CP: 2,844"
@@ -34,6 +34,14 @@ evolution_line: "bisharp"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|367위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투(×4), 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 고스트, 강철, 풀, 얼음, 드래곤, 악 |
+| 무효 | 독, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-snarl|바크아웃]], [[move-metal-claw|메탈크로우]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-iron-head|아이언헤드]], X Scissor, [[move-focus-blast|기합구슬]]

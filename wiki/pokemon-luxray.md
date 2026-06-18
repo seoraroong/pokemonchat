@@ -3,10 +3,10 @@ title: "Luxray / 렌트라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-electric", "type-none", "evo-line-luxray"]
 aliases: ["렌트라", "luxray"]
-summary: "#405 렌트라 (전기 / none) — GO 최대 CP: 2,888"
+summary: "#405 렌트라 (전기) — GO 최대 CP: 2,888"
 evolution_line: "luxray"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "luxray"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|372위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** Hidden Power Bug, Hidden Power Dark, Hidden Power Dragon, Hidden Power Electric, Hidden Power Fighting, Hidden Power Fire, Hidden Power Flying, Hidden Power Ghost, Hidden Power Grass, Hidden Power Ground, Hidden Power Ice, Hidden Power Poison, Hidden Power Psychic, Hidden Power Rock, Hidden Power Steel, Hidden Power Water, [[move-snarl|바크아웃]], [[move-spark|스파크]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-hyper-beam|파괴광선]], [[move-wild-charge|와일드볼트]], [[move-psychic-fangs|사이코팽]]  *(커뮤니티 데이/전용: [[move-psychic-fangs|사이코팽]])*

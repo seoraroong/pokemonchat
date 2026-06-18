@@ -3,10 +3,10 @@ title: "Oinkologne / 퍼퓨돈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-normal", "type-none", "evo-line-oinkologne"]
 aliases: ["퍼퓨돈", "oinkologne"]
-summary: "#916 퍼퓨돈 (노말 / none) — GO 최대 CP: 2,608"
+summary: "#916 퍼퓨돈 (노말) — GO 최대 CP: 2,608"
 evolution_line: "oinkologne"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "oinkologne"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|163위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|340위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-body-slam|누르기]], [[move-trailblaze|Trailblaze]]  *(커뮤니티 데이/전용: [[move-mud-slap|진흙뿌리기]])*

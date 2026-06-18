@@ -3,10 +3,10 @@ title: "Cetitan / 우락고래"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-ice", "type-none", "evo-line-cetitan"]
 aliases: ["우락고래", "cetitan"]
-summary: "#975 우락고래 (얼음 / none) — GO 최대 CP: 3,113"
+summary: "#975 우락고래 (얼음) — GO 최대 CP: 3,113"
 evolution_line: "cetitan"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "cetitan"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|189위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|130위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ice-shard|얼음뭉치]], [[move-tackle|몸통박치기]], [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-avalanche|눈사태]], [[move-heavy-slam|헤비봄버]], Super Power, [[move-icicle-spear|고드름침]]

@@ -3,10 +3,10 @@ title: "Glastrier / 블리자포스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ice", "type-none", "evo-line-glastrier"]
 aliases: ["블리자포스", "glastrier"]
-summary: "#896 블리자포스 (얼음 / none) — GO 최대 CP: 3,895"
+summary: "#896 블리자포스 (얼음) — GO 최대 CP: 3,895"
 evolution_line: "glastrier"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "glastrier"
 | 타입 | 얼음 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-avalanche|눈사태]], [[move-icy-wind|얼다바람]], [[move-bulldoze|땅고르기]]

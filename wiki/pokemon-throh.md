@@ -3,10 +3,10 @@ title: "Throh / 던지미"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-fighting", "type-none", "evo-line-throh"]
 aliases: ["던지미", "throh"]
-summary: "#538 던지미 (격투 / none) — GO 최대 CP: 2,562"
+summary: "#538 던지미 (격투) — GO 최대 CP: 2,562"
 evolution_line: "throh"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "throh"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|240위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|275위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-focus-blast|기합구슬]], [[move-low-sweep|로킥]], [[move-body-slam|누르기]], [[move-brick-break|깨트리다]]

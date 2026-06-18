@@ -3,7 +3,7 @@ title: "Piloswine / 메꾸리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-ice", "type-ground", "evo-line-piloswine"]
 aliases: ["메꾸리", "piloswine"]
 summary: "#221 메꾸리 (얼음 / 땅) — GO 최대 CP: 2,345"
@@ -35,6 +35,14 @@ evolution_line: "piloswine"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|290위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|290위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 강철, 불꽃, 물, 풀 |
+| 저항 | 독 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ice-shard|얼음뭉치]], [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-avalanche|눈사태]], [[move-bulldoze|땅고르기]], [[move-stone-edge|스톤에지]], [[move-high-horsepower|10만마력]], [[move-icicle-spear|고드름침]]

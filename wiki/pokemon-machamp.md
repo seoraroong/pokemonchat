@@ -3,10 +3,10 @@ title: "Machamp / 괴력몬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-fighting", "evo-line-machop"]
 aliases: ["괴력몬", "machamp"]
-summary: "#068 괴력몬 (격투 타입) — 기본 스탯 합계 505"
+summary: "#068 괴력몬 (격투) — GO 최대 CP: 3,056"
 evolution_line: "machop"
 ---
 
@@ -73,6 +73,13 @@ evolution_line: "machop"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|238위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|161위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-punch|불릿펀치]], [[move-counter|카운터]], [[move-karate-chop|태권당수]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-cross-chop|크로스촙]], [[move-dynamic-punch|폭발펀치]], [[move-heavy-slam|헤비봄버]], [[move-rock-slide|스톤샤워]], [[move-stone-edge|스톤에지]], [[move-submission|지옥의바퀴]], [[move-payback|보복]]  *(커뮤니티 데이/전용: [[move-karate-chop|태권당수]], [[move-stone-edge|스톤에지]], [[move-submission|지옥의바퀴]], [[move-payback|보복]])*

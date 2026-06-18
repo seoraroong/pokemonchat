@@ -3,10 +3,10 @@ title: "Vanillish / 바닐리치"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ice", "type-none", "evo-line-vanillish"]
 aliases: ["바닐리치", "vanillish"]
-summary: "#583 바닐리치 (얼음 / none) — GO 최대 CP: 1,591"
+summary: "#583 바닐리치 (얼음) — GO 최대 CP: 1,591"
 evolution_line: "vanillish"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "vanillish"
 | 타입 | 얼음 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-frost-breath|얼음숨결]], [[move-astonish|놀래키기]]
 - **스페셜 기술:** [[move-icy-wind|얼다바람]], [[move-ice-beam|냉동빔]], [[move-signal-beam|시그널빔]]

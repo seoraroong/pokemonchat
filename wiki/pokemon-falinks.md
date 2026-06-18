@@ -3,10 +3,10 @@ title: "Falinks / 대여르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-fighting", "type-none", "evo-line-falinks"]
 aliases: ["대여르", "falinks"]
-summary: "#870 대여르 (격투 / none) — GO 최대 CP: 2,357"
+summary: "#870 대여르 (격투) — GO 최대 CP: 2,357"
 evolution_line: "falinks"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "falinks"
 | 타입 | 격투 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-counter|카운터]]
 - **스페셜 기술:** Super Power, [[move-brick-break|깨트리다]], [[move-megahorn|메가폰]]

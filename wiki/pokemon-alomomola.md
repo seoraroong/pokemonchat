@@ -3,10 +3,10 @@ title: "Alomomola / 맘복치"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-none", "evo-line-alomomola"]
 aliases: ["맘복치", "alomomola"]
-summary: "#594 맘복치 (물 / none) — GO 최대 CP: 2,169"
+summary: "#594 맘복치 (물) — GO 최대 CP: 2,169"
 evolution_line: "alomomola"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "alomomola"
 | 버디 거리 | 5km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|337위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-waterfall|폭포오르기]], Hidden Power Bug, Hidden Power Dark, Hidden Power Dragon, Hidden Power Electric, Hidden Power Fighting, Hidden Power Fire, Hidden Power Flying, Hidden Power Ghost, Hidden Power Grass, Hidden Power Ground, Hidden Power Ice, Hidden Power Poison, Hidden Power Psychic, Hidden Power Rock, Hidden Power Steel, Hidden Power Water
 - **스페셜 기술:** [[move-hydro-pump|하이드로펌프]], [[move-blizzard|눈보라]], [[move-psychic|사이코키네시스]]

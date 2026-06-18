@@ -3,7 +3,7 @@ title: "Foongus / 깜놀버슬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-grass", "type-poison", "evo-line-foongus"]
 aliases: ["깜놀버슬", "foongus"]
 summary: "#590 깜놀버슬 (풀 / 독) — GO 최대 CP: 979"
@@ -33,6 +33,13 @@ evolution_line: "foongus"
 | 타입 | 풀 / 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 불꽃, 에스퍼, 얼음 |
+| 저항 | 격투, 물, 풀(×¼), 전기, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-feint-attack|속여때리기]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-body-slam|누르기]], [[move-grass-knot|풀묶기]]

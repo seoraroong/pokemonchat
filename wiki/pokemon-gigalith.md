@@ -3,10 +3,10 @@ title: "Gigalith / 기가이어스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-rock", "type-none", "evo-line-gigalith"]
 aliases: ["기가이어스", "gigalith"]
-summary: "#526 기가이어스 (바위 / none) — GO 최대 CP: 3,228"
+summary: "#526 기가이어스 (바위) — GO 최대 CP: 3,228"
 evolution_line: "gigalith"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "gigalith"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|300위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|145위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀 |
+| 저항 | 노말, 비행, 독, 불꽃 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-smack-down|떨어뜨리기]], [[move-lock-on|록온]]
 - **스페셜 기술:** [[move-rock-slide|스톤샤워]], [[move-solar-beam|솔라빔]], Super Power, [[move-heavy-slam|헤비봄버]], [[move-meteor-beam|메테오빔]]  *(커뮤니티 데이/전용: [[move-meteor-beam|메테오빔]])*

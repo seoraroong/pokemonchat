@@ -3,10 +3,10 @@ title: "Haunter / 고우스트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-ghost", "type-poison", "evo-line-gastly"]
 aliases: ["고우스트", "haunter"]
-summary: "#093 고우스트 (고스트/독 타입) — 기본 스탯 합계 405"
+summary: "#093 고우스트 (고스트 / 독) — GO 최대 CP: 1,963"
 evolution_line: "gastly"
 ---
 
@@ -69,6 +69,14 @@ evolution_line: "gastly"
 | 타입 | 고스트 / 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 에스퍼, 악 |
+| 저항 | 독(×¼), 벌레(×¼), 풀, 페어리 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-lick|핥기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-shadow-ball|섀도볼]], [[move-shadow-punch|섀도펀치]], [[move-sludge-bomb|오물폭탄]], [[move-ice-punch|냉동펀치]]  *(커뮤니티 데이/전용: [[move-lick|핥기]])*

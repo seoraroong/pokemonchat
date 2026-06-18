@@ -3,10 +3,10 @@ title: "Rhyhorn / 뿔카노"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-ground", "type-rock", "evo-line-rhyhorn"]
 aliases: ["뿔카노", "rhyhorn"]
-summary: "#111 뿔카노 (땅/바위 타입) — 기본 스탯 합계 345"
+summary: "#111 뿔카노 (땅 / 바위) — GO 최대 CP: 1,651"
 evolution_line: "rhyhorn"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "rhyhorn"
 | 타입 | 땅 / 바위 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물(×4), 풀(×4), 얼음 |
+| 저항 | 노말, 비행, 독(×¼), 바위, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-bulldoze|땅고르기]], [[move-horn-attack|뿔찌르기]], [[move-stomp|짓밟기]]

@@ -3,7 +3,7 @@ title: "Tropius / 트로피우스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-grass", "type-flying", "evo-line-tropius"]
 aliases: ["트로피우스", "tropius"]
 summary: "#357 트로피우스 (풀 / 비행) — GO 최대 CP: 1,941"
@@ -34,6 +34,14 @@ evolution_line: "tropius"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|380위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 바위, 불꽃, 얼음(×4) |
+| 저항 | 격투, 물, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-air-slash|에어슬래시]], [[move-razor-leaf|잎날가르기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-leaf-blade|리프블레이드]], [[move-stomp|짓밟기]], [[move-brutal-swing|세차게휘두르기]]

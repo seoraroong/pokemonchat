@@ -3,10 +3,10 @@ title: "Darkrai / 다크라이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-dark", "type-none", "evo-line-darkrai"]
 aliases: ["다크라이", "darkrai"]
-summary: "#491 다크라이 (악 / none) — GO 최대 CP: 3,739"
+summary: "#491 다크라이 (악) — GO 최대 CP: 3,739"
 evolution_line: "darkrai"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "darkrai"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|244위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-snarl|바크아웃]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-focus-blast|기합구슬]], [[move-shadow-ball|섀도볼]], [[move-sludge-bomb|오물폭탄]]  *(커뮤니티 데이/전용: [[move-sludge-bomb|오물폭탄]])*

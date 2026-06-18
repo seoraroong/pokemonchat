@@ -3,7 +3,7 @@ title: "Terrakion / 테라키온"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-rock", "type-fighting", "evo-line-terrakion"]
 aliases: ["테라키온", "terrakion"]
 summary: "#639 테라키온 (바위 / 격투) — GO 최대 CP: 3,698"
@@ -34,6 +34,13 @@ evolution_line: "terrakion"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|115위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀, 에스퍼, 페어리 |
+| 저항 | 노말, 독, 바위, 벌레, 불꽃, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-smack-down|떨어뜨리기]], [[move-zen-headbutt|사념의박치기]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-earthquake|지진]], [[move-rock-slide|스톤샤워]], [[move-sacred-sword|성스러운칼]]  *(커뮤니티 데이/전용: [[move-sacred-sword|성스러운칼]])*

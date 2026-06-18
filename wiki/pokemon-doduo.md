@@ -3,10 +3,10 @@ title: "Doduo / 두두"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "type-flying", "evo-line-doduo"]
 aliases: ["두두", "doduo"]
-summary: "#084 두두 (노말/비행 타입) — 기본 스탯 합계 310"
+summary: "#084 두두 (노말 / 비행) — GO 최대 CP: 1,200"
 evolution_line: "doduo"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "doduo"
 | 타입 | 노말 / 비행 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-brave-bird|브레이브버드]], [[move-drill-peck|회전부리]], [[move-swift|스피드스타]]  *(커뮤니티 데이/전용: [[move-swift|스피드스타]])*

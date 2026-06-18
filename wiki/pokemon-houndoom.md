@@ -3,7 +3,7 @@ title: "Houndoom / 헬가"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-dark", "type-fire", "evo-line-houndoom"]
 aliases: ["헬가", "houndoom"]
 summary: "#229 헬가 (악 / 불꽃) — GO 최대 CP: 2,635"
@@ -33,6 +33,14 @@ evolution_line: "houndoom"
 | 타입 | 악 / 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 바위, 물 |
+| 저항 | 고스트, 강철, 불꽃, 풀, 얼음, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fire-fang|불꽃엄니]], [[move-snarl|바크아웃]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-fire-blast|불대문자]], [[move-flamethrower|화염방사]], [[move-foul-play|속임수]]

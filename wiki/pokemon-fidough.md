@@ -3,10 +3,10 @@ title: "Fidough / 쫀도기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-fairy", "type-none", "evo-line-fidough"]
 aliases: ["쫀도기", "fidough"]
-summary: "#926 쫀도기 (페어리 / none) — GO 최대 CP: 985"
+summary: "#926 쫀도기 (페어리) — GO 최대 CP: 985"
 evolution_line: "fidough"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "fidough"
 | 타입 | 페어리 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charm|애교부리기]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-play-rough|치근거리기]], [[move-psychic-fangs|사이코팽]]

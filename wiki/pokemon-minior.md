@@ -3,7 +3,7 @@ title: "Minior / 메테노"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-rock", "type-flying", "evo-line-minior"]
 aliases: ["메테노", "minior"]
 summary: "#774 메테노 (바위 / 비행) — GO 최대 CP: 2,292"
@@ -33,6 +33,14 @@ evolution_line: "minior"
 | 타입 | 바위 / 비행 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 강철, 물, 전기, 얼음 |
+| 저항 | 노말, 비행, 독, 벌레, 불꽃 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rollout|구르기]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-power-gem|파워젬]], [[move-ancient-power|원시의힘]], [[move-acrobatics|애크러뱃]]

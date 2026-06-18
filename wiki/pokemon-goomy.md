@@ -3,10 +3,10 @@ title: "Goomy / 미끄메라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-dragon", "type-none", "evo-line-goomy"]
 aliases: ["미끄메라", "goomy"]
-summary: "#704 미끄메라 (드래곤 / none) — GO 최대 CP: 976"
+summary: "#704 미끄메라 (드래곤) — GO 최대 CP: 976"
 evolution_line: "goomy"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "goomy"
 | 타입 | 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-dragon-pulse|용의파동]], [[move-sludge-wave|오물웨이브]], [[move-muddy-water|탁류]]

@@ -3,10 +3,10 @@ title: "Garganacl / 콜로솔트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-rock", "type-none", "evo-line-garganacl"]
 aliases: ["콜로솔트", "garganacl"]
-summary: "#934 콜로솔트 (바위 / none) — GO 최대 CP: 2,711"
+summary: "#934 콜로솔트 (바위) — GO 최대 CP: 2,711"
 evolution_line: "garganacl"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "garganacl"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|205위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|280위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀 |
+| 저항 | 노말, 비행, 독, 불꽃 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-smack-down|떨어뜨리기]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-rock-blast|락블레스트]], [[move-rock-tomb|암석봉인]], [[move-ancient-power|원시의힘]]

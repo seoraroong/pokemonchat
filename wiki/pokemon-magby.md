@@ -3,10 +3,10 @@ title: "Magby / 마그비"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-fire", "type-none", "evo-line-magby"]
 aliases: ["마그비", "magby"]
-summary: "#240 마그비 (불꽃 / none) — GO 최대 CP: 1,323"
+summary: "#240 마그비 (불꽃) — GO 최대 CP: 1,323"
 evolution_line: "magby"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "magby"
 | 타입 | 불꽃 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-karate-chop|태권당수]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-fire-punch|불꽃펀치]], [[move-flame-burst|불꽃튀기기]], [[move-flamethrower|화염방사]]  *(커뮤니티 데이/전용: [[move-flamethrower|화염방사]])*

@@ -3,7 +3,7 @@ title: "Swinub / 꾸꾸리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-ice", "type-ground", "evo-line-swinub"]
 aliases: ["꾸꾸리", "swinub"]
 summary: "#220 꾸꾸리 (얼음 / 땅) — GO 최대 CP: 741"
@@ -33,6 +33,14 @@ evolution_line: "swinub"
 | 타입 | 얼음 / 땅 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 강철, 불꽃, 물, 풀 |
+| 저항 | 독 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-icy-wind|얼다바람]], [[move-rock-slide|스톤샤워]]

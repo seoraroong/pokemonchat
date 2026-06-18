@@ -3,10 +3,10 @@ title: "Umbreon / 블래키"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-dark", "type-none", "evo-line-umbreon"]
 aliases: ["블래키", "umbreon"]
-summary: "#197 블래키 (악 / none) — GO 최대 CP: 2,137"
+summary: "#197 블래키 (악) — GO 최대 CP: 2,137"
 evolution_line: "umbreon"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "umbreon"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|152위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|390위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-snarl|바크아웃]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-foul-play|속임수]], [[move-last-resort|뒀다쓰기]], [[move-psychic|사이코키네시스]]  *(커뮤니티 데이/전용: [[move-last-resort|뒀다쓰기]], [[move-psychic|사이코키네시스]])*

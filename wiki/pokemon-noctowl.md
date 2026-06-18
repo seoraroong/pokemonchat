@@ -3,7 +3,7 @@ title: "Noctowl / 야부엉"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-flying", "evo-line-noctowl"]
 aliases: ["야부엉", "noctowl"]
 summary: "#164 야부엉 (노말 / 비행) — GO 최대 CP: 2,024"
@@ -35,6 +35,14 @@ evolution_line: "noctowl"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|211위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|327위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-extrasensory|신통력]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-night-shade|나이트헤드]], [[move-psychic|사이코키네시스]], [[move-sky-attack|불새]], [[move-shadow-ball|섀도볼]]

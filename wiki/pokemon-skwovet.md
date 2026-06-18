@@ -3,10 +3,10 @@ title: "Skwovet / 탐리스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-normal", "type-none", "evo-line-skwovet"]
 aliases: ["탐리스", "skwovet"]
-summary: "#819 탐리스 (노말 / none) — GO 최대 CP: 944"
+summary: "#819 탐리스 (노말) — GO 최대 CP: 944"
 evolution_line: "skwovet"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "skwovet"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-bite|물기]], [[move-bullet-seed|기관총]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-crunch|깨물어부수기]], [[move-trailblaze|Trailblaze]]

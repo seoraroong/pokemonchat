@@ -3,10 +3,10 @@ title: "Alcremie / 마휘핑"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-fairy", "type-none", "evo-line-alcremie"]
 aliases: ["마휘핑", "alcremie"]
-summary: "#869 마휘핑 (페어리 / none) — GO 최대 CP: 2,682"
+summary: "#869 마휘핑 (페어리) — GO 최대 CP: 2,682"
 evolution_line: "alcremie"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "alcremie"
 | 타입 | 페어리 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-psyshock|사이코쇼크]], [[move-energy-ball|에너지볼]]

@@ -3,10 +3,10 @@ title: "Zorua / 조로아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-none", "evo-line-zorua"]
 aliases: ["조로아", "zorua"]
-summary: "#570 조로아 (악 / none) — GO 최대 CP: 1,175"
+summary: "#570 조로아 (악) — GO 최대 CP: 1,175"
 evolution_line: "zorua"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "zorua"
 | 타입 | 악 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-feint-attack|속여때리기]]
 - **스페셜 기술:** [[move-foul-play|속임수]], [[move-aerial-ace|제비반환]], [[move-dark-pulse|악의파동]], [[move-night-shade|나이트헤드]]

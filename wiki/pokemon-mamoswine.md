@@ -3,7 +3,7 @@ title: "Mamoswine / 맘모꾸리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ice", "type-ground", "evo-line-mamoswine"]
 aliases: ["맘모꾸리", "mamoswine"]
 summary: "#473 맘모꾸리 (얼음 / 땅) — GO 최대 CP: 3,328"
@@ -36,6 +36,14 @@ evolution_line: "mamoswine"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|310위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|110위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 강철, 불꽃, 물, 풀 |
+| 저항 | 독 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-avalanche|눈사태]], [[move-bulldoze|땅고르기]], [[move-stone-edge|스톤에지]], [[move-ancient-power|원시의힘]], [[move-high-horsepower|10만마력]], [[move-icicle-spear|고드름침]]  *(커뮤니티 데이/전용: [[move-ancient-power|원시의힘]])*

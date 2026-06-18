@@ -3,7 +3,7 @@ title: "Rhyperior / 거대코뿌리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ground", "type-rock", "evo-line-rhyperior"]
 aliases: ["거대코뿌리", "rhyperior"]
 summary: "#464 거대코뿌리 (땅 / 바위) — GO 최대 CP: 3,733"
@@ -35,6 +35,14 @@ evolution_line: "rhyperior"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|397위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|67위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물(×4), 풀(×4), 얼음 |
+| 저항 | 노말, 비행, 독(×¼), 바위, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-smack-down|떨어뜨리기]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-stone-edge|스톤에지]], [[move-surf|파도타기]], [[move-skull-bash|로케트박치기]], Super Power, [[move-rock-wrecker|암석포]], [[move-breaking-swipe|와이드브레이커]], [[move-drill-run|드릴라이너]]  *(커뮤니티 데이/전용: [[move-rock-wrecker|암석포]])*

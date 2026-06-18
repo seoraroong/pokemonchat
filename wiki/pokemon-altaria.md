@@ -3,7 +3,7 @@ title: "Altaria / 파비코리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dragon", "type-flying", "evo-line-altaria"]
 aliases: ["파비코리", "altaria"]
 summary: "#334 파비코리 (드래곤 / 비행) — GO 최대 CP: 2,004"
@@ -35,6 +35,14 @@ evolution_line: "altaria"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|4위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|257위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 얼음(×4), 드래곤, 페어리 |
+| 저항 | 격투, 벌레, 불꽃, 물, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-peck|쪼기]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-dragon-pulse|용의파동]], [[move-sky-attack|불새]], [[move-moonblast|문포스]], [[move-flamethrower|화염방사]]  *(커뮤니티 데이/전용: [[move-moonblast|문포스]])*

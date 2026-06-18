@@ -3,10 +3,10 @@ title: "Slaking / 게을킹"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-slaking"]
 aliases: ["게을킹", "slaking"]
-summary: "#289 게을킹 (노말 / none) — GO 최대 CP: 4,431"
+summary: "#289 게을킹 (노말) — GO 최대 CP: 4,431"
 evolution_line: "slaking"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "slaking"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|398위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-yawn|하품]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-hyper-beam|파괴광선]], [[move-play-rough|치근거리기]], [[move-body-slam|누르기]]  *(커뮤니티 데이/전용: [[move-body-slam|누르기]])*

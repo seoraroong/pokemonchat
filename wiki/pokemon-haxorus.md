@@ -3,10 +3,10 @@ title: "Haxorus / 액스라이즈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dragon", "type-none", "evo-line-haxorus"]
 aliases: ["액스라이즈", "haxorus"]
-summary: "#612 액스라이즈 (드래곤 / none) — GO 최대 CP: 3,593"
+summary: "#612 액스라이즈 (드래곤) — GO 최대 CP: 3,593"
 evolution_line: "haxorus"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "haxorus"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|183위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-counter|카운터]]
 - **스페셜 기술:** [[move-dragon-claw|드래곤크루]], [[move-surf|파도타기]], [[move-night-slash|깜짝베기]], [[move-earthquake|지진]], [[move-breaking-swipe|와이드브레이커]]  *(커뮤니티 데이/전용: [[move-breaking-swipe|와이드브레이커]])*

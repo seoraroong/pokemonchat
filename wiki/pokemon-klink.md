@@ -3,10 +3,10 @@ title: "Klink / 기어르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-steel", "type-none", "evo-line-klink"]
 aliases: ["기어르", "klink"]
-summary: "#599 기어르 (강철 / none) — GO 최대 CP: 956"
+summary: "#599 기어르 (강철) — GO 최대 CP: 956"
 evolution_line: "klink"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "klink"
 | 타입 | 강철 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레, 강철, 풀, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-volt-switch|볼트체인지]], [[move-charge-beam|차지빔]], [[move-metal-sound|금속음]]
 - **스페셜 기술:** Vice Grip, [[move-discharge|방전]], [[move-zap-cannon|전자포]]

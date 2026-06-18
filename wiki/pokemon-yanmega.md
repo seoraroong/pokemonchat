@@ -3,7 +3,7 @@ title: "Yanmega / 메가자리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-bug", "type-flying", "evo-line-yanmega"]
 aliases: ["메가자리", "yanmega"]
 summary: "#469 메가자리 (벌레 / 비행) — GO 최대 CP: 2,946"
@@ -34,6 +34,14 @@ evolution_line: "yanmega"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|384위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위(×4), 불꽃, 전기, 얼음 |
+| 저항 | 격투(×¼), 벌레, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-ancient-power|원시의힘]], [[move-bug-buzz|벌레의야단법석]]

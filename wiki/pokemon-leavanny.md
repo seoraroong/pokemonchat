@@ -3,7 +3,7 @@ title: "Leavanny / 모아머"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-grass", "evo-line-leavanny"]
 aliases: ["모아머", "leavanny"]
 summary: "#542 모아머 (벌레 / 풀) — GO 최대 CP: 2,580"
@@ -35,6 +35,13 @@ evolution_line: "leavanny"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|441위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|320위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행(×4), 독, 바위, 벌레, 불꽃(×4), 얼음 |
+| 저항 | 격투, 땅(×¼), 물, 풀(×¼), 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-razor-leaf|잎날가르기]], [[move-bug-bite|벌레먹음]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-leaf-blade|리프블레이드]], X Scissor, [[move-silver-wind|은빛바람]], [[move-leaf-storm|리프스톰]]  *(커뮤니티 데이/전용: [[move-shadow-claw|섀도크루]])*

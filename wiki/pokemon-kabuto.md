@@ -3,10 +3,10 @@ title: "Kabuto / 투구"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-rock", "type-water", "evo-line-kabuto"]
 aliases: ["투구", "kabuto"]
-summary: "#140 투구 (바위/물 타입) — 기본 스탯 합계 355"
+summary: "#140 투구 (바위 / 물) — GO 최대 CP: 1,370"
 evolution_line: "kabuto"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "kabuto"
 | 타입 | 바위 / 물 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-scratch|할퀴기]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-aqua-jet|아쿠아제트]], [[move-rock-tomb|암석봉인]]

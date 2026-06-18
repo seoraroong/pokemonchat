@@ -3,7 +3,7 @@ title: "Virizion / 비리디온"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-grass", "type-fighting", "evo-line-virizion"]
 aliases: ["비리디온", "virizion"]
 summary: "#640 비리디온 (풀 / 격투) — GO 최대 CP: 3,022"
@@ -35,6 +35,13 @@ evolution_line: "virizion"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|8위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|108위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행(×4), 독, 불꽃, 에스퍼, 얼음, 페어리 |
+| 저항 | 땅, 바위, 물, 풀, 전기, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-zen-headbutt|사념의박치기]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-leaf-blade|리프블레이드]], [[move-stone-edge|스톤에지]], [[move-sacred-sword|성스러운칼]]  *(커뮤니티 데이/전용: [[move-sacred-sword|성스러운칼]])*

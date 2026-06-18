@@ -3,7 +3,7 @@ title: "Annihilape / 저승갓숭"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-fighting", "type-ghost", "evo-line-annihilape"]
 aliases: ["저승갓숭", "annihilape"]
 summary: "#979 저승갓숭 (격투 / 고스트) — GO 최대 CP: 3,268"
@@ -36,6 +36,14 @@ evolution_line: "annihilape"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|17위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|58위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 고스트, 에스퍼, 페어리 |
+| 저항 | 독, 바위, 벌레(×¼) |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-counter|카운터]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-low-sweep|로킥]], [[move-night-slash|깜짝베기]], [[move-ice-punch|냉동펀치]], [[move-shadow-ball|섀도볼]], [[move-rage-fist|Rage Fist]]  *(커뮤니티 데이/전용: [[move-rage-fist|Rage Fist]])*

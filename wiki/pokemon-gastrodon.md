@@ -3,7 +3,7 @@ title: "Gastrodon / 트리토돈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-water", "type-ground", "evo-line-gastrodon"]
 aliases: ["트리토돈", "gastrodon"]
 summary: "#423 트리토돈 (물 / 땅) — GO 최대 CP: 2,324"
@@ -35,6 +35,14 @@ evolution_line: "gastrodon"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|61위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|78위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀(×4) |
+| 저항 | 독, 바위, 강철, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** Hidden Power Bug, Hidden Power Dark, Hidden Power Dragon, Hidden Power Electric, Hidden Power Fighting, Hidden Power Fire, Hidden Power Flying, Hidden Power Ghost, Hidden Power Grass, Hidden Power Ground, Hidden Power Ice, Hidden Power Poison, Hidden Power Psychic, Hidden Power Rock, Hidden Power Steel, Hidden Power Water, [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-water-pulse|물의파동]], [[move-earth-power|대지의힘]], [[move-earthquake|지진]]

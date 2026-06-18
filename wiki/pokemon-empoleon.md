@@ -3,7 +3,7 @@ title: "Empoleon / 엠페르트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-water", "type-steel", "evo-line-empoleon"]
 aliases: ["엠페르트", "empoleon"]
 summary: "#395 엠페르트 (물 / 강철) — GO 최대 CP: 2,900"
@@ -36,6 +36,14 @@ evolution_line: "empoleon"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|10위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|149위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 전기 |
+| 저항 | 노말, 비행, 바위, 벌레, 강철(×¼), 물, 에스퍼, 얼음(×¼), 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-waterfall|폭포오르기]], [[move-steel-wing|강철날개]], [[move-metal-sound|금속음]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-flash-cannon|러스터캐논]], [[move-hydro-pump|하이드로펌프]], [[move-hydro-cannon|하이드로캐논]], [[move-drill-peck|회전부리]]  *(커뮤니티 데이/전용: [[move-hydro-cannon|하이드로캐논]])*

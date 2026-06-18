@@ -3,10 +3,10 @@ title: "Elgyem / 리그레"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-psychic", "type-none", "evo-line-elgyem"]
 aliases: ["리그레", "elgyem"]
-summary: "#605 리그레 (에스퍼 / none) — GO 최대 CP: 1,385"
+summary: "#605 리그레 (에스퍼) — GO 최대 CP: 1,385"
 evolution_line: "elgyem"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "elgyem"
 | 타입 | 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-astonish|놀래키기]]
 - **스페셜 기술:** [[move-psybeam|환상빔]], [[move-dark-pulse|악의파동]], [[move-psychic|사이코키네시스]]

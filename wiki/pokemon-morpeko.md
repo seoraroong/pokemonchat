@@ -3,7 +3,7 @@ title: "Morpeko / 모르페코"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-electric", "type-dark", "evo-line-morpeko"]
 aliases: ["모르페코", "morpeko"]
 summary: "#877 모르페코 (전기 / 악) — GO 최대 CP: 1,942"
@@ -35,6 +35,14 @@ evolution_line: "morpeko"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|54위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|229위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 벌레, 페어리 |
+| 저항 | 비행, 고스트, 강철, 전기, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-bite|물기]], [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-seed-bomb|씨폭탄]], [[move-outrage|역린]], [[move-psychic-fangs|사이코팽]], Aura Wheel Electric

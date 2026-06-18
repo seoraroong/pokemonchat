@@ -3,10 +3,10 @@ title: "Floatzel / 플로젤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-water", "type-none", "evo-line-floatzel"]
 aliases: ["플로젤", "floatzel"]
-summary: "#419 플로젤 (물 / none) — GO 최대 CP: 2,443"
+summary: "#419 플로젤 (물) — GO 최대 CP: 2,443"
 evolution_line: "floatzel"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "floatzel"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|498위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-hydro-pump|하이드로펌프]], [[move-swift|스피드스타]], [[move-liquidation|아쿠아브레이크]]

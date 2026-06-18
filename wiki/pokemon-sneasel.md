@@ -3,7 +3,7 @@ title: "Sneasel / 포푸니"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-dark", "type-ice", "evo-line-sneasel"]
 aliases: ["포푸니", "sneasel"]
 summary: "#215 포푸니 (악 / 얼음) — GO 최대 CP: 2,051"
@@ -33,6 +33,14 @@ evolution_line: "sneasel"
 | 타입 | 악 / 얼음 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투(×4), 바위, 벌레, 강철, 불꽃, 페어리 |
+| 저항 | 고스트, 얼음, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-ice-shard|얼음뭉치]]
 - **스페셜 기술:** [[move-avalanche|눈사태]], [[move-foul-play|속임수]], [[move-ice-punch|냉동펀치]], [[move-triple-axel|트리플악셀]]

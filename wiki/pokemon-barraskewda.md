@@ -3,10 +3,10 @@ title: "Barraskewda / 꼬치조"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-water", "type-none", "evo-line-barraskewda"]
 aliases: ["꼬치조", "barraskewda"]
-summary: "#847 꼬치조 (물 / none) — GO 최대 CP: 2,656"
+summary: "#847 꼬치조 (물) — GO 최대 CP: 2,656"
 evolution_line: "barraskewda"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "barraskewda"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-waterfall|폭포오르기]], [[move-bite|물기]], [[move-peck|쪼기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-aqua-jet|아쿠아제트]], [[move-close-combat|인파이트]]

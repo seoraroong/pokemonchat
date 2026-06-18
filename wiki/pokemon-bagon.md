@@ -3,10 +3,10 @@ title: "Bagon / 아공이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dragon", "type-none", "evo-line-bagon"]
 aliases: ["아공이", "bagon"]
-summary: "#371 아공이 (드래곤 / none) — GO 최대 CP: 1,156"
+summary: "#371 아공이 (드래곤) — GO 최대 CP: 1,156"
 evolution_line: "bagon"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "bagon"
 | 타입 | 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-ember|불꽃세례]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-flamethrower|화염방사]], [[move-twister|회오리]]

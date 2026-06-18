@@ -3,7 +3,7 @@ title: "Landorus / 랜드로스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ground", "type-flying", "evo-line-landorus"]
 aliases: ["랜드로스", "landorus"]
 summary: "#645 랜드로스 (땅 / 비행) — GO 최대 CP: 3,588"
@@ -34,6 +34,14 @@ evolution_line: "landorus"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|97위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 얼음(×4) |
+| 저항 | 격투, 독, 벌레 |
+| 무효 | 땅, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-rock-throw|돌떨구기]]
 - **스페셜 기술:** [[move-earth-power|대지의힘]], [[move-outrage|역린]], [[move-rock-slide|스톤샤워]], [[move-focus-blast|기합구슬]]

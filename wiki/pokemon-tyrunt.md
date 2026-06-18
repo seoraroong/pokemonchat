@@ -3,7 +3,7 @@ title: "Tyrunt / 티고라스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-rock", "type-dragon", "evo-line-tyrunt"]
 aliases: ["티고라스", "tyrunt"]
 summary: "#696 티고라스 (바위 / 드래곤) — GO 최대 CP: 1,635"
@@ -33,6 +33,13 @@ evolution_line: "tyrunt"
 | 타입 | 바위 / 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 얼음, 드래곤, 페어리 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-stomp|짓밟기]], [[move-ancient-power|원시의힘]], [[move-dragon-claw|드래곤크루]], [[move-rock-tomb|암석봉인]]

@@ -3,7 +3,7 @@ title: "Turtonator / 폭거북스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-fire", "type-dragon", "evo-line-turtonator"]
 aliases: ["폭거북스", "turtonator"]
 summary: "#776 폭거북스 (불꽃 / 드래곤) — GO 최대 CP: 2,223"
@@ -35,6 +35,13 @@ evolution_line: "turtonator"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|92위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|33위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 드래곤 |
+| 저항 | 벌레, 강철, 불꽃(×¼), 풀(×¼), 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-fire-spin|회오리불꽃]], [[move-incinerate|불태우기]]
 - **스페셜 기술:** [[move-overheat|오버히트]], [[move-flamethrower|화염방사]], [[move-dragon-pulse|용의파동]], [[move-flash-cannon|러스터캐논]], [[move-brutal-swing|세차게휘두르기]], [[move-dragon-claw|드래곤크루]]

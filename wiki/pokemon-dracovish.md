@@ -3,7 +3,7 @@ title: "Dracovish / 어래곤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-water", "type-dragon", "evo-line-dracovish"]
 aliases: ["어래곤", "dracovish"]
 summary: "#882 어래곤 (물 / 드래곤) — GO 최대 CP: 2,500"
@@ -33,6 +33,13 @@ evolution_line: "dracovish"
 | 타입 | 물 / 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 드래곤, 페어리 |
+| 저항 | 강철, 불꽃(×¼), 물(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-brine|소금물]], [[move-dragon-pulse|용의파동]], [[move-ancient-power|원시의힘]]

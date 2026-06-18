@@ -3,7 +3,7 @@ title: "Deerling / 사철록"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-grass", "evo-line-deerling"]
 aliases: ["사철록", "deerling"]
 summary: "#585 사철록 (노말 / 풀) — GO 최대 CP: 1,135"
@@ -33,6 +33,14 @@ evolution_line: "deerling"
 | 타입 | 노말 / 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-seed-bomb|씨폭탄]], [[move-wild-charge|와일드볼트]], [[move-trailblaze|Trailblaze]]

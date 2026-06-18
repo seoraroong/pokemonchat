@@ -3,7 +3,7 @@ title: "Enamorus / 러브로스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-fairy", "type-flying", "evo-line-enamorus"]
 aliases: ["러브로스", "enamorus"]
 summary: "#905 러브로스 (페어리 / 비행) — GO 최대 CP: 3,425"
@@ -35,6 +35,14 @@ evolution_line: "enamorus"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|477위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|109위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 바위, 강철, 전기, 얼음 |
+| 저항 | 격투(×¼), 벌레(×¼), 풀, 악 |
+| 무효 | 땅, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-zen-headbutt|사념의박치기]], [[move-fairy-wind|요정의바람]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-fly|공중날기]], [[move-grass-knot|풀묶기]]

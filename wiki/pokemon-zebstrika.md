@@ -3,10 +3,10 @@ title: "Zebstrika / 제브라이카"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-electric", "type-none", "evo-line-zebstrika"]
 aliases: ["제브라이카", "zebstrika"]
-summary: "#523 제브라이카 (전기 / none) — GO 최대 CP: 2,428"
+summary: "#523 제브라이카 (전기) — GO 최대 CP: 2,428"
 evolution_line: "zebstrika"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "zebstrika"
 | 타입 | 전기 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-spark|스파크]]
 - **스페셜 기술:** [[move-flame-charge|니트로차지]], [[move-discharge|방전]], [[move-wild-charge|와일드볼트]]

@@ -3,10 +3,10 @@ title: "Rampardos / 램펄드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-rock", "type-none", "evo-line-rampardos"]
 aliases: ["램펄드", "rampardos"]
-summary: "#409 램펄드 (바위 / none) — GO 최대 CP: 3,298"
+summary: "#409 램펄드 (바위) — GO 최대 CP: 3,298"
 evolution_line: "rampardos"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "rampardos"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|388위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀 |
+| 저항 | 노말, 비행, 독, 불꽃 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-smack-down|떨어뜨리기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-flamethrower|화염방사]], [[move-outrage|역린]], [[move-rock-slide|스톤샤워]]

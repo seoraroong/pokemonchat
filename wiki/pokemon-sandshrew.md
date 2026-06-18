@@ -3,10 +3,10 @@ title: "Sandshrew / 모래두지"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-ground", "evo-line-sandshrew"]
 aliases: ["모래두지", "sandshrew"]
-summary: "#027 모래두지 (땅 타입) — 기본 스탯 합계 300"
+summary: "#027 모래두지 (땅) — GO 최대 CP: 1,261"
 evolution_line: "sandshrew"
 ---
 
@@ -69,6 +69,14 @@ evolution_line: "sandshrew"
 | 타입 | 땅 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-scratch|할퀴기]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-rock-slide|스톤샤워]], [[move-rock-tomb|암석봉인]], [[move-sand-tomb|모래지옥]]  *(커뮤니티 데이/전용: [[move-rock-tomb|암석봉인]])*

@@ -3,10 +3,10 @@ title: "Pidgeot / 피죤투"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "type-flying", "evo-line-pidgey"]
 aliases: ["피죤투", "pidgeot"]
-summary: "#018 피죤투 (노말/비행 타입) — 기본 스탯 합계 479"
+summary: "#018 피죤투 (노말 / 비행) — GO 최대 CP: 2,129"
 evolution_line: "pidgey"
 ---
 
@@ -73,6 +73,14 @@ evolution_line: "pidgey"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|184위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|292위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-air-slash|에어슬래시]], [[move-steel-wing|강철날개]], [[move-wing-attack|날개치기]], [[move-gust|바람일으키기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-air-cutter|에어컷터]], [[move-brave-bird|브레이브버드]], [[move-hurricane|폭풍]], [[move-feather-dance|깃털댄스]], [[move-heat-wave|열풍]], [[move-twister|회오리]]  *(커뮤니티 데이/전용: [[move-wing-attack|날개치기]], [[move-air-cutter|에어컷터]], [[move-gust|바람일으키기]])*

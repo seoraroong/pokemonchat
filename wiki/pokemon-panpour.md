@@ -3,10 +3,10 @@ title: "Panpour / 앗차프"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-none", "evo-line-panpour"]
 aliases: ["앗차프", "panpour"]
-summary: "#515 앗차프 (물 / none) — GO 최대 CP: 956"
+summary: "#515 앗차프 (물) — GO 최대 CP: 956"
 evolution_line: "panpour"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "panpour"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-surf|파도타기]], [[move-water-pulse|물의파동]], [[move-crunch|깨물어부수기]]

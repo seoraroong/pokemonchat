@@ -3,10 +3,10 @@ title: "Croconaw / 엘리게이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-none", "evo-line-croconaw"]
 aliases: ["엘리게이", "croconaw"]
-summary: "#159 엘리게이 (물 / none) — GO 최대 CP: 1,722"
+summary: "#159 엘리게이 (물) — GO 최대 CP: 1,722"
 evolution_line: "croconaw"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "croconaw"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-ice-punch|냉동펀치]], [[move-water-pulse|물의파동]]

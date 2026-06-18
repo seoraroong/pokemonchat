@@ -3,10 +3,10 @@ title: "Flaaffy / 보송송"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-electric", "type-none", "evo-line-flaaffy"]
 aliases: ["보송송", "flaaffy"]
-summary: "#180 보송송 (전기 / none) — GO 최대 CP: 1,521"
+summary: "#180 보송송 (전기) — GO 최대 CP: 1,521"
 evolution_line: "flaaffy"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "flaaffy"
 | 타입 | 전기 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-power-gem|파워젬]], [[move-thunderbolt|10만볼트]], [[move-trailblaze|Trailblaze]]

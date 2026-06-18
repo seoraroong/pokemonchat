@@ -3,7 +3,7 @@ title: "Okidogi / 조타구"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-poison", "type-fighting", "evo-line-okidogi"]
 aliases: ["조타구", "okidogi"]
 summary: "#1014 조타구 (독 / 격투) — GO 최대 CP: 2,986"
@@ -33,6 +33,13 @@ evolution_line: "okidogi"
 | 타입 | 독 / 격투 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 땅, 에스퍼(×4) |
+| 저항 | 격투, 독, 바위, 벌레(×¼), 풀, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-poison-jab|독찌르기]], [[move-force-palm|발경]]
 - **스페셜 기술:** Super Power, [[move-upper-hand|기선제압]], [[move-sludge-bomb|오물폭탄]]

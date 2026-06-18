@@ -3,7 +3,7 @@ title: "Beldum / 메탕"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-steel", "type-psychic", "evo-line-beldum"]
 aliases: ["메탕", "beldum"]
 summary: "#374 메탕 (강철 / 에스퍼) — GO 최대 CP: 976"
@@ -33,6 +33,14 @@ evolution_line: "beldum"
 | 타입 | 강철 / 에스퍼 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 불꽃, 악 |
+| 저항 | 노말, 비행, 바위, 강철, 풀, 에스퍼(×¼), 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-iron-head|아이언헤드]]

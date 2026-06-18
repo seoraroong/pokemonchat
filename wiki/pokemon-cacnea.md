@@ -3,10 +3,10 @@ title: "Cacnea / 선인왕"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-grass", "type-none", "evo-line-cacnea"]
 aliases: ["선인왕", "cacnea"]
-summary: "#331 선인왕 (풀 / none) — GO 최대 CP: 1,242"
+summary: "#331 선인왕 (풀) — GO 최대 CP: 1,242"
 evolution_line: "cacnea"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "cacnea"
 | 타입 | 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-poison-sting|독침]], [[move-sucker-punch|기습]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-grass-knot|풀묶기]], [[move-seed-bomb|씨폭탄]], [[move-payback|보복]], [[move-trailblaze|Trailblaze]]

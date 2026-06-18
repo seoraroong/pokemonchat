@@ -3,7 +3,7 @@ title: "Incineroar / 어흥염"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-fire", "type-dark", "evo-line-incineroar"]
 aliases: ["어흥염", "incineroar"]
 summary: "#727 어흥염 (불꽃 / 악) — GO 최대 CP: 2,996"
@@ -36,6 +36,14 @@ evolution_line: "incineroar"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|220위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|251위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 바위, 물 |
+| 저항 | 고스트, 강철, 불꽃, 풀, 얼음, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-snarl|바크아웃]], [[move-fire-fang|불꽃엄니]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-fire-blast|불대문자]], [[move-flame-charge|니트로차지]], [[move-dark-pulse|악의파동]], [[move-blaze-kick|브레이즈킥]], [[move-blast-burn|블러스트번]], [[move-darkest-lariat|DD래리어트]], [[move-brutal-swing|세차게휘두르기]], [[move-drain-punch|드레인펀치]]  *(커뮤니티 데이/전용: [[move-blast-burn|블러스트번]])*

@@ -3,7 +3,7 @@ title: "Crustle / 암팰리스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-rock", "evo-line-crustle"]
 aliases: ["암팰리스", "crustle"]
 summary: "#558 암팰리스 (벌레 / 바위) — GO 최대 CP: 2,542"
@@ -35,6 +35,13 @@ evolution_line: "crustle"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|116위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|100위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 강철, 물 |
+| 저항 | 노말, 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fury-cutter|연속자르기]], [[move-smack-down|떨어뜨리기]]
 - **스페셜 기술:** [[move-rock-blast|락블레스트]], X Scissor, [[move-rock-slide|스톤샤워]], [[move-rock-wrecker|암석포]]

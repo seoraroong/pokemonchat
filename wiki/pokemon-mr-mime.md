@@ -3,10 +3,10 @@ title: "Mr-mime / 마임맨"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-psychic", "type-fairy", "evo-line-mr-mime"]
 aliases: ["마임맨", "mr-mime"]
-summary: "#122 마임맨 (에스퍼/페어리 타입) — 기본 스탯 합계 460"
+summary: "#122 마임맨 (에스퍼 / 페어리) — GO 최대 CP: 2,228"
 evolution_line: "mr-mime"
 ---
 
@@ -72,6 +72,14 @@ evolution_line: "mr-mime"
 | 버디 거리 | 5km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|384위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 고스트, 강철 |
+| 저항 | 격투(×¼), 에스퍼 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-zen-headbutt|사념의박치기]], [[move-magical-leaf|메지컬리프]], [[move-psywave|사이코웨이브]]
 - **스페셜 기술:** [[move-psybeam|환상빔]], [[move-psychic|사이코키네시스]], [[move-shadow-ball|섀도볼]]

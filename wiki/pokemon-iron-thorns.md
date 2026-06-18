@@ -3,7 +3,7 @@ title: "Iron Thorns / 무쇠가시"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-rock", "type-electric", "evo-line-iron-thorns"]
 aliases: ["무쇠가시", "iron thorns"]
 summary: "#995 무쇠가시 (바위 / 전기) — GO 최대 CP: 3,759"
@@ -33,6 +33,13 @@ evolution_line: "iron-thorns"
 | 타입 | 바위 / 전기 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅(×4), 물, 풀 |
+| 저항 | 노말, 비행(×¼), 독, 불꽃, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

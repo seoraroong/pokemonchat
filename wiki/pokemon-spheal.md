@@ -3,7 +3,7 @@ title: "Spheal / 대굴레오"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-ice", "type-water", "evo-line-spheal"]
 aliases: ["대굴레오", "spheal"]
 summary: "#363 대굴레오 (얼음 / 물) — GO 최대 CP: 962"
@@ -33,6 +33,13 @@ evolution_line: "spheal"
 | 타입 | 얼음 / 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 풀, 전기 |
+| 저항 | 물, 얼음(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-aurora-beam|오로라빔]], [[move-body-slam|누르기]], [[move-water-pulse|물의파동]]

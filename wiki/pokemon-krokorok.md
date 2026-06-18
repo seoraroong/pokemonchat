@@ -3,7 +3,7 @@ title: "Krokorok / 악비르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ground", "type-dark", "evo-line-krokorok"]
 aliases: ["악비르", "krokorok"]
 summary: "#552 악비르 (땅 / 악) — GO 최대 CP: 1,418"
@@ -33,6 +33,14 @@ evolution_line: "krokorok"
 | 타입 | 땅 / 악 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 물, 풀, 얼음, 페어리 |
+| 저항 | 독, 바위, 고스트, 악 |
+| 무효 | 전기, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-crunch|깨물어부수기]], [[move-bulldoze|땅고르기]]

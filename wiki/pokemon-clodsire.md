@@ -3,7 +3,7 @@ title: "Clodsire / 토오"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-poison", "type-ground", "evo-line-clodsire"]
 aliases: ["토오", "clodsire"]
 summary: "#980 토오 (독 / 땅) — GO 최대 CP: 1,952"
@@ -35,6 +35,14 @@ evolution_line: "clodsire"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|30위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|250위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 물, 에스퍼, 얼음 |
+| 저항 | 격투, 독(×¼), 바위, 벌레, 페어리 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-poison-sting|독침]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-sludge-bomb|오물폭탄]], [[move-earthquake|지진]], [[move-stone-edge|스톤에지]], [[move-acid-spray|애시드봄]], [[move-water-pulse|물의파동]], [[move-megahorn|메가폰]]  *(커뮤니티 데이/전용: [[move-megahorn|메가폰]])*

@@ -3,10 +3,10 @@ title: "Golbat / 골뱃"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-poison", "type-flying", "evo-line-zubat"]
 aliases: ["골뱃", "golbat"]
-summary: "#042 골뱃 (독/비행 타입) — 기본 스탯 합계 455"
+summary: "#042 골뱃 (독 / 비행) — GO 최대 CP: 1,976"
 evolution_line: "zubat"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "zubat"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|281위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 에스퍼, 얼음 |
+| 저항 | 격투(×¼), 독, 벌레(×¼), 풀(×¼), 페어리 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-air-cutter|에어컷터]], [[move-ominous-wind|괴상한바람]], [[move-poison-fang|독엄니]], [[move-shadow-ball|섀도볼]]  *(커뮤니티 데이/전용: [[move-ominous-wind|괴상한바람]])*

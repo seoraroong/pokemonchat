@@ -3,7 +3,7 @@ title: "Aurorus / 아마루르가"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-rock", "type-ice", "evo-line-aurorus"]
 aliases: ["아마루르가", "aurorus"]
 summary: "#699 아마루르가 (바위 / 얼음) — GO 최대 CP: 2,802"
@@ -36,6 +36,13 @@ evolution_line: "aurorus"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|81위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|225위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투(×4), 땅, 바위, 강철(×4), 물, 풀 |
+| 저항 | 노말, 비행, 독, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]], [[move-frost-breath|얼음숨결]], [[move-rock-throw|돌떨구기]]
 - **스페셜 기술:** Weather Ball Ice, [[move-ancient-power|원시의힘]], [[move-blizzard|눈보라]], [[move-thunderbolt|10만볼트]], [[move-hyper-beam|파괴광선]], [[move-meteor-beam|메테오빔]]

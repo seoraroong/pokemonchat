@@ -3,10 +3,10 @@ title: "Banette / 다크펫"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-ghost", "type-none", "evo-line-banette"]
 aliases: ["다크펫", "banette"]
-summary: "#354 다크펫 (고스트 / none) — GO 최대 CP: 2,298"
+summary: "#354 다크펫 (고스트) — GO 최대 CP: 2,298"
 evolution_line: "banette"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "banette"
 | 타입 | 고스트 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 악 |
+| 저항 | 독, 벌레 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-hex|병상첨병]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-shadow-ball|섀도볼]], [[move-thunder|번개]]

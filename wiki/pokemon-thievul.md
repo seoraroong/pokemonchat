@@ -3,10 +3,10 @@ title: "Thievul / 폭슬라이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-dark", "type-none", "evo-line-thievul"]
 aliases: ["폭슬라이", "thievul"]
-summary: "#828 폭슬라이 (악 / none) — GO 최대 CP: 2,136"
+summary: "#828 폭슬라이 (악) — GO 최대 CP: 2,136"
 evolution_line: "thievul"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "thievul"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|136위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|242위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-snarl|바크아웃]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-night-slash|깜짝베기]], [[move-play-rough|치근거리기]]

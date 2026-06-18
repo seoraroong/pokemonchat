@@ -3,10 +3,10 @@ title: "Golduck / 골덕"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "evo-line-psyduck"]
 aliases: ["골덕", "golduck"]
-summary: "#055 골덕 (물 타입) — 기본 스탯 합계 500"
+summary: "#055 골덕 (물) — GO 최대 CP: 2,450"
 evolution_line: "psyduck"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "psyduck"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|462위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-hydro-pump|하이드로펌프]], [[move-ice-beam|냉동빔]], [[move-psychic|사이코키네시스]], [[move-bubble-beam|거품광선]], [[move-synchronoise|싱크로노이즈]], [[move-cross-chop|크로스촙]], [[move-liquidation|아쿠아브레이크]]

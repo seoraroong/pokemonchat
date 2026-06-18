@@ -3,10 +3,10 @@ title: "Seviper / 세비퍼"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-poison", "type-none", "evo-line-seviper"]
 aliases: ["세비퍼", "seviper"]
-summary: "#336 세비퍼 (독 / none) — GO 최대 CP: 2,105"
+summary: "#336 세비퍼 (독) — GO 최대 CP: 2,105"
 evolution_line: "seviper"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "seviper"
 | 타입 | 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 풀, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-iron-tail|아이언테일]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-poison-fang|독엄니]], [[move-wrap|김밥말이]]

@@ -3,7 +3,7 @@ title: "Malamar / 칼라마네로"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-dark", "type-psychic", "evo-line-malamar"]
 aliases: ["칼라마네로", "malamar"]
 summary: "#687 칼라마네로 (악 / 에스퍼) — GO 최대 CP: 2,359"
@@ -35,6 +35,14 @@ evolution_line: "malamar"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|27위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|15위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레(×4), 페어리 |
+| 저항 | 없음 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-psycho-cut|사이코커터]], [[move-psywave|사이코웨이브]]
 - **스페셜 기술:** [[move-psybeam|환상빔]], [[move-foul-play|속임수]], Super Power, [[move-hyper-beam|파괴광선]]

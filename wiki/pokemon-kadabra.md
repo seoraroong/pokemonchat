@@ -3,10 +3,10 @@ title: "Kadabra / 윤겔라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-psychic", "evo-line-abra"]
 aliases: ["윤겔라", "kadabra"]
-summary: "#064 윤겔라 (에스퍼 타입) — 기본 스탯 합계 400"
+summary: "#064 윤겔라 (에스퍼) — GO 최대 CP: 2,059"
 evolution_line: "abra"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "abra"
 | 타입 | 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-psycho-cut|사이코커터]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-psybeam|환상빔]], [[move-shadow-ball|섀도볼]]

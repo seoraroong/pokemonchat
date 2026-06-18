@@ -3,10 +3,10 @@ title: "Blastoise / 거북왕"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "evo-line-squirtle"]
 aliases: ["거북왕", "blastoise"]
-summary: "#009 거북왕 (물 타입) — 기본 스탯 합계 530"
+summary: "#009 거북왕 (물) — GO 최대 CP: 2,466"
 evolution_line: "squirtle"
 ---
 
@@ -72,6 +72,13 @@ evolution_line: "squirtle"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|13위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|307위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-water-gun|물대포]], [[move-rollout|구르기]]
 - **스페셜 기술:** [[move-flash-cannon|러스터캐논]], [[move-hydro-cannon|하이드로캐논]], [[move-hydro-pump|하이드로펌프]], [[move-ice-beam|냉동빔]], [[move-skull-bash|로케트박치기]]  *(커뮤니티 데이/전용: [[move-hydro-cannon|하이드로캐논]])*

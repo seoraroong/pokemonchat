@@ -3,7 +3,7 @@ title: "Scovillain / 스코빌런"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-grass", "type-fire", "evo-line-scovillain"]
 aliases: ["스코빌런", "scovillain"]
 summary: "#952 스코빌런 (풀 / 불꽃) — GO 최대 CP: 2,317"
@@ -33,6 +33,13 @@ evolution_line: "scovillain"
 | 타입 | 풀 / 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 바위 |
+| 저항 | 강철, 풀(×¼), 전기, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-leafage|나뭇잎]], [[move-fire-fang|불꽃엄니]]
 - **스페셜 기술:** [[move-leaf-storm|리프스톰]], [[move-grass-knot|풀묶기]], [[move-overheat|오버히트]], [[move-flamethrower|화염방사]]

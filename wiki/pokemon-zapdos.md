@@ -3,10 +3,10 @@ title: "Zapdos / 썬더"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-electric", "type-flying", "evo-line-zapdos", "legendary"]
 aliases: ["썬더", "zapdos"]
-summary: "#145 썬더 (전기/비행 타입) — 기본 스탯 합계 580"
+summary: "#145 썬더 (전기 / 비행) — GO 최대 CP: 3,527"
 evolution_line: "zapdos"
 ---
 
@@ -73,6 +73,14 @@ evolution_line: "zapdos"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|111위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|80위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 얼음 |
+| 저항 | 격투, 비행, 벌레, 강철, 풀 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-thunder|번개]], [[move-thunderbolt|10만볼트]], [[move-zap-cannon|전자포]], [[move-ancient-power|원시의힘]], [[move-drill-peck|회전부리]], [[move-heat-wave|열풍]]  *(커뮤니티 데이/전용: [[move-thunder-shock|전기쇼크]])*

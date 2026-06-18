@@ -3,10 +3,10 @@ title: "Miltank / 밀탱크"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-none", "evo-line-miltank"]
 aliases: ["밀탱크", "miltank"]
-summary: "#241 밀탱크 (노말 / none) — GO 최대 CP: 2,354"
+summary: "#241 밀탱크 (노말) — GO 최대 CP: 2,354"
 evolution_line: "miltank"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "miltank"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|97위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|378위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-zen-headbutt|사념의박치기]], [[move-rollout|구르기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-gyro-ball|자이로볼]], [[move-ice-beam|냉동빔]], [[move-stomp|짓밟기]], [[move-thunderbolt|10만볼트]]

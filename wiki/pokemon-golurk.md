@@ -3,7 +3,7 @@ title: "Golurk / 골루그"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ground", "type-ghost", "evo-line-golurk"]
 aliases: ["골루그", "golurk"]
 summary: "#623 골루그 (땅 / 고스트) — GO 최대 CP: 2,854"
@@ -36,6 +36,14 @@ evolution_line: "golurk"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|226위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|172위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 물, 풀, 얼음, 악 |
+| 저항 | 독(×¼), 바위, 벌레 |
+| 무효 | 노말, 격투, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-shadow-punch|섀도펀치]], [[move-dynamic-punch|폭발펀치]], [[move-earth-power|대지의힘]], [[move-poltergeist|폴터가이스트]]

@@ -3,10 +3,10 @@ title: "Cresselia / 크레세리아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-psychic", "type-none", "evo-line-cresselia"]
 aliases: ["크레세리아", "cresselia"]
-summary: "#488 크레세리아 (에스퍼 / none) — GO 최대 CP: 2,857"
+summary: "#488 크레세리아 (에스퍼) — GO 최대 CP: 2,857"
 evolution_line: "cresselia"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "cresselia"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|45위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|159위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-psycho-cut|사이코커터]]
 - **스페셜 기술:** [[move-aurora-beam|오로라빔]], [[move-future-sight|미래예지]], [[move-moonblast|문포스]], [[move-grass-knot|풀묶기]]  *(커뮤니티 데이/전용: [[move-grass-knot|풀묶기]])*

@@ -3,7 +3,7 @@ title: "Drapion / 드래피온"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-poison", "type-dark", "evo-line-drapion"]
 aliases: ["드래피온", "drapion"]
 summary: "#452 드래피온 (독 / 악) — GO 최대 CP: 2,453"
@@ -35,6 +35,14 @@ evolution_line: "drapion"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|113위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|84위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 독, 고스트, 풀, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-infestation|엉겨붙기]], [[move-poison-sting|독침]], [[move-ice-fang|얼음엄니]]
 - **스페셜 기술:** [[move-aqua-tail|아쿠아테일]], [[move-crunch|깨물어부수기]], [[move-sludge-bomb|오물폭탄]], [[move-fell-stinger|마지막일침]]

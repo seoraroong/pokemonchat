@@ -3,10 +3,10 @@ title: "Pineco / 피콘"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-bug", "type-none", "evo-line-pineco"]
 aliases: ["피콘", "pineco"]
-summary: "#204 피콘 (벌레 / none) — GO 최대 CP: 1,108"
+summary: "#204 피콘 (벌레) — GO 최대 CP: 1,108"
 evolution_line: "pineco"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "pineco"
 | 타입 | 벌레 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃 |
+| 저항 | 격투, 땅, 풀 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-gyro-ball|자이로볼]], [[move-rock-tomb|암석봉인]], [[move-sand-tomb|모래지옥]]

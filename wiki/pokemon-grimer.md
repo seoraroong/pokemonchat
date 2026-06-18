@@ -3,10 +3,10 @@ title: "Grimer / 질퍽이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-poison", "evo-line-grimer"]
 aliases: ["질퍽이", "grimer"]
-summary: "#088 질퍽이 (독 타입) — 기본 스탯 합계 325"
+summary: "#088 질퍽이 (독) — GO 최대 CP: 1,374"
 evolution_line: "grimer"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "grimer"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|489위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 풀, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-mud-slap|진흙뿌리기]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** [[move-mud-bomb|진흙폭탄]], [[move-sludge|오물공격]], [[move-sludge-bomb|오물폭탄]]

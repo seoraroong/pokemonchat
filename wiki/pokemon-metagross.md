@@ -3,7 +3,7 @@ title: "Metagross / 메타그로스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-steel", "type-psychic", "evo-line-metagross"]
 aliases: ["메타그로스", "metagross"]
 summary: "#376 메타그로스 (강철 / 에스퍼) — GO 최대 CP: 3,791"
@@ -35,6 +35,14 @@ evolution_line: "metagross"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|285위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|3위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 불꽃, 악 |
+| 저항 | 노말, 비행, 바위, 강철, 풀, 에스퍼(×¼), 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-punch|불릿펀치]], [[move-zen-headbutt|사념의박치기]], [[move-fury-cutter|연속자르기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-flash-cannon|러스터캐논]], [[move-meteor-mash|코멧펀치]], [[move-psychic|사이코키네시스]]  *(커뮤니티 데이/전용: [[move-meteor-mash|코멧펀치]], [[move-shadow-claw|섀도크루]])*

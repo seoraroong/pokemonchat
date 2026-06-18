@@ -3,7 +3,7 @@ title: "Galvantula / 전툴라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-electric", "evo-line-galvantula"]
 aliases: ["전툴라", "galvantula"]
 summary: "#596 전툴라 (벌레 / 전기) — GO 최대 CP: 2,206"
@@ -35,6 +35,13 @@ evolution_line: "galvantula"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|440위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|404위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 불꽃 |
+| 저항 | 격투, 강철, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-volt-switch|볼트체인지]], [[move-fury-cutter|연속자르기]]
 - **스페셜 기술:** [[move-cross-poison|크로스포이즌]], [[move-bug-buzz|벌레의야단법석]], [[move-discharge|방전]], [[move-energy-ball|에너지볼]], [[move-lunge|덤벼들기]]

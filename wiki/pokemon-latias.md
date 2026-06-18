@@ -3,7 +3,7 @@ title: "Latias / 라티아스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dragon", "type-psychic", "evo-line-latias"]
 aliases: ["라티아스", "latias"]
 summary: "#380 라티아스 (드래곤 / 에스퍼) — GO 최대 CP: 3,510"
@@ -36,6 +36,13 @@ evolution_line: "latias"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|105위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|50위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 얼음, 드래곤, 악, 페어리 |
+| 저항 | 격투, 불꽃, 물, 풀, 전기, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-zen-headbutt|사념의박치기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-outrage|역린]], [[move-psychic|사이코키네시스]], [[move-thunder|번개]], [[move-mist-ball|미스트볼]], [[move-aura-sphere|파동탄]]  *(커뮤니티 데이/전용: [[move-mist-ball|미스트볼]])*

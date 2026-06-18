@@ -3,10 +3,10 @@ title: "Wailmer / 고래왕자"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-none", "evo-line-wailmer"]
 aliases: ["고래왕자", "wailmer"]
-summary: "#320 고래왕자 (물 / none) — GO 최대 CP: 1,468"
+summary: "#320 고래왕자 (물) — GO 최대 CP: 1,468"
 evolution_line: "wailmer"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "wailmer"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|255위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]], [[move-water-gun|물대포]], [[move-rollout|구르기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-heavy-slam|헤비봄버]], [[move-water-pulse|물의파동]], [[move-scald|열탕]]

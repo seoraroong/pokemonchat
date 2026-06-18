@@ -3,7 +3,7 @@ title: "Starly / 찌르꼬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-normal", "type-flying", "evo-line-starly"]
 aliases: ["찌르꼬", "starly"]
 summary: "#396 찌르꼬 (노말 / 비행) — GO 최대 CP: 719"
@@ -33,6 +33,14 @@ evolution_line: "starly"
 | 타입 | 노말 / 비행 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-tackle|몸통박치기]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-brave-bird|브레이브버드]], [[move-fly|공중날기]]

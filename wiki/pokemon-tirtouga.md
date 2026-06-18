@@ -3,7 +3,7 @@ title: "Tirtouga / 프로토가"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-rock", "evo-line-tirtouga"]
 aliases: ["프로토가", "tirtouga"]
 summary: "#564 프로토가 (물 / 바위) — GO 최대 CP: 1,488"
@@ -33,6 +33,13 @@ evolution_line: "tirtouga"
 | 타입 | 물 / 바위 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-surf|파도타기]], [[move-ancient-power|원시의힘]], [[move-body-slam|누르기]]

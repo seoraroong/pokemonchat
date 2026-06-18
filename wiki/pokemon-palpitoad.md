@@ -3,7 +3,7 @@ title: "Palpitoad / 두까비"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-ground", "evo-line-palpitoad"]
 aliases: ["두까비", "palpitoad"]
 summary: "#536 두까비 (물 / 땅) — GO 최대 CP: 1,392"
@@ -34,6 +34,14 @@ evolution_line: "palpitoad"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|497위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀(×4) |
+| 저항 | 독, 바위, 강철, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-bubble|거품]]
 - **스페셜 기술:** [[move-water-pulse|물의파동]], [[move-earth-power|대지의힘]], [[move-sludge-wave|오물웨이브]]

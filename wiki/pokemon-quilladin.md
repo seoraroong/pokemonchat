@@ -3,10 +3,10 @@ title: "Quilladin / 도치보구"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-grass", "type-none", "evo-line-quilladin"]
 aliases: ["도치보구", "quilladin"]
-summary: "#651 도치보구 (풀 / none) — GO 최대 CP: 1,719"
+summary: "#651 도치보구 (풀) — GO 최대 CP: 1,719"
 evolution_line: "quilladin"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "quilladin"
 | 타입 | 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-vine-whip|덩굴채찍]]
 - **스페셜 기술:** [[move-gyro-ball|자이로볼]], [[move-energy-ball|에너지볼]], [[move-body-slam|누르기]]

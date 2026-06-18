@@ -3,10 +3,10 @@ title: "Glaceon / 글레이시아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ice", "type-none", "evo-line-glaceon"]
 aliases: ["글레이시아", "glaceon"]
-summary: "#471 글레이시아 (얼음 / none) — GO 최대 CP: 3,126"
+summary: "#471 글레이시아 (얼음) — GO 최대 CP: 3,126"
 evolution_line: "glaceon"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "glaceon"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|334위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-frost-breath|얼음숨결]], [[move-ice-shard|얼음뭉치]]
 - **스페셜 기술:** [[move-avalanche|눈사태]], [[move-ice-beam|냉동빔]], [[move-icy-wind|얼다바람]], [[move-last-resort|뒀다쓰기]], [[move-water-pulse|물의파동]]  *(커뮤니티 데이/전용: [[move-last-resort|뒀다쓰기]], [[move-water-pulse|물의파동]])*

@@ -3,7 +3,7 @@ title: "Gouging Fire / 꿰뚫는화염"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-fire", "type-dragon", "evo-line-gouging-fire"]
 aliases: ["꿰뚫는화염", "gouging fire"]
 summary: "#1020 꿰뚫는화염 (불꽃 / 드래곤) — GO 최대 CP: 3,098"
@@ -33,6 +33,13 @@ evolution_line: "gouging-fire"
 | 타입 | 불꽃 / 드래곤 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 드래곤 |
+| 저항 | 벌레, 강철, 불꽃(×¼), 풀(×¼), 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

@@ -3,10 +3,10 @@ title: "Manectric / 썬더볼트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-electric", "type-none", "evo-line-manectric"]
 aliases: ["썬더볼트", "manectric"]
-summary: "#310 썬더볼트 (전기 / none) — GO 최대 CP: 2,340"
+summary: "#310 썬더볼트 (전기) — GO 최대 CP: 2,340"
 evolution_line: "manectric"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "manectric"
 | 타입 | 전기 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-snarl|바크아웃]], [[move-thunder-fang|번개엄니]]
 - **스페셜 기술:** [[move-flame-burst|불꽃튀기기]], [[move-thunder|번개]], [[move-wild-charge|와일드볼트]], [[move-overheat|오버히트]], [[move-psychic-fangs|사이코팽]]

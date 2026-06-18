@@ -3,10 +3,10 @@ title: "Cosmog / 코스모그"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-psychic", "type-none", "evo-line-cosmog"]
 aliases: ["코스모그", "cosmog"]
-summary: "#789 코스모그 (에스퍼 / none) — GO 최대 CP: 432"
+summary: "#789 코스모그 (에스퍼) — GO 최대 CP: 432"
 evolution_line: "cosmog"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "cosmog"
 | 타입 | 에스퍼 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

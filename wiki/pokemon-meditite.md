@@ -3,7 +3,7 @@ title: "Meditite / 요가랑"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-fighting", "type-psychic", "evo-line-meditite"]
 aliases: ["요가랑", "meditite"]
 summary: "#307 요가랑 (격투 / 에스퍼) — GO 최대 CP: 693"
@@ -33,6 +33,13 @@ evolution_line: "meditite"
 | 타입 | 격투 / 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 고스트, 페어리 |
+| 저항 | 격투, 바위 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-ice-punch|냉동펀치]], [[move-low-sweep|로킥]], [[move-psyshock|사이코쇼크]]

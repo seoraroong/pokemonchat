@@ -3,7 +3,7 @@ title: "Doublade / 쌍검킬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-steel", "type-ghost", "evo-line-doublade"]
 aliases: ["쌍검킬", "doublade"]
 summary: "#680 쌍검킬 (강철 / 고스트) — GO 최대 CP: 2,443"
@@ -35,6 +35,14 @@ evolution_line: "doublade"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|103위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|144위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 불꽃, 악 |
+| 저항 | 비행, 바위, 벌레(×¼), 강철, 풀, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 노말, 격투, 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-psycho-cut|사이코커터]], [[move-tackle|몸통박치기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-iron-head|아이언헤드]], [[move-gyro-ball|자이로볼]], [[move-sacred-sword|성스러운칼]]

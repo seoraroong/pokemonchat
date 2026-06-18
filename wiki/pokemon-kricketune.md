@@ -3,10 +3,10 @@ title: "Kricketune / 귀뚤톡크"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-bug", "type-none", "evo-line-kricketune"]
 aliases: ["귀뚤톡크", "kricketune"]
-summary: "#402 귀뚤톡크 (벌레 / none) — GO 최대 CP: 1,653"
+summary: "#402 귀뚤톡크 (벌레) — GO 최대 CP: 1,653"
 evolution_line: "kricketune"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "kricketune"
 | 타입 | 벌레 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃 |
+| 저항 | 격투, 땅, 풀 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fury-cutter|연속자르기]], [[move-struggle-bug|벌레의저항]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-bug-buzz|벌레의야단법석]], X Scissor

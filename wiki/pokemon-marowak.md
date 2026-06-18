@@ -3,10 +3,10 @@ title: "Marowak / 텅구리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-ground", "evo-line-cubone"]
 aliases: ["텅구리", "marowak"]
-summary: "#105 텅구리 (땅 타입) — 기본 스탯 합계 425"
+summary: "#105 텅구리 (땅) — GO 최대 CP: 1,835"
 evolution_line: "cubone"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "cubone"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|179위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-bone-club|뼈다귀치기]], [[move-dig|구멍파기]], [[move-earthquake|지진]], [[move-rock-slide|스톤샤워]]

@@ -3,7 +3,7 @@ title: "Magnezone / 자포코일"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-electric", "type-steel", "evo-line-magnezone"]
 aliases: ["자포코일", "magnezone"]
 summary: "#462 자포코일 (전기 / 강철) — GO 최대 CP: 3,205"
@@ -36,6 +36,14 @@ evolution_line: "magnezone"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|165위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|181위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅(×4), 불꽃 |
+| 저항 | 노말, 비행(×¼), 바위, 벌레, 강철(×¼), 풀, 전기, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-spark|스파크]], [[move-volt-switch|볼트체인지]], [[move-metal-sound|금속음]]
 - **스페셜 기술:** [[move-flash-cannon|러스터캐논]], [[move-wild-charge|와일드볼트]], [[move-zap-cannon|전자포]], [[move-mirror-shot|미러숏]]

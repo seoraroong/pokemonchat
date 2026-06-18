@@ -3,7 +3,7 @@ title: "Dustox / 독케일"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-bug", "type-poison", "evo-line-dustox"]
 aliases: ["독케일", "dustox"]
 summary: "#269 독케일 (벌레 / 독) — GO 최대 CP: 1,224"
@@ -33,6 +33,13 @@ evolution_line: "dustox"
 | 타입 | 벌레 / 독 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃, 에스퍼 |
+| 저항 | 격투(×¼), 독, 벌레, 풀(×¼), 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-struggle-bug|벌레의저항]]
 - **스페셜 기술:** [[move-bug-buzz|벌레의야단법석]], [[move-silver-wind|은빛바람]], [[move-sludge-bomb|오물폭탄]]

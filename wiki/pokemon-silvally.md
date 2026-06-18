@@ -3,10 +3,10 @@ title: "Silvally / 실버디"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-normal", "type-none", "evo-line-silvally"]
 aliases: ["실버디", "silvally"]
-summary: "#773 실버디 (노말 / none) — GO 최대 CP: 2,950"
+summary: "#773 실버디 (노말) — GO 최대 CP: 2,950"
 evolution_line: "silvally"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "silvally"
 | 타입 | 노말 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-tri-attack|트라이어택]], [[move-iron-head|아이언헤드]], [[move-aerial-ace|제비반환]], X Scissor

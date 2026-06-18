@@ -3,10 +3,10 @@ title: "Servine / 샤비"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-grass", "type-none", "evo-line-servine"]
 aliases: ["샤비", "servine"]
-summary: "#496 샤비 (풀 / none) — GO 최대 CP: 1,441"
+summary: "#496 샤비 (풀) — GO 최대 CP: 1,441"
 evolution_line: "servine"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "servine"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|300위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-iron-tail|아이언테일]], [[move-vine-whip|덩굴채찍]]
 - **스페셜 기술:** [[move-grass-knot|풀묶기]], [[move-leaf-tornado|그래스믹서]], [[move-wrap|김밥말이]]

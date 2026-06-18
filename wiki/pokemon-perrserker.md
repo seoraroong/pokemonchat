@@ -3,10 +3,10 @@ title: "Perrserker / 나이킹"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-steel", "type-none", "evo-line-perrserker"]
 aliases: ["나이킹", "perrserker"]
-summary: "#863 나이킹 (강철 / none) — GO 최대 CP: 2,386"
+summary: "#863 나이킹 (강철) — GO 최대 CP: 2,386"
 evolution_line: "perrserker"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "perrserker"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|415위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|177위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레, 강철, 풀, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-shadow-claw|섀도크루]], [[move-metal-sound|금속음]]
 - **스페셜 기술:** [[move-iron-head|아이언헤드]], [[move-close-combat|인파이트]], [[move-play-rough|치근거리기]], [[move-foul-play|속임수]], [[move-trailblaze|Trailblaze]]

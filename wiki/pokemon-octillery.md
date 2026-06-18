@@ -3,10 +3,10 @@ title: "Octillery / 대포무노"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-none", "evo-line-octillery"]
 aliases: ["대포무노", "octillery"]
-summary: "#224 대포무노 (물 / none) — GO 최대 CP: 2,315"
+summary: "#224 대포무노 (물) — GO 최대 CP: 2,315"
 evolution_line: "octillery"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "octillery"
 | 타입 | 물 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-water-gun|물대포]], [[move-lock-on|록온]]
 - **스페셜 기술:** [[move-aurora-beam|오로라빔]], [[move-gunk-shot|더스트슈트]], [[move-water-pulse|물의파동]], [[move-acid-spray|애시드봄]], [[move-octazooka|대포무노포]]

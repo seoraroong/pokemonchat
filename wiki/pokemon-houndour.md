@@ -3,7 +3,7 @@ title: "Houndour / 델빌"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-dark", "type-fire", "evo-line-houndour"]
 aliases: ["델빌", "houndour"]
 summary: "#228 델빌 (악 / 불꽃) — GO 최대 CP: 1,234"
@@ -33,6 +33,14 @@ evolution_line: "houndour"
 | 타입 | 악 / 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 바위, 물 |
+| 저항 | 고스트, 강철, 불꽃, 풀, 얼음, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-feint-attack|속여때리기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-dark-pulse|악의파동]], [[move-flamethrower|화염방사]]

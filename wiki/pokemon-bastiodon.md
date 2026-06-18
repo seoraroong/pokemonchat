@@ -3,7 +3,7 @@ title: "Bastiodon / 바리톱스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-rock", "type-steel", "evo-line-bastiodon"]
 aliases: ["바리톱스", "bastiodon"]
 summary: "#411 바리톱스 (바위 / 강철) — GO 최대 CP: 1,539"
@@ -34,6 +34,14 @@ evolution_line: "bastiodon"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|82위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투(×4), 땅(×4), 물 |
+| 저항 | 노말(×¼), 비행(×¼), 바위, 벌레, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-iron-tail|아이언테일]], [[move-smack-down|떨어뜨리기]]
 - **스페셜 기술:** [[move-flamethrower|화염방사]], [[move-flash-cannon|러스터캐논]], [[move-stone-edge|스톤에지]]

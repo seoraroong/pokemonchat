@@ -3,10 +3,10 @@ title: "Mienshao / 비조도"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-fighting", "type-none", "evo-line-mienshao"]
 aliases: ["비조도", "mienshao"]
-summary: "#620 비조도 (격투 / none) — GO 최대 CP: 2,710"
+summary: "#620 비조도 (격투) — GO 최대 CP: 2,710"
 evolution_line: "mienshao"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "mienshao"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|407위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-poison-jab|독찌르기]], [[move-force-palm|발경]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-grass-knot|풀묶기]], [[move-stone-edge|스톤에지]], [[move-blaze-kick|브레이즈킥]], [[move-brutal-swing|세차게휘두르기]], [[move-drain-punch|드레인펀치]]

@@ -3,7 +3,7 @@ title: "Stakataka / 차곡차곡"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-rock", "type-steel", "evo-line-stakataka"]
 aliases: ["차곡차곡", "stakataka"]
 summary: "#805 차곡차곡 (바위 / 강철) — GO 최대 CP: 3,294"
@@ -34,6 +34,14 @@ evolution_line: "stakataka"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|299위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투(×4), 땅(×4), 물 |
+| 저항 | 노말(×¼), 비행(×¼), 바위, 벌레, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-throw|돌떨구기]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-flash-cannon|러스터캐논]], [[move-stone-edge|스톤에지]], [[move-bulldoze|땅고르기]]

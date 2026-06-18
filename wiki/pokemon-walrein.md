@@ -3,7 +3,7 @@ title: "Walrein / 씨카이저"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-ice", "type-water", "evo-line-walrein"]
 aliases: ["씨카이저", "walrein"]
 summary: "#365 씨카이저 (얼음 / 물) — GO 최대 CP: 2,726"
@@ -36,6 +36,13 @@ evolution_line: "walrein"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|42위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|168위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 풀, 전기 |
+| 저항 | 물, 얼음(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-frost-breath|얼음숨결]], [[move-waterfall|폭포오르기]], [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-earthquake|지진]], [[move-water-pulse|물의파동]], [[move-icicle-spear|고드름침]]  *(커뮤니티 데이/전용: [[move-powder-snow|눈싸라기]], [[move-icicle-spear|고드름침]])*

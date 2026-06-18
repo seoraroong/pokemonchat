@@ -3,7 +3,7 @@ title: "Pecharunt / 복숭악동"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-poison", "type-ghost", "evo-line-pecharunt"]
 aliases: ["복숭악동", "pecharunt"]
 summary: "#1025 복숭악동 (독 / 고스트) — GO 최대 CP: 2,570"
@@ -33,6 +33,14 @@ evolution_line: "pecharunt"
 | 타입 | 독 / 고스트 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 에스퍼, 악 |
+| 저항 | 독(×¼), 벌레(×¼), 풀, 페어리 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]]
 - **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-gunk-shot|더스트슈트]], [[move-poltergeist|폴터가이스트]]

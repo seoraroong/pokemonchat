@@ -3,7 +3,7 @@ title: "Obstagoon / 가로막구리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-dark", "type-normal", "evo-line-obstagoon"]
 aliases: ["가로막구리", "obstagoon"]
 summary: "#862 가로막구리 (악 / 노말) — GO 최대 CP: 2,652"
@@ -36,6 +36,14 @@ evolution_line: "obstagoon"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|426위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|359위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투(×4), 벌레, 페어리 |
+| 저항 | 악 |
+| 무효 | 고스트, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-lick|핥기]]
 - **스페셜 기술:** [[move-cross-chop|크로스촙]], [[move-night-slash|깜짝베기]], [[move-hyper-beam|파괴광선]], [[move-gunk-shot|더스트슈트]], [[move-obstruct|블로킹]]  *(커뮤니티 데이/전용: [[move-obstruct|블로킹]])*

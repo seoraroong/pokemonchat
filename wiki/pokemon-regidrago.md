@@ -3,10 +3,10 @@ title: "Regidrago / 레지드래고"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-dragon", "type-none", "evo-line-regidrago"]
 aliases: ["레지드래고", "regidrago"]
-summary: "#895 레지드래고 (드래곤 / none) — GO 최대 CP: 2,973"
+summary: "#895 레지드래고 (드래곤) — GO 최대 CP: 2,973"
 evolution_line: "regidrago"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "regidrago"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|38위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|118위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-dragon-breath|용의숨결]]
 - **스페셜 기술:** [[move-hyper-beam|파괴광선]], [[move-outrage|역린]], [[move-dragon-pulse|용의파동]], [[move-breaking-swipe|와이드브레이커]], [[move-dragon-energy|드래곤에너지]], Vice Grip  *(커뮤니티 데이/전용: [[move-dragon-breath|용의숨결]], [[move-dragon-energy|드래곤에너지]])*

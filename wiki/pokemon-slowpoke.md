@@ -3,10 +3,10 @@ title: "Slowpoke / 야돈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "type-psychic", "evo-line-slowpoke"]
 aliases: ["야돈", "slowpoke"]
-summary: "#079 야돈 (물/에스퍼 타입) — 기본 스탯 합계 315"
+summary: "#079 야돈 (물 / 에스퍼) — GO 최대 CP: 1,226"
 evolution_line: "slowpoke"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "slowpoke"
 | 타입 | 물 / 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 풀, 전기, 악 |
+| 저항 | 격투, 강철, 불꽃, 물, 에스퍼, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-psychic|사이코키네시스]], [[move-psyshock|사이코쇼크]], [[move-water-pulse|물의파동]]

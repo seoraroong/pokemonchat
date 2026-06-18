@@ -3,10 +3,10 @@ title: "Regice / 레지아이스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-ice", "type-none", "evo-line-regice"]
 aliases: ["레지아이스", "regice"]
-summary: "#378 레지아이스 (얼음 / none) — GO 최대 CP: 3,122"
+summary: "#378 레지아이스 (얼음) — GO 최대 CP: 3,122"
 evolution_line: "regice"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "regice"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|148위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|223위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-frost-breath|얼음숨결]], [[move-rock-smash|바위깨기]], [[move-lock-on|록온]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-earthquake|지진]], [[move-focus-blast|기합구슬]], [[move-thunder|번개]]  *(커뮤니티 데이/전용: [[move-thunder|번개]])*

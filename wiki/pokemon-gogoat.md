@@ -3,10 +3,10 @@ title: "Gogoat / 고고트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-grass", "type-none", "evo-line-gogoat"]
 aliases: ["고고트", "gogoat"]
-summary: "#673 고고트 (풀 / none) — GO 최대 CP: 2,798"
+summary: "#673 고고트 (풀) — GO 최대 CP: 2,798"
 evolution_line: "gogoat"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "gogoat"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|169위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|204위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-zen-headbutt|사념의박치기]], [[move-rock-smash|바위깨기]], [[move-vine-whip|덩굴채찍]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-leaf-blade|리프블레이드]], [[move-seed-bomb|씨폭탄]], [[move-rock-slide|스톤샤워]]

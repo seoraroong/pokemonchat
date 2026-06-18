@@ -3,7 +3,7 @@ title: "Sableye / 깜까미"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dark", "type-ghost", "evo-line-sableye"]
 aliases: ["깜까미", "sableye"]
 summary: "#302 깜까미 (악 / 고스트) — GO 최대 CP: 1,476"
@@ -34,6 +34,14 @@ evolution_line: "sableye"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|41위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 페어리 |
+| 저항 | 독 |
+| 무효 | 노말, 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-foul-play|속임수]], [[move-power-gem|파워젬]], [[move-shadow-sneak|야습]], [[move-dazzling-gleam|매지컬샤인]], [[move-drain-punch|드레인펀치]]

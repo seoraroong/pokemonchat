@@ -3,10 +3,10 @@ title: "Simipour / 앗차키"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-none", "evo-line-simipour"]
 aliases: ["앗차키", "simipour"]
-summary: "#516 앗차키 (물 / none) — GO 최대 CP: 2,350"
+summary: "#516 앗차키 (물) — GO 최대 CP: 2,350"
 evolution_line: "simipour"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "simipour"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-surf|파도타기]], [[move-hydro-pump|하이드로펌프]], [[move-crunch|깨물어부수기]]

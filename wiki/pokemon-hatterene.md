@@ -3,7 +3,7 @@ title: "Hatterene / 브리무음"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-psychic", "type-fairy", "evo-line-hatterene"]
 aliases: ["브리무음", "hatterene"]
 summary: "#858 브리무음 (에스퍼 / 페어리) — GO 최대 CP: 2,829"
@@ -34,6 +34,14 @@ evolution_line: "hatterene"
 | 버디 거리 | 5km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|448위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 고스트, 강철 |
+| 저항 | 격투(×¼), 에스퍼 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-charm|애교부리기]], [[move-psycho-cut|사이코커터]]
 - **스페셜 기술:** [[move-psyshock|사이코쇼크]], [[move-psychic|사이코키네시스]], [[move-dazzling-gleam|매지컬샤인]], [[move-power-whip|파워휩]]

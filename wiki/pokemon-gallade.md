@@ -3,7 +3,7 @@ title: "Gallade / 엘레이드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-psychic", "type-fighting", "evo-line-gallade"]
 aliases: ["엘레이드", "gallade"]
 summary: "#475 엘레이드 (에스퍼 / 격투) — GO 최대 CP: 3,093"
@@ -36,6 +36,13 @@ evolution_line: "gallade"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|241위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|137위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 고스트, 페어리 |
+| 저항 | 격투, 바위 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-low-kick|안다리걸기]], [[move-charm|애교부리기]], [[move-psycho-cut|사이코커터]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-leaf-blade|리프블레이드]], [[move-psychic|사이코키네시스]], [[move-synchronoise|싱크로노이즈]]  *(커뮤니티 데이/전용: [[move-synchronoise|싱크로노이즈]])*

@@ -3,10 +3,10 @@ title: "Aipom / 에이팜"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-none", "evo-line-aipom"]
 aliases: ["에이팜", "aipom"]
-summary: "#190 에이팜 (노말 / none) — GO 최대 CP: 1,348"
+summary: "#190 에이팜 (노말) — GO 최대 CP: 1,348"
 evolution_line: "aipom"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "aipom"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-scratch|할퀴기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-low-sweep|로킥]], [[move-swift|스피드스타]]

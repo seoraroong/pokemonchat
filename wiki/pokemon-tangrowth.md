@@ -3,10 +3,10 @@ title: "Tangrowth / 덩쿠림보"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-grass", "type-none", "evo-line-tangrowth"]
 aliases: ["덩쿠림보", "tangrowth"]
-summary: "#465 덩쿠림보 (풀 / none) — GO 최대 CP: 3,030"
+summary: "#465 덩쿠림보 (풀) — GO 최대 CP: 3,030"
 evolution_line: "tangrowth"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "tangrowth"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|442위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|263위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-infestation|엉겨붙기]], [[move-vine-whip|덩굴채찍]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-rock-slide|스톤샤워]], [[move-sludge-bomb|오물폭탄]], [[move-solar-beam|솔라빔]], [[move-power-whip|파워휩]]

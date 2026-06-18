@@ -3,10 +3,10 @@ title: "Boltund / 펄스멍"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-electric", "type-none", "evo-line-boltund"]
 aliases: ["펄스멍", "boltund"]
-summary: "#836 펄스멍 (전기 / none) — GO 최대 CP: 2,176"
+summary: "#836 펄스멍 (전기) — GO 최대 CP: 2,176"
 evolution_line: "boltund"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "boltund"
 | 타입 | 전기 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-spark|스파크]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-thunder|번개]]

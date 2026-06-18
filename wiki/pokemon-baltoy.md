@@ -3,7 +3,7 @@ title: "Baltoy / 오뚝군"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-ground", "type-psychic", "evo-line-baltoy"]
 aliases: ["오뚝군", "baltoy"]
 summary: "#343 오뚝군 (땅 / 에스퍼) — GO 최대 CP: 787"
@@ -33,6 +33,14 @@ evolution_line: "baltoy"
 | 타입 | 땅 / 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 물, 풀, 얼음, 악 |
+| 저항 | 격투, 독, 바위, 에스퍼 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-extrasensory|신통력]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-gyro-ball|자이로볼]], [[move-psybeam|환상빔]]

@@ -3,10 +3,10 @@ title: "Tadbulb / 빈나두"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-electric", "type-none", "evo-line-tadbulb"]
 aliases: ["빈나두", "tadbulb"]
-summary: "#938 빈나두 (전기 / none) — GO 최대 CP: 911"
+summary: "#938 빈나두 (전기) — GO 최대 CP: 911"
 evolution_line: "tadbulb"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "tadbulb"
 | 타입 | 전기 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-parabolic-charge|파라볼라차지]], [[move-discharge|방전]], [[move-zap-cannon|전자포]]

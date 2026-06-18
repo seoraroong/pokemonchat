@@ -3,10 +3,10 @@ title: "Lumineon / 네오라이트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-water", "type-none", "evo-line-lumineon"]
 aliases: ["네오라이트", "lumineon"]
-summary: "#457 네오라이트 (물 / none) — GO 최대 CP: 1,814"
+summary: "#457 네오라이트 (물) — GO 최대 CP: 1,814"
 evolution_line: "lumineon"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "lumineon"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|51위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-waterfall|폭포오르기]], [[move-gust|바람일으키기]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-silver-wind|은빛바람]], [[move-water-pulse|물의파동]], [[move-aqua-tail|아쿠아테일]]

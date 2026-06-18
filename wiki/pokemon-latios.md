@@ -3,7 +3,7 @@ title: "Latios / 라티오스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dragon", "type-psychic", "evo-line-latios"]
 aliases: ["라티오스", "latios"]
 summary: "#381 라티오스 (드래곤 / 에스퍼) — GO 최대 CP: 3,812"
@@ -36,6 +36,13 @@ evolution_line: "latios"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|264위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|28위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 얼음, 드래곤, 악, 페어리 |
+| 저항 | 격투, 불꽃, 물, 풀, 전기, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-dragon-claw|드래곤크루]], [[move-psychic|사이코키네시스]], [[move-solar-beam|솔라빔]], [[move-luster-purge|라스트버지]], [[move-aura-sphere|파동탄]]  *(커뮤니티 데이/전용: [[move-luster-purge|라스트버지]])*

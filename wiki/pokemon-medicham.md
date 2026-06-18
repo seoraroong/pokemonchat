@@ -3,7 +3,7 @@ title: "Medicham / 요가램"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-fighting", "type-psychic", "evo-line-medicham"]
 aliases: ["요가램", "medicham"]
 summary: "#308 요가램 (격투 / 에스퍼) — GO 최대 CP: 1,431"
@@ -34,6 +34,13 @@ evolution_line: "medicham"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|21위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 고스트, 페어리 |
+| 저항 | 격투, 바위 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-psycho-cut|사이코커터]]
 - **스페셜 기술:** [[move-dynamic-punch|폭발펀치]], [[move-ice-punch|냉동펀치]], [[move-psychic|사이코키네시스]], Power Up Punch

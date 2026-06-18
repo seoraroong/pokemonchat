@@ -3,10 +3,10 @@ title: "Rhydon / 코뿌리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-ground", "type-rock", "evo-line-rhyhorn"]
 aliases: ["코뿌리", "rhydon"]
-summary: "#112 코뿌리 (땅/바위 타입) — 기본 스탯 합계 485"
+summary: "#112 코뿌리 (땅 / 바위) — GO 최대 CP: 3,179"
 evolution_line: "rhyhorn"
 ---
 
@@ -72,6 +72,14 @@ evolution_line: "rhyhorn"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|345위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물(×4), 풀(×4), 얼음 |
+| 저항 | 노말, 비행, 독(×¼), 바위, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-megahorn|메가폰]], [[move-stone-edge|스톤에지]], [[move-surf|파도타기]], [[move-breaking-swipe|와이드브레이커]]  *(커뮤니티 데이/전용: [[move-megahorn|메가폰]])*

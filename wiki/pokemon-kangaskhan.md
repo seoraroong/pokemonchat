@@ -3,10 +3,10 @@ title: "Kangaskhan / 캥카"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "evo-line-kangaskhan"]
 aliases: ["캥카", "kangaskhan"]
-summary: "#115 캥카 (노말 타입) — 기본 스탯 합계 490"
+summary: "#115 캥카 (노말) — GO 최대 CP: 2,586"
 evolution_line: "kangaskhan"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "kangaskhan"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|337위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-crunch|깨물어부수기]], [[move-earthquake|지진]], [[move-outrage|역린]], [[move-stomp|짓밟기]], Power Up Punch  *(커뮤니티 데이/전용: [[move-brick-break|깨트리다]], [[move-stomp|짓밟기]])*

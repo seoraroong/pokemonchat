@@ -3,10 +3,10 @@ title: "Braixen / 테르나"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fire", "type-none", "evo-line-braixen"]
 aliases: ["테르나", "braixen"]
-summary: "#654 테르나 (불꽃 / none) — GO 최대 CP: 1,813"
+summary: "#654 테르나 (불꽃) — GO 최대 CP: 1,813"
 evolution_line: "braixen"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "braixen"
 | 타입 | 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-ember|불꽃세례]]
 - **스페셜 기술:** [[move-psyshock|사이코쇼크]], [[move-flamethrower|화염방사]], [[move-flame-charge|니트로차지]]

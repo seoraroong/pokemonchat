@@ -3,10 +3,10 @@ title: "Sandslash / 고지"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-ground", "evo-line-sandshrew"]
 aliases: ["고지", "sandslash"]
-summary: "#028 고지 (땅 타입) — 기본 스탯 합계 450"
+summary: "#028 고지 (땅) — GO 최대 CP: 2,374"
 evolution_line: "sandshrew"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "sandshrew"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|401위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|328위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-mud-shot|머드숏]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-bulldoze|땅고르기]], [[move-earthquake|지진]], [[move-rock-tomb|암석봉인]], [[move-night-slash|깜짝베기]], [[move-scorching-sands|열사의대지]]  *(커뮤니티 데이/전용: [[move-night-slash|깜짝베기]])*

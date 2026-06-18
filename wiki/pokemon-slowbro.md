@@ -3,10 +3,10 @@ title: "Slowbro / 야도란"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "type-psychic", "evo-line-slowpoke"]
 aliases: ["야도란", "slowbro"]
-summary: "#080 야도란 (물/에스퍼 타입) — 기본 스탯 합계 490"
+summary: "#080 야도란 (물 / 에스퍼) — GO 최대 CP: 2,545"
 evolution_line: "slowpoke"
 ---
 
@@ -74,6 +74,13 @@ evolution_line: "slowpoke"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|184위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|285위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 풀, 전기, 악 |
+| 저항 | 격투, 강철, 불꽃, 물, 에스퍼, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-ice-beam|냉동빔]], [[move-psychic|사이코키네시스]], [[move-water-pulse|물의파동]], [[move-surf|파도타기]], [[move-scald|열탕]], [[move-drain-punch|드레인펀치]]  *(커뮤니티 데이/전용: [[move-surf|파도타기]])*

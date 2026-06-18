@@ -3,7 +3,7 @@ title: "Nihilego / 텅비드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-rock", "type-poison", "evo-line-nihilego"]
 aliases: ["텅비드", "nihilego"]
 summary: "#793 텅비드 (바위 / 독) — GO 최대 CP: 3,949"
@@ -34,6 +34,13 @@ evolution_line: "nihilego"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|167위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅(×4), 강철, 물, 에스퍼 |
+| 저항 | 노말, 비행, 독(×¼), 벌레, 불꽃, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-pound|막치기]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** [[move-power-gem|파워젬]], [[move-gunk-shot|더스트슈트]], [[move-sludge-bomb|오물폭탄]], [[move-rock-slide|스톤샤워]]

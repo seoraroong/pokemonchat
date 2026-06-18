@@ -3,10 +3,10 @@ title: "Typhlosion / 블레이범"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-fire", "type-none", "evo-line-typhlosion"]
 aliases: ["블레이범", "typhlosion"]
-summary: "#157 블레이범 (불꽃 / none) — GO 최대 CP: 2,889"
+summary: "#157 블레이범 (불꽃) — GO 최대 CP: 2,889"
 evolution_line: "typhlosion"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "typhlosion"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|171위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|221위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-shadow-claw|섀도크루]], [[move-incinerate|불태우기]]
 - **스페셜 기술:** [[move-blast-burn|블러스트번]], [[move-fire-blast|불대문자]], [[move-overheat|오버히트]], [[move-solar-beam|솔라빔]], [[move-thunder-punch|번개펀치]]  *(커뮤니티 데이/전용: [[move-blast-burn|블러스트번]])*

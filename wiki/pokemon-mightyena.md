@@ -3,10 +3,10 @@ title: "Mightyena / 그라에나"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dark", "type-none", "evo-line-mightyena"]
 aliases: ["그라에나", "mightyena"]
-summary: "#262 그라에나 (악 / none) — GO 최대 CP: 1,926"
+summary: "#262 그라에나 (악) — GO 최대 CP: 1,926"
 evolution_line: "mightyena"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "mightyena"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|272위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-fire-fang|불꽃엄니]], [[move-thunder-fang|번개엄니]], [[move-ice-fang|얼음엄니]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-play-rough|치근거리기]], [[move-poison-fang|독엄니]]

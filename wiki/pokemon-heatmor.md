@@ -3,10 +3,10 @@ title: "Heatmor / 앤티골"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-fire", "type-none", "evo-line-heatmor"]
 aliases: ["앤티골", "heatmor"]
-summary: "#631 앤티골 (불꽃 / none) — GO 최대 CP: 2,395"
+summary: "#631 앤티골 (불꽃) — GO 최대 CP: 2,395"
 evolution_line: "heatmor"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "heatmor"
 | 타입 | 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-lick|핥기]], [[move-fire-spin|회오리불꽃]]
 - **스페셜 기술:** [[move-flamethrower|화염방사]], [[move-thunder-punch|번개펀치]], Power Up Punch

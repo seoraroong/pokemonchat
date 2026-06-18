@@ -3,10 +3,10 @@ title: "Clefairy / 삐삐"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-fairy", "evo-line-clefairy"]
 aliases: ["삐삐", "clefairy"]
-summary: "#035 삐삐 (페어리 타입) — 기본 스탯 합계 323"
+summary: "#035 삐삐 (페어리) — GO 최대 CP: 1,155"
 evolution_line: "clefairy"
 ---
 
@@ -70,6 +70,14 @@ evolution_line: "clefairy"
 | 타입 | 페어리 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-pound|막치기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-disarming-voice|차밍보이스]], [[move-moonblast|문포스]], [[move-swift|스피드스타]]

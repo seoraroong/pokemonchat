@@ -3,10 +3,10 @@ title: "Mismagius / 무우마직"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ghost", "type-none", "evo-line-mismagius"]
 aliases: ["무우마직", "mismagius"]
-summary: "#429 무우마직 (고스트 / none) — GO 최대 CP: 2,615"
+summary: "#429 무우마직 (고스트) — GO 최대 CP: 2,615"
 evolution_line: "mismagius"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "mismagius"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|419위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 악 |
+| 저항 | 독, 벌레 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-hex|병상첨병]], [[move-sucker-punch|기습]], [[move-magical-leaf|메지컬리프]], [[move-psywave|사이코웨이브]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-dazzling-gleam|매지컬샤인]], [[move-shadow-ball|섀도볼]]

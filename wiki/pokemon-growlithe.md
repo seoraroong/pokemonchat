@@ -3,10 +3,10 @@ title: "Growlithe / 가디"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-fire", "evo-line-growlithe"]
 aliases: ["가디", "growlithe"]
-summary: "#058 가디 (불꽃 타입) — 기본 스탯 합계 350"
+summary: "#058 가디 (불꽃) — GO 최대 CP: 1,243"
 evolution_line: "growlithe"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "growlithe"
 | 타입 | 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-ember|불꽃세례]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-flame-wheel|화염자동차]], [[move-flamethrower|화염방사]]

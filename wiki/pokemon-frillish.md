@@ -3,7 +3,7 @@ title: "Frillish / 탱그릴"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-ghost", "evo-line-frillish"]
 aliases: ["탱그릴", "frillish"]
 summary: "#592 탱그릴 (물 / 고스트) — GO 최대 CP: 1,257"
@@ -34,6 +34,14 @@ evolution_line: "frillish"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|455위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 풀, 전기, 악 |
+| 저항 | 독, 벌레, 강철, 불꽃, 물, 얼음 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-hex|병상첨병]]
 - **스페셜 기술:** [[move-night-shade|나이트헤드]], [[move-ice-beam|냉동빔]], [[move-ominous-wind|괴상한바람]]

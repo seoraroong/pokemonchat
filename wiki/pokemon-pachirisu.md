@@ -3,10 +3,10 @@ title: "Pachirisu / 파치리스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-electric", "type-none", "evo-line-pachirisu"]
 aliases: ["파치리스", "pachirisu"]
-summary: "#417 파치리스 (전기 / none) — GO 최대 CP: 1,213"
+summary: "#417 파치리스 (전기) — GO 최대 CP: 1,213"
 evolution_line: "pachirisu"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "pachirisu"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|118위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-spark|스파크]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** [[move-thunder|번개]], [[move-thunder-punch|번개펀치]], [[move-thunderbolt|10만볼트]], [[move-hyper-fang|필살앞니]]

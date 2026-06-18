@@ -3,7 +3,7 @@ title: "Armaldo / 아말도"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-rock", "type-bug", "evo-line-armaldo"]
 aliases: ["아말도", "armaldo"]
 summary: "#348 아말도 (바위 / 벌레) — GO 최대 CP: 2,848"
@@ -34,6 +34,13 @@ evolution_line: "armaldo"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|361위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 강철, 물 |
+| 저항 | 노말, 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fury-cutter|연속자르기]], [[move-struggle-bug|벌레의저항]]
 - **스페셜 기술:** [[move-cross-poison|크로스포이즌]], [[move-rock-blast|락블레스트]], [[move-water-pulse|물의파동]], [[move-liquidation|아쿠아브레이크]]

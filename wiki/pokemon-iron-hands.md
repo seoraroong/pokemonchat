@@ -3,7 +3,7 @@ title: "Iron Hands / 무쇠손"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-fighting", "type-electric", "evo-line-iron-hands"]
 aliases: ["무쇠손", "iron hands"]
 summary: "#992 무쇠손 (격투 / 전기) — GO 최대 CP: 4,112"
@@ -33,6 +33,13 @@ evolution_line: "iron-hands"
 | 타입 | 격투 / 전기 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 강철, 전기, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

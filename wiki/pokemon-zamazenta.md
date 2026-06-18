@@ -3,7 +3,7 @@ title: "Zamazenta / 자마젠타"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-fighting", "type-steel", "evo-line-zamazenta"]
 aliases: ["자마젠타", "zamazenta"]
 summary: "#889 자마젠타 (격투 / 강철) — GO 최대 CP: 4,172"
@@ -35,6 +35,14 @@ evolution_line: "zamazenta"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|430위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|9위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃 |
+| 저항 | 노말, 바위(×¼), 벌레(×¼), 강철, 풀, 얼음, 드래곤, 악 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-ice-fang|얼음엄니]]
 - **스페셜 기술:** [[move-moonblast|문포스]], [[move-close-combat|인파이트]], [[move-giga-impact|기가임팩트]], [[move-behemoth-bash|거수탄]]

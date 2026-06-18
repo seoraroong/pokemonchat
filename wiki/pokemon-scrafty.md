@@ -3,7 +3,7 @@ title: "Scrafty / 곤율거니"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-fighting", "evo-line-scrafty"]
 aliases: ["곤율거니", "scrafty"]
 summary: "#560 곤율거니 (악 / 격투) — GO 최대 CP: 2,283"
@@ -35,6 +35,14 @@ evolution_line: "scrafty"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|273위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|245위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 페어리(×4) |
+| 저항 | 바위, 고스트, 악(×¼) |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-snarl|바크아웃]]
 - **스페셜 기술:** [[move-acid-spray|애시드봄]], Power Up Punch, [[move-foul-play|속임수]], [[move-thunder-punch|번개펀치]], [[move-upper-hand|기선제압]]

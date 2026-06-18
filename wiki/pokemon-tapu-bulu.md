@@ -3,7 +3,7 @@ title: "Tapu Bulu / 카푸브루루"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-grass", "type-fairy", "evo-line-tapu-bulu"]
 aliases: ["카푸브루루", "tapu bulu"]
 summary: "#787 카푸브루루 (풀 / 페어리) — GO 최대 CP: 3,419"
@@ -35,6 +35,14 @@ evolution_line: "tapu-bulu"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|464위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|89위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독(×4), 강철, 불꽃, 얼음 |
+| 저항 | 격투, 땅, 물, 풀, 전기, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-seed|기관총]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-grass-knot|풀묶기]], [[move-dazzling-gleam|매지컬샤인]], [[move-megahorn|메가폰]], [[move-solar-beam|솔라빔]], Natures Madness  *(커뮤니티 데이/전용: Natures Madness)*

@@ -3,10 +3,10 @@ title: "Grubbin / 턱지충이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-bug", "type-none", "evo-line-grubbin"]
 aliases: ["턱지충이", "grubbin"]
-summary: "#736 턱지충이 (벌레 / none) — GO 최대 CP: 984"
+summary: "#736 턱지충이 (벌레) — GO 최대 CP: 984"
 evolution_line: "grubbin"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "grubbin"
 | 타입 | 벌레 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃 |
+| 저항 | 격투, 땅, 풀 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-spark|스파크]]
 - **스페셜 기술:** X Scissor, Vice Grip, [[move-crunch|깨물어부수기]]

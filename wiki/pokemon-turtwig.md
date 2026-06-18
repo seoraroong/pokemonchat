@@ -3,10 +3,10 @@ title: "Turtwig / 모부기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-grass", "type-none", "evo-line-turtwig"]
 aliases: ["모부기", "turtwig"]
-summary: "#387 모부기 (풀 / none) — GO 최대 CP: 1,187"
+summary: "#387 모부기 (풀) — GO 최대 CP: 1,187"
 evolution_line: "turtwig"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "turtwig"
 | 타입 | 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-razor-leaf|잎날가르기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-energy-ball|에너지볼]], [[move-seed-bomb|씨폭탄]]

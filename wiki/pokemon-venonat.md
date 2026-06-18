@@ -3,10 +3,10 @@ title: "Venonat / 콘팡"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-bug", "type-poison", "evo-line-venonat"]
 aliases: ["콘팡", "venonat"]
-summary: "#048 콘팡 (벌레/독 타입) — 기본 스탯 합계 305"
+summary: "#048 콘팡 (벌레 / 독) — GO 최대 CP: 1,004"
 evolution_line: "venonat"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "venonat"
 | 타입 | 벌레 / 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃, 에스퍼 |
+| 저항 | 격투(×¼), 독, 벌레, 풀(×¼), 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-confusion|염동력]]
 - **스페셜 기술:** [[move-poison-fang|독엄니]], [[move-psybeam|환상빔]], [[move-signal-beam|시그널빔]]

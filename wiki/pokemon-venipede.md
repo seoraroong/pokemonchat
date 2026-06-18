@@ -3,7 +3,7 @@ title: "Venipede / 마디네"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-poison", "evo-line-venipede"]
 aliases: ["마디네", "venipede"]
 summary: "#543 마디네 (벌레 / 독) — GO 최대 CP: 706"
@@ -33,6 +33,13 @@ evolution_line: "venipede"
 | 타입 | 벌레 / 독 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃, 에스퍼 |
+| 저항 | 격투(×¼), 독, 벌레, 풀(×¼), 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-poison-sting|독침]]
 - **스페셜 기술:** [[move-signal-beam|시그널빔]], [[move-sludge-bomb|오물폭탄]], [[move-gyro-ball|자이로볼]]

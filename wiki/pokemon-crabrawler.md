@@ -3,10 +3,10 @@ title: "Crabrawler / 오기지게"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-fighting", "type-none", "evo-line-crabrawler"]
 aliases: ["오기지게", "crabrawler"]
-summary: "#739 오기지게 (격투 / none) — GO 최대 CP: 1,363"
+summary: "#739 오기지게 (격투) — GO 최대 CP: 1,363"
 evolution_line: "crabrawler"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "crabrawler"
 | 타입 | 격투 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-bubble|거품]]
 - **스페셜 기술:** Power Up Punch, [[move-crabhammer|찝게햄머]], [[move-payback|보복]], [[move-brick-break|깨트리다]]

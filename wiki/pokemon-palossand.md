@@ -3,7 +3,7 @@ title: "Palossand / 모래성이당"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-ghost", "type-ground", "evo-line-palossand"]
 aliases: ["모래성이당", "palossand"]
 summary: "#770 모래성이당 (고스트 / 땅) — GO 최대 CP: 2,444"
@@ -35,6 +35,14 @@ evolution_line: "palossand"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|303위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|146위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 물, 풀, 얼음, 악 |
+| 저항 | 독(×¼), 바위, 벌레 |
+| 무효 | 노말, 격투, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-mud-shot|머드숏]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-sand-tomb|모래지옥]], [[move-shadow-ball|섀도볼]], [[move-earth-power|대지의힘]], [[move-scorching-sands|열사의대지]]

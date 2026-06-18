@@ -3,10 +3,10 @@ title: "Stoutland / 바랜드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-none", "evo-line-stoutland"]
 aliases: ["바랜드", "stoutland"]
-summary: "#508 바랜드 (노말 / none) — GO 최대 CP: 2,827"
+summary: "#508 바랜드 (노말) — GO 최대 CP: 2,827"
 evolution_line: "stoutland"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "stoutland"
 | 버디 거리 | 1km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|347위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-lick|핥기]], [[move-take-down|돌진]], [[move-ice-fang|얼음엄니]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-wild-charge|와일드볼트]], [[move-play-rough|치근거리기]], [[move-crunch|깨물어부수기]]

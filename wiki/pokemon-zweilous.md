@@ -3,7 +3,7 @@ title: "Zweilous / 디헤드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-dragon", "evo-line-zweilous"]
 aliases: ["디헤드", "zweilous"]
 summary: "#634 디헤드 (악 / 드래곤) — GO 최대 CP: 1,839"
@@ -34,6 +34,14 @@ evolution_line: "zweilous"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|154위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 얼음, 드래곤, 페어리(×4) |
+| 저항 | 고스트, 불꽃, 물, 풀, 전기, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-dragon-breath|용의숨결]]
 - **스페셜 기술:** [[move-dragon-pulse|용의파동]], [[move-dark-pulse|악의파동]], [[move-body-slam|누르기]]

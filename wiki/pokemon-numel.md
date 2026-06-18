@@ -3,7 +3,7 @@ title: "Numel / 둔타"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-fire", "type-ground", "evo-line-numel"]
 aliases: ["둔타", "numel"]
 summary: "#322 둔타 (불꽃 / 땅) — GO 최대 CP: 1,057"
@@ -33,6 +33,14 @@ evolution_line: "numel"
 | 타입 | 불꽃 / 땅 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 물(×4) |
+| 저항 | 독, 벌레, 강철, 불꽃, 페어리 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-bulldoze|땅고르기]], [[move-heat-wave|열풍]], [[move-stomp|짓밟기]]

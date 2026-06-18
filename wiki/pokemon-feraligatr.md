@@ -3,10 +3,10 @@ title: "Feraligatr / 장크로다일"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-none", "evo-line-feraligatr"]
 aliases: ["장크로다일", "feraligatr"]
-summary: "#160 장크로다일 (물 / none) — GO 최대 CP: 2,857"
+summary: "#160 장크로다일 (물) — GO 최대 CP: 2,857"
 evolution_line: "feraligatr"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "feraligatr"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|23위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|154위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-water-gun|물대포]], [[move-waterfall|폭포오르기]], [[move-ice-fang|얼음엄니]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-hydro-cannon|하이드로캐논]], [[move-hydro-pump|하이드로펌프]], [[move-ice-beam|냉동빔]]  *(커뮤니티 데이/전용: [[move-water-gun|물대포]], [[move-hydro-cannon|하이드로캐논]])*

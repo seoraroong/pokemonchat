@@ -3,10 +3,10 @@ title: "Cursola / 산호르곤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ghost", "type-none", "evo-line-cursola"]
 aliases: ["산호르곤", "cursola"]
-summary: "#864 산호르곤 (고스트 / none) — GO 최대 CP: 3,063"
+summary: "#864 산호르곤 (고스트) — GO 최대 CP: 3,063"
 evolution_line: "cursola"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "cursola"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|250위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 악 |
+| 저항 | 독, 벌레 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-rock-blast|락블레스트]], [[move-power-gem|파워젬]], [[move-night-shade|나이트헤드]]

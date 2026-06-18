@@ -3,10 +3,10 @@ title: "Dunsparce / 노고치"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-none", "evo-line-dunsparce"]
 aliases: ["노고치", "dunsparce"]
-summary: "#206 노고치 (노말 / none) — GO 최대 CP: 1,689"
+summary: "#206 노고치 (노말) — GO 최대 CP: 1,689"
 evolution_line: "dunsparce"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "dunsparce"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|86위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-bite|물기]], [[move-rollout|구르기]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-drill-run|드릴라이너]], [[move-rock-slide|스톤샤워]]

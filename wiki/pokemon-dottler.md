@@ -3,7 +3,7 @@ title: "Dottler / 레돔벌레"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-bug", "type-psychic", "evo-line-dottler"]
 aliases: ["레돔벌레", "dottler"]
 summary: "#825 레돔벌레 (벌레 / 에스퍼) — GO 최대 CP: 1,030"
@@ -33,6 +33,13 @@ evolution_line: "dottler"
 | 타입 | 벌레 / 에스퍼 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 벌레, 고스트, 불꽃, 악 |
+| 저항 | 격투(×¼), 땅, 풀, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-struggle-bug|벌레의저항]], [[move-confusion|염동력]]
 - **스페셜 기술:** [[move-bug-buzz|벌레의야단법석]], [[move-psychic|사이코키네시스]]

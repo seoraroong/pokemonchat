@@ -3,7 +3,7 @@ title: "Relicanth / 시라칸"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-rock", "evo-line-relicanth"]
 aliases: ["시라칸", "relicanth"]
 summary: "#369 시라칸 (물 / 바위) — GO 최대 CP: 2,528"
@@ -36,6 +36,13 @@ evolution_line: "relicanth"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|385위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|341위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-aqua-tail|아쿠아테일]], [[move-hydro-pump|하이드로펌프]]

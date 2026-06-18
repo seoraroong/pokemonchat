@@ -3,7 +3,7 @@ title: "Marill / 마릴"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-fairy", "evo-line-marill"]
 aliases: ["마릴", "marill"]
 summary: "#183 마릴 (물 / 페어리) — GO 최대 CP: 461"
@@ -33,6 +33,14 @@ evolution_line: "marill"
 | 타입 | 물 / 페어리 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 풀, 전기 |
+| 저항 | 격투, 벌레, 불꽃, 물, 얼음, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-aqua-tail|아쿠아테일]], [[move-body-slam|누르기]], [[move-bubble-beam|거품광선]]

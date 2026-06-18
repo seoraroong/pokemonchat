@@ -3,10 +3,10 @@ title: "Mudkip / 물짱이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-none", "evo-line-mudkip"]
 aliases: ["물짱이", "mudkip"]
-summary: "#258 물짱이 (물 / none) — GO 최대 CP: 1,128"
+summary: "#258 물짱이 (물) — GO 최대 CP: 1,128"
 evolution_line: "mudkip"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "mudkip"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-sludge|오물공격]], [[move-stomp|짓밟기]]

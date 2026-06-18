@@ -3,7 +3,7 @@ title: "Talonflame / 파이어로"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fire", "type-flying", "evo-line-talonflame"]
 aliases: ["파이어로", "talonflame"]
 summary: "#663 파이어로 (불꽃 / 비행) — GO 최대 CP: 2,205"
@@ -35,6 +35,14 @@ evolution_line: "talonflame"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|29위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|40위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위(×4), 물, 전기 |
+| 저항 | 격투, 벌레(×¼), 강철, 불꽃, 풀(×¼), 페어리 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-fire-spin|회오리불꽃]], [[move-steel-wing|강철날개]], [[move-incinerate|불태우기]]
 - **스페셜 기술:** [[move-brave-bird|브레이브버드]], [[move-fire-blast|불대문자]], [[move-flame-charge|니트로차지]], [[move-hurricane|폭풍]], [[move-fly|공중날기]]  *(커뮤니티 데이/전용: [[move-incinerate|불태우기]])*

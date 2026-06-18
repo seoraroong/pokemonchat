@@ -3,10 +3,10 @@ title: "Bergmite / 꽁어름"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-ice", "type-none", "evo-line-bergmite"]
 aliases: ["꽁어름", "bergmite"]
-summary: "#712 꽁어름 (얼음 / none) — GO 최대 CP: 1,215"
+summary: "#712 꽁어름 (얼음) — GO 최대 CP: 1,215"
 evolution_line: "bergmite"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "bergmite"
 | 타입 | 얼음 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-icy-wind|얼다바람]], [[move-mirror-coat|미러코트]]

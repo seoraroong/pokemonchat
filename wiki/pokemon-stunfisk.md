@@ -3,7 +3,7 @@ title: "Stunfisk / 메더"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ground", "type-electric", "evo-line-stunfisk"]
 aliases: ["메더", "stunfisk"]
 summary: "#618 메더 (땅 / 전기) — GO 최대 CP: 2,162"
@@ -35,6 +35,14 @@ evolution_line: "stunfisk"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|28위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|75위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 물, 풀, 얼음 |
+| 저항 | 비행, 독, 바위, 강철 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-mud-bomb|진흙폭탄]], [[move-discharge|방전]], [[move-muddy-water|탁류]]

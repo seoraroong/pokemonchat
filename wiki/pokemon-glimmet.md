@@ -3,7 +3,7 @@ title: "Glimmet / 초롱순"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-rock", "type-poison", "evo-line-glimmet"]
 aliases: ["초롱순", "glimmet"]
 summary: "#969 초롱순 (바위 / 독) — GO 최대 CP: 1,679"
@@ -33,6 +33,13 @@ evolution_line: "glimmet"
 | 타입 | 바위 / 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅(×4), 강철, 물, 에스퍼 |
+| 저항 | 노말, 비행, 독(×¼), 벌레, 불꽃, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-throw|돌떨구기]], [[move-smack-down|떨어뜨리기]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-power-gem|파워젬]], [[move-sludge-wave|오물웨이브]]

@@ -3,7 +3,7 @@ title: "Drampa / 할비롱"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-normal", "type-dragon", "evo-line-drampa"]
 aliases: ["할비롱", "drampa"]
 summary: "#780 할비롱 (노말 / 드래곤) — GO 최대 CP: 2,914"
@@ -36,6 +36,14 @@ evolution_line: "drampa"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|261위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|262위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-extrasensory|신통력]]
 - **스페셜 기술:** [[move-outrage|역린]], [[move-dragon-pulse|용의파동]], [[move-fly|공중날기]], [[move-swift|스피드스타]]

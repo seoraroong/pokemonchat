@@ -3,7 +3,7 @@ title: "Centiskorch / 다태우지네"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-fire", "type-bug", "evo-line-centiskorch"]
 aliases: ["다태우지네", "centiskorch"]
 summary: "#851 다태우지네 (불꽃 / 벌레) — GO 최대 CP: 2,990"
@@ -36,6 +36,13 @@ evolution_line: "centiskorch"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|274위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|243위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위(×4), 물 |
+| 저항 | 격투, 벌레, 강철, 풀(×¼), 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-ember|불꽃세례]]
 - **스페셜 기술:** [[move-heat-wave|열풍]], [[move-bug-buzz|벌레의야단법석]], [[move-crunch|깨물어부수기]], [[move-lunge|덤벼들기]]

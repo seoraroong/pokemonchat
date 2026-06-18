@@ -3,7 +3,7 @@ title: "Hoppip / 통통코"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-grass", "type-flying", "evo-line-hoppip"]
 aliases: ["통통코", "hoppip"]
 summary: "#187 통통코 (풀 / 비행) — GO 최대 CP: 600"
@@ -33,6 +33,14 @@ evolution_line: "hoppip"
 | 타입 | 풀 / 비행 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 바위, 불꽃, 얼음(×4) |
+| 저항 | 격투, 물, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-seed|기관총]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-grass-knot|풀묶기]], [[move-seed-bomb|씨폭탄]]

@@ -3,7 +3,7 @@ title: "Ursaluna / 다투곰"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ground", "type-normal", "evo-line-ursaluna"]
 aliases: ["다투곰", "ursaluna"]
 summary: "#901 다투곰 (땅 / 노말) — GO 최대 CP: 3,854"
@@ -34,6 +34,14 @@ evolution_line: "ursaluna"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|122위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 고스트, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-rock-smash|바위깨기]], [[move-smack-down|떨어뜨리기]]
 - **스페셜 기술:** [[move-fire-punch|불꽃펀치]], [[move-thunder-punch|번개펀치]], [[move-aerial-ace|제비반환]], [[move-high-horsepower|10만마력]], [[move-ice-punch|냉동펀치]], [[move-trailblaze|Trailblaze]], [[move-swift|스피드스타]], [[move-play-rough|치근거리기]]  *(커뮤니티 데이/전용: [[move-high-horsepower|10만마력]])*

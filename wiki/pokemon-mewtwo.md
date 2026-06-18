@@ -3,10 +3,10 @@ title: "Mewtwo / 뮤츠"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-psychic", "evo-line-mewtwo", "legendary"]
 aliases: ["뮤츠", "mewtwo"]
-summary: "#150 뮤츠 (에스퍼 타입) — 기본 스탯 합계 680"
+summary: "#150 뮤츠 (에스퍼) — GO 최대 CP: 4,178"
 evolution_line: "mewtwo"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "mewtwo"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|44위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-psycho-cut|사이코커터]]
 - **스페셜 기술:** [[move-flamethrower|화염방사]], [[move-focus-blast|기합구슬]], [[move-hyper-beam|파괴광선]], [[move-ice-beam|냉동빔]], [[move-psychic|사이코키네시스]], [[move-shadow-ball|섀도볼]], [[move-thunderbolt|10만볼트]], [[move-psystrike|사이코브레이크]]  *(커뮤니티 데이/전용: [[move-psystrike|사이코브레이크]], [[move-shadow-ball|섀도볼]], [[move-hyper-beam|파괴광선]])*

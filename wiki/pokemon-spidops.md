@@ -3,10 +3,10 @@ title: "Spidops / 트래피더"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-bug", "type-none", "evo-line-spidops"]
 aliases: ["트래피더", "spidops"]
-summary: "#918 트래피더 (벌레 / none) — GO 최대 CP: 1,687"
+summary: "#918 트래피더 (벌레) — GO 최대 CP: 1,687"
 evolution_line: "spidops"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "spidops"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|101위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃 |
+| 저항 | 격투, 땅, 풀 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-counter|카운터]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** X Scissor, [[move-grass-knot|풀묶기]], [[move-lunge|덤벼들기]], [[move-rock-tomb|암석봉인]]

@@ -3,7 +3,7 @@ title: "Indeedee / 에써르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-psychic", "type-normal", "evo-line-indeedee"]
 aliases: ["에써르", "indeedee"]
 summary: "#876 에써르 (에스퍼 / 노말) — GO 최대 CP: 2,397"
@@ -33,6 +33,14 @@ evolution_line: "indeedee"
 | 타입 | 에스퍼 / 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 악 |
+| 저항 | 에스퍼 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-extrasensory|신통력]]
 - **스페셜 기술:** [[move-psybeam|환상빔]], [[move-psychic|사이코키네시스]], [[move-energy-ball|에너지볼]]

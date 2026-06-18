@@ -3,10 +3,10 @@ title: "Pancham / 판짱"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fighting", "type-none", "evo-line-pancham"]
 aliases: ["판짱", "pancham"]
-summary: "#674 판짱 (격투 / none) — GO 최대 CP: 1,489"
+summary: "#674 판짱 (격투) — GO 최대 CP: 1,489"
 evolution_line: "pancham"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "pancham"
 | 타입 | 격투 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-low-sweep|로킥]], [[move-crunch|깨물어부수기]], [[move-body-slam|누르기]]

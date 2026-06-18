@@ -3,10 +3,10 @@ title: "Spectrier / 레이스포스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ghost", "type-none", "evo-line-spectrier"]
 aliases: ["레이스포스", "spectrier"]
-summary: "#897 레이스포스 (고스트 / none) — GO 최대 CP: 3,385"
+summary: "#897 레이스포스 (고스트) — GO 최대 CP: 3,385"
 evolution_line: "spectrier"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "spectrier"
 | 타입 | 고스트 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 악 |
+| 저항 | 독, 벌레 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-foul-play|속임수]], [[move-bulldoze|땅고르기]]

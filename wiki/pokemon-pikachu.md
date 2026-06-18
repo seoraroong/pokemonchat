@@ -3,10 +3,10 @@ title: "Pikachu / 피카츄"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-electric", "evo-line-pikachu"]
 aliases: ["피카츄", "pikachu"]
-summary: "#025 피카츄 (전기 타입) — 기본 스탯 합계 320"
+summary: "#025 피카츄 (전기) — GO 최대 CP: 938"
 evolution_line: "pikachu"
 ---
 
@@ -69,6 +69,13 @@ evolution_line: "pikachu"
 | 타입 | 전기 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-present|프레젠트]], [[move-quick-attack|전광석화]], [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-surf|파도타기]], [[move-thunder|번개]], [[move-thunderbolt|10만볼트]], [[move-wild-charge|와일드볼트]]  *(커뮤니티 데이/전용: [[move-present|프레젠트]], [[move-surf|파도타기]], [[move-thunder|번개]])*

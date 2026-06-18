@@ -3,7 +3,7 @@ title: "Anorith / 아노딥스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-rock", "type-bug", "evo-line-anorith"]
 aliases: ["아노딥스", "anorith"]
 summary: "#347 아노딥스 (바위 / 벌레) — GO 최대 CP: 1,529"
@@ -33,6 +33,13 @@ evolution_line: "anorith"
 | 타입 | 바위 / 벌레 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 강철, 물 |
+| 저항 | 노말, 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-struggle-bug|벌레의저항]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-aqua-jet|아쿠아제트]], [[move-cross-poison|크로스포이즌]]

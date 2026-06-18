@@ -3,7 +3,7 @@ title: "Corviknight / 아머까오"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-flying", "type-steel", "evo-line-corviknight"]
 aliases: ["아머까오", "corviknight"]
 summary: "#823 아머까오 (비행 / 강철) — GO 최대 CP: 2,457"
@@ -36,6 +36,14 @@ evolution_line: "corviknight"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|5위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|308위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 불꽃, 전기 |
+| 저항 | 노말, 비행, 벌레(×¼), 강철, 풀(×¼), 에스퍼, 드래곤, 페어리 |
+| 무효 | 독, 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-steel-wing|강철날개]], [[move-air-slash|에어슬래시]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-sky-attack|불새]], [[move-payback|보복]], [[move-iron-head|아이언헤드]], [[move-air-cutter|에어컷터]]  *(커뮤니티 데이/전용: [[move-iron-head|아이언헤드]], [[move-air-cutter|에어컷터]])*

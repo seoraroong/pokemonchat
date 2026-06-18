@@ -3,7 +3,7 @@ title: "Amoonguss / 뽀록나"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-grass", "type-poison", "evo-line-amoonguss"]
 aliases: ["뽀록나", "amoonguss"]
 summary: "#591 뽀록나 (풀 / 독) — GO 최대 CP: 2,140"
@@ -35,6 +35,13 @@ evolution_line: "amoonguss"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|165위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|204위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 불꽃, 에스퍼, 얼음 |
+| 저항 | 격투, 물, 풀(×¼), 전기, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-feint-attack|속여때리기]]
 - **스페셜 기술:** [[move-foul-play|속임수]], [[move-sludge-bomb|오물폭탄]], [[move-grass-knot|풀묶기]]

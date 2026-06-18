@@ -3,10 +3,10 @@ title: "Poochyena / 포챠나"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dark", "type-none", "evo-line-poochyena"]
 aliases: ["포챠나", "poochyena"]
-summary: "#261 포챠나 (악 / none) — GO 최대 CP: 678"
+summary: "#261 포챠나 (악) — GO 최대 CP: 678"
 evolution_line: "poochyena"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "poochyena"
 | 타입 | 악 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-snarl|바크아웃]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-dig|구멍파기]], [[move-poison-fang|독엄니]]

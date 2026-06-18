@@ -3,7 +3,7 @@ title: "Pheromosa / 페로코체"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-bug", "type-fighting", "evo-line-pheromosa"]
 aliases: ["페로코체", "pheromosa"]
 summary: "#795 페로코체 (벌레 / 격투) — GO 최대 CP: 2,842"
@@ -33,6 +33,13 @@ evolution_line: "pheromosa"
 | 타입 | 벌레 / 격투 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행(×4), 불꽃, 에스퍼, 페어리 |
+| 저항 | 격투, 땅, 벌레, 풀, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-low-kick|안다리걸기]]
 - **스페셜 기술:** [[move-focus-blast|기합구슬]], [[move-bug-buzz|벌레의야단법석]], [[move-lunge|덤벼들기]], [[move-close-combat|인파이트]]

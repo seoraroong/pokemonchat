@@ -3,7 +3,7 @@ title: "Corsola / 코산호"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-rock", "evo-line-corsola"]
 aliases: ["코산호", "corsola"]
 summary: "#222 코산호 (물 / 바위) — GO 최대 CP: 1,378"
@@ -33,6 +33,13 @@ evolution_line: "corsola"
 | 타입 | 물 / 바위 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-bubble-beam|거품광선]], [[move-power-gem|파워젬]], [[move-rock-blast|락블레스트]]

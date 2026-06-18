@@ -3,10 +3,10 @@ title: "Darumaka / 달막화"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-fire", "type-none", "evo-line-darumaka"]
 aliases: ["달막화", "darumaka"]
-summary: "#554 달막화 (불꽃 / none) — GO 최대 CP: 1,442"
+summary: "#554 달막화 (불꽃) — GO 최대 CP: 1,442"
 evolution_line: "darumaka"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "darumaka"
 | 타입 | 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-fire-fang|불꽃엄니]]
 - **스페셜 기술:** [[move-fire-punch|불꽃펀치]], [[move-flame-charge|니트로차지]]

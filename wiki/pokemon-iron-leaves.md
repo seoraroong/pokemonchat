@@ -3,7 +3,7 @@ title: "Iron Leaves / 무쇠잎새"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-grass", "type-psychic", "evo-line-iron-leaves"]
 aliases: ["무쇠잎새", "iron leaves"]
 summary: "#1010 무쇠잎새 (풀 / 에스퍼) — GO 최대 CP: 3,237"
@@ -33,6 +33,13 @@ evolution_line: "iron-leaves"
 | 타입 | 풀 / 에스퍼 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레(×4), 고스트, 불꽃, 얼음, 악 |
+| 저항 | 격투, 땅, 물, 풀, 전기, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

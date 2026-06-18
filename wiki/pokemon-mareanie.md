@@ -3,7 +3,7 @@ title: "Mareanie / 시마사리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-poison", "type-water", "evo-line-mareanie"]
 aliases: ["시마사리", "mareanie"]
 summary: "#747 시마사리 (독 / 물) — GO 최대 CP: 972"
@@ -33,6 +33,13 @@ evolution_line: "mareanie"
 | 타입 | 독 / 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 전기, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 강철, 불꽃, 물, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-poison-sting|독침]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-brine|소금물]], [[move-gunk-shot|더스트슈트]], [[move-sludge-wave|오물웨이브]]

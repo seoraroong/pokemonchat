@@ -3,10 +3,10 @@ title: "Phione / 피오네"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-water", "type-none", "evo-line-phione"]
 aliases: ["피오네", "phione"]
-summary: "#489 피오네 (물 / none) — GO 최대 CP: 2,105"
+summary: "#489 피오네 (물) — GO 최대 CP: 2,105"
 evolution_line: "phione"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "phione"
 | 타입 | 물 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-bubble-beam|거품광선]], [[move-surf|파도타기]], [[move-water-pulse|물의파동]]

@@ -3,10 +3,10 @@ title: "Vileplume / 라플레시아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-grass", "type-poison", "evo-line-oddish"]
 aliases: ["라플레시아", "vileplume"]
-summary: "#045 라플레시아 (풀/독 타입) — 기본 스탯 합계 490"
+summary: "#045 라플레시아 (풀 / 독) — GO 최대 CP: 2,559"
 evolution_line: "oddish"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "oddish"
 | 타입 | 풀 / 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 불꽃, 에스퍼, 얼음 |
+| 저항 | 격투, 물, 풀(×¼), 전기, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-razor-leaf|잎날가르기]]
 - **스페셜 기술:** [[move-moonblast|문포스]], [[move-petal-blizzard|꽃보라]], [[move-solar-beam|솔라빔]], [[move-sludge-bomb|오물폭탄]]

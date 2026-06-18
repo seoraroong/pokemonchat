@@ -3,7 +3,7 @@ title: "Togedemaru / 토게데마루"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-electric", "type-steel", "evo-line-togedemaru"]
 aliases: ["토게데마루", "togedemaru"]
 summary: "#777 토게데마루 (전기 / 강철) — GO 최대 CP: 2,160"
@@ -35,6 +35,14 @@ evolution_line: "togedemaru"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|241위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|441위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅(×4), 불꽃 |
+| 저항 | 노말, 비행(×¼), 바위, 벌레, 강철(×¼), 풀, 전기, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-spark|스파크]]
 - **스페셜 기술:** [[move-fell-stinger|마지막일침]], [[move-wild-charge|와일드볼트]], [[move-gyro-ball|자이로볼]]

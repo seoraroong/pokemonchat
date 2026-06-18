@@ -3,7 +3,7 @@ title: "Applin / 과사삭벌레"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-grass", "type-dragon", "evo-line-applin"]
 aliases: ["과사삭벌레", "applin"]
 summary: "#840 과사삭벌레 (풀 / 드래곤) — GO 최대 CP: 714"
@@ -33,6 +33,13 @@ evolution_line: "applin"
 | 타입 | 풀 / 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 얼음(×4), 드래곤, 페어리 |
+| 저항 | 땅, 물(×¼), 풀(×¼), 전기(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

@@ -3,7 +3,7 @@ title: "Pawniard / 자망칼"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-steel", "evo-line-pawniard"]
 aliases: ["자망칼", "pawniard"]
 summary: "#624 자망칼 (악 / 강철) — GO 최대 CP: 1,433"
@@ -34,6 +34,14 @@ evolution_line: "pawniard"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|385위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투(×4), 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 고스트, 강철, 풀, 얼음, 드래곤, 악 |
+| 무효 | 독, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-fury-cutter|연속자르기]]
 - **스페셜 기술:** [[move-night-slash|깜짝베기]], [[move-iron-head|아이언헤드]], X Scissor

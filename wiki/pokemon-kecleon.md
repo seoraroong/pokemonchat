@@ -3,10 +3,10 @@ title: "Kecleon / 켈리몬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-kecleon"]
 aliases: ["켈리몬", "kecleon"]
-summary: "#352 켈리몬 (노말 / none) — GO 최대 CP: 2,047"
+summary: "#352 켈리몬 (노말) — GO 최대 CP: 2,047"
 evolution_line: "kecleon"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "kecleon"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|278위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|474위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-lick|핥기]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-flamethrower|화염방사]], [[move-foul-play|속임수]], [[move-ice-beam|냉동빔]], [[move-shadow-sneak|야습]], [[move-thunder|번개]], [[move-thunder-punch|번개펀치]], [[move-dynamic-punch|폭발펀치]]

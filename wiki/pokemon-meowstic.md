@@ -3,10 +3,10 @@ title: "Meowstic / 냐오닉스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-psychic", "type-none", "evo-line-meowstic"]
 aliases: ["냐오닉스", "meowstic"]
-summary: "#678 냐오닉스 (에스퍼 / none) — GO 최대 CP: 2,124"
+summary: "#678 냐오닉스 (에스퍼) — GO 최대 CP: 2,124"
 evolution_line: "meowstic"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "meowstic"
 | 타입 | 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-charm|애교부리기]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-psychic|사이코키네시스]], [[move-energy-ball|에너지볼]], [[move-shadow-ball|섀도볼]]

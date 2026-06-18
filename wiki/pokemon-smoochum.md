@@ -3,7 +3,7 @@ title: "Smoochum / 뽀뽀라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-ice", "type-psychic", "evo-line-smoochum"]
 aliases: ["뽀뽀라", "smoochum"]
 summary: "#238 뽀뽀라 (얼음 / 에스퍼) — GO 최대 CP: 1,291"
@@ -33,6 +33,13 @@ evolution_line: "smoochum"
 | 타입 | 얼음 / 에스퍼 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 벌레, 고스트, 강철, 불꽃, 악 |
+| 저항 | 에스퍼, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-frost-breath|얼음숨결]], [[move-pound|막치기]], [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-ice-beam|냉동빔]], [[move-ice-punch|냉동펀치]], [[move-psyshock|사이코쇼크]]  *(커뮤니티 데이/전용: [[move-frost-breath|얼음숨결]])*

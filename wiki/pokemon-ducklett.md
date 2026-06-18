@@ -3,7 +3,7 @@ title: "Ducklett / 꼬지보리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-flying", "evo-line-ducklett"]
 aliases: ["꼬지보리", "ducklett"]
 summary: "#580 꼬지보리 (물 / 비행) — GO 최대 CP: 856"
@@ -33,6 +33,14 @@ evolution_line: "ducklett"
 | 타입 | 물 / 비행 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기(×4) |
+| 저항 | 격투, 벌레, 강철, 불꽃, 물 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-bubble-beam|거품광선]], [[move-brave-bird|브레이브버드]]

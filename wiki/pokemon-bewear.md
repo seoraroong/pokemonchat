@@ -3,7 +3,7 @@ title: "Bewear / 이븐곰"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-normal", "type-fighting", "evo-line-bewear"]
 aliases: ["이븐곰", "bewear"]
 summary: "#760 이븐곰 (노말 / 격투) — GO 최대 CP: 3,117"
@@ -35,6 +35,14 @@ evolution_line: "bewear"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|454위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|267위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-low-kick|안다리걸기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** Super Power, [[move-payback|보복]], [[move-stomp|짓밟기]], [[move-drain-punch|드레인펀치]]  *(커뮤니티 데이/전용: [[move-drain-punch|드레인펀치]])*

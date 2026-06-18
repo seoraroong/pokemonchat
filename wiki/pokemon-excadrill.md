@@ -3,7 +3,7 @@ title: "Excadrill / 몰드류"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ground", "type-steel", "evo-line-excadrill"]
 aliases: ["몰드류", "excadrill"]
 summary: "#530 몰드류 (땅 / 강철) — GO 최대 CP: 3,244"
@@ -36,6 +36,14 @@ evolution_line: "excadrill"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|394위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|169위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃, 물 |
+| 저항 | 노말, 비행, 바위(×¼), 벌레, 강철, 에스퍼, 드래곤, 페어리 |
+| 무효 | 독, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-mud-slap|진흙뿌리기]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-rock-slide|스톤샤워]], [[move-earthquake|지진]], [[move-drill-run|드릴라이너]], [[move-iron-head|아이언헤드]], [[move-scorching-sands|열사의대지]]

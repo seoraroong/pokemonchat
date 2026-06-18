@@ -3,10 +3,10 @@ title: "Avalugg / 크레베이스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-ice", "type-none", "evo-line-avalugg"]
 aliases: ["크레베이스", "avalugg"]
-summary: "#713 크레베이스 (얼음 / none) — GO 최대 CP: 3,198"
+summary: "#713 크레베이스 (얼음) — GO 최대 CP: 3,198"
 evolution_line: "avalugg"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "avalugg"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|224위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|129위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-ice-fang|얼음엄니]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-avalanche|눈사태]], [[move-earthquake|지진]], [[move-body-slam|누르기]], [[move-mirror-coat|미러코트]], [[move-icy-wind|얼다바람]]

@@ -3,10 +3,10 @@ title: "Bonsly / 꼬지지"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-rock", "type-none", "evo-line-bonsly"]
 aliases: ["꼬지지", "bonsly"]
-summary: "#438 꼬지지 (바위 / none) — GO 최대 CP: 1,302"
+summary: "#438 꼬지지 (바위) — GO 최대 CP: 1,302"
 evolution_line: "bonsly"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "bonsly"
 | 타입 | 바위 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀 |
+| 저항 | 노말, 비행, 독, 불꽃 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-rock-throw|돌떨구기]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-rock-slide|스톤샤워]], [[move-rock-tomb|암석봉인]]

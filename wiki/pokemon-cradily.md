@@ -3,7 +3,7 @@ title: "Cradily / 릴리요"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-rock", "type-grass", "evo-line-cradily"]
 aliases: ["릴리요", "cradily"]
 summary: "#346 릴리요 (바위 / 풀) — GO 최대 CP: 2,211"
@@ -35,6 +35,13 @@ evolution_line: "cradily"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|43위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|19위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 강철, 얼음 |
+| 저항 | 노말, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-infestation|엉겨붙기]], [[move-bullet-seed|기관총]]
 - **스페셜 기술:** [[move-bulldoze|땅고르기]], [[move-grass-knot|풀묶기]], [[move-stone-edge|스톤에지]], [[move-rock-slide|스톤샤워]], [[move-rock-tomb|암석봉인]]

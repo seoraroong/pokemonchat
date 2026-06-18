@@ -3,10 +3,10 @@ title: "Jolteon / 쥬피썬더"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-electric", "evo-line-eevee"]
 aliases: ["쥬피썬더", "jolteon"]
-summary: "#135 쥬피썬더 (전기 타입) — 기본 스탯 합계 525"
+summary: "#135 쥬피썬더 (전기) — GO 최대 CP: 2,888"
 evolution_line: "eevee"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "eevee"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|461위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|350위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-last-resort|뒀다쓰기]], [[move-thunder|번개]], [[move-thunderbolt|10만볼트]], [[move-zap-cannon|전자포]]  *(커뮤니티 데이/전용: [[move-last-resort|뒀다쓰기]], [[move-zap-cannon|전자포]])*

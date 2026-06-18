@@ -3,10 +3,10 @@ title: "Seaking / 왕콘치"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "evo-line-goldeen"]
 aliases: ["왕콘치", "seaking"]
-summary: "#119 왕콘치 (물 타입) — 기본 스탯 합계 450"
+summary: "#119 왕콘치 (물) — GO 최대 CP: 2,162"
 evolution_line: "goldeen"
 ---
 
@@ -72,6 +72,13 @@ evolution_line: "goldeen"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|25위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|31위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-poison-jab|독찌르기]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-drill-run|드릴라이너]], [[move-ice-beam|냉동빔]], [[move-icy-wind|얼다바람]], [[move-megahorn|메가폰]], [[move-water-pulse|물의파동]]  *(커뮤니티 데이/전용: [[move-poison-jab|독찌르기]], [[move-icy-wind|얼다바람]], [[move-drill-run|드릴라이너]])*

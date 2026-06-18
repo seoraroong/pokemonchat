@@ -3,10 +3,10 @@ title: "Absol / 앱솔"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-dark", "type-none", "evo-line-absol"]
 aliases: ["앱솔", "absol"]
-summary: "#359 앱솔 (악 / none) — GO 최대 CP: 2,526"
+summary: "#359 앱솔 (악) — GO 최대 CP: 2,526"
 evolution_line: "absol"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "absol"
 | 타입 | 악 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-psycho-cut|사이코커터]], [[move-snarl|바크아웃]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-megahorn|메가폰]], [[move-thunder|번개]], [[move-payback|보복]], [[move-brutal-swing|세차게휘두르기]]  *(커뮤니티 데이/전용: [[move-brutal-swing|세차게휘두르기]])*

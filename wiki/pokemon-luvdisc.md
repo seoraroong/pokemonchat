@@ -3,10 +3,10 @@ title: "Luvdisc / 사랑동이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-none", "evo-line-luvdisc"]
 aliases: ["사랑동이", "luvdisc"]
-summary: "#370 사랑동이 (물 / none) — GO 최대 CP: 848"
+summary: "#370 사랑동이 (물) — GO 최대 CP: 848"
 evolution_line: "luvdisc"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "luvdisc"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-draining-kiss|드레인키스]], [[move-water-pulse|물의파동]]

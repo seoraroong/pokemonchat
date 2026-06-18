@@ -3,10 +3,10 @@ title: "Fraxure / 액슨도"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dragon", "type-none", "evo-line-fraxure"]
 aliases: ["액슨도", "fraxure"]
-summary: "#611 액슨도 (드래곤 / none) — GO 최대 CP: 2,234"
+summary: "#611 액슨도 (드래곤) — GO 최대 CP: 2,234"
 evolution_line: "fraxure"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "fraxure"
 | 타입 | 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-iron-tail|아이언테일]]
 - **스페셜 기술:** [[move-dragon-claw|드래곤크루]], [[move-aqua-tail|아쿠아테일]], [[move-night-slash|깜짝베기]]

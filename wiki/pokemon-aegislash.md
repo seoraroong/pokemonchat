@@ -3,7 +3,7 @@ title: "Aegislash / 킬가르도"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-steel", "type-ghost", "evo-line-aegislash"]
 aliases: ["킬가르도", "aegislash"]
 summary: "#681 킬가르도 (강철 / 고스트) — GO 최대 CP: 2,473"
@@ -33,6 +33,14 @@ evolution_line: "aegislash"
 | 타입 | 강철 / 고스트 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 불꽃, 악 |
+| 저항 | 비행, 바위, 벌레(×¼), 강철, 풀, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 노말, 격투, 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-psycho-cut|사이코커터]], [[move-air-slash|에어슬래시]]
 - **스페셜 기술:** [[move-flash-cannon|러스터캐논]], [[move-gyro-ball|자이로볼]], [[move-shadow-ball|섀도볼]]

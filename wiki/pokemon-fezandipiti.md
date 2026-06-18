@@ -3,7 +3,7 @@ title: "Fezandipiti / 기로치"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-poison", "type-fairy", "evo-line-fezandipiti"]
 aliases: ["기로치", "fezandipiti"]
 summary: "#1016 기로치 (독 / 페어리) — GO 최대 CP: 2,433"
@@ -33,6 +33,14 @@ evolution_line: "fezandipiti"
 | 타입 | 독 / 페어리 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 강철, 에스퍼 |
+| 저항 | 격투(×¼), 벌레(×¼), 풀, 악, 페어리 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-poison-jab|독찌르기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-sludge-bomb|오물폭탄]], [[move-moonblast|문포스]], [[move-disarming-voice|차밍보이스]]

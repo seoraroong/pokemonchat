@@ -3,10 +3,10 @@ title: "Zigzagoon / 지그제구리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-zigzagoon"]
 aliases: ["지그제구리", "zigzagoon"]
-summary: "#263 지그제구리 (노말 / none) — GO 최대 CP: 508"
+summary: "#263 지그제구리 (노말) — GO 최대 CP: 508"
 evolution_line: "zigzagoon"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "zigzagoon"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-smash|바위깨기]], [[move-tackle|몸통박치기]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-grass-knot|풀묶기]], [[move-thunderbolt|10만볼트]]

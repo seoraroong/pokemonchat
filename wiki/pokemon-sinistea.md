@@ -3,10 +3,10 @@ title: "Sinistea / 데인차"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ghost", "type-none", "evo-line-sinistea"]
 aliases: ["데인차", "sinistea"]
-summary: "#854 데인차 (고스트 / none) — GO 최대 CP: 1,139"
+summary: "#854 데인차 (고스트) — GO 최대 CP: 1,139"
 evolution_line: "sinistea"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "sinistea"
 | 타입 | 고스트 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 악 |
+| 저항 | 독, 벌레 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-dark-pulse|악의파동]], [[move-psychic|사이코키네시스]]

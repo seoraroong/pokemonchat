@@ -3,10 +3,10 @@ title: "Litten / 냐오불"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-fire", "type-none", "evo-line-litten"]
 aliases: ["냐오불", "litten"]
-summary: "#725 냐오불 (불꽃 / none) — GO 최대 CP: 1,035"
+summary: "#725 냐오불 (불꽃) — GO 최대 CP: 1,035"
 evolution_line: "litten"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "litten"
 | 타입 | 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-ember|불꽃세례]]
 - **스페셜 기술:** [[move-flamethrower|화염방사]], [[move-flame-charge|니트로차지]], [[move-crunch|깨물어부수기]]

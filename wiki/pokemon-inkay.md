@@ -3,7 +3,7 @@ title: "Inkay / 오케이징"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-dark", "type-psychic", "evo-line-inkay"]
 aliases: ["오케이징", "inkay"]
 summary: "#686 오케이징 (악 / 에스퍼) — GO 최대 CP: 927"
@@ -33,6 +33,14 @@ evolution_line: "inkay"
 | 타입 | 악 / 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레(×4), 페어리 |
+| 저항 | 없음 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-tackle|몸통박치기]], [[move-psywave|사이코웨이브]]
 - **스페셜 기술:** [[move-psybeam|환상빔]], [[move-night-slash|깜짝베기]]

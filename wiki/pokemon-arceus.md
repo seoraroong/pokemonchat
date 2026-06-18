@@ -3,10 +3,10 @@ title: "Arceus / 아르세우스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-normal", "type-none", "evo-line-arceus"]
 aliases: ["아르세우스", "arceus"]
-summary: "#493 아르세우스 (노말 / none) — GO 최대 CP: 3,989"
+summary: "#493 아르세우스 (노말) — GO 최대 CP: 3,989"
 evolution_line: "arceus"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "arceus"
 | 타입 | 노말 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-iron-tail|아이언테일]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-future-sight|미래예지]], [[move-hyper-beam|파괴광선]], [[move-outrage|역린]]

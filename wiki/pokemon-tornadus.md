@@ -3,10 +3,10 @@ title: "Tornadus / 토네로스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-flying", "type-none", "evo-line-tornadus"]
 aliases: ["토네로스", "tornadus"]
-summary: "#641 토네로스 (비행 / none) — GO 최대 CP: 3,345"
+summary: "#641 토네로스 (비행) — GO 최대 CP: 3,345"
 evolution_line: "tornadus"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "tornadus"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|396위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 격투, 벌레, 풀 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-air-slash|에어슬래시]]
 - **스페셜 기술:** [[move-grass-knot|풀묶기]], [[move-dark-pulse|악의파동]], [[move-hyper-beam|파괴광선]], [[move-hurricane|폭풍]]

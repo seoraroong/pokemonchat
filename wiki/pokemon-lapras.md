@@ -3,10 +3,10 @@ title: "Lapras / 라프라스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "type-ice", "evo-line-lapras"]
 aliases: ["라프라스", "lapras"]
-summary: "#131 라프라스 (물/얼음 타입) — 기본 스탯 합계 535"
+summary: "#131 라프라스 (물 / 얼음) — GO 최대 CP: 2,641"
 evolution_line: "lapras"
 ---
 
@@ -74,6 +74,13 @@ evolution_line: "lapras"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|28위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|199위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 풀, 전기 |
+| 저항 | 물, 얼음(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-frost-breath|얼음숨결]], [[move-ice-shard|얼음뭉치]], [[move-water-gun|물대포]], [[move-psywave|사이코웨이브]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-dragon-pulse|용의파동]], [[move-hydro-pump|하이드로펌프]], [[move-ice-beam|냉동빔]], [[move-surf|파도타기]], [[move-skull-bash|로케트박치기]], [[move-sparkling-aria|물거품아리아]]  *(커뮤니티 데이/전용: [[move-ice-shard|얼음뭉치]], [[move-dragon-pulse|용의파동]], [[move-ice-beam|냉동빔]])*

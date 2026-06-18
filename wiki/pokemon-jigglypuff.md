@@ -3,10 +3,10 @@ title: "Jigglypuff / 푸린"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "type-fairy", "evo-line-jigglypuff"]
 aliases: ["푸린", "jigglypuff"]
-summary: "#039 푸린 (노말/페어리 타입) — 기본 스탯 합계 270"
+summary: "#039 푸린 (노말 / 페어리) — GO 최대 CP: 724"
 evolution_line: "jigglypuff"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "jigglypuff"
 | 타입 | 노말 / 페어리 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 벌레, 악 |
+| 무효 | 고스트, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-pound|막치기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-dazzling-gleam|매지컬샤인]], [[move-disarming-voice|차밍보이스]], [[move-gyro-ball|자이로볼]], [[move-play-rough|치근거리기]], [[move-swift|스피드스타]]  *(커뮤니티 데이/전용: [[move-play-rough|치근거리기]], [[move-body-slam|누르기]])*

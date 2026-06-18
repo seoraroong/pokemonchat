@@ -3,7 +3,7 @@ title: "Wimpod / 꼬시레"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-bug", "type-water", "evo-line-wimpod"]
 aliases: ["꼬시레", "wimpod"]
 summary: "#767 꼬시레 (벌레 / 물) — GO 최대 CP: 502"
@@ -33,6 +33,13 @@ evolution_line: "wimpod"
 | 타입 | 벌레 / 물 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 전기 |
+| 저항 | 격투, 땅, 강철, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-struggle-bug|벌레의저항]]
 - **스페셜 기술:** [[move-bug-buzz|벌레의야단법석]]

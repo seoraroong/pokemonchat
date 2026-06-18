@@ -3,7 +3,7 @@ title: "Sandy Shocks / 모래털가죽"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-electric", "type-ground", "evo-line-sandy-shocks"]
 aliases: ["모래털가죽", "sandy shocks"]
 summary: "#989 모래털가죽 (전기 / 땅) — GO 최대 CP: 3,421"
@@ -33,6 +33,14 @@ evolution_line: "sandy-shocks"
 | 타입 | 전기 / 땅 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 물, 풀, 얼음 |
+| 저항 | 비행, 독, 바위, 강철 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

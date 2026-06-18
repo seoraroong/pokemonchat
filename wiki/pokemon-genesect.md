@@ -3,7 +3,7 @@ title: "Genesect / 게노세크트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-steel", "evo-line-genesect"]
 aliases: ["게노세크트", "genesect"]
 summary: "#649 게노세크트 (벌레 / 강철) — GO 최대 CP: 3,353"
@@ -36,6 +36,14 @@ evolution_line: "genesect"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|338위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|131위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 불꽃(×4) |
+| 저항 | 노말, 벌레, 강철, 풀(×¼), 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-fury-cutter|연속자르기]]
 - **스페셜 기술:** X Scissor, [[move-magnet-bomb|마그넷봄]], [[move-hyper-beam|파괴광선]], Techno Blast Normal  *(커뮤니티 데이/전용: Techno Blast Normal)*

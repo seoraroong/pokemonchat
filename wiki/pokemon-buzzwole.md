@@ -3,7 +3,7 @@ title: "Buzzwole / 매시붕"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-bug", "type-fighting", "evo-line-buzzwole"]
 aliases: ["매시붕", "buzzwole"]
 summary: "#794 매시붕 (벌레 / 격투) — GO 최대 CP: 3,461"
@@ -34,6 +34,13 @@ evolution_line: "buzzwole"
 | 버디 거리 | 20km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|165위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행(×4), 불꽃, 에스퍼, 페어리 |
+| 저항 | 격투, 땅, 벌레, 풀, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** Power Up Punch, [[move-fell-stinger|마지막일침]], [[move-lunge|덤벼들기]], Super Power

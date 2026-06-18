@@ -3,7 +3,7 @@ title: "Great Tusk / 위대한엄니"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-ground", "type-fighting", "evo-line-great-tusk"]
 aliases: ["위대한엄니", "great tusk"]
 summary: "#984 위대한엄니 (땅 / 격투) — GO 최대 CP: 4,024"
@@ -33,6 +33,14 @@ evolution_line: "great-tusk"
 | 타입 | 땅 / 격투 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 물, 풀, 에스퍼, 얼음, 페어리 |
+| 저항 | 독, 바위(×¼), 벌레, 악 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

@@ -3,7 +3,7 @@ title: "Bruxish / 치갈기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-water", "type-psychic", "evo-line-bruxish"]
 aliases: ["치갈기", "bruxish"]
 summary: "#779 치갈기 (물 / 에스퍼) — GO 최대 CP: 2,389"
@@ -35,6 +35,13 @@ evolution_line: "bruxish"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|393위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|356위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 풀, 전기, 악 |
+| 저항 | 격투, 강철, 불꽃, 물, 에스퍼, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-confusion|염동력]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-psychic-fangs|사이코팽]], [[move-aqua-tail|아쿠아테일]], [[move-crunch|깨물어부수기]], [[move-psyshock|사이코쇼크]]

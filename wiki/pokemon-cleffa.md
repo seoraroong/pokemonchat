@@ -3,10 +3,10 @@ title: "Cleffa / 삐"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-fairy", "type-none", "evo-line-cleffa"]
 aliases: ["삐", "cleffa"]
-summary: "#173 삐 (페어리 / none) — GO 최대 CP: 671"
+summary: "#173 삐 (페어리) — GO 최대 CP: 671"
 evolution_line: "cleffa"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "cleffa"
 | 타입 | 페어리 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-pound|막치기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-grass-knot|풀묶기]], [[move-psychic|사이코키네시스]], [[move-psyshock|사이코쇼크]], [[move-signal-beam|시그널빔]], [[move-swift|스피드스타]]  *(커뮤니티 데이/전용: [[move-psychic|사이코키네시스]], [[move-body-slam|누르기]])*

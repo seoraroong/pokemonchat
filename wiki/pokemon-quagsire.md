@@ -3,7 +3,7 @@ title: "Quagsire / 누오"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-ground", "evo-line-quagsire"]
 aliases: ["누오", "quagsire"]
 summary: "#195 누오 (물 / 땅) — GO 최대 CP: 1,992"
@@ -35,6 +35,14 @@ evolution_line: "quagsire"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|7위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|427위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀(×4) |
+| 저항 | 독, 바위, 강철, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-sludge-bomb|오물폭탄]], [[move-stone-edge|스톤에지]], [[move-acid-spray|애시드봄]], [[move-mud-bomb|진흙폭탄]], [[move-aqua-tail|아쿠아테일]], [[move-drain-punch|드레인펀치]]  *(커뮤니티 데이/전용: [[move-aqua-tail|아쿠아테일]])*

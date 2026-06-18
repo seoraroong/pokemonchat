@@ -3,7 +3,7 @@ title: "Spiritomb / 화강돌"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ghost", "type-dark", "evo-line-spiritomb"]
 aliases: ["화강돌", "spiritomb"]
 summary: "#442 화강돌 (고스트 / 악) — GO 최대 CP: 2,072"
@@ -35,6 +35,14 @@ evolution_line: "spiritomb"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|156위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|135위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 페어리 |
+| 저항 | 독 |
+| 무효 | 노말, 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-ominous-wind|괴상한바람]], [[move-shadow-ball|섀도볼]], [[move-shadow-sneak|야습]], [[move-rock-tomb|암석봉인]]

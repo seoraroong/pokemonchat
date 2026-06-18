@@ -3,10 +3,10 @@ title: "Spritzee / 슈쁘"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fairy", "type-none", "evo-line-spritzee"]
 aliases: ["슈쁘", "spritzee"]
-summary: "#682 슈쁘 (페어리 / none) — GO 최대 CP: 1,252"
+summary: "#682 슈쁘 (페어리) — GO 최대 CP: 1,252"
 evolution_line: "spritzee"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "spritzee"
 | 타입 | 페어리 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charm|애교부리기]], [[move-charge-beam|차지빔]]
 - **스페셜 기술:** [[move-draining-kiss|드레인키스]], [[move-thunderbolt|10만볼트]]

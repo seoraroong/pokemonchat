@@ -3,7 +3,7 @@ title: "Toxtricity / 스트린더"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-electric", "type-poison", "evo-line-toxtricity"]
 aliases: ["스트린더", "toxtricity"]
 summary: "#849 스트린더 (전기 / 독) — GO 최대 CP: 2,601"
@@ -35,6 +35,13 @@ evolution_line: "toxtricity"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|465위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|263위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅(×4), 에스퍼 |
+| 저항 | 격투, 비행, 독, 벌레, 강철, 풀, 전기, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-spark|스파크]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** [[move-acid-spray|애시드봄]], [[move-discharge|방전]], [[move-wild-charge|와일드볼트]], Power Up Punch

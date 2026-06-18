@@ -3,7 +3,7 @@ title: "Breloom / 버섯모"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-grass", "type-fighting", "evo-line-breloom"]
 aliases: ["버섯모", "breloom"]
 summary: "#286 버섯모 (풀 / 격투) — GO 최대 CP: 2,628"
@@ -33,6 +33,13 @@ evolution_line: "breloom"
 | 타입 | 풀 / 격투 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행(×4), 독, 불꽃, 에스퍼, 얼음, 페어리 |
+| 저항 | 땅, 바위, 물, 풀, 전기, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-seed|기관총]], [[move-counter|카운터]], [[move-force-palm|발경]]
 - **스페셜 기술:** [[move-dynamic-punch|폭발펀치]], [[move-grass-knot|풀묶기]], [[move-seed-bomb|씨폭탄]], [[move-sludge-bomb|오물폭탄]]  *(커뮤니티 데이/전용: [[move-grass-knot|풀묶기]])*

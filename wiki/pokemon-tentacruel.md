@@ -3,10 +3,10 @@ title: "Tentacruel / 독파리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "type-poison", "evo-line-tentacool"]
 aliases: ["독파리", "tentacruel"]
-summary: "#073 독파리 (물/독 타입) — 기본 스탯 합계 515"
+summary: "#073 독파리 (물 / 독) — GO 최대 CP: 2,422"
 evolution_line: "tentacool"
 ---
 
@@ -74,6 +74,13 @@ evolution_line: "tentacool"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|69위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|310위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 전기, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 강철, 불꽃, 물, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-poison-jab|독찌르기]], [[move-poison-sting|독침]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-hydro-pump|하이드로펌프]], [[move-sludge-wave|오물웨이브]], [[move-acid-spray|애시드봄]], [[move-scald|열탕]], [[move-payback|보복]]

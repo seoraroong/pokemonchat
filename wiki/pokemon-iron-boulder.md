@@ -3,7 +3,7 @@ title: "Iron Boulder / 무쇠암석"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-rock", "type-psychic", "evo-line-iron-boulder"]
 aliases: ["무쇠암석", "iron boulder"]
 summary: "#1022 무쇠암석 (바위 / 에스퍼) — GO 최대 CP: 3,128"
@@ -33,6 +33,13 @@ evolution_line: "iron-boulder"
 | 타입 | 바위 / 에스퍼 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 벌레, 고스트, 강철, 물, 풀, 악 |
+| 저항 | 노말, 비행, 독, 불꽃, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

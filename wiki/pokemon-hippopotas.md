@@ -3,10 +3,10 @@ title: "Hippopotas / 히포포타스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ground", "type-none", "evo-line-hippopotas"]
 aliases: ["히포포타스", "hippopotas"]
-summary: "#449 히포포타스 (땅 / none) — GO 최대 CP: 1,358"
+summary: "#449 히포포타스 (땅) — GO 최대 CP: 1,358"
 evolution_line: "hippopotas"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "hippopotas"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|277위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-tackle|몸통박치기]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-dig|구멍파기]], [[move-rock-tomb|암석봉인]]

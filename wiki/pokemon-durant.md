@@ -3,7 +3,7 @@ title: "Durant / 아이앤트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-steel", "evo-line-durant"]
 aliases: ["아이앤트", "durant"]
 summary: "#632 아이앤트 (벌레 / 강철) — GO 최대 CP: 2,659"
@@ -34,6 +34,14 @@ evolution_line: "durant"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|455위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 불꽃(×4) |
+| 저항 | 노말, 벌레, 강철, 풀(×¼), 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-metal-claw|메탈크로우]]
 - **스페셜 기술:** X Scissor, [[move-iron-head|아이언헤드]], [[move-stone-edge|스톤에지]]

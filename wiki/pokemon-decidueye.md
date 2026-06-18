@@ -3,7 +3,7 @@ title: "Decidueye / 모크나이퍼"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-grass", "type-ghost", "evo-line-decidueye"]
 aliases: ["모크나이퍼", "decidueye"]
 summary: "#724 모크나이퍼 (풀 / 고스트) — GO 최대 CP: 2,775"
@@ -35,6 +35,14 @@ evolution_line: "decidueye"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|181위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|220위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 고스트, 불꽃, 얼음, 악 |
+| 저항 | 땅, 물, 풀, 전기 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-razor-leaf|잎날가르기]], [[move-leafage|나뭇잎]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-shadow-sneak|야습]], [[move-energy-ball|에너지볼]], [[move-brave-bird|브레이브버드]], [[move-frenzy-plant|하드플랜트]], [[move-spirit-shackle|그림자꿰매기]]  *(커뮤니티 데이/전용: [[move-frenzy-plant|하드플랜트]])*

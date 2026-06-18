@@ -3,7 +3,7 @@ title: "Heracross / 헤라크로스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-bug", "type-fighting", "evo-line-heracross"]
 aliases: ["헤라크로스", "heracross"]
 summary: "#214 헤라크로스 (벌레 / 격투) — GO 최대 CP: 3,101"
@@ -36,6 +36,13 @@ evolution_line: "heracross"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|227위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|160위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행(×4), 불꽃, 에스퍼, 페어리 |
+| 저항 | 격투, 땅, 벌레, 풀, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-struggle-bug|벌레의저항]], [[move-fury-cutter|연속자르기]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-earthquake|지진]], [[move-megahorn|메가폰]], [[move-rock-blast|락블레스트]], [[move-upper-hand|기선제압]], [[move-rock-tomb|암석봉인]]

@@ -3,10 +3,10 @@ title: "Lickitung / 내루미"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "evo-line-lickitung"]
 aliases: ["내루미", "lickitung"]
-summary: "#108 내루미 (노말 타입) — 기본 스탯 합계 385"
+summary: "#108 내루미 (노말) — GO 최대 CP: 1,411"
 evolution_line: "lickitung"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "lickitung"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|173위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-lick|핥기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-hyper-beam|파괴광선]], [[move-power-whip|파워휩]], [[move-stomp|짓밟기]], [[move-body-slam|누르기]], [[move-wrap|김밥말이]]  *(커뮤니티 데이/전용: [[move-body-slam|누르기]])*

@@ -3,7 +3,7 @@ title: "Arboliva / 올리르바"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-grass", "type-normal", "evo-line-arboliva"]
 aliases: ["올리르바", "arboliva"]
 summary: "#930 올리르바 (풀 / 노말) — GO 최대 CP: 2,959"
@@ -34,6 +34,14 @@ evolution_line: "arboliva"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|342위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-razor-leaf|잎날가르기]], [[move-tackle|몸통박치기]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-seed-bomb|씨폭탄]], [[move-energy-ball|에너지볼]], [[move-earth-power|대지의힘]], [[move-trailblaze|Trailblaze]]

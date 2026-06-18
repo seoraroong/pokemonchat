@@ -3,7 +3,7 @@ title: "Nuzleaf / 잎새코"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-grass", "type-dark", "evo-line-nuzleaf"]
 aliases: ["잎새코", "nuzleaf"]
 summary: "#274 잎새코 (풀 / 악) — GO 최대 CP: 1,227"
@@ -33,6 +33,14 @@ evolution_line: "nuzleaf"
 | 타입 | 풀 / 악 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 독, 벌레(×4), 불꽃, 얼음, 페어리 |
+| 저항 | 땅, 고스트, 물, 풀, 전기, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-razor-leaf|잎날가르기]]
 - **스페셜 기술:** [[move-foul-play|속임수]], [[move-grass-knot|풀묶기]], [[move-leaf-blade|리프블레이드]]

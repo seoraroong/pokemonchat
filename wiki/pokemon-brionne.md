@@ -3,10 +3,10 @@ title: "Brionne / 키요공"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-water", "type-none", "evo-line-brionne"]
 aliases: ["키요공", "brionne"]
-summary: "#729 키요공 (물 / none) — GO 최대 CP: 1,885"
+summary: "#729 키요공 (물) — GO 최대 CP: 1,885"
 evolution_line: "brionne"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "brionne"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charm|애교부리기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-water-pulse|물의파동]], [[move-disarming-voice|차밍보이스]]

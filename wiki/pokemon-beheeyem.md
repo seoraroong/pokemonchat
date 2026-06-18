@@ -3,10 +3,10 @@ title: "Beheeyem / 벰크"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-psychic", "type-none", "evo-line-beheeyem"]
 aliases: ["벰크", "beheeyem"]
-summary: "#606 벰크 (에스퍼 / none) — GO 최대 CP: 2,753"
+summary: "#606 벰크 (에스퍼) — GO 최대 CP: 2,753"
 evolution_line: "beheeyem"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "beheeyem"
 | 타입 | 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-astonish|놀래키기]]
 - **스페셜 기술:** [[move-rock-slide|스톤샤워]], [[move-dark-pulse|악의파동]], [[move-psychic|사이코키네시스]]

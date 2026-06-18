@@ -3,10 +3,10 @@ title: "Watchog / 보르그"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-none", "evo-line-watchog"]
 aliases: ["보르그", "watchog"]
-summary: "#505 보르그 (노말 / none) — GO 최대 CP: 1,819"
+summary: "#505 보르그 (노말) — GO 최대 CP: 1,819"
 evolution_line: "watchog"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "watchog"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-hyper-fang|필살앞니]], [[move-grass-knot|풀묶기]]

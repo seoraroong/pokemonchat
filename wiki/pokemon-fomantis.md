@@ -3,10 +3,10 @@ title: "Fomantis / 짜랑랑"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-grass", "type-none", "evo-line-fomantis"]
 aliases: ["짜랑랑", "fomantis"]
-summary: "#753 짜랑랑 (풀 / none) — GO 최대 CP: 741"
+summary: "#753 짜랑랑 (풀) — GO 최대 CP: 741"
 evolution_line: "fomantis"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "fomantis"
 | 타입 | 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-razor-leaf|잎날가르기]], [[move-fury-cutter|연속자르기]], [[move-leafage|나뭇잎]]
 - **스페셜 기술:** [[move-leaf-blade|리프블레이드]], [[move-energy-ball|에너지볼]], [[move-grass-knot|풀묶기]], [[move-trailblaze|Trailblaze]]

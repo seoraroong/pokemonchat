@@ -3,10 +3,10 @@ title: "Bounsweet / 달콤아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-grass", "type-none", "evo-line-bounsweet"]
 aliases: ["달콤아", "bounsweet"]
-summary: "#761 달콤아 (풀 / none) — GO 최대 CP: 470"
+summary: "#761 달콤아 (풀) — GO 최대 CP: 470"
 evolution_line: "bounsweet"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "bounsweet"
 | 타입 | 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-razor-leaf|잎날가르기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-draining-kiss|드레인키스]]

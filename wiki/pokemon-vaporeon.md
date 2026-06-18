@@ -3,10 +3,10 @@ title: "Vaporeon / 샤미드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "evo-line-eevee"]
 aliases: ["샤미드", "vaporeon"]
-summary: "#134 샤미드 (물 타입) — 기본 스탯 합계 525"
+summary: "#134 샤미드 (물) — GO 최대 CP: 3,114"
 evolution_line: "eevee"
 ---
 
@@ -72,6 +72,13 @@ evolution_line: "eevee"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|392위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|191위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-aqua-tail|아쿠아테일]], [[move-hydro-pump|하이드로펌프]], [[move-last-resort|뒀다쓰기]], [[move-water-pulse|물의파동]], [[move-scald|열탕]], [[move-liquidation|아쿠아브레이크]]  *(커뮤니티 데이/전용: [[move-last-resort|뒀다쓰기]], [[move-scald|열탕]])*

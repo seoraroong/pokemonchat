@@ -3,10 +3,10 @@ title: "Deoxys / 테오키스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-psychic", "type-none", "evo-line-deoxys"]
 aliases: ["테오키스", "deoxys"]
-summary: "#386 테오키스 (에스퍼 / none) — GO 최대 CP: 3,160"
+summary: "#386 테오키스 (에스퍼) — GO 최대 CP: 3,160"
 evolution_line: "deoxys"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "deoxys"
 | 타입 | 에스퍼 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-hyper-beam|파괴광선]], [[move-psycho-boost|사이코부스트]], [[move-thunderbolt|10만볼트]]

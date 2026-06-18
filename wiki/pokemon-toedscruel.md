@@ -3,7 +3,7 @@ title: "Toedscruel / 육파리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-ground", "type-grass", "evo-line-toedscruel"]
 aliases: ["육파리", "toedscruel"]
 summary: "#949 육파리 (땅 / 풀) — GO 최대 CP: 2,422"
@@ -36,6 +36,14 @@ evolution_line: "toedscruel"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|178위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|290위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 벌레, 불꽃, 얼음(×4) |
+| 저항 | 땅, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-earth-power|대지의힘]], [[move-seed-bomb|씨폭탄]], [[move-acid-spray|애시드봄]], [[move-wrap|김밥말이]]

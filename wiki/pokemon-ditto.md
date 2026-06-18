@@ -3,10 +3,10 @@ title: "Ditto / 메타몽"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "evo-line-ditto"]
 aliases: ["메타몽", "ditto"]
-summary: "#132 메타몽 (노말 타입) — 기본 스탯 합계 288"
+summary: "#132 메타몽 (노말) — GO 최대 CP: 832"
 evolution_line: "ditto"
 ---
 
@@ -69,6 +69,14 @@ evolution_line: "ditto"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-transform|변신]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

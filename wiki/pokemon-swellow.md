@@ -3,7 +3,7 @@ title: "Swellow / 스왈로"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-flying", "evo-line-swellow"]
 aliases: ["스왈로", "swellow"]
 summary: "#277 스왈로 (노말 / 비행) — GO 최대 CP: 1,920"
@@ -33,6 +33,14 @@ evolution_line: "swellow"
 | 타입 | 노말 / 비행 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-steel-wing|강철날개]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-brave-bird|브레이브버드]], [[move-sky-attack|불새]]

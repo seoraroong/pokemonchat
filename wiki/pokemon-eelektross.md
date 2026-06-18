@@ -3,10 +3,10 @@ title: "Eelektross / 저리더프"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-electric", "type-none", "evo-line-eelektross"]
 aliases: ["저리더프", "eelektross"]
-summary: "#604 저리더프 (전기 / none) — GO 최대 CP: 2,732"
+summary: "#604 저리더프 (전기) — GO 최대 CP: 2,732"
 evolution_line: "eelektross"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "eelektross"
 | 타입 | 전기 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-spark|스파크]], [[move-volt-switch|볼트체인지]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-thunderbolt|10만볼트]], [[move-acid-spray|애시드봄]], [[move-dragon-claw|드래곤크루]], [[move-liquidation|아쿠아브레이크]]  *(커뮤니티 데이/전용: [[move-volt-switch|볼트체인지]])*

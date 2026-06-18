@@ -3,7 +3,7 @@ title: "Trumbeak / 크라파"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-normal", "type-flying", "evo-line-trumbeak"]
 aliases: ["크라파", "trumbeak"]
 summary: "#732 크라파 (노말 / 비행) — GO 최대 CP: 1,478"
@@ -34,6 +34,14 @@ evolution_line: "trumbeak"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|282위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-drill-peck|회전부리]], [[move-rock-blast|락블레스트]], [[move-sky-attack|불새]]

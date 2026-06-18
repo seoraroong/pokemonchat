@@ -3,7 +3,7 @@ title: "Igglybuff / 푸푸린"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-fairy", "evo-line-igglybuff"]
 aliases: ["푸푸린", "igglybuff"]
 summary: "#174 푸푸린 (노말 / 페어리) — GO 최대 CP: 535"
@@ -33,6 +33,14 @@ evolution_line: "igglybuff"
 | 타입 | 노말 / 페어리 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 벌레, 악 |
+| 무효 | 고스트, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-feint-attack|속여때리기]], [[move-pound|막치기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-psychic|사이코키네시스]], [[move-shadow-ball|섀도볼]], [[move-wild-charge|와일드볼트]], [[move-swift|스피드스타]]  *(커뮤니티 데이/전용: [[move-body-slam|누르기]])*

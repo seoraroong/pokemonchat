@@ -3,7 +3,7 @@ title: "Kirlia / 킬리아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-psychic", "type-fairy", "evo-line-kirlia"]
 aliases: ["킬리아", "kirlia"]
 summary: "#281 킬리아 (에스퍼 / 페어리) — GO 최대 CP: 966"
@@ -33,6 +33,14 @@ evolution_line: "kirlia"
 | 타입 | 에스퍼 / 페어리 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 고스트, 강철 |
+| 저항 | 격투(×¼), 에스퍼 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-confusion|염동력]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-disarming-voice|차밍보이스]], [[move-psychic|사이코키네시스]], [[move-shadow-sneak|야습]], [[move-draining-kiss|드레인키스]], [[move-triple-axel|트리플악셀]]

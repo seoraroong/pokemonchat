@@ -3,10 +3,10 @@ title: "Tympole / 동챙이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-none", "evo-line-tympole"]
 aliases: ["동챙이", "tympole"]
-summary: "#535 동챙이 (물 / none) — GO 최대 CP: 839"
+summary: "#535 동챙이 (물) — GO 최대 CP: 839"
 evolution_line: "tympole"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "tympole"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-bubble|거품]]
 - **스페셜 기술:** [[move-water-pulse|물의파동]], [[move-mud-bomb|진흙폭탄]], [[move-sludge-wave|오물웨이브]]

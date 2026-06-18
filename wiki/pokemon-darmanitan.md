@@ -3,10 +3,10 @@ title: "Darmanitan / 불비달마"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-fire", "type-none", "evo-line-darmanitan"]
 aliases: ["불비달마", "darmanitan"]
-summary: "#555 불비달마 (불꽃 / none) — GO 최대 CP: 3,105"
+summary: "#555 불비달마 (불꽃) — GO 최대 CP: 3,105"
 evolution_line: "darmanitan"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "darmanitan"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|216위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-fire-fang|불꽃엄니]], [[move-incinerate|불태우기]]
 - **스페셜 기술:** [[move-overheat|오버히트]], [[move-focus-blast|기합구슬]], [[move-psychic|사이코키네시스]], [[move-rock-slide|스톤샤워]]

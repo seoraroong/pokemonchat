@@ -3,10 +3,10 @@ title: "Riolu / 리오르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-fighting", "type-none", "evo-line-riolu"]
 aliases: ["리오르", "riolu"]
-summary: "#447 리오르 (격투 / none) — GO 최대 CP: 993"
+summary: "#447 리오르 (격투) — GO 최대 CP: 993"
 evolution_line: "riolu"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "riolu"
 | 타입 | 격투 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-cross-chop|크로스촙]], [[move-low-sweep|로킥]], [[move-blaze-kick|브레이즈킥]], [[move-thunder-punch|번개펀치]]

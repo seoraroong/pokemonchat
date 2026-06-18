@@ -3,7 +3,7 @@ title: "Iron Treads / 무쇠바퀴"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-ground", "type-steel", "evo-line-iron-treads"]
 aliases: ["무쇠바퀴", "iron treads"]
 summary: "#990 무쇠바퀴 (땅 / 강철) — GO 최대 CP: 3,422"
@@ -33,6 +33,14 @@ evolution_line: "iron-treads"
 | 타입 | 땅 / 강철 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃, 물 |
+| 저항 | 노말, 비행, 바위(×¼), 벌레, 강철, 에스퍼, 드래곤, 페어리 |
+| 무효 | 독, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

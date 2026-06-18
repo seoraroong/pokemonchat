@@ -3,7 +3,7 @@ title: "Hydreigon / 삼삼드래"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-dragon", "evo-line-hydreigon"]
 aliases: ["삼삼드래", "hydreigon"]
 summary: "#635 삼삼드래 (악 / 드래곤) — GO 최대 CP: 3,625"
@@ -36,6 +36,14 @@ evolution_line: "hydreigon"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|151위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|63위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 얼음, 드래곤, 페어리(×4) |
+| 저항 | 고스트, 불꽃, 물, 풀, 전기, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-dragon-breath|용의숨결]]
 - **스페셜 기술:** [[move-dragon-pulse|용의파동]], [[move-dark-pulse|악의파동]], [[move-flash-cannon|러스터캐논]], [[move-brutal-swing|세차게휘두르기]], [[move-fly|공중날기]]  *(커뮤니티 데이/전용: [[move-brutal-swing|세차게휘두르기]])*

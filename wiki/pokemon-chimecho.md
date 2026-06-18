@@ -3,10 +3,10 @@ title: "Chimecho / 치렁"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-psychic", "type-none", "evo-line-chimecho"]
 aliases: ["치렁", "chimecho"]
-summary: "#358 치렁 (에스퍼 / none) — GO 최대 CP: 2,259"
+summary: "#358 치렁 (에스퍼) — GO 최대 CP: 2,259"
 evolution_line: "chimecho"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "chimecho"
 | 버디 거리 | 5km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|317위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-extrasensory|신통력]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-psyshock|사이코쇼크]], [[move-shadow-ball|섀도볼]]

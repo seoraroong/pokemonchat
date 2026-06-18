@@ -3,10 +3,10 @@ title: "Hitmonlee / 시라소몬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-fighting", "evo-line-hitmonlee"]
 aliases: ["시라소몬", "hitmonlee"]
-summary: "#106 시라소몬 (격투 타입) — 기본 스탯 합계 455"
+summary: "#106 시라소몬 (격투) — GO 최대 CP: 2,576"
 evolution_line: "hitmonlee"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "hitmonlee"
 | 타입 | 격투 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-rock-smash|바위깨기]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-close-combat|인파이트]], [[move-low-sweep|로킥]], [[move-stomp|짓밟기]], [[move-stone-edge|스톤에지]], [[move-blaze-kick|브레이즈킥]]  *(커뮤니티 데이/전용: [[move-stomp|짓밟기]], [[move-brick-break|깨트리다]])*

@@ -3,7 +3,7 @@ title: "Garchomp / 한카리아스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-dragon", "type-ground", "evo-line-garchomp"]
 aliases: ["한카리아스", "garchomp"]
 summary: "#445 한카리아스 (드래곤 / 땅) — GO 최대 CP: 3,962"
@@ -36,6 +36,14 @@ evolution_line: "garchomp"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|270위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|22위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음(×4), 드래곤, 페어리 |
+| 저항 | 독, 바위, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-fire-blast|불대문자]], [[move-outrage|역린]], [[move-sand-tomb|모래지옥]], [[move-earth-power|대지의힘]], [[move-breaking-swipe|와이드브레이커]], [[move-twister|회오리]]  *(커뮤니티 데이/전용: [[move-earth-power|대지의힘]])*

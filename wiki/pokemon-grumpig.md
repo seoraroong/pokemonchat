@@ -3,10 +3,10 @@ title: "Grumpig / 피그킹"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-psychic", "type-none", "evo-line-grumpig"]
 aliases: ["피그킹", "grumpig"]
-summary: "#326 피그킹 (에스퍼 / none) — GO 최대 CP: 2,369"
+summary: "#326 피그킹 (에스퍼) — GO 최대 CP: 2,369"
 evolution_line: "grumpig"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "grumpig"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|37위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|119위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-extrasensory|신통력]], [[move-psywave|사이코웨이브]]
 - **스페셜 기술:** [[move-mirror-coat|미러코트]], [[move-psychic|사이코키네시스]], [[move-shadow-ball|섀도볼]], [[move-dynamic-punch|폭발펀치]]

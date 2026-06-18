@@ -3,10 +3,10 @@ title: "Abra / 캐이시"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-psychic", "evo-line-abra"]
 aliases: ["캐이시", "abra"]
-summary: "#063 캐이시 (에스퍼 타입) — 기본 스탯 합계 310"
+summary: "#063 캐이시 (에스퍼) — GO 최대 CP: 1,342"
 evolution_line: "abra"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "abra"
 | 타입 | 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-psyshock|사이코쇼크]], [[move-shadow-ball|섀도볼]], [[move-signal-beam|시그널빔]]

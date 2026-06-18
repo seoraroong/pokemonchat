@@ -3,7 +3,7 @@ title: "Scizor / 핫삼"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-bug", "type-steel", "evo-line-scizor"]
 aliases: ["핫삼", "scizor"]
 summary: "#212 핫삼 (벌레 / 강철) — GO 최대 CP: 3,001"
@@ -36,6 +36,14 @@ evolution_line: "scizor"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|239위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|200위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 불꽃(×4) |
+| 저항 | 노말, 벌레, 강철, 풀(×¼), 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-punch|불릿펀치]], [[move-fury-cutter|연속자르기]]
 - **스페셜 기술:** [[move-iron-head|아이언헤드]], [[move-night-slash|깜짝베기]], X Scissor, [[move-trailblaze|Trailblaze]]

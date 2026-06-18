@@ -3,7 +3,7 @@ title: "Oranguru / 하랑우탄"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-normal", "type-psychic", "evo-line-oranguru"]
 aliases: ["하랑우탄", "oranguru"]
 summary: "#765 하랑우탄 (노말 / 에스퍼) — GO 최대 CP: 2,450"
@@ -36,6 +36,14 @@ evolution_line: "oranguru"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|25위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|344위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 악 |
+| 저항 | 에스퍼 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-zen-headbutt|사념의박치기]], [[move-yawn|하품]]
 - **스페셜 기술:** [[move-psychic|사이코키네시스]], [[move-foul-play|속임수]], [[move-future-sight|미래예지]], [[move-trailblaze|Trailblaze]], [[move-brutal-swing|세차게휘두르기]]

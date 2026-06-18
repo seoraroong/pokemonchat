@@ -3,7 +3,7 @@ title: "Orbeetle / 이올브"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-bug", "type-psychic", "evo-line-orbeetle"]
 aliases: ["이올브", "orbeetle"]
 summary: "#826 이올브 (벌레 / 에스퍼) — GO 최대 CP: 2,223"
@@ -35,6 +35,13 @@ evolution_line: "orbeetle"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|329위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|380위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 벌레, 고스트, 불꽃, 악 |
+| 저항 | 격투(×¼), 땅, 풀, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-struggle-bug|벌레의저항]], [[move-confusion|염동력]], [[move-psycho-cut|사이코커터]]
 - **스페셜 기술:** [[move-bug-buzz|벌레의야단법석]], [[move-psychic|사이코키네시스]], [[move-psyshock|사이코쇼크]]

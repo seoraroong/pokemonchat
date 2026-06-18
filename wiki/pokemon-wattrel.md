@@ -3,7 +3,7 @@ title: "Wattrel / 찌리비"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-electric", "type-flying", "evo-line-wattrel"]
 aliases: ["찌리비", "wattrel"]
 summary: "#940 찌리비 (전기 / 비행) — GO 최대 CP: 826"
@@ -33,6 +33,14 @@ evolution_line: "wattrel"
 | 타입 | 전기 / 비행 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 얼음 |
+| 저항 | 격투, 비행, 벌레, 강철, 풀 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-peck|쪼기]]
 - **스페셜 기술:** [[move-acrobatics|애크러뱃]], [[move-aerial-ace|제비반환]], [[move-thunderbolt|10만볼트]]

@@ -3,7 +3,7 @@ title: "Gardevoir / 가디안"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-psychic", "type-fairy", "evo-line-gardevoir"]
 aliases: ["가디안", "gardevoir"]
 summary: "#282 가디안 (에스퍼 / 페어리) — GO 최대 CP: 3,093"
@@ -34,6 +34,14 @@ evolution_line: "gardevoir"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|289위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 고스트, 강철 |
+| 저항 | 격투(×¼), 에스퍼 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-confusion|염동력]], [[move-charm|애교부리기]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-psychic|사이코키네시스]], [[move-shadow-ball|섀도볼]], [[move-synchronoise|싱크로노이즈]], [[move-triple-axel|트리플악셀]]  *(커뮤니티 데이/전용: [[move-synchronoise|싱크로노이즈]])*

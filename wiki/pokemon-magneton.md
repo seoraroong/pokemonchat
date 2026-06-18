@@ -3,10 +3,10 @@ title: "Magneton / 레어코일"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-electric", "type-steel", "evo-line-magnemite"]
 aliases: ["레어코일", "magneton"]
-summary: "#082 레어코일 (전기/강철 타입) — 기본 스탯 합계 465"
+summary: "#082 레어코일 (전기 / 강철) — GO 최대 CP: 2,485"
 evolution_line: "magnemite"
 ---
 
@@ -73,6 +73,14 @@ evolution_line: "magnemite"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|414위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|323위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅(×4), 불꽃 |
+| 저항 | 노말, 비행(×¼), 바위, 벌레, 강철(×¼), 풀, 전기, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charge-beam|차지빔]], [[move-spark|스파크]], [[move-thunder-shock|전기쇼크]], [[move-volt-switch|볼트체인지]], [[move-metal-sound|금속음]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-flash-cannon|러스터캐논]], [[move-magnet-bomb|마그넷봄]], [[move-zap-cannon|전자포]]

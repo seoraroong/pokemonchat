@@ -3,10 +3,10 @@ title: "Patrat / 보르쥐"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-none", "evo-line-patrat"]
 aliases: ["보르쥐", "patrat"]
-summary: "#504 보르쥐 (노말 / none) — GO 최대 CP: 791"
+summary: "#504 보르쥐 (노말) — GO 최대 CP: 791"
 evolution_line: "patrat"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "patrat"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-hyper-fang|필살앞니]], [[move-grass-knot|풀묶기]]

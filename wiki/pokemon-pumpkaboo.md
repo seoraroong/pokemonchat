@@ -3,7 +3,7 @@ title: "Pumpkaboo / 호바귀"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-ghost", "type-grass", "evo-line-pumpkaboo"]
 aliases: ["호바귀", "pumpkaboo"]
 summary: "#710 호바귀 (고스트 / 풀) — GO 최대 CP: 1,222"
@@ -33,6 +33,14 @@ evolution_line: "pumpkaboo"
 | 타입 | 고스트 / 풀 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 고스트, 불꽃, 얼음, 악 |
+| 저항 | 땅, 물, 풀, 전기 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-razor-leaf|잎날가르기]]
 - **스페셜 기술:** [[move-grass-knot|풀묶기]], [[move-shadow-sneak|야습]], [[move-foul-play|속임수]]

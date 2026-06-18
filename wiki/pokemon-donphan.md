@@ -3,10 +3,10 @@ title: "Donphan / 코리갑"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-ground", "type-none", "evo-line-donphan"]
 aliases: ["코리갑", "donphan"]
-summary: "#232 코리갑 (땅 / none) — GO 최대 CP: 3,013"
+summary: "#232 코리갑 (땅) — GO 최대 CP: 3,013"
 evolution_line: "donphan"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "donphan"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|375위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|226위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-mud-slap|진흙뿌리기]], [[move-tackle|몸통박치기]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-heavy-slam|헤비봄버]], [[move-play-rough|치근거리기]], [[move-body-slam|누르기]], [[move-trailblaze|Trailblaze]]

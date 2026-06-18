@@ -3,10 +3,10 @@ title: "Stantler / 노라키"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-none", "evo-line-stantler"]
 aliases: ["노라키", "stantler"]
-summary: "#234 노라키 (노말 / none) — GO 최대 CP: 2,164"
+summary: "#234 노라키 (노말) — GO 최대 CP: 2,164"
 evolution_line: "stantler"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "stantler"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-megahorn|메가폰]], [[move-stomp|짓밟기]], [[move-wild-charge|와일드볼트]]

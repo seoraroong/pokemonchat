@@ -3,7 +3,7 @@ title: "Seismitoad / 두빅굴"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-ground", "evo-line-seismitoad"]
 aliases: ["두빅굴", "seismitoad"]
 summary: "#537 두빅굴 (물 / 땅) — GO 최대 CP: 2,564"
@@ -36,6 +36,14 @@ evolution_line: "seismitoad"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|59위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|255위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀(×4) |
+| 저항 | 독, 바위, 강철, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-bubble|거품]]
 - **스페셜 기술:** [[move-muddy-water|탁류]], [[move-earth-power|대지의힘]], [[move-sludge-bomb|오물폭탄]], [[move-icy-wind|얼다바람]]

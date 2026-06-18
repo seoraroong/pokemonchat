@@ -3,7 +3,7 @@ title: "Sinistcha / 그우린차"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-grass", "type-ghost", "evo-line-sinistcha"]
 aliases: ["그우린차", "sinistcha"]
 summary: "#1013 그우린차 (풀 / 고스트) — GO 최대 CP: 2,957"
@@ -35,6 +35,14 @@ evolution_line: "sinistcha"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|315위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|194위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 고스트, 불꽃, 얼음, 악 |
+| 저항 | 땅, 물, 풀, 전기 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-energy-ball|에너지볼]], [[move-poltergeist|폴터가이스트]]

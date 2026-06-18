@@ -3,10 +3,10 @@ title: "Entei / 앤테이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-fire", "type-none", "evo-line-entei"]
 aliases: ["앤테이", "entei"]
-summary: "#244 앤테이 (불꽃 / none) — GO 최대 CP: 3,473"
+summary: "#244 앤테이 (불꽃) — GO 최대 CP: 3,473"
 evolution_line: "entei"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "entei"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|500위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|153위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fire-fang|불꽃엄니]], [[move-fire-spin|회오리불꽃]]
 - **스페셜 기술:** [[move-fire-blast|불대문자]], [[move-flamethrower|화염방사]], [[move-iron-head|아이언헤드]], [[move-overheat|오버히트]], [[move-flame-charge|니트로차지]], [[move-scorching-sands|열사의대지]]

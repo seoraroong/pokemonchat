@@ -3,7 +3,7 @@ title: "Yanma / 왕자리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-bug", "type-flying", "evo-line-yanma"]
 aliases: ["왕자리", "yanma"]
 summary: "#193 왕자리 (벌레 / 비행) — GO 최대 CP: 1,470"
@@ -33,6 +33,14 @@ evolution_line: "yanma"
 | 타입 | 벌레 / 비행 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위(×4), 불꽃, 전기, 얼음 |
+| 저항 | 격투(×¼), 벌레, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-ancient-power|원시의힘]], [[move-silver-wind|은빛바람]]

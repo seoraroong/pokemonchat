@@ -3,10 +3,10 @@ title: "Corphish / 가재군"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-none", "evo-line-corphish"]
 aliases: ["가재군", "corphish"]
-summary: "#341 가재군 (물 / none) — GO 최대 CP: 1,230"
+summary: "#341 가재군 (물) — GO 최대 CP: 1,230"
 evolution_line: "corphish"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "corphish"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-bubble-beam|거품광선]], Vice Grip, [[move-razor-shell|셸블레이드]], [[move-scald|열탕]]

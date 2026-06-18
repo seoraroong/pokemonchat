@@ -3,10 +3,10 @@ title: "Squirtle / 꼬부기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "evo-line-squirtle"]
 aliases: ["꼬부기", "squirtle"]
-summary: "#007 꼬부기 (물 타입) — 기본 스탯 합계 314"
+summary: "#007 꼬부기 (물) — GO 최대 CP: 946"
 evolution_line: "squirtle"
 ---
 
@@ -69,6 +69,13 @@ evolution_line: "squirtle"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-aqua-tail|아쿠아테일]], [[move-water-pulse|물의파동]]

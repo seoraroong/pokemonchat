@@ -3,10 +3,10 @@ title: "Hattrem / 손지브림"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-psychic", "type-none", "evo-line-hattrem"]
 aliases: ["손지브림", "hattrem"]
-summary: "#857 손지브림 (에스퍼 / none) — GO 최대 CP: 1,634"
+summary: "#857 손지브림 (에스퍼) — GO 최대 CP: 1,634"
 evolution_line: "hattrem"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "hattrem"
 | 타입 | 에스퍼 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-charm|애교부리기]]
 - **스페셜 기술:** [[move-psyshock|사이코쇼크]], [[move-psychic|사이코키네시스]], [[move-dazzling-gleam|매지컬샤인]]

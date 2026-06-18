@@ -3,7 +3,7 @@ title: "Shieldon / 방패톱스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-rock", "type-steel", "evo-line-shieldon"]
 aliases: ["방패톱스", "shieldon"]
 summary: "#410 방패톱스 (바위 / 강철) — GO 최대 CP: 890"
@@ -33,6 +33,14 @@ evolution_line: "shieldon"
 | 타입 | 바위 / 강철 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투(×4), 땅(×4), 물 |
+| 저항 | 노말(×¼), 비행(×¼), 바위, 벌레, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-iron-tail|아이언테일]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-heavy-slam|헤비봄버]], [[move-rock-tomb|암석봉인]]

@@ -3,10 +3,10 @@ title: "Axew / 터검니"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dragon", "type-none", "evo-line-axew"]
 aliases: ["터검니", "axew"]
-summary: "#610 터검니 (드래곤 / none) — GO 최대 CP: 1,368"
+summary: "#610 터검니 (드래곤) — GO 최대 CP: 1,368"
 evolution_line: "axew"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "axew"
 | 타입 | 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-iron-tail|아이언테일]]
 - **스페셜 기술:** [[move-dragon-claw|드래곤크루]], [[move-aqua-tail|아쿠아테일]], [[move-dragon-pulse|용의파동]]

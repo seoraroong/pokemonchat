@@ -3,7 +3,7 @@ title: "Ledian / 레디안"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-bug", "type-flying", "evo-line-ledian"]
 aliases: ["레디안", "ledian"]
 summary: "#166 레디안 (벌레 / 비행) — GO 최대 CP: 1,346"
@@ -34,6 +34,14 @@ evolution_line: "ledian"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|159위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위(×4), 불꽃, 전기, 얼음 |
+| 저항 | 격투(×¼), 벌레, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-struggle-bug|벌레의저항]], [[move-counter|카운터]], [[move-rollout|구르기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-bug-buzz|벌레의야단법석]], [[move-silver-wind|은빛바람]], [[move-dynamic-punch|폭발펀치]], [[move-acrobatics|애크러뱃]]

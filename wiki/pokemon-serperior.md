@@ -3,10 +3,10 @@ title: "Serperior / 샤로다"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-grass", "type-none", "evo-line-serperior"]
 aliases: ["샤로다", "serperior"]
-summary: "#497 샤로다 (풀 / none) — GO 최대 CP: 2,277"
+summary: "#497 샤로다 (풀) — GO 최대 CP: 2,277"
 evolution_line: "serperior"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "serperior"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|377위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|329위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-iron-tail|아이언테일]], [[move-vine-whip|덩굴채찍]]
 - **스페셜 기술:** [[move-grass-knot|풀묶기]], [[move-leaf-tornado|그래스믹서]], [[move-aerial-ace|제비반환]], [[move-frenzy-plant|하드플랜트]]  *(커뮤니티 데이/전용: [[move-frenzy-plant|하드플랜트]])*

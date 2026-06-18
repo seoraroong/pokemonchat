@@ -3,10 +3,10 @@ title: "Floette / 플라엣테"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fairy", "type-none", "evo-line-floette"]
 aliases: ["플라엣테", "floette"]
-summary: "#670 플라엣테 (페어리 / none) — GO 최대 CP: 1,532"
+summary: "#670 플라엣테 (페어리) — GO 최대 CP: 1,532"
 evolution_line: "floette"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "floette"
 | 타입 | 페어리 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-vine-whip|덩굴채찍]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-dazzling-gleam|매지컬샤인]], [[move-petal-blizzard|꽃보라]], [[move-psychic|사이코키네시스]]

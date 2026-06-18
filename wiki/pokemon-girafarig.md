@@ -3,7 +3,7 @@ title: "Girafarig / 키링키"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-psychic", "evo-line-girafarig"]
 aliases: ["키링키", "girafarig"]
 summary: "#203 키링키 (노말 / 에스퍼) — GO 최대 CP: 2,046"
@@ -34,6 +34,14 @@ evolution_line: "girafarig"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|374위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 악 |
+| 저항 | 에스퍼 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-tackle|몸통박치기]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-mirror-coat|미러코트]], [[move-psychic|사이코키네시스]], [[move-thunderbolt|10만볼트]], [[move-psychic-fangs|사이코팽]], [[move-trailblaze|Trailblaze]]

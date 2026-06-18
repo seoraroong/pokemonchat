@@ -3,10 +3,10 @@ title: "Nidoking / 니드킹"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-poison", "type-ground", "evo-line-nidoran-m"]
 aliases: ["니드킹", "nidoking"]
-summary: "#034 니드킹 (독/땅 타입) — 기본 스탯 합계 505"
+summary: "#034 니드킹 (독 / 땅) — GO 최대 CP: 2,567"
 evolution_line: "nidoran-m"
 ---
 
@@ -72,6 +72,14 @@ evolution_line: "nidoran-m"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|470위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 물, 에스퍼, 얼음 |
+| 저항 | 격투, 독(×¼), 바위, 벌레, 페어리 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fury-cutter|연속자르기]], [[move-iron-tail|아이언테일]], [[move-poison-jab|독찌르기]], [[move-double-kick|두번치기]], [[move-poison-sting|독침]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-megahorn|메가폰]], [[move-sludge-wave|오물웨이브]], [[move-earth-power|대지의힘]], [[move-sand-tomb|모래지옥]]  *(커뮤니티 데이/전용: [[move-fury-cutter|연속자르기]])*

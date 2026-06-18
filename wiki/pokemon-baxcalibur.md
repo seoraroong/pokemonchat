@@ -3,7 +3,7 @@ title: "Baxcalibur / 드닐레이브"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-dragon", "type-ice", "evo-line-baxcalibur"]
 aliases: ["드닐레이브", "baxcalibur"]
 summary: "#998 드닐레이브 (드래곤 / 얼음) — GO 최대 CP: 3,550"
@@ -35,6 +35,13 @@ evolution_line: "baxcalibur"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|326위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|82위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 드래곤, 페어리 |
+| 저항 | 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-ice-fang|얼음엄니]]
 - **스페셜 기술:** [[move-dragon-claw|드래곤크루]], [[move-avalanche|눈사태]], [[move-outrage|역린]], [[move-blizzard|눈보라]], [[move-icy-wind|얼다바람]]

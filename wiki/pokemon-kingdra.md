@@ -3,7 +3,7 @@ title: "Kingdra / 킹드라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-dragon", "evo-line-kingdra"]
 aliases: ["킹드라", "kingdra"]
 summary: "#230 킹드라 (물 / 드래곤) — GO 최대 CP: 2,641"
@@ -36,6 +36,13 @@ evolution_line: "kingdra"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|12위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|214위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 드래곤, 페어리 |
+| 저항 | 강철, 불꽃(×¼), 물(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-water-gun|물대포]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-hydro-pump|하이드로펌프]], [[move-outrage|역린]], [[move-octazooka|대포무노포]], [[move-swift|스피드스타]], [[move-surf|파도타기]]  *(커뮤니티 데이/전용: [[move-water-gun|물대포]])*

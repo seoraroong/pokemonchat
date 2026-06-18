@@ -3,10 +3,10 @@ title: "Onix / 롱스톤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-rock", "type-ground", "evo-line-onix"]
 aliases: ["롱스톤", "onix"]
-summary: "#095 롱스톤 (바위/땅 타입) — 기본 스탯 합계 385"
+summary: "#095 롱스톤 (바위 / 땅) — GO 최대 CP: 1,101"
 evolution_line: "onix"
 ---
 
@@ -71,6 +71,14 @@ evolution_line: "onix"
 | 타입 | 바위 / 땅 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물(×4), 풀(×4), 얼음 |
+| 저항 | 노말, 비행, 독(×¼), 바위, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-throw|돌떨구기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-heavy-slam|헤비봄버]], [[move-iron-head|아이언헤드]], [[move-rock-slide|스톤샤워]], [[move-sand-tomb|모래지옥]], [[move-stone-edge|스톤에지]], [[move-breaking-swipe|와이드브레이커]]  *(커뮤니티 데이/전용: [[move-iron-head|아이언헤드]], [[move-rock-slide|스톤샤워]])*

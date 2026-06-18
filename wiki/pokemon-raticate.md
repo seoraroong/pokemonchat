@@ -3,10 +3,10 @@ title: "Raticate / 레트라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-normal", "evo-line-rattata"]
 aliases: ["레트라", "raticate"]
-summary: "#020 레트라 (노말 타입) — 기본 스탯 합계 413"
+summary: "#020 레트라 (노말) — GO 최대 CP: 1,730"
 evolution_line: "rattata"
 ---
 
@@ -70,6 +70,14 @@ evolution_line: "rattata"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-hyper-beam|파괴광선]], [[move-hyper-fang|필살앞니]]

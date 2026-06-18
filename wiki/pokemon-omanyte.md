@@ -3,10 +3,10 @@ title: "Omanyte / 암나이트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-rock", "type-water", "evo-line-omanyte"]
 aliases: ["암나이트", "omanyte"]
-summary: "#138 암나이트 (바위/물 타입) — 기본 스탯 합계 355"
+summary: "#138 암나이트 (바위 / 물) — GO 최대 CP: 1,544"
 evolution_line: "omanyte"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "omanyte"
 | 타입 | 바위 / 물 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-brine|소금물]], [[move-bubble-beam|거품광선]], [[move-rock-blast|락블레스트]], [[move-rock-tomb|암석봉인]]  *(커뮤니티 데이/전용: [[move-rock-tomb|암석봉인]], [[move-brine|소금물]])*

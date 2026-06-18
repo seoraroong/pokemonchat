@@ -3,7 +3,7 @@ title: "Combusken / 영치코"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-fire", "type-fighting", "evo-line-combusken"]
 aliases: ["영치코", "combusken"]
 summary: "#256 영치코 (불꽃 / 격투) — GO 최대 CP: 1,652"
@@ -33,6 +33,13 @@ evolution_line: "combusken"
 | 타입 | 불꽃 / 격투 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 땅, 물, 에스퍼 |
+| 저항 | 벌레(×¼), 강철, 불꽃, 풀, 얼음, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-peck|쪼기]]
 - **스페셜 기술:** [[move-flame-charge|니트로차지]], [[move-flamethrower|화염방사]], [[move-rock-slide|스톤샤워]]

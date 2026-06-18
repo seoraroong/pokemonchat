@@ -3,7 +3,7 @@ title: "Thundurus / 볼트로스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-electric", "type-flying", "evo-line-thundurus"]
 aliases: ["볼트로스", "thundurus"]
 summary: "#642 볼트로스 (전기 / 비행) — GO 최대 CP: 3,345"
@@ -36,6 +36,14 @@ evolution_line: "thundurus"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|485위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|185위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 얼음 |
+| 저항 | 격투, 비행, 벌레, 강철, 풀 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-thunder|번개]], [[move-brick-break|깨트리다]], [[move-thunder-punch|번개펀치]]

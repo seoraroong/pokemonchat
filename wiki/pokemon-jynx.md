@@ -3,10 +3,10 @@ title: "Jynx / 루주라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-ice", "type-psychic", "evo-line-jynx"]
 aliases: ["루주라", "jynx"]
-summary: "#124 루주라 (얼음/에스퍼 타입) — 기본 스탯 합계 455"
+summary: "#124 루주라 (얼음 / 에스퍼) — GO 최대 CP: 2,555"
 evolution_line: "jynx"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "jynx"
 | 타입 | 얼음 / 에스퍼 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 벌레, 고스트, 강철, 불꽃, 악 |
+| 저항 | 에스퍼, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-frost-breath|얼음숨결]], [[move-pound|막치기]]
 - **스페셜 기술:** [[move-avalanche|눈사태]], [[move-draining-kiss|드레인키스]], [[move-focus-blast|기합구슬]], [[move-ice-punch|냉동펀치]], [[move-psyshock|사이코쇼크]]  *(커뮤니티 데이/전용: [[move-pound|막치기]], [[move-ice-punch|냉동펀치]])*

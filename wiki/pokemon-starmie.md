@@ -3,10 +3,10 @@ title: "Starmie / 아쿠스타"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "type-psychic", "evo-line-staryu"]
 aliases: ["아쿠스타", "starmie"]
-summary: "#121 아쿠스타 (물/에스퍼 타입) — 기본 스탯 합계 520"
+summary: "#121 아쿠스타 (물 / 에스퍼) — GO 최대 CP: 2,584"
 evolution_line: "staryu"
 ---
 
@@ -73,6 +73,13 @@ evolution_line: "staryu"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|220위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|199위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 풀, 전기, 악 |
+| 저항 | 격투, 강철, 불꽃, 물, 에스퍼, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** Hidden Power Bug, Hidden Power Dark, Hidden Power Dragon, Hidden Power Electric, Hidden Power Fighting, Hidden Power Fire, Hidden Power Flying, Hidden Power Ghost, Hidden Power Grass, Hidden Power Ground, Hidden Power Ice, Hidden Power Poison, Hidden Power Psychic, Hidden Power Rock, Hidden Power Steel, Hidden Power Water, [[move-quick-attack|전광석화]], [[move-tackle|몸통박치기]], [[move-water-gun|물대포]], [[move-psywave|사이코웨이브]]
 - **스페셜 기술:** [[move-hydro-pump|하이드로펌프]], [[move-ice-beam|냉동빔]], [[move-power-gem|파워젬]], [[move-psybeam|환상빔]], [[move-psychic|사이코키네시스]], [[move-thunder|번개]], [[move-surf|파도타기]], [[move-aqua-jet|아쿠아제트]]  *(커뮤니티 데이/전용: [[move-tackle|몸통박치기]])*

@@ -3,10 +3,10 @@ title: "Gorebyss / 분홍장이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-none", "evo-line-gorebyss"]
 aliases: ["분홍장이", "gorebyss"]
-summary: "#368 분홍장이 (물 / none) — GO 최대 CP: 2,494"
+summary: "#368 분홍장이 (물) — GO 최대 CP: 2,494"
 evolution_line: "gorebyss"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "gorebyss"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-draining-kiss|드레인키스]], [[move-psychic|사이코키네시스]], [[move-water-pulse|물의파동]]

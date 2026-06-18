@@ -3,10 +3,10 @@ title: "Weezing / 또도가스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-poison", "evo-line-koffing"]
 aliases: ["또도가스", "weezing"]
-summary: "#110 또도가스 (독 타입) — 기본 스탯 합계 490"
+summary: "#110 또도가스 (독) — GO 최대 CP: 2,293"
 evolution_line: "koffing"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "koffing"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|340위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 풀, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-infestation|엉겨붙기]], [[move-tackle|몸통박치기]], [[move-rollout|구르기]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-shadow-ball|섀도볼]], [[move-sludge-bomb|오물폭탄]], [[move-thunderbolt|10만볼트]]

@@ -3,10 +3,10 @@ title: "Drilbur / 두더류"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ground", "type-none", "evo-line-drilbur"]
 aliases: ["두더류", "drilbur"]
-summary: "#529 두더류 (땅 / none) — GO 최대 CP: 1,376"
+summary: "#529 두더류 (땅) — GO 최대 CP: 1,376"
 evolution_line: "drilbur"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "drilbur"
 | 타입 | 땅 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-rock-tomb|암석봉인]], [[move-dig|구멍파기]], [[move-drill-run|드릴라이너]]

@@ -3,7 +3,7 @@ title: "Archen / 아켄"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-rock", "type-flying", "evo-line-archen"]
 aliases: ["아켄", "archen"]
 summary: "#566 아켄 (바위 / 비행) — GO 최대 CP: 1,842"
@@ -33,6 +33,14 @@ evolution_line: "archen"
 | 타입 | 바위 / 비행 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 강철, 물, 전기, 얼음 |
+| 저항 | 노말, 비행, 독, 벌레, 불꽃 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-dragon-claw|드래곤크루]], [[move-ancient-power|원시의힘]], [[move-crunch|깨물어부수기]]

@@ -3,10 +3,10 @@ title: "Aerodactyl / 프테라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-rock", "type-flying", "evo-line-aerodactyl"]
 aliases: ["프테라", "aerodactyl"]
-summary: "#142 프테라 (바위/비행 타입) — 기본 스탯 합계 515"
+summary: "#142 프테라 (바위 / 비행) — GO 최대 CP: 2,783"
 evolution_line: "aerodactyl"
 ---
 
@@ -73,6 +73,14 @@ evolution_line: "aerodactyl"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|438위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|288위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 강철, 물, 전기, 얼음 |
+| 저항 | 노말, 비행, 독, 벌레, 불꽃 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-steel-wing|강철날개]], [[move-rock-throw|돌떨구기]], [[move-dragon-breath|용의숨결]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-hyper-beam|파괴광선]], [[move-iron-head|아이언헤드]], [[move-rock-slide|스톤샤워]], [[move-earth-power|대지의힘]]

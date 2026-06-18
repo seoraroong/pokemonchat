@@ -3,7 +3,7 @@ title: "Tranquill / 유토브"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-flying", "evo-line-tranquill"]
 aliases: ["유토브", "tranquill"]
 summary: "#520 유토브 (노말 / 비행) — GO 최대 CP: 1,442"
@@ -33,6 +33,14 @@ evolution_line: "tranquill"
 | 타입 | 노말 / 비행 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음 |
+| 저항 | 벌레, 풀 |
+| 무효 | 땅, 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-air-slash|에어슬래시]], [[move-steel-wing|강철날개]]
 - **스페셜 기술:** [[move-heat-wave|열풍]], [[move-aerial-ace|제비반환]], [[move-sky-attack|불새]]

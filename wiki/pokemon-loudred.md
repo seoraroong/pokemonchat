@@ -3,10 +3,10 @@ title: "Loudred / 노공룡"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-loudred"]
 aliases: ["노공룡", "loudred"]
-summary: "#294 노공룡 (노말 / none) — GO 최대 CP: 1,327"
+summary: "#294 노공룡 (노말) — GO 최대 CP: 1,327"
 evolution_line: "loudred"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "loudred"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-disarming-voice|차밍보이스]], [[move-flamethrower|화염방사]], [[move-stomp|짓밟기]]

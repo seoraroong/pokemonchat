@@ -3,7 +3,7 @@ title: "Binacle / 거북손손"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-rock", "type-water", "evo-line-binacle"]
 aliases: ["거북손손", "binacle"]
 summary: "#688 거북손손 (바위 / 물) — GO 최대 CP: 946"
@@ -33,6 +33,13 @@ evolution_line: "binacle"
 | 타입 | 바위 / 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-cross-chop|크로스촙]], [[move-dig|구멍파기]]

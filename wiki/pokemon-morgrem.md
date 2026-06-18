@@ -3,7 +3,7 @@ title: "Morgrem / 쏘겨모"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-dark", "type-fairy", "evo-line-morgrem"]
 aliases: ["쏘겨모", "morgrem"]
 summary: "#860 쏘겨모 (악 / 페어리) — GO 최대 CP: 1,442"
@@ -34,6 +34,14 @@ evolution_line: "morgrem"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|74위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철, 페어리 |
+| 저항 | 고스트, 악(×¼) |
+| 무효 | 에스퍼, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-foul-play|속임수]], [[move-dark-pulse|악의파동]], [[move-play-rough|치근거리기]]

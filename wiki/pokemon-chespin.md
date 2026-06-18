@@ -3,10 +3,10 @@ title: "Chespin / 도치마론"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-grass", "type-none", "evo-line-chespin"]
 aliases: ["도치마론", "chespin"]
-summary: "#650 도치마론 (풀 / none) — GO 최대 CP: 1,096"
+summary: "#650 도치마론 (풀) — GO 최대 CP: 1,096"
 evolution_line: "chespin"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "chespin"
 | 타입 | 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-take-down|돌진]], [[move-vine-whip|덩굴채찍]]
 - **스페셜 기술:** [[move-gyro-ball|자이로볼]], [[move-seed-bomb|씨폭탄]], [[move-body-slam|누르기]]

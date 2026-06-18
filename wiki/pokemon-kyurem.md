@@ -3,7 +3,7 @@ title: "Kyurem / 큐레무"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dragon", "type-ice", "evo-line-kyurem"]
 aliases: ["큐레무", "kyurem"]
 summary: "#646 큐레무 (드래곤 / 얼음) — GO 최대 CP: 3,575"
@@ -35,6 +35,13 @@ evolution_line: "kyurem"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|108위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|47위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 드래곤, 페어리 |
+| 저항 | 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-steel-wing|강철날개]]
 - **스페셜 기술:** [[move-dragon-claw|드래곤크루]], [[move-blizzard|눈보라]], [[move-draco-meteor|용성군]], [[move-glaciate|얼다세계]]  *(커뮤니티 데이/전용: [[move-glaciate|얼다세계]])*

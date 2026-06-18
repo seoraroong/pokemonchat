@@ -3,7 +3,7 @@ title: "Deino / 모노두"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-dragon", "evo-line-deino"]
 aliases: ["모노두", "deino"]
 summary: "#633 모노두 (악 / 드래곤) — GO 최대 CP: 1,062"
@@ -33,6 +33,14 @@ evolution_line: "deino"
 | 타입 | 악 / 드래곤 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 얼음, 드래곤, 페어리(×4) |
+| 저항 | 고스트, 불꽃, 물, 풀, 전기, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-dragon-breath|용의숨결]]
 - **스페셜 기술:** [[move-dragon-pulse|용의파동]], [[move-crunch|깨물어부수기]], [[move-body-slam|누르기]]

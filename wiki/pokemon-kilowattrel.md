@@ -3,7 +3,7 @@ title: "Kilowattrel / 찌리비크"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-electric", "type-flying", "evo-line-kilowattrel"]
 aliases: ["찌리비크", "kilowattrel"]
 summary: "#941 찌리비크 (전기 / 비행) — GO 최대 CP: 2,443"
@@ -34,6 +34,14 @@ evolution_line: "kilowattrel"
 | 버디 거리 | 1km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|339위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 얼음 |
+| 저항 | 격투, 비행, 벌레, 강철, 풀 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-thunder-shock|전기쇼크]], [[move-air-slash|에어슬래시]]
 - **스페셜 기술:** [[move-acrobatics|애크러뱃]], [[move-aerial-ace|제비반환]], [[move-thunderbolt|10만볼트]]

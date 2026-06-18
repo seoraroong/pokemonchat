@@ -3,10 +3,10 @@ title: "Klawf / 절벼게"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-rock", "type-none", "evo-line-klawf"]
 aliases: ["절벼게", "klawf"]
-summary: "#950 절벼게 (바위 / none) — GO 최대 CP: 2,403"
+summary: "#950 절벼게 (바위) — GO 최대 CP: 2,403"
 evolution_line: "klawf"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "klawf"
 | 타입 | 바위 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀 |
+| 저항 | 노말, 비행, 독, 불꽃 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-throw|돌떨구기]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-rock-slide|스톤샤워]], [[move-rock-tomb|암석봉인]], [[move-bulldoze|땅고르기]]

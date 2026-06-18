@@ -3,7 +3,7 @@ title: "Carvanha / 샤프니아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-dark", "evo-line-carvanha"]
 aliases: ["샤프니아", "carvanha"]
 summary: "#318 샤프니아 (물 / 악) — GO 최대 CP: 1,020"
@@ -33,6 +33,14 @@ evolution_line: "carvanha"
 | 타입 | 물 / 악 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 풀, 전기, 페어리 |
+| 저항 | 고스트, 강철, 불꽃, 물, 얼음, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-snarl|바크아웃]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-crunch|깨물어부수기]], [[move-poison-fang|독엄니]]

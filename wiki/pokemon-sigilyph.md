@@ -3,7 +3,7 @@ title: "Sigilyph / 심보러"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-psychic", "type-flying", "evo-line-sigilyph"]
 aliases: ["심보러", "sigilyph"]
 summary: "#561 심보러 (에스퍼 / 비행) — GO 최대 CP: 2,550"
@@ -33,6 +33,14 @@ evolution_line: "sigilyph"
 | 타입 | 에스퍼 / 비행 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 고스트, 전기, 얼음, 악 |
+| 저항 | 격투(×¼), 풀, 에스퍼 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-air-slash|에어슬래시]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-air-cutter|에어컷터]], [[move-psybeam|환상빔]], [[move-ancient-power|원시의힘]], [[move-signal-beam|시그널빔]]

@@ -3,7 +3,7 @@ title: "Dreepy / 드라꼰"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-dragon", "type-ghost", "evo-line-dreepy"]
 aliases: ["드라꼰", "dreepy"]
 summary: "#885 드라꼰 (드래곤 / 고스트) — GO 최대 CP: 767"
@@ -33,6 +33,14 @@ evolution_line: "dreepy"
 | 타입 | 드래곤 / 고스트 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트, 얼음, 드래곤, 악, 페어리 |
+| 저항 | 독, 벌레, 불꽃, 물, 풀, 전기 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

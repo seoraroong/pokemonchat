@@ -3,10 +3,10 @@ title: "Lurantis / 라란티스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-grass", "type-none", "evo-line-lurantis"]
 aliases: ["라란티스", "lurantis"]
-summary: "#754 라란티스 (풀 / none) — GO 최대 CP: 2,398"
+summary: "#754 라란티스 (풀) — GO 최대 CP: 2,398"
 evolution_line: "lurantis"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "lurantis"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|344위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|258위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-razor-leaf|잎날가르기]], [[move-fury-cutter|연속자르기]], [[move-leafage|나뭇잎]]
 - **스페셜 기술:** [[move-leaf-blade|리프블레이드]], [[move-leaf-storm|리프스톰]], Super Power, X Scissor, [[move-trailblaze|Trailblaze]]

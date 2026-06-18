@@ -3,7 +3,7 @@ title: "Victini / 비크티니"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-psychic", "type-fire", "evo-line-victini"]
 aliases: ["비크티니", "victini"]
 summary: "#494 비크티니 (에스퍼 / 불꽃) — GO 최대 CP: 3,265"
@@ -36,6 +36,13 @@ evolution_line: "victini"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|200위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|84위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 고스트, 물, 악 |
+| 저항 | 격투, 강철, 불꽃, 풀, 에스퍼, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-overheat|오버히트]], [[move-focus-blast|기합구슬]], [[move-psychic|사이코키네시스]], V Create, [[move-psyshock|사이코쇼크]]

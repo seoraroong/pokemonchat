@@ -3,7 +3,7 @@ title: "Tapu Koko / 카푸꼬꼬꼭"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-electric", "type-fairy", "evo-line-tapu-koko"]
 aliases: ["카푸꼬꼬꼭", "tapu koko"]
 summary: "#785 카푸꼬꼬꼭 (전기 / 페어리) — GO 최대 CP: 3,168"
@@ -35,6 +35,14 @@ evolution_line: "tapu-koko"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|367위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|120위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 땅 |
+| 저항 | 격투, 비행, 벌레, 전기, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-volt-switch|볼트체인지]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-thunderbolt|10만볼트]], [[move-dazzling-gleam|매지컬샤인]], [[move-brave-bird|브레이브버드]], [[move-thunder|번개]], Natures Madness  *(커뮤니티 데이/전용: Natures Madness)*

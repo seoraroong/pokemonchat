@@ -3,10 +3,10 @@ title: "Fuecoco / 뜨아거"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-fire", "type-none", "evo-line-fuecoco"]
 aliases: ["뜨아거", "fuecoco"]
-summary: "#909 뜨아거 (불꽃 / none) — GO 최대 CP: 1,127"
+summary: "#909 뜨아거 (불꽃) — GO 최대 CP: 1,127"
 evolution_line: "fuecoco"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "fuecoco"
 | 타입 | 불꽃 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-incinerate|불태우기]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-flamethrower|화염방사]], [[move-disarming-voice|차밍보이스]], [[move-crunch|깨물어부수기]]

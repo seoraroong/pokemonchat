@@ -3,7 +3,7 @@ title: "Heliolisk / 일레도리자드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-electric", "type-normal", "evo-line-heliolisk"]
 aliases: ["일레도리자드", "heliolisk"]
 summary: "#695 일레도리자드 (전기 / 노말) — GO 최대 CP: 2,600"
@@ -33,6 +33,14 @@ evolution_line: "heliolisk"
 | 타입 | 전기 / 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅 |
+| 저항 | 비행, 강철, 전기 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-quick-attack|전광석화]], [[move-volt-switch|볼트체인지]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-parabolic-charge|파라볼라차지]], [[move-bulldoze|땅고르기]], [[move-thunderbolt|10만볼트]], [[move-grass-knot|풀묶기]], [[move-breaking-swipe|와이드브레이커]]

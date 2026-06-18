@@ -3,10 +3,10 @@ title: "Tsareena / 달코퀸"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-grass", "type-none", "evo-line-tsareena"]
 aliases: ["달코퀸", "tsareena"]
-summary: "#763 달코퀸 (풀 / none) — GO 최대 CP: 2,964"
+summary: "#763 달코퀸 (풀) — GO 최대 CP: 2,964"
 evolution_line: "tsareena"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "tsareena"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|314위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-razor-leaf|잎날가르기]], [[move-charm|애교부리기]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-draining-kiss|드레인키스]], [[move-grass-knot|풀묶기]], [[move-stomp|짓밟기]], [[move-triple-axel|트리플악셀]], [[move-high-jump-kick|무릎차기]]  *(커뮤니티 데이/전용: [[move-high-jump-kick|무릎차기]])*

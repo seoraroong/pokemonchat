@@ -3,7 +3,7 @@ title: "Cramorant / 윽우지"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-flying", "type-water", "evo-line-cramorant"]
 aliases: ["윽우지", "cramorant"]
 summary: "#845 윽우지 (비행 / 물) — GO 최대 CP: 2,142"
@@ -33,6 +33,14 @@ evolution_line: "cramorant"
 | 타입 | 비행 / 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기(×4) |
+| 저항 | 격투, 벌레, 강철, 불꽃, 물 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-peck|쪼기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-drill-peck|회전부리]], [[move-fly|공중날기]], [[move-hydro-pump|하이드로펌프]]

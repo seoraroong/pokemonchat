@@ -3,10 +3,10 @@ title: "Espeon / 에브이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-psychic", "type-none", "evo-line-espeon"]
 aliases: ["에브이", "espeon"]
-summary: "#196 에브이 (에스퍼 / none) — GO 최대 CP: 3,170"
+summary: "#196 에브이 (에스퍼) — GO 최대 CP: 3,170"
 evolution_line: "espeon"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "espeon"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|273위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-future-sight|미래예지]], [[move-last-resort|뒀다쓰기]], [[move-psybeam|환상빔]], [[move-psychic|사이코키네시스]], [[move-shadow-ball|섀도볼]], [[move-psychic-fangs|사이코팽]]  *(커뮤니티 데이/전용: [[move-last-resort|뒀다쓰기]], [[move-shadow-ball|섀도볼]])*

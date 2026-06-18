@@ -3,10 +3,10 @@ title: "Druddigon / 크리만"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dragon", "type-none", "evo-line-druddigon"]
 aliases: ["크리만", "druddigon"]
-summary: "#621 크리만 (드래곤 / none) — GO 최대 CP: 2,732"
+summary: "#621 크리만 (드래곤) — GO 최대 CP: 2,732"
 evolution_line: "druddigon"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "druddigon"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|318위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|363위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 얼음, 드래곤, 페어리 |
+| 저항 | 불꽃, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-dragon-claw|드래곤크루]], [[move-night-slash|깜짝베기]], [[move-hyper-beam|파괴광선]], [[move-rock-tomb|암석봉인]]

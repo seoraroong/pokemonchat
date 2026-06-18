@@ -3,7 +3,7 @@ title: "Bombirdier / 떨구새"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-flying", "type-dark", "evo-line-bombirdier"]
 aliases: ["떨구새", "bombirdier"]
 summary: "#962 떨구새 (비행 / 악) — GO 최대 CP: 2,487"
@@ -35,6 +35,14 @@ evolution_line: "bombirdier"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|293위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|113위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음, 페어리 |
+| 저항 | 고스트, 풀, 악 |
+| 무효 | 땅, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-wing-attack|날개치기]], [[move-rock-throw|돌떨구기]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-payback|보복]], [[move-aerial-ace|제비반환]], [[move-fly|공중날기]], [[move-rock-tomb|암석봉인]]

@@ -3,7 +3,7 @@ title: "Torterra / 토대부기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-grass", "type-ground", "evo-line-torterra"]
 aliases: ["토대부기", "torterra"]
 summary: "#389 토대부기 (풀 / 땅) — GO 최대 CP: 2,934"
@@ -36,6 +36,14 @@ evolution_line: "torterra"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|211위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|190위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 벌레, 불꽃, 얼음(×4) |
+| 저항 | 땅, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-razor-leaf|잎날가르기]], [[move-mud-slap|진흙뿌리기]]
 - **스페셜 기술:** [[move-earthquake|지진]], [[move-solar-beam|솔라빔]], [[move-sand-tomb|모래지옥]], [[move-stone-edge|스톤에지]], [[move-frenzy-plant|하드플랜트]]  *(커뮤니티 데이/전용: [[move-frenzy-plant|하드플랜트]])*

@@ -3,7 +3,7 @@ title: "Lunala / 루나아라"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-psychic", "type-ghost", "evo-line-lunala"]
 aliases: ["루나아라", "lunala"]
 summary: "#792 루나아라 (에스퍼 / 고스트) — GO 최대 CP: 4,042"
@@ -35,6 +35,14 @@ evolution_line: "lunala"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|493위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|5위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 고스트(×4), 악(×4) |
+| 저항 | 독, 에스퍼 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-air-slash|에어슬래시]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** [[move-shadow-ball|섀도볼]], [[move-psychic|사이코키네시스]], [[move-moonblast|문포스]], [[move-future-sight|미래예지]]

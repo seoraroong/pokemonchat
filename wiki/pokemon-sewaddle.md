@@ -3,7 +3,7 @@ title: "Sewaddle / 두르보"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-grass", "evo-line-sewaddle"]
 aliases: ["두르보", "sewaddle"]
 summary: "#540 두르보 (벌레 / 풀) — GO 최대 CP: 977"
@@ -33,6 +33,13 @@ evolution_line: "sewaddle"
 | 타입 | 벌레 / 풀 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행(×4), 독, 바위, 벌레, 불꽃(×4), 얼음 |
+| 저항 | 격투, 땅(×¼), 물, 풀(×¼), 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-struggle-bug|벌레의저항]], [[move-bug-bite|벌레먹음]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-seed-bomb|씨폭탄]], [[move-silver-wind|은빛바람]]

@@ -3,7 +3,7 @@ title: "Toxicroak / 독개굴"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-poison", "type-fighting", "evo-line-toxicroak"]
 aliases: ["독개굴", "toxicroak"]
 summary: "#454 독개굴 (독 / 격투) — GO 최대 CP: 2,488"
@@ -35,6 +35,13 @@ evolution_line: "toxicroak"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|388위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|212위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 땅, 에스퍼(×4) |
+| 저항 | 격투, 독, 바위, 벌레(×¼), 풀, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-counter|카운터]], [[move-poison-jab|독찌르기]], [[move-mud-shot|머드숏]], [[move-poison-sting|독침]]
 - **스페셜 기술:** [[move-dynamic-punch|폭발펀치]], [[move-mud-bomb|진흙폭탄]], [[move-sludge-bomb|오물폭탄]], [[move-shadow-ball|섀도볼]], [[move-drain-punch|드레인펀치]]

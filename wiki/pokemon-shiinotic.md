@@ -3,7 +3,7 @@ title: "Shiinotic / 마셰이드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-grass", "type-fairy", "evo-line-shiinotic"]
 aliases: ["마셰이드", "shiinotic"]
 summary: "#756 마셰이드 (풀 / 페어리) — GO 최대 CP: 1,861"
@@ -34,6 +34,14 @@ evolution_line: "shiinotic"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|428위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독(×4), 강철, 불꽃, 얼음 |
+| 저항 | 격투, 땅, 물, 풀, 전기, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-astonish|놀래키기]]
 - **스페셜 기술:** [[move-moonblast|문포스]], [[move-seed-bomb|씨폭탄]], [[move-sludge-bomb|오물폭탄]]

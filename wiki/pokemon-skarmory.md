@@ -3,7 +3,7 @@ title: "Skarmory / 무장조"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-steel", "type-flying", "evo-line-skarmory"]
 aliases: ["무장조", "skarmory"]
 summary: "#227 무장조 (강철 / 비행) — GO 최대 CP: 2,108"
@@ -33,6 +33,14 @@ evolution_line: "skarmory"
 | 타입 | 강철 / 비행 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 불꽃, 전기 |
+| 저항 | 노말, 비행, 벌레(×¼), 강철, 풀(×¼), 에스퍼, 드래곤, 페어리 |
+| 무효 | 독, 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-air-slash|에어슬래시]], [[move-steel-wing|강철날개]]
 - **스페셜 기술:** [[move-brave-bird|브레이브버드]], [[move-flash-cannon|러스터캐논]], [[move-sky-attack|불새]]

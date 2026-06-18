@@ -3,7 +3,7 @@ title: "Wooper / 우파"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-water", "type-ground", "evo-line-wooper"]
 aliases: ["우파", "wooper"]
 summary: "#194 우파 (물 / 땅) — GO 최대 CP: 641"
@@ -33,6 +33,14 @@ evolution_line: "wooper"
 | 타입 | 물 / 땅 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀(×4) |
+| 저항 | 독, 바위, 강철, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-dig|구멍파기]], [[move-mud-bomb|진흙폭탄]]

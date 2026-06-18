@@ -3,10 +3,10 @@ title: "Arcanine / 윈디"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-fire", "evo-line-growlithe"]
 aliases: ["윈디", "arcanine"]
-summary: "#059 윈디 (불꽃 타입) — 기본 스탯 합계 555"
+summary: "#059 윈디 (불꽃) — GO 최대 CP: 3,029"
 evolution_line: "growlithe"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "growlithe"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|207위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-fire-fang|불꽃엄니]], [[move-snarl|바크아웃]], [[move-thunder-fang|번개엄니]]
 - **스페셜 기술:** [[move-bulldoze|땅고르기]], [[move-crunch|깨물어부수기]], [[move-fire-blast|불대문자]], [[move-flamethrower|화염방사]], [[move-wild-charge|와일드볼트]], [[move-psychic-fangs|사이코팽]], [[move-scorching-sands|열사의대지]]  *(커뮤니티 데이/전용: [[move-bite|물기]], [[move-bulldoze|땅고르기]])*

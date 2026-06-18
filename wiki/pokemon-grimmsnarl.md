@@ -3,7 +3,7 @@ title: "Grimmsnarl / 오롱털"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-dark", "type-fairy", "evo-line-grimmsnarl"]
 aliases: ["오롱털", "grimmsnarl"]
 summary: "#861 오롱털 (악 / 페어리) — GO 최대 CP: 2,850"
@@ -36,6 +36,14 @@ evolution_line: "grimmsnarl"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|112위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|163위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철, 페어리 |
+| 저항 | 고스트, 악(×¼) |
+| 무효 | 에스퍼, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-sucker-punch|기습]], [[move-low-kick|안다리걸기]]
 - **스페셜 기술:** [[move-foul-play|속임수]], [[move-dark-pulse|악의파동]], [[move-play-rough|치근거리기]], Power Up Punch

@@ -3,10 +3,10 @@ title: "Snubbull / 블루"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-fairy", "type-none", "evo-line-snubbull"]
 aliases: ["블루", "snubbull"]
-summary: "#209 블루 (페어리 / none) — GO 최대 CP: 1,237"
+summary: "#209 다부니 (페어리) — GO 최대 CP: 1,237"
 evolution_line: "snubbull"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "snubbull"
 | 타입 | 페어리 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 강철 |
+| 저항 | 격투, 벌레, 악 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-brick-break|깨트리다]], [[move-crunch|깨물어부수기]], [[move-dazzling-gleam|매지컬샤인]]

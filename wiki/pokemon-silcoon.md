@@ -3,10 +3,10 @@ title: "Silcoon / 실쿤"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-bug", "type-none", "evo-line-silcoon"]
 aliases: ["실쿤", "silcoon"]
-summary: "#266 실쿤 (벌레 / none) — GO 최대 CP: 553"
+summary: "#266 실쿤 (벌레) — GO 최대 CP: 553"
 evolution_line: "silcoon"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "silcoon"
 | 타입 | 벌레 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃 |
+| 저항 | 격투, 땅, 풀 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-poison-sting|독침]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

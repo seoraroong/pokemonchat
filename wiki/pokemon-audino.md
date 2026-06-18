@@ -3,10 +3,10 @@ title: "Audino / 다부니"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-none", "evo-line-audino"]
 aliases: ["다부니", "audino"]
-summary: "#531 다부니 (노말 / none) — GO 최대 CP: 1,682"
+summary: "#531 이어롭 (노말) — GO 최대 CP: 1,682"
 evolution_line: "audino"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "audino"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-pound|막치기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-disarming-voice|차밍보이스]], [[move-dazzling-gleam|매지컬샤인]], [[move-hyper-beam|파괴광선]], [[move-body-slam|누르기]]  *(커뮤니티 데이/전용: [[move-body-slam|누르기]])*

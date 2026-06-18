@@ -3,10 +3,10 @@ title: "Luxio / 럭시오"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-electric", "type-none", "evo-line-luxio"]
 aliases: ["럭시오", "luxio"]
-summary: "#404 럭시오 (전기 / none) — GO 최대 CP: 1,486"
+summary: "#404 럭시오 (전기) — GO 최대 CP: 1,486"
 evolution_line: "luxio"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "luxio"
 | 타입 | 전기 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-spark|스파크]]
 - **스페셜 기술:** [[move-crunch|깨물어부수기]], [[move-thunderbolt|10만볼트]], [[move-wild-charge|와일드볼트]]

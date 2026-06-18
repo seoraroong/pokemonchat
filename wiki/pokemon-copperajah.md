@@ -3,10 +3,10 @@ title: "Copperajah / 대왕끼리동"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-steel", "type-none", "evo-line-copperajah"]
 aliases: ["대왕끼리동", "copperajah"]
-summary: "#879 대왕끼리동 (강철 / none) — GO 최대 CP: 2,980"
+summary: "#879 대왕끼리동 (강철) — GO 최대 CP: 2,980"
 evolution_line: "copperajah"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "copperajah"
 | 타입 | 강철 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레, 강철, 풀, 에스퍼, 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-iron-head|아이언헤드]], [[move-dig|구멍파기]], [[move-play-rough|치근거리기]], [[move-heavy-slam|헤비봄버]]

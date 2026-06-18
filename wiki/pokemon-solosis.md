@@ -3,10 +3,10 @@ title: "Solosis / 유니란"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-psychic", "type-none", "evo-line-solosis"]
 aliases: ["유니란", "solosis"]
-summary: "#577 유니란 (에스퍼 / none) — GO 최대 CP: 1,367"
+summary: "#577 유니란 (에스퍼) — GO 최대 CP: 1,367"
 evolution_line: "solosis"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "solosis"
 | 타입 | 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** Hidden Power Bug, Hidden Power Dark, Hidden Power Dragon, Hidden Power Electric, Hidden Power Fighting, Hidden Power Fire, Hidden Power Flying, Hidden Power Ghost, Hidden Power Grass, Hidden Power Ground, Hidden Power Ice, Hidden Power Poison, Hidden Power Psychic, Hidden Power Rock, Hidden Power Steel, Hidden Power Water, [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-psyshock|사이코쇼크]], [[move-night-shade|나이트헤드]], [[move-thunder|번개]]

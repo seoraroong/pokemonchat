@@ -3,10 +3,10 @@ title: "Krabby / 크랩"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-water", "evo-line-krabby"]
 aliases: ["크랩", "krabby"]
-summary: "#098 크랩 (물 타입) — 기본 스탯 합계 325"
+summary: "#098 크랩 (물) — GO 최대 CP: 1,561"
 evolution_line: "krabby"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "krabby"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-bubble-beam|거품광선]], Vice Grip, [[move-water-pulse|물의파동]], [[move-razor-shell|셸블레이드]]

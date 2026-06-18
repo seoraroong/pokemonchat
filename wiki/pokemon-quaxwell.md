@@ -3,10 +3,10 @@ title: "Quaxwell / 아꾸왁"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-water", "type-none", "evo-line-quaxwell"]
 aliases: ["아꾸왁", "quaxwell"]
-summary: "#913 아꾸왁 (물 / none) — GO 최대 CP: 1,775"
+summary: "#913 아꾸왁 (물) — GO 최대 CP: 1,775"
 evolution_line: "quaxwell"
 ---
 
@@ -34,6 +34,13 @@ evolution_line: "quaxwell"
 | 버디 거리 | 3km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|395위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-water-gun|물대포]], [[move-wing-attack|날개치기]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-aerial-ace|제비반환]], [[move-liquidation|아쿠아브레이크]]

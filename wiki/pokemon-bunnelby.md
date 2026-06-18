@@ -3,10 +3,10 @@ title: "Bunnelby / 파르빗"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-normal", "type-none", "evo-line-bunnelby"]
 aliases: ["파르빗", "bunnelby"]
-summary: "#659 파르빗 (노말 / none) — GO 최대 CP: 553"
+summary: "#659 파르빗 (노말) — GO 최대 CP: 553"
 evolution_line: "bunnelby"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "bunnelby"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-quick-attack|전광석화]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-bulldoze|땅고르기]], [[move-earthquake|지진]]

@@ -3,7 +3,7 @@ title: "Chesnaught / 브리가론"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-grass", "type-fighting", "evo-line-chesnaught"]
 aliases: ["브리가론", "chesnaught"]
 summary: "#652 브리가론 (풀 / 격투) — GO 최대 CP: 2,954"
@@ -36,6 +36,13 @@ evolution_line: "chesnaught"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|286위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|206위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행(×4), 독, 불꽃, 에스퍼, 얼음, 페어리 |
+| 저항 | 땅, 바위, 물, 풀, 전기, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-smack-down|떨어뜨리기]], [[move-vine-whip|덩굴채찍]]
 - **스페셜 기술:** [[move-gyro-ball|자이로볼]], [[move-energy-ball|에너지볼]], Super Power, [[move-solar-beam|솔라빔]], [[move-frenzy-plant|하드플랜트]], [[move-thunder-punch|번개펀치]]  *(커뮤니티 데이/전용: [[move-frenzy-plant|하드플랜트]])*

@@ -3,7 +3,7 @@ title: "Rowlet / 나몰빼미"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-grass", "type-flying", "evo-line-rowlet"]
 aliases: ["나몰빼미", "rowlet"]
 summary: "#722 나몰빼미 (풀 / 비행) — GO 최대 CP: 1,058"
@@ -33,6 +33,14 @@ evolution_line: "rowlet"
 | 타입 | 풀 / 비행 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 바위, 불꽃, 얼음(×4) |
+| 저항 | 격투, 물, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-razor-leaf|잎날가르기]], [[move-leafage|나뭇잎]], [[move-magical-leaf|메지컬리프]]
 - **스페셜 기술:** [[move-seed-bomb|씨폭탄]], [[move-energy-ball|에너지볼]]

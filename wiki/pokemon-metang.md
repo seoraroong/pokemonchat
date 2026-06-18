@@ -3,7 +3,7 @@ title: "Metang / 메탕구"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-steel", "type-psychic", "evo-line-metang"]
 aliases: ["메탕구", "metang"]
 summary: "#375 메탕구 (강철 / 에스퍼) — GO 최대 CP: 1,721"
@@ -34,6 +34,14 @@ evolution_line: "metang"
 | 버디 거리 | 5km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|181위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 불꽃, 악 |
+| 저항 | 노말, 비행, 바위, 강철, 풀, 에스퍼(×¼), 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-metal-claw|메탈크로우]], [[move-zen-headbutt|사념의박치기]], [[move-fury-cutter|연속자르기]]
 - **스페셜 기술:** [[move-gyro-ball|자이로볼]], [[move-psychic|사이코키네시스]], [[move-psyshock|사이코쇼크]]

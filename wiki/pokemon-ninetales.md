@@ -3,10 +3,10 @@ title: "Ninetales / 나인테일"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-fire", "evo-line-vulpix"]
 aliases: ["나인테일", "ninetales"]
-summary: "#038 나인테일 (불꽃 타입) — 기본 스탯 합계 505"
+summary: "#038 나인테일 (불꽃) — GO 최대 CP: 2,279"
 evolution_line: "vulpix"
 ---
 
@@ -71,6 +71,13 @@ evolution_line: "vulpix"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|22위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|24위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 바위, 물 |
+| 저항 | 벌레, 강철, 불꽃, 풀, 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-feint-attack|속여때리기]], [[move-fire-spin|회오리불꽃]]
 - **스페셜 기술:** [[move-fire-blast|불대문자]], [[move-flamethrower|화염방사]], [[move-heat-wave|열풍]], [[move-overheat|오버히트]], [[move-psyshock|사이코쇼크]], [[move-solar-beam|솔라빔]], Weather Ball Fire, [[move-scorching-sands|열사의대지]], [[move-energy-ball|에너지볼]]  *(커뮤니티 데이/전용: [[move-ember|불꽃세례]], [[move-fire-blast|불대문자]], [[move-flamethrower|화염방사]], [[move-energy-ball|에너지볼]])*

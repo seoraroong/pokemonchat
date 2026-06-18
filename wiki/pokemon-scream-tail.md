@@ -3,7 +3,7 @@ title: "Scream Tail / 우렁찬꼬리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-fairy", "type-psychic", "evo-line-scream-tail"]
 aliases: ["우렁찬꼬리", "scream tail"]
 summary: "#985 우렁찬꼬리 (페어리 / 에스퍼) — GO 최대 CP: 2,475"
@@ -33,6 +33,14 @@ evolution_line: "scream-tail"
 | 타입 | 페어리 / 에스퍼 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 독, 고스트, 강철 |
+| 저항 | 격투(×¼), 에스퍼 |
+| 무효 | 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

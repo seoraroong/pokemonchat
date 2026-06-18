@@ -3,10 +3,10 @@ title: "Linoone / 직구리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-linoone"]
 aliases: ["직구리", "linoone"]
-summary: "#264 직구리 (노말 / none) — GO 최대 CP: 1,662"
+summary: "#264 직구리 (노말) — GO 최대 CP: 1,662"
 evolution_line: "linoone"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "linoone"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|175위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-shadow-claw|섀도크루]], [[move-tackle|몸통박치기]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-grass-knot|풀묶기]], [[move-thunder|번개]], [[move-swift|스피드스타]]

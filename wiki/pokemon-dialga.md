@@ -3,7 +3,7 @@ title: "Dialga / 디아루가"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-steel", "type-dragon", "evo-line-dialga"]
 aliases: ["디아루가", "dialga"]
 summary: "#483 디아루가 (강철 / 드래곤) — GO 최대 CP: 4,038"
@@ -35,6 +35,14 @@ evolution_line: "dialga"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|363위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|41위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅 |
+| 저항 | 노말, 비행, 바위, 벌레, 강철, 물, 풀(×¼), 전기, 에스퍼 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-metal-claw|메탈크로우]]
 - **스페셜 기술:** [[move-draco-meteor|용성군]], [[move-iron-head|아이언헤드]], [[move-thunder|번개]]

@@ -3,10 +3,10 @@ title: "Teddiursa / 깜지곰"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-none", "evo-line-teddiursa"]
 aliases: ["깜지곰", "teddiursa"]
-summary: "#216 깜지곰 (노말 / none) — GO 최대 CP: 1,328"
+summary: "#216 깜지곰 (노말) — GO 최대 CP: 1,328"
 evolution_line: "teddiursa"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "teddiursa"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-lick|핥기]], [[move-scratch|할퀴기]]
 - **스페셜 기술:** [[move-cross-chop|크로스촙]], [[move-crunch|깨물어부수기]], [[move-play-rough|치근거리기]], [[move-trailblaze|Trailblaze]], [[move-swift|스피드스타]]

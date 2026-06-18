@@ -3,7 +3,7 @@ title: "Whiscash / 메깅"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-water", "type-ground", "evo-line-whiscash"]
 aliases: ["메깅", "whiscash"]
 summary: "#340 메깅 (물 / 땅) — GO 최대 CP: 2,075"
@@ -35,6 +35,14 @@ evolution_line: "whiscash"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|292위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|373위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀(×4) |
+| 저항 | 독, 바위, 강철, 불꽃 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-shot|머드숏]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-blizzard|눈보라]], [[move-mud-bomb|진흙폭탄]], [[move-water-pulse|물의파동]], [[move-scald|열탕]]

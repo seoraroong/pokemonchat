@@ -3,7 +3,7 @@ title: "Golisopod / 갑주무사"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-bug", "type-water", "evo-line-golisopod"]
 aliases: ["갑주무사", "golisopod"]
 summary: "#768 갑주무사 (벌레 / 물) — GO 최대 CP: 3,162"
@@ -36,6 +36,13 @@ evolution_line: "golisopod"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|47위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|81위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 전기 |
+| 저항 | 격투, 땅, 강철, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fury-cutter|연속자르기]], [[move-metal-claw|메탈크로우]], [[move-waterfall|폭포오르기]], [[move-shadow-claw|섀도크루]]
 - **스페셜 기술:** X Scissor, [[move-aqua-jet|아쿠아제트]], [[move-aerial-ace|제비반환]], [[move-liquidation|아쿠아브레이크]], [[move-razor-shell|셸블레이드]]

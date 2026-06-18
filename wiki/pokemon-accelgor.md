@@ -3,10 +3,10 @@ title: "Accelgor / 어지리더"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-none", "evo-line-accelgor"]
 aliases: ["어지리더", "accelgor"]
-summary: "#617 어지리더 (벌레 / none) — GO 최대 CP: 2,441"
+summary: "#617 어지리더 (벌레) — GO 최대 CP: 2,441"
 evolution_line: "accelgor"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "accelgor"
 | 타입 | 벌레 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃 |
+| 저항 | 격투, 땅, 풀 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-infestation|엉겨붙기]], [[move-water-shuriken|물수리검]]
 - **스페셜 기술:** [[move-bug-buzz|벌레의야단법석]], [[move-acid-spray|애시드봄]], [[move-signal-beam|시그널빔]], [[move-focus-blast|기합구슬]], [[move-energy-ball|에너지볼]]  *(커뮤니티 데이/전용: [[move-energy-ball|에너지볼]])*

@@ -3,7 +3,7 @@ title: "Volcarona / 불카모스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-bug", "type-fire", "evo-line-volcarona"]
 aliases: ["불카모스", "volcarona"]
 summary: "#637 불카모스 (벌레 / 불꽃) — GO 최대 CP: 3,632"
@@ -34,6 +34,13 @@ evolution_line: "volcarona"
 | 버디 거리 | 5km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|264위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위(×4), 물 |
+| 저항 | 격투, 벌레, 강철, 풀(×¼), 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fire-spin|회오리불꽃]], [[move-bug-bite|벌레먹음]]
 - **스페셜 기술:** [[move-overheat|오버히트]], [[move-bug-buzz|벌레의야단법석]], [[move-solar-beam|솔라빔]], [[move-hurricane|폭풍]]

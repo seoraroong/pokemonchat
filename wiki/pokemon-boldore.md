@@ -3,10 +3,10 @@ title: "Boldore / 암트르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-rock", "type-none", "evo-line-boldore"]
 aliases: ["암트르", "boldore"]
-summary: "#525 암트르 (바위 / none) — GO 최대 CP: 2,029"
+summary: "#525 암트르 (바위) — GO 최대 CP: 2,029"
 evolution_line: "boldore"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "boldore"
 | 타입 | 바위 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 강철, 물, 풀 |
+| 저항 | 노말, 비행, 독, 불꽃 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-smack-down|떨어뜨리기]]
 - **스페셜 기술:** [[move-rock-slide|스톤샤워]], [[move-bulldoze|땅고르기]], [[move-stone-edge|스톤에지]]

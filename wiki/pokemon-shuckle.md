@@ -3,7 +3,7 @@ title: "Shuckle / 단단지"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-bug", "type-rock", "evo-line-shuckle"]
 aliases: ["단단지", "shuckle"]
 summary: "#213 단단지 (벌레 / 바위) — GO 최대 CP: 405"
@@ -33,6 +33,13 @@ evolution_line: "shuckle"
 | 타입 | 벌레 / 바위 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 강철, 물 |
+| 저항 | 노말, 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-rock-throw|돌떨구기]], [[move-struggle-bug|벌레의저항]]
 - **스페셜 기술:** [[move-gyro-ball|자이로볼]], [[move-rock-blast|락블레스트]], [[move-stone-edge|스톤에지]]

@@ -3,10 +3,10 @@ title: "Porygon2 / 폴리곤2"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-normal", "type-none", "evo-line-porygon2"]
 aliases: ["폴리곤2", "porygon2"]
-summary: "#233 폴리곤2 (노말 / none) — GO 최대 CP: 2,711"
+summary: "#233 폴리곤2 (노말) — GO 최대 CP: 2,711"
 evolution_line: "porygon2"
 ---
 
@@ -34,6 +34,14 @@ evolution_line: "porygon2"
 | 버디 거리 | 3km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|383위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-lock-on|록온]], [[move-charge-beam|차지빔]], Hidden Power Bug, Hidden Power Dark, Hidden Power Dragon, Hidden Power Electric, Hidden Power Fighting, Hidden Power Fire, Hidden Power Flying, Hidden Power Ghost, Hidden Power Grass, Hidden Power Ground, Hidden Power Ice, Hidden Power Poison, Hidden Power Psychic, Hidden Power Rock, Hidden Power Steel, Hidden Power Water
 - **스페셜 기술:** [[move-hyper-beam|파괴광선]], [[move-solar-beam|솔라빔]], [[move-zap-cannon|전자포]], [[move-tri-attack|트라이어택]]

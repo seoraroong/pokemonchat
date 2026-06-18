@@ -3,7 +3,7 @@ title: "Tinkaton / 두드리짱"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-fairy", "type-steel", "evo-line-tinkaton"]
 aliases: ["두드리짱", "tinkaton"]
 summary: "#959 두드리짱 (페어리 / 강철) — GO 최대 CP: 2,250"
@@ -35,6 +35,14 @@ evolution_line: "tinkaton"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|9위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|1위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 불꽃 |
+| 저항 | 노말, 비행, 바위, 벌레(×¼), 풀, 에스퍼, 얼음, 악, 페어리 |
+| 무효 | 독, 드래곤 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fairy-wind|요정의바람]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-play-rough|치근거리기]], [[move-flash-cannon|러스터캐논]], [[move-heavy-slam|헤비봄버]], [[move-bulldoze|땅고르기]], [[move-gigaton-hammer|Gigaton Hammer]]  *(커뮤니티 데이/전용: [[move-gigaton-hammer|Gigaton Hammer]])*

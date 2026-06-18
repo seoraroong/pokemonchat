@@ -3,10 +3,10 @@ title: "Drowzee / 슬리프"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-psychic", "evo-line-drowzee"]
 aliases: ["슬리프", "drowzee"]
-summary: "#096 슬리프 (에스퍼 타입) — 기본 스탯 합계 328"
+summary: "#096 슬리프 (에스퍼) — GO 최대 CP: 1,040"
 evolution_line: "drowzee"
 ---
 
@@ -70,6 +70,13 @@ evolution_line: "drowzee"
 | 타입 | 에스퍼 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-pound|막치기]]
 - **스페셜 기술:** [[move-psybeam|환상빔]], [[move-psychic|사이코키네시스]], [[move-psyshock|사이코쇼크]]

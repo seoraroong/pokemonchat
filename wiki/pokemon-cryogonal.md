@@ -3,10 +3,10 @@ title: "Cryogonal / 프리지오"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-ice", "type-none", "evo-line-cryogonal"]
 aliases: ["프리지오", "cryogonal"]
-summary: "#615 프리지오 (얼음 / none) — GO 최대 CP: 2,798"
+summary: "#615 프리지오 (얼음) — GO 최대 CP: 2,798"
 evolution_line: "cryogonal"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "cryogonal"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|473위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|305위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ice-shard|얼음뭉치]], [[move-frost-breath|얼음숨결]]
 - **스페셜 기술:** [[move-aurora-beam|오로라빔]], [[move-night-slash|깜짝베기]], [[move-solar-beam|솔라빔]], [[move-water-pulse|물의파동]], [[move-triple-axel|트리플악셀]]

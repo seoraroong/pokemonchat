@@ -3,10 +3,10 @@ title: "Silicobra / 모래뱀"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ground", "type-none", "evo-line-silicobra"]
 aliases: ["모래뱀", "silicobra"]
-summary: "#843 모래뱀 (땅 / none) — GO 최대 CP: 1,081"
+summary: "#843 모래뱀 (땅) — GO 최대 CP: 1,081"
 evolution_line: "silicobra"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "silicobra"
 | 타입 | 땅 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-bulldoze|땅고르기]], [[move-earth-power|대지의힘]], [[move-wrap|김밥말이]]

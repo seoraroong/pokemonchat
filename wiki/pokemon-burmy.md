@@ -3,10 +3,10 @@ title: "Burmy / 도롱충이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-bug", "type-none", "evo-line-burmy"]
 aliases: ["도롱충이", "burmy"]
-summary: "#412 도롱충이 (벌레 / none) — GO 최대 CP: 488"
+summary: "#412 도롱충이 (벌레) — GO 최대 CP: 488"
 evolution_line: "burmy"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "burmy"
 | 타입 | 벌레 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위, 불꽃 |
+| 저항 | 격투, 땅, 풀 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

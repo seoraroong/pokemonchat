@@ -3,10 +3,10 @@ title: "Lillipup / 요테리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-normal", "type-none", "evo-line-lillipup"]
 aliases: ["요테리", "lillipup"]
-summary: "#506 요테리 (노말 / none) — GO 최대 CP: 915"
+summary: "#506 요테리 (노말) — GO 최대 CP: 915"
 evolution_line: "lillipup"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "lillipup"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-thunderbolt|10만볼트]], [[move-rock-tomb|암석봉인]], [[move-dig|구멍파기]]

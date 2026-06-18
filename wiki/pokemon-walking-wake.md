@@ -3,7 +3,7 @@ title: "Walking Wake / 굽이치는물결"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-water", "type-dragon", "evo-line-walking-wake"]
 aliases: ["굽이치는물결", "walking wake"]
 summary: "#1009 굽이치는물결 (물 / 드래곤) — GO 최대 CP: 3,119"
@@ -33,6 +33,13 @@ evolution_line: "walking-wake"
 | 타입 | 물 / 드래곤 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 드래곤, 페어리 |
+| 저항 | 강철, 불꽃(×¼), 물(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

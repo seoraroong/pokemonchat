@@ -3,7 +3,7 @@ title: "Pangoro / 부란다"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-fighting", "type-dark", "evo-line-pangoro"]
 aliases: ["부란다", "pangoro"]
 summary: "#675 부란다 (격투 / 악) — GO 최대 CP: 2,902"
@@ -36,6 +36,14 @@ evolution_line: "pangoro"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|203위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|175위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 비행, 페어리(×4) |
+| 저항 | 바위, 고스트, 악(×¼) |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-low-kick|안다리걸기]], [[move-snarl|바크아웃]], [[move-bullet-punch|불릿펀치]], [[move-karate-chop|태권당수]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-night-slash|깜짝베기]], [[move-iron-head|아이언헤드]], [[move-rock-slide|스톤샤워]]

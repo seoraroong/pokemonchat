@@ -3,7 +3,7 @@ title: "Iron Crown / 무쇠감투"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-steel", "type-psychic", "evo-line-iron-crown"]
 aliases: ["무쇠감투", "iron crown"]
 summary: "#1023 무쇠감투 (강철 / 에스퍼) — GO 최대 CP: 3,086"
@@ -33,6 +33,14 @@ evolution_line: "iron-crown"
 | 타입 | 강철 / 에스퍼 |
 | 버디 거리 | 20km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 불꽃, 악 |
+| 저항 | 노말, 비행, 바위, 강철, 풀, 에스퍼(×¼), 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-splash|튀어오르기]]
 - **스페셜 기술:** [[move-struggle|발버둥]]

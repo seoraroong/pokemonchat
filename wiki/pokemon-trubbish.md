@@ -3,10 +3,10 @@ title: "Trubbish / 깨봉이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-poison", "type-none", "evo-line-trubbish"]
 aliases: ["깨봉이", "trubbish"]
-summary: "#568 깨봉이 (독 / none) — GO 최대 CP: 1,000"
+summary: "#568 깨봉이 (독) — GO 최대 CP: 1,000"
 evolution_line: "trubbish"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "trubbish"
 | 타입 | 독 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 풀, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-pound|막치기]], [[move-take-down|돌진]]
 - **스페셜 기술:** [[move-gunk-shot|더스트슈트]], [[move-seed-bomb|씨폭탄]]

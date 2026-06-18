@@ -3,7 +3,7 @@ title: "Zekrom / 제크로무"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dragon", "type-electric", "evo-line-zekrom"]
 aliases: ["제크로무", "zekrom"]
 summary: "#644 제크로무 (드래곤 / 전기) — GO 최대 CP: 4,038"
@@ -35,6 +35,13 @@ evolution_line: "zekrom"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|393위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|12위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 얼음, 드래곤, 페어리 |
+| 저항 | 비행, 강철, 불꽃, 물, 풀, 전기(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-breath|용의숨결]], [[move-charge-beam|차지빔]]
 - **스페셜 기술:** [[move-outrage|역린]], [[move-wild-charge|와일드볼트]], [[move-flash-cannon|러스터캐논]], [[move-crunch|깨물어부수기]], [[move-fusion-bolt|크로스썬더]]  *(커뮤니티 데이/전용: [[move-fusion-bolt|크로스썬더]])*

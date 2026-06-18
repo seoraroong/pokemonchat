@@ -3,10 +3,10 @@ title: "Liepard / 레파르다스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-dark", "type-none", "evo-line-liepard"]
 aliases: ["레파르다스", "liepard"]
-summary: "#510 레파르다스 (악 / none) — GO 최대 CP: 1,846"
+summary: "#510 레파르다스 (악) — GO 최대 CP: 1,846"
 evolution_line: "liepard"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "liepard"
 | 타입 | 악 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 벌레, 페어리 |
+| 저항 | 고스트, 악 |
+| 무효 | 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charm|애교부리기]], [[move-snarl|바크아웃]]
 - **스페셜 기술:** [[move-gunk-shot|더스트슈트]], [[move-play-rough|치근거리기]], [[move-dark-pulse|악의파동]], [[move-payback|보복]]

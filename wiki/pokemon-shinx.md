@@ -3,10 +3,10 @@ title: "Shinx / 꼬링크"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-electric", "type-none", "evo-line-shinx"]
 aliases: ["꼬링크", "shinx"]
-summary: "#403 꼬링크 (전기 / none) — GO 최대 CP: 876"
+summary: "#403 꼬링크 (전기) — GO 최대 CP: 876"
 evolution_line: "shinx"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "shinx"
 | 타입 | 전기 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅 |
+| 저항 | 비행, 강철, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-spark|스파크]], [[move-tackle|몸통박치기]]
 - **스페셜 기술:** [[move-discharge|방전]], [[move-swift|스피드스타]], [[move-thunderbolt|10만볼트]]

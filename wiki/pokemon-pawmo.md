@@ -3,7 +3,7 @@ title: "Pawmo / 빠모트"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-electric", "type-fighting", "evo-line-pawmo"]
 aliases: ["빠모트", "pawmo"]
 summary: "#922 빠모트 (전기 / 격투) — GO 최대 CP: 1,299"
@@ -33,6 +33,13 @@ evolution_line: "pawmo"
 | 타입 | 전기 / 격투 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼, 페어리 |
+| 저항 | 바위, 벌레, 강철, 전기, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-spark|스파크]], [[move-charge-beam|차지빔]], [[move-thunder-shock|전기쇼크]]
 - **스페셜 기술:** [[move-thunderbolt|10만볼트]], [[move-discharge|방전]], [[move-wild-charge|와일드볼트]], [[move-thunder-punch|번개펀치]]

@@ -3,7 +3,7 @@ title: "Solgaleo / 솔가레오"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen7", "type-psychic", "type-steel", "evo-line-solgaleo"]
 aliases: ["솔가레오", "solgaleo"]
 summary: "#791 솔가레오 (에스퍼 / 강철) — GO 최대 CP: 4,042"
@@ -35,6 +35,14 @@ evolution_line: "solgaleo"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|381위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|36위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 불꽃, 악 |
+| 저항 | 노말, 비행, 바위, 강철, 풀, 에스퍼(×¼), 얼음, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-zen-headbutt|사념의박치기]], [[move-fire-spin|회오리불꽃]]
 - **스페셜 기술:** [[move-iron-head|아이언헤드]], [[move-psychic-fangs|사이코팽]], [[move-solar-beam|솔라빔]], [[move-flamethrower|화염방사]]

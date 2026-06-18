@@ -3,7 +3,7 @@ title: "Nincada / 토중몬"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-bug", "type-ground", "evo-line-nincada"]
 aliases: ["토중몬", "nincada"]
 summary: "#290 토중몬 (벌레 / 땅) — GO 최대 CP: 768"
@@ -33,6 +33,14 @@ evolution_line: "nincada"
 | 타입 | 벌레 / 땅 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 불꽃, 물, 얼음 |
+| 저항 | 격투, 독, 땅 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bug-bite|벌레먹음]], [[move-scratch|할퀴기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-bug-buzz|벌레의야단법석]], [[move-night-slash|깜짝베기]]

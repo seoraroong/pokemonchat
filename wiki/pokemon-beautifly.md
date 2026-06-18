@@ -3,7 +3,7 @@ title: "Beautifly / 뷰티플라이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-bug", "type-flying", "evo-line-beautifly"]
 aliases: ["뷰티플라이", "beautifly"]
 summary: "#267 뷰티플라이 (벌레 / 비행) — GO 최대 CP: 1,765"
@@ -33,6 +33,14 @@ evolution_line: "beautifly"
 | 타입 | 벌레 / 비행 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 바위(×4), 불꽃, 전기, 얼음 |
+| 저항 | 격투(×¼), 벌레, 풀(×¼) |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-infestation|엉겨붙기]], [[move-struggle-bug|벌레의저항]]
 - **스페셜 기술:** [[move-air-cutter|에어컷터]], [[move-bug-buzz|벌레의야단법석]], [[move-silver-wind|은빛바람]]

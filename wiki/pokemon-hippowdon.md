@@ -3,10 +3,10 @@ title: "Hippowdon / 하마돈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-ground", "type-none", "evo-line-hippowdon"]
 aliases: ["하마돈", "hippowdon"]
-summary: "#450 하마돈 (땅 / none) — GO 최대 CP: 3,085"
+summary: "#450 하마돈 (땅) — GO 최대 CP: 3,085"
 evolution_line: "hippowdon"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "hippowdon"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|54위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|88위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-fire-fang|불꽃엄니]], [[move-thunder-fang|번개엄니]], [[move-ice-fang|얼음엄니]], [[move-sand-attack|모래뿌리기]]
 - **스페셜 기술:** [[move-body-slam|누르기]], [[move-earthquake|지진]], [[move-stone-edge|스톤에지]], [[move-earth-power|대지의힘]], Weather Ball Rock, [[move-scorching-sands|열사의대지]]

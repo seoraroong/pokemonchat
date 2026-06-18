@@ -3,10 +3,10 @@ title: "Capsakid / 캡싸이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-grass", "type-none", "evo-line-capsakid"]
 aliases: ["캡싸이", "capsakid"]
-summary: "#951 캡싸이 (풀 / none) — GO 최대 CP: 976"
+summary: "#951 캡싸이 (풀) — GO 최대 CP: 976"
 evolution_line: "capsakid"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "capsakid"
 | 타입 | 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-leafage|나뭇잎]], [[move-razor-leaf|잎날가르기]]
 - **스페셜 기술:** [[move-leaf-storm|리프스톰]], [[move-grass-knot|풀묶기]], [[move-seed-bomb|씨폭탄]]

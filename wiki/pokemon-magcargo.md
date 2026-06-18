@@ -3,7 +3,7 @@ title: "Magcargo / 마그카르고"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-fire", "type-rock", "evo-line-magcargo"]
 aliases: ["마그카르고", "magcargo"]
 summary: "#219 마그카르고 (불꽃 / 바위) — GO 최대 CP: 1,702"
@@ -34,6 +34,13 @@ evolution_line: "magcargo"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|310위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅(×4), 바위, 물(×4) |
+| 저항 | 노말, 비행, 독, 벌레, 불꽃(×¼), 얼음, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-ember|불꽃세례]], [[move-rock-throw|돌떨구기]], [[move-incinerate|불태우기]]
 - **스페셜 기술:** [[move-heat-wave|열풍]], [[move-overheat|오버히트]], [[move-stone-edge|스톤에지]], [[move-rock-tomb|암석봉인]]

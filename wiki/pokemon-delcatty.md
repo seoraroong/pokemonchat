@@ -3,10 +3,10 @@ title: "Delcatty / 델케티"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-normal", "type-none", "evo-line-delcatty"]
 aliases: ["델케티", "delcatty"]
-summary: "#301 델케티 (노말 / none) — GO 최대 CP: 1,496"
+summary: "#301 델케티 (노말) — GO 최대 CP: 1,496"
 evolution_line: "delcatty"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "delcatty"
 | 타입 | 노말 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-charm|애교부리기]], [[move-feint-attack|속여때리기]], [[move-zen-headbutt|사념의박치기]]
 - **스페셜 기술:** [[move-disarming-voice|차밍보이스]], [[move-play-rough|치근거리기]], [[move-wild-charge|와일드볼트]]

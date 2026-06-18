@@ -3,7 +3,7 @@ title: "Arctovish / 어치르돈"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-water", "type-ice", "evo-line-arctovish"]
 aliases: ["어치르돈", "arctovish"]
 summary: "#883 어치르돈 (물 / 얼음) — GO 최대 CP: 2,447"
@@ -33,6 +33,13 @@ evolution_line: "arctovish"
 | 타입 | 물 / 얼음 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 풀, 전기 |
+| 저항 | 물, 얼음(×¼) |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-brine|소금물]], [[move-avalanche|눈사태]], [[move-ancient-power|원시의힘]]

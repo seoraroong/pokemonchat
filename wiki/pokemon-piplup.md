@@ -3,10 +3,10 @@ title: "Piplup / 팽도리"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-water", "type-none", "evo-line-piplup"]
 aliases: ["팽도리", "piplup"]
-summary: "#393 팽도리 (물 / none) — GO 최대 CP: 1,075"
+summary: "#393 팽도리 (물) — GO 최대 CP: 1,075"
 evolution_line: "piplup"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "piplup"
 | 타입 | 물 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bubble|거품]], [[move-pound|막치기]]
 - **스페셜 기술:** [[move-bubble-beam|거품광선]], [[move-drill-peck|회전부리]], [[move-icy-wind|얼다바람]]

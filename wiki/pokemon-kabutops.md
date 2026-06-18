@@ -3,10 +3,10 @@ title: "Kabutops / 투구푸스"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-rock", "type-water", "evo-line-kabuto"]
 aliases: ["투구푸스", "kabutops"]
-summary: "#141 투구푸스 (바위/물 타입) — 기본 스탯 합계 495"
+summary: "#141 투구푸스 (바위 / 물) — GO 최대 CP: 2,713"
 evolution_line: "kabuto"
 ---
 
@@ -73,6 +73,13 @@ evolution_line: "kabuto"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|495위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|365위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 땅, 풀(×4), 전기 |
+| 저항 | 노말, 비행, 독, 불꽃(×¼), 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fury-cutter|연속자르기]], [[move-mud-shot|머드숏]], [[move-rock-smash|바위깨기]], [[move-waterfall|폭포오르기]]
 - **스페셜 기술:** [[move-ancient-power|원시의힘]], [[move-stone-edge|스톤에지]], [[move-water-pulse|물의파동]], [[move-aqua-jet|아쿠아제트]]  *(커뮤니티 데이/전용: [[move-fury-cutter|연속자르기]])*

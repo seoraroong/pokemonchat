@@ -3,10 +3,10 @@ title: "Dudunsparce / 노고고치"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-normal", "type-none", "evo-line-dudunsparce"]
 aliases: ["노고고치", "dudunsparce"]
-summary: "#982 노고고치 (노말 / none) — GO 최대 CP: 2,739"
+summary: "#982 노고고치 (노말) — GO 최대 CP: 2,739"
 evolution_line: "dudunsparce"
 ---
 
@@ -36,6 +36,14 @@ evolution_line: "dudunsparce"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|77위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|297위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bite|물기]], [[move-astonish|놀래키기]], [[move-rollout|구르기]], [[move-dragon-tail|드래곤테일]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-rock-slide|스톤샤워]], [[move-drill-run|드릴라이너]], [[move-body-slam|누르기]]

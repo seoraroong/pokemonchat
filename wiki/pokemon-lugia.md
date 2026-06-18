@@ -3,7 +3,7 @@ title: "Lugia / 루기아"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-psychic", "type-flying", "evo-line-lugia"]
 aliases: ["루기아", "lugia"]
 summary: "#249 루기아 (에스퍼 / 비행) — GO 최대 CP: 3,703"
@@ -36,6 +36,14 @@ evolution_line: "lugia"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|145위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|16위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 고스트, 전기, 얼음, 악 |
+| 저항 | 격투(×¼), 풀, 에스퍼 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-dragon-tail|드래곤테일]], [[move-extrasensory|신통력]]
 - **스페셜 기술:** [[move-future-sight|미래예지]], [[move-hydro-pump|하이드로펌프]], [[move-sky-attack|불새]], [[move-aeroblast|에어로블라스트]], [[move-fly|공중날기]]  *(커뮤니티 데이/전용: [[move-aeroblast|에어로블라스트]])*

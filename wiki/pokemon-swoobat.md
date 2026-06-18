@@ -3,7 +3,7 @@ title: "Swoobat / 맘박쥐"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-psychic", "type-flying", "evo-line-swoobat"]
 aliases: ["맘박쥐", "swoobat"]
 summary: "#528 맘박쥐 (에스퍼 / 비행) — GO 최대 CP: 1,716"
@@ -34,6 +34,14 @@ evolution_line: "swoobat"
 | 버디 거리 | 1km |
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|492위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 고스트, 전기, 얼음, 악 |
+| 저항 | 격투(×¼), 풀, 에스퍼 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-air-slash|에어슬래시]]
 - **스페셜 기술:** [[move-psychic|사이코키네시스]], [[move-aerial-ace|제비반환]], [[move-future-sight|미래예지]], [[move-psychic-fangs|사이코팽]], [[move-fly|공중날기]]

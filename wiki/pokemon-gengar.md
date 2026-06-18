@@ -3,10 +3,10 @@ title: "Gengar / 팬텀"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-ghost", "type-poison", "evo-line-gastly"]
 aliases: ["팬텀", "gengar"]
-summary: "#094 팬텀 (고스트/독 타입) — 기본 스탯 합계 500"
+summary: "#094 팬텀 (고스트 / 독) — GO 최대 CP: 2,878"
 evolution_line: "gastly"
 ---
 
@@ -70,6 +70,14 @@ evolution_line: "gastly"
 | 버디 거리 | 3km |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|332위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 고스트, 에스퍼, 악 |
+| 저항 | 독(×¼), 벌레(×¼), 풀, 페어리 |
+| 무효 | 노말, 격투 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-hex|병상첨병]], [[move-lick|핥기]], [[move-shadow-claw|섀도크루]], [[move-sucker-punch|기습]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-focus-blast|기합구슬]], [[move-psychic|사이코키네시스]], [[move-shadow-ball|섀도볼]], [[move-sludge-bomb|오물폭탄]], [[move-sludge-wave|오물웨이브]], [[move-shadow-punch|섀도펀치]], [[move-drain-punch|드레인펀치]]  *(커뮤니티 데이/전용: [[move-lick|핥기]], [[move-sludge-wave|오물웨이브]], [[move-dark-pulse|악의파동]], [[move-psychic|사이코키네시스]], [[move-shadow-punch|섀도펀치]])*

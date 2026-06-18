@@ -3,10 +3,10 @@ title: "Eiscue / 빙큐보"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ice", "type-none", "evo-line-eiscue"]
 aliases: ["빙큐보", "eiscue"]
-summary: "#875 빙큐보 (얼음 / none) — GO 최대 CP: 2,065"
+summary: "#875 빙큐보 (얼음) — GO 최대 CP: 2,065"
 evolution_line: "eiscue"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "eiscue"
 | 타입 | 얼음 |
 | 버디 거리 | 5km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 바위, 강철, 불꽃 |
+| 저항 | 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-powder-snow|눈싸라기]]
 - **스페셜 기술:** [[move-icy-wind|얼다바람]], Weather Ball Ice, [[move-surf|파도타기]]

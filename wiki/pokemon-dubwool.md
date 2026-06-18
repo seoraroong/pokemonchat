@@ -3,10 +3,10 @@ title: "Dubwool / 배우르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-normal", "type-none", "evo-line-dubwool"]
 aliases: ["배우르", "dubwool"]
-summary: "#832 배우르 (노말 / none) — GO 최대 CP: 2,191"
+summary: "#832 배우르 (노말) — GO 최대 CP: 2,191"
 evolution_line: "dubwool"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "dubwool"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|189위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|237위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-take-down|돌진]], [[move-double-kick|두번치기]]
 - **스페셜 기술:** [[move-wild-charge|와일드볼트]], [[move-payback|보복]], [[move-body-slam|누르기]]

@@ -3,10 +3,10 @@ title: "Sceptile / 나무킹"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen3", "type-grass", "type-none", "evo-line-sceptile"]
 aliases: ["나무킹", "sceptile"]
-summary: "#254 나무킹 (풀 / none) — GO 최대 CP: 2,757"
+summary: "#254 나무킹 (풀) — GO 최대 CP: 2,757"
 evolution_line: "sceptile"
 ---
 
@@ -35,6 +35,13 @@ evolution_line: "sceptile"
 | PvP 순위 (슈퍼리그 (GL 1500)) | [[pvp-gl\|427위]] |
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|408위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-bullet-seed|기관총]], [[move-fury-cutter|연속자르기]]
 - **스페셜 기술:** [[move-aerial-ace|제비반환]], [[move-earthquake|지진]], [[move-leaf-blade|리프블레이드]], [[move-frenzy-plant|하드플랜트]], [[move-dragon-claw|드래곤크루]], [[move-breaking-swipe|와이드브레이커]]  *(커뮤니티 데이/전용: [[move-frenzy-plant|하드플랜트]])*

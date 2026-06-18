@@ -3,7 +3,7 @@ title: "Crobat / 크로뱃"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen2", "type-poison", "type-flying", "evo-line-crobat"]
 aliases: ["크로뱃", "crobat"]
 summary: "#169 크로뱃 (독 / 비행) — GO 최대 CP: 2,646"
@@ -34,6 +34,14 @@ evolution_line: "crobat"
 | 버디 거리 | 1km |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|392위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 에스퍼, 얼음 |
+| 저항 | 격투(×¼), 독, 벌레(×¼), 풀(×¼), 페어리 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-air-slash|에어슬래시]], [[move-bite|물기]]
 - **스페셜 기술:** [[move-air-cutter|에어컷터]], [[move-shadow-ball|섀도볼]], [[move-sludge-bomb|오물폭탄]], [[move-cross-poison|크로스포이즌]], [[move-poison-fang|독엄니]]

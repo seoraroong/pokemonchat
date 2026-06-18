@@ -3,10 +3,10 @@ title: "Sandaconda / 사다이사"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen8", "type-ground", "type-none", "evo-line-sandaconda"]
 aliases: ["사다이사", "sandaconda"]
-summary: "#844 사다이사 (땅 / none) — GO 최대 CP: 2,790"
+summary: "#844 사다이사 (땅) — GO 최대 CP: 2,790"
 evolution_line: "sandaconda"
 ---
 
@@ -35,6 +35,14 @@ evolution_line: "sandaconda"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|331위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|242위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 물, 풀, 얼음 |
+| 저항 | 독, 바위 |
+| 무효 | 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-mud-slap|진흙뿌리기]], [[move-mud-shot|머드숏]]
 - **스페셜 기술:** [[move-dig|구멍파기]], [[move-bulldoze|땅고르기]], [[move-earth-power|대지의힘]], [[move-wrap|김밥말이]]

@@ -3,10 +3,10 @@ title: "Muk / 질뻐기"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-poison", "evo-line-grimer"]
 aliases: ["질뻐기", "muk"]
-summary: "#089 질뻐기 (독 타입) — 기본 스탯 합계 500"
+summary: "#089 질뻐기 (독) — GO 최대 CP: 2,757"
 evolution_line: "grimer"
 ---
 
@@ -73,6 +73,13 @@ evolution_line: "grimer"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|350위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|335위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 땅, 에스퍼 |
+| 저항 | 격투, 독, 벌레, 풀, 페어리 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-acid|용해액]], [[move-infestation|엉겨붙기]], [[move-lick|핥기]], [[move-poison-jab|독찌르기]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-gunk-shot|더스트슈트]], [[move-sludge-wave|오물웨이브]], [[move-thunder-punch|번개펀치]], [[move-acid-spray|애시드봄]]  *(커뮤니티 데이/전용: [[move-lick|핥기]])*

@@ -3,10 +3,10 @@ title: "Pansage / 야나프"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-grass", "type-none", "evo-line-pansage"]
 aliases: ["야나프", "pansage"]
-summary: "#511 야나프 (풀 / none) — GO 최대 CP: 956"
+summary: "#511 야나프 (풀) — GO 최대 CP: 956"
 evolution_line: "pansage"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "pansage"
 | 타입 | 풀 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 독, 벌레, 불꽃, 얼음 |
+| 저항 | 땅, 물, 풀, 전기 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-scratch|할퀴기]], [[move-vine-whip|덩굴채찍]]
 - **스페셜 기술:** [[move-energy-ball|에너지볼]], [[move-seed-bomb|씨폭탄]], [[move-crunch|깨물어부수기]]

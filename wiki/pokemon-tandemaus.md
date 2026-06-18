@@ -3,10 +3,10 @@ title: "Tandemaus / 두리쥐"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen9", "type-normal", "type-none", "evo-line-tandemaus"]
 aliases: ["두리쥐", "tandemaus"]
-summary: "#924 두리쥐 (노말 / none) — GO 최대 CP: 891"
+summary: "#924 두리쥐 (노말) — GO 최대 CP: 891"
 evolution_line: "tandemaus"
 ---
 
@@ -33,6 +33,14 @@ evolution_line: "tandemaus"
 | 타입 | 노말 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투 |
+| 저항 | 없음 |
+| 무효 | 고스트 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-take-down|돌진]], [[move-mud-shot|머드숏]], [[move-bullet-seed|기관총]]
 - **스페셜 기술:** [[move-swift|스피드스타]], [[move-play-rough|치근거리기]], [[move-crunch|깨물어부수기]]

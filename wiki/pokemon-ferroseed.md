@@ -3,7 +3,7 @@ title: "Ferroseed / 철시드"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-grass", "type-steel", "evo-line-ferroseed"]
 aliases: ["철시드", "ferroseed"]
 summary: "#597 철시드 (풀 / 강철) — GO 최대 CP: 941"
@@ -33,6 +33,14 @@ evolution_line: "ferroseed"
 | 타입 | 풀 / 강철 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 격투, 불꽃(×4) |
+| 저항 | 노말, 바위, 강철, 물, 풀(×¼), 전기, 에스퍼, 드래곤, 페어리 |
+| 무효 | 독 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-metal-claw|메탈크로우]]
 - **스페셜 기술:** [[move-gyro-ball|자이로볼]], [[move-flash-cannon|러스터캐논]], [[move-iron-head|아이언헤드]]

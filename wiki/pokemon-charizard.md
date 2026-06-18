@@ -3,10 +3,10 @@ title: "Charizard / 리자몽"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen1", "type-fire", "type-flying", "evo-line-charmander"]
 aliases: ["리자몽", "charizard"]
-summary: "#006 리자몽 (불꽃/비행 타입) — 기본 스탯 합계 534"
+summary: "#006 리자몽 (불꽃 / 비행) — GO 최대 CP: 2,889"
 evolution_line: "charmander"
 ---
 
@@ -73,6 +73,14 @@ evolution_line: "charmander"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|215위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|187위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위(×4), 물, 전기 |
+| 저항 | 격투, 벌레(×¼), 강철, 불꽃, 풀(×¼), 페어리 |
+| 무효 | 땅 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-air-slash|에어슬래시]], [[move-ember|불꽃세례]], [[move-fire-spin|회오리불꽃]], [[move-wing-attack|날개치기]], [[move-dragon-breath|용의숨결]]
 - **스페셜 기술:** [[move-blast-burn|블러스트번]], [[move-dragon-claw|드래곤크루]], [[move-fire-blast|불대문자]], [[move-flamethrower|화염방사]], [[move-overheat|오버히트]], [[move-air-cutter|에어컷터]]  *(커뮤니티 데이/전용: [[move-ember|불꽃세례]], [[move-wing-attack|날개치기]], [[move-blast-burn|블러스트번]], [[move-flamethrower|화염방사]], [[move-dragon-breath|용의숨결]])*

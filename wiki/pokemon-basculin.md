@@ -3,10 +3,10 @@ title: "Basculin / 배쓰나이"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen5", "type-water", "type-none", "evo-line-basculin"]
 aliases: ["배쓰나이", "basculin"]
-summary: "#550 배쓰나이 (물 / none) — GO 최대 CP: 2,090"
+summary: "#550 배쓰나이 (물) — GO 최대 CP: 2,090"
 evolution_line: "basculin"
 ---
 
@@ -33,6 +33,13 @@ evolution_line: "basculin"
 | 타입 | 물 |
 | 버디 거리 | 1km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 풀, 전기 |
+| 저항 | 강철, 불꽃, 물, 얼음 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-tackle|몸통박치기]], [[move-water-gun|물대포]]
 - **스페셜 기술:** [[move-aqua-jet|아쿠아제트]], [[move-aqua-tail|아쿠아테일]], [[move-muddy-water|탁류]]

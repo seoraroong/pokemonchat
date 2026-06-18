@@ -3,10 +3,10 @@ title: "Uxie / 유크시"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-psychic", "type-none", "evo-line-uxie"]
 aliases: ["유크시", "uxie"]
-summary: "#480 유크시 (에스퍼 / none) — GO 최대 CP: 2,524"
+summary: "#480 유크시 (에스퍼) — GO 최대 CP: 2,524"
 evolution_line: "uxie"
 ---
 
@@ -36,6 +36,13 @@ evolution_line: "uxie"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|213위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|353위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 벌레, 고스트, 악 |
+| 저항 | 격투, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-confusion|염동력]], [[move-extrasensory|신통력]]
 - **스페셜 기술:** [[move-future-sight|미래예지]], [[move-swift|스피드스타]], [[move-thunder|번개]]

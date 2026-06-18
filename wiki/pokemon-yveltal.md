@@ -3,7 +3,7 @@ title: "Yveltal / 이벨타르"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen6", "type-dark", "type-flying", "evo-line-yveltal"]
 aliases: ["이벨타르", "yveltal"]
 summary: "#717 이벨타르 (악 / 비행) — GO 최대 CP: 3,781"
@@ -35,6 +35,14 @@ evolution_line: "yveltal"
 | PvP 순위 (하이퍼리그 (UL 2500)) | [[pvp-ul\|149위]] |
 | PvP 순위 (마스터리그 (ML)) | [[pvp-ml\|21위]] |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 바위, 전기, 얼음, 페어리 |
+| 저항 | 고스트, 풀, 악 |
+| 무효 | 땅, 에스퍼 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-sucker-punch|기습]], [[move-snarl|바크아웃]], [[move-gust|바람일으키기]]
 - **스페셜 기술:** [[move-dark-pulse|악의파동]], [[move-hurricane|폭풍]], [[move-focus-blast|기합구슬]], [[move-hyper-beam|파괴광선]], [[move-psychic|사이코키네시스]], [[move-oblivion-wing|데스윙]]  *(커뮤니티 데이/전용: [[move-oblivion-wing|데스윙]])*

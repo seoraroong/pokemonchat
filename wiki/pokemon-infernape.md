@@ -3,7 +3,7 @@ title: "Infernape / 초염몽"
 type: concept
 language: ko
 created: 2026-06-05
-modified: 2026-06-05
+modified: 2026-06-18
 tags: ["pokemon", "gen4", "type-fire", "type-fighting", "evo-line-infernape"]
 aliases: ["초염몽", "infernape"]
 summary: "#392 초염몽 (불꽃 / 격투) — GO 최대 CP: 2,683"
@@ -33,6 +33,13 @@ evolution_line: "infernape"
 | 타입 | 불꽃 / 격투 |
 | 버디 거리 | 3km |
 
+
+### 타입 상성 (GO 기준)
+
+| 구분 | 타입 |
+|------|------|
+| 약점 | 비행, 땅, 물, 에스퍼 |
+| 저항 | 벌레(×¼), 강철, 불꽃, 풀, 얼음, 악 |
 ### 기술 풀 (GO)
 - **빠른 기술:** [[move-fire-spin|회오리불꽃]], [[move-rock-smash|바위깨기]]
 - **스페셜 기술:** [[move-close-combat|인파이트]], [[move-flamethrower|화염방사]], [[move-solar-beam|솔라빔]], [[move-blast-burn|블러스트번]]  *(커뮤니티 데이/전용: [[move-blast-burn|블러스트번]])*
