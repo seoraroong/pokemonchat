@@ -124,14 +124,17 @@ function RoomScreen({ nick, roomId, roomName, onLeave, onOpenPokemon }) {
   const [input, setInput] = useState('');
   const [quizActive, setQuizActive] = useState(false);
   const [quizScores, setQuizScores] = useState({});
+  const [quizType, setQuizType] = useState('silhouette');
   const [showQuizSetup, setShowQuizSetup] = useState(false);
   const [selectedGens, setSelectedGens] = useState(new Set());
+  const [pendingQuizType, setPendingQuizType] = useState('silhouette');
   const wsRef = useRef(null);
   const msgsRef = useRef(null);
   const typingTimers = useRef({});
   const typingDebounce = useRef(null);
   const reconnectTimer = useRef(null);
   const reconnectCount = useRef(0);
+  const closingRef = useRef(false);
   const [mentionMap, setMentionMap] = useState(null);
 
   useEffect(() => {
@@ -202,10 +205,17 @@ function RoomScreen({ nick, roomId, roomName, onLeave, onOpenPokemon }) {
           setQuizActive(true);
           setShowQuizSetup(false);
           setQuizScores({});
+          setQuizType(msg.quiz_type || 'silhouette');
         } else if (msg.type === 'quiz_question') {
           setQuizScores(msg.scores || {});
           const spr = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${msg.dex}.png`;
-          setMsgs(prev => [...prev, { type: 'quiz_question', qnum: msg.question_num, spr, hints: [], answered: null }]);
+          setMsgs(prev => [...prev, {
+            type: 'quiz_question', qnum: msg.question_num, spr, hints: [], answered: null,
+            quizType: msg.quiz_type || 'silhouette',
+            chosung: msg.chosung,
+            nameKo: msg.name_ko,
+            nameEn: msg.name_en,
+          }]);
           setTimeout(scrollBottom, 30);
         } else if (msg.type === 'quiz_hint') {
           setMsgs(prev => {
@@ -247,6 +257,7 @@ function RoomScreen({ nick, roomId, roomName, onLeave, onOpenPokemon }) {
       setSendDisabled(true);
       if (ev.code === 4003) addNotice('🔒 정원이 초과된 방입니다.');
       else if (ev.code === 4004) addNotice('방이 더 이상 존재하지 않습니다.');
+      else if (closingRef.current) return;
       else {
         if (reconnectCount.current >= 5) { addNotice('재연결에 실패했습니다.'); setTimeout(onLeave, 2500); return; }
         reconnectCount.current++;
@@ -260,8 +271,10 @@ function RoomScreen({ nick, roomId, roomName, onLeave, onOpenPokemon }) {
   }, [nick, addMsg, addNotice, onLeave]);
 
   useEffect(() => {
+    closingRef.current = false;
     connect(roomId, roomName);
     return () => {
+      closingRef.current = true;
       clearTimeout(reconnectTimer.current);
       wsRef.current?.close();
     };
@@ -296,7 +309,7 @@ function RoomScreen({ nick, roomId, roomName, onLeave, onOpenPokemon }) {
 
   const startQuiz = () => {
     if (!wsRef.current || wsRef.current.readyState !== 1) return;
-    wsRef.current.send(JSON.stringify({ type: 'quiz_start', gens: selectedGens.size ? [...selectedGens] : [] }));
+    wsRef.current.send(JSON.stringify({ type: 'quiz_start', gens: selectedGens.size ? [...selectedGens] : [], quiz_type: pendingQuizType }));
     setShowQuizSetup(false);
   };
 
@@ -334,6 +347,20 @@ function RoomScreen({ nick, roomId, roomName, onLeave, onOpenPokemon }) {
 
       {showQuizSetup && (
         <div id="cm-quiz-setup" style={{ display:'flex' }}>
+          <div style={{ fontSize:'0.78rem', color:'#94a3b8', fontWeight:600 }}>퀴즈 종류</div>
+          <div className="cm-quiz-type-row">
+            {[
+              { id:'silhouette', label:'🖼️ 실루엣', desc:'이미지 보고 이름 맞추기' },
+              { id:'chosung',    label:'🔤 초성',   desc:'초성 보고 이름 맞추기' },
+              { id:'type',       label:'⚡ 타입',   desc:'포켓몬 보고 타입 맞추기' },
+            ].map(({ id, label, desc }) => (
+              <button
+                key={id}
+                className={`cm-quiz-type-btn${pendingQuizType === id ? ' selected' : ''}`}
+                onClick={() => setPendingQuizType(id)}
+              >{label}<br/><span style={{ fontSize:'0.65rem', opacity:0.75, fontWeight:400 }}>{desc}</span></button>
+            ))}
+          </div>
           <div style={{ fontSize:'0.78rem', color:'#64748b' }}>세대 선택 (선택 안 하면 전체)</div>
           <div className="cm-quiz-gen-row">
             {[1,2,3,4,5,6,7,8,9].map(g => (
@@ -349,10 +376,23 @@ function RoomScreen({ nick, roomId, roomName, onLeave, onOpenPokemon }) {
           if (m.type === 'notice') return <div key={i} className="cm-notice">{m.text}</div>;
           if (m.type === 'quiz_question') {
             const revealed = !!m.answered;
+            const qt = m.quizType || 'silhouette';
             return (
               <div key={i} className="cm-quiz-block">
                 <div className="cm-quiz-qnum">❓ Q{m.qnum}</div>
-                <img className={`cm-quiz-silhouette${revealed?' revealed':''}`} src={m.spr} alt="?" />
+                {qt === 'silhouette' && (
+                  <img className={`cm-quiz-silhouette${revealed ? ' revealed' : ''}`} src={m.spr} alt="?" />
+                )}
+                {qt === 'chosung' && (
+                  <div className={`cm-quiz-chosung${revealed ? ' revealed' : ''}`}>{m.chosung}</div>
+                )}
+                {qt === 'type' && (
+                  <div className="cm-quiz-type-block">
+                    <div className="cm-quiz-type-name">{m.nameKo} <span style={{ color:'#64748b', fontSize:'0.8em' }}>({m.nameEn})</span></div>
+                    <img className="cm-quiz-type-sprite" src={m.spr} alt={m.nameKo} />
+                    <div className="cm-quiz-type-label">⚡ 이 포켓몬의 타입은?</div>
+                  </div>
+                )}
                 <div className="cm-quiz-hints-area">
                   {m.hints.map((h, hi) => <div key={hi} className="cm-quiz-hint-item">{h}</div>)}
                   {m.answered && (

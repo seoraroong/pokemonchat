@@ -537,9 +537,17 @@ header {
 .cm-quiz-answer.correct { background:#0d2218; border:1px solid #16a34a; color:#4ade80; font-weight:600; }
 .cm-quiz-end { text-align:center; font-size:0.82rem; background:#1e1a0d; border:1px solid #854d0e; color:#fbbf24; font-weight:700; border-radius:10px; padding:7px; margin:4px 0; }
 #cm-quiz-setup { display:none; flex-direction:column; gap:7px; padding:9px 12px; background:#0d1525; border-bottom:1px solid #1e293b; flex-shrink:0; }
+.cm-quiz-type-row { display:flex; gap:6px; }
+.cm-quiz-type-btn { flex:1; background:#1e293b; border:1px solid #334155; border-radius:10px; padding:7px 6px; color:#94a3b8; font-size:0.78rem; font-weight:600; cursor:pointer; font-family:inherit; text-align:center; line-height:1.4; transition:border-color 0.15s,color 0.15s,background 0.15s; }
+.cm-quiz-type-btn.selected { background:#172554; border-color:#3b82f6; color:#93c5fd; }
 .cm-quiz-gen-row { display:flex; flex-wrap:wrap; gap:5px; }
 .cm-gen-btn { background:#1e293b; border:1px solid #334155; border-radius:16px; padding:3px 10px; color:#64748b; font-size:0.72rem; cursor:pointer; font-family:inherit; transition:all 0.12s; }
 .cm-gen-btn.selected { border-color:#f59e0b; color:#f59e0b; background:#1c1a10; font-weight:600; }
+.cm-quiz-chosung { font-size:2.4rem; font-weight:800; letter-spacing:0.3em; color:#e2e8f0; padding:10px 4px; margin:0 auto 6px; display:inline-block; }
+.cm-quiz-type-block { display:flex; flex-direction:column; align-items:center; gap:4px; margin-bottom:6px; }
+.cm-quiz-type-name { font-size:1rem; font-weight:700; color:#e2e8f0; }
+.cm-quiz-type-sprite { width:72px; height:72px; object-fit:contain; }
+.cm-quiz-type-label { font-size:0.75rem; color:#94a3b8; }
 #cm-quiz-start-confirm { background:#b91c1c; border:none; border-radius:8px; padding:7px; color:#fff; font-size:0.82rem; font-weight:600; cursor:pointer; font-family:inherit; width:100%; }
 #cm-quiz-start-confirm:hover { background:#dc2626; }
 #cm-cm-lobby { flex:1; display:flex; flex-direction:column; min-height:0; overflow:hidden; }

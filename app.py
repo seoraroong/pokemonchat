@@ -2169,6 +2169,9 @@ class _QuizState:
         self.current_dex: int = 0
         self.current_ko:  str = ""
         self.current_en:  str = ""
+        self.current_t1:  str = ""
+        self.current_t2:  str = ""
+        self.current_answer: str = ""
         self.answered         = False
         self.answered_event   = asyncio.Event()
         self.scores: dict[str, int] = {}
@@ -2178,6 +2181,7 @@ class _QuizState:
         self.msg_count:   int = 0
         self.skipped:     bool = False
         self.gens:        list = []  # 빈 리스트 = 전체
+        self.quiz_type:   str = "silhouette"
 
     @staticmethod
     def build_pool(gens: list | None = None) -> list:
@@ -2216,27 +2220,56 @@ async def _run_quiz(room) -> None:
             q.current_dex    = dex
             q.current_ko     = ko
             q.current_en     = en
+            q.current_t1     = t1
+            q.current_t2     = t2
             q.answered       = False
             q.skipped        = False
             q.hint_idx       = 0
             q.msg_count      = 0
-            q.current_hints  = [
-                f"타입: {_type_ko_str(t1, t2)}",
-                f"세대: {gen}세대" if gen else "세대: ?",
-                f"이름: {len(ko)}글자",
-                f"초성: {_chosung(ko)}",
-            ]
+            quiz_type = q.quiz_type
+            if quiz_type == "type":
+                t1_ko = _TYPE_KO_QUIZ.get(t1, t1)
+                t2_ko = _TYPE_KO_QUIZ.get(t2, t2) if t2 else ""
+                q.current_answer = _type_ko_str(t1, t2)
+                q.current_hints  = [
+                    f"세대: {gen}세대" if gen else "세대: ?",
+                    f"타입 수: {'이중타입' if t2 else '단일타입'}",
+                    f"타입 첫 글자: {t1_ko[0] if t1_ko else '?'}",
+                    f"초성: {_chosung(ko)}",
+                ]
+            elif quiz_type == "chosung":
+                q.current_answer = ko
+                q.current_hints  = [
+                    f"타입: {_type_ko_str(t1, t2)}",
+                    f"세대: {gen}세대" if gen else "세대: ?",
+                    f"이름: {len(ko)}글자",
+                ]
+            else:  # silhouette
+                q.current_answer = ko
+                q.current_hints  = [
+                    f"타입: {_type_ko_str(t1, t2)}",
+                    f"세대: {gen}세대" if gen else "세대: ?",
+                    f"이름: {len(ko)}글자",
+                    f"초성: {_chosung(ko)}",
+                ]
             q.answered_event.clear()
-            await room.broadcast({
+            msg_data: dict = {
                 "type": "quiz_question", "dex": dex,
                 "question_num": q.question_num, "scores": dict(q.scores),
-            })
+                "quiz_type": quiz_type,
+            }
+            if quiz_type == "chosung":
+                msg_data["chosung"] = _chosung(ko)
+            elif quiz_type == "type":
+                msg_data["name_ko"] = ko
+                msg_data["name_en"] = en
+            await room.broadcast(msg_data)
             await q.answered_event.wait()
             if not room.quiz or not room.quiz.active:
                 return
             if q.skipped:
                 await room.broadcast({
-                    "type": "quiz_skip", "answer": ko, "dex": dex,
+                    "type": "quiz_skip", "answer": q.current_answer, "dex": dex,
                     "scores": dict(room.quiz.scores),
                 })
                 await asyncio.sleep(3)
@@ -2357,10 +2390,14 @@ async def room_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> No
                 if not room.quiz and _ensure_raw() and _gm_raw:
                     raw_gens = msg.get("gens") or []
                     gens = sorted({int(g) for g in raw_gens if str(g).isdigit()})
+                    qt = msg.get("quiz_type", "silhouette")
+                    if qt not in ("silhouette", "chosung", "type"):
+                        qt = "silhouette"
                     room.quiz = _QuizState()
                     room.quiz.gens = gens
+                    room.quiz.quiz_type = qt
                     gens_label = "전체" if not gens else " · ".join(f"{g}세대" for g in gens)
-                    await room.broadcast({"type": "quiz_started", "nick": nick, "scores": {}, "gens_label": gens_label})
+                    await room.broadcast({"type": "quiz_started", "nick": nick, "scores": {}, "gens_label": gens_label, "quiz_type": qt})
                     asyncio.create_task(_run_quiz(room))
                 continue
             if msg.get("type") == "quiz_stop":
@@ -2375,13 +2412,24 @@ async def room_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> No
                 continue
             # 퀴즈 정답/오답 처리
             if room.quiz and room.quiz.active and not room.quiz.answered:
-                if text.lower() == room.quiz.current_ko.lower() or text.lower() == room.quiz.current_en.lower():
+                qt = room.quiz.quiz_type
+                if qt == "type":
+                    t1v = room.quiz.current_t1
+                    t2v = room.quiz.current_t2
+                    valid = {t1v.lower(), _TYPE_KO_QUIZ.get(t1v, t1v).lower()}
+                    if t2v:
+                        valid |= {t2v.lower(), _TYPE_KO_QUIZ.get(t2v, t2v).lower()}
+                    is_correct = text.lower() in valid
+                else:
+                    is_correct = (text.lower() == room.quiz.current_ko.lower() or
+                                  text.lower() == room.quiz.current_en.lower())
+                if is_correct:
                     room.quiz.answered = True
                     room.quiz.scores[nick] = room.quiz.scores.get(nick, 0) + 1
                     room.quiz.answered_event.set()
                     await room.broadcast({
                         "type": "quiz_correct", "nick": nick,
-                        "answer": room.quiz.current_ko,
+                        "answer": room.quiz.current_answer,
                         "dex": room.quiz.current_dex,
                         "scores": dict(room.quiz.scores),
                     })
@@ -2712,10 +2760,10 @@ _LEGACY_HTML = Path("static") / "index.html"
 
 @app.get("/", response_class=HTMLResponse)
 async def index():
+    from fastapi.responses import HTMLResponse as _HTMLResponse
     react_index = _REACT_DIR / "index.html"
-    if react_index.exists():
-        return react_index.read_text(encoding="utf-8")
-    return _LEGACY_HTML.read_text(encoding="utf-8")
+    html = react_index.read_text(encoding="utf-8") if react_index.exists() else _LEGACY_HTML.read_text(encoding="utf-8")
+    return _HTMLResponse(content=html, headers={"Cache-Control": "no-cache, no-store, must-revalidate"})
 
 # React SPA assets (CSS/JS bundles)
 if (_REACT_DIR / "assets").exists():
