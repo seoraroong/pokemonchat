@@ -2551,6 +2551,12 @@ class _BtRoom:
         self.state   = 'waiting'   # waiting | battling | ended
         self.lock    = asyncio.Lock()
         self.created_at = _time.time()
+        self._turn_timeout: 'asyncio.Task | None' = None
+
+    def cancel_timeout(self) -> None:
+        if self._turn_timeout and not self._turn_timeout.done():
+            self._turn_timeout.cancel()
+        self._turn_timeout = None
 
     async def send(self, player: '_BtPlayer', msg: dict) -> None:
         try:
@@ -2573,6 +2579,27 @@ class _BtRoom:
 
 
 _battles: dict[str, _BtRoom] = {}
+
+_BT_TURN_SEC = 30  # 턴당 제한시간(초)
+
+async def _start_turn_timeout(room: _BtRoom, waiting: _BtPlayer) -> None:
+    """제한시간 내 기술 미선택 시 첫 번째 fast 기술 자동 선택"""
+    try:
+        await asyncio.sleep(_BT_TURN_SEC)
+    except asyncio.CancelledError:
+        return
+    if room.state != 'battling' or waiting.move is not None:
+        return
+    pm = waiting.current
+    if pm and pm.hp > 0:
+        for i, m in enumerate(pm.moves):
+            if m['fast']:
+                waiting.move = {'idx': i}
+                break
+        else:
+            waiting.move = {'idx': 0}
+    await room.broadcast({'type': 'timeout_auto', 'nick': waiting.nick})
+    await _bt_resolve(room)
 
 
 def _build_bt_pokemon(dex_str: str) -> '_BtPokemon | None':
@@ -2629,6 +2656,7 @@ async def _bt_resolve(room: _BtRoom) -> None:
             return
         m1, m2 = p1.move, p2.move
         p1.move = p2.move = None
+        room.cancel_timeout()
 
         log: list[str] = []
 
@@ -2769,15 +2797,20 @@ async def battle_ws(ws: WebSocket, battle_id: str, nick: str = "트레이너") -
                     continue
                 player.move = {'idx': idx}
                 await room.send(player, {'type': 'move_ack'})
-                # 상대에게 "상대방 대기 중" 알림
                 opp = next((p for p in room.players if p is not player), None)
                 if opp:
                     await room.send(opp, {'type': 'opp_ready'})
+                    # 상대가 아직 기술 미선택이면 타임아웃 시작
+                    room.cancel_timeout()
+                    if opp.move is None:
+                        room._turn_timeout = asyncio.create_task(
+                            _start_turn_timeout(room, opp))
                 await _bt_resolve(room)
 
     except (WebSocketDisconnect, Exception):
         pass
     finally:
+        room.cancel_timeout()
         room.players = [p for p in room.players if p is not player]
         if not room.players:
             _battles.pop(room.id, None)

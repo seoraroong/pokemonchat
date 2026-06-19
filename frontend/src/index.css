@@ -664,6 +664,10 @@ header {
 .bt-move-name { font-size:0.8rem; font-weight:600; color:#e2e8f0; }
 .bt-move-power { font-size:0.62rem; color:#94a3b8; }
 .bt-move-cost { font-size:0.62rem; color:#f59e0b; }
+.bt-timer-row { display:flex; align-items:center; gap:8px; margin-bottom:7px; }
+.bt-timer-bar-outer { flex:1; height:5px; background:#1e293b; border-radius:3px; overflow:hidden; }
+.bt-timer-bar-inner { height:100%; border-radius:3px; transition:width 1s linear, background 0.4s; }
+.bt-timer-num { font-size:0.7rem; color:#94a3b8; width:24px; text-align:right; flex-shrink:0; }
 .bt-waiting-msg { text-align:center; padding:14px; color:#64748b; font-size:0.82rem; }
 .bt-log { flex:1; overflow-y:auto; padding:6px 12px; display:flex; flex-direction:column; gap:2px; min-height:50px; max-height:110px; border-top:1px solid #1e293b; }
 .bt-log-line { font-size:0.72rem; color:#94a3b8; line-height:1.4; }

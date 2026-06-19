@@ -858,9 +858,44 @@ function BattleScreen({ nick, roomId, onLeave }) {
   const [winner, setWinner] = useState(null);
   const [myHit, setMyHit] = useState(false);
   const [oppHit, setOppHit] = useState(false);
-  const wsRef  = useRef(null);
-  const logRef = useRef(null);
-  const phaseRef = useRef('connecting');
+  const [timeLeft, setTimeLeft] = useState(30);
+  const wsRef     = useRef(null);
+  const logRef    = useRef(null);
+  const phaseRef  = useRef('connecting');
+  const timerRef  = useRef(null);
+  const myDoneRef = useRef(false);
+  const meRef     = useRef(null);
+
+  useEffect(() => { myDoneRef.current = myDone; }, [myDone]);
+  useEffect(() => { meRef.current = me; }, [me]);
+
+  const TURN_TIME = 30;
+
+  const stopTimer = useCallback(() => {
+    if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
+  }, []);
+
+  const startTurnTimer = useCallback(() => {
+    stopTimer();
+    setTimeLeft(TURN_TIME);
+    timerRef.current = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) {
+          clearInterval(timerRef.current); timerRef.current = null;
+          if (!myDoneRef.current && wsRef.current?.readyState === 1) {
+            const pm = meRef.current?.team?.[meRef.current?.active];
+            if (pm) {
+              const idx = pm.moves.findIndex(m => m.fast);
+              wsRef.current.send(JSON.stringify({ type: 'move', idx: idx >= 0 ? idx : 0 }));
+              setMyDone(true);
+            }
+          }
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+  }, [stopTimer]);
 
   useEffect(() => { phaseRef.current = phase; }, [phase]);
 
@@ -886,6 +921,7 @@ function BattleScreen({ nick, roomId, onLeave }) {
           setOpp({ ...msg.opp });
           setPhase('battling');
           setMyDone(false); setOppReady(false);
+          startTurnTimer();
           addLog(`⚔️ ${msg.opp.nick}님과 배틀 시작! 기술을 선택하세요.`);
         } else if (msg.type === 'opp_ready') {
           setOppReady(true);
@@ -905,7 +941,11 @@ function BattleScreen({ nick, roomId, onLeave }) {
           });
           addLog(msg.log || []);
           setMyDone(false); setOppReady(false);
+          startTurnTimer();
+        } else if (msg.type === 'timeout_auto') {
+          addLog(`⏱ ${msg.nick}님이 시간 초과! 자동으로 기술 선택됩니다.`);
         } else if (msg.type === 'battle_end') {
+          stopTimer();
           setWinner(msg.winner);
           setPhase('ended');
           addLog(msg.disconnected ? '상대방이 도망쳤어요!' : `🏆 ${msg.winner}님의 승리!`);
@@ -921,16 +961,18 @@ function BattleScreen({ nick, roomId, onLeave }) {
         addLog('연결이 끊어졌어요.');
       }
     };
-    return () => ws.close();
-  }, [roomId, nick, addLog]);
+    return () => { stopTimer(); ws.close(); };
+  }, [roomId, nick, addLog, startTurnTimer, stopTimer]);
 
   const sendMove = (idx) => {
     if (myDone || !wsRef.current || wsRef.current.readyState !== 1) return;
+    stopTimer();
     wsRef.current.send(JSON.stringify({ type: 'move', idx }));
     setMyDone(true);
   };
 
   const handleLeave = () => {
+    stopTimer();
     if (wsRef.current && wsRef.current.readyState === 1) {
       wsRef.current.send(JSON.stringify({ type: 'forfeit' }));
     }
@@ -1050,6 +1092,16 @@ function BattleScreen({ nick, roomId, onLeave }) {
                 {oppReady ? '⚡ 결과 계산 중...' : '✅ 기술 선택 완료! 상대방 대기 중...'}
               </div>
             ) : (
+              <>
+              <div className="bt-timer-row">
+                <div className="bt-timer-bar-outer">
+                  <div className="bt-timer-bar-inner" style={{
+                    width: `${(timeLeft / TURN_TIME) * 100}%`,
+                    background: timeLeft > 15 ? '#22c55e' : timeLeft > 8 ? '#f59e0b' : '#ef4444',
+                  }} />
+                </div>
+                <span className="bt-timer-num">{timeLeft}s</span>
+              </div>
               <div className="bt-move-grid">
                 {(myPm?.moves || []).map((m, i) => {
                   const canUse = m.fast || (myPm?.energy || 0) >= m.cost;
@@ -1068,6 +1120,7 @@ function BattleScreen({ nick, roomId, onLeave }) {
                   );
                 })}
               </div>
+              </>
             )}
           </div>
         )}
