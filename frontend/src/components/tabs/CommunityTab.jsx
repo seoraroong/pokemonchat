@@ -77,13 +77,14 @@ function LobbyScreen({ nick, onJoin, onChangeNick, onCatchmind }) {
   return (
     <div id="cm-lobby-screen" className="cm-screen" style={{ display:'flex', flexDirection:'column' }}>
       <div id="cm-lobby-header">
-        <span style={{ fontWeight:600, fontSize:'0.88rem', color:'#e2e8f0' }}>채팅방 목록</span>
-        <span id="cm-lobby-nick" style={{ fontSize:'0.78rem', color:'#94a3b8', cursor:'pointer', textDecoration:'underline dotted', marginLeft:8 }} onClick={onChangeNick}>
+        <span id="cm-lobby-nick" style={{ fontSize:'0.82rem', color:'#94a3b8', cursor:'pointer', textDecoration:'underline dotted' }} onClick={onChangeNick}>
           👤 {nick}
         </span>
-        <button onClick={onCatchmind} style={{ background:'#1c1a10', border:'1px solid #854d0e', borderRadius:8, padding:'3px 10px', color:'#fbbf24', fontSize:'0.78rem', cursor:'pointer', fontFamily:'inherit' }}>🎨 캐치마인드</button>
-        <button id="cm-create-btn" onClick={createRoom} style={{ marginLeft:'auto' }}>+ 방 만들기</button>
-        <button id="cm-lobby-refresh" onClick={loadRooms} title="새로고침">🔄</button>
+        <div style={{ display:'flex', gap:6, alignItems:'center', marginLeft:'auto' }}>
+          <button onClick={loadRooms} title="새로고침" style={{ background:'none', border:'1px solid #334155', borderRadius:8, padding:'3px 8px', color:'#94a3b8', fontSize:'0.78rem', cursor:'pointer', fontFamily:'inherit' }}>🔄</button>
+          <button onClick={onCatchmind} style={{ background:'#1c1a10', border:'1px solid #854d0e', borderRadius:8, padding:'3px 10px', color:'#fbbf24', fontSize:'0.78rem', cursor:'pointer', fontFamily:'inherit' }}>🎨 캐치마인드</button>
+          <button id="cm-create-btn" onClick={createRoom}>+ 방 만들기</button>
+        </div>
       </div>
       {showRestart && (
         <div style={{ background:'#78350f', border:'1px solid #d97706', borderRadius:10, padding:'9px 12px', fontSize:'0.75rem', color:'#fde68a', margin:'0 12px 8px', display:'flex', alignItems:'center', justifyContent:'space-between', gap:8, flexShrink:0 }}>

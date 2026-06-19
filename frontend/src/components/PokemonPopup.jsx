@@ -119,7 +119,7 @@ function Counters({ slug, onOpenPokemon }) {
 function EvoChain({ dex, onOpenPokemon }) {
   const [chain, setChain] = useState(null);
   useEffect(() => {
-    fetch(`/api/evolution-chain/${dex}`).then(r => r.json()).then(setChain).catch(() => {});
+    fetch(`/api/evolutions/${dex}`).then(r => r.json()).then(setChain).catch(() => {});
   }, [dex]);
   if (!chain?.length || chain.length <= 1) return null;
 
