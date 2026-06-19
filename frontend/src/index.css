@@ -675,6 +675,16 @@ header {
 .bt-log-line.crit  { color:#fbbf24; font-weight:600; }
 .bt-log-line.immune { color:#475569; }
 .bt-log-line.weak  { color:#64748b; }
+@keyframes bt-float-up {
+  0%   { opacity:1; transform:translateY(0) scale(1); }
+  100% { opacity:0; transform:translateY(-70px) scale(1.8); }
+}
+.bt-reaction-float { position:absolute; top:20px; left:50%; transform:translateX(-50%); font-size:2rem; animation:bt-float-up 1.5s ease-out forwards; pointer-events:none; z-index:10; }
+.bt-reaction-row { display:flex; justify-content:center; gap:8px; padding:5px 12px; background:#0a0f1c; border-top:1px solid #1e293b; flex-shrink:0; }
+.bt-reaction-btn { background:none; border:1px solid #1e293b; border-radius:8px; padding:4px 8px; font-size:1.1rem; cursor:pointer; transition:transform 0.1s,background 0.1s; }
+.bt-reaction-btn:hover { background:#1e293b; transform:scale(1.2); }
+.bt-reaction-btn:active { transform:scale(0.9); }
+.bt-rematch-req { color:#f59e0b; font-size:0.82rem; font-weight:600; }
 .bt-ended { display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; gap:6px; flex:1; }
 .bt-ended-title { font-size:1.6rem; font-weight:800; color:#e2e8f0; }
 .bt-ended-sub { font-size:0.82rem; color:#64748b; }

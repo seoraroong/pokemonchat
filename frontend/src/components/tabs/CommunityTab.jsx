@@ -788,7 +788,7 @@ function CatchmindGameScreen({ nick, roomId, onLeave }) {
 }
 
 // ── 배틀 로비 ─────────────────────────────────────────────────────────
-function BattleLobbyScreen({ nick, onJoin, onBack }) {
+function BattleLobbyScreen({ nick, onJoin, onBack, record }) {
   const [rooms, setRooms] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -811,6 +811,9 @@ function BattleLobbyScreen({ nick, onJoin, onBack }) {
       <div id="cm-cm-lobby-header">
         <button onClick={onBack}>← 채팅</button>
         <span>⚔️ 포켓몬 배틀</span>
+        {(record.wins + record.losses) > 0 && (
+          <span style={{ fontSize:'0.72rem', color:'#64748b' }}>{record.wins}승 {record.losses}패</span>
+        )}
         <button onClick={loadRooms} title="새로고침">🔄</button>
         <button className="cm-create-btn2" onClick={() => onJoin('new')}>+ 방 만들기</button>
       </div>
@@ -847,7 +850,9 @@ const TYPE_COLOR = {
   steel:'#b8b8d0',fairy:'#ee99ac',
 };
 
-function BattleScreen({ nick, roomId, onLeave }) {
+const REACTIONS = ['👍','😱','😂','💪','💀'];
+
+function BattleScreen({ nick, roomId, onLeave, onBattleResult }) {
   const [phase, setPhase] = useState('connecting');
   const [battleId, setBattleId] = useState(null);
   const [me,  setMe]  = useState(null);
@@ -856,9 +861,14 @@ function BattleScreen({ nick, roomId, onLeave }) {
   const [myDone, setMyDone] = useState(false);
   const [oppReady, setOppReady] = useState(false);
   const [winner, setWinner] = useState(null);
+  const [youWin, setYouWin] = useState(null);
   const [myHit, setMyHit] = useState(false);
   const [oppHit, setOppHit] = useState(false);
   const [timeLeft, setTimeLeft] = useState(30);
+  const [floatEmoji, setFloatEmoji] = useState(null);
+  const [rematchPending, setRematchPending] = useState(false);
+  const [rematchRequested, setRematchRequested] = useState(false);
+  const [copied, setCopied] = useState(false);
   const wsRef     = useRef(null);
   const logRef    = useRef(null);
   const phaseRef  = useRef('connecting');
@@ -921,6 +931,9 @@ function BattleScreen({ nick, roomId, onLeave }) {
           setOpp({ ...msg.opp });
           setPhase('battling');
           setMyDone(false); setOppReady(false);
+          setYouWin(null); setWinner(null);
+          setRematchPending(false); setRematchRequested(false);
+          setLog([]);
           startTurnTimer();
           addLog(`⚔️ ${msg.opp.nick}님과 배틀 시작! 기술을 선택하세요.`);
         } else if (msg.type === 'opp_ready') {
@@ -946,9 +959,17 @@ function BattleScreen({ nick, roomId, onLeave }) {
           addLog(`⏱ ${msg.nick}님이 시간 초과! 자동으로 기술 선택됩니다.`);
         } else if (msg.type === 'battle_end') {
           stopTimer();
+          const won = msg.you_win ?? (msg.winner === nick);
           setWinner(msg.winner);
+          setYouWin(won);
           setPhase('ended');
-          addLog(msg.disconnected ? '상대방이 도망쳤어요!' : `🏆 ${msg.winner}님의 승리!`);
+          if (onBattleResult) onBattleResult(won);
+          addLog(msg.disconnected ? '상대방이 도망쳤어요!' : won ? '🏆 승리!' : '💀 패배...');
+        } else if (msg.type === 'reaction') {
+          setFloatEmoji(msg.emoji);
+          setTimeout(() => setFloatEmoji(null), 1500);
+        } else if (msg.type === 'rematch_request') {
+          setRematchRequested(true);
         } else if (msg.type === 'error') {
           addLog(`❌ ${msg.msg}`);
           setPhase('ended');
@@ -971,12 +992,38 @@ function BattleScreen({ nick, roomId, onLeave }) {
     setMyDone(true);
   };
 
+  const sendReaction = (emoji) => {
+    if (wsRef.current?.readyState === 1)
+      wsRef.current.send(JSON.stringify({ type: 'reaction', emoji }));
+  };
+
+  const sendRematch = () => {
+    if (wsRef.current?.readyState === 1) {
+      wsRef.current.send(JSON.stringify({ type: 'rematch' }));
+      setRematchPending(true);
+    }
+  };
+
+  const copyRoomId = () => {
+    if (!battleId) return;
+    navigator.clipboard.writeText(battleId).then(() => {
+      setCopied(true); setTimeout(() => setCopied(false), 2000);
+    }).catch(() => {});
+  };
+
   const handleLeave = () => {
     stopTimer();
     if (wsRef.current && wsRef.current.readyState === 1) {
       wsRef.current.send(JSON.stringify({ type: 'forfeit' }));
     }
     onLeave();
+  };
+
+  const dotStyle = (p) => {
+    if (p.hp <= 0) return {};
+    const r = p.hp / p.max_hp;
+    const c = r > 0.5 ? '#22c55e' : r > 0.25 ? '#f59e0b' : '#ef4444';
+    return { background: c, borderColor: c };
   };
 
   const hpPct = (hp, max) => Math.max(0, Math.min(100, (hp / max) * 100));
@@ -1008,7 +1055,14 @@ function BattleScreen({ nick, roomId, onLeave }) {
           <div style={{ color:'#64748b', fontSize:'0.8rem', lineHeight:1.6 }}>
             친구가 배틀 로비에서<br/>이 방을 찾아 입장하면<br/>자동으로 시작돼요
           </div>
-          {battleId && <div style={{ background:'#1e293b', borderRadius:10, padding:'8px 16px', color:'#60a5fa', fontSize:'0.85rem', letterSpacing:'0.1em', fontWeight:700 }}>방 ID: {battleId}</div>}
+          {battleId && (
+            <div style={{ display:'flex', alignItems:'center', gap:8, background:'#1e293b', borderRadius:10, padding:'8px 16px' }}>
+              <span style={{ color:'#60a5fa', fontSize:'0.85rem', letterSpacing:'0.1em', fontWeight:700 }}>방 ID: {battleId}</span>
+              <button onClick={copyRoomId} style={{ background:copied?'#16a34a':'#334155', border:'none', borderRadius:6, padding:'3px 10px', color:'#fff', fontSize:'0.72rem', cursor:'pointer', transition:'background 0.2s' }}>
+                {copied ? '✓ 복사됨' : '복사'}
+              </button>
+            </div>
+          )}
         </div>
       )}
 
@@ -1019,12 +1073,13 @@ function BattleScreen({ nick, roomId, onLeave }) {
         <div className="bt-team-bar">
           <span className="bt-team-name">{opp.nick}</span>
           {opp.team.map((p, i) => (
-            <div key={i} className={`bt-team-dot${i === opp.active ? ' active' : ''}${p.hp <= 0 ? ' fainted' : ''}`} />
+            <div key={i} className={`bt-team-dot${i === opp.active ? ' active' : ''}${p.hp <= 0 ? ' fainted' : ''}`} style={dotStyle(p)} />
           ))}
         </div>
 
         {/* 배틀 필드 */}
-        <div className="bt-field">
+        <div className="bt-field" style={{ position:'relative' }}>
+          {floatEmoji && <div className="bt-reaction-float">{floatEmoji}</div>}
           {/* 상대 포켓몬 */}
           <div className="bt-opp-side">
             <div className={oppHit ? 'bt-hit-wrap bt-shake' : 'bt-hit-wrap'}>
@@ -1079,7 +1134,7 @@ function BattleScreen({ nick, roomId, onLeave }) {
         {/* 내 팀 HP 도트 */}
         <div className="bt-team-bar" style={{ borderTop:'1px solid #1e293b', justifyContent:'flex-end' }}>
           {me.team.map((p, i) => (
-            <div key={i} className={`bt-team-dot${i === me.active ? ' active' : ''}${p.hp <= 0 ? ' fainted' : ''}`} />
+            <div key={i} className={`bt-team-dot${i === me.active ? ' active' : ''}${p.hp <= 0 ? ' fainted' : ''}`} style={dotStyle(p)} />
           ))}
           <span className="bt-team-name">{nick}</span>
         </div>
@@ -1125,13 +1180,36 @@ function BattleScreen({ nick, roomId, onLeave }) {
           </div>
         )}
 
+        {/* 이모지 반응 */}
+        {phase === 'battling' && (
+          <div className="bt-reaction-row">
+            {REACTIONS.map(e => (
+              <button key={e} className="bt-reaction-btn" onClick={() => sendReaction(e)}>{e}</button>
+            ))}
+          </div>
+        )}
+
         {/* 게임 종료 */}
         {phase === 'ended' && (
           <div className="bt-ended">
-            <div style={{ fontSize:'2rem' }}>{winner === nick ? '🏆' : '💀'}</div>
-            <div className="bt-ended-title">{winner === nick ? '승리!' : '패배...'}</div>
+            <div style={{ fontSize:'2.4rem' }}>{youWin ? '🏆' : '💀'}</div>
+            <div className="bt-ended-title">{youWin ? '승리!' : '패배...'}</div>
             <div className="bt-ended-sub">{winner}님의 승리</div>
-            <button className="bt-ended-btn" onClick={onLeave}>로비로 돌아가기</button>
+            {rematchRequested && !rematchPending && (
+              <div className="bt-rematch-req">상대가 리매치를 요청했어요!</div>
+            )}
+            {rematchPending && !rematchRequested && (
+              <div style={{ fontSize:'0.8rem', color:'#64748b' }}>상대방 수락 대기 중...</div>
+            )}
+            <div style={{ display:'flex', gap:8, marginTop:8 }}>
+              <button className="bt-ended-btn" onClick={sendRematch}
+                disabled={rematchPending && !rematchRequested}>
+                🔄 리매치
+              </button>
+              <button className="bt-ended-btn" style={{ background:'#334155' }} onClick={handleLeave}>
+                로비로
+              </button>
+            </div>
           </div>
         )}
 
@@ -1154,6 +1232,10 @@ export default function CommunityTab({ onOpenPokemon }) {
   const [room,   setRoom]   = useState(null);
   const [cmRoom, setCmRoom] = useState(null);
   const [btRoom, setBtRoom] = useState(null);
+  const [btRecord, setBtRecord] = useState({ wins: 0, losses: 0 });
+  const handleBattleResult = useCallback((won) => {
+    setBtRecord(prev => won ? { ...prev, wins: prev.wins + 1 } : { ...prev, losses: prev.losses + 1 });
+  }, []);
 
   const enterLobby  = (n) => { setNick(n); setScreen('lobby'); };
   const joinRoom    = (id, name) => { setRoom({ id, name }); setScreen('room'); };
@@ -1189,10 +1271,10 @@ export default function CommunityTab({ onOpenPokemon }) {
         <CatchmindGameScreen nick={nick} roomId={cmRoom.id} onLeave={leaveCmRoom} />
       )}
       {nick && screen === 'bt-lobby' && (
-        <BattleLobbyScreen nick={nick} onJoin={joinBattle} onBack={() => setScreen('lobby')} />
+        <BattleLobbyScreen nick={nick} onJoin={joinBattle} onBack={() => setScreen('lobby')} record={btRecord} />
       )}
       {nick && screen === 'bt-game' && btRoom && (
-        <BattleScreen nick={nick} roomId={btRoom.id} onLeave={leaveBattle} />
+        <BattleScreen nick={nick} roomId={btRoom.id} onLeave={leaveBattle} onBattleResult={handleBattleResult} />
       )}
     </div>
   );

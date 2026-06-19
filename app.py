@@ -2552,6 +2552,7 @@ class _BtRoom:
         self.lock    = asyncio.Lock()
         self.created_at = _time.time()
         self._turn_timeout: 'asyncio.Task | None' = None
+        self._rematch_votes: set = set()
 
     def cancel_timeout(self) -> None:
         if self._turn_timeout and not self._turn_timeout.done():
@@ -2635,7 +2636,12 @@ def _build_bt_pokemon(dex_str: str) -> '_BtPokemon | None':
 
 def _random_team() -> list[_BtPokemon]:
     _ensure_raw()
-    pool = list(_gm_raw.keys())
+    # 너무 강한 전설 포켓몬과 너무 약한 포켓몬 제외
+    pool = [k for k in _gm_raw.keys()
+            if 70 <= _gm_raw[k].get('atk', 0) <= 220
+            and _gm_raw[k].get('sta', 0) <= 250]
+    if len(pool) < 10:
+        pool = list(_gm_raw.keys())  # 풀이 너무 작으면 전체 사용
     team: list[_BtPokemon] = []
     tries = 0
     while len(team) < 3 and tries < 200:
@@ -2686,18 +2692,29 @@ async def _bt_resolve(room: _BtRoom) -> None:
             if crit: line += ' 급소에 맞았다!'
             log.append(line)
 
+        # 공격 전 현재 포켓몬 참조 저장 (KO 감지용)
+        p1_before = p1.current
+        p2_before = p2.current
+
         # ATK 높은 쪽 선공
         if (p1.current and p2.current and p1.current.atk >= p2.current.atk):
             apply(p1, p2, m1); apply(p2, p1, m2)
         else:
             apply(p2, p1, m2); apply(p1, p2, m1)
 
+        # KO 로그
+        if p1_before and p1_before.hp <= 0:
+            log.append(f'💀 {p1.nick}의 {p1_before.ko}가 쓰러졌다!')
+        if p2_before and p2_before.hp <= 0:
+            log.append(f'💀 {p2.nick}의 {p2_before.ko}가 쓰러졌다!')
+
         # 기절한 쪽 자동 교체
-        for pl in (p1, p2):
-            if pl.current and pl.current.hp <= 0:
+        for pl, prev in [(p1, p1_before), (p2, p2_before)]:
+            if prev and prev.hp <= 0:
                 for i, pm in enumerate(pl.team):
                     if pm.hp > 0:
                         pl.active = i
+                        log.append(f'✨ {pl.nick}의 {pl.current.ko} 등장!')
                         break
 
         def state_for(me: _BtPlayer, opp: _BtPlayer) -> dict:
@@ -2713,7 +2730,8 @@ async def _bt_resolve(room: _BtRoom) -> None:
         if p1.all_fainted or p2.all_fainted:
             winner = p2.nick if p1.all_fainted else p1.nick
             room.state = 'ended'
-            await room.broadcast({'type': 'battle_end', 'winner': winner})
+            await room.send(p1, {'type': 'battle_end', 'winner': winner, 'you_win': not p1.all_fainted})
+            await room.send(p2, {'type': 'battle_end', 'winner': winner, 'you_win': not p2.all_fainted})
 
 
 @app.get("/api/battle/rooms")
@@ -2784,8 +2802,38 @@ async def battle_ws(ws: WebSocket, battle_id: str, nick: str = "트레이너") -
                 opp = next((p for p in room.players if p is not player), None)
                 if opp and room.state != 'ended':
                     room.state = 'ended'
-                    await room.send(opp, {'type': 'battle_end', 'winner': opp.nick, 'disconnected': True})
+                    await room.send(opp, {'type': 'battle_end', 'winner': opp.nick,
+                                          'disconnected': True, 'you_win': True})
                 break
+
+            elif msg.get('type') == 'reaction':
+                emoji = str(msg.get('emoji', '👍'))[:8]
+                opp = next((p for p in room.players if p is not player), None)
+                if opp:
+                    await room.send(opp, {'type': 'reaction', 'emoji': emoji})
+
+            elif msg.get('type') == 'rematch' and room.state == 'ended':
+                room._rematch_votes.add(id(player))
+                opp = next((p for p in room.players if p is not player), None)
+                if opp and id(opp) in room._rematch_votes:
+                    room._rematch_votes.clear()
+                    try:
+                        for p in room.players:
+                            p.team = _random_team()
+                            p.active = 0
+                            p.move = None
+                        room.state = 'battling'
+                        pp1, pp2 = room.players
+                        def _sf(me: _BtPlayer, op: _BtPlayer) -> dict:
+                            return {'type':'battle_start',
+                                    'me':  {'nick':me.nick,  'team':[p.to_dict() for p in me.team],  'active':0},
+                                    'opp': {'nick':op.nick, 'team':[p.to_dict() for p in op.team], 'active':0}}
+                        await room.send(pp1, _sf(pp1, pp2))
+                        await room.send(pp2, _sf(pp2, pp1))
+                    except Exception as e:
+                        await room.broadcast({'type':'error','msg':f'리매치 실패: {e}'})
+                elif opp:
+                    await room.send(opp, {'type': 'rematch_request'})
 
             elif msg.get('type') == 'move' and room.state == 'battling':
                 idx = int(msg.get('idx', 0))
@@ -2818,7 +2866,8 @@ async def battle_ws(ws: WebSocket, battle_id: str, nick: str = "트레이너") -
             room.state = 'ended'
             opp = room.players[0] if room.players else None
             if opp:
-                await room.send(opp, {'type': 'battle_end', 'winner': opp.nick, 'disconnected': True})
+                await room.send(opp, {'type': 'battle_end', 'winner': opp.nick,
+                                      'disconnected': True, 'you_win': True})
 
 
 # ── Routes ──────────────────────────────────────────────────────────
