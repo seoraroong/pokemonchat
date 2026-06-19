@@ -119,7 +119,7 @@ function Counters({ slug, onOpenPokemon }) {
 function EvoChain({ dex, onOpenPokemon }) {
   const [chain, setChain] = useState(null);
   useEffect(() => {
-    fetch(`/api/evolutions/${dex}`).then(r => r.json()).then(setChain).catch(() => {});
+    fetch(`/api/evolutions/${dex}`).then(r => r.json()).then(d => setChain(d.chain || [])).catch(() => {});
   }, [dex]);
   if (!chain?.length || chain.length <= 1) return null;
 
@@ -139,7 +139,7 @@ function EvoChain({ dex, onOpenPokemon }) {
                 >
                   <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pm.dex}.png`} width={46} height={46} alt={pm.ko} />
                   <div className="evo-pm-name">{pm.ko}</div>
-                  {pm.condition && <div className="evo-cond">{pm.condition}</div>}
+                  {pm.cond && <div className="evo-cond">{pm.cond}</div>}
                 </div>
               ))}
             </div>
