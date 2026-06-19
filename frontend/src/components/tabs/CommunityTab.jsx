@@ -930,6 +930,13 @@ function BattleScreen({ nick, roomId, onLeave }) {
     setMyDone(true);
   };
 
+  const handleLeave = () => {
+    if (wsRef.current && wsRef.current.readyState === 1) {
+      wsRef.current.send(JSON.stringify({ type: 'forfeit' }));
+    }
+    onLeave();
+  };
+
   const hpPct = (hp, max) => Math.max(0, Math.min(100, (hp / max) * 100));
   const hpColor = (hp, max) => {
     const p = hp / max;
@@ -943,7 +950,7 @@ function BattleScreen({ nick, roomId, onLeave }) {
     <div className="cm-screen" style={{ display:'flex', flexDirection:'column', background:'#070c14' }}>
       {/* 헤더 */}
       <div id="cm-game-header" style={{ borderBottom:'1px solid #1e293b' }}>
-        <button className="cm-back" onClick={onLeave}>← 도망</button>
+        <button className="cm-back" onClick={handleLeave}>← 도망</button>
         <div style={{ flex:1, textAlign:'center', fontSize:'0.78rem', color:'#64748b' }}>
           {phase === 'waiting'   ? '⏳ 도전자 대기 중...' :
            phase === 'battling'  ? `⚔️ ${opp?.nick} 님과 배틀 중` :

@@ -2747,7 +2747,14 @@ async def battle_ws(ws: WebSocket, battle_id: str, nick: str = "트레이너") -
             except json.JSONDecodeError:
                 continue
 
-            if msg.get('type') == 'move' and room.state == 'battling':
+            if msg.get('type') == 'forfeit':
+                opp = next((p for p in room.players if p is not player), None)
+                if opp and room.state != 'ended':
+                    room.state = 'ended'
+                    await room.send(opp, {'type': 'battle_end', 'winner': opp.nick, 'disconnected': True})
+                break
+
+            elif msg.get('type') == 'move' and room.state == 'battling':
                 idx = int(msg.get('idx', 0))
                 if not (0 <= idx < len(player.current.moves if player.current else [])):
                     continue
