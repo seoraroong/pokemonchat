@@ -2499,8 +2499,8 @@ def _bt_type_mult(move_type: str, t1: str, t2: str) -> float:
         m *= c.get(t2, 1.0)
     return m
 
-def _bt_damage(atk: int, def_: int, power: int, mult: float, stab: bool) -> int:
-    return max(1, int(atk / def_ * power / 10 * mult * (1.5 if stab else 1.0)))
+def _bt_damage(atk: int, def_: int, power: int, mult: float, stab: bool, crit: bool = False) -> int:
+    return max(1, int(atk / def_ * power / 10 * 5 * mult * (1.5 if stab else 1.0) * (1.5 if crit else 1.0)))
 
 
 class _BtPokemon:
@@ -2648,12 +2648,14 @@ async def _bt_resolve(room: _BtRoom) -> None:
 
             mult  = _bt_type_mult(move['type'], def_pm.t1, def_pm.t2)
             stab  = move['type'] in (atk_pm.t1, atk_pm.t2)
-            dmg   = _bt_damage(atk_pm.atk, def_pm.def_, move['power'], mult, stab)
+            crit  = _random.random() < 0.10
+            dmg   = _bt_damage(atk_pm.atk, def_pm.def_, move['power'], mult, stab, crit)
             def_pm.hp = max(0, def_pm.hp - dmg)
 
-            eff = ('굉장했다!' if mult >= 2 else '별로였다...' if mult <= 0.5 else '')
+            eff = ('효과가 없었다!' if mult == 0 else '효과는 굉장했다!' if mult >= 2 else '별로였다...' if mult <= 0.5 else '')
             line = f"{attacker.nick}의 {move['ko']}! → {def_pm.ko}에게 {dmg} 데미지!"
             if eff: line += f' {eff}'
+            if crit: line += ' 급소에 맞았다!'
             log.append(line)
 
         # ATK 높은 쪽 선공

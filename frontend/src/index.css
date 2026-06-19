@@ -626,6 +626,15 @@ header {
 .research-more { font-size: 0.72rem; color: #475569; align-self: center; white-space: nowrap; }
 
 /* ── Battle ─────────────────────────────────────────────────────────── */
+@keyframes bt-shake {
+  0%,100% { transform:translateX(0); }
+  20%      { transform:translateX(-7px); }
+  40%      { transform:translateX(7px); }
+  60%      { transform:translateX(-5px); }
+  80%      { transform:translateX(4px); }
+}
+.bt-hit-wrap { display:inline-flex; flex-shrink:0; }
+.bt-shake { animation:bt-shake 0.35s ease-in-out; }
 .bt-team-bar { display:flex; align-items:center; gap:6px; padding:5px 12px; background:#0d1525; flex-shrink:0; }
 .bt-team-name { font-size:0.72rem; color:#475569; flex-shrink:0; }
 .bt-team-dot { width:11px; height:11px; border-radius:50%; background:#22c55e; border:2px solid #16a34a; flex-shrink:0; transition:background 0.3s; }
@@ -633,7 +642,8 @@ header {
 .bt-team-dot.fainted { background:#334155; border-color:#1e293b; }
 .bt-field { display:flex; flex-direction:column; gap:10px; padding:10px 14px; flex-shrink:0; }
 .bt-opp-side { display:flex; align-items:center; gap:10px; }
-.bt-my-side { display:flex; align-items:center; gap:10px; flex-direction:row-reverse; }
+.bt-my-side { display:flex; align-items:center; gap:10px; flex-direction:row-reverse; background:rgba(34,197,94,0.05); border-radius:10px; padding:4px 6px; }
+.bt-my-badge { font-size:0.58rem; background:#16a34a; color:#fff; border-radius:4px; padding:1px 5px; font-weight:800; flex-shrink:0; letter-spacing:0.02em; }
 .bt-sprite { width:72px; height:72px; object-fit:contain; image-rendering:pixelated; flex-shrink:0; }
 .bt-back { transform:scaleX(-1); }
 .bt-info-wrap { flex:1; display:flex; flex-direction:column; gap:2px; }
@@ -657,6 +667,10 @@ header {
 .bt-waiting-msg { text-align:center; padding:14px; color:#64748b; font-size:0.82rem; }
 .bt-log { flex:1; overflow-y:auto; padding:6px 12px; display:flex; flex-direction:column; gap:2px; min-height:50px; max-height:110px; border-top:1px solid #1e293b; }
 .bt-log-line { font-size:0.72rem; color:#94a3b8; line-height:1.4; }
+.bt-log-line.super { color:#f97316; font-weight:600; }
+.bt-log-line.crit  { color:#fbbf24; font-weight:600; }
+.bt-log-line.immune { color:#475569; }
+.bt-log-line.weak  { color:#64748b; }
 .bt-ended { display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; gap:6px; flex:1; }
 .bt-ended-title { font-size:1.6rem; font-weight:800; color:#e2e8f0; }
 .bt-ended-sub { font-size:0.82rem; color:#64748b; }

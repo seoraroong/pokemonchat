@@ -856,6 +856,8 @@ function BattleScreen({ nick, roomId, onLeave }) {
   const [myDone, setMyDone] = useState(false);
   const [oppReady, setOppReady] = useState(false);
   const [winner, setWinner] = useState(null);
+  const [myHit, setMyHit] = useState(false);
+  const [oppHit, setOppHit] = useState(false);
   const wsRef  = useRef(null);
   const logRef = useRef(null);
   const phaseRef = useRef('connecting');
@@ -888,8 +890,19 @@ function BattleScreen({ nick, roomId, onLeave }) {
         } else if (msg.type === 'opp_ready') {
           setOppReady(true);
         } else if (msg.type === 'turn_result') {
-          setMe({ ...msg.me });
-          setOpp({ ...msg.opp });
+          const totalHp = team => team.reduce((s, p) => s + p.hp, 0);
+          setMe(prev => {
+            if (prev && totalHp(msg.me.team) < totalHp(prev.team)) {
+              setMyHit(true); setTimeout(() => setMyHit(false), 380);
+            }
+            return { ...msg.me };
+          });
+          setOpp(prev => {
+            if (prev && totalHp(msg.opp.team) < totalHp(prev.team)) {
+              setOppHit(true); setTimeout(() => setOppHit(false), 380);
+            }
+            return { ...msg.opp };
+          });
           addLog(msg.log || []);
           setMyDone(false); setOppReady(false);
         } else if (msg.type === 'battle_end') {
@@ -965,9 +978,11 @@ function BattleScreen({ nick, roomId, onLeave }) {
         <div className="bt-field">
           {/* 상대 포켓몬 */}
           <div className="bt-opp-side">
-            <img className="bt-sprite"
-              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${oppPm?.dex}.png`}
-              alt={oppPm?.ko} onError={e => e.target.style.opacity='0.2'} />
+            <div className={oppHit ? 'bt-hit-wrap bt-shake' : 'bt-hit-wrap'}>
+              <img className="bt-sprite"
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${oppPm?.dex}.png`}
+                alt={oppPm?.ko} onError={e => e.target.style.opacity='0.2'} />
+            </div>
             <div className="bt-info-wrap">
               <div className="bt-pm-name">{oppPm?.ko}</div>
               <div style={{ display:'flex', gap:4, marginBottom:3 }}>
@@ -984,11 +999,16 @@ function BattleScreen({ nick, roomId, onLeave }) {
 
           {/* 내 포켓몬 */}
           <div className="bt-my-side">
-            <img className="bt-sprite bt-back"
-              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${myPm?.dex}.png`}
-              alt={myPm?.ko} onError={e => { e.target.src=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${myPm?.dex}.png`; }} />
+            <div className={myHit ? 'bt-hit-wrap bt-shake' : 'bt-hit-wrap'}>
+              <img className="bt-sprite bt-back"
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${myPm?.dex}.png`}
+                alt={myPm?.ko} onError={e => { e.target.src=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${myPm?.dex}.png`; }} />
+            </div>
             <div className="bt-info-wrap">
-              <div className="bt-pm-name">{myPm?.ko}</div>
+              <div style={{ display:'flex', alignItems:'center', gap:5 }}>
+                <span className="bt-my-badge">나</span>
+                <span className="bt-pm-name">{myPm?.ko}</span>
+              </div>
               <div style={{ display:'flex', gap:4, marginBottom:3 }}>
                 {[myPm?.t1, myPm?.t2].filter(Boolean).map(t => (
                   <span key={t} style={{ background: TYPE_COLOR[t]||'#555', borderRadius:4, padding:'1px 6px', fontSize:'0.6rem', color:'#fff', fontWeight:700 }}>{t}</span>
@@ -1057,7 +1077,10 @@ function BattleScreen({ nick, roomId, onLeave }) {
 
         {/* 배틀 로그 */}
         <div className="bt-log" ref={logRef}>
-          {log.map((l, i) => <div key={i} className="bt-log-line">{l}</div>)}
+          {log.map((l, i) => {
+            const cls = l.includes('굉장했다') ? ' super' : l.includes('급소') ? ' crit' : l.includes('없었다') ? ' immune' : l.includes('별로') ? ' weak' : '';
+            return <div key={i} className={`bt-log-line${cls}`}>{l}</div>;
+          })}
         </div>
       </>)}
     </div>
