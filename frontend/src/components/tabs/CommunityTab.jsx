@@ -39,7 +39,7 @@ function NickScreen({ onEnter }) {
 }
 
 // ── 로비 ─────────────────────────────────────────────────────────────
-function LobbyScreen({ nick, onJoin, onChangeNick, onCatchmind }) {
+function LobbyScreen({ nick, onJoin, onChangeNick, onCatchmind, onBattle }) {
   const [rooms, setRooms] = useState([]);
   const [epoch, setEpoch] = useState(null);
   const [showRestart, setShowRestart] = useState(false);
@@ -83,6 +83,7 @@ function LobbyScreen({ nick, onJoin, onChangeNick, onCatchmind }) {
         <div style={{ display:'flex', gap:6, alignItems:'center', marginLeft:'auto' }}>
           <button onClick={loadRooms} title="새로고침" style={{ background:'none', border:'none', color:'#64748b', fontSize:'1rem', cursor:'pointer', padding:'4px 6px', lineHeight:1 }}>🔄</button>
           <button onClick={onCatchmind} style={{ background:'#92400e', border:'none', borderRadius:8, padding:'6px 12px', color:'#fef3c7', fontSize:'0.78rem', fontWeight:600, cursor:'pointer', fontFamily:'inherit', whiteSpace:'nowrap' }}>🎨 캐치마인드</button>
+          <button onClick={onBattle} style={{ background:'#7c3aed', border:'none', borderRadius:8, padding:'6px 12px', color:'#ede9fe', fontSize:'0.78rem', fontWeight:600, cursor:'pointer', fontFamily:'inherit', whiteSpace:'nowrap' }}>⚔️ 배틀</button>
           <button onClick={createRoom} style={{ background:'#1d4ed8', border:'none', borderRadius:8, padding:'6px 12px', color:'#fff', fontSize:'0.78rem', fontWeight:600, cursor:'pointer', fontFamily:'inherit', whiteSpace:'nowrap' }}>+ 채팅방 만들기</button>
         </div>
       </div>
@@ -786,12 +787,289 @@ function CatchmindGameScreen({ nick, roomId, onLeave }) {
   );
 }
 
+// ── 배틀 로비 ─────────────────────────────────────────────────────────
+function BattleLobbyScreen({ nick, onJoin, onBack }) {
+  const [rooms, setRooms] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const loadRooms = useCallback(async () => {
+    try {
+      const data = await fetch('/api/battle/rooms').then(r => r.json());
+      setRooms(data);
+    } catch {}
+    setLoading(false);
+  }, []);
+
+  useEffect(() => {
+    loadRooms();
+    const t = setInterval(loadRooms, 5000);
+    return () => clearInterval(t);
+  }, [loadRooms]);
+
+  return (
+    <div className="cm-screen" style={{ display:'flex', flexDirection:'column' }}>
+      <div id="cm-cm-lobby-header">
+        <button onClick={onBack}>← 채팅</button>
+        <span>⚔️ 포켓몬 배틀</span>
+        <button onClick={loadRooms} title="새로고침">🔄</button>
+        <button className="cm-create-btn2" onClick={() => onJoin('new')}>+ 방 만들기</button>
+      </div>
+      <div style={{ padding:'10px 14px', background:'#0d1a2d', borderBottom:'1px solid #1e293b', fontSize:'0.74rem', color:'#64748b', flexShrink:0 }}>
+        랜덤 포켓몬 3마리로 턴제 배틀! 방 만들고 친구에게 링크를 공유하세요.
+      </div>
+      <div id="cm-cm-room-list">
+        {loading && <div style={{ textAlign:'center', padding:'30px', color:'#64748b', fontSize:'0.82rem' }}>불러오는 중...</div>}
+        {!loading && !rooms.length && (
+          <div style={{ textAlign:'center', padding:'40px 20px', color:'#64748b', fontSize:'0.82rem' }}>
+            대기 중인 배틀이 없어요<br/>방을 만들어 도전자를 기다리세요! ⚔️
+          </div>
+        )}
+        {rooms.map(r => (
+          <div key={r.id} className="cm-cm-room-card" onClick={() => onJoin(r.id)}>
+            <div className="cm-cm-room-info">
+              <div className="cm-cm-room-creator">⚔️ {r.players[0] || '???'}의 배틀</div>
+              <div className="cm-cm-room-meta">도전자 대기 중</div>
+            </div>
+            <span className="cm-cm-room-badge cm-cm-badge-wait">도전하기</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ── 배틀 게임 ─────────────────────────────────────────────────────────
+const TYPE_COLOR = {
+  normal:'#a8a878',fire:'#f08030',water:'#6890f0',electric:'#f8d030',
+  grass:'#78c850',ice:'#98d8d8',fighting:'#c03028',poison:'#a040a0',
+  ground:'#e0c068',flying:'#a890f0',psychic:'#f85888',bug:'#a8b820',
+  rock:'#b8a038',ghost:'#705898',dragon:'#7038f8',dark:'#705848',
+  steel:'#b8b8d0',fairy:'#ee99ac',
+};
+
+function BattleScreen({ nick, roomId, onLeave }) {
+  const [phase, setPhase] = useState('connecting');
+  const [battleId, setBattleId] = useState(null);
+  const [me,  setMe]  = useState(null);
+  const [opp, setOpp] = useState(null);
+  const [log, setLog] = useState([]);
+  const [myDone, setMyDone] = useState(false);
+  const [oppReady, setOppReady] = useState(false);
+  const [winner, setWinner] = useState(null);
+  const wsRef  = useRef(null);
+  const logRef = useRef(null);
+  const phaseRef = useRef('connecting');
+
+  useEffect(() => { phaseRef.current = phase; }, [phase]);
+
+  const addLog = useCallback((lines) => {
+    setLog(prev => [...prev, ...(Array.isArray(lines) ? lines : [lines])]);
+    setTimeout(() => { if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight; }, 30);
+  }, []);
+
+  useEffect(() => {
+    const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const ws = new WebSocket(`${proto}//${location.host}/ws/battle/${roomId}?nick=${encodeURIComponent(nick)}`);
+    wsRef.current = ws;
+
+    ws.onmessage = (e) => {
+      try {
+        const msg = JSON.parse(e.data);
+        if (msg.type === 'joined') {
+          setBattleId(msg.battle_id);
+        } else if (msg.type === 'waiting') {
+          setPhase('waiting');
+        } else if (msg.type === 'battle_start') {
+          setMe({ ...msg.me });
+          setOpp({ ...msg.opp });
+          setPhase('battling');
+          setMyDone(false); setOppReady(false);
+          addLog(`⚔️ ${msg.opp.nick}님과 배틀 시작! 기술을 선택하세요.`);
+        } else if (msg.type === 'opp_ready') {
+          setOppReady(true);
+        } else if (msg.type === 'turn_result') {
+          setMe({ ...msg.me });
+          setOpp({ ...msg.opp });
+          addLog(msg.log || []);
+          setMyDone(false); setOppReady(false);
+        } else if (msg.type === 'battle_end') {
+          setWinner(msg.winner);
+          setPhase('ended');
+          addLog(msg.disconnected ? '상대방이 도망쳤어요!' : `🏆 ${msg.winner}님의 승리!`);
+        } else if (msg.type === 'error') {
+          addLog(`❌ ${msg.msg}`);
+        }
+      } catch {}
+    };
+    ws.onclose = () => {
+      if (phaseRef.current !== 'ended') {
+        setPhase('ended');
+        addLog('연결이 끊어졌어요.');
+      }
+    };
+    return () => ws.close();
+  }, [roomId, nick, addLog]);
+
+  const sendMove = (idx) => {
+    if (myDone || !wsRef.current || wsRef.current.readyState !== 1) return;
+    wsRef.current.send(JSON.stringify({ type: 'move', idx }));
+    setMyDone(true);
+  };
+
+  const hpPct = (hp, max) => Math.max(0, Math.min(100, (hp / max) * 100));
+  const hpColor = (hp, max) => {
+    const p = hp / max;
+    return p > 0.5 ? '#22c55e' : p > 0.25 ? '#f59e0b' : '#ef4444';
+  };
+
+  const myPm  = me?.team?.[me?.active];
+  const oppPm = opp?.team?.[opp?.active];
+
+  return (
+    <div className="cm-screen" style={{ display:'flex', flexDirection:'column', background:'#070c14' }}>
+      {/* 헤더 */}
+      <div id="cm-game-header" style={{ borderBottom:'1px solid #1e293b' }}>
+        <button className="cm-back" onClick={onLeave}>← 도망</button>
+        <div style={{ flex:1, textAlign:'center', fontSize:'0.78rem', color:'#64748b' }}>
+          {phase === 'waiting'   ? '⏳ 도전자 대기 중...' :
+           phase === 'battling'  ? `⚔️ ${opp?.nick} 님과 배틀 중` :
+           phase === 'ended'     ? '🏁 배틀 종료' : '연결 중...'}
+        </div>
+      </div>
+
+      {/* 대기 화면 */}
+      {phase === 'waiting' && (
+        <div style={{ flex:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:14, padding:24, textAlign:'center' }}>
+          <div style={{ fontSize:'3rem' }}>⚔️</div>
+          <div style={{ color:'#e2e8f0', fontWeight:700 }}>배틀방 개설 완료!</div>
+          <div style={{ color:'#64748b', fontSize:'0.8rem', lineHeight:1.6 }}>
+            친구가 배틀 로비에서<br/>이 방을 찾아 입장하면<br/>자동으로 시작돼요
+          </div>
+          {battleId && <div style={{ background:'#1e293b', borderRadius:10, padding:'8px 16px', color:'#60a5fa', fontSize:'0.85rem', letterSpacing:'0.1em', fontWeight:700 }}>방 ID: {battleId}</div>}
+        </div>
+      )}
+
+      {/* 배틀 + 종료 화면 */}
+      {(phase === 'battling' || phase === 'ended') && me && opp && (<>
+
+        {/* 상대 팀 HP 도트 */}
+        <div className="bt-team-bar">
+          <span className="bt-team-name">{opp.nick}</span>
+          {opp.team.map((p, i) => (
+            <div key={i} className={`bt-team-dot${i === opp.active ? ' active' : ''}${p.hp <= 0 ? ' fainted' : ''}`} />
+          ))}
+        </div>
+
+        {/* 배틀 필드 */}
+        <div className="bt-field">
+          {/* 상대 포켓몬 */}
+          <div className="bt-opp-side">
+            <img className="bt-sprite"
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${oppPm?.dex}.png`}
+              alt={oppPm?.ko} onError={e => e.target.style.opacity='0.2'} />
+            <div className="bt-info-wrap">
+              <div className="bt-pm-name">{oppPm?.ko}</div>
+              <div style={{ display:'flex', gap:4, marginBottom:3 }}>
+                {[oppPm?.t1, oppPm?.t2].filter(Boolean).map(t => (
+                  <span key={t} style={{ background: TYPE_COLOR[t]||'#555', borderRadius:4, padding:'1px 6px', fontSize:'0.6rem', color:'#fff', fontWeight:700 }}>{t}</span>
+                ))}
+              </div>
+              <div className="bt-hp-bar-outer">
+                <div className="bt-hp-bar-inner" style={{ width:`${hpPct(oppPm?.hp||0, oppPm?.max_hp||1)}%`, background:hpColor(oppPm?.hp||0, oppPm?.max_hp||1) }} />
+              </div>
+              <span className="bt-hp-text">{oppPm?.hp} / {oppPm?.max_hp}</span>
+            </div>
+          </div>
+
+          {/* 내 포켓몬 */}
+          <div className="bt-my-side">
+            <img className="bt-sprite bt-back"
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${myPm?.dex}.png`}
+              alt={myPm?.ko} onError={e => { e.target.src=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${myPm?.dex}.png`; }} />
+            <div className="bt-info-wrap">
+              <div className="bt-pm-name">{myPm?.ko}</div>
+              <div style={{ display:'flex', gap:4, marginBottom:3 }}>
+                {[myPm?.t1, myPm?.t2].filter(Boolean).map(t => (
+                  <span key={t} style={{ background: TYPE_COLOR[t]||'#555', borderRadius:4, padding:'1px 6px', fontSize:'0.6rem', color:'#fff', fontWeight:700 }}>{t}</span>
+                ))}
+              </div>
+              <div className="bt-hp-bar-outer">
+                <div className="bt-hp-bar-inner" style={{ width:`${hpPct(myPm?.hp||0, myPm?.max_hp||1)}%`, background:hpColor(myPm?.hp||0, myPm?.max_hp||1) }} />
+              </div>
+              <span className="bt-hp-text">{myPm?.hp} / {myPm?.max_hp}</span>
+              <div className="bt-energy-row">
+                <span style={{ fontSize:'0.6rem', color:'#f59e0b' }}>⚡</span>
+                <div className="bt-energy-outer"><div className="bt-energy-inner" style={{ width:`${myPm?.energy||0}%` }} /></div>
+                <span style={{ fontSize:'0.6rem', color:'#94a3b8' }}>{myPm?.energy||0}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 내 팀 HP 도트 */}
+        <div className="bt-team-bar" style={{ borderTop:'1px solid #1e293b', justifyContent:'flex-end' }}>
+          {me.team.map((p, i) => (
+            <div key={i} className={`bt-team-dot${i === me.active ? ' active' : ''}${p.hp <= 0 ? ' fainted' : ''}`} />
+          ))}
+          <span className="bt-team-name">{nick}</span>
+        </div>
+
+        {/* 기술 선택 */}
+        {phase === 'battling' && (
+          <div className="bt-moves">
+            {myDone ? (
+              <div className="bt-waiting-msg">
+                {oppReady ? '⚡ 결과 계산 중...' : '✅ 기술 선택 완료! 상대방 대기 중...'}
+              </div>
+            ) : (
+              <div className="bt-move-grid">
+                {(myPm?.moves || []).map((m, i) => {
+                  const canUse = m.fast || (myPm?.energy || 0) >= m.cost;
+                  return (
+                    <button key={i}
+                      className={`bt-move-btn${m.fast ? ' fast' : ' charged'}${!canUse ? ' disabled' : ''}`}
+                      onClick={() => canUse && sendMove(i)}
+                    >
+                      <span className="bt-move-name">{m.ko}</span>
+                      <div style={{ display:'flex', gap:6, alignItems:'center' }}>
+                        <span style={{ fontSize:'0.62rem', color: TYPE_COLOR[m.type]||'#94a3b8' }}>●{m.type}</span>
+                        <span className="bt-move-power">💥{m.power}</span>
+                        {!m.fast && <span className="bt-move-cost">⚡{m.cost}</span>}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* 게임 종료 */}
+        {phase === 'ended' && (
+          <div className="bt-ended">
+            <div style={{ fontSize:'2rem' }}>{winner === nick ? '🏆' : '💀'}</div>
+            <div className="bt-ended-title">{winner === nick ? '승리!' : '패배...'}</div>
+            <div className="bt-ended-sub">{winner}님의 승리</div>
+            <button className="bt-ended-btn" onClick={onLeave}>로비로 돌아가기</button>
+          </div>
+        )}
+
+        {/* 배틀 로그 */}
+        <div className="bt-log" ref={logRef}>
+          {log.map((l, i) => <div key={i} className="bt-log-line">{l}</div>)}
+        </div>
+      </>)}
+    </div>
+  );
+}
+
 // ── 메인 ─────────────────────────────────────────────────────────────
 export default function CommunityTab({ onOpenPokemon }) {
   const [nick,   setNick]   = useState(() => localStorage.getItem('cm_nick') || null);
-  const [screen, setScreen] = useState('lobby'); // 'lobby' | 'room' | 'cm-lobby' | 'cm-game'
-  const [room,   setRoom]   = useState(null);    // { id, name }
-  const [cmRoom, setCmRoom] = useState(null);    // { id }
+  const [screen, setScreen] = useState('lobby');
+  const [room,   setRoom]   = useState(null);
+  const [cmRoom, setCmRoom] = useState(null);
+  const [btRoom, setBtRoom] = useState(null);
 
   const enterLobby  = (n) => { setNick(n); setScreen('lobby'); };
   const joinRoom    = (id, name) => { setRoom({ id, name }); setScreen('room'); };
@@ -799,6 +1077,9 @@ export default function CommunityTab({ onOpenPokemon }) {
   const goCatchmind = () => setScreen('cm-lobby');
   const joinCmRoom  = (id) => { setCmRoom({ id }); setScreen('cm-game'); };
   const leaveCmRoom = () => { setCmRoom(null); setScreen('cm-lobby'); };
+  const goBattle    = () => setScreen('bt-lobby');
+  const joinBattle  = (id) => { setBtRoom({ id }); setScreen('bt-game'); };
+  const leaveBattle = () => { setBtRoom(null); setScreen('bt-lobby'); };
 
   const changeNick = () => {
     const n = prompt('새 닉네임을 입력하세요 (최대 15자)', nick || '');
@@ -812,7 +1093,7 @@ export default function CommunityTab({ onOpenPokemon }) {
     <div className="view" id="view-community">
       {!nick && <NickScreen onEnter={enterLobby} />}
       {nick && screen === 'lobby' && (
-        <LobbyScreen nick={nick} onJoin={joinRoom} onChangeNick={changeNick} onCatchmind={goCatchmind} />
+        <LobbyScreen nick={nick} onJoin={joinRoom} onChangeNick={changeNick} onCatchmind={goCatchmind} onBattle={goBattle} />
       )}
       {nick && screen === 'room' && room && (
         <RoomScreen nick={nick} roomId={room.id} roomName={room.name} onLeave={leaveRoom} onOpenPokemon={onOpenPokemon} />
@@ -822,6 +1103,12 @@ export default function CommunityTab({ onOpenPokemon }) {
       )}
       {nick && screen === 'cm-game' && cmRoom && (
         <CatchmindGameScreen nick={nick} roomId={cmRoom.id} onLeave={leaveCmRoom} />
+      )}
+      {nick && screen === 'bt-lobby' && (
+        <BattleLobbyScreen nick={nick} onJoin={joinBattle} onBack={() => setScreen('lobby')} />
+      )}
+      {nick && screen === 'bt-game' && btRoom && (
+        <BattleScreen nick={nick} roomId={btRoom.id} onLeave={leaveBattle} />
       )}
     </div>
   );

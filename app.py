@@ -2469,6 +2469,303 @@ async def room_ws(ws: WebSocket, room_id: str, nick: str = "트레이너") -> No
             )
 
 
+# ── Battle System ─────────────────────────────────────────────────────
+
+_BTCHART: dict[str, dict[str, float]] = {
+    'normal':   {'rock':0.5,'ghost':0.0,'steel':0.5},
+    'fire':     {'fire':0.5,'water':0.5,'rock':0.5,'dragon':0.5,'grass':2.0,'ice':2.0,'bug':2.0,'steel':2.0},
+    'water':    {'water':0.5,'grass':0.5,'dragon':0.5,'fire':2.0,'ground':2.0,'rock':2.0},
+    'electric': {'electric':0.5,'grass':0.5,'dragon':0.5,'ground':0.0,'flying':2.0,'water':2.0},
+    'grass':    {'fire':0.5,'grass':0.5,'poison':0.5,'flying':0.5,'bug':0.5,'dragon':0.5,'steel':0.5,'water':2.0,'ground':2.0,'rock':2.0},
+    'ice':      {'water':0.5,'ice':0.5,'fire':2.0,'fighting':2.0,'rock':2.0,'steel':2.0},
+    'fighting': {'poison':0.5,'flying':0.5,'psychic':0.5,'bug':0.5,'ghost':0.0,'fairy':0.5,'normal':2.0,'ice':2.0,'rock':2.0,'dark':2.0,'steel':2.0},
+    'poison':   {'poison':0.5,'ground':0.5,'rock':0.5,'ghost':0.5,'steel':0.0,'grass':2.0,'fairy':2.0},
+    'ground':   {'grass':0.5,'bug':0.5,'flying':0.0,'fire':2.0,'electric':2.0,'poison':2.0,'rock':2.0,'steel':2.0},
+    'flying':   {'electric':0.5,'rock':0.5,'steel':0.5,'grass':2.0,'fighting':2.0,'bug':2.0},
+    'psychic':  {'psychic':0.5,'steel':0.5,'dark':0.0,'fighting':2.0,'poison':2.0},
+    'bug':      {'fire':0.5,'fighting':0.5,'flying':0.5,'ghost':0.5,'steel':0.5,'fairy':0.5,'grass':2.0,'psychic':2.0,'dark':2.0},
+    'rock':     {'fighting':0.5,'ground':0.5,'steel':0.5,'fire':2.0,'ice':2.0,'flying':2.0,'bug':2.0},
+    'ghost':    {'normal':0.0,'dark':0.5,'ghost':2.0,'psychic':2.0},
+    'dragon':   {'steel':0.5,'dragon':2.0,'ice':2.0,'fairy':0.0},
+    'dark':     {'fighting':0.5,'dark':0.5,'fairy':0.5,'ghost':2.0,'psychic':2.0},
+    'steel':    {'fire':0.5,'water':0.5,'electric':0.5,'steel':0.5,'ice':2.0,'rock':2.0,'fairy':2.0},
+    'fairy':    {'fire':0.5,'poison':0.5,'steel':0.5,'fighting':2.0,'dragon':2.0,'dark':2.0},
+}
+
+def _bt_type_mult(move_type: str, t1: str, t2: str) -> float:
+    c = _BTCHART.get(move_type, {})
+    m = c.get(t1, 1.0)
+    if t2:
+        m *= c.get(t2, 1.0)
+    return m
+
+def _bt_damage(atk: int, def_: int, power: int, mult: float, stab: bool) -> int:
+    return max(1, int(atk / def_ * power / 10 * mult * (1.5 if stab else 1.0)))
+
+
+class _BtPokemon:
+    def __init__(self, dex: int, ko: str, en: str,
+                 atk: int, def_: int, sta: int, t1: str, t2: str, moves: list):
+        self.dex  = dex
+        self.ko   = ko
+        self.en   = en
+        self.t1   = t1
+        self.t2   = t2
+        self.atk  = atk
+        self.def_ = def_
+        self.max_hp = max(30, sta)
+        self.hp     = self.max_hp
+        self.energy = 0
+        self.moves  = moves  # list of dicts
+
+    def to_dict(self) -> dict:
+        return {
+            'dex': self.dex, 'ko': self.ko, 'en': self.en,
+            't1': self.t1, 't2': self.t2,
+            'hp': self.hp, 'max_hp': self.max_hp,
+            'energy': self.energy, 'moves': self.moves,
+        }
+
+
+class _BtPlayer:
+    def __init__(self, nick: str, ws) -> None:
+        self.nick   = nick
+        self.ws     = ws
+        self.team:  list[_BtPokemon] = []
+        self.active = 0
+        self.move:  dict | None = None  # pending this turn
+
+    @property
+    def current(self) -> _BtPokemon | None:
+        return self.team[self.active] if self.team else None
+
+    @property
+    def all_fainted(self) -> bool:
+        return all(p.hp <= 0 for p in self.team)
+
+
+class _BtRoom:
+    def __init__(self, rid: str) -> None:
+        self.id      = rid
+        self.players: list[_BtPlayer] = []
+        self.state   = 'waiting'   # waiting | battling | ended
+        self.lock    = asyncio.Lock()
+        self.created_at = _time.time()
+
+    async def send(self, player: '_BtPlayer', msg: dict) -> None:
+        try:
+            await player.ws.send_text(json.dumps(msg, ensure_ascii=False))
+        except Exception:
+            pass
+
+    async def broadcast(self, msg: dict) -> None:
+        data = json.dumps(msg, ensure_ascii=False)
+        for p in self.players:
+            try:
+                await p.ws.send_text(data)
+            except Exception:
+                pass
+
+    async def send_to_each(self, make_msg) -> None:
+        """각 플레이어에게 개인화 메시지"""
+        for i, p in enumerate(self.players):
+            await self.send(p, make_msg(i))
+
+
+_battles: dict[str, _BtRoom] = {}
+
+
+def _build_bt_pokemon(dex_str: str) -> '_BtPokemon | None':
+    _ensure_raw()
+    gm = _gm_raw.get(dex_str)
+    nd = _names_raw.get(dex_str)
+    if not gm or not nd:
+        return None
+    t1  = gm.get('type1', 'normal')
+    t2  = gm.get('type2') or ''
+    if t2 in ('', 'none'): t2 = ''
+    moves: list[dict] = []
+    for m in (gm.get('fast_moves') or [])[:2]:
+        dps = m.get('dps') or 10
+        moves.append({'ko': m.get('ko','?'), 'type': m.get('type','normal'),
+                      'power': max(30, min(65, int(dps * 4))),
+                      'fast': True, 'cost': 0, 'gain': 20})
+    for m in (gm.get('charged_moves') or [])[:2]:
+        dps = m.get('dps') or 20
+        moves.append({'ko': m.get('ko','?'), 'type': m.get('type','normal'),
+                      'power': max(80, min(160, int(dps * 3))),
+                      'fast': False, 'cost': 50, 'gain': 0})
+    if not moves:
+        moves = [{'ko':'몸통박치기','type':'normal','power':40,'fast':True,'cost':0,'gain':20}]
+    return _BtPokemon(
+        int(dex_str), nd.get('ko_name','?'), nd.get('en_name','?'),
+        gm.get('atk', 100), gm.get('def', 100), gm.get('sta', 80),
+        t1, t2, moves,
+    )
+
+
+def _random_team() -> list[_BtPokemon]:
+    _ensure_raw()
+    pool = list(_gm_raw.keys())
+    team: list[_BtPokemon] = []
+    tries = 0
+    while len(team) < 3 and tries < 200:
+        tries += 1
+        k = _random.choice(pool)
+        pm = _build_bt_pokemon(k)
+        if pm and not any(p.dex == pm.dex for p in team):
+            team.append(pm)
+    return team
+
+
+async def _bt_resolve(room: _BtRoom) -> None:
+    p1, p2 = room.players[0], room.players[1]
+    if p1.move is None or p2.move is None:
+        return
+    async with room.lock:
+        if p1.move is None or p2.move is None:
+            return
+        m1, m2 = p1.move, p2.move
+        p1.move = p2.move = None
+
+        log: list[str] = []
+
+        def apply(attacker: _BtPlayer, defender: _BtPlayer, mv: dict) -> None:
+            atk_pm = attacker.current
+            def_pm = defender.current
+            if not atk_pm or not def_pm or def_pm.hp <= 0:
+                return
+            move = atk_pm.moves[mv['idx']]
+            if move['fast']:
+                atk_pm.energy = min(100, atk_pm.energy + move['gain'])
+            else:
+                if atk_pm.energy < move['cost']:
+                    log.append(f"{attacker.nick}의 {move['ko']}! → 에너지 부족")
+                    return
+                atk_pm.energy -= move['cost']
+
+            mult  = _bt_type_mult(move['type'], def_pm.t1, def_pm.t2)
+            stab  = move['type'] in (atk_pm.t1, atk_pm.t2)
+            dmg   = _bt_damage(atk_pm.atk, def_pm.def_, move['power'], mult, stab)
+            def_pm.hp = max(0, def_pm.hp - dmg)
+
+            eff = ('굉장했다!' if mult >= 2 else '별로였다...' if mult <= 0.5 else '')
+            line = f"{attacker.nick}의 {move['ko']}! → {def_pm.ko}에게 {dmg} 데미지!"
+            if eff: line += f' {eff}'
+            log.append(line)
+
+        # ATK 높은 쪽 선공
+        if (p1.current and p2.current and p1.current.atk >= p2.current.atk):
+            apply(p1, p2, m1); apply(p2, p1, m2)
+        else:
+            apply(p2, p1, m2); apply(p1, p2, m1)
+
+        # 기절한 쪽 자동 교체
+        for pl in (p1, p2):
+            if pl.current and pl.current.hp <= 0:
+                for i, pm in enumerate(pl.team):
+                    if pm.hp > 0:
+                        pl.active = i
+                        break
+
+        def state_for(me: _BtPlayer, opp: _BtPlayer) -> dict:
+            return {
+                'me':  {'nick': me.nick,  'team': [p.to_dict() for p in me.team],  'active': me.active},
+                'opp': {'nick': opp.nick, 'team': [p.to_dict() for p in opp.team], 'active': opp.active},
+                'log': log,
+            }
+
+        await room.send(p1, {'type': 'turn_result', **state_for(p1, p2)})
+        await room.send(p2, {'type': 'turn_result', **state_for(p2, p1)})
+
+        if p1.all_fainted or p2.all_fainted:
+            winner = p2.nick if p1.all_fainted else p1.nick
+            room.state = 'ended'
+            await room.broadcast({'type': 'battle_end', 'winner': winner})
+
+
+@app.get("/api/battle/rooms")
+async def battle_room_list():
+    return [{'id': r.id, 'state': r.state, 'players': [p.nick for p in r.players]}
+            for r in _battles.values() if r.state == 'waiting']
+
+
+@app.websocket("/ws/battle/{battle_id}")
+async def battle_ws(ws: WebSocket, battle_id: str, nick: str = "트레이너") -> None:
+    nick = nick.strip()[:15] or "트레이너"
+
+    if battle_id == 'new':
+        rid = _uuid.uuid4().hex[:6]
+        room = _BtRoom(rid)
+        _battles[rid] = room
+    else:
+        room = _battles.get(battle_id)
+        if not room:
+            await ws.close(code=4004); return
+        if len(room.players) >= 2:
+            await ws.close(code=4003); return
+
+    await ws.accept()
+    player = _BtPlayer(nick, ws)
+    room.players.append(player)
+
+    await ws.send_text(json.dumps({'type': 'joined', 'battle_id': room.id,
+                                    'your_nick': nick, 'state': room.state}, ensure_ascii=False))
+
+    if len(room.players) == 2:
+        p1, p2 = room.players
+        p1.team = _random_team()
+        p2.team = _random_team()
+        room.state = 'battling'
+
+        def start_for(me: _BtPlayer, opp: _BtPlayer) -> dict:
+            return {
+                'type': 'battle_start',
+                'me':  {'nick': me.nick,  'team': [p.to_dict() for p in me.team],  'active': 0},
+                'opp': {'nick': opp.nick, 'team': [p.to_dict() for p in opp.team], 'active': 0},
+            }
+        await room.send(p1, start_for(p1, p2))
+        await room.send(p2, start_for(p2, p1))
+    else:
+        await ws.send_text(json.dumps({'type': 'waiting'}, ensure_ascii=False))
+
+    try:
+        while True:
+            raw = await ws.receive_text()
+            try:
+                msg = json.loads(raw)
+            except json.JSONDecodeError:
+                continue
+
+            if msg.get('type') == 'move' and room.state == 'battling':
+                idx = int(msg.get('idx', 0))
+                if not (0 <= idx < len(player.current.moves if player.current else [])):
+                    continue
+                move = player.current.moves[idx]
+                if not move['fast'] and player.current.energy < move['cost']:
+                    await room.send(player, {'type': 'error', 'msg': '에너지 부족!'})
+                    continue
+                player.move = {'idx': idx}
+                await room.send(player, {'type': 'move_ack'})
+                # 상대에게 "상대방 대기 중" 알림
+                opp = next((p for p in room.players if p is not player), None)
+                if opp:
+                    await room.send(opp, {'type': 'opp_ready'})
+                await _bt_resolve(room)
+
+    except (WebSocketDisconnect, Exception):
+        pass
+    finally:
+        room.players = [p for p in room.players if p is not player]
+        if not room.players:
+            _battles.pop(room.id, None)
+        elif room.state != 'ended':
+            room.state = 'ended'
+            opp = room.players[0] if room.players else None
+            if opp:
+                await room.send(opp, {'type': 'battle_end', 'winner': opp.nick, 'disconnected': True})
+
+
 # ── Routes ──────────────────────────────────────────────────────────
 
 @app.get("/api/status")
