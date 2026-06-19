@@ -2635,7 +2635,7 @@ async def _bt_resolve(room: _BtRoom) -> None:
         def apply(attacker: _BtPlayer, defender: _BtPlayer, mv: dict) -> None:
             atk_pm = attacker.current
             def_pm = defender.current
-            if not atk_pm or not def_pm or def_pm.hp <= 0:
+            if not atk_pm or not def_pm or atk_pm.hp <= 0 or def_pm.hp <= 0:
                 return
             move = atk_pm.moves[mv['idx']]
             if move['fast']:
@@ -2690,6 +2690,11 @@ async def _bt_resolve(room: _BtRoom) -> None:
 
 @app.get("/api/battle/rooms")
 async def battle_room_list():
+    now = _time.time()
+    # 10분 이상 된 방 정리
+    stale = [rid for rid, r in _battles.items() if now - r.created_at > 600]
+    for rid in stale:
+        _battles.pop(rid, None)
     return [{'id': r.id, 'state': r.state, 'players': [p.nick for p in r.players]}
             for r in _battles.values() if r.state == 'waiting']
 
