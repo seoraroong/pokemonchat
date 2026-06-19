@@ -6,6 +6,53 @@ function weatherIcons(list) {
   return (list || []).map(w => WEATHER_ICON[w] || w).join(' ');
 }
 
+function RaidCountdown({ raids }) {
+  const [, setTick] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setTick(n => n + 1), 60000);
+    return () => clearInterval(t);
+  }, []);
+
+  const tierEnds = {};
+  const collect = (tier, boss) => {
+    if (boss.end && !tierEnds[tier]) tierEnds[tier] = new Date(boss.end).getTime();
+  };
+  if (Array.isArray(raids))       raids.forEach(b => collect(b.tier || '5', b));
+  else if (raids?.bosses)          raids.bosses.forEach(b => collect(b.tier || '5', b));
+  else if (raids)                  Object.keys(raids).forEach(tier => (raids[tier] || []).forEach(b => collect(tier, b)));
+
+  const entries = TIER_ORDER.filter(t => tierEnds[t]).map(t => {
+    const diff = tierEnds[t] - Date.now();
+    if (diff <= 0) return null;
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const time = d >= 1 ? `${d}일 ${h}시간` : h >= 1 ? `${h}시간 ${m}분` : `${m}분`;
+    const urgent = diff < 21600000;   // 6시간 미만
+    const warning = diff < 86400000;  // 24시간 미만
+    const color = urgent ? '#ef4444' : warning ? '#f59e0b' : '#94a3b8';
+    return { tier: t, time, urgent, warning, color };
+  }).filter(Boolean);
+
+  if (!entries.length) return null;
+
+  return (
+    <div style={{ display:'flex', flexWrap:'wrap', gap:6, padding:'6px 0 10px' }}>
+      {entries.map(e => (
+        <div key={e.tier} style={{
+          background: e.urgent ? '#1c1010' : e.warning ? '#1c160a' : '#1e293b',
+          border: `1px solid ${e.urgent ? '#7f1d1d' : e.warning ? '#78350f' : '#334155'}`,
+          borderRadius: 8, padding:'4px 10px', display:'flex', alignItems:'center', gap:6,
+        }}>
+          <span style={{ fontSize:'0.7rem', color:'#64748b', fontWeight:700 }}>{TIER_LABEL[e.tier] || e.tier}</span>
+          <span style={{ fontSize:'0.72rem', color: e.color, fontWeight:600 }}>⏱ {e.time}</span>
+          {e.urgent && <span style={{ fontSize:'0.65rem', color:'#ef4444' }}>교체 임박!</span>}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function EventSheet({ event, onClose, onOpenPokemon }) {
   const [tab, setTab] = useState('spawns');
   const [detail, setDetail] = useState(null);
@@ -205,10 +252,9 @@ export default function RaidTab({ onOpenPokemon }) {
     return TIER_ORDER.filter(t => byTier[t]?.length).map(tier => {
       const label = TIER_LABEL[tier] || `${tier}성`;
       const bosses = byTier[tier];
-      const endLabel = bosses[0]?.end ? fmtRemain(bosses[0].end) : '';
       return (
         <div key={tier} className="tier-section">
-          <div className="tier-label">{label} ({bosses.length}){endLabel && <span style={{ fontSize:'0.65rem', fontWeight:400, color:'#64748b', marginLeft:6 }}>{endLabel}</span>}</div>
+          <div className="tier-label">{label} ({bosses.length})</div>
           <div className="raid-grid">
             {bosses.map((boss, i) => {
               const isShadow = (boss.en_name || '').toLowerCase().startsWith('shadow');
@@ -299,6 +345,7 @@ export default function RaidTab({ onOpenPokemon }) {
         </div>
         <div className="raid-section" style={{ marginTop: 6 }}>
           <div className="section-title">⚔️ 현재 레이드 보스</div>
+          {raids && <RaidCountdown raids={raids} />}
           <div id="raids-container">{renderRaids()}</div>
         </div>
         <CommunityDays onOpenPokemon={onOpenPokemon} />
