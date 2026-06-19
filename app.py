@@ -2585,14 +2585,16 @@ def _build_bt_pokemon(dex_str: str) -> '_BtPokemon | None':
     t2  = gm.get('type2') or ''
     if t2 in ('', 'none'): t2 = ''
     moves: list[dict] = []
-    for m in (gm.get('fast_moves') or [])[:2]:
-        dps = m.get('dps') or 10
-        moves.append({'ko': m.get('ko','?'), 'type': m.get('type','normal'),
+    for mid in (gm.get('fast_moves') or [])[:2]:
+        info = _make_move_info(mid)
+        dps = info.get('dps') or 10
+        moves.append({'ko': info.get('ko', mid), 'type': info.get('type', 'normal'),
                       'power': max(30, min(65, int(dps * 4))),
                       'fast': True, 'cost': 0, 'gain': 20})
-    for m in (gm.get('charged_moves') or [])[:2]:
-        dps = m.get('dps') or 20
-        moves.append({'ko': m.get('ko','?'), 'type': m.get('type','normal'),
+    for mid in (gm.get('charged_moves') or [])[:2]:
+        info = _make_move_info(mid)
+        dps = info.get('dps') or 20
+        moves.append({'ko': info.get('ko', mid), 'type': info.get('type', 'normal'),
                       'power': max(80, min(160, int(dps * 3))),
                       'fast': False, 'cost': 50, 'gain': 0})
     if not moves:
@@ -2714,8 +2716,14 @@ async def battle_ws(ws: WebSocket, battle_id: str, nick: str = "트레이너") -
 
     if len(room.players) == 2:
         p1, p2 = room.players
-        p1.team = _random_team()
-        p2.team = _random_team()
+        try:
+            p1.team = _random_team()
+            p2.team = _random_team()
+        except Exception as e:
+            err_msg = json.dumps({'type': 'error', 'msg': f'팀 생성 실패: {e}'}, ensure_ascii=False)
+            await room.send(p1, json.loads(err_msg))
+            await room.send(p2, json.loads(err_msg))
+            return
         room.state = 'battling'
 
         def start_for(me: _BtPlayer, opp: _BtPlayer) -> dict:

@@ -898,6 +898,7 @@ function BattleScreen({ nick, roomId, onLeave }) {
           addLog(msg.disconnected ? '상대방이 도망쳤어요!' : `🏆 ${msg.winner}님의 승리!`);
         } else if (msg.type === 'error') {
           addLog(`❌ ${msg.msg}`);
+          setPhase('ended');
         }
       } catch {}
     };
