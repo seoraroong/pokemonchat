@@ -83,7 +83,7 @@ function LobbyScreen({ nick, onJoin, onChangeNick, onCatchmind }) {
         <div style={{ display:'flex', gap:6, alignItems:'center', marginLeft:'auto' }}>
           <button onClick={loadRooms} title="새로고침" style={{ background:'none', border:'1px solid #334155', borderRadius:8, padding:'5px 9px', color:'#94a3b8', fontSize:'0.78rem', cursor:'pointer', fontFamily:'inherit' }}>🔄</button>
           <button onClick={onCatchmind} style={{ background:'#1c1a10', border:'1px solid #854d0e', borderRadius:8, padding:'5px 11px', color:'#fbbf24', fontSize:'0.78rem', fontWeight:600, cursor:'pointer', fontFamily:'inherit' }}>🎨 캐치마인드</button>
-          <button onClick={createRoom} style={{ background:'#1d4ed8', border:'none', borderRadius:8, padding:'5px 11px', color:'#fff', fontSize:'0.78rem', fontWeight:600, cursor:'pointer', fontFamily:'inherit', whiteSpace:'nowrap' }}>+ 방 만들기</button>
+          <button onClick={createRoom} style={{ background:'#1d4ed8', border:'none', borderRadius:8, padding:'5px 11px', color:'#fff', fontSize:'0.78rem', fontWeight:600, cursor:'pointer', fontFamily:'inherit', whiteSpace:'nowrap' }}>+ 채팅방 만들기</button>
         </div>
       </div>
       {showRestart && (
