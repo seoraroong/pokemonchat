@@ -2242,7 +2242,7 @@ async def _run_quiz(room) -> None:
                 q.current_hints  = [
                     f"타입: {_type_ko_str(t1, t2)}",
                     f"세대: {gen}세대" if gen else "세대: ?",
-                    f"이름: {len(ko)}글자",
+                    f"첫 글자: {ko[0]}",
                 ]
             else:  # silhouette
                 q.current_answer = ko
