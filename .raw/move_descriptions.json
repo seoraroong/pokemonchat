@@ -1,0 +1,1326 @@
+{
+  "ACID": {
+    "ko": "강한 산을 상대에게 끼얹어 공격한다. 상대의 특수방어를 떨어뜨릴 때가 있다.",
+    "en": "Opposing Pokémon are attacked with a spray of harsh acid. This may also lower their Sp. Def stats."
+  },
+  "ACID_SPRAY": {
+    "ko": "상대를 녹이는 액체를 토해내서 공격한다. 상대의 특수방어를 크게 떨어뜨린다.",
+    "en": "The user attacks by spitting fluid that works to melt the target. This also harshly lowers the target's Sp. Def stat."
+  },
+  "ACROBATICS": {
+    "ko": "경쾌하게 상대를 공격한다. 자신이 도구를 지니고 있지 않을 때 큰 데미지를 준다.",
+    "en": "The user nimbly strikes the target. This attack does massive damage if the user isn't holding an item."
+  },
+  "AERIAL_ACE": {
+    "ko": "재빠른 움직임으로 상대를 농락해 벤다. 공격은 반드시 명중한다.",
+    "en": "The user confounds the target with speed, then slashes. This attack never misses."
+  },
+  "AEROBLAST": {
+    "ko": "공기의 소용돌이를 발사하여 공격한다. 급소에 맞기 쉽다.",
+    "en": "A vortex of air is shot at the target to inflict damage. This move has a heightened chance of landing a critical hit."
+  },
+  "AIR_CUTTER": {
+    "ko": "날카로운 바람으로 상대를 베어 공격한다. 급소에 맞기 쉽다.",
+    "en": "The user launches razor-like wind to slash opposing Pokémon. This move has a heightened chance of landing a critical hit."
+  },
+  "AIR_SLASH": {
+    "ko": "하늘까지 베어 가르는 공기의 칼날로 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user attacks with a blade of air that slices even the sky. This may also make the target flinch."
+  },
+  "ANCIENT_POWER": {
+    "ko": "원시의 힘으로 공격한다. 자신의 모든 능력이 오를 때가 있다.",
+    "en": "The user attacks with a prehistoric power. This may also boost all the user's stats at once."
+  },
+  "AQUA_JET": {
+    "ko": "눈에 보이지 않는 굉장한 속도로 상대에게 돌진한다. 반드시 선제공격할 수 있다.",
+    "en": "The user lunges at the target to inflict damage, moving at blinding speed. This move always goes first."
+  },
+  "AQUA_STEP": {
+    "ko": "",
+    "en": "The user toys with the target and attacks it using light and fluid dance steps. This also boosts the user's Speed stat."
+  },
+  "AQUA_TAIL": {
+    "ko": "세차게 날뛰는 거친 파도와 같이 큰 꼬리를 흔들어서 상대를 공격한다.",
+    "en": "The user attacks by swinging its tail as if it were a vicious wave in a raging storm."
+  },
+  "ASTONISH": {
+    "ko": "큰 소리 등으로 불시에 놀래켜서 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user attacks the target by crying out in a startling fashion. This may also make the target flinch."
+  },
+  "AURA_SPHERE": {
+    "ko": "몸속에서 파동의 힘을 끌어내 상대에게 쏜다. 공격은 반드시 명중한다.",
+    "en": "The user lets loose a pulse of aura power from deep within its body at the target. This attack never misses."
+  },
+  "AURA_WHEEL_DARK": {
+    "ko": "볼주머니에 저장해둔 에너지로 공격하고 자신의 스피드를 올린다. 모르페코의 모습에 따라 타입이 바뀐다.",
+    "en": "Morpeko attacks and boosts its Speed stat with the energy stored in its cheeks. This move's type changes depending on the user's form."
+  },
+  "AURA_WHEEL_ELECTRIC": {
+    "ko": "볼주머니에 저장해둔 에너지로 공격하고 자신의 스피드를 올린다. 모르페코의 모습에 따라 타입이 바뀐다.",
+    "en": "Morpeko attacks and boosts its Speed stat with the energy stored in its cheeks. This move's type changes depending on the user's form."
+  },
+  "AURORA_BEAM": {
+    "ko": "무지개색의 빔을 상대에게 발사하여 공격한다. 공격을 떨어뜨릴 때가 있다.",
+    "en": "The target is hit with a rainbow-colored beam. This may also lower the target's Attack stat."
+  },
+  "AVALANCHE": {
+    "ko": "상대로부터 기술을 받으면 그 상대에 대해서 기술의 위력이 2배가 된다.",
+    "en": "This move's power is doubled if the target has inflicted damage on the user in the same turn."
+  },
+  "BEAK_BLAST": {
+    "ko": "먼저 부리를 가열시킨 다음 공격을 날린다. 가열 중에 만지면 화상을 입는다.",
+    "en": "The user first heats up its beak, and then it attacks the target. Making direct contact with the user while it's heating up its beak results in a burn."
+  },
+  "BEHEMOTH_BASH": {
+    "ko": "거대한 방패가 되어 부딪친다. 상대가 다이맥스 중이면 데미지가 2배가 된다.",
+    "en": "The user becomes a gigantic shield and slams into the target. This move deals twice the damage if the target is Dynamaxed."
+  },
+  "BEHEMOTH_BLADE": {
+    "ko": "거대한 검이 되어 베어버린다. 상대가 다이맥스 중이면 데미지가 2배가 된다.",
+    "en": "The user becomes a gigantic sword and cuts the target. This move deals twice the damage if the target is Dynamaxed."
+  },
+  "BITE": {
+    "ko": "날카롭고 뾰족한 이빨로 물어서 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The target is bitten with viciously sharp fangs. This may also make the target flinch."
+  },
+  "BLAST_BURN": {
+    "ko": "폭발하는 불꽃으로 상대를 태워서 공격한다. 다음 턴은 움직일 수 없다.",
+    "en": "The target is razed by a fiery explosion. The user can't move on the next turn."
+  },
+  "BLAZE_KICK": {
+    "ko": "공격한 상대를 화상 상태로 만들 때가 있다. 급소에도 맞기 쉽다.",
+    "en": "The user launches a kick that has a heightened chance of landing a critical hit. This may also leave the target with a burn."
+  },
+  "BLEAKWIND_STORM": {
+    "ko": "",
+    "en": "The user attacks with savagely cold winds that cause both body and spirit to tremble. This may also lower the Speed stats of opposing Pokémon."
+  },
+  "BLIZZARD": {
+    "ko": "세찬 눈보라를 상대에게 내뿜어 공격한다. 얼음 상태로 만들 때가 있다.",
+    "en": "A howling blizzard is summoned to strike opposing Pokémon. This may also leave the opposing Pokémon frozen."
+  },
+  "BODY_SLAM": {
+    "ko": "몸 전체로 상대를 덮쳐눌러 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "The user attacks by dropping onto the target with its full body weight. This may also leave the target with paralysis."
+  },
+  "BONE_CLUB": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "BOOMBURST": {
+    "ko": "무시무시한 폭음의 파괴력으로 주위에 있는 포켓몬을 공격한다.",
+    "en": "The user attacks everything around it with the destructive power of a terrible explosive sound."
+  },
+  "BRAVE_BIRD": {
+    "ko": "날개를 접어 저공비행으로 돌격한다. 자신도 상당한 데미지를 입는다.",
+    "en": "The user tucks in its wings and charges at a low altitude. This also damages the user quite a lot."
+  },
+  "BREAKING_SWIPE": {
+    "ko": "강인한 꼬리를 세차게 휘둘러서 상대를 공격한다. 상대의 공격을 떨어뜨린다.",
+    "en": "The user swings its tough tail wildly and attacks opposing Pokémon. This also lowers their Attack stats."
+  },
+  "BRICK_BREAK": {
+    "ko": "수도로 기세 좋게 내려쳐서 상대를 공격한다. 빛의장막이나 리플렉터 등도 파괴할 수 있다.",
+    "en": "The user attacks with a swift chop. This move can also break barriers, such as Light Screen and Reflect."
+  },
+  "BRINE": {
+    "ko": "상대가 HP의 절반 정도 상처를 입고 있으면 기술의 위력이 2배가 된다.",
+    "en": "This move's power is doubled if the target's HP is at half or less."
+  },
+  "BRUTAL_SWING": {
+    "ko": "자신의 몸을 세차게 휘둘러서 상대에게 데미지를 준다.",
+    "en": "The user swings its body around violently to inflict damage on everything in its vicinity."
+  },
+  "BUBBLE": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "BUBBLE_BEAM": {
+    "ko": "거품을 기세 좋게 상대에게 발사하여 공격한다. 스피드를 떨어뜨릴 때가 있다.",
+    "en": "A spray of bubbles is forcefully ejected at the target. This may also lower the target's Speed stat."
+  },
+  "BUG_BITE": {
+    "ko": "물어서 공격한다. 상대가 나무열매를 지니고 있을 때 먹어서 나무열매의 효과를 받을 수 있다.",
+    "en": "The user attacks by biting the target. If the target is holding a Berry, the user eats it and gains its effect."
+  },
+  "BUG_BUZZ": {
+    "ko": "진동으로 음파를 일으켜서 공격한다. 상대의 특수방어를 떨어뜨릴 때가 있다.",
+    "en": "The user vibrates to generate a damaging sound wave. This may also lower the target's Sp. Def stat."
+  },
+  "BULLDOZE": {
+    "ko": "땅을 힘껏 밟아 자신의 주위에 있는 포켓몬을 공격한다. 상대의 스피드를 떨어뜨린다.",
+    "en": "The user strikes everything around it by stomping down on the ground. This lowers the Speed stats of those hit."
+  },
+  "BULLET_PUNCH": {
+    "ko": "탄환처럼 빠르고 단단한 펀치를 상대에게 날린다. 반드시 선제공격을 할 수 있다.",
+    "en": "The user strikes the target with tough punches as fast as bullets. This move always goes first."
+  },
+  "BULLET_SEED": {
+    "ko": "씨앗을 기세 좋게 상대에게 발사하여 공격한다. 2-5회 동안 연속으로 쓴다.",
+    "en": "The user attacks by forcefully shooting seeds at the target. This move hits two to five times in a row."
+  },
+  "CHARGE_BEAM": {
+    "ko": "전격의 다발을 상대에게 발사한다. 전기를 모아서 자신의 특수공격을 올릴 때가 있다.",
+    "en": "The user attacks the target with an electric charge. The residual electricity may also boost the user's Sp. Atk stat."
+  },
+  "CHARM": {
+    "ko": "귀엽게 바라보고 방심을 유도하여 상대의 공격을 크게 떨어뜨린다.",
+    "en": "The user gazes at the target rather charmingly, making it less wary. This harshly lowers the target's Attack stat."
+  },
+  "CHILLING_WATER": {
+    "ko": "",
+    "en": "The user attacks the target by showering it with water that's so cold it saps the target's power. This also lowers the target's Attack stat."
+  },
+  "CLANGING_SCALES": {
+    "ko": "전신의 비늘을 비벼서 큰 소리를 내 공격한다. 공격 후 자신의 방어가 떨어진다.",
+    "en": "The user rubs the scales on its entire body and makes a huge noise to attack opposing Pokémon. The user's Defense stat is lowered after the attack."
+  },
+  "CLOSE_COMBAT": {
+    "ko": "방어를 포기하고 상대 쪽으로 깊숙이 돌격한다. 자신의 방어와 특수방어가 떨어진다.",
+    "en": "The user fights the target up close, inflicting damage without guarding itself. This also lowers the user's Defense and Sp. Def stats."
+  },
+  "CONFUSION": {
+    "ko": "약한 염동력을 상대에게 보내어 공격한다. 상대를 혼란시킬 때가 있다.",
+    "en": "The target is hit with a weak telekinetic force to inflict damage. This may also confuse the target."
+  },
+  "COUNTER": {
+    "ko": "상대로부터 받은 물리공격의 데미지를 2배로 만들어 같은 상대에게 돌려준다.",
+    "en": "A retaliatory attack that counters any physical move, inflicting double the damage taken."
+  },
+  "CRABHAMMER": {
+    "ko": "큰 집게를 상대에게 내리쳐서 공격한다. 급소에 맞기 쉽다.",
+    "en": "The target is hammered with a large pincer. This move has a heightened chance of landing a critical hit."
+  },
+  "CROSS_CHOP": {
+    "ko": "양손으로 당수를 상대에게 힘껏 쳐서 공격한다. 급소에 맞기 쉽다.",
+    "en": "The user delivers a double chop with its forearms crossed. This move has a heightened chance of landing a critical hit."
+  },
+  "CROSS_POISON": {
+    "ko": "독 칼날로 상대를 베어 가른다. 독 상태로 만들 때가 있고 급소에도 맞기 쉽다.",
+    "en": "A slashing attack with a poisonous blade that may also poison the target. This move has a heightened chance of landing a critical hit."
+  },
+  "CRUNCH": {
+    "ko": "날카로운 이빨로 상대를 깨물어 부숴서 공격한다. 상대의 방어를 떨어뜨릴 때가 있다.",
+    "en": "The user crunches up the target with sharp fangs. This may also lower the target's Defense stat."
+  },
+  "CRUSH_GRIP": {
+    "ko": "굉장한 힘으로 상대를 묵사발로 만든다. 상대의 HP가 남아 있을수록 위력이 올라간다.",
+    "en": "The target is crushed with great force. The more HP the target has left, the greater the move's power."
+  },
+  "CUT": {
+    "ko": "낫이나 발톱 등으로 상대를 베어 공격한다.",
+    "en": "The target is cut with a scythe or claw."
+  },
+  "DARKEST_LARIAT": {
+    "ko": "양팔을 돌려 상대에게 부딪친다. 상대의 능력 변화에 상관없이 데미지를 준다.",
+    "en": "The user swings both arms and hits the target. The target's stat changes don't affect the damage inflicted by this move."
+  },
+  "DARK_PULSE": {
+    "ko": "몸에서 악의로 가득한 무서운 오라를 발한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user releases a horrible aura imbued with ill intent. This may also make the target flinch."
+  },
+  "DAZZLING_GLEAM": {
+    "ko": "강력한 빛을 내어 상대에게 데미지를 준다.",
+    "en": "The user damages opposing Pokémon by emitting a powerful flash."
+  },
+  "DIG": {
+    "ko": "1턴째에 파고들어 2턴째에 상대를 공격한다.",
+    "en": "The user burrows into the ground on the first turn, then attacks on the next turn."
+  },
+  "DISARMING_VOICE": {
+    "ko": "매혹적인 울음소리를 내어 상대에게 정신적 데미지를 준다. 공격은 반드시 명중한다.",
+    "en": "Letting out a charming cry, the user does emotional damage to opposing Pokémon. This attack never misses."
+  },
+  "DISCHARGE": {
+    "ko": "눈부신 전격으로 자신의 주위에 있는 포켓몬을 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "The user strikes everything around it by letting loose a flare of electricity. This may also leave those hit by the attack with paralysis."
+  },
+  "DOOM_DESIRE": {
+    "ko": "기술을 사용한 2턴 뒤에 무수한 빛의 다발이 상대를 공격한다.",
+    "en": "This move can't be used. It's recommended that this move is forgotten. Once forgotten, this move can't be remembered."
+  },
+  "DOUBLE_IRON_BASH": {
+    "ko": "가슴의 너트를 축으로 회전시켜 2번 연속 팔로 힘껏 친다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user rotates, centering the hex nut in its chest, and then strikes with its arms twice in a row. This may also make the target flinch."
+  },
+  "DOUBLE_KICK": {
+    "ko": "2개의 다리로 상대를 걷어차서 공격한다. 2회 연속으로 데미지를 준다.",
+    "en": "The user attacks by kicking the target twice in a row using two feet."
+  },
+  "DRACO_METEOR": {
+    "ko": "천공에서 운석을 상대에게 떨어뜨린다. 사용하면 반동으로 자신의 특수공격이 크게 떨어진다.",
+    "en": "Comets are summoned down from the sky onto the target. The recoil from this move harshly lowers the user’s Sp. Atk stat."
+  },
+  "DRAGON_ASCENT": {
+    "ko": "넓은 하늘에서 급속으로 강하하여 상대를 공격한다. 자신의 방어와 특수방어가 떨어진다.",
+    "en": "The user attacks the target by dropping out of the sky at high speed. This also lowers the user's Defense and Sp. Def stats."
+  },
+  "DRAGON_BREATH": {
+    "ko": "굉장한 숨결을 상대에게 내뿜어 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "The user exhales a mighty gust that inflicts damage. This may also leave the target with paralysis."
+  },
+  "DRAGON_CLAW": {
+    "ko": "날카롭고 뾰족한 거대한 발톱으로 상대를 베어 갈라서 공격한다.",
+    "en": "The user slashes the target with huge, sharp claws to inflict damage."
+  },
+  "DRAGON_ENERGY": {
+    "ko": "생명력을 파워로 바꿔서 상대를 공격한다. 자신의 HP가 적을수록 기술의 위력이 떨어진다.",
+    "en": "Converting its life-force into power, the user attacks opposing Pokémon. The lower the user's HP, the lower the move's power."
+  },
+  "DRAGON_PULSE": {
+    "ko": "큰 입으로 충격파를 일으켜서 상대를 공격한다.",
+    "en": "The target is attacked with a shock wave generated by the user's gaping mouth."
+  },
+  "DRAGON_TAIL": {
+    "ko": "상대를 튕겨내서 교대할 포켓몬을 끌어낸다. 야생의 경우에는 배틀이 끝난다.",
+    "en": "The target is knocked away, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon."
+  },
+  "DRAINING_KISS": {
+    "ko": "키스로 상대의 HP를 흡수한다. 준 데미지의 반 이상 HP를 회복한다.",
+    "en": "The user steals the target's HP with a kiss. The user's HP is restored by over half the damage taken by the target."
+  },
+  "DRAIN_PUNCH": {
+    "ko": "주먹으로 상대의 힘을 흡수한다. 입힌 데미지의 절반에 해당하는 HP를 회복할 수 있다.",
+    "en": "The user attacks with an energy-draining punch. The user's HP is restored by up to half the damage taken by the target."
+  },
+  "DRILL_PECK": {
+    "ko": "회전하면서 뾰족한 부리를 상대에게 꿰찔러 공격한다.",
+    "en": "A corkscrewing attack that strikes the target with a sharp beak acting as a drill."
+  },
+  "DRILL_RUN": {
+    "ko": "드릴처럼 몸을 회전시켜서 상대에게 몸통박치기한다. 급소에 맞기 쉽다.",
+    "en": "The user crashes into the target while rotating its body like a drill. This move has a heightened chance of landing a critical hit."
+  },
+  "DRUM_BEATING": {
+    "ko": "드럼의 뿌리를 연주로 조종해서 공격하는 것으로 상대의 스피드를 떨어뜨린다.",
+    "en": "The user plays its drum, controlling the drum's roots to attack the target. This also lowers the target's Speed stat."
+  },
+  "DYNAMAX_CANNON": {
+    "ko": "코어에서 빔을 발사해서 공격한다. 상대가 다이맥스 중이면 데미지가 2배가 된다.",
+    "en": "The user condenses energy within its body and unleashes that energy from its core to inflict damage."
+  },
+  "DYNAMIC_PUNCH": {
+    "ko": "혼신의 힘으로 펀치를 날려서 공격한다. 상대를 반드시 혼란시킨다.",
+    "en": "The user attacks by punching the target with full concentrated power. This also confuses the target."
+  },
+  "EARTHQUAKE": {
+    "ko": "지진의 충격으로 자신의 주위에 있는 포켓몬을 공격한다.",
+    "en": "The user sets off an earthquake that strikes every Pokémon around it."
+  },
+  "EARTH_POWER": {
+    "ko": "상대의 발밑에 대지의 힘을 방출한다. 상대의 특수방어를 떨어뜨릴 때가 있다.",
+    "en": "The user makes the ground under the target erupt with power. This may also lower the target's Sp. Def stat."
+  },
+  "EMBER": {
+    "ko": "작은 불꽃을 상대에게 발사하여 공격한다. 화상 상태로 만들 때가 있다.",
+    "en": "The target is attacked with small flames. This may also leave the target with a burn."
+  },
+  "ENERGY_BALL": {
+    "ko": "자연으로부터 모은 생명의 힘을 발사한다. 상대의 특수방어를 떨어뜨릴 때가 있다.",
+    "en": "The user draws power from nature and fires it at the target. This may also lower the target's Sp. Def stat."
+  },
+  "EXTRASENSORY": {
+    "ko": "보이지 않는 이상한 힘을 보내어 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user attacks with an odd, unseeable power. This may also make the target flinch."
+  },
+  "FAIRY_WIND": {
+    "ko": "요정의 바람을 일으켜 상대에게 몰아쳐서 공격한다.",
+    "en": "The user attacks by stirring up a fairy wind to strike the target."
+  },
+  "FEATHER_DANCE": {
+    "ko": "깃털을 흩뿌려 상대의 몸에 휘감는다. 상대의 공격을 크게 떨어뜨린다.",
+    "en": "The user covers the target's body with a mass of down that harshly lowers its Attack stat."
+  },
+  "FEINT_ATTACK": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "FELL_STINGER": {
+    "ko": "이 기술을 사용하여 상대를 쓰러뜨리면 공격이 매우 크게 오른다.",
+    "en": "When the user knocks out a target with this move, the user's Attack stat is boosted drastically."
+  },
+  "FIRE_BLAST": {
+    "ko": "큰 대자의 불꽃으로 상대를 불태운다. 화상 상태로 만들 때가 있다.",
+    "en": "The target is attacked with an intense blast of all-consuming fire. This may also leave the target with a burn."
+  },
+  "FIRE_FANG": {
+    "ko": "불꽃을 두른 이빨로 문다. 상대를 풀죽게 하거나 화상 상태로 만들 때가 있다.",
+    "en": "The user bites with flame-cloaked fangs. This may also make the target flinch or leave it with a burn."
+  },
+  "FIRE_PUNCH": {
+    "ko": "불꽃을 담은 펀치로 상대를 공격한다. 화상 상태로 만들 때가 있다.",
+    "en": "The target is attacked with a fiery punch. This may also leave the target with a burn."
+  },
+  "FIRE_SPIN": {
+    "ko": "세차게 소용돌이치는 불꽃 속에 4-5턴 동안 상대를 가두어 공격한다.",
+    "en": "The user traps the target inside a fierce vortex of fire that inflicts damage for four to five turns."
+  },
+  "FLAMETHROWER": {
+    "ko": "세찬 불꽃을 상대에게 발사하여 공격한다. 화상 상태로 만들 때가 있다.",
+    "en": "The target is scorched with an intense blast of fire. This may also leave the target with a burn."
+  },
+  "FLAME_BURST": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "FLAME_CHARGE": {
+    "ko": "불꽃을 둘러 상대를 공격한다. 힘을 모아서 자신의 스피드를 올린다.",
+    "en": "Cloaking itself in flame, the user attacks the target. Then, building up momentum, the user boosts its Speed stat."
+  },
+  "FLAME_WHEEL": {
+    "ko": "불꽃을 둘러 상대에게 돌진하여 공격한다. 화상 상태로 만들 때가 있다.",
+    "en": "The user attacks by cloaking itself in fire and charging at the target. This may also leave the target with a burn."
+  },
+  "FLASH_CANNON": {
+    "ko": "몸의 빛을 한곳에 모아서 힘을 방출한다. 상대의 특수방어를 떨어뜨릴 때가 있다.",
+    "en": "The user gathers all its light energy and releases it at once. This may also lower the target's Sp. Def stat."
+  },
+  "FLOWER_TRICK": {
+    "ko": "",
+    "en": "The user throws a rigged bouquet of flowers at the target. This attack never misses and always lands a critical hit."
+  },
+  "FLY": {
+    "ko": "1턴째에 하늘을 날아 2턴째에 상대를 공격한다.",
+    "en": "The user flies up into the sky on the first turn, then attacks on the next turn."
+  },
+  "FLYING_PRESS": {
+    "ko": "공중에서 상대에게 다이브한다. 이 기술은 격투타입임과 동시에 비행타입이기도 하다.",
+    "en": "The user dives down onto the target from the sky. This move is Fighting and Flying type simultaneously."
+  },
+  "FOCUS_BLAST": {
+    "ko": "기합을 높여서 혼신의 힘을 방출한다. 상대의 특수방어를 떨어뜨릴 때가 있다.",
+    "en": "The user heightens its mental focus and unleashes its power. This may also lower the target's Sp. Def stat."
+  },
+  "FORCE_PALM": {
+    "ko": "상대의 몸에 충격파를 부딪쳐 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "The target is attacked with a shock wave. This may also leave the target with paralysis."
+  },
+  "FOUL_PLAY": {
+    "ko": "상대의 힘을 이용한다. 싸우고 있는 상대의 공격이 높을수록 데미지가 올라간다.",
+    "en": "The user turns the target's strength against it. The higher the target's Attack stat, the greater the damage this move inflicts."
+  },
+  "FREEZE_SHOCK": {
+    "ko": "전기를 두른 얼음덩어리로 2턴째에 상대를 내리친다. 마비 상태로 만들 때가 있다.",
+    "en": "The turn after using this move, the user hits the target with electrically charged ice to inflict damage. This may also leave the target with paralysis."
+  },
+  "FRENZY_PLANT": {
+    "ko": "큰 나무로 상대를 힘껏 쳐서 공격한다. 다음 턴은 움직일 수 없게 된다.",
+    "en": "The user slams the target with the roots of an enormous tree. The user can't move on the next turn."
+  },
+  "FROST_BREATH": {
+    "ko": "차가운 숨결을 상대에게 내뿜어 공격한다. 반드시 급소에 맞는다.",
+    "en": "The user attacks by blowing its cold breath on the target. This move always lands a critical hit."
+  },
+  "FRUSTRATION": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "FURY_CUTTER": {
+    "ko": "낫이나 발톱 등으로 상대를 베어 공격한다. 연속으로 맞히면 위력이 올라간다.",
+    "en": "The user attacks by slashing the target with scythes, claws, or the like. This attack becomes more powerful if it hits in succession."
+  },
+  "FUSION_BOLT": {
+    "ko": "거대한 천둥을 내리친다. 거대한 불꽃의 영향을 받아 기술의 위력이 올라간다.",
+    "en": "The user throws down a giant lightning bolt. This move's power is boosted when influenced by an enormous flame."
+  },
+  "FUSION_FLARE": {
+    "ko": "거대한 불꽃을 내리친다. 거대한 천둥의 영향을 받아 기술의 위력이 올라간다.",
+    "en": "The user brings down a giant flame. This move's power is boosted when influenced by an enormous lightning bolt."
+  },
+  "FUTURE_SIGHT": {
+    "ko": "기술을 사용한 2턴 뒤에 상대에게 염동력의 덩어리를 보내어 공격한다.",
+    "en": "Two turns after this move is used, a hunk of psychic energy attacks the target."
+  },
+  "GEOMANCY": {
+    "ko": "1턴째에 에너지를 흡수하여 2턴째에 특수공격, 특수방어, 스피드를 크게 올린다.",
+    "en": "The user absorbs energy and sharply raises its Sp. Atk, Sp. Def, and Speed stats on the next turn."
+  },
+  "GIGATON_HAMMER": {
+    "ko": "",
+    "en": "The user swings its whole body around to attack with its huge hammer. This move can't be used twice in a row."
+  },
+  "GIGA_DRAIN": {
+    "ko": "양분을 흡수하여 공격한다. 입힌 데미지의 절반에 해당하는 HP를 회복할 수 있다.",
+    "en": "A nutrient-draining attack. The user's HP is restored by up to half the damage taken by the target."
+  },
+  "GIGA_IMPACT": {
+    "ko": "가진 힘을 모두 사용해서 상대에게 돌격한다. 다음 턴은 움직일 수 없다.",
+    "en": "The user charges at the target using every bit of its power. The user can't move on the next turn."
+  },
+  "GLACIATE": {
+    "ko": "차가운 냉기를 상대에게 내뿜어 공격한다. 상대의 스피드를 떨어뜨린다.",
+    "en": "The user attacks by blowing freezing cold air at opposing Pokémon. This also lowers their Speed stats."
+  },
+  "GRASS_KNOT": {
+    "ko": "풀을 휘감아서 상대를 쓰러뜨린다. 상대가 무거울수록 위력이 올라간다.",
+    "en": "The user snares the target with grass and trips it. The heavier the target, the greater the move's power."
+  },
+  "GUNK_SHOT": {
+    "ko": "더러운 쓰레기를 상대에게 부딪쳐서 공격한다. 독 상태로 만들 때가 있다.",
+    "en": "The user shoots filthy garbage at the target to attack. This may also poison the target."
+  },
+  "GUST": {
+    "ko": "날개로 일으킨 격한 바람을 상대에게 부딪쳐서 공격한다.",
+    "en": "A gust of wind is whipped up by wings and launched at the target to inflict damage."
+  },
+  "GYRO_BALL": {
+    "ko": "몸을 고속으로 회전시켜 몸통박치기한다. 상대보다 스피드가 낮을수록 위력은 올라간다.",
+    "en": "The user tackles the target with a high-speed spin. The slower the user is than the target, the greater the move's power."
+  },
+  "HEART_STAMP": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "HEAT_WAVE": {
+    "ko": "뜨거운 숨결을 상대에게 내뿜어 공격한다. 화상 상태로 만들 때가 있다.",
+    "en": "The user attacks by exhaling hot breath on opposing Pokémon. This may also leave them with a burn."
+  },
+  "HEAVY_SLAM": {
+    "ko": "무거운 몸으로 상대에게 부딪쳐 공격한다. 자신이 상대보다 무거울수록 위력이 올라간다.",
+    "en": "The user slams into the target with its heavy body. The more the user outweighs the target, the greater the move's power."
+  },
+  "HEX": {
+    "ko": "엎친 데 덮친 격으로 공격한다. 상태 이상인 상대에게 큰 데미지를 준다.",
+    "en": "This relentless attack does massive damage to a target affected by status conditions."
+  },
+  "HIDDEN_POWER_BUG": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_DARK": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_DRAGON": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_ELECTRIC": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_FIGHTING": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_FIRE": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_FLYING": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_GHOST": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_GRASS": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_GROUND": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_ICE": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_NORMAL": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "HIDDEN_POWER_POISON": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_PSYCHIC": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_ROCK": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_STEEL": {
+    "ko": "",
+    "en": ""
+  },
+  "HIDDEN_POWER_WATER": {
+    "ko": "",
+    "en": ""
+  },
+  "HIGH_HORSEPOWER": {
+    "ko": "온몸을 써서 상대에게 맹렬히 어택한다.",
+    "en": "The user fiercely attacks the target using its entire body."
+  },
+  "HIGH_JUMP_KICK": {
+    "ko": "점프해서 무릎차기로 상대를 공격한다. 빗나가면 자신이 데미지를 입는다.",
+    "en": "The target is attacked with a knee kick from a jump. If this move misses, the user takes damage instead."
+  },
+  "HORN_ATTACK": {
+    "ko": "날카롭고 뾰족한 뿔로 상대를 공격한다.",
+    "en": "The target is jabbed with a sharply pointed horn to inflict damage."
+  },
+  "HURRICANE": {
+    "ko": "강렬한 바람으로 상대를 둘러싸서 공격한다. 상대를 혼란시킬 때가 있다.",
+    "en": "The user attacks by wrapping its opponent in a fierce wind. This may also confuse the target."
+  },
+  "HYDRO_CANNON": {
+    "ko": "물의 대포를 상대에게 발사해서 공격한다. 다음 턴은 움직일 수 없다.",
+    "en": "The target is hit with a watery blast. The user can't move on the next turn."
+  },
+  "HYDRO_PUMP": {
+    "ko": "대량의 물을 세찬 기세로 상대에게 발사하여 공격한다.",
+    "en": "The target is blasted by a huge volume of water launched under great pressure."
+  },
+  "HYDRO_PUMP_BLASTOISE": {
+    "ko": "",
+    "en": ""
+  },
+  "HYPER_BEAM": {
+    "ko": "강한 광선을 상대에게 발사하여 공격한다. 다음 턴은 움직일 수 없다.",
+    "en": "The target is attacked with a powerful beam. The user can't move on the next turn."
+  },
+  "HYPER_FANG": {
+    "ko": "날카로운 앞니로 강하게 물어서 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user bites hard on the target with its sharp front fangs. This may also make the target flinch."
+  },
+  "ICE_BEAM": {
+    "ko": "냉동빔을 상대에게 발사하여 공격한다. 얼음 상태로 만들 때가 있다.",
+    "en": "The target is struck with an icy-cold beam of energy. This may also leave the target frozen."
+  },
+  "ICE_BURN": {
+    "ko": "모든 것을 얼려버리는 격렬한 냉기로 2턴째에 상대를 둘러싼다. 화상 상태로 만들 때가 있다.",
+    "en": "The turn after using this move, the user surrounds the target with an ultracold, freezing wind to inflict damage. This may also leave the target with a burn."
+  },
+  "ICE_FANG": {
+    "ko": "냉기를 품은 이빨로 문다. 상대를 풀죽게 하거나 얼음 상태로 만들 때가 있다.",
+    "en": "The user bites with cold-infused fangs. This may also make the target flinch or leave it frozen."
+  },
+  "ICE_PUNCH": {
+    "ko": "냉기를 담은 펀치로 상대를 공격한다. 얼음 상태로 만들 때가 있다.",
+    "en": "The target is attacked with an icy punch. This may also leave the target frozen."
+  },
+  "ICE_SHARD": {
+    "ko": "얼음덩어리를 순식간에 만들어 상대에게 빠르게 쏜다. 반드시 선제공격을 할 수 있다.",
+    "en": "The user flash-freezes chunks of ice and hurls them at the target. This move always goes first."
+  },
+  "ICICLE_SPEAR": {
+    "ko": "날카로운 고드름을 상대에게 발사하여 공격한다. 2-5회 동안 연속으로 쓴다.",
+    "en": "The user attacks by launching sharp icicles at the target. This move hits two to five times in a row."
+  },
+  "ICY_WIND": {
+    "ko": "차가운 냉기를 상대에게 내뿜어 공격한다. 상대의 스피드를 떨어뜨린다.",
+    "en": "The user attacks with a gust of chilled air. This also lowers opposing Pokémon's Speed stats."
+  },
+  "INCINERATE": {
+    "ko": "불꽃으로 상대를 공격한다. 상대가 나무열매 등을 지니고 있을 때 불태워서 쓸 수 없게 만든다.",
+    "en": "The user attacks opposing Pokémon with fire. If a Pokémon is holding a certain item, such as a Berry, the item becomes burned up and unusable."
+  },
+  "INFESTATION": {
+    "ko": "4-5턴 동안 상대에게 엉겨 붙어서 공격한다. 그동안 상대는 도망갈 수 없다.",
+    "en": "The target is infested and attacked for four to five turns. The target can't flee during this time."
+  },
+  "IRON_HEAD": {
+    "ko": "강철과 같은 단단한 머리로 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user slams the target with its steel-hard head. This may also make the target flinch."
+  },
+  "IRON_TAIL": {
+    "ko": "단단한 꼬리로 상대를 힘껏 쳐서 공격한다. 상대의 방어를 떨어뜨릴 때가 있다.",
+    "en": "The target is slammed with a steel-hard tail. This may also lower the target's Defense stat."
+  },
+  "KARATE_CHOP": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "LAST_RESORT": {
+    "ko": "배틀 중에 기억하고 있는 기술을 모두 사용하면 그때부터 쓸 수 있는 필살기이다.",
+    "en": "This move can be used only after the user has used all the other moves it knows in the battle."
+  },
+  "LEAFAGE": {
+    "ko": "잎을 상대에 맞춰 공격한다.",
+    "en": "The user attacks by pelting the target with leaves."
+  },
+  "LEAF_BLADE": {
+    "ko": "잎사귀를 칼처럼 이용해 상대를 베어 공격한다. 급소에 맞기 쉽다.",
+    "en": "The user handles a sharp leaf like a sword and cuts the target to inflict damage. This move has a heightened chance of landing a critical hit."
+  },
+  "LEAF_STORM": {
+    "ko": "뾰족한 잎사귀로 상대에게 돌풍을 일으킨다. 사용하면 반동으로 자신의 특수공격이 크게 떨어진다.",
+    "en": "The user whips up a storm of leaves around the target. The recoil from this move harshly lowers the user's Sp. Atk stat."
+  },
+  "LEAF_TORNADO": {
+    "ko": "날카로운 잎사귀로 상대를 둘러싸서 공격한다. 명중률을 떨어뜨릴 때가 있다.",
+    "en": "The user attacks its target by encircling it in sharp leaves. This attack may also lower the target’s accuracy."
+  },
+  "LICK": {
+    "ko": "긴 혀로 상대를 핥아서 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "The user licks the target with a long tongue to inflict damage. This may also leave the target with paralysis."
+  },
+  "LIQUIDATION": {
+    "ko": "물의 힘으로 상대에게 부딪쳐서 공격한다. 상대의 방어를 떨어뜨릴 때가 있다.",
+    "en": "The user slams into the target using a full-force blast of water. This may also lower the target's Defense stat."
+  },
+  "LOCK_ON": {
+    "ko": "조준을 잘 맞춰 다음 공격이 반드시 상대에게 명중하도록 한다.",
+    "en": "The user takes sure aim at the target. This ensures the user's next move does not miss that target."
+  },
+  "LOW_KICK": {
+    "ko": "발을 강하게 걸고 상대를 넘어뜨려 공격한다. 상대가 무거울수록 위력이 올라간다.",
+    "en": "A powerful low kick that makes the target fall over. The heavier the target, the greater the move's power."
+  },
+  "LOW_SWEEP": {
+    "ko": "재빠른 움직임으로 상대의 다리를 노려 공격한다. 상대의 스피드를 떨어뜨린다.",
+    "en": "The user makes a swift attack on the target's legs, which lowers the target's Speed stat."
+  },
+  "LUNGE": {
+    "ko": "전력으로 상대에게 덤벼들며 공격한다. 상대의 공격을 떨어뜨린다.",
+    "en": "The user makes a lunge at the target, attacking with full force. This also lowers the target's Attack stat."
+  },
+  "LUSTER_PURGE": {
+    "ko": "눈부신 빛을 발산하여 공격한다. 상대의 특수방어를 떨어뜨릴 때가 있다.",
+    "en": "The user lets loose a damaging burst of light. This may also lower the target's Sp. Def stat."
+  },
+  "MAGICAL_LEAF": {
+    "ko": "상대를 추적하는 이상한 잎사귀를 흩뿌린다. 공격은 반드시 명중한다.",
+    "en": "The user scatters curious leaves that chase the target. This attack never misses."
+  },
+  "MAGMA_STORM": {
+    "ko": "세차게 타오르는 불꽃 속에 4-5턴 동안 상대를 가두어 공격한다.",
+    "en": "The user traps the target inside a maelstrom of fire that inflicts damage for four to five turns."
+  },
+  "MAGNET_BOMB": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "MEGAHORN": {
+    "ko": "단단하고 훌륭한 뿔로 마음껏 상대를 꿰찔러서 공격한다.",
+    "en": "Using its tough and impressive horn, the user rams into the target with no letup."
+  },
+  "MEGA_DRAIN": {
+    "ko": "양분을 흡수하여 공격한다. 상대에게 입힌 데미지의 절반에 해당하는 HP를 회복할 수 있다.",
+    "en": "A nutrient-draining attack. The user's HP is restored by up to half the damage taken by the target."
+  },
+  "METAL_CLAW": {
+    "ko": "강철의 발톱으로 상대를 베어 갈라 공격한다. 자신의 공격이 올라갈 때도 있다.",
+    "en": "The target is raked with steel claws. This may also boost the user's Attack stat."
+  },
+  "METAL_SOUND": {
+    "ko": "금속을 긁을 때 나는 듯한 싫은 소리를 들려준다. 상대의 특수방어를 크게 떨어뜨린다.",
+    "en": "A horrible sound like scraping metal harshly lowers the target's Sp. Def stat."
+  },
+  "METEOR_BEAM": {
+    "ko": "1턴째에 우주의 힘을 모아서 특수공격을 올리고 2턴째에 상대를 공격한다.",
+    "en": "The user gathers energy from space and boosts its Sp. Atk stat on the first turn, then attacks on the next turn."
+  },
+  "METEOR_MASH": {
+    "ko": "혜성과 같은 펀치를 날려서 상대를 공격한다. 자신의 공격이 올라갈 때가 있다.",
+    "en": "The target is hit with a hard punch fired like a meteor. This may also boost the user’s Attack stat."
+  },
+  "MIND_BLOWN": {
+    "ko": "자신의 머리를 폭발시켜 주위의 모든 것을 공격한다. 자신도 데미지를 받는다.",
+    "en": "The user attacks everything around it by causing its own head to explode. This also damages the user."
+  },
+  "MIRROR_COAT": {
+    "ko": "상대에게 받은 특수공격의 데미지를 2배로 만들어 그 상대에게 돌려준다.",
+    "en": "A retaliatory attack that counters any special move, inflicting double the damage taken."
+  },
+  "MIRROR_SHOT": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "MIST_BALL": {
+    "ko": "안개의 깃털로 둘러싸 공격한다. 상대의 특수공격을 떨어뜨릴 때가 있다.",
+    "en": "A mist-like flurry of down envelops and damages the target. This may also lower the target's Sp. Atk stat."
+  },
+  "MOONBLAST": {
+    "ko": "달의 파워를 빌려서 상대를 공격한다. 상대의 특수공격을 떨어뜨릴 때가 있다.",
+    "en": "Borrowing the power of the moon, the user attacks the target. This may also lower the target's Sp. Atk stat."
+  },
+  "MOONGEIST_BEAM": {
+    "ko": "괴상한 광선을 쏘아 공격한다. 상대의 특성을 무시하고 공격할 수 있다.",
+    "en": "The user emits a sinister ray to attack the target. This move can be used on the target regardless of its Ability."
+  },
+  "MUDDY_WATER": {
+    "ko": "탁해진 물을 상대에게 발사하여 공격한다. 명중률을 떨어뜨릴 때가 있다.",
+    "en": "The user attacks by shooting muddy water at opposing Pokémon. This may also lower their accuracy."
+  },
+  "MUD_BOMB": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "MUD_SHOT": {
+    "ko": "진흙 덩어리를 상대에게 내던져서 공격한다. 동시에 상대의 스피드를 떨어뜨린다.",
+    "en": "The user attacks by hurling a blob of mud at the target. This also lowers the target's Speed stat."
+  },
+  "MUD_SLAP": {
+    "ko": "상대의 얼굴 등에 진흙을 내던져서 공격한다. 명중률을 떨어뜨린다.",
+    "en": "The user hurls mud in the target's face to inflict damage and lower its accuracy."
+  },
+  "MYSTICAL_FIRE": {
+    "ko": "입에서 내뱉는 아주 뜨거운 불꽃으로 공격한다. 상대의 특수공격을 떨어뜨린다.",
+    "en": "The user attacks by breathing a special, hot fire. This also lowers the target's Sp. Atk stat."
+  },
+  "NATURES_MADNESS": {
+    "ko": "",
+    "en": ""
+  },
+  "NIGHT_SHADE": {
+    "ko": "무시무시한 환상을 보게 해서 자신의 레벨과 똑같은 만큼의 데미지를 상대에게 준다.",
+    "en": "The user makes the target see a frightening mirage. It inflicts damage equal to the user's level."
+  },
+  "NIGHT_SLASH": {
+    "ko": "순간적으로 틈을 노려 상대를 베어 버린다. 급소에 맞기 쉽다.",
+    "en": "The user slashes the target the instant an opportunity arises. This move has a heightened chance of landing a critical hit."
+  },
+  "OBLIVION_WING": {
+    "ko": "조준한 상대로부터 HP를 흡수한다. 준 데미지의 반 이상 HP를 회복한다.",
+    "en": "The user absorbs its target’s HP. The user’s HP is restored by over half of the damage taken by the target."
+  },
+  "OBSTRUCT": {
+    "ko": "상대의 공격을 전혀 받지 않는다. 연속으로 쓰면 실패하기 쉽다. 접촉한 상대의 방어를 크게 떨어뜨린다.",
+    "en": "This move enables the user to protect itself from all attacks. Its chance of failing rises if it is used in succession. Direct contact harshly lowers the attacker’s Defense stat."
+  },
+  "OCTAZOOKA": {
+    "ko": "상대의 얼굴 등에 먹물을 내뿜어 공격한다. 명중률을 떨어뜨릴 때가 있다.",
+    "en": "The user attacks by spraying ink in the target’s face or eyes. This may also lower the target’s accuracy."
+  },
+  "OMINOUS_WIND": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "ORIGIN_PULSE": {
+    "ko": "파랗게 빛나는 무수한 광선으로 상대를 공격한다.",
+    "en": "The user attacks opposing Pokémon with countless beams of light that glow a deep and brilliant blue."
+  },
+  "OUTRAGE": {
+    "ko": "2-3턴 동안 마구 난동 부려서 공격한다. 난동 부린 뒤에는 혼란에 빠진다.",
+    "en": "The user rampages and attacks for two to three turns. The user then becomes confused."
+  },
+  "OVERHEAT": {
+    "ko": "풀 파워로 상대를 공격한다. 쓰면 반동으로 자신의 특수공격이 크게 떨어진다.",
+    "en": "The user attacks the target with all its might. The recoil from this move harshly lowers the user's Sp. Atk stat."
+  },
+  "PARABOLIC_CHARGE": {
+    "ko": "주위에 있는 모든 포켓몬에게 데미지를 준다. 준 데미지의 절반을 자신이 회복한다.",
+    "en": "The user attacks everything around it. The user's HP is restored by half the damage taken by those hit."
+  },
+  "PAYBACK": {
+    "ko": "모아서 공격한다. 상대보다 나중에 공격할 수 있으면 기술의 위력은 2배가 된다.",
+    "en": "The user stores power, then attacks. This move's power is doubled if the user moves after the target."
+  },
+  "PECK": {
+    "ko": "날카롭고 뾰족한 부리나 뿔로 상대를 쪼아서 공격한다.",
+    "en": "The target is jabbed with a sharply pointed beak or horn to inflict damage."
+  },
+  "PETAL_BLIZZARD": {
+    "ko": "세찬 꽃보라를 일으켜서 주위에 있는 포켓몬을 공격하여 데미지를 준다.",
+    "en": "The user stirs up a violent petal blizzard and damages everything around it."
+  },
+  "PLASMA_FISTS": {
+    "ko": "전기를 두른 주먹으로 공격한다. 노말타입 기술을 전기타입으로 바꿔버린다.",
+    "en": "The user attacks with electrically charged fists. This move changes Normal-type moves to Electric-type moves."
+  },
+  "PLAY_ROUGH": {
+    "ko": "상대에게 치근거리며 공격한다. 상대의 공격을 떨어뜨릴 때가 있다.",
+    "en": "The user attacks by playing rough with the target. This may also lower the target's Attack stat."
+  },
+  "POISON_FANG": {
+    "ko": "독이 있는 이빨로 상대를 물어서 공격한다. 맹독을 주입할 때가 있다.",
+    "en": "The user bites the target with toxic fangs. This may also leave the target badly poisoned."
+  },
+  "POISON_JAB": {
+    "ko": "독에 물든 촉수나 팔로 상대를 꿰찌른다. 독 상태로 만들 때가 있다.",
+    "en": "The target is stabbed with a tentacle, an arm, or the like steeped in poison. This may also poison the target."
+  },
+  "POISON_STING": {
+    "ko": "독이 있는 침을 상대에게 꿰찔러서 공격한다. 독 상태로 만들 때가 있다.",
+    "en": "The user stabs the target with a poisonous stinger to inflict damage. This may also poison the target."
+  },
+  "POLTERGEIST": {
+    "ko": "상대의 지닌 물건을 조종해서 공격한다. 상대가 도구를 지니고 있지 않으면 실패한다.",
+    "en": "The user attacks by controlling the target's item. This move fails if the target isn't holding an item."
+  },
+  "POUND": {
+    "ko": "긴 꼬리나 손 등을 사용하여 상대를 때려서 공격한다.",
+    "en": "The target is physically pounded with a long tail, a foreleg, or the like."
+  },
+  "POWDER_SNOW": {
+    "ko": "차가운 가랑눈을 상대에게 내뿜어 공격한다. 얼음 상태로 만들 때가 있다.",
+    "en": "The user attacks with a chilling gust of powdery snow. This may also leave opposing Pokémon frozen."
+  },
+  "POWER_GEM": {
+    "ko": "보석처럼 반짝이는 빛을 발사하여 상대를 공격한다.",
+    "en": "The user attacks with a ray of light that sparkles as if it were made of gemstones."
+  },
+  "POWER_UP_PUNCH": {
+    "ko": "반복하여 때리면 점점 주먹이 단단해진다. 상대를 때리면 공격이 오른다.",
+    "en": "Striking opponents over and over makes the user’s fists harder. Hitting a target raises the Attack stat."
+  },
+  "POWER_WHIP": {
+    "ko": "덩굴이나 촉수를 세차게 흔들어 상대를 힘껏 쳐서 공격한다.",
+    "en": "The user violently whirls its vines, tentacles, or the like to lash the target."
+  },
+  "PRECIPICE_BLADES": {
+    "ko": "대지의 힘을 칼날로 바꿔 상대를 공격한다.",
+    "en": "The user attacks opposing Pokémon by manifesting the power of the land in fearsome blades of stone."
+  },
+  "PRESENT": {
+    "ko": "덫을 설치한 상자를 상대에게 건네어 공격한다. HP가 회복돼버릴 때도 있다.",
+    "en": "The user attacks by giving the target a gift with a hidden trap. The gift restores HP sometimes, however."
+  },
+  "PSYBEAM": {
+    "ko": "이상한 광선을 상대에게 발사하여 공격한다. 혼란시킬 때가 있다.",
+    "en": "The target is attacked with a peculiar ray. This may also confuse the target."
+  },
+  "PSYCHIC": {
+    "ko": "강한 염동력을 상대에게 보내어 공격한다. 상대의 특수방어를 떨어뜨릴 때가 있다.",
+    "en": "The target is hit with a strong telekinetic force to inflict damage. This may also lower the target’s Sp. Def stat."
+  },
+  "PSYCHIC_FANGS": {
+    "ko": "사이코 파워로 물어서 상대를 공격한다. 빛의장막이나 리플렉터도 파괴할 수 있다.",
+    "en": "The user attacks by biting the target with its psychic capabilities. This move can also break barriers, such as Light Screen and Reflect."
+  },
+  "PSYCHO_BOOST": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can't be used. It's recommended that this move is forgotten. Once forgotten, this move can't be remembered."
+  },
+  "PSYCHO_CUT": {
+    "ko": "실체화시킨 마음의 칼날로 상대를 베어 가른다. 급소에 맞기 쉽다.",
+    "en": "The user tears at the target with blades formed by psychic power. This move has a heightened chance of landing a critical hit."
+  },
+  "PSYSHOCK": {
+    "ko": "이상한 염력파를 실체화하여 상대를 공격한다. 물리적인 데미지를 준다.",
+    "en": "The user materializes an odd psychic wave to attack the target. This move deals physical damage."
+  },
+  "PSYSTRIKE": {
+    "ko": "이상한 염력파를 실체화하여 상대를 공격한다. 물리적인 데미지를 준다.",
+    "en": "The user materializes an odd psychic wave to attack the target. This move deals physical damage."
+  },
+  "PSYWAVE": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "PYRO_BALL": {
+    "ko": "작은 돌을 태운 불꽃의 공으로 상대를 공격한다. 화상 상태로 만들 때가 있다.",
+    "en": "The user attacks by igniting a small stone and launching it as a fiery ball at the target. This may also leave the target with a burn."
+  },
+  "QUICK_ATTACK": {
+    "ko": "눈에 보이지 않는 굉장한 속도로 상대에게 돌진한다. 반드시 선제공격할 수 있다.",
+    "en": "The user lunges at the target to inflict damage, moving at blinding speed. This move always goes first."
+  },
+  "RAGE_FIST": {
+    "ko": "",
+    "en": "The user converts its rage into energy to attack. The more times the user has been hit by attacks, the greater the move's power."
+  },
+  "RAZOR_LEAF": {
+    "ko": "잎사귀를 날려 상대를 베어 공격한다. 급소에 맞기 쉽다.",
+    "en": "Sharp-edged leaves are launched to slash at opposing Pokémon. This move has a heightened chance of landing a critical hit."
+  },
+  "RAZOR_SHELL": {
+    "ko": "날카로운 조개껍질로 베어 공격한다. 상대의 방어를 떨어뜨릴 때가 있다.",
+    "en": "The user cuts the target with sharp shells to inflict damage. This may also lower the target's Defense stat."
+  },
+  "REST": {
+    "ko": "2턴 동안 계속 잠잔다. 자신의 HP와 상태 이상을 모두 회복한다.",
+    "en": "The user goes to sleep for two turns. This fully restores the user's HP and cures any status conditions."
+  },
+  "RETURN": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "ROAR_OF_TIME": {
+    "ko": "시간이 뒤틀릴 정도의 힘을 사용해서 상대를 공격한다. 다음 턴은 움직일 수 없다.",
+    "en": "The user blasts the target with power that distorts even time. The user can't move on the next turn."
+  },
+  "ROCK_BLAST": {
+    "ko": "단단한 암석을 상대에게 발사하여 공격한다. 2-5회 동안 연속으로 쓴다.",
+    "en": "The user attacks by hurling hard rocks at the target. This move hits two to five times in a row."
+  },
+  "ROCK_SLIDE": {
+    "ko": "큰 바위를 세차게 부딪쳐서 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "Large boulders are hurled at opposing Pokémon to inflict damage. This may also make the opposing Pokémon flinch."
+  },
+  "ROCK_SMASH": {
+    "ko": "펀치로 공격한다. 상대의 방어를 떨어뜨릴 때가 있다.",
+    "en": "The user attacks with a punch. This may also lower the target's Defense stat."
+  },
+  "ROCK_THROW": {
+    "ko": "작은 바위를 들어올려 상대에게 내던져서 공격한다.",
+    "en": "The user picks up and throws a small rock at the target to inflict damage."
+  },
+  "ROCK_TOMB": {
+    "ko": "암석을 내던져서 공격한다. 상대의 움직임을 봉인함으로써 스피드를 떨어뜨린다.",
+    "en": "The user hurls boulders at the target to inflict damage. This also lowers the target's Speed stat by cutting off its movement."
+  },
+  "ROCK_WRECKER": {
+    "ko": "거대한 바위를 상대에게 발사하여 공격한다. 다음 턴은 움직일 수 없게 된다.",
+    "en": "The user launches a huge boulder at the target to attack. The user can't move on the next turn."
+  },
+  "ROLLOUT": {
+    "ko": "5턴 동안 구르기를 반복하여 공격한다. 기술이 맞을 때마다 위력이 올라간다.",
+    "en": "The user continually rolls into the target over five turns. This attack becomes more powerful each time it hits."
+  },
+  "SACRED_FIRE": {
+    "ko": "신비한 불꽃으로 상대를 태워서 공격한다. 화상 상태로 만들 때가 있다.",
+    "en": "The target is razed with a mystical fire of great intensity. This may also leave the target with a burn."
+  },
+  "SACRED_SWORD": {
+    "ko": "긴 뿔로 베어 공격한다. 상대의 능력 변화에 관계없이 데미지를 준다.",
+    "en": "The user attacks by slicing with a sword. The target's stat changes don't affect the damage inflicted by this move."
+  },
+  "SANDSEAR_STORM": {
+    "ko": "",
+    "en": "The user attacks by wrapping opposing Pokémon in fierce winds and searingly hot sand. This may also leave them with a burn."
+  },
+  "SAND_ATTACK": {
+    "ko": "상대의 얼굴에 모래를 뿌려서 명중률을 떨어뜨린다.",
+    "en": "Sand is hurled in the target's face, lowering the target's accuracy."
+  },
+  "SAND_TOMB": {
+    "ko": "세차게 불어대는 모래바람 속에 4-5턴 동안 상대를 가두어 공격한다.",
+    "en": "The user traps the target inside a harshly raging sandstorm that inflicts damage for four to five turns."
+  },
+  "SCALD": {
+    "ko": "뜨겁게 끓어오르는 물을 상대에게 발사해서 공격한다. 화상 상태로 만들 때가 있다.",
+    "en": "The user attacks by shooting boiling hot water at the target. This may also leave the target with a burn."
+  },
+  "SCORCHING_SANDS": {
+    "ko": "뜨겁게 달궈진 모래를 상대에게 부딪쳐서 공격한다. 화상 상태로 만들 때가 있다.",
+    "en": "The user throws scorching sand at the target to attack. This may also leave the target with a burn."
+  },
+  "SCRATCH": {
+    "ko": "단단하고 뾰족한 날카로운 손톱으로 상대를 할퀴어서 공격한다.",
+    "en": "Hard, pointed, sharp claws rake the target to inflict damage."
+  },
+  "SECRET_SWORD": {
+    "ko": "긴 뿔로 베어 공격한다. 뿔이 머금은 이상한 힘은 물리적인 데미지를 준다.",
+    "en": "The user cuts with its long horn. The odd power contained in the horn deals physical damage to the target."
+  },
+  "SEED_BOMB": {
+    "ko": "단단한 껍질을 가지고 있는 큰 씨앗을 위에서 힘껏 내던져 상대를 공격한다.",
+    "en": "The user attacks by slamming a barrage of hard-shelled seeds down on the target from above."
+  },
+  "SEED_FLARE": {
+    "ko": "몸속에서 충격파를 발생시킨다. 상대의 특수방어를 크게 떨어뜨릴 때가 있다.",
+    "en": "The user emits a shock wave from its body to attack its target. This may also harshly lower the target's Sp. Def stat."
+  },
+  "SHADOW_BALL": {
+    "ko": "까만 그림자의 덩어리를 내던져서 공격한다. 상대의 특수방어를 떨어뜨릴 때가 있다.",
+    "en": "The user attacks by hurling a shadowy blob at the target. This may also lower the target’s Sp. Def stat."
+  },
+  "SHADOW_BONE": {
+    "ko": "영혼이 머물고 있는 뼈로 상대를 세게 때려서 공격한다. 상대의 방어를 떨어뜨릴 때가 있다.",
+    "en": "The user attacks by beating the target with a bone that contains a spirit. This may also lower the target’s Defense stat."
+  },
+  "SHADOW_CLAW": {
+    "ko": "그림자로 만든 날카로운 발톱으로 상대를 베어 가른다. 급소에 맞기 쉽다.",
+    "en": "The user attacks by slashing the target with a sharp claw made from shadows. This move has a heightened chance of landing a critical hit."
+  },
+  "SHADOW_FORCE": {
+    "ko": "1턴째에 모습을 감춰 2턴째에 상대를 공격한다. 방어하고 있어도 공격은 맞는다.",
+    "en": "The user disappears on the first turn, then attacks on the next turn. This move hits even if the target protects itself."
+  },
+  "SHADOW_PUNCH": {
+    "ko": "그림자에 섞여 펀치를 날린다. 공격은 반드시 명중한다.",
+    "en": "The user throws a punch from the shadows. This attack never misses."
+  },
+  "SHADOW_SNEAK": {
+    "ko": "그림자를 늘려 상대의 배후에서 공격한다. 반드시 선제공격할 수 있다.",
+    "en": "The user extends its shadow and attacks the target from behind. This move always goes first."
+  },
+  "SIGNAL_BEAM": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "SILVER_WIND": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "SKULL_BASH": {
+    "ko": "1턴째에 머리를 움츠려 방어를 올린다. 2턴째에 상대를 공격한다.",
+    "en": "The user tucks in its head to raise its Defense stat on the first turn, then rams the target on the next turn."
+  },
+  "SKY_ATTACK": {
+    "ko": "2턴째에 상대를 공격한다. 가끔 풀죽게 만든다. 급소에도 맞기 쉽다.",
+    "en": "The user attacks the turn after using this move. This move has a heightened chance of landing a critical hit and may also make the target flinch."
+  },
+  "SLUDGE": {
+    "ko": "더러운 오물을 상대에게 내던져서 공격한다. 독 상태로 만들 때가 있다.",
+    "en": "The user hurls unsanitary sludge at the target to inflict damage. This may also poison the target."
+  },
+  "SLUDGE_BOMB": {
+    "ko": "더러운 오물을 상대에게 내던져서 공격한다. 독 상태로 만들 때가 있다.",
+    "en": "The user hurls unsanitary sludge at the target to inflict damage. This may also poison the target."
+  },
+  "SLUDGE_WAVE": {
+    "ko": "오물 파도로 자신의 주위에 있는 포켓몬을 공격한다. 독 상태로 만들 때가 있다.",
+    "en": "The user strikes everything around it by swamping the area with a giant sludge wave. This may also poison those it hits."
+  },
+  "SMACK_DOWN": {
+    "ko": "돌이나 구슬을 던져서 날고 있는 상대를 공격한다. 맞은 상대는 땅에 떨어진다.",
+    "en": "The user throws a stone or similar projectile to attack the target. If the target is in the air, it will be knocked down to the ground."
+  },
+  "SNARL": {
+    "ko": "호되게 호통을 쳐서 상대의 특수공격을 떨어뜨린다.",
+    "en": "The user yells as if it's ranting about something, which lowers the Sp. Atk stats of opposing Pokémon."
+  },
+  "SOLAR_BEAM": {
+    "ko": "1턴째에 빛을 가득 모아 2턴째에 빛의 다발을 발사하여 공격한다.",
+    "en": "The user gathers light on the first turn, then blasts a bundled beam on the next turn."
+  },
+  "SPACIAL_REND": {
+    "ko": "주위의 공간과 더불어 상대를 찢어서 데미지를 준다. 급소에 맞기 쉽다.",
+    "en": "The user tears the target along with the space around it. This move has a heightened chance of landing a critical hit."
+  },
+  "SPARK": {
+    "ko": "전기를 둘러 상대에게 돌진하여 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "The user attacks the target with an electrically charged tackle. This may also leave the target with paralysis."
+  },
+  "SPARKLING_ARIA": {
+    "ko": "노래 부르는 것으로 많은 벌룬을 방출한다. 기술에 맞으면 화상이 낫는다.",
+    "en": "The user bursts into song, emitting many bubbles. Any Pokémon suffering from a burn will be cured by the touch of these bubbles."
+  },
+  "SPIRIT_SHACKLE": {
+    "ko": "공격과 동시에 상대의 그림자를 꿰매 도망칠 수 없게 한다.",
+    "en": "The user attacks while simultaneously stitching the target's shadow to the ground to prevent the target from fleeing."
+  },
+  "SPLASH": {
+    "ko": "공격도 하지 않고 팔딱팔딱 튈 뿐 아무 일도 일어나지 않는다...",
+    "en": "The user just flops and splashes around to no effect at all..."
+  },
+  "SPRINGTIDE_STORM": {
+    "ko": "",
+    "en": ""
+  },
+  "STEEL_WING": {
+    "ko": "단단한 날개를 상대에게 부딪쳐서 공격한다. 자신의 방어가 올라갈 때가 있다.",
+    "en": "The target is hit with wings of steel. This may also boost the user's Defense stat."
+  },
+  "STOMP": {
+    "ko": "큰 발로 상대를 짓밟아서 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user attacks by stomping on the target with a big foot. This may also make the target flinch."
+  },
+  "STONE_EDGE": {
+    "ko": "뾰족한 바위를 상대에게 꿰찔러서 공격한다. 급소에 맞기 쉽다.",
+    "en": "The user stabs the target with sharpened stones. This move has a heightened chance of landing a critical hit."
+  },
+  "STRUGGLE": {
+    "ko": "자신의 PP가 떨어지면 발버둥 쳐 상대를 공격한다. 자신도 조금 데미지를 입는다.",
+    "en": "This attack is used in desperation only if the user has no PP. It also damages the user a little."
+  },
+  "STRUGGLE_BUG": {
+    "ko": "저항해서 상대를 공격한다. 상대의 특수공격을 떨어뜨린다.",
+    "en": "The user attacks by struggling against opposing Pokémon. This also lowers their Sp. Atk stats."
+  },
+  "SUBMISSION": {
+    "ko": "땅에 자신과 함께 상대를 내던져 공격한다. 자신도 조금 데미지를 입는다.",
+    "en": "The user grabs the target and recklessly dives for the ground. This also damages the user a little."
+  },
+  "SUCKER_PUNCH": {
+    "ko": "상대보다 먼저 공격할 수 있다. 상대가 쓴 기술이 공격기술이 아니면 실패한다.",
+    "en": "This move enables the user to attack first. This move fails if the target is not readying an attack."
+  },
+  "SUNSTEEL_STRIKE": {
+    "ko": "유성 같은 기세로 돌진한다. 상대의 특성을 무시하고 공격할 수 있다.",
+    "en": "The user slams into the target with the force of a meteor. This move can be used on the target regardless of its Ability."
+  },
+  "SUPER_POWER": {
+    "ko": "엄청난 힘을 발휘하여 상대를 공격한다. 자신의 공격과 방어가 떨어진다.",
+    "en": "The user attacks the target with great power. This also lowers the user's Attack and Defense stats."
+  },
+  "SURF": {
+    "ko": "큰 파도로 자신의 주위에 있는 포켓몬을 공격한다.",
+    "en": "The user attacks everything around it by swamping its surroundings with a giant wave."
+  },
+  "SWIFT": {
+    "ko": "별 모양의 빛을 발사해서 상대를 공격한다. 공격은 반드시 명중한다.",
+    "en": "Star-shaped rays are shot at opposing Pokémon. This attack never misses."
+  },
+  "SYNCHRONOISE": {
+    "ko": "사용할 수 없는 기술입니다. 다시 배우게 할 수 없지만 기술을 잊게 하는 것을 권장합니다.",
+    "en": "This move can’t be used. It’s recommended that this move is forgotten. Once forgotten, this move can’t be remembered."
+  },
+  "TACKLE": {
+    "ko": "상대를 향해서 몸 전체를 부딪쳐가며 공격한다.",
+    "en": "A physical attack in which the user charges and slams into the target with its whole body."
+  },
+  "TAKE_DOWN": {
+    "ko": "굉장한 기세로 상대에게 부딪쳐 공격한다. 자신도 조금 데미지를 입는다.",
+    "en": "A reckless full-body charge attack for slamming into the target. This also damages the user a little."
+  },
+  "TECHNO_BLAST_BURN": {
+    "ko": "",
+    "en": ""
+  },
+  "TECHNO_BLAST_CHILL": {
+    "ko": "",
+    "en": ""
+  },
+  "TECHNO_BLAST_DOUSE": {
+    "ko": "",
+    "en": ""
+  },
+  "TECHNO_BLAST_NORMAL": {
+    "ko": "",
+    "en": ""
+  },
+  "TECHNO_BLAST_SHOCK": {
+    "ko": "",
+    "en": ""
+  },
+  "THUNDER": {
+    "ko": "강한 번개를 상대에게 떨어뜨려 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "A wicked thunderbolt is dropped on the target to inflict damage. This may also leave the target with paralysis."
+  },
+  "THUNDERBOLT": {
+    "ko": "강한 전격을 상대에게 날려서 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "The user attacks the target with a strong electric blast. This may also leave the target with paralysis."
+  },
+  "THUNDER_CAGE": {
+    "ko": "전기가 흐르는 우리 안에 4-5턴 동안 상대를 가두어 공격한다.",
+    "en": "The user traps the target inside a cage of sparking electricity that inflicts damage for four to five turns."
+  },
+  "THUNDER_FANG": {
+    "ko": "전기를 모은 이빨로 문다. 상대를 풀죽게 하거나 마비 상태로 만들 때가 있다.",
+    "en": "The user bites with electrified fangs. This may also make the target flinch or leave it with paralysis."
+  },
+  "THUNDER_PUNCH": {
+    "ko": "전격을 담은 펀치로 상대를 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "The target is attacked with an electrified punch. This may also leave the target with paralysis."
+  },
+  "THUNDER_SHOCK": {
+    "ko": "전기 자극을 상대에게 날려서 공격한다. 마비 상태로 만들 때가 있다.",
+    "en": "The user attacks the target with a jolt of electricity. This may also leave the target with paralysis."
+  },
+  "TORCH_SONG": {
+    "ko": "",
+    "en": "The user blows out raging flames as if singing a song, scorching the target. This also boosts the user's Sp. Atk stat."
+  },
+  "TRAILBLAZE": {
+    "ko": "",
+    "en": "The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat."
+  },
+  "TRANSFORM": {
+    "ko": "상대 포켓몬으로 변신하여 상대와 완전히 똑같은 기술을 사용할 수 있다.",
+    "en": "The user transforms into a copy of the target, right down to having the same move set."
+  },
+  "TRIPLE_AXEL": {
+    "ko": "3회 연속으로 킥을 날려 공격한다. 기술이 맞을 때마다 위력이 올라간다.",
+    "en": "A consecutive three-kick attack that becomes more powerful with each successful hit."
+  },
+  "TRI_ATTACK": {
+    "ko": "3개의 광선으로 공격한다. 마비, 화상 또는 얼음 상태 중 어느 하나로 만들 때가 있다.",
+    "en": "The user strikes with a simultaneous three-beam attack. This may also burn, freeze, or paralyze the target."
+  },
+  "TWISTER": {
+    "ko": "회오리를 일으켜 상대를 끌어들여 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user whips up a vicious tornado to tear at opposing Pokémon. This may also make them flinch."
+  },
+  "UPPER_HAND": {
+    "ko": "",
+    "en": "The user reacts to the target's movement and strikes with the heel of its palm, making the target flinch. This move fails if the target is not readying a priority move."
+  },
+  "VICE_GRIP": {
+    "ko": "",
+    "en": ""
+  },
+  "VINE_WHIP": {
+    "ko": "채찍처럼 휘어지는 가늘고 긴 덩굴로 상대를 힘껏 쳐서 공격한다.",
+    "en": "The target is struck with slender, whiplike vines to inflict damage."
+  },
+  "VOLT_SWITCH": {
+    "ko": "공격한 뒤 굉장한 스피드로 돌아와서 교대 포켓몬과 교체한다.",
+    "en": "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
+  },
+  "VOLT_TACKLE": {
+    "ko": "전기를 한데 모아 돌진한다. 자신도 상당한 데미지를 입는다. 마비 상태로 만들 때가 있다.",
+    "en": "The user electrifies itself and charges the target. This also damages the user quite a lot. This attack may leave the target with paralysis."
+  },
+  "V_CREATE": {
+    "ko": "작열하는 불꽃을 이마에서 발생시켜 이판사판으로 몸통박치기한다. 방어, 특수방어, 스피드가 떨어진다.",
+    "en": "With a hot flame on its forehead, the user hurls itself at its target. This lowers the user’s Defense, Sp. Def, and Speed stats."
+  },
+  "WATERFALL": {
+    "ko": "굉장한 기세로 상대에게 돌진한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user charges at the target and may make it flinch."
+  },
+  "WATER_GUN": {
+    "ko": "물을 기세 좋게 상대에게 발사하여 공격한다.",
+    "en": "The target is blasted with a forceful shot of water."
+  },
+  "WATER_GUN_FAST_BLASTOISE": {
+    "ko": "",
+    "en": ""
+  },
+  "WATER_PULSE": {
+    "ko": "물의 진동을 상대에게 가하여 공격한다. 상대를 혼란시킬 때가 있다.",
+    "en": "The user attacks the target with a pulsing blast of water. This may also confuse the target."
+  },
+  "WATER_SHURIKEN": {
+    "ko": "점액으로 만든 수리검을 2-5회 동안 연속으로 던진다. 반드시 선제공격할 수 있다.",
+    "en": "The user hits the target with throwing stars two to five times in a row. This move always goes first."
+  },
+  "WEATHER_BALL_FIRE": {
+    "ko": "",
+    "en": ""
+  },
+  "WEATHER_BALL_ICE": {
+    "ko": "",
+    "en": ""
+  },
+  "WEATHER_BALL_NORMAL": {
+    "ko": "",
+    "en": ""
+  },
+  "WEATHER_BALL_ROCK": {
+    "ko": "",
+    "en": ""
+  },
+  "WEATHER_BALL_WATER": {
+    "ko": "",
+    "en": ""
+  },
+  "WILDBOLT_STORM": {
+    "ko": "",
+    "en": "The user summons a thunderous tempest and savagely attacks with lightning and wind. This may also leave opposing Pokémon with paralysis."
+  },
+  "WILD_CHARGE": {
+    "ko": "전기를 두르고 상대에게 부딪쳐 공격한다. 자신도 조금 데미지를 입는다.",
+    "en": "The user shrouds itself in electricity and smashes into its target. This also damages the user a little."
+  },
+  "WING_ATTACK": {
+    "ko": "크게 펼친 훌륭한 날개를 상대에게 부딪쳐서 공격한다.",
+    "en": "The target is struck with large, imposing wings spread wide to inflict damage."
+  },
+  "WRAP": {
+    "ko": "긴 몸이나 덩굴 등을 사용해 4-5턴 동안 상대를 휘감아 공격한다.",
+    "en": "A long body, vines, or the like are used to wrap and squeeze the target for four to five turns."
+  },
+  "X_SCISSOR": {
+    "ko": "낫이나 발톱을 가위처럼 교차시키면서 상대를 베어 가른다.",
+    "en": "The user slashes at the target by crossing its scythes, claws, or the like as if they were a pair of scissors."
+  },
+  "YAWN": {
+    "ko": "큰 하품으로 졸음을 유도한다. 다음 턴에 상대를 잠듦 상태로 만든다.",
+    "en": "The user lets loose a huge yawn that lulls the target into falling asleep on the next turn."
+  },
+  "ZAP_CANNON": {
+    "ko": "대포처럼 전기를 발사해서 공격한다. 상대를 마비 상태로 만든다.",
+    "en": "The user attacks by firing an electric blast like a cannon. This also leaves the target with paralysis."
+  },
+  "ZEN_HEADBUTT": {
+    "ko": "사념의 힘을 이마에 모아서 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user focuses its willpower to its head and attacks the target. This may also make the target flinch."
+  },
+  "AEGISLASH_CHARGE_AIR_SLASH": {
+    "ko": "하늘까지 베어 가르는 공기의 칼날로 공격한다. 상대를 풀죽게 만들 때가 있다.",
+    "en": "The user attacks with a blade of air that slices even the sky. This may also make the target flinch."
+  },
+  "AEGISLASH_CHARGE_PSYCHO_CUT": {
+    "ko": "실체화시킨 마음의 칼날로 상대를 베어 가른다. 급소에 맞기 쉽다.",
+    "en": "The user tears at the target with blades formed by psychic power. This move has a heightened chance of landing a critical hit."
+  }
+}

@@ -930,10 +930,12 @@ _go_moves_en:       dict | None = None   # en_name → full move dict (for raid 
 _evo_extras:        dict | None = None   # dex_str → GO-specific evolution conditions
 _type_effectiveness: dict | None = None  # type → {double_damage_from, half_damage_from, no_damage_from}
 _flavor_texts:      dict | None = None  # dex_str → {ko, en}
+_move_descs:        dict | None = None  # move_id → {ko, en}
+_go_moves_id:       dict | None = None  # move_id → full move dict
 
 
 def _ensure_raw() -> bool:
-    global _names_raw, _gm_raw, _pve_moves, _move_en2ko, _move_type_map, _go_moves_en, _evo_extras, _type_effectiveness, _flavor_texts
+    global _names_raw, _gm_raw, _pve_moves, _move_en2ko, _move_type_map, _go_moves_en, _evo_extras, _type_effectiveness, _flavor_texts, _move_descs, _go_moves_id
     if _names_raw is not None:
         return True
     p1 = Path(".raw/go_all_names.json")
@@ -950,14 +952,17 @@ def _ensure_raw() -> bool:
         _move_en2ko   = {v["en_name"]: v["ko_name"] for v in go_moves.values() if v.get("en_name") and v.get("ko_name")}
         _move_type_map = {v["en_name"]: (v.get("type", ""), v.get("type_ko", "")) for v in go_moves.values() if v.get("en_name")}
         _go_moves_en  = {v["en_name"]: v for v in go_moves.values() if v.get("en_name")}
+        _go_moves_id  = {k: v for k, v in go_moves.items()}
     else:
-        _move_en2ko = {}; _move_type_map = {}; _go_moves_en = {}
+        _move_en2ko = {}; _move_type_map = {}; _go_moves_en = {}; _go_moves_id = {}
     p5 = Path(".raw/go_evo_extras.json")
     _evo_extras = json.loads(p5.read_text(encoding="utf-8")) if p5.exists() else {}
     p6 = Path(".raw/type_effectiveness.json")
     _type_effectiveness = json.loads(p6.read_text(encoding="utf-8")) if p6.exists() else {}
     p7 = Path(".raw/flavor_texts.json")
     _flavor_texts = json.loads(p7.read_text(encoding="utf-8")) if p7.exists() else {}
+    p8 = Path(".raw/move_descriptions.json")
+    _move_descs = json.loads(p8.read_text(encoding="utf-8")) if p8.exists() else {}
     return True
 
 
@@ -994,6 +999,28 @@ def _make_move_info(mid: str) -> dict:
         "id": mid, "ko": ko, "type": type_en, "type_ko": type_ko,
         "dps": round(pve["dps_pve"], 2) if pve.get("dps_pve") is not None else None,
         "eps": round(pve["eps_pve"], 2) if pve.get("is_fast") and pve.get("eps_pve") is not None else None,
+    }
+
+
+@app.get("/api/move-desc/{move_id}")
+async def get_move_desc(move_id: str):
+    if not _ensure_raw():
+        return {}
+    mid = move_id.upper()
+    desc = (_move_descs or {}).get(mid, {})
+    gm   = (_go_moves_id or {}).get(mid, {})
+    return {
+        "ko":        gm.get("ko_name", ""),
+        "en":        gm.get("en_name", ""),
+        "type":      gm.get("type", ""),
+        "type_ko":   gm.get("type_ko", ""),
+        "category":  gm.get("category", ""),
+        "power":     gm.get("power"),
+        "energy_gain":  gm.get("energy_gain"),
+        "energy_cost":  gm.get("energy_cost"),
+        "buff_desc": gm.get("buff_desc", ""),
+        "desc_ko":   desc.get("ko", ""),
+        "desc_en":   desc.get("en", ""),
     }
 
 

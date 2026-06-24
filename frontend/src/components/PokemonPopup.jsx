@@ -2,16 +2,70 @@ import { useState, useEffect, useRef } from 'react';
 import { TYPE_BG, TYPE_KO, WEATHER_BOOST } from '../utils/constants';
 import { esc, toSlug, weatherBoostTypes } from '../utils/helpers';
 
-function MoveChip({ move, isElite }) {
+function MoveChip({ move, isElite, onClick }) {
   const dot = move.type
     ? <span className="move-type-dot" style={{ background: TYPE_BG[move.type] || '#71727a' }} />
     : null;
   const dps  = move.dps  != null ? <span className="move-dps">{move.dps}</span>  : null;
   const eps  = move.eps  != null ? <span className="move-eps">⚡{move.eps}</span> : null;
   return (
-    <span className={`move-chip${isElite ? ' elite' : ''}`}>
+    <span className={`move-chip${isElite ? ' elite' : ''}`} onClick={() => onClick && onClick(move)} style={{ cursor: 'pointer' }}>
       {dot}{move.ko}{isElite ? ' ✦' : ''}{dps}{eps}
     </span>
+  );
+}
+
+function MoveDescPopup({ moveId, onClose }) {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    if (!moveId) return;
+    setData(null);
+    fetch(`/api/move-desc/${moveId}`)
+      .then(r => r.json())
+      .then(setData)
+      .catch(() => setData({}));
+  }, [moveId]);
+
+  if (!moveId) return null;
+
+  const catLabel = data?.category === 'fast' ? '빠른 기술' : data?.category === 'charged' ? '스페셜 기술' : '';
+  const statLine = data?.category === 'fast'
+    ? `위력 ${data?.power ?? '—'} / 에너지 +${data?.energy_gain ?? '—'}`
+    : `위력 ${data?.power ?? '—'} / 에너지 -${data?.energy_cost ?? '—'}`;
+
+  return (
+    <>
+      <div className="move-desc-overlay" onClick={onClose} />
+      <div className="move-desc-popup">
+        <button className="move-desc-close" onClick={onClose}>✕</button>
+        {!data ? (
+          <div className="move-desc-loading">불러오는 중...</div>
+        ) : (
+          <>
+            <div className="move-desc-header">
+              {data.type && (
+                <span className="move-type-badge" style={{ background: TYPE_BG[data.type] || '#71727a' }}>
+                  {data.type_ko || data.type}
+                </span>
+              )}
+              {catLabel && <span className="move-cat-label">{catLabel}</span>}
+            </div>
+            <div className="move-desc-name">{data.ko || moveId}</div>
+            <div className="move-desc-en">{data.en}</div>
+            <div className="move-desc-stat">{statLine}</div>
+            {data.desc_ko ? (
+              <div className="move-desc-text">{data.desc_ko}</div>
+            ) : data.desc_en ? (
+              <div className="move-desc-text" style={{ color: '#64748b' }}>{data.desc_en}</div>
+            ) : (
+              <div className="move-desc-text" style={{ color: '#94a3b8' }}>설명 없음</div>
+            )}
+            {data.buff_desc && <div className="move-desc-buff">{data.buff_desc}</div>}
+          </>
+        )}
+      </div>
+    </>
   );
 }
 
@@ -156,6 +210,7 @@ export default function PokemonPopup({ dex, slug, isShadow, formDex: initFormDex
   const [shiny, setShiny] = useState(false);
   const [formIdx, setFormIdx] = useState(0);
   const [spriteDex, setSpriteDex] = useState(initFormDex || dex);
+  const [selectedMoveId, setSelectedMoveId] = useState(null);
 
   useEffect(() => {
     setLoading(true); setData(null); setShiny(false); setFormIdx(0);
@@ -292,7 +347,7 @@ export default function PokemonPopup({ dex, slug, isShadow, formDex: initFormDex
             <div className="move-section">
               <div className="move-section-title">빠른 기술</div>
               <div className="move-list">
-                {curFast.map(m => <MoveChip key={m.id} move={m} isElite={curEliteFast.includes(m.id)} />)}
+                {curFast.map(m => <MoveChip key={m.id} move={m} isElite={curEliteFast.includes(m.id)} onClick={mv => setSelectedMoveId(mv.id)} />)}
               </div>
             </div>
           )}
@@ -300,10 +355,11 @@ export default function PokemonPopup({ dex, slug, isShadow, formDex: initFormDex
             <div className="move-section">
               <div className="move-section-title">스페셜 기술</div>
               <div className="move-list">
-                {curCharged.map(m => <MoveChip key={m.id} move={m} isElite={curEliteCharged.includes(m.id)} />)}
+                {curCharged.map(m => <MoveChip key={m.id} move={m} isElite={curEliteCharged.includes(m.id)} onClick={mv => setSelectedMoveId(mv.id)} />)}
               </div>
             </div>
           )}
+          <MoveDescPopup moveId={selectedMoveId} onClose={() => setSelectedMoveId(null)} />
 
           <div className="move-section">
             <div className="move-section-title">🏆 PvP 추천 기술셋</div>

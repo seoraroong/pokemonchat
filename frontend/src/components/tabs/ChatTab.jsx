@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { renderMd } from '../../utils/helpers';
 
 const CHIPS = [
@@ -12,6 +12,136 @@ const CHIPS = [
   '이번 주 이벤트',
 ];
 
+const GENS = [1,2,3,4,5,6,7,8,9];
+
+function SoloQuiz({ onExit }) {
+  const [dexList, setDexList] = useState([]);
+  const [filterGen, setFilterGen] = useState(0);
+  const [current, setCurrent] = useState(null);
+  const [revealed, setRevealed] = useState(false);
+  const [score, setScore] = useState(0);
+  const [total, setTotal] = useState(0);
+  const [answer, setAnswer] = useState('');
+  const [result, setResult] = useState(null);
+  const [hints, setHints] = useState([]);
+  const [wrongFlash, setWrongFlash] = useState(false);
+  const inputRef = useRef(null);
+  const dexListRef = useRef([]);
+  const filterGenRef = useRef(0);
+
+  useEffect(() => {
+    fetch('/api/pokedex').then(r => r.json()).then(data => {
+      setDexList(data);
+      dexListRef.current = data;
+      pickNext(data, 0);
+    });
+  }, []);
+
+  const pickNext = useCallback((list, gen) => {
+    const pool = (list ?? dexListRef.current).filter(p => gen === 0 || p.gen === gen);
+    if (!pool.length) return;
+    const pm = pool[Math.floor(Math.random() * pool.length)];
+    setCurrent(pm);
+    setRevealed(false);
+    setAnswer('');
+    setResult(null);
+    setHints([]);
+    setTimeout(() => inputRef.current?.focus(), 80);
+  }, []);
+
+  const changeGen = (gen) => {
+    setFilterGen(gen);
+    filterGenRef.current = gen;
+    pickNext(dexListRef.current, gen);
+  };
+
+  const handleAnswer = (e) => {
+    if (e.key !== 'Enter' || !current || revealed) return;
+    const val = answer.trim().toLowerCase();
+    if (!val) return;
+    const ko = current.ko.toLowerCase();
+    const en = current.en.toLowerCase();
+    if (val === ko || val === en) {
+      setRevealed(true);
+      setScore(s => s + 1);
+      setTotal(t => t + 1);
+      setResult('correct');
+      setTimeout(() => pickNext(null, filterGenRef.current), 1600);
+    } else {
+      setWrongFlash(true);
+      setTimeout(() => setWrongFlash(false), 400);
+      if (hints.length === 0) {
+        setHints([`글자수: ${current.ko.length}자`]);
+      } else if (hints.length === 1) {
+        setHints(h => [...h, `첫 글자: ${current.ko[0]}`]);
+      }
+    }
+  };
+
+  const handleSkip = () => {
+    if (revealed) return;
+    setRevealed(true);
+    setTotal(t => t + 1);
+    setResult('skip');
+    setTimeout(() => pickNext(null, filterGenRef.current), 2000);
+  };
+
+  if (!current) return (
+    <div style={{ textAlign: 'center', padding: '60px 0', color: '#64748b' }}>불러오는 중...</div>
+  );
+
+  const sprUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${current.dex}.png`;
+
+  return (
+    <div id="solo-quiz">
+      <div id="solo-quiz-top">
+        <div id="solo-quiz-gen-row">
+          <button className={`sq-gen-btn${filterGen===0?' active':''}`} onClick={() => changeGen(0)}>전체</button>
+          {GENS.map(g => (
+            <button key={g} className={`sq-gen-btn${filterGen===g?' active':''}`} onClick={() => changeGen(g)}>{g}세대</button>
+          ))}
+        </div>
+        <div id="solo-quiz-score-row">
+          <span id="solo-quiz-score">{score} / {total}</span>
+          <button id="solo-quiz-exit" onClick={onExit}>종료</button>
+        </div>
+      </div>
+
+      <div id="solo-quiz-body">
+        <img
+          className={`solo-quiz-sprite${revealed ? ' revealed' : ''}${wrongFlash ? ' wrong' : ''}`}
+          src={sprUrl}
+          alt="?"
+        />
+        {result === 'correct' && (
+          <div className="sq-result correct">✓ 정답! {current.ko}</div>
+        )}
+        {result === 'skip' && (
+          <div className="sq-result skip">정답: {current.ko}</div>
+        )}
+        {!result && hints.map((h, i) => (
+          <div key={i} className="sq-hint">{h}</div>
+        ))}
+      </div>
+
+      <div id="solo-quiz-input-row">
+        <input
+          ref={inputRef}
+          id="sq-input"
+          type="text"
+          placeholder="포켓몬 이름 입력 후 Enter..."
+          autoComplete="off"
+          value={answer}
+          onChange={e => setAnswer(e.target.value)}
+          onKeyDown={handleAnswer}
+          disabled={revealed}
+        />
+        <button id="sq-skip-btn" onClick={handleSkip} disabled={revealed}>스킵</button>
+      </div>
+    </div>
+  );
+}
+
 function ChatMessage({ role, html, isStreaming }) {
   if (isStreaming) {
     return (
@@ -24,6 +154,7 @@ function ChatMessage({ role, html, isStreaming }) {
 }
 
 export default function ChatTab({ onOpenPokemon }) {
+  const [quizMode, setQuizMode] = useState(false);
   const [messages, setMessages] = useState(() => {
     try {
       const saved = localStorage.getItem('pm-chat');
@@ -111,6 +242,14 @@ export default function ChatTab({ onOpenPokemon }) {
     }
   };
 
+  if (quizMode) {
+    return (
+      <div className="view" id="view-chat">
+        <SoloQuiz onExit={() => setQuizMode(false)} />
+      </div>
+    );
+  }
+
   const hasMessages = messages.length > 0;
 
   return (
@@ -124,6 +263,7 @@ export default function ChatTab({ onOpenPokemon }) {
               {CHIPS.map(c => (
                 <div key={c} className="chip" onClick={() => sendMessage(c)}>{c}</div>
               ))}
+              <div className="chip quiz-chip" onClick={() => setQuizMode(true)}>🖼️ 실루엣 퀴즈</div>
             </div>
           </div>
         )}
@@ -135,6 +275,9 @@ export default function ChatTab({ onOpenPokemon }) {
         ))}
       </div>
       <div id="input-bar">
+        {hasMessages && (
+          <button id="clear-btn" onClick={clearChat} title="대화 초기화">↺</button>
+        )}
         <input
           id="msg-input"
           type="text"
