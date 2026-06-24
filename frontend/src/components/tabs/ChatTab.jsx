@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { renderMd } from '../../utils/helpers';
+import { TYPE_KO } from '../../utils/constants';
 
 const CHIPS = [
   '지금 레이드 보스 뭐야?',
@@ -12,155 +13,64 @@ const CHIPS = [
   '이번 주 이벤트',
 ];
 
-const GENS = [1,2,3,4,5,6,7,8,9];
+const QUIZ_HINTS = (pm) => [
+  `타입: ${TYPE_KO[pm.t1] || pm.t1}${pm.t2 ? ' / ' + (TYPE_KO[pm.t2] || pm.t2) : ''}`,
+  `세대: ${pm.gen}세대`,
+  `이름: ${pm.ko.length}글자`,
+];
 
-function SoloQuiz({ onExit }) {
-  const [dexList, setDexList] = useState([]);
-  const [filterGen, setFilterGen] = useState(0);
-  const [current, setCurrent] = useState(null);
-  const [revealed, setRevealed] = useState(false);
-  const [score, setScore] = useState(0);
-  const [total, setTotal] = useState(0);
-  const [answer, setAnswer] = useState('');
-  const [result, setResult] = useState(null);
-  const [hints, setHints] = useState([]);
-  const [wrongFlash, setWrongFlash] = useState(false);
-  const inputRef = useRef(null);
-  const dexListRef = useRef([]);
-  const filterGenRef = useRef(0);
-
-  useEffect(() => {
-    fetch('/api/pokedex').then(r => r.json()).then(data => {
-      setDexList(data);
-      dexListRef.current = data;
-      pickNext(data, 0);
-    });
-  }, []);
-
-  const pickNext = useCallback((list, gen) => {
-    const pool = (list ?? dexListRef.current).filter(p => gen === 0 || p.gen === gen);
-    if (!pool.length) return;
-    const pm = pool[Math.floor(Math.random() * pool.length)];
-    setCurrent(pm);
-    setRevealed(false);
-    setAnswer('');
-    setResult(null);
-    setHints([]);
-    setTimeout(() => inputRef.current?.focus(), 80);
-  }, []);
-
-  const changeGen = (gen) => {
-    setFilterGen(gen);
-    filterGenRef.current = gen;
-    pickNext(dexListRef.current, gen);
-  };
-
-  const handleAnswer = (e) => {
-    if (e.key !== 'Enter' || !current || revealed) return;
-    const val = answer.trim().toLowerCase();
-    if (!val) return;
-    const ko = current.ko.toLowerCase();
-    const en = current.en.toLowerCase();
-    if (val === ko || val === en) {
-      setRevealed(true);
-      setScore(s => s + 1);
-      setTotal(t => t + 1);
-      setResult('correct');
-      setTimeout(() => pickNext(null, filterGenRef.current), 1600);
-    } else {
-      setWrongFlash(true);
-      setTimeout(() => setWrongFlash(false), 400);
-      if (hints.length === 0) {
-        setHints([`글자수: ${current.ko.length}자`]);
-      } else if (hints.length === 1) {
-        setHints(h => [...h, `첫 글자: ${current.ko[0]}`]);
-      }
-    }
-  };
-
-  const handleSkip = () => {
-    if (revealed) return;
-    setRevealed(true);
-    setTotal(t => t + 1);
-    setResult('skip');
-    setTimeout(() => pickNext(null, filterGenRef.current), 2000);
-  };
-
-  if (!current) return (
-    <div style={{ textAlign: 'center', padding: '60px 0', color: '#64748b' }}>불러오는 중...</div>
-  );
-
-  const sprUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${current.dex}.png`;
-
+function QuizMessage({ msg, onNext }) {
+  const { pokemon: pm, hints, revealed, correct } = msg;
+  const sprUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pm.dex}.png`;
+  const fbUrl  = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pm.dex}.png`;
   return (
-    <div id="solo-quiz">
-      <div id="solo-quiz-top">
-        <div id="solo-quiz-gen-row">
-          <button className={`sq-gen-btn${filterGen===0?' active':''}`} onClick={() => changeGen(0)}>전체</button>
-          {GENS.map(g => (
-            <button key={g} className={`sq-gen-btn${filterGen===g?' active':''}`} onClick={() => changeGen(g)}>{g}세대</button>
-          ))}
+    <div className="msg bot">
+      <div style={{ marginBottom: 4 }}><strong>🎮 포켓몬 퀴즈!</strong> 이 포켓몬은 누구일까요?</div>
+      <img
+        className={`quiz-sprite${revealed ? ' revealed' : ''}`}
+        src={sprUrl}
+        onError={e => { e.target.src = fbUrl; }}
+        alt="?"
+      />
+      {hints.length > 0 && (
+        <div className="quiz-hints-area">
+          {hints.map((h, i) => <div key={i} className="quiz-hint-line">힌트 {i + 1}: {h}</div>)}
         </div>
-        <div id="solo-quiz-score-row">
-          <span id="solo-quiz-score">{score} / {total}</span>
-          <button id="solo-quiz-exit" onClick={onExit}>종료</button>
+      )}
+      {!revealed && (
+        <div className="quiz-hint-line" style={{ color: '#64748b', marginTop: 6 }}>
+          💬 채팅창에 답을 입력하세요! (모르면 &quot;포기&quot; 입력)
         </div>
-      </div>
-
-      <div id="solo-quiz-body">
-        <img
-          className={`solo-quiz-sprite${revealed ? ' revealed' : ''}${wrongFlash ? ' wrong' : ''}`}
-          src={sprUrl}
-          alt="?"
-        />
-        {result === 'correct' && (
-          <div className="sq-result correct">✓ 정답! {current.ko}</div>
-        )}
-        {result === 'skip' && (
-          <div className="sq-result skip">정답: {current.ko}</div>
-        )}
-        {!result && hints.map((h, i) => (
-          <div key={i} className="sq-hint">{h}</div>
-        ))}
-      </div>
-
-      <div id="solo-quiz-input-row">
-        <input
-          ref={inputRef}
-          id="sq-input"
-          type="text"
-          placeholder="포켓몬 이름 입력 후 Enter..."
-          autoComplete="off"
-          value={answer}
-          onChange={e => setAnswer(e.target.value)}
-          onKeyDown={handleAnswer}
-          disabled={revealed}
-        />
-        <button id="sq-skip-btn" onClick={handleSkip} disabled={revealed}>스킵</button>
-      </div>
+      )}
+      {revealed && (
+        <div style={{ marginTop: 8 }}>
+          {correct
+            ? <div className="quiz-correct">🎉 정답! <strong>{pm.ko}</strong> ({pm.en})</div>
+            : <div>정답은 <strong>{pm.ko}</strong> ({pm.en})이었어요!</div>
+          }
+          <button className="quiz-btn" onClick={onNext}>다음 문제 ▶</button>
+        </div>
+      )}
     </div>
   );
 }
 
-function ChatMessage({ role, html, isStreaming }) {
-  if (isStreaming) {
-    return (
-      <div className={`msg ${role}`}>
-        <div className="dots"><span /><span /><span /></div>
-      </div>
-    );
+function ChatMessage({ msg, onQuizNext }) {
+  if (msg.type === 'quiz') return <QuizMessage msg={msg} onNext={onQuizNext} />;
+  if (msg.isStreaming) {
+    return <div className={`msg ${msg.role}`}><div className="dots"><span /><span /><span /></div></div>;
   }
-  return <div className={`msg ${role}`} dangerouslySetInnerHTML={{ __html: html }} />;
+  return <div className={`msg ${msg.role}${msg.isError ? ' error' : ''}`} dangerouslySetInnerHTML={{ __html: msg.html }} />;
 }
 
 export default function ChatTab({ onOpenPokemon }) {
-  const [quizMode, setQuizMode] = useState(false);
   const [messages, setMessages] = useState(() => {
     try {
       const saved = localStorage.getItem('pm-chat');
       if (saved) {
         const msgs = JSON.parse(saved);
-        if (Array.isArray(msgs) && msgs.length) return msgs.map(m => ({ role: m.role === 'user' ? 'user' : 'bot', html: renderMd(m.content), raw: m.content }));
+        if (Array.isArray(msgs) && msgs.length)
+          return msgs.map(m => ({ role: m.role === 'user' ? 'user' : 'bot', html: renderMd(m.content), raw: m.content }));
       }
     } catch (_) {}
     return [];
@@ -175,7 +85,14 @@ export default function ChatTab({ onOpenPokemon }) {
   const [input, setInput] = useState('');
   const [streaming, setStreaming] = useState(false);
   const [showPrev, setShowPrev] = useState(messages.length > 0);
-  const chatRef = useRef(null);
+  const [quizState, setQuizState] = useState(null); // { msgIdx, hintIdx }
+  const chatRef    = useRef(null);
+  const messagesRef = useRef(messages);
+  const quizStateRef = useRef(null);
+  const dexRef     = useRef(null);
+
+  useEffect(() => { messagesRef.current = messages; }, [messages]);
+  useEffect(() => { quizStateRef.current = quizState; }, [quizState]);
 
   const scrollBottom = () => {
     if (chatRef.current) chatRef.current.scrollTop = chatRef.current.scrollHeight;
@@ -183,21 +100,85 @@ export default function ChatTab({ onOpenPokemon }) {
   useEffect(scrollBottom, [messages]);
 
   const clearChat = () => {
-    setMessages([]); setHistory([]); setShowPrev(false);
+    setMessages([]); setHistory([]); setShowPrev(false); setQuizState(null);
     localStorage.removeItem('pm-chat');
   };
 
+  const startQuiz = useCallback(async () => {
+    if (!dexRef.current) {
+      const data = await fetch('/api/pokedex').then(r => r.json());
+      dexRef.current = data;
+    }
+    const pool = dexRef.current;
+    const pm = pool[Math.floor(Math.random() * pool.length)];
+    const quizMsg = { role: 'bot', type: 'quiz', pokemon: pm, hints: [], revealed: false, correct: false };
+    const newIdx = messagesRef.current.length;
+    setMessages(prev => [...prev, quizMsg]);
+    setQuizState({ msgIdx: newIdx, hintIdx: 0 });
+    setShowPrev(false);
+  }, []);
+
+  const handleQuizAnswer = useCallback((text) => {
+    const qs = quizStateRef.current;
+    if (!qs) return;
+    const { msgIdx, hintIdx } = qs;
+    const qMsg = messagesRef.current[msgIdx];
+    if (!qMsg || qMsg.type !== 'quiz') return;
+    const pm = qMsg.pokemon;
+    const trimmed = text.trim();
+
+    if (trimmed === '포기') {
+      setQuizState(null);
+      setMessages(prev => prev.map((m, i) => i === msgIdx ? { ...m, revealed: true, correct: false } : m));
+      return;
+    }
+
+    if (trimmed.toLowerCase() === pm.ko.toLowerCase() || trimmed.toLowerCase() === pm.en.toLowerCase()) {
+      setQuizState(null);
+      setMessages(prev => prev.map((m, i) => i === msgIdx ? { ...m, revealed: true, correct: true } : m));
+      return;
+    }
+
+    const allHints = QUIZ_HINTS(pm);
+    if (hintIdx < allHints.length) {
+      setQuizState({ msgIdx, hintIdx: hintIdx + 1 });
+      setMessages(prev => {
+        const updated = prev.map((m, i) => i === msgIdx ? { ...m, hints: [...m.hints, allHints[hintIdx]] } : m);
+        return [...updated, { role: 'bot', html: '<span style="color:#ef4444">❌ 틀렸어요!</span> 힌트를 확인하세요.' }];
+      });
+    } else {
+      setQuizState(null);
+      setMessages(prev => prev.map((m, i) => i === msgIdx ? { ...m, revealed: true, correct: false } : m));
+    }
+  }, []);
+
   const sendMessage = async (text) => {
     const msg = (text || input).trim();
-    if (!msg || streaming) return;
+    if (!msg) return;
     setInput('');
     setShowPrev(false);
 
+    // 퀴즈 진행 중 — 채팅창 입력을 답변으로 처리
+    if (quizStateRef.current) {
+      setMessages(prev => [...prev, { role: 'user', html: renderMd(msg) }]);
+      handleQuizAnswer(msg);
+      return;
+    }
+
+    if (streaming) return;
+
+    // 퀴즈 시작 키워드
+    const lower = msg.toLowerCase().replace(/\s/g, '');
+    if (lower === '퀴즈' || lower === '실루엣퀴즈' || lower === '퀴즈시작') {
+      setMessages(prev => [...prev, { role: 'user', html: renderMd(msg) }]);
+      await startQuiz();
+      return;
+    }
+
+    // 일반 LLM 채팅
     const userMsg = { role: 'user', html: renderMd(msg) };
     setMessages(prev => [...prev, userMsg]);
     setStreaming(true);
-
-    const botIdx = messages.length + 1;
     setMessages(prev => [...prev, { role: 'bot', html: '', isStreaming: true }]);
 
     let full = '', spriteHtml = '';
@@ -220,8 +201,7 @@ export default function ChatTab({ onOpenPokemon }) {
             const p = JSON.parse(raw);
             if (p.error) { setMessages(prev => { const a=[...prev]; a[a.length-1]={role:'bot',html:p.error,isError:true}; return a; }); full=''; break; }
             if (p.type === 'meta' && p.pokemon_id) {
-              const id = p.pokemon_id;
-              spriteHtml = `<img class="pokemon-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png" alt="pokemon-${id}">`;
+              spriteHtml = `<img class="pokemon-sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${p.pokemon_id}.png" alt="pokemon-${p.pokemon_id}">`;
             }
             if (p.text) {
               full += p.text;
@@ -242,14 +222,6 @@ export default function ChatTab({ onOpenPokemon }) {
     }
   };
 
-  if (quizMode) {
-    return (
-      <div className="view" id="view-chat">
-        <SoloQuiz onExit={() => setQuizMode(false)} />
-      </div>
-    );
-  }
-
   const hasMessages = messages.length > 0;
 
   return (
@@ -263,7 +235,7 @@ export default function ChatTab({ onOpenPokemon }) {
               {CHIPS.map(c => (
                 <div key={c} className="chip" onClick={() => sendMessage(c)}>{c}</div>
               ))}
-              <div className="chip quiz-chip" onClick={() => setQuizMode(true)}>🖼️ 실루엣 퀴즈</div>
+              <div className="chip quiz-chip" onClick={startQuiz}>🎮 실루엣 퀴즈</div>
             </div>
           </div>
         )}
@@ -271,7 +243,7 @@ export default function ChatTab({ onOpenPokemon }) {
           <div className="session-sep">─── 이전 대화 ───</div>
         )}
         {messages.map((m, i) => (
-          <ChatMessage key={i} role={m.isError ? 'bot error' : m.role} html={m.html} isStreaming={m.isStreaming} />
+          <ChatMessage key={i} msg={m} onQuizNext={startQuiz} />
         ))}
       </div>
       <div id="input-bar">
@@ -281,13 +253,13 @@ export default function ChatTab({ onOpenPokemon }) {
         <input
           id="msg-input"
           type="text"
-          placeholder="포켓몬 GO 질문을 입력하세요..."
+          placeholder={quizState ? '포켓몬 이름 입력... (모르면 "포기")' : '포켓몬 GO 질문을 입력하세요...'}
           autoComplete="off"
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); } }}
         />
-        <button id="send-btn" onClick={() => sendMessage()} disabled={streaming}>↑</button>
+        <button id="send-btn" onClick={() => sendMessage()} disabled={streaming && !quizState}>↑</button>
       </div>
     </div>
   );
